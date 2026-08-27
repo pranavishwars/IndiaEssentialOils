@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="1450" viewBox="0 0 1000 1450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Warm Bright Antique Cream Paper -->
+    <radialGradient id="basePaper" cx="50%" cy="50%" r="80%">
+      <stop offset="0%" stop-color="#FFFDF6" />
+      <stop offset="65%" stop-color="#FBF4E4" />
+      <stop offset="100%" stop-color="#F2E8D2" />
+    </radialGradient>
+
+    <!-- Fresh Botanical Pastel Tint Wash -->
+    <radialGradient id="signatureWash" cx="50%" cy="50%" rx="46%" ry="40%">
+      <stop offset="0%" stop-color="#CDEBC0" stop-opacity="1.0" />
+      <stop offset="45%" stop-color="#D6EFCB" stop-opacity="0.85" />
+      <stop offset="75%" stop-color="#EBF6E4" stop-opacity="0.40" />
+      <stop offset="100%" stop-color="#FBF4E4" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Base Parchment Background -->
+  <rect width="1000" height="1450" fill="url(#basePaper)" />
+
+  <!-- Center Botanical Pastel Watercolor Wash -->
+  <ellipse cx="500" cy="690" rx="440" ry="390" fill="url(#signatureWash)" />
+
+  <!-- Horizontal Double Rails (Top & Bottom) -->
+  <line x1="50" y1="65" x2="950" y2="65" stroke="#265830" stroke-width="3.6" />
+  <line x1="50" y1="77" x2="950" y2="77" stroke="#265830" stroke-width="1.6" />
+
+  <line x1="50" y1="1373" x2="950" y2="1373" stroke="#265830" stroke-width="1.6" />
+  <line x1="50" y1="1385" x2="950" y2="1385" stroke="#265830" stroke-width="3.6" />
+</svg>

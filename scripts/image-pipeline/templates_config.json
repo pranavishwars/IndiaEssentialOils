@@ -1,0 +1,35 @@
+{
+  "BOTTLE_100ML": {
+    "template_path": "public/templates/template_BOTTLE_100ML.jpg",
+    "zone": {
+      "x": 392,
+      "y": 440,
+      "width": 240,
+      "height": 360
+    },
+    "cylinder_curve": 0.12,
+    "highlight_overlay_opacity": 0.18
+  },
+  "DROPPER_10ML": {
+    "template_path": "public/templates/template_DROPPER_10ML.jpg",
+    "zone": {
+      "x": 418,
+      "y": 540,
+      "width": 188,
+      "height": 240
+    },
+    "cylinder_curve": 0.14,
+    "highlight_overlay_opacity": 0.22
+  },
+  "BOTTLE_200ML": {
+    "template_path": "public/templates/template_BOTTLE_200ML.jpg",
+    "zone": {
+      "x": 382,
+      "y": 440,
+      "width": 260,
+      "height": 360
+    },
+    "cylinder_curve": 0.10,
+    "highlight_overlay_opacity": 0.18
+  }
+}

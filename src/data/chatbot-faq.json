@@ -1,0 +1,312 @@
+[
+  {
+    "id": "moq",
+    "patterns": [
+      "minimum order",
+      "moq",
+      "smallest order",
+      "bulk minimum",
+      "minimum quantity",
+      "small batch",
+      "min order",
+      "how much can i order",
+      "minimum purchase"
+    ],
+    "answer": "As a primary distillation manufacturing plant and bulk B2B exporter, our minimum order quantity (MOQ) starts from 25 kg industrial carboys for pure essential oils, 10 kg for rare floral absolutes, and 50 kg to 200 kg steel drums for carrier base oils and hydrosols. We supply commercial formulators, pharmaceutical companies, and international distributors in metric-ton and container-load volumes."
+  },
+  {
+    "id": "samples",
+    "patterns": [
+      "sample",
+      "samples",
+      "test sample",
+      "trial order",
+      "sample kit",
+      "can i get a sample",
+      "evaluation sample",
+      "testing sample"
+    ],
+    "answer": "Yes, we provide 10ml–50ml analytical evaluation samples for verified B2B formulators and cosmetic manufacturers. Please use our 'Request Quote' form to specify the botanical oils you need sampled."
+  },
+  {
+    "id": "purity_gcms",
+    "patterns": [
+      "pure",
+      "purity",
+      "gc ms",
+      "gc-ms",
+      "gcms",
+      "gas chromatography",
+      "fake oil",
+      "adulteration",
+      "adulterated",
+      "chemical test",
+      "lab test",
+      "how do i know it's real",
+      "authentic",
+      "certificate of analysis",
+      "coa"
+    ],
+    "answer": "100% of our production batches undergo rigorous Gas Chromatography-Mass Spectrometry (GC-MS) and refractive index audits. Every shipment includes a Certificate of Analysis (CoA) confirming the exact chemical terpene profile."
+  },
+  {
+    "id": "batch_lookup",
+    "patterns": [
+      "batch lookup",
+      "batch number",
+      "batch report",
+      "lot number",
+      "verify bottle",
+      "qr code",
+      "lookup batch",
+      "check batch"
+    ],
+    "answer": "You can verify and download the complete GC-MS purity report for any bottle on our Batch Lookup page. Simply enter the batch code printed on your bottle or packaging (e.g. IEO-LAV-2024-08)."
+  },
+  {
+    "id": "certifications",
+    "patterns": [
+      "certified",
+      "certification",
+      "certifications",
+      "usda",
+      "usda organic",
+      "organic certificate",
+      "iso",
+      "iso 9001",
+      "gmp",
+      "who gmp",
+      "halal",
+      "kosher",
+      "fssai",
+      "standards"
+    ],
+    "answer": "India Essential Oils holds ISO 9001:2015, WHO-GMP, USDA NOP Organic, Kosher, Halal, and FSSAI manufacturing certifications. Detailed registrar audit IDs and certificate downloads are available on our Certifications page."
+  },
+  {
+    "id": "shipping_domestic",
+    "patterns": [
+      "domestic shipping",
+      "ship in india",
+      "shipping in india",
+      "shipping timeline",
+      "shipping time in india",
+      "delivery in india",
+      "delivery time in india",
+      "delhi delivery",
+      "mumbai delivery",
+      "bangalore delivery",
+      "india delivery",
+      "local delivery",
+      "domestic delivery"
+    ],
+    "answer": "Across India, domestic wholesale orders are dispatched via express surface/air cargo (Blue Dart, Safechem Logistics) within 24–48 hours of dispatch, with delivery typically in 2–5 business days depending on location."
+  },
+  {
+    "id": "shipping_international",
+    "patterns": [
+      "international shipping",
+      "export",
+      "shipping worldwide",
+      "ship to usa",
+      "ship to europe",
+      "ship to uk",
+      "ship to australia",
+      "ship to uae",
+      "air cargo",
+      "sea freight",
+      "export delivery",
+      "customs"
+    ],
+    "answer": "We export globally to 50+ countries via IATA air freight (DHL, FedEx Express, Air Cargo) and LCL/FCL ocean freight from Nhava Sheva & Mundra ports. Standard international air transit is 4–7 business days."
+  },
+  {
+    "id": "export_documents",
+    "patterns": [
+      "export document",
+      "msds",
+      "sds",
+      "safety data sheet",
+      "phytosanitary",
+      "certificate of origin",
+      "customs documents",
+      "fda registration",
+      "reach compliance",
+      "regulatory"
+    ],
+    "answer": "Every export consignment includes full regulatory dossiers: GHS-compliant MSDS, Batch CoA, Technical Data Sheet (TDS), Phytosanitary Certificate, Non-GMO declaration, and Certificate of Origin."
+  },
+  {
+    "id": "packaging",
+    "patterns": [
+      "packaging",
+      "container",
+      "drum",
+      "drums",
+      "bottle sizes",
+      "barrel",
+      "packaging sizes",
+      "how is it packaged",
+      "aluminum bottle",
+      "carboy"
+    ],
+    "answer": "We package in pharmaceutical-grade containers: 1kg & 5kg epoxy-coated aluminium bottles, 25kg UN-approved HDPE fluorinated carboys, and 180kg–200kg epoxy-lined galvanised iron drums."
+  },
+  {
+    "id": "pricing_quotes",
+    "patterns": [
+      "price list",
+      "wholesale price",
+      "wholesale rate",
+      "how much does it cost",
+      "get a quote",
+      "quotation",
+      "bulk rate",
+      "bulk discount",
+      "volume discount",
+      "request a quote",
+      "pricing list"
+    ],
+    "answer": "Because botanical commodity prices fluctuate based on seasonal harvest yields, we provide real-time volume-tiered wholesale quotes. Click 'Request Quote' on any product page or contact our desk for an instant proforma invoice."
+  },
+  {
+    "id": "shelf_life",
+    "patterns": [
+      "shelf life",
+      "expiry",
+      "expiration",
+      "storage",
+      "how long does it last",
+      "store oil",
+      "stability",
+      "best before"
+    ],
+    "answer": "Most pure steam-distilled essential oils have a shelf life of 24–36 months when stored in sealed nitrogen-flushed containers in a cool, dark environment below 25°C. Citrus oils are best used within 12–18 months."
+  },
+  {
+    "id": "extraction_methods",
+    "patterns": [
+      "extraction",
+      "how is it made",
+      "steam distillation",
+      "cold press",
+      "cold-pressed",
+      "solvent extraction",
+      "distilled",
+      "manufacturing process"
+    ],
+    "answer": "We utilize slow-steam distillation in 316-grade stainless steel stills for delicate flowers/leaves, and hydraulic cold-pressing for seed and citrus peel carrier oils to preserve volatile aromatic terpenes without thermal degradation."
+  },
+  {
+    "id": "custom_formulation_oem",
+    "patterns": [
+      "private label",
+      "private labeling",
+      "oem",
+      "custom blend",
+      "bespoke blend",
+      "contract manufacturing",
+      "formulation",
+      "white label"
+    ],
+    "answer": "Yes, we offer OEM private labeling, custom botanical blending, and bespoke terpene standardization for cosmetic, fragrance, and aromatherapy brands. Minimum batch runs start at 50kg."
+  },
+  {
+    "id": "payment_terms",
+    "patterns": [
+      "payment terms",
+      "wire transfer",
+      "swift",
+      "letter of credit",
+      "lc at sight",
+      "bank transfer",
+      "credit terms",
+      "gst invoice"
+    ],
+    "answer": "For international orders we accept Wire Transfer (T/T Advance) and Irrevocable Letters of Credit (L/C at sight for large volumes). For domestic Indian orders, RTGS/NEFT and GST credit invoices are issued."
+  },
+  {
+    "id": "organic_oils",
+    "patterns": [
+      "organic",
+      "nop",
+      "usda organic",
+      "eu organic",
+      "wild harvested",
+      "pesticide free",
+      "natural certified"
+    ],
+    "answer": "We supply USDA NOP & EU Certified Organic essential oils produced from wild-harvested and contracted pesticide-free certified farms. Organic transaction certificates (TC) are provided per lot."
+  },
+  {
+    "id": "ayurvedic_oils",
+    "patterns": [
+      "ayurvedic",
+      "traditional herbal",
+      "mahanarayan",
+      "bhringraj",
+      "kumkumadi",
+      "ashwagandha oil",
+      "herbal oil"
+    ],
+    "answer": "Our Ayurvedic oils are prepared using classical Taila Paka Vidhi extraction methods with authenticated herbs in pure sesame and coconut carrier bases. Explore our Ayurvedic category in the catalog."
+  },
+  {
+    "id": "lavender_oil",
+    "patterns": [
+      "lavender",
+      "lavandula angustifolia",
+      "kashmir lavender",
+      "lavender oil"
+    ],
+    "answer": "We distill 100% pure Kashmir Lavender Oil (Lavandula angustifolia) with high linalool and linalyl acetate content (>40%). MOQ is 1kg. CoA and GC-MS reports are available on its product page."
+  },
+  {
+    "id": "peppermint_oil",
+    "patterns": [
+      "peppermint",
+      "mentha piperita",
+      "menthol content",
+      "peppermint oil"
+    ],
+    "answer": "Our Indian Peppermint Oil (Mentha piperita) contains natural L-menthol (50–55%) with a crisp, refreshing cooling profile. Available in 1kg to 180kg drums for confectionery, pharmaceutical, and personal care formulations."
+  },
+  {
+    "id": "tea_tree_oil",
+    "patterns": [
+      "tea tree",
+      "melaleuca alternifolia",
+      "terpinen 4 ol",
+      "tea tree oil"
+    ],
+    "answer": "Our pure Tea Tree Oil contains Terpinen-4-ol > 38% and 1,8-Cineole < 4%, meeting pharmaceutical grade specifications for skincare and antiseptic applications."
+  },
+  {
+    "id": "location_factory",
+    "patterns": [
+      "where are you located",
+      "headquarters",
+      "office address",
+      "distillation plant",
+      "where is your factory",
+      "facility visit"
+    ],
+    "answer": "Our corporate headquarters and analytical laboratories are based in New Delhi, India, with distillation plants in Uttarakhand and Himachal Pradesh. B2B facility inspection visits can be scheduled in advance."
+  },
+  {
+    "id": "contact_human",
+    "patterns": [
+      "contact",
+      "phone number",
+      "email",
+      "talk to someone",
+      "human",
+      "support",
+      "representative",
+      "sales team",
+      "reach out",
+      "call you"
+    ],
+    "answer": "You can reach our commercial sales desk directly by email at pranavishwars@gmail.com or by submitting our online enquiry form. Our export team responds within 2 hours during business hours."
+  }
+]

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="1400" viewBox="0 0 1000 1400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Warm Antique Cream Paper -->
+    <radialGradient id="basePaper" cx="50%" cy="50%" r="80%">
+      <stop offset="0%" stop-color="#FFFDF8" />
+      <stop offset="65%" stop-color="#FBF4E4" />
+      <stop offset="100%" stop-color="#F2E7D0" />
+    </radialGradient>
+
+    <!-- Fresh Botanical Pastel Watercolor Wash inside Wreath -->
+    <radialGradient id="signatureWash" cx="50%" cy="48%" rx="45%" ry="38%">
+      <stop offset="0%" stop-color="#C5E6B4" stop-opacity="1.0" />
+      <stop offset="45%" stop-color="#C5E6B4" stop-opacity="0.82" />
+      <stop offset="75%" stop-color="#C5E6B4" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#FBF4E4" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Base Parchment Sheet -->
+  <rect width="1000" height="1400" fill="url(#basePaper)" />
+
+  <!-- Center Botanical Pastel Color Wash -->
+  <ellipse cx="500.0" cy="580" rx="440" ry="380" fill="url(#signatureWash)" />
+
+  <!-- Horizontal Double Rails (Top & Bottom) -->
+  <line x1="50" y1="65" x2="950" y2="65" stroke="#24552E" stroke-width="3.6" />
+  <line x1="50" y1="77" x2="950" y2="77" stroke="#24552E" stroke-width="1.6" />
+
+  <line x1="50" y1="1323" x2="950" y2="1323" stroke="#24552E" stroke-width="1.6" />
+  <line x1="50" y1="1335" x2="950" y2="1335" stroke="#24552E" stroke-width="3.6" />
+
+  <!-- Top Center Lotus Emblem -->
+  <g id="lotus-emblem">
+    <path d="M 500.0 127.80000000000001 C 472.0 158.6, 477.6 206.2, 500.0 220.2 C 522.4 206.2, 528.0 158.6, 500.0 127.80000000000001 Z" fill="#24552E" />
+    <path d="M 474.8 139.0 C 449.6 172.6, 460.8 211.8, 494.4 220.2 C 486.0 197.8, 480.4 172.6, 474.8 139.0 Z" fill="#24552E" />
+    <path d="M 525.2 139.0 C 550.4 172.6, 539.2 211.8, 505.6 220.2 C 514.0 197.8, 519.6 172.6, 528.0 139.0 Z" fill="#24552E" />
+    <path d="M 444.0 161.4 C 416.0 192.2, 437.0 217.4, 480.4 223.0 C 466.4 206.2, 455.2 186.6, 444.0 161.4 Z" fill="#24552E" />
+    <path d="M 556.0 161.4 C 584.0 192.2, 563.0 217.4, 519.6 223.0 C 533.6 206.2, 544.8 186.6, 556.0 161.4 Z" fill="#24552E" />
+    <path d="M 421.6 189.4 C 396.4 211.8, 441.2 228.6, 472.0 225.8 C 446.8 217.4, 432.8 206.2, 421.6 189.4 Z" fill="#24552E" />
+    <path d="M 578.4 189.4 C 603.6 211.8, 558.8 228.6, 528.0 225.8 C 553.2 217.4, 567.2 206.2, 578.4 189.4 Z" fill="#24552E" />
+    <path d="M 438.4 217.4 Q 500.0 237.0 561.6 217.4 Q 500.0 225.8 438.4 217.4 Z" fill="#24552E" />
+    <ellipse cx="500.0" cy="197.8" rx="18.2" ry="21.0" fill="#FFFDF8" stroke="#24552E" stroke-width="2.2399999999999998" />
+    <text x="500.0" y="205.5" text-anchor="middle" font-family="serif" font-size="19.599999999999998" font-weight="bold" fill="#24552E">E</text>
+    <path d="M 427.2 211.8 C 374.0 186.6, 318.0 211.8, 269.0 189.4" fill="none" stroke="#24552E" stroke-width="3.36" stroke-linecap="round" />
+    <path d="M 353.0 197.8 Q 337.6 175.4 318.0 181.0 Q 334.8 195 353.0 197.8 Z" fill="#24552E" />
+    <circle cx="269.0" cy="189.4" r="4.199999999999999" fill="#24552E" />
+    <path d="M 572.8 211.8 C 626.0 186.6, 682.0 211.8, 731.0 189.4" fill="none" stroke="#24552E" stroke-width="3.36" stroke-linecap="round" />
+    <path d="M 668.0 197.8 Q 684.8 175.4 704.4 181.0 Q 687.6 195 668.0 197.8 Z" fill="#24552E" />
+    <circle cx="731.0" cy="189.4" r="4.199999999999999" fill="#24552E" />
+  </g>
+
+  <!-- Snug Framing Botanical Wreath & Tree -->
+  <g id="botanical-wreath">
+    <line x1="500.0" y1="1160" x2="500.0" y2="1035" stroke="#24552E" stroke-width="3.4" stroke-linecap="round" />
+    <path d="M 500.0 1040.0 Q 483.4 1023.8 500.0 1004.0 Q 516.6 1023.8 500.0 1040.0 Z" fill="#24552E" />
+    <line x1="500.0" y1="1065" x2="472.0" y2="1040" stroke="#24552E" stroke-width="2.2" stroke-linecap="round" />
+    <line x1="500.0" y1="1065" x2="528.0" y2="1040" stroke="#24552E" stroke-width="2.2" stroke-linecap="round" />
+    <path d="M 472.0 1040.0 Q 454.3 1043.3 449.1 1023.9 Q 469.1 1022.2 472.0 1040.0 Z" fill="#24552E" />
+    <path d="M 528.0 1040.0 Q 530.9 1022.2 550.9 1023.9 Q 545.7 1043.3 528.0 1040.0 Z" fill="#24552E" />
+    <line x1="500.0" y1="1096" x2="456.0" y2="1068" stroke="#24552E" stroke-width="2.4" stroke-linecap="round" />
+    <line x1="500.0" y1="1096" x2="544.0" y2="1068" stroke="#24552E" stroke-width="2.4" stroke-linecap="round" />
+    <path d="M 456.0 1068.0 Q 436.2 1073.5 428.3 1052.0 Q 450.9 1048.1 456.0 1068.0 Z" fill="#24552E" />
+    <path d="M 544.0 1068.0 Q 549.1 1048.1 571.7 1052.0 Q 563.8 1073.5 544.0 1068.0 Z" fill="#24552E" />
+    <line x1="500.0" y1="1126" x2="444.0" y2="1098" stroke="#24552E" stroke-width="2.6" stroke-linecap="round" />
+    <line x1="500.0" y1="1126" x2="556.0" y2="1098" stroke="#24552E" stroke-width="2.6" stroke-linecap="round" />
+    <path d="M 444.0 1098.0 Q 423.5 1105.7 413.2 1083.6 Q 436.7 1077.4 444.0 1098.0 Z" fill="#24552E" />
+    <path d="M 556.0 1098.0 Q 563.3 1077.4 586.8 1083.6 Q 576.5 1105.7 556.0 1098.0 Z" fill="#24552E" />
+    <path d="M 455.0 1160 Q 500.0 1152 545.0 1160" fill="none" stroke="#24552E" stroke-width="2.8" />
+    <path d="M 470.0 1156 C 300.0 1158, 100.0 1060, 60.0 880 C 35.0 700, 80.0 520, 190.0 410" fill="none" stroke="#24552E" stroke-width="2.8" stroke-linecap="round" />
+    <path d="M 530.0 1156 C 700.0 1158, 900.0 1060, 940.0 880 C 965.0 700, 920.0 520, 810.0 410" fill="none" stroke="#24552E" stroke-width="2.8" stroke-linecap="round" />
+    <path d="M 390.0 1152.0 Q 388.4 1172.5 365.5 1172.6 Q 369.5 1150.0 390.0 1152.0 Z" fill="#24552E" />
+    <path d="M 390.0 1152.0 Q 405.9 1159.2 399.3 1177.6 Q 382.4 1167.8 390.0 1152.0 Z" fill="#24552E" />
+    <path d="M 285.0 1136.0 Q 279.6 1157.2 255.6 1153.0 Q 263.9 1130.1 285.0 1136.0 Z" fill="#24552E" />
+    <path d="M 285.0 1136.0 Q 300.4 1146.5 290.0 1164.5 Q 274.2 1151.1 285.0 1136.0 Z" fill="#24552E" />
+    <path d="M 190.0 1092.0 Q 180.4 1113.1 156.2 1104.3 Q 169.1 1082.0 190.0 1092.0 Z" fill="#24552E" />
+    <path d="M 190.0 1092.0 Q 204.1 1105.8 190.0 1122.6 Q 175.9 1105.8 190.0 1092.0 Z" fill="#24552E" />
+    <path d="M 110.0 1015.0 Q 95.5 1034.7 72.4 1020.3 Q 90.6 1000.1 110.0 1015.0 Z" fill="#24552E" />
+    <path d="M 110.0 1015.0 Q 121.5 1032.3 103.3 1046.6 Q 92.4 1026.1 110.0 1015.0 Z" fill="#24552E" />
+    <path d="M 60.0 900.0 Q 40.1 914.2 22.6 893.4 Q 46.2 879.8 60.0 900.0 Z" fill="#24552E" />
+    <path d="M 60.0 900.0 Q 65.6 920.0 43.8 928.0 Q 39.9 905.2 60.0 900.0 Z" fill="#24552E" />
+    <path d="M 45.0 775.0 Q 22.7 781.2 13.8 757.0 Q 39.3 752.6 45.0 775.0 Z" fill="#24552E" />
+    <path d="M 45.0 775.0 Q 43.5 794.6 21.6 794.7 Q 25.4 773.1 45.0 775.0 Z" fill="#24552E" />
+    <path d="M 58.0 650.0 Q 35.5 648.3 35.5 623.2 Q 60.2 627.6 58.0 650.0 Z" fill="#24552E" />
+    <path d="M 58.0 650.0 Q 50.1 667.4 30.0 660.2 Q 40.7 641.7 58.0 650.0 Z" fill="#24552E" />
+    <path d="M 100.0 535.0 Q 80.7 526.2 88.7 504.0 Q 109.2 515.9 100.0 535.0 Z" fill="#24552E" />
+    <path d="M 100.0 535.0 Q 87.4 547.9 72.0 535.0 Q 87.4 522.1 100.0 535.0 Z" fill="#24552E" />
+    <path d="M 160.0 450.0 Q 146.7 436.0 161.0 420.0 Q 174.3 437.0 160.0 450.0 Z" fill="#24552E" />
+    <path d="M 160.0 450.0 Q 145.0 456.6 136.4 440.4 Q 153.8 434.8 160.0 450.0 Z" fill="#24552E" />
+    <path d="M 610.0 1152.0 Q 630.5 1150.0 634.5 1172.6 Q 611.6 1172.5 610.0 1152.0 Z" fill="#24552E" />
+    <path d="M 610.0 1152.0 Q 617.6 1167.8 600.7 1177.6 Q 594.1 1159.2 610.0 1152.0 Z" fill="#24552E" />
+    <path d="M 715.0 1136.0 Q 736.1 1130.1 744.4 1153.0 Q 720.4 1157.2 715.0 1136.0 Z" fill="#24552E" />
+    <path d="M 715.0 1136.0 Q 725.8 1151.1 710.0 1164.5 Q 699.6 1146.5 715.0 1136.0 Z" fill="#24552E" />
+    <path d="M 810.0 1092.0 Q 830.9 1082.0 843.8 1104.3 Q 819.6 1113.1 810.0 1092.0 Z" fill="#24552E" />
+    <path d="M 810.0 1092.0 Q 824.1 1105.8 810.0 1122.6 Q 795.9 1105.8 810.0 1092.0 Z" fill="#24552E" />
+    <path d="M 890.0 1015.0 Q 909.4 1000.1 927.6 1020.3 Q 904.5 1034.7 890.0 1015.0 Z" fill="#24552E" />
+    <path d="M 890.0 1015.0 Q 907.6 1026.1 896.7 1046.6 Q 878.5 1032.3 890.0 1015.0 Z" fill="#24552E" />
+    <path d="M 935.0 900.0 Q 948.8 879.8 972.4 893.4 Q 954.9 914.2 935.0 900.0 Z" fill="#24552E" />
+    <path d="M 935.0 900.0 Q 955.1 905.2 951.1 928.0 Q 929.4 920.0 935.0 900.0 Z" fill="#24552E" />
+    <path d="M 955.0 775.0 Q 960.7 752.6 986.2 757.0 Q 977.3 781.2 955.0 775.0 Z" fill="#24552E" />
+    <path d="M 955.0 775.0 Q 974.6 773.1 978.4 794.7 Q 956.5 794.6 955.0 775.0 Z" fill="#24552E" />
+    <path d="M 942.0 650.0 Q 939.8 627.6 964.5 623.2 Q 964.5 648.3 942.0 650.0 Z" fill="#24552E" />
+    <path d="M 942.0 650.0 Q 959.3 641.7 970.0 660.2 Q 949.9 667.4 942.0 650.0 Z" fill="#24552E" />
+    <path d="M 900.0 535.0 Q 890.8 515.9 911.3 504.0 Q 919.3 526.2 900.0 535.0 Z" fill="#24552E" />
+    <path d="M 900.0 535.0 Q 912.6 522.1 928.0 535.0 Q 912.6 547.9 900.0 535.0 Z" fill="#24552E" />
+    <path d="M 840.0 450.0 Q 825.7 437.0 839.0 420.0 Q 853.3 436.0 840.0 450.0 Z" fill="#24552E" />
+    <path d="M 840.0 450.0 Q 846.2 434.8 863.6 440.4 Q 855.0 456.6 840.0 450.0 Z" fill="#24552E" />
+    <path d="M 190.0 410 C 240.0 360, 225.0 305, 175.0 300 C 125.0 300, 100.0 345, 142.0 375 C 180.0 402, 152.0 460, 115.0 465" fill="none" stroke="#24552E" stroke-width="2.6" stroke-linecap="round" />
+    <path d="M 810.0 410 C 760.0 360, 775.0 305, 825.0 300 C 900.0 300, 900.0 345, 858.0 375 C 820.0 402, 848.0 460, 885.0 465" fill="none" stroke="#24552E" stroke-width="2.6" stroke-linecap="round" />
+  </g>
+
+  <!-- Product Name (Bold Serif Headline) -->
+  <text 
+    x="500.0" 
+    y="460" 
+    text-anchor="middle" 
+    fill="#162D1C" 
+    font-family="'Playfair Display', 'Cormorant Garamond', 'Baskerville', 'Georgia', serif" 
+    font-size="92" 
+    font-weight="700" 
+    letter-spacing="0.8px"
+  >Lemongrass</text>
+
+  <!-- Botanical Latin Name (Italic Subtitle) -->
+  <text 
+    x="500.0" 
+    y="545" 
+    text-anchor="middle" 
+    fill="#162D1C" 
+    font-family="'Cormorant Garamond', 'Georgia', serif" 
+    font-size="46" 
+    font-style="italic" 
+    letter-spacing="1.2px"
+  >Cymbopogon flexuosus</text>
+
+  <!-- Descriptor Line 1 ("100% Pure Organic") -->
+  <text 
+    x="500.0" 
+    y="665" 
+    text-anchor="middle" 
+    fill="#162D1C" 
+    font-family="'Playfair Display', 'Cormorant Garamond', 'Georgia', serif" 
+    font-size="52" 
+    font-weight="600" 
+    letter-spacing="1px"
+  >100% Pure Organic</text>
+
+  <!-- Descriptor Line 2 ("Essential Oil") -->
+  <text 
+    x="500.0" 
+    y="745" 
+    text-anchor="middle" 
+    fill="#162D1C" 
+    font-family="'Playfair Display', 'Cormorant Garamond', 'Georgia', serif" 
+    font-size="56" 
+    font-weight="600" 
+    letter-spacing="1.2px"
+  >Essential Oil</text>
+
+</svg>

@@ -1,0 +1,294 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #FCFAF6;
+    --foreground: #180D26;
+    --font-inter: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-lora: var(--font-lora), Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+}
+
+/* Modern Liquid Glass styling utility classes */
+.liquid-glass {
+  background-color: rgba(255, 255, 255, 0.74);
+  backdrop-filter: blur(24px) saturate(160%);
+  -webkit-backdrop-filter: blur(24px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 4px 24px 0 rgba(74, 59, 82, 0.04);
+}
+
+.liquid-glass-dark {
+  background-color: rgba(35, 24, 48, 0.48);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+}
+
+.liquid-glass-purple {
+  background-color: rgba(124, 58, 237, 0.10);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  border: 1px solid rgba(124, 58, 237, 0.25);
+}
+
+.liquid-glass-pill {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.liquid-glass-pill:hover {
+  transform: translateY(-1px);
+}
+
+/* Botanical Glow Highlights */
+.glow-purple {
+  box-shadow: 0 0 40px -10px rgba(176, 152, 213, 0.5);
+}
+
+.glow-subtle {
+  box-shadow: 0 8px 30px rgba(74, 59, 82, 0.06);
+}
+
+.btn-vibrant-primary {
+  background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 50%, #6D28D9 100%) !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 8px 28px rgba(124, 58, 237, 0.65);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s;
+}
+
+.btn-vibrant-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 36px rgba(124, 58, 237, 0.85);
+}
+
+.btn-vibrant-secondary {
+  background-color: rgba(24, 13, 38, 0.68) !important;
+  backdrop-filter: blur(28px) saturate(180%);
+  -webkit-backdrop-filter: blur(28px) saturate(180%);
+  border: 1.5px solid rgba(255, 255, 255, 0.38) !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s, box-shadow 0.2s;
+}
+
+.btn-vibrant-secondary:hover {
+  transform: translateY(-2px);
+  background-color: rgba(38, 20, 60, 0.85) !important;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
+}
+
+/* Custom Scrollbar for sleek aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(243, 240, 247, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(176, 152, 213, 0.5);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(176, 152, 213, 0.8);
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-inter);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-lora);
+}
+
+/* Selection colour */
+::selection {
+  background-color: #B098D5;
+  color: #FFFFFF;
+}
+
+/* Shimmer animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 2.5s infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Glow pulse animation */
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+/* ==========================================================================
+   Google Translate Elements Suppression & Clean Layout
+   ========================================================================== */
+
+/* Fully hide Google Translate top banner iframe, bar, and popups */
+.goog-te-banner-frame,
+.goog-te-banner-frame.skiptranslate,
+iframe.goog-te-banner-frame,
+iframe[name="goog-te-banner-frame"],
+iframe[id^=":"][class*="goog-te-banner-frame"],
+body>.skiptranslate,
+html>.skiptranslate,
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf,
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf-ti6hGc,
+.VIpgJd-ZVi9od-ORHb-OEVmcd,
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b,
+#goog-gt-tt,
+.goog-te-balloon-frame,
+.goog-tooltip,
+.goog-tooltip:hover {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0px !important;
+  width: 0px !important;
+  opacity: 0 !important;
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+  pointer-events: none !important;
+  z-index: -9999 !important;
+}
+
+/* Remove yellow text highlighting added by Google Translate */
+.goog-text-highlight {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Hide native TranslateElement container invisibly offscreen */
+#google_translate_element {
+  position: fixed !important;
+  top: -9999px !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  overflow: hidden !important;
+}
+
+/* Prevent body and html from shifting down when translated */
+html,
+body,
+body.translated-ltr,
+body.translated-rtl {
+  top: 0px !important;
+  margin-top: 0px !important;
+  position: static !important;
+  transform: none !important;
+}
+
+/* ==========================================================================
+   Right-to-Left (RTL) Layout Helpers
+   ========================================================================== */
+
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .rtl-flip {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .chatbot-float-container {
+  left: 28px;
+  right: auto;
+}
+
+@media (max-width: 768px) {
+  .chatbot-float-container {
+    bottom: 20px !important;
+    right: 16px !important;
+  }
+
+  [dir="rtl"] .chatbot-float-container {
+    left: 16px !important;
+    right: auto !important;
+  }
+
+  body:has(.mobile-sticky-pdp-bar) .chatbot-float-container {
+    bottom: 76px !important;
+  }
+}
+
+/* Font fallbacks for non-latin scripts */
+:lang(ar),
+:lang(fa),
+:lang(ur) {
+  font-family: system-ui, -apple-system, "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+:lang(hi),
+:lang(mr),
+:lang(ne) {
+  font-family: system-ui, -apple-system, "Nirmala UI", "Segoe UI", sans-serif;
+}
+
+:lang(zh),
+:lang(zh-CN),
+:lang(zh-TW) {
+  font-family: system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+:lang(ja) {
+  font-family: system-ui, -apple-system, "Hiragino Sans", "Meiryo", sans-serif;
+}
+
+:lang(ko) {
+  font-family: system-ui, -apple-system, "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+}

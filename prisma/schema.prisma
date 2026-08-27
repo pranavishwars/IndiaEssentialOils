@@ -1,0 +1,83 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Product {
+  id                 String         @id @default(cuid())
+  slug               String         @unique
+  name               String
+  botanicalName      String?
+  category           Category
+  subCategory        String?
+  description        String
+  shortSpec          String?
+  overview           String?
+  history            String?
+  benefits           Json?
+  manufacturingSteps Json?
+  bottleFormat       BottleFormat   @default(BOTTLE_100ML)
+  signatureColor     String?
+  labelImageUrl      String?
+  compositeImageUrl  String?
+  priceDisplay       String?        @default("Request Quote")
+  moq                String?        @default("1 kg")
+  popularityScore    Float          @default(0)
+  featured           Boolean        @default(false)
+  createdAt          DateTime       @default(now())
+  updatedAt          DateTime       @updatedAt
+  events             ProductEvent[]
+}
+
+enum Category {
+  ESSENTIAL_OIL
+  SPICE_OIL
+  CARRIER_OIL
+  FLORAL_ABSOLUTE
+  FLORAL_WATER
+  OLEORESIN
+  ORGANIC_OIL
+  AYURVEDIC
+}
+
+enum BottleFormat {
+  DROPPER_10ML
+  BOTTLE_100ML
+  BOTTLE_200ML
+  ROLL_ON_30ML
+  GIFT_BOX
+}
+
+model ProductEvent {
+  id        String    @id @default(cuid())
+  productId String
+  product   Product   @relation(fields: [productId], references: [id], onDelete: Cascade)
+  type      EventType
+  createdAt DateTime  @default(now())
+}
+
+enum EventType {
+  SEARCH_IMPRESSION
+  VIEW
+  INQUIRY
+  ADD_TO_QUOTE
+}
+
+model Inquiry {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  phone     String?
+  company   String?
+  category  String?
+  message   String
+  createdAt DateTime @default(now())
+}
