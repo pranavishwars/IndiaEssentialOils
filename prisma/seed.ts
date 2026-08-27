@@ -13,7 +13,7 @@ import { PrismaPg } from "@prisma/adapter-pg";
 import { Pool } from "pg";
 import { INITIAL_PRODUCTS } from "../src/lib/products-store";
 
-// Use the direct TCP URL (not the prisma+postgres proxy) for seed scripts
+// NeonDB cloud PostgreSQL connection
 const connectionString = process.env.DIRECT_DATABASE_URL ?? process.env.DATABASE_URL!;
 const pool = new Pool({ connectionString });
 const adapter = new PrismaPg(pool);
