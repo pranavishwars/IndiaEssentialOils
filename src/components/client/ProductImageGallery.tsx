@@ -58,12 +58,14 @@ export function ProductImageGallery({ product }: ProductImageGalleryProps) {
           style={{
             width: "100%",
             height: "100%",
-            objectFit: "contain",
+            objectFit: activeTab === "BOTTLE" ? "cover" : "contain",
+            objectPosition: "center",
             padding: activeTab === "LABEL" ? "28px" : "0px",
             transformOrigin: `${mousePos.x}% ${mousePos.y}%`,
             transform: isZooming ? (activeTab === "LABEL" ? "scale(2.2)" : "scale(1.85)") : "scale(1)",
             transition: isZooming ? "transform 0.08s ease-out" : "transform 0.3s ease-out",
             pointerEvents: "none",
+            display: "block",
           }}
         />
 

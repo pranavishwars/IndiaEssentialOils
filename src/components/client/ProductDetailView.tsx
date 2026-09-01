@@ -492,11 +492,11 @@ export function ProductDetailView({ product }: ProductDetailViewProps) {
                     e.currentTarget.style.borderColor = "rgba(124, 58, 237, 0.18)";
                   }}
                 >
-                  <div style={{ width: "100%", height: "180px", borderRadius: "14px", backgroundColor: "#F7F4EE", border: "1px solid rgba(124, 58, 237, 0.1)", display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden", marginBottom: "14px" }}>
+                  <div style={{ width: "100%", height: "180px", borderRadius: "14px", border: "1px solid rgba(124, 58, 237, 0.12)", display: "block", overflow: "hidden", marginBottom: "14px" }}>
                     <img
                       src={rel.compositeImageUrl || `/products/${rel.slug}.webp`}
                       alt={rel.name}
-                      style={{ width: "100%", height: "100%", objectFit: "contain" }}
+                      style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block" }}
                     />
                   </div>
 

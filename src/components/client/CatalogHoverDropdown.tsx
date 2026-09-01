@@ -14,7 +14,8 @@ import {
   Sprout, 
   Layers,
   ChevronDown,
-  ArrowRight
+  ArrowRight,
+  ShieldCheck
 } from "lucide-react";
 
 interface CatalogHoverDropdownProps {
@@ -80,6 +81,12 @@ export const CATALOG_CATEGORIES_MENU = [
     desc: "Classical tailams & herbal infusions",
     icon: <Sprout size={18} color="#14B8A6" />,
   },
+  {
+    name: "Batch CoA Lookup",
+    href: "/batch-lookup",
+    desc: "Instant GC-MS chemical analysis",
+    icon: <ShieldCheck size={18} color="#059669" />,
+  },
 ];
 
 export function CatalogHoverDropdown({ isLightNav, textColor, textShadow }: CatalogHoverDropdownProps) {
@@ -92,21 +99,22 @@ export function CatalogHoverDropdown({ isLightNav, textColor, textShadow }: Cata
   };
 
   const handleMouseLeave = () => {
-    // Instantaneous close or minimal buffer to prevent flickering
+    // Buffer to prevent flickering
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
     timeoutRef.current = setTimeout(() => {
       setIsOpen(false);
-    }, 80);
+    }, 100);
   };
 
-  const dropdownBg = isLightNav ? "rgba(252, 250, 246, 0.95)" : "rgba(24, 13, 38, 0.94)";
-  const dropdownBorder = isLightNav ? "1px solid rgba(124, 58, 237, 0.22)" : "1px solid rgba(255, 255, 255, 0.25)";
-  const itemHoverBg = isLightNav ? "rgba(124, 58, 237, 0.08)" : "rgba(255, 255, 255, 0.12)";
+  const dropdownBg = isLightNav ? "rgba(255, 255, 255, 0.82)" : "rgba(24, 13, 38, 0.76)";
+  const dropdownBorder = isLightNav ? "1px solid rgba(255, 255, 255, 0.9)" : "1px solid rgba(255, 255, 255, 0.32)";
+  const itemHoverBg = isLightNav ? "rgba(124, 58, 237, 0.08)" : "rgba(255, 255, 255, 0.16)";
+  const itemHoverBorder = isLightNav ? "1px solid rgba(124, 58, 237, 0.2)" : "1px solid rgba(255, 255, 255, 0.3)";
   const itemTitleColor = isLightNav ? "#180D26" : "#FFFFFF";
-  const itemSubColor = isLightNav ? "#5B486E" : "rgba(255, 255, 255, 0.65)";
+  const itemSubColor = isLightNav ? "#5B486E" : "rgba(255, 255, 255, 0.85)";
   const shadow = isLightNav
-    ? "0 24px 60px rgba(24, 13, 38, 0.16), 0 4px 16px rgba(124, 58, 237, 0.08)"
-    : "0 24px 60px rgba(0, 0, 0, 0.6), 0 0 30px rgba(124, 58, 237, 0.25)";
+    ? "0 30px 80px rgba(24, 13, 38, 0.16), 0 4px 24px rgba(124, 58, 237, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.98)"
+    : "0 30px 80px rgba(0, 0, 0, 0.75), 0 0 40px rgba(124, 58, 237, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.25)";
 
   return (
     <div
@@ -123,7 +131,7 @@ export function CatalogHoverDropdown({ isLightNav, textColor, textShadow }: Cata
           fontSize: "0.875rem",
           padding: "6px 14px",
           borderRadius: "9999px",
-          transition: "background 0.2s, color 0.4s",
+          transition: "all 0.25s cubic-bezier(0.16, 1, 0.3, 1)",
           textShadow,
           letterSpacing: "0.01em",
           whiteSpace: "nowrap",
@@ -132,9 +140,17 @@ export function CatalogHoverDropdown({ isLightNav, textColor, textShadow }: Cata
           gap: "4px",
           backgroundColor: isOpen
             ? isLightNav
-              ? "rgba(124, 58, 237, 0.14)"
-              : "rgba(255, 255, 255, 0.25)"
+              ? "rgba(124, 58, 237, 0.12)"
+              : "rgba(255, 255, 255, 0.24)"
             : "transparent",
+          backdropFilter: isOpen ? "blur(24px) saturate(180%)" : "none",
+          WebkitBackdropFilter: isOpen ? "blur(24px) saturate(180%)" : "none",
+          border: isOpen
+            ? isLightNav
+              ? "1px solid rgba(124, 58, 237, 0.2)"
+              : "1px solid rgba(255, 255, 255, 0.35)"
+            : "1px solid transparent",
+          boxShadow: isOpen ? "0 4px 16px rgba(0, 0, 0, 0.08)" : "none",
         }}
       >
         <span>Catalog</span>
@@ -142,32 +158,33 @@ export function CatalogHoverDropdown({ isLightNav, textColor, textShadow }: Cata
           size={14}
           style={{
             transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
-            transition: "transform 0.2s ease",
-            opacity: 0.8,
+            transition: "transform 0.25s cubic-bezier(0.16, 1, 0.3, 1)",
+            opacity: 0.85,
           }}
         />
       </Link>
 
-      {/* Instantaneous Liquid Glass Dropdown Menu */}
+      {/* Liquid Glass Dropdown Menu with Heavy Optical Background Diffusion */}
       {isOpen && (
         <div
+          className="liquid-glass-elevated"
           style={{
             position: "absolute",
-            top: "calc(100% + 10px)",
-            left: "-120px",
-            width: "560px",
+            top: "calc(100% + 12px)",
+            left: "-180px",
+            width: "660px",
             backgroundColor: dropdownBg,
-            backdropFilter: "blur(32px) saturate(190%)",
-            WebkitBackdropFilter: "blur(32px) saturate(190%)",
+            backdropFilter: "blur(64px) saturate(210%) brightness(105%)",
+            WebkitBackdropFilter: "blur(64px) saturate(210%) brightness(105%)",
             border: dropdownBorder,
-            borderRadius: "24px",
-            padding: "18px",
+            borderRadius: "28px",
+            padding: "20px",
             boxShadow: shadow,
             zIndex: 10005,
-            animation: "quickFadeIn 0.12s ease-out",
+            animation: "quickFadeIn 0.18s cubic-bezier(0.16, 1, 0.3, 1)",
           }}
         >
-          {/* Top Option: All Categories / Full Catalog */}
+          {/* Top Option: All Categories / Full Catalog with Liquid Glass Gradient */}
           <Link
             href="/products"
             onClick={() => setIsOpen(false)}
@@ -175,53 +192,71 @@ export function CatalogHoverDropdown({ isLightNav, textColor, textShadow }: Cata
               display: "flex",
               alignItems: "center",
               justifyContent: "space-between",
-              padding: "12px 16px",
-              borderRadius: "16px",
+              padding: "14px 18px",
+              borderRadius: "18px",
               background: isLightNav
-                ? "linear-gradient(135deg, rgba(124, 58, 237, 0.12) 0%, rgba(139, 92, 246, 0.06) 100%)"
-                : "linear-gradient(135deg, rgba(139, 92, 246, 0.3) 0%, rgba(124, 58, 237, 0.15) 100%)",
-              border: isLightNav ? "1px solid rgba(124, 58, 237, 0.25)" : "1px solid rgba(255, 255, 255, 0.25)",
+                ? "linear-gradient(135deg, rgba(124, 58, 237, 0.14) 0%, rgba(255, 255, 255, 0.55) 100%)"
+                : "linear-gradient(135deg, rgba(124, 58, 237, 0.45) 0%, rgba(35, 24, 48, 0.45) 100%)",
+              backdropFilter: "blur(30px)",
+              WebkitBackdropFilter: "blur(30px)",
+              border: isLightNav
+                ? "1px solid rgba(124, 58, 237, 0.28)"
+                : "1px solid rgba(255, 255, 255, 0.35)",
+              boxShadow: isLightNav
+                ? "0 4px 16px rgba(124, 58, 237, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.9)"
+                : "0 4px 16px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.3)",
               textDecoration: "none",
-              marginBottom: "12px",
-              transition: "transform 0.15s ease, background 0.15s ease",
+              marginBottom: "14px",
+              transition: "transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease",
             }}
-            onMouseEnter={(e) => (e.currentTarget.style.transform = "translateY(-1px)")}
-            onMouseLeave={(e) => (e.currentTarget.style.transform = "translateY(0)")}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "translateY(-1px)";
+              e.currentTarget.style.boxShadow = isLightNav
+                ? "0 6px 20px rgba(124, 58, 237, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.9)"
+                : "0 6px 20px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.3)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "translateY(0)";
+              e.currentTarget.style.boxShadow = isLightNav
+                ? "0 4px 16px rgba(124, 58, 237, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.8)"
+                : "0 4px 16px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.25)";
+            }}
           >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "14px" }}>
               <div
                 style={{
-                  width: "36px",
-                  height: "36px",
-                  borderRadius: "10px",
+                  width: "40px",
+                  height: "40px",
+                  borderRadius: "12px",
                   backgroundColor: "#7C3AED",
                   color: "#FFFFFF",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  boxShadow: "0 4px 12px rgba(124, 58, 237, 0.35)",
+                  boxShadow: "0 4px 14px rgba(124, 58, 237, 0.4)",
+                  flexShrink: 0,
                 }}
               >
-                <Layers size={18} />
+                <Layers size={19} />
               </div>
               <div>
-                <div style={{ fontSize: "0.92rem", fontWeight: 700, color: itemTitleColor }}>
+                <div style={{ fontSize: "0.95rem", fontWeight: 700, color: itemTitleColor, lineHeight: 1.3 }}>
                   All Categories & Complete Catalog
                 </div>
-                <div style={{ fontSize: "0.75rem", color: itemSubColor }}>
-                  Browse 220+ verified botanical oils & GC-MS reports
+                <div style={{ fontSize: "0.76rem", color: itemSubColor, lineHeight: 1.4, marginTop: "2px" }}>
+                  Browse 238+ verified botanical oils & GC-MS reports
                 </div>
               </div>
             </div>
 
-            <div style={{ display: "flex", alignItems: "center", gap: "4px", color: "#8B5CF6", fontWeight: 700, fontSize: "0.82rem" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "5px", color: "#8B5CF6", fontWeight: 700, fontSize: "0.84rem" }}>
               <span>Explore</span>
-              <ArrowRight size={14} />
+              <ArrowRight size={15} />
             </div>
           </Link>
 
           {/* 2-Column Categories Grid */}
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "6px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "8px 12px" }}>
             {CATALOG_CATEGORIES_MENU.map((item) => (
               <Link
                 key={item.href}
@@ -230,41 +265,52 @@ export function CatalogHoverDropdown({ isLightNav, textColor, textShadow }: Cata
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  gap: "10px",
-                  padding: "10px 12px",
-                  borderRadius: "14px",
+                  gap: "12px",
+                  padding: "10px 14px",
+                  borderRadius: "16px",
                   textDecoration: "none",
-                  transition: "background 0.12s ease, transform 0.12s ease",
+                  transition: "all 0.18s cubic-bezier(0.16, 1, 0.3, 1)",
+                  border: "1px solid transparent",
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.backgroundColor = itemHoverBg;
-                  e.currentTarget.style.transform = "translateX(2px)";
+                  e.currentTarget.style.borderColor = itemHoverBorder;
+                  e.currentTarget.style.transform = "translateX(3px)";
+                  e.currentTarget.style.boxShadow = isLightNav
+                    ? "0 4px 12px rgba(124, 58, 237, 0.06)"
+                    : "0 4px 12px rgba(0, 0, 0, 0.3)";
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.backgroundColor = "transparent";
+                  e.currentTarget.style.borderColor = "transparent";
                   e.currentTarget.style.transform = "translateX(0)";
+                  e.currentTarget.style.boxShadow = "none";
                 }}
               >
                 <div
                   style={{
-                    width: "32px",
-                    height: "32px",
-                    borderRadius: "10px",
-                    backgroundColor: isLightNav ? "rgba(124, 58, 237, 0.08)" : "rgba(255, 255, 255, 0.1)",
+                    width: "36px",
+                    height: "36px",
+                    borderRadius: "11px",
+                    backgroundColor: isLightNav ? "rgba(124, 58, 237, 0.08)" : "rgba(255, 255, 255, 0.12)",
+                    backdropFilter: "blur(12px)",
+                    WebkitBackdropFilter: "blur(12px)",
+                    border: isLightNav ? "1px solid rgba(124, 58, 237, 0.15)" : "1px solid rgba(255, 255, 255, 0.2)",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
                     flexShrink: 0,
+                    boxShadow: "0 2px 8px rgba(0, 0, 0, 0.04)",
                   }}
                 >
                   {item.icon}
                 </div>
 
                 <div style={{ flex: 1, minWidth: 0 }}>
-                  <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: "6px", lineHeight: 1.3 }}>
                     <span
                       style={{
-                        fontSize: "0.84rem",
+                        fontSize: "0.86rem",
                         fontWeight: 700,
                         color: itemTitleColor,
                         whiteSpace: "nowrap",
@@ -277,13 +323,18 @@ export function CatalogHoverDropdown({ isLightNav, textColor, textShadow }: Cata
                     {item.badge && (
                       <span
                         style={{
-                          fontSize: "0.65rem",
+                          fontSize: "0.66rem",
                           fontWeight: 800,
-                          padding: "2px 6px",
+                          padding: "3px 7px",
                           borderRadius: "9999px",
                           background: item.badgeColor,
                           color: "#FFFFFF",
                           letterSpacing: "0.02em",
+                          whiteSpace: "nowrap",
+                          display: "inline-flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          lineHeight: 1,
                           flexShrink: 0,
                         }}
                       >
@@ -293,8 +344,10 @@ export function CatalogHoverDropdown({ isLightNav, textColor, textShadow }: Cata
                   </div>
                   <span
                     style={{
-                      fontSize: "0.7rem",
+                      fontSize: "0.74rem",
                       color: itemSubColor,
+                      lineHeight: 1.35,
+                      marginTop: "2px",
                       display: "block",
                       whiteSpace: "nowrap",
                       overflow: "hidden",

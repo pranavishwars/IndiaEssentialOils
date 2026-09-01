@@ -381,7 +381,7 @@ export function SearchBar({
                       <img
                         src={product.compositeImageUrl || `/products/${product.slug}.webp`}
                         alt=""
-                        style={{ width: "100%", height: "100%", objectFit: "contain" }}
+                        style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block" }}
                       />
                     </div>
                     <div style={{ display: "flex", flexDirection: "column", gap: "2px", minWidth: 0 }}>

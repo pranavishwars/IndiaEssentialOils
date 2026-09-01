@@ -92,7 +92,7 @@ export function HomeUniversalSearchBar() {
       style={{
         width: "100%",
         maxWidth: "1280px",
-        margin: "64px auto 80px",
+        margin: "16px auto 72px",
         padding: "0 24px",
         position: "relative",
         zIndex: 30,
@@ -406,10 +406,8 @@ export function HomeUniversalSearchBar() {
                         width: "100%",
                         height: "150px",
                         borderRadius: "14px",
-                        backgroundColor: "#F7F4EE",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
+                        border: "1px solid rgba(124, 58, 237, 0.12)",
+                        display: "block",
                         overflow: "hidden",
                         marginBottom: "12px",
                       }}
@@ -417,7 +415,7 @@ export function HomeUniversalSearchBar() {
                       <img
                         src={product.compositeImageUrl || `/products/${product.slug}.webp`}
                         alt={product.name}
-                        style={{ width: "100%", height: "100%", objectFit: "contain" }}
+                        style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block" }}
                       />
                     </div>
 

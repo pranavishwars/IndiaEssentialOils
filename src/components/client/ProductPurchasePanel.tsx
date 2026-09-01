@@ -169,6 +169,15 @@ export function ProductPurchasePanel({ product, onOpenQuote }: ProductPurchasePa
             {product.moq}
           </strong>
         </div>
+
+        {/* Private Label / Turnkey OEM Customization Highlight */}
+        <div style={{ marginTop: "16px", padding: "12px 14px", borderRadius: "12px", backgroundColor: "rgba(124, 58, 237, 0.05)", border: "1px dashed rgba(124, 58, 237, 0.35)", display: "flex", alignItems: "center", gap: "10px" }}>
+          <span style={{ fontSize: "1.1rem" }}>🏷️</span>
+          <div style={{ fontSize: "0.82rem", color: "#374151", lineHeight: 1.4 }}>
+            <strong style={{ color: "#7C3AED", display: "block" }}>Custom Labeling &amp; OEM Ready</strong>
+            We print your brand logo, custom barcodes, and provide turnkey bottle packaging for your brand.
+          </div>
+        </div>
       </div>
 
       {/* Action Buttons */}

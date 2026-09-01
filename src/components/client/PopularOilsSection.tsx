@@ -129,22 +129,26 @@ export function PopularOilsSection() {
               style={{
                 position: "relative",
                 width: "100%",
-                height: "240px",
+                height: "250px",
                 borderRadius: "16px",
                 overflow: "hidden",
                 marginBottom: "16px",
-                backgroundColor: "#F7F4EE",
-                border: "1px solid rgba(124, 58, 237, 0.1)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
+                border: "1px solid rgba(124, 58, 237, 0.12)",
+                display: "block",
                 textDecoration: "none",
               }}
             >
               <img
                 src={product.compositeImageUrl || `/products/${product.slug}.webp`}
                 alt={product.name}
-                style={{ width: "100%", height: "100%", objectFit: "contain", transition: "transform 0.4s ease" }}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  objectPosition: "center",
+                  transition: "transform 0.4s ease",
+                  display: "block",
+                }}
                 onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.06)")}
                 onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
                 loading="lazy"

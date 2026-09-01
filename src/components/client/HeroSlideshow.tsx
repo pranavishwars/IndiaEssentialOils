@@ -2,11 +2,21 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { ChevronDown } from "lucide-react";
 
 const slides = [
-  { src: "/hero_background.jpg", alt: "Lavender field at sunrise" },
-  { src: "/hero_background_2.jpg", alt: "Botanical distillation apparatus" },
-  { src: "/hero_background_3.jpg", alt: "Essential oils in a greenhouse" },
+  {
+    src: "/hero_saffron_v2.jpg",
+    alt: "Kashmir saffron crocus agricultural plantation in full purple bloom with red stigmas",
+  },
+  {
+    src: "/hero_chamomile_v2.jpg",
+    alt: "German chamomile blooming meadow with crisp white petals and golden yellow flower heads",
+  },
+  {
+    src: "/hero_blue_v2.jpg",
+    alt: "Vibrant blue cornflower field with natural pathway through lush green agricultural meadow",
+  },
 ];
 
 export function HeroSlideshow() {
@@ -15,26 +25,35 @@ export function HeroSlideshow() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 6000);
     return () => clearInterval(timer);
   }, []);
 
   return (
-    <div style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}>
+    <div style={{ position: "absolute", inset: 0, width: "100%", height: "100%", overflow: "hidden" }}>
       {slides.map((slide, index) => (
-        <Image
+        <div
           key={slide.src}
-          src={slide.src}
-          alt={slide.alt}
-          fill
-          priority={index === 0}
-          sizes="100vw"
           style={{
-            objectFit: "cover",
+            position: "absolute",
+            inset: 0,
             opacity: index === currentIndex ? 1 : 0,
-            transition: "opacity 1.2s ease",
+            transform: index === currentIndex ? "scale(1.03)" : "scale(1.0)",
+            transition: "opacity 1.4s cubic-bezier(0.22, 1, 0.36, 1), transform 6s cubic-bezier(0.22, 1, 0.36, 1)",
+            pointerEvents: "none",
           }}
-        />
+        >
+          <Image
+            src={slide.src}
+            alt={slide.alt}
+            fill
+            priority={index === 0}
+            sizes="100vw"
+            style={{
+              objectFit: "cover",
+            }}
+          />
+        </div>
       ))}
 
       {/* Dark gradient on the left for text legibility — hero text is always white */}
@@ -45,26 +64,49 @@ export function HeroSlideshow() {
         pointerEvents: "none",
       }} />
 
-      {/* Slide indicators */}
-      <div style={{ position: "absolute", bottom: "32px", left: "50%", transform: "translateX(-50%)", display: "flex", gap: "10px", zIndex: 20 }}>
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentIndex(index)}
-            style={{
-              width: index === currentIndex ? "28px" : "8px",
-              height: "8px",
-              borderRadius: "9999px",
-              backgroundColor: index === currentIndex ? "white" : "rgba(255,255,255,0.4)",
-              border: "none",
-              cursor: "pointer",
-              transition: "width 0.3s ease, background-color 0.3s ease",
-              padding: 0,
-            }}
-            aria-label={`Go to slide ${index + 1}`}
-          />
-        ))}
-      </div>
+      {/* Downward Scroll Action Button */}
+      <button
+        onClick={() => {
+          window.scrollTo({
+            top: window.innerHeight,
+            behavior: "smooth",
+          });
+        }}
+        aria-label="Scroll down to explore catalog"
+        style={{
+          position: "absolute",
+          bottom: "32px",
+          left: "50%",
+          transform: "translateX(-50%)",
+          width: "48px",
+          height: "48px",
+          borderRadius: "50%",
+          backgroundColor: "rgba(35, 24, 48, 0.48)",
+          backdropFilter: "blur(20px) saturate(180%)",
+          WebkitBackdropFilter: "blur(20px) saturate(180%)",
+          border: "1px solid rgba(255, 255, 255, 0.38)",
+          color: "#FFFFFF",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          cursor: "pointer",
+          zIndex: 25,
+          boxShadow: "0 8px 32px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.25)",
+          transition: "transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease",
+        }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.transform = "translateX(-50%) translateY(3px) scale(1.08)";
+          e.currentTarget.style.backgroundColor = "rgba(124, 58, 237, 0.75)";
+          e.currentTarget.style.boxShadow = "0 12px 36px rgba(124, 58, 237, 0.5)";
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.transform = "translateX(-50%) translateY(0) scale(1.0)";
+          e.currentTarget.style.backgroundColor = "rgba(35, 24, 48, 0.48)";
+          e.currentTarget.style.boxShadow = "0 8px 32px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.25)";
+        }}
+      >
+        <ChevronDown size={24} strokeWidth={2.4} />
+      </button>
     </div>
   );
 }

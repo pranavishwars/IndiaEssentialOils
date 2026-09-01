@@ -122,10 +122,16 @@ export function Footer() {
                         style={{
                           fontSize: "0.65rem",
                           fontWeight: 800,
-                          padding: "2px 6px",
+                          padding: "3px 7px",
                           borderRadius: "9999px",
                           background: "linear-gradient(135deg, #EC4899 0%, #8B5CF6 100%)",
                           color: "#FFFFFF",
+                          whiteSpace: "nowrap",
+                          display: "inline-flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          lineHeight: 1,
+                          flexShrink: 0,
                         }}
                       >
                         {item.badge}

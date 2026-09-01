@@ -72,13 +72,24 @@ enum EventType {
   ADD_TO_QUOTE
 }
 
+enum EmailStatus {
+  PENDING
+  SENT
+  FAILED
+}
+
 model Inquiry {
-  id        String   @id @default(cuid())
-  name      String
-  email     String
-  phone     String?
-  company   String?
-  category  String?
-  message   String
-  createdAt DateTime @default(now())
+  id            String      @id @default(cuid())
+  name          String
+  email         String
+  phone         String?
+  company       String?
+  country       String?
+  category      String?
+  productIds    String[]    @default([])
+  message       String
+  emailStatus   EmailStatus @default(PENDING)
+  emailSentAt   DateTime?
+  emailAttempts Int         @default(0)
+  createdAt     DateTime    @default(now())
 }

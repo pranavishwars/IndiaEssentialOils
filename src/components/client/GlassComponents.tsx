@@ -31,7 +31,14 @@ const features = [
 // Light glass card — vibrant botanical aesthetics
 export function GlassFeatureCards() {
   return (
-    <section style={{ padding: "0 24px 80px", maxWidth: "1280px", margin: "0 auto" }}>
+    <section
+      id="explore-section"
+      style={{
+        padding: "96px 24px 32px",
+        maxWidth: "1280px",
+        margin: "0 auto",
+      }}
+    >
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
         {features.map((card, idx) => (
           <ScrollReveal key={card.title} staggerIndex={idx}>

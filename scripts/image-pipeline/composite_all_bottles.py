@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-India Essential Oils — Phase 9: Authentic Factory Label 3D Bottle Compositing Pipeline
-Rendered with crisp diffuse matte paper texture and luminous botanical pastel wash.
+India Essential Oils — Phase 10: Authentic Private Label Sticker Paper 3D Bottle Compositing Pipeline
+Rendered with realistic sticker paper texture, physical edge depth, and accurate cylindrical glass wrap.
 """
 
 import os
@@ -16,7 +16,7 @@ TEMPLATES_DIR = os.path.join(ROOT_DIR, "public/templates")
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# Precision geometry & lighting configurations (Full Wrap-Around, zero spill):
+# Precision geometry & lighting configurations:
 FORMAT_CONFIGS = {
     "DROPPER_10ML": {
         "template_file": "template_DROPPER_10ML.jpg",
@@ -24,7 +24,7 @@ FORMAT_CONFIGS = {
         "theta_max": 1.22,
         "curve_amt": 5,
         "highlight_col": 445,
-        "sheen_strength": 10,
+        "sheen_strength": 12,
     },
     "BOTTLE_100ML": {
         "template_file": "template_BOTTLE_100ML.jpg",
@@ -32,7 +32,7 @@ FORMAT_CONFIGS = {
         "theta_max": 1.20,
         "curve_amt": 9,
         "highlight_col": 425,
-        "sheen_strength": 14,
+        "sheen_strength": 15,
     },
     "BOTTLE_200ML": {
         "template_file": "template_BOTTLE_200ML.jpg",
@@ -40,7 +40,7 @@ FORMAT_CONFIGS = {
         "theta_max": 1.18,
         "curve_amt": 8,
         "highlight_col": 420,
-        "sheen_strength": 12,
+        "sheen_strength": 14,
     },
 }
 
@@ -50,7 +50,8 @@ def determine_correct_bottle_format(category, slug, current_format):
         "rose-damascena-oil", "rose-oil", "rose-damascena-absolute", "jasmine-sambac-absolute",
         "chamomile-oil-blue", "chamomile-oil-roman", "champaca-oil", "lotus-oil", "blue-lotus-oil",
         "helichrysum-oil", "costus-root-oil", "davana-oil", "kewra-oil", "neroli-oil", "agarwood-oil",
-        "lemon-balm-oil", "coffee-oil", "cypriol-oil"
+        "lemon-balm-oil", "coffee-oil", "cypriol-oil", "sandalwood-co2-extract", "jasmine-co2-extract",
+        "champaca-co2-extract"
     }
     if slug in dropper_slugs or category == "FLORAL_ABSOLUTE":
         return "DROPPER_10ML"
@@ -78,7 +79,7 @@ def load_products():
 def warp_label_cylindrical(label_img, zone_w, zone_h, theta_max, curve_amt):
     """
     Applies cylindrical projection with cosine compression, U-shaped bottom curve,
-    cylindrical ambient shading, and full edge-to-edge solid opacity (zero glass gap).
+    cylindrical ambient shading, and smooth sticker edge contact shadowing.
     """
     lw, lh = label_img.size
     pad_h = curve_amt + 24
@@ -99,10 +100,10 @@ def warp_label_cylindrical(label_img, zone_w, zone_h, theta_max, curve_amt):
         col_slice = label_img.crop((src_x, 0, src_x + 1, lh))
         col_slice = col_slice.resize((1, zone_h), Image.Resampling.BICUBIC)
 
-        # Cylindrical curvature shading (100% solid opacity across ALL dest_x, zero glass gap)
-        cos_shade = 0.84 + 0.16 * math.cos(theta)
+        # Cylindrical curvature shading (realistic lighting dropoff toward cylinder horizon)
+        cos_shade = 0.82 + 0.18 * math.cos(theta)
 
-        # Extremely crisp 1px anti-aliased silhouette edge ONLY at the exact boundary
+        # Extremely crisp anti-aliased edge falloff
         edge_dist = abs(norm_dest_x)
         alpha_mul = 1.0
         if edge_dist > 0.992:
@@ -140,15 +141,25 @@ def composite_product(product, templates_cache):
         label, zone["w"], zone["h"], cfg["theta_max"], cfg["curve_amt"]
     )
 
-    # 1. Alpha composite clean matte diffuse paper label onto the bottle
+    # 1. Add subtle paper sticker edge drop shadow behind the label for realistic thickness
+    shadow_mask = warped_label.split()[3]
+    shadow = Image.new("RGBA", warped_label.size, (0, 0, 0, 0))
+    shadow_blur = shadow_mask.filter(ImageFilter.GaussianBlur(radius=1.5))
+    shadow_color = Image.new("RGBA", warped_label.size, (15, 10, 20, 60))
+    shadow.paste(shadow_color, (0, 0), shadow_blur)
+
     composite = bottle.copy()
+    # Paste slight shadow offset for physical paper adhesion depth
+    composite.alpha_composite(shadow, (zone["x"] + 1, zone["y"] + 1))
+    
+    # 2. Alpha composite clean matte sticker paper label onto the bottle
     composite.alpha_composite(warped_label, (zone["x"], zone["y"]))
 
-    # 2. Add subtle studio light sheen column
+    # 3. Add subtle studio light sheen column reflecting across the glass and sticker
     sheen = Image.new("RGBA", composite.size, (0, 0, 0, 0))
     hl_col = cfg.get("highlight_col", zone["x"] + 45)
-    hl_width = 35
-    strength = cfg.get("sheen_strength", 22)
+    hl_width = 32
+    strength = cfg.get("sheen_strength", 14)
 
     for x in range(zone["x"], zone["x"] + zone["w"]):
         dist = abs(x - hl_col)

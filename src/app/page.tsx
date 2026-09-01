@@ -94,11 +94,11 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Value Proposition — Liquid Glass feature cards (3 boxes) */}
+        <GlassFeatureCards />
+
         {/* Universal Search Bar — Full Aesthetic Length with In-Flow Dynamic Push */}
         <HomeUniversalSearchBar />
-
-        {/* Value Proposition — Liquid Glass feature cards */}
-        <GlassFeatureCards />
 
         {/* Dynamic Popular & Trending Oils */}
         <PopularOilsSection />

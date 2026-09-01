@@ -8,7 +8,7 @@ import { Product, getCategorySlug, SLUG_TO_CATEGORY } from "@/lib/products-store
 
 const CATEGORIES = [
   { id: "ALL", label: "All Categories" },
-  { id: "CO2_OIL", label: "CO2 Oils (Extracts)", badge: "Trending ✨" },
+  { id: "CO2_OIL", label: "CO2 Oils (Extracts)" },
   { id: "ESSENTIAL_OIL", label: "Essential Oils" },
   { id: "SPICE_OIL", label: "Spice Oils" },
   { id: "CARRIER_OIL", label: "Carrier & Base Oils" },
@@ -19,15 +19,25 @@ const CATEGORIES = [
   { id: "AYURVEDIC", label: "Ayurvedic Oils" },
 ];
 
-export function CatalogView() {
+interface CatalogViewProps {
+  preselectedCategory?: string; // Enum key like "ESSENTIAL_OIL", or slug like "essential-oils"
+}
+
+export function CatalogView({ preselectedCategory }: CatalogViewProps = {}) {
   const searchParams = useSearchParams();
   const initialQuery = searchParams.get("q") || "";
   const rawInitialCat = searchParams.get("category") || "ALL";
-  const initialCategory = SLUG_TO_CATEGORY[rawInitialCat] || rawInitialCat;
+  const fromQueryParam = SLUG_TO_CATEGORY[rawInitialCat] || rawInitialCat;
+
+  // Resolve the category: path-based preselection wins over query param
+  const resolvedInitial = preselectedCategory
+    ? (SLUG_TO_CATEGORY[preselectedCategory] || preselectedCategory)
+    : fromQueryParam;
+
   const initialSort = searchParams.get("sort") || "relevance";
 
   const [query, setQuery] = useState(initialQuery);
-  const [activeCategory, setActiveCategory] = useState(initialCategory);
+  const [activeCategory, setActiveCategory] = useState(resolvedInitial);
   const [sortOption, setSortOption] = useState(initialSort);
   const [products, setProducts] = useState<Product[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -46,8 +56,24 @@ export function CatalogView() {
     }
   }, [searchParams]);
 
-  // Fetch search / filtered results
+  // Client-side cache for instant 0ms category switching
+  const cacheRef = React.useRef<Map<string, Product[]>>(new Map());
+  const prevQueryRef = React.useRef(query);
+
+  // Fetch search / filtered results with instant caching & smart debouncing
   useEffect(() => {
+    const cacheKey = `${query.trim()}|${activeCategory}|${sortOption}`;
+    if (cacheRef.current.has(cacheKey)) {
+      setProducts(cacheRef.current.get(cacheKey)!);
+      setIsLoading(false);
+      return;
+    }
+
+    // Only debounce if the search text query itself changed (user is typing)
+    const isTyping = prevQueryRef.current !== query;
+    prevQueryRef.current = query;
+    const debounceMs = isTyping ? 150 : 0;
+
     setIsLoading(true);
     const controller = new AbortController();
 
@@ -64,6 +90,7 @@ export function CatalogView() {
 
         if (res.ok) {
           const data = await res.json();
+          cacheRef.current.set(cacheKey, data.results);
           setProducts(data.results);
         }
       } catch (err: unknown) {
@@ -75,9 +102,14 @@ export function CatalogView() {
       }
     }
 
+    if (debounceMs === 0) {
+      fetchResults();
+      return () => controller.abort();
+    }
+
     const timer = setTimeout(() => {
       fetchResults();
-    }, 150);
+    }, debounceMs);
 
     return () => {
       clearTimeout(timer);
@@ -97,7 +129,7 @@ export function CatalogView() {
   };
 
   return (
-    <div style={{ display: "grid", gridTemplateColumns: "260px 1fr", gap: "36px", alignItems: "start" }}>
+    <div style={{ display: "grid", gridTemplateColumns: "280px 1fr", gap: "36px", alignItems: "start" }}>
       {/* Left Sidebar Filter — Vibrant Liquid Glass */}
       <aside
         style={{
@@ -108,18 +140,18 @@ export function CatalogView() {
           WebkitBackdropFilter: "blur(24px) saturate(160%)",
           border: "1px solid rgba(124, 58, 237, 0.2)",
           borderRadius: "24px",
-          padding: "28px 20px",
+          padding: "24px 16px",
           boxShadow: "0 8px 30px rgba(24, 13, 38, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.8)",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "20px", color: "#180D26" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "18px", color: "#180D26", paddingLeft: "6px" }}>
           <Filter size={18} color="#7C3AED" />
           <h3 style={{ fontSize: "1.1rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", margin: 0, color: "#180D26" }}>
             Categories
           </h3>
         </div>
 
-        <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
           {CATEGORIES.map(cat => {
             const isActive = activeCategory === cat.id;
             return (
@@ -129,7 +161,7 @@ export function CatalogView() {
                 style={{
                   width: "100%",
                   textAlign: "left",
-                  padding: "10px 14px",
+                  padding: "9px 12px",
                   borderRadius: "14px",
                   fontSize: "0.875rem",
                   fontWeight: isActive ? 700 : 600,
@@ -140,7 +172,6 @@ export function CatalogView() {
                   cursor: "pointer",
                   display: "flex",
                   alignItems: "center",
-                  justifyContent: "space-between",
                   transition: "background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease",
                   boxShadow: isActive ? "0 4px 14px rgba(124, 58, 237, 0.35)" : "none",
                 }}
@@ -151,22 +182,9 @@ export function CatalogView() {
                   if (!isActive) e.currentTarget.style.backgroundColor = "transparent";
                 }}
               >
-                <span>{cat.label}</span>
-                {cat.badge && (
-                  <span
-                    style={{
-                      fontSize: "0.68rem",
-                      fontWeight: 800,
-                      padding: "2px 8px",
-                      borderRadius: "9999px",
-                      backgroundColor: isActive ? "rgba(255, 255, 255, 0.25)" : "rgba(236, 72, 153, 0.15)",
-                      color: isActive ? "#FFFFFF" : "#DB2777",
-                      letterSpacing: "0.02em",
-                    }}
-                  >
-                    {cat.badge}
-                  </span>
-                )}
+                <span style={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", flex: 1 }}>
+                  {cat.label}
+                </span>
               </button>
             );
           })}
@@ -309,11 +327,11 @@ export function CatalogView() {
                 </div>
 
                 {/* Product Composite Studio Image */}
-                <div style={{ position: "relative", width: "100%", height: "220px", borderRadius: "16px", overflow: "hidden", marginBottom: "16px", backgroundColor: "#F7F4EE", border: "1px solid rgba(124, 58, 237, 0.1)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                <div style={{ position: "relative", width: "100%", height: "230px", borderRadius: "16px", overflow: "hidden", marginBottom: "16px", border: "1px solid rgba(124, 58, 237, 0.12)", display: "block" }}>
                   <img
                     src={product.compositeImageUrl || `/products/${product.slug}.webp`}
                     alt={product.name}
-                    style={{ width: "100%", height: "100%", objectFit: "contain", transition: "transform 0.4s ease" }}
+                    style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", transition: "transform 0.4s ease", display: "block" }}
                     onMouseEnter={e => (e.currentTarget.style.transform = "scale(1.06)")}
                     onMouseLeave={e => (e.currentTarget.style.transform = "scale(1)")}
                     loading="lazy"

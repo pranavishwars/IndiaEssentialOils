@@ -88,7 +88,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         </div>
 
         <Suspense fallback={<div style={{ padding: "40px", textAlign: "center", color: "#5B486E" }}>Loading {categoryName}...</div>}>
-          <CatalogView />
+          <CatalogView preselectedCategory={category} />
         </Suspense>
       </main>
       <Footer />

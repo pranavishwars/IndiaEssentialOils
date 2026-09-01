@@ -9,7 +9,13 @@ const prismaClientSingleton = () => {
     return null;
   }
   try {
-    const pool = new Pool({ connectionString });
+    // Low connection limit and prompt 10s idle timeout to allow serverless Postgres compute to auto-suspend
+    const pool = new Pool({
+      connectionString,
+      max: 5,
+      idleTimeoutMillis: 10000, // 10s idle connection timeout for fast compute hibernation
+      connectionTimeoutMillis: 5000,
+    });
     const adapter = new PrismaPg(pool);
     return new PrismaClient({ adapter });
   } catch (e) {
@@ -27,8 +33,7 @@ export const prisma =
     ? globalThis.prismaGlobal
     : prismaClientSingleton();
 
-if (process.env.NODE_ENV !== "production") {
-  globalThis.prismaGlobal = prisma;
-}
+// Maintain global singleton in all environments to prevent connection leakage
+globalThis.prismaGlobal = prisma;
 
 export default prisma;

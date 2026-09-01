@@ -75,16 +75,24 @@ export async function calculatePopularityScores(): Promise<{
   });
   productStore.updatePopularityScores(scoreMap);
 
-  // Attempt database sync if connected
+  // Attempt database sync if connected (batched in single transaction for zero redundant CU)
   try {
     if (prisma) {
-      for (const res of finalResults) {
-        await prisma.product.updateMany({
-          where: { slug: products.find(p => p.id === res.productId)?.slug },
-          data: { popularityScore: res.normalizedScore },
-        }).catch(() => {
-          // Fallback silently if db connection is offline
+      const updates = finalResults
+        .filter(res => {
+          const prod = products.find(p => p.id === res.productId);
+          return prod && prod.popularityScore !== res.normalizedScore;
+        })
+        .map(res => {
+          const slug = products.find(p => p.id === res.productId)?.slug;
+          return prisma!.product.updateMany({
+            where: { slug },
+            data: { popularityScore: res.normalizedScore },
+          });
         });
+
+      if (updates.length > 0) {
+        await prisma.$transaction(updates).catch(() => {});
       }
     }
   } catch (err) {
