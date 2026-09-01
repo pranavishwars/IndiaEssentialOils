@@ -29,8 +29,8 @@ export default function RequestQuotePage() {
     company: "",
     country: "",
     selectedProduct: "Lavender Essential Oil (Lavandula angustifolia)",
-    quantityTier: "25 kg - Commercial Carboy",
-    packagingType: "UN Epoxy-Lined Drums (200kg)",
+    quantityTier: "1 kg - Formulation & Lab Sample Lot",
+    packagingType: "Aluminum Bottles & Fluorinated Jars (1kg - 5kg)",
     incoterms: "CIF (Cost, Insurance & Freight to Destination Port)",
     destinationPort: "",
     requiredDocs: ["Certificate of Analysis (CoA)", "GC-MS Chromatography Report"],
@@ -433,7 +433,9 @@ export default function RequestQuotePage() {
                         cursor: "pointer",
                       }}
                     >
-                      <option value="25 kg - Commercial Carboy">25 kg Industrial Carboy (Wholesale MOQ)</option>
+                      <option value="1 kg - Formulation & Lab Sample Lot">1 kg Formulation & Lab Sample Lot (Store MOQ)</option>
+                      <option value="5 kg - Pilot Batch Canister">5 kg Pilot Batch Canister</option>
+                      <option value="25 kg - Commercial Carboy">25 kg Industrial Carboy</option>
                       <option value="50 kg - UN Steel Drum">50 kg UN Steel Drum</option>
                       <option value="100 kg - Dual Drum Lot">100 kg Dual Drum Lot</option>
                       <option value="200 kg - Full Export Steel Drum">200 kg Full Export Steel Drum</option>
@@ -460,10 +462,12 @@ export default function RequestQuotePage() {
                         cursor: "pointer",
                       }}
                     >
-                      <option value="UN Epoxy-Lined Drums (200kg)">200 kg UN Epoxy-Lined Steel Drums</option>
-                      <option value="UN-Approved Steel Drums (50kg)">50 kg UN-Approved Steel Drums</option>
+                      <option value="Aluminum Bottles & Fluorinated Jars (1kg - 5kg)">1 kg – 5 kg Aluminum Bottles & Fluorinated Jars</option>
                       <option value="HDPE Fluorinated Carboys (25kg)">25 kg HDPE Fluorinated Carboys</option>
+                      <option value="UN-Approved Steel Drums (50kg)">50 kg UN-Approved Steel Drums</option>
+                      <option value="UN Epoxy-Lined Drums (200kg)">200 kg UN Epoxy-Lined Steel Drums</option>
                       <option value="IBC Totes (1000kg)">1,000 kg IBC Totes</option>
+                      <option value="Custom Private Label & Retail Bottles (OEM)">Custom Private Label & Retail Bottles (OEM)</option>
                     </select>
                   </div>
                 </div>

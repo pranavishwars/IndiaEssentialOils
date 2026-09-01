@@ -8,6 +8,7 @@ import { Product, getCategorySlug, SLUG_TO_CATEGORY } from "@/lib/products-store
 
 const CATEGORIES = [
   { id: "ALL", label: "All Categories" },
+  { id: "CO2_OIL", label: "CO2 Oils (Extracts)", badge: "Trending ✨" },
   { id: "ESSENTIAL_OIL", label: "Essential Oils" },
   { id: "SPICE_OIL", label: "Spice Oils" },
   { id: "CARRIER_OIL", label: "Carrier & Base Oils" },
@@ -137,6 +138,9 @@ export function CatalogView() {
                   backgroundImage: isActive ? "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)" : "none",
                   border: "none",
                   cursor: "pointer",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
                   transition: "background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease",
                   boxShadow: isActive ? "0 4px 14px rgba(124, 58, 237, 0.35)" : "none",
                 }}
@@ -147,7 +151,22 @@ export function CatalogView() {
                   if (!isActive) e.currentTarget.style.backgroundColor = "transparent";
                 }}
               >
-                {cat.label}
+                <span>{cat.label}</span>
+                {cat.badge && (
+                  <span
+                    style={{
+                      fontSize: "0.68rem",
+                      fontWeight: 800,
+                      padding: "2px 8px",
+                      borderRadius: "9999px",
+                      backgroundColor: isActive ? "rgba(255, 255, 255, 0.25)" : "rgba(236, 72, 153, 0.15)",
+                      color: isActive ? "#FFFFFF" : "#DB2777",
+                      letterSpacing: "0.02em",
+                    }}
+                  >
+                    {cat.badge}
+                  </span>
+                )}
               </button>
             );
           })}

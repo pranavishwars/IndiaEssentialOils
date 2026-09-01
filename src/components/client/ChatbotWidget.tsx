@@ -202,10 +202,7 @@ export function ChatbotWidget() {
       <div
         className="chatbot-float-container"
         style={{
-          position: "fixed",
-          bottom: "28px",
-          insetInlineEnd: "24px",
-          zIndex: 9998,
+          position: "relative",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",

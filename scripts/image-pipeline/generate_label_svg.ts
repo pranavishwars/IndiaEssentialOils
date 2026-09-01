@@ -854,17 +854,42 @@ export function generateLabelSvg(props: LabelProps): string {
     stroke-width="1.5"
   />
 
-  <!-- 3. Top Brand Header: INDIA ESSENTIAL OILS (Matching "NATURE LOVE." format) -->
-  <text
-    x="${leftX}"
-    y="415"
-    text-anchor="start"
-    font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Helvetica, Arial, sans-serif"
-    font-size="36"
-    font-weight="700"
-    letter-spacing="5.5"
-    fill="#4B5563"
-  >INDIA ESSENTIAL OILS</text>
+  <!-- 3. Top Brand Header: Customizable White-Label Logo Placeholder -->
+  <g>
+    <!-- Elegant Minimalist White-Label Frame -->
+    <rect
+      x="${leftX}"
+      y="380"
+      width="430"
+      height="50"
+      rx="10"
+      ry="10"
+      fill="rgba(124, 58, 237, 0.03)"
+      stroke="#9CA3AF"
+      stroke-width="1.8"
+      stroke-dasharray="6,4"
+    />
+    <text
+      x="${leftX + 20}"
+      y="414"
+      text-anchor="start"
+      font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Helvetica, Arial, sans-serif"
+      font-size="24"
+      font-weight="800"
+      letter-spacing="3.5"
+      fill="#4B5563"
+    >YOUR LOGO HERE</text>
+    <text
+      x="${leftX + 335}"
+      y="413"
+      text-anchor="start"
+      font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Helvetica, Arial, sans-serif"
+      font-size="14"
+      font-weight="700"
+      letter-spacing="1.5"
+      fill="#8B5CF6"
+    >• OEM</text>
+  </g>
 
   <!-- 4. Main Product Name in Bold Lowercase -->
   ${nameXml}
@@ -905,19 +930,19 @@ export function generateLabelSvg(props: LabelProps): string {
     fill="#4B5563"
   >${escapeXml(volumeText)}</text>
 
-  <!-- 8. Bottom Row: Circular Botanical Leaf Seal on the Right -->
-  <g transform="translate(730, 1065)">
-    <!-- Thin Circular Ring -->
-    <circle cx="0" cy="0" r="52" fill="none" stroke="#6B7280" stroke-width="3.5" />
+  <!-- 8. Bottom Row: Circular Custom White-Label Seal on the Right -->
+  <g transform="translate(730, 1060)">
+    <!-- Thin Circular Ring with dashed custom indicator -->
+    <circle cx="0" cy="0" r="48" fill="none" stroke="#6B7280" stroke-width="3" stroke-dasharray="7,3" />
     
     <!-- Stylized Botanical Sprout Branch -->
-    <path d="M -16 26 C -8 8 9 -11 22 -24" fill="none" stroke="${sealColor}" stroke-width="4.2" stroke-linecap="round" />
+    <path d="M -15 22 C -7 7 8 -10 20 -22" fill="none" stroke="${sealColor}" stroke-width="4" stroke-linecap="round" />
     <!-- Leaf 1 (Top Tip) -->
-    <path d="M 22 -24 Q 38 -38 41 -20 Q 25 -13 22 -24 Z" fill="${sealColor}" />
+    <path d="M 20 -22 Q 35 -35 38 -18 Q 23 -12 20 -22 Z" fill="${sealColor}" />
     <!-- Leaf 2 (Upper Right) -->
-    <path d="M 9 -11 Q 25 -25 28 -7 Q 12 0 9 -11 Z" fill="${sealColor}" />
+    <path d="M 8 -10 Q 23 -23 26 -6 Q 11 0 8 -10 Z" fill="${sealColor}" />
     <!-- Leaf 3 (Lower Left) -->
-    <path d="M -3 6 Q -22 -6 -22 14 Q -7 14 -3 6 Z" fill="${sealColor}" />
+    <path d="M -3 5 Q -20 -5 -20 13 Q -6 13 -3 5 Z" fill="${sealColor}" />
   </g>
 </svg>
 `;

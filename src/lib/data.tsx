@@ -1,11 +1,21 @@
 import React from "react";
 import { 
   Flower2, Flame, Droplet, Flower, Waves, Beaker, Leaf, Sprout,
-  Trophy, CheckCircle, Microscope, ShieldCheck
+  Trophy, CheckCircle, Microscope, ShieldCheck, Sparkles
 } from "lucide-react";
 
 // Real product data from indiaessentialoils.com
 export const PRODUCT_CATEGORIES = [
+  {
+    id: "co2-oils",
+    name: "CO2 Oils (Extracts)",
+    slug: "co2-oils",
+    isTrending: true,
+    badge: "Trending ✨",
+    description: "Supercritical fluid CO2 extracted botanical oils capturing full-spectrum, pristine aromatic profiles without thermal degradation or solvent residue.",
+    icon: <Sparkles size={24} strokeWidth={1.5} />,
+    sampleProducts: ["Ginger CO2 Extract", "Cardamom CO2 Extract", "Turmeric CO2 Extract", "Frankincense CO2 Extract", "Vanilla CO2 Extract", "Pink Pepper CO2 Extract", "German Chamomile CO2 Extract"],
+  },
   {
     id: "essential-oils",
     name: "Essential Oils",

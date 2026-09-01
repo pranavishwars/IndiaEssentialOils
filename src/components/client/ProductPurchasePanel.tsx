@@ -49,7 +49,7 @@ export function ProductPurchasePanel({ product, onOpenQuote }: ProductPurchasePa
         <span>/</span>
         <Link href="/products" style={{ color: "#5B486E", textDecoration: "none" }}>Catalog</Link>
         <span>/</span>
-        <Link href={`/products?category=${product.category}`} style={{ color: "#5B486E", textDecoration: "none" }}>
+        <Link href={`/products/${categorySlug}`} style={{ color: "#5B486E", textDecoration: "none" }}>
           {categoryLabel}
         </Link>
         <span>/</span>

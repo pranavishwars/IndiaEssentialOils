@@ -5,7 +5,7 @@ import "./globals.css";
 import { Navbar } from "@/components/client/Navbar";
 import { LanguageProvider } from "@/lib/language-context";
 import { GoogleTranslateWidget } from "@/components/client/GoogleTranslateWidget";
-import { ChatbotWidget } from "@/components/client/ChatbotWidget";
+import { FloatingActionsDock } from "@/components/client/FloatingActionsDock";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -248,7 +248,7 @@ export default function RootLayout({
           <GoogleTranslateWidget />
           <Navbar />
           <div className="flex-1">{children}</div>
-          <ChatbotWidget />
+          <FloatingActionsDock />
         </LanguageProvider>
       </body>
     </html>

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef, useMemo } from "react";
-import { Globe, Search, X, Check, Loader2, AlertCircle, ChevronDown } from "lucide-react";
+import { Search, X, Check, Loader2, AlertCircle } from "lucide-react";
 import {
   LanguageInfo,
   ALL_LANGUAGES,
@@ -10,17 +10,29 @@ import {
 } from "@/lib/languages-data";
 import { useLanguage } from "@/lib/language-context";
 
-interface LanguageSelectorProps {
-  scrolled?: boolean;
-  variant?: "navbar" | "mobile-menu";
+export function GoogleTranslateIcon({ size = 20, color = "currentColor" }: { size?: number; color?: string }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
+      <path
+        d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"
+        fill={color}
+      />
+    </svg>
+  );
 }
 
-export function LanguageSelector({ scrolled = false, variant = "navbar" }: LanguageSelectorProps) {
+interface LanguageSelectorProps {
+  variant?: "floating" | "navbar" | "mobile-menu";
+  scrolled?: boolean;
+}
+
+export function LanguageSelector({ variant = "floating" }: LanguageSelectorProps) {
   const { currentLanguage, currentLanguageInfo, isBlocked, isChanging, setLanguage } =
     useLanguage();
 
   const [isOpen, setIsOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
+  const [isHovered, setIsHovered] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
   const containerRef = useRef<HTMLDivElement>(null);
@@ -119,34 +131,11 @@ export function LanguageSelector({ scrolled = false, variant = "navbar" }: Langu
     handleClose();
   };
 
-  // Pure Liquid Glass Styling Tokens
-  const isDarkMode = !scrolled;
-
-  const textColor = isDarkMode ? "#FFFFFF" : "#180D26";
-  const subTextColor = isDarkMode ? "rgba(255, 255, 255, 0.65)" : "#5B486E";
-  const iconColor = isDarkMode ? "#C4B5FD" : "#7C3AED";
-  const textShadow = isDarkMode && !isOpen ? "0 1px 4px rgba(0, 0, 0, 0.4)" : "none";
-
-  // Liquid Glass Backgrounds
-  const collapsedPillBg = isDarkMode
-    ? "rgba(35, 24, 48, 0.48)"
-    : "rgba(124, 58, 237, 0.07)";
-
-  const unifiedCardBg = isDarkMode
-    ? "rgba(35, 24, 48, 0.72)"
-    : "rgba(252, 250, 246, 0.80)";
-
-  const containerBorder = isDarkMode
-    ? "1px solid rgba(255, 255, 255, 0.28)"
-    : "1px solid rgba(124, 58, 237, 0.25)";
-
-  const unifiedCardShadow = isDarkMode
-    ? "0 24px 60px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 0 24px rgba(124, 58, 237, 0.25)"
-    : "0 24px 60px rgba(24, 13, 38, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 0 24px rgba(124, 58, 237, 0.12)";
-
-  const searchBorder = isDarkMode ? "1px solid rgba(255, 255, 255, 0.16)" : "1px solid rgba(124, 58, 237, 0.18)";
-  const stickyHeaderBg = isDarkMode ? "rgba(35, 24, 48, 0.80)" : "rgba(252, 250, 246, 0.84)";
-  const stickyHeaderColor = isDarkMode ? "#C4B5FD" : "#7C3AED";
+  const textColor = "#180D26";
+  const subTextColor = "#5B486E";
+  const searchBorder = "1px solid rgba(124, 58, 237, 0.18)";
+  const stickyHeaderBg = "rgba(252, 250, 246, 0.9)";
+  const stickyHeaderColor = "#7C3AED";
 
   if (variant === "mobile-menu") {
     return (
@@ -175,7 +164,7 @@ export function LanguageSelector({ scrolled = false, variant = "navbar" }: Langu
           aria-expanded={isOpen}
         >
           <div style={{ display: "flex", alignItems: "center", gap: "10px" }} suppressHydrationWarning>
-            <Globe size={20} color="#7C3AED" />
+            <GoogleTranslateIcon size={20} color="#7C3AED" />
             <span suppressHydrationWarning>
               Language:{" "}
               <strong className="notranslate" translate="no" suppressHydrationWarning>
@@ -184,7 +173,7 @@ export function LanguageSelector({ scrolled = false, variant = "navbar" }: Langu
               ({currentLanguageInfo.name})
             </span>
           </div>
-          {isChanging ? <Loader2 size={18} color="#7C3AED" className="animate-spin" /> : <Globe size={18} color="#7C3AED" />}
+          {isChanging ? <Loader2 size={18} color="#7C3AED" className="animate-spin" /> : <GoogleTranslateIcon size={18} color="#7C3AED" />}
         </button>
 
         {isOpen && renderMobileSheet()}
@@ -263,7 +252,7 @@ export function LanguageSelector({ scrolled = false, variant = "navbar" }: Langu
                   color: "#7C3AED",
                 }}
               >
-                <Globe size={20} />
+                <GoogleTranslateIcon size={20} color="#7C3AED" />
               </div>
               <div>
                 <h3 style={{ margin: 0, fontSize: "1.05rem", fontWeight: 700, color: "#180D26" }}>
@@ -374,7 +363,7 @@ export function LanguageSelector({ scrolled = false, variant = "navbar" }: Langu
           alignItems: "flex-start",
           gap: "8px",
           fontSize: "0.78rem",
-          color: isDarkMode ? "#FCA5A5" : "#DC2626",
+          color: "#DC2626",
           lineHeight: 1.4,
         }}
       >
@@ -391,8 +380,8 @@ export function LanguageSelector({ scrolled = false, variant = "navbar" }: Langu
       <div
         style={{
           padding: "8px 16px",
-          backgroundColor: isDarkMode ? "rgba(124, 58, 237, 0.2)" : "rgba(124, 58, 237, 0.12)",
-          borderTop: isDarkMode ? "1px solid rgba(255, 255, 255, 0.1)" : "1px solid rgba(124, 58, 237, 0.2)",
+          backgroundColor: "rgba(124, 58, 237, 0.12)",
+          borderTop: "1px solid rgba(124, 58, 237, 0.2)",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -449,12 +438,8 @@ export function LanguageSelector({ scrolled = false, variant = "navbar" }: Langu
                       borderRadius: "10px",
                       border: isSelected ? "1px solid #7C3AED" : searchBorder,
                       backgroundColor: isSelected
-                        ? isDarkMode
-                          ? "rgba(139, 92, 246, 0.35)"
-                          : "rgba(124, 58, 237, 0.15)"
-                        : isDarkMode
-                          ? "rgba(255, 255, 255, 0.08)"
-                          : "rgba(124, 58, 237, 0.05)",
+                        ? "rgba(124, 58, 237, 0.15)"
+                        : "rgba(124, 58, 237, 0.05)",
                       backgroundImage: "none",
                       color: textColor,
                       cursor: "pointer",
@@ -466,16 +451,12 @@ export function LanguageSelector({ scrolled = false, variant = "navbar" }: Langu
                     }}
                     onMouseEnter={(e) => {
                       if (!isSelected) {
-                        e.currentTarget.style.backgroundColor = isDarkMode
-                          ? "rgba(255, 255, 255, 0.14)"
-                          : "rgba(124, 58, 237, 0.10)";
+                        e.currentTarget.style.backgroundColor = "rgba(124, 58, 237, 0.10)";
                       }
                     }}
                     onMouseLeave={(e) => {
                       if (!isSelected) {
-                        e.currentTarget.style.backgroundColor = isDarkMode
-                          ? "rgba(255, 255, 255, 0.08)"
-                          : "rgba(124, 58, 237, 0.05)";
+                        e.currentTarget.style.backgroundColor = "rgba(124, 58, 237, 0.05)";
                       }
                     }}
                   >
@@ -596,9 +577,7 @@ export function LanguageSelector({ scrolled = false, variant = "navbar" }: Langu
           borderRadius: "8px",
           border: "none",
           backgroundColor: isSelected
-            ? isDarkMode
-              ? "rgba(139, 92, 246, 0.3)"
-              : "rgba(124, 58, 237, 0.15)"
+            ? "rgba(124, 58, 237, 0.15)"
             : "transparent",
           backgroundImage: "none",
           color: textColor,
@@ -609,9 +588,7 @@ export function LanguageSelector({ scrolled = false, variant = "navbar" }: Langu
         }}
         onMouseEnter={(e) => {
           if (!isSelected) {
-            e.currentTarget.style.backgroundColor = isDarkMode
-              ? "rgba(255, 255, 255, 0.1)"
-              : "rgba(124, 58, 237, 0.08)";
+            e.currentTarget.style.backgroundColor = "rgba(124, 58, 237, 0.08)";
           }
         }}
         onMouseLeave={(e) => {
@@ -653,263 +630,251 @@ export function LanguageSelector({ scrolled = false, variant = "navbar" }: Langu
     );
   }
 
-  // Mobile layout
-  if (isMobile) {
-    return (
-      <div style={{ position: "relative" }}>
-        <button
-          type="button"
-          onClick={() => handleOpen()}
-          className="liquid-glass-pill"
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "6px",
-            padding: "0 12px",
-            height: "40px",
-            borderRadius: "9999px",
-            backgroundColor: collapsedPillBg,
-            backdropFilter: "blur(24px) saturate(180%)",
-            WebkitBackdropFilter: "blur(24px) saturate(180%)",
-            border: containerBorder,
-            color: textColor,
-            cursor: "pointer",
-            fontSize: "0.82rem",
-            fontWeight: 700,
-          }}
-          aria-label={`Change language, currently ${currentLanguageInfo.name}`}
-        >
-          {isChanging ? <Loader2 size={16} className="animate-spin" /> : <Globe size={16} strokeWidth={2} color={iconColor} />}
-          <span
-            className="notranslate"
-            translate="no"
-            suppressHydrationWarning
-            style={{
-              maxWidth: "65px",
-              overflow: "hidden",
-              textOverflow: "ellipsis",
-              whiteSpace: "nowrap",
-              lineHeight: 1,
-            }}
-          >
-            {currentLanguageInfo.nativeName}
-          </span>
-        </button>
-        {isOpen && renderMobileSheet()}
-      </div>
-    );
-  }
-
-  // Desktop Unified Seamless Liquid Glass Card
-  // When collapsed: renders as a sleek liquid-glass pill (125px)
-  // When clicked: expands smoothly to 360px where the top row IS the search bar, with the dropdown body seamlessly unified below
+  // Floating Action Button Mode (Positioned next to Chatbot)
   return (
     <div
       ref={containerRef}
-      className="language-selector-root"
+      className="language-floating-container"
       style={{
         position: "relative",
-        width: isOpen ? "360px" : "125px",
-        height: "48px",
-        flexShrink: 0,
-        transition: "width 0.22s cubic-bezier(0.16, 1, 0.3, 1)",
       }}
     >
-      {!isOpen ? (
-        /* Collapsed State: Liquid Glass Pill */
+      {/* Tooltip on hover */}
+      {isHovered && !isOpen && (
         <div
-          className="language-pill-trigger"
-          onClick={handleOpen}
-          style={{
-            width: "100%",
-            height: "48px",
-            borderRadius: "9999px",
-            boxSizing: "border-box",
-            backgroundColor: collapsedPillBg,
-            backdropFilter: "blur(28px) saturate(180%)",
-            WebkitBackdropFilter: "blur(28px) saturate(180%)",
-            border: containerBorder,
-            boxShadow: isDarkMode
-              ? "0 8px 32px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.2)"
-              : "0 2px 8px rgba(74, 59, 82, 0.04)",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            padding: "0 14px",
-            cursor: "pointer",
-            transition: "background-color 0.25s ease, border-color 0.25s ease",
-          }}
-          role="button"
-          aria-label={`Change language, currently ${currentLanguageInfo.name}`}
-        >
-          <div style={{ display: "flex", alignItems: "center", gap: "8px", minWidth: 0 }}>
-            {isChanging ? (
-              <Loader2 size={16} color={iconColor} className="animate-spin" style={{ flexShrink: 0 }} />
-            ) : (
-              <Globe size={16} color={iconColor} strokeWidth={2} style={{ flexShrink: 0 }} />
-            )}
-            <span
-              className="notranslate"
-              translate="no"
-              suppressHydrationWarning
-              style={{
-                fontSize: "0.85rem",
-                fontWeight: 700,
-                color: textColor,
-                maxWidth: "75px",
-                overflow: "hidden",
-                textOverflow: "ellipsis",
-                whiteSpace: "nowrap",
-                textShadow,
-                lineHeight: 1,
-              }}
-            >
-              {currentLanguageInfo.nativeName}
-            </span>
-          </div>
-          <ChevronDown size={14} color={iconColor} style={{ opacity: 0.7, flexShrink: 0 }} />
-        </div>
-      ) : (
-        /* Open State: Unified Liquid Glass Card (Search Bar Header + Dropdown Body in ONE Seamless Element) */
-        <div
-          className="language-unified-card"
           style={{
             position: "absolute",
-            top: 0,
-            insetInlineEnd: 0,
-            width: "360px",
-            height: "480px",
-            borderRadius: "24px",
-            boxSizing: "border-box",
-            backgroundColor: unifiedCardBg,
-            backdropFilter: "blur(28px) saturate(180%)",
-            WebkitBackdropFilter: "blur(28px) saturate(180%)",
-            border: containerBorder,
-            boxShadow: unifiedCardShadow,
-            overflow: "hidden",
-            display: "flex",
-            flexDirection: "column",
-            zIndex: 10005,
+            bottom: "calc(100% + 10px)",
+            right: 0,
+            backgroundColor: "rgba(24, 13, 38, 0.94)",
+            backdropFilter: "blur(12px)",
+            WebkitBackdropFilter: "blur(12px)",
+            color: "white",
+            fontSize: "0.82rem",
+            fontWeight: 700,
+            padding: "8px 14px",
+            borderRadius: "9999px",
+            boxShadow: "0 6px 20px rgba(0, 0, 0, 0.2)",
+            whiteSpace: "nowrap",
+            border: "1px solid rgba(124, 58, 237, 0.35)",
+            animation: "fadeIn 0.2s ease-out",
+            pointerEvents: "none",
+            zIndex: 10000,
           }}
-          role="dialog"
-          aria-label="Select Language"
-          aria-modal="true"
         >
-          {/* Top Row: THE SEARCH BAR ITSELF */}
-          <div
-            style={{
-              height: "48px",
-              minHeight: "48px",
-              padding: "0 14px",
-              display: "flex",
-              alignItems: "center",
-              gap: "10px",
-              borderBottom: isDarkMode
-                ? "1px solid rgba(255, 255, 255, 0.14)"
-                : "1px solid rgba(124, 58, 237, 0.14)",
-              boxSizing: "border-box",
-            }}
-          >
-            {isChanging ? (
-              <Loader2 size={18} color={iconColor} className="animate-spin" style={{ flexShrink: 0 }} />
-            ) : (
-              <Search size={18} color={iconColor} style={{ flexShrink: 0 }} />
-            )}
-
-            <input
-              ref={searchInputRef}
-              className="lang-search-field"
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search languages (e.g. Hindi, French)..."
-              style={{
-                flex: 1,
-                border: "none",
-                outline: "none",
-                backgroundColor: "transparent",
-                fontSize: "0.875rem",
-                fontWeight: 500,
-                color: textColor,
-                fontFamily: "inherit",
-              }}
-            />
-
-            {searchQuery && (
-              <button
-                type="button"
-                onClick={() => setSearchQuery("")}
-                style={{
-                  border: "none",
-                  backgroundColor: "transparent",
-                  cursor: "pointer",
-                  padding: "4px",
-                  display: "flex",
-                  alignItems: "center",
-                  color: subTextColor,
-                }}
-                aria-label="Clear search"
-              >
-                <X size={14} />
-              </button>
-            )}
-
-            <button
-              type="button"
-              onClick={handleClose}
-              style={{
-                width: "28px",
-                height: "28px",
-                borderRadius: "50%",
-                border: "none",
-                backgroundColor: isDarkMode ? "rgba(255, 255, 255, 0.12)" : "rgba(124, 58, 237, 0.1)",
-                color: textColor,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                cursor: "pointer",
-                transition: "background-color 0.2s",
-                flexShrink: 0,
-              }}
-              aria-label="Close language selector"
-            >
-              <X size={15} />
-            </button>
-          </div>
-
-          {/* Ad-blocker notice */}
-          {isBlocked && renderAdBlockBanner()}
-
-          {/* Scrollable Unified Body */}
-          <div
-            ref={listContainerRef}
-            style={{
-              flex: 1,
-              overflowY: "auto",
-              padding: "12px 14px 14px",
-              display: "flex",
-              flexDirection: "column",
-              gap: "10px",
-            }}
-          >
-            {renderListContent()}
-          </div>
-
-          {/* Translation loading bar */}
-          {isChanging && renderChangingFooter()}
+          Select Language ({currentLanguageInfo.name})
         </div>
       )}
 
+      {/* Floating Trigger Button with Official Google Translate Icon */}
+      <button
+        type="button"
+        onClick={() => setIsOpen(!isOpen)}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        className="language-trigger-btn"
+        style={{
+          height: "56px",
+          padding: "0 18px",
+          borderRadius: "9999px",
+          backgroundColor: isOpen ? "rgba(24, 13, 38, 0.9)" : "rgba(252, 250, 246, 0.88)",
+          backdropFilter: "blur(24px) saturate(180%)",
+          WebkitBackdropFilter: "blur(24px) saturate(180%)",
+          color: isOpen ? "#FFFFFF" : "#180D26",
+          display: "flex",
+          alignItems: "center",
+          gap: "8px",
+          border: "2px solid rgba(124, 58, 237, 0.35)",
+          boxShadow: isOpen
+            ? "0 6px 24px rgba(24, 13, 38, 0.35)"
+            : "0 6px 24px rgba(124, 58, 237, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.9)",
+          cursor: "pointer",
+          transition: "transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s, background-color 0.2s, border-color 0.2s",
+          transform: isHovered ? "scale(1.05) translateY(-2px)" : "scale(1)",
+        }}
+        aria-label={`Change language, currently ${currentLanguageInfo.name}`}
+        aria-haspopup="dialog"
+        aria-expanded={isOpen}
+      >
+        {isChanging ? (
+          <Loader2 size={20} color="#7C3AED" className="animate-spin" />
+        ) : (
+          <GoogleTranslateIcon size={22} color={isOpen ? "#C4B5FD" : "#7C3AED"} />
+        )}
+        <span
+          className="notranslate"
+          translate="no"
+          suppressHydrationWarning
+          style={{
+            fontSize: "0.88rem",
+            fontWeight: 700,
+            maxWidth: "70px",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+            whiteSpace: "nowrap",
+            lineHeight: 1,
+          }}
+        >
+          {currentLanguageInfo.nativeName}
+        </span>
+      </button>
+
+      {/* Floating Popup Card (Liquid Glass anchored above button) */}
+      {isOpen && (
+        <>
+          {isMobile && (
+            <div
+              onClick={() => setIsOpen(false)}
+              style={{
+                position: "fixed",
+                inset: 0,
+                backgroundColor: "rgba(24, 13, 38, 0.6)",
+                backdropFilter: "blur(12px)",
+                WebkitBackdropFilter: "blur(12px)",
+                zIndex: 10001,
+              }}
+            />
+          )}
+
+          <div
+            className="language-unified-card"
+            style={{
+              position: "fixed",
+              bottom: isMobile ? 0 : "96px",
+              insetInlineEnd: isMobile ? 0 : "92px",
+              width: isMobile ? "100%" : "360px",
+              height: isMobile ? "82dvh" : "480px",
+              maxHeight: isMobile ? "90dvh" : "calc(100vh - 120px)",
+              borderRadius: isMobile ? "28px 28px 0 0" : "24px",
+              boxSizing: "border-box",
+              backgroundColor: "rgba(252, 250, 246, 0.94)",
+              backdropFilter: "blur(32px) saturate(180%)",
+              WebkitBackdropFilter: "blur(32px) saturate(180%)",
+              border: "1px solid rgba(124, 58, 237, 0.25)",
+              boxShadow: "0 24px 60px rgba(24, 13, 38, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.9)",
+              overflow: "hidden",
+              display: "flex",
+              flexDirection: "column",
+              zIndex: 10005,
+              animation: isMobile ? "slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1)" : "fadeIn 0.2s ease-out",
+            }}
+            role="dialog"
+            aria-label="Select Language"
+            aria-modal="true"
+          >
+            {/* Top Row: Search Bar */}
+            <div
+              style={{
+                height: "52px",
+                minHeight: "52px",
+                padding: "0 14px",
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
+                borderBottom: "1px solid rgba(124, 58, 237, 0.14)",
+                backgroundColor: "rgba(255, 255, 255, 0.6)",
+                boxSizing: "border-box",
+              }}
+            >
+              {isChanging ? (
+                <Loader2 size={18} color="#7C3AED" className="animate-spin" style={{ flexShrink: 0 }} />
+              ) : (
+                <GoogleTranslateIcon size={20} color="#7C3AED" />
+              )}
+
+              <input
+                ref={searchInputRef}
+                className="lang-search-field"
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search languages (e.g. Hindi, French)..."
+                style={{
+                  flex: 1,
+                  border: "none",
+                  outline: "none",
+                  backgroundColor: "transparent",
+                  fontSize: "0.875rem",
+                  fontWeight: 600,
+                  color: textColor,
+                  fontFamily: "inherit",
+                }}
+              />
+
+              {searchQuery && (
+                <button
+                  type="button"
+                  onClick={() => setSearchQuery("")}
+                  style={{
+                    border: "none",
+                    backgroundColor: "transparent",
+                    cursor: "pointer",
+                    padding: "4px",
+                    display: "flex",
+                    alignItems: "center",
+                    color: subTextColor,
+                  }}
+                  aria-label="Clear search"
+                >
+                  <X size={14} />
+                </button>
+              )}
+
+              <button
+                type="button"
+                onClick={handleClose}
+                style={{
+                  width: "28px",
+                  height: "28px",
+                  borderRadius: "50%",
+                  border: "none",
+                  backgroundColor: "rgba(124, 58, 237, 0.1)",
+                  color: textColor,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  cursor: "pointer",
+                  transition: "background-color 0.2s",
+                  flexShrink: 0,
+                }}
+                aria-label="Close language selector"
+              >
+                <X size={15} />
+              </button>
+            </div>
+
+            {/* Ad-blocker notice */}
+            {isBlocked && renderAdBlockBanner()}
+
+            {/* Scrollable Unified Body */}
+            <div
+              ref={listContainerRef}
+              style={{
+                flex: 1,
+                overflowY: "auto",
+                padding: "12px 14px 14px",
+                display: "flex",
+                flexDirection: "column",
+                gap: "10px",
+              }}
+            >
+              {renderListContent()}
+            </div>
+
+            {/* Translation loading bar */}
+            {isChanging && renderChangingFooter()}
+          </div>
+        </>
+      )}
+
       <style>{`
-        .lang-search-field::placeholder {
-          color: ${isDarkMode ? "rgba(255, 255, 255, 0.5)" : "rgba(91, 72, 110, 0.65)"} !important;
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(6px); }
+          to { opacity: 1; transform: translateY(0); }
         }
-        @media (prefers-reduced-transparency: reduce) {
-          .language-unified-card, .language-pill-trigger {
-            background-color: #FFFFFF !important;
-            backdrop-filter: none !important;
-            -webkit-backdrop-filter: none !important;
-          }
+        @keyframes slideUp {
+          from { transform: translateY(100%); }
+          to { transform: translateY(0); }
         }
       `}</style>
     </div>

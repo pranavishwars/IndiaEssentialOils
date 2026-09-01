@@ -8,6 +8,7 @@ import { Product, getCategorySlug, CATEGORY_SLUGS } from "@/lib/products-store";
 
 const QUICK_CATEGORY_FILTERS = [
   { label: "All Oils", value: "ALL" },
+  { label: "CO2 Oils ✨", value: "CO2_OIL" },
   { label: "Essential Oils", value: "ESSENTIAL_OIL" },
   { label: "Carrier & Base Oils", value: "CARRIER_OIL" },
   { label: "Spice Oils", value: "SPICE_OIL" },

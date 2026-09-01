@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { SearchBar } from "./SearchBar";
 import { LanguageSelector } from "./LanguageSelector";
+import { CatalogHoverDropdown } from "./CatalogHoverDropdown";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -88,12 +89,12 @@ export function Navbar() {
             marginInlineEnd: 0,
           }}
         >
-          {/* Main Nav Pill (Links + Request Quote Button) */}
+          {/* Main Nav Pill (Home, Catalog Dropdown, Links + Request Quote Button) */}
           <nav
             style={{
               display: "flex",
               alignItems: "center",
-              gap: "4px",
+              gap: "2px",
               backgroundColor: isLightNav ? "rgba(124, 58, 237, 0.07)" : "rgba(35, 24, 48, 0.48)",
               backdropFilter: "blur(24px) saturate(180%)",
               WebkitBackdropFilter: "blur(24px) saturate(180%)",
@@ -106,8 +107,31 @@ export function Navbar() {
               transition: "all 0.4s ease",
             }}
           >
+            {/* Home Link */}
+            <Link
+              href="/"
+              style={{
+                color: textColor,
+                textDecoration: "none",
+                fontWeight: 600,
+                fontSize: "0.875rem",
+                padding: "6px 14px",
+                borderRadius: "9999px",
+                transition: "background 0.2s, color 0.4s",
+                textShadow,
+                letterSpacing: "0.01em",
+                whiteSpace: "nowrap",
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = isLightNav ? "rgba(124, 58, 237, 0.12)" : "rgba(255, 255, 255, 0.22)")}
+              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "transparent")}
+            >
+              Home
+            </Link>
+
+            {/* Instantaneous Liquid Glass Catalog Dropdown */}
+            <CatalogHoverDropdown isLightNav={isLightNav} textColor={textColor} textShadow={textShadow} />
+
             {[
-              ["Catalog", "/products"],
               ["About", "/about"],
               ["Infrastructure", "/infrastructure"],
               ["Certifications", "/certifications"],
@@ -122,7 +146,7 @@ export function Navbar() {
                   textDecoration: "none",
                   fontWeight: 600,
                   fontSize: "0.875rem",
-                  padding: "6px 16px",
+                  padding: "6px 14px",
                   borderRadius: "9999px",
                   transition: "background 0.2s, color 0.4s",
                   textShadow,
@@ -135,6 +159,7 @@ export function Navbar() {
                 {label}
               </Link>
             ))}
+
             <Link
               href="/request-quote"
               style={{
@@ -162,16 +187,6 @@ export function Navbar() {
               Request Quote
             </Link>
           </nav>
-
-          {/* Search Bar */}
-          <div className="navbar-search" style={{ display: "flex", alignItems: "center" }}>
-            <SearchBar variant="navbar" scrolled={isLightNav} />
-          </div>
-
-          {/* Language Selector */}
-          <div className="navbar-lang" style={{ display: "flex", alignItems: "center" }}>
-            <LanguageSelector scrolled={isLightNav} />
-          </div>
         </div>
 
         {/* Mobile Header Right Cluster */}

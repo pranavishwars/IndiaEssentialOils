@@ -1,27 +1,30 @@
 import React from "react";
 import Link from "next/link";
-import { ArrowRight, ShieldCheck } from "lucide-react";
+import { ArrowRight, ShieldCheck, Mail, MapPin, Sparkles } from "lucide-react";
 import { COMPANY_INFO } from "@/lib/data";
 
 export function Footer() {
   const productLinks = [
-    { name: "Essential Oils", href: "/products?category=ESSENTIAL_OIL" },
-    { name: "Spice Oils", href: "/products?category=SPICE_OIL" },
-    { name: "Carrier & Base Oils", href: "/products?category=CARRIER_OIL" },
-    { name: "Floral Absolutes", href: "/products?category=FLORAL_ABSOLUTE" },
-    { name: "Floral Waters (Hydrosols)", href: "/products?category=FLORAL_WATER" },
-    { name: "Organic Oils", href: "/products?category=ORGANIC_OIL" },
-    { name: "Ayurvedic Oils", href: "/products?category=AYURVEDIC" },
+    { name: "CO2 Oils (Extracts)", href: "/products/co2-oils", badge: "Trending ✨" },
+    { name: "Essential Oils", href: "/products/essential-oils" },
+    { name: "Spice Oils", href: "/products/spice-oils" },
+    { name: "Carrier & Base Oils", href: "/products/carrier-oils" },
+    { name: "Floral Absolutes", href: "/products/floral-absolutes" },
+    { name: "Floral Waters (Hydrosols)", href: "/products/floral-waters" },
+    { name: "Oleoresins", href: "/products/oleoresins" },
+    { name: "Organic Oils", href: "/products/organic-oils" },
+    { name: "Ayurvedic Oils", href: "/products/ayurvedic-oils" },
   ];
 
   const trustLinks = [
+    { label: "Home Page", href: "/" },
+    { label: "About Mother Herbs", href: "/about" },
+    { label: "Distillery Infrastructure", href: "/infrastructure" },
+    { label: "International Certifications", href: "/certifications" },
+    { label: "Quality & GC-MS Testing", href: "/quality" },
     { label: "GC-MS Batch Lookup", href: "/batch-lookup" },
-    { label: "Infrastructure & Distilleries", href: "/infrastructure" },
     { label: "Verified Client Reviews", href: "/reviews" },
     { label: "Knowledge Hub & Blog", href: "/blog" },
-    { label: "Quality & Testing Protocol", href: "/quality" },
-    { label: "International Certifications", href: "/certifications" },
-    { label: "About Mother Herbs", href: "/about" },
     { label: "Commercial Quote Desk", href: "/request-quote" },
     { label: "Corporate Contact", href: "/contact" },
   ];
@@ -32,13 +35,38 @@ export function Footer() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "48px", marginBottom: "64px" }}>
 
           {/* Brand Column */}
-          <div style={{ maxWidth: "320px" }}>
-            <h2 style={{ fontSize: "1.6rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#C4B5FD", marginBottom: "16px" }}>
-              {COMPANY_INFO.name}
-            </h2>
-            <p style={{ fontSize: "0.875rem", color: "rgba(255,255,255,0.7)", lineHeight: 1.75, marginBottom: "24px" }}>
-              A Division of Mother Herbs Private Limited. Leading manufacturer, exporter, and distiller of GC-MS verified botanical oils since 1999.
+          <div style={{ maxWidth: "340px" }}>
+            <Link href="/" style={{ textDecoration: "none" }}>
+              <h2 style={{ fontSize: "1.6rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#C4B5FD", marginBottom: "16px" }}>
+                {COMPANY_INFO.name}
+              </h2>
+            </Link>
+            <p style={{ fontSize: "0.875rem", color: "rgba(255,255,255,0.7)", lineHeight: 1.75, marginBottom: "20px" }}>
+              A Division of Mother Herbs Private Limited. Premier WHO-GMP & ISO 22000 certified steam distillation distillery and bulk wholesale exporter of pure botanical oils.
             </p>
+
+            <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginBottom: "24px" }}>
+              <a
+                href="mailto:pranavishwars@gmail.com"
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "8px",
+                  color: "#C4B5FD",
+                  fontSize: "0.85rem",
+                  fontWeight: 600,
+                  textDecoration: "none",
+                }}
+              >
+                <Mail size={16} color="#A855F7" />
+                <span>pranavishwars@gmail.com</span>
+              </a>
+
+              <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", color: "rgba(255,255,255,0.65)", fontSize: "0.85rem" }}>
+                <MapPin size={16} color="#A855F7" />
+                <span>New Delhi, India &bull; Global Bulk Export</span>
+              </div>
+            </div>
 
             <div style={{ display: "flex", gap: "10px" }}>
               <a
@@ -63,7 +91,7 @@ export function Footer() {
                   transition: "all 0.2s",
                 }}
               >
-                <ShieldCheck size={16} /> TrustSeal
+                <ShieldCheck size={16} /> TrustSeal Verified
               </a>
             </div>
           </div>
@@ -73,18 +101,40 @@ export function Footer() {
             <h3 style={{ fontSize: "0.75rem", fontWeight: 800, color: "#A855F7", textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: "20px" }}>
               Botanical Catalog
             </h3>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "10px" }}>
               {productLinks.map((item) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none", fontSize: "0.875rem", transition: "color 0.2s" }}
+                    style={{
+                      color: "rgba(255,255,255,0.7)",
+                      textDecoration: "none",
+                      fontSize: "0.875rem",
+                      transition: "color 0.2s",
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: "6px",
+                    }}
                   >
-                    {item.name}
+                    <span>{item.name}</span>
+                    {item.badge && (
+                      <span
+                        style={{
+                          fontSize: "0.65rem",
+                          fontWeight: 800,
+                          padding: "2px 6px",
+                          borderRadius: "9999px",
+                          background: "linear-gradient(135deg, #EC4899 0%, #8B5CF6 100%)",
+                          color: "#FFFFFF",
+                        }}
+                      >
+                        {item.badge}
+                      </span>
+                    )}
                   </Link>
                 </li>
               ))}
-              <li style={{ marginTop: "4px" }}>
+              <li style={{ marginTop: "6px" }}>
                 <Link
                   href="/products"
                   style={{ color: "#C4B5FD", textDecoration: "none", fontSize: "0.875rem", fontWeight: 700, display: "inline-flex", alignItems: "center", gap: "4px" }}
@@ -98,9 +148,9 @@ export function Footer() {
           {/* Verification & Trust Column */}
           <div>
             <h3 style={{ fontSize: "0.75rem", fontWeight: 800, color: "#A855F7", textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: "20px" }}>
-              Verification & Trust
+              Navigation & Trust
             </h3>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "10px" }}>
               {trustLinks.map((item) => (
                 <li key={item.label}>
                   <Link
@@ -122,7 +172,7 @@ export function Footer() {
             <p style={{ fontSize: "0.875rem", color: "rgba(255,255,255,0.7)", marginBottom: "16px", lineHeight: 1.6 }}>
               Receive seasonal harvest yields, crop pricing advisories, and GC-MS compliance updates.
             </p>
-            <form action="/api/subscribe" method="POST" style={{ display: "flex", gap: "8px" }}>
+            <form action="/api/subscribe" method="POST" style={{ display: "flex", gap: "8px", marginBottom: "20px" }}>
               <input
                 type="email"
                 name="email"
@@ -159,6 +209,26 @@ export function Footer() {
                 Join
               </button>
             </form>
+
+            <Link
+              href="/request-quote"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "8px",
+                padding: "12px 20px",
+                borderRadius: "14px",
+                backgroundColor: "rgba(124, 58, 237, 0.18)",
+                border: "1px solid rgba(124, 58, 237, 0.35)",
+                color: "#C4B5FD",
+                fontSize: "0.85rem",
+                fontWeight: 700,
+                textDecoration: "none",
+              }}
+            >
+              <span>Request Commercial Quote</span>
+              <ArrowRight size={14} />
+            </Link>
           </div>
 
         </div>
@@ -177,7 +247,7 @@ export function Footer() {
         }}
       >
         <p style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.5)", margin: 0 }}>
-          &copy; {new Date().getFullYear()} {COMPANY_INFO.name} ({COMPANY_INFO.parentCompany}). All rights reserved.
+          &copy; {new Date().getFullYear()} {COMPANY_INFO.name} ({COMPANY_INFO.parentCompany}). All rights reserved. &bull; Contact: <a href="mailto:pranavishwars@gmail.com" style={{ color: "#C4B5FD", textDecoration: "none" }}>pranavishwars@gmail.com</a>
         </p>
         <div style={{ display: "flex", gap: "24px" }}>
           <Link href="/privacy" style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>

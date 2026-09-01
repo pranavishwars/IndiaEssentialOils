@@ -16,7 +16,7 @@ export function ProductQuoteModal({ isOpen, onClose, product }: ProductQuoteModa
     email: "",
     company: "",
     country: "",
-    quantity: "25 kg (Industrial Carboy)",
+    quantity: "1 kg (Formulation & Store MOQ)",
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -304,7 +304,9 @@ export function ProductQuoteModal({ isOpen, onClose, product }: ProductQuoteModa
                       cursor: "pointer",
                     }}
                   >
-                    <option value="25 kg (Industrial Carboy)">25 kg Industrial Carboy (Wholesale MOQ)</option>
+                    <option value="1 kg (Formulation & Store MOQ)">1 kg (Formulation & Store MOQ)</option>
+                    <option value="5 kg (Pilot Batch Canister)">5 kg Pilot Batch Canister</option>
+                    <option value="25 kg (Industrial Carboy)">25 kg Industrial Carboy</option>
                     <option value="50 kg (UN Steel Drum)">50 kg UN Steel Drum</option>
                     <option value="100 kg (Dual Drum Lot)">100 kg Dual Drum Lot</option>
                     <option value="200 kg (Full Export Drum)">200 kg Full Export Steel Drum</option>
