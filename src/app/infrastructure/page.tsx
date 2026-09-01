@@ -19,10 +19,11 @@ import {
 export const metadata: Metadata = {
   title: "Manufacturing & Distillation Infrastructure | India Essential Oils",
   description:
-    "Explore our world-class botanical extraction infrastructure: multi-boiler steam distillation stills, mechanical cold-pressing units, 1,000 MT climate-controlled storage, 5,000+ hectares wild collection, and in-house GC-MS testing laboratory.",
+    "Explore our world-class botanical extraction infrastructure: multi-boiler steam distillation stills, supercritical CO2 SFE extraction autoclaves, mechanical cold-pressing units, 1,000 MT climate-controlled storage, and in-house GC-MS testing laboratory.",
   keywords: [
     "essential oil distillation plant",
     "steam distillation facility India",
+    "supercritical CO2 extraction facility",
     "cold pressed carrier oil unit",
     "botanical extraction infrastructure",
     "essential oil manufacturer Delhi",
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "World-Class Distillation & Extraction Infrastructure | India Essential Oils",
     description:
-      "Modern 316-grade stainless steel steam distillation columns, expellers, 1,000 MT warehousing, and ISO 22000/GMP certified processing plants.",
+      "Modern 316-grade stainless steel steam distillation columns, supercritical CO2 extractors, expellers, 1,000 MT warehousing, and ISO 22000/GMP certified processing plants.",
     images: ["/infrastructure_hero.jpg"],
   },
 };
@@ -85,16 +86,16 @@ export default function InfrastructurePage() {
       ],
     },
     {
-      title: "4. Cleanroom Nitrogen Inerting & Bottling",
-      subtitle: "Oxidation-Free Automated Packaging",
-      desc: "Our cleanroom bottling lines utilize 99.999% ultra-pure nitrogen gas displacement capping. By purging atmospheric oxygen from the headspace of every amber bottle, canister, and drum, sensitive unsaturated oils are protected from oxidative rancidity during transit.",
+      title: "4. Supercritical CO₂ Fluid Extraction (SFE)",
+      subtitle: "Sub-Zero Thermal & Solvent-Free Bioactive Recovery",
+      desc: "Our high-pressure supercritical CO₂ extraction bays operate at physiological temperatures (31.1°C), recovering pristine volatile monoterpenes, top-note aromatics, and lipophilic spice fractions with zero petrochemical solvents or thermal scorching.",
       icon: <Wind size={28} color="#0284C7" />,
       bg: "rgba(2, 132, 199, 0.12)",
       border: "rgba(2, 132, 199, 0.25)",
       features: [
-        "Automated volumetric piston liquid dispensers",
-        "Nitrogen purge and positive-pressure capping hoods",
-        "Private label retail formats (5ml–200ml) & bulk drums (25kg–200kg)",
+        "Dual-vessel high-pressure extraction autoclaves (up to 500 bar)",
+        "Closed-loop 99.5% food-grade CO₂ solvent recycling system",
+        "Select botanical extracts, oleoresins, and delicate floral isolates",
       ],
     },
   ];
@@ -307,6 +308,69 @@ export default function InfrastructurePage() {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Packaging & Bottling Dedicated Callout */}
+          <div
+            className="liquid-glass-elevated"
+            style={{
+              marginTop: "32px",
+              borderRadius: "24px",
+              padding: "24px 32px",
+              backgroundColor: "rgba(124, 58, 237, 0.08)",
+              border: "1px solid rgba(124, 58, 237, 0.25)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              flexWrap: "wrap",
+              gap: "16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
+              <div
+                style={{
+                  width: "48px",
+                  height: "48px",
+                  borderRadius: "14px",
+                  backgroundColor: "#7C3AED",
+                  color: "#FFFFFF",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexShrink: 0,
+                  boxShadow: "0 4px 12px rgba(124, 58, 237, 0.35)",
+                }}
+              >
+                <Boxes size={24} />
+              </div>
+              <div>
+                <h4 style={{ fontSize: "1.05rem", fontWeight: 700, color: "#180D26", margin: "0 0 4px 0" }}>
+                  Looking for Custom Bottling, Private Labeling &amp; Export Packaging?
+                </h4>
+                <p style={{ fontSize: "0.88rem", color: "#5B486E", margin: 0 }}>
+                  Explore cleanroom nitrogen inerting, retail dropper formats (5ml–200ml), and UN-certified wholesale drums.
+                </p>
+              </div>
+            </div>
+
+            <Link
+              href="/packaging"
+              className="btn-vibrant-primary"
+              style={{
+                padding: "12px 24px",
+                borderRadius: "9999px",
+                fontWeight: 700,
+                fontSize: "0.88rem",
+                textDecoration: "none",
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "8px",
+                boxShadow: "0 4px 16px rgba(124, 58, 237, 0.4)",
+              }}
+            >
+              <span>Explore Packaging &amp; OEM</span>
+              <ArrowRight size={16} />
+            </Link>
           </div>
         </section>
 

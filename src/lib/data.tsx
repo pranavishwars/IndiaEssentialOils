@@ -99,9 +99,11 @@ We supply verified B2B formulators, cosmetic manufacturers, pharmaceutical house
 
 Our industrial catalog spans over 200 botanical oils across 8 primary categories. We fulfill commercial wholesale orders in 25kg fluorinated carboys, 50kg steel drums, and 200kg export drums, accompanied by lot-specific Certificates of Analysis (CoA) and full technical dossiers.`,
   contact: {
-    address: "New Delhi, India",
-    phone: "+91",
-    email: "pranavishwars@gmail.com",
+    address: "C-39, 2nd Floor, 13th Street, Madhu Vihar, Patparganj, New Delhi - 110092, Delhi, India",
+    phone: "+91 8043807715",
+    landline: "+91-11-22233301",
+    email: "info@motherherbs.com",
+    salesEmail: "sales@indiaessentialoils.com",
     indiamart: "https://www.indiamart.com/indiaessentialoils/",
   },
   stats: [

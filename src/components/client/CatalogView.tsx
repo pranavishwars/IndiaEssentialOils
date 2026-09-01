@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useSearchParams, useRouter } from "next/navigation";
 import { Search, Filter, ArrowRight, Loader2 } from "lucide-react";
 import { Product, getCategorySlug, SLUG_TO_CATEGORY } from "@/lib/products-store";
+import { DownloadCatalogButton } from "@/components/client/DownloadCatalogButton";
 
 const CATEGORIES = [
   { id: "ALL", label: "All Categories" },
@@ -239,28 +240,32 @@ export function CatalogView({ preselectedCategory }: CatalogViewProps = {}) {
             )}
           </div>
 
-          {/* Sort Selector */}
-          <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-            <span style={{ fontSize: "0.825rem", color: "#5B486E", fontWeight: 600 }}>Sort by:</span>
-            <select
-              value={sortOption}
-              onChange={e => setSortOption(e.target.value)}
-              style={{
-                backgroundColor: "rgba(255, 255, 255, 0.8)",
-                border: "1px solid rgba(124, 58, 237, 0.25)",
-                borderRadius: "12px",
-                padding: "6px 14px",
-                fontSize: "0.85rem",
-                fontWeight: 600,
-                color: "#180D26",
-                outline: "none",
-                cursor: "pointer",
-              }}
-            >
-              <option value="relevance">Relevance</option>
-              <option value="name">Alphabetical (A - Z)</option>
-              <option value="name_desc">Alphabetical (Z - A)</option>
-            </select>
+          {/* Sort Selector & Download Catalog Action */}
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <span style={{ fontSize: "0.825rem", color: "#5B486E", fontWeight: 600 }}>Sort by:</span>
+              <select
+                value={sortOption}
+                onChange={e => setSortOption(e.target.value)}
+                style={{
+                  backgroundColor: "rgba(255, 255, 255, 0.8)",
+                  border: "1px solid rgba(124, 58, 237, 0.25)",
+                  borderRadius: "12px",
+                  padding: "6px 14px",
+                  fontSize: "0.85rem",
+                  fontWeight: 600,
+                  color: "#180D26",
+                  outline: "none",
+                  cursor: "pointer",
+                }}
+              >
+                <option value="relevance">Relevance</option>
+                <option value="name">Alphabetical (A - Z)</option>
+                <option value="name_desc">Alphabetical (Z - A)</option>
+              </select>
+            </div>
+
+            <DownloadCatalogButton variant="pill" label="Download Catalog" />
           </div>
         </div>
 

@@ -10,7 +10,11 @@ import {
   PackageCheck,
   FileText,
   CheckCircle2,
-  ArrowRight
+  ArrowRight,
+  Sparkles,
+  Clock,
+  Droplets,
+  Wind
 } from "lucide-react";
 
 interface FAQItem {
@@ -32,6 +36,14 @@ const B2B_FAQS: FAQItem[] = [
     tags: ["WHO-GMP Certified", "Primary Distiller", "Export to 45+ Countries"],
   },
   {
+    id: "what-are-co2-oils",
+    question: "What are CO₂ Oils (Supercritical CO₂ Extracts) and how do they differ from steam-distilled oils?",
+    shortAnswer: "CO₂ extracts are obtained using supercritical carbon dioxide (CO₂) at ambient temperature (31.1°C), preserving heat-sensitive biomolecules, top-note aroma profiles, and active plant constituents with 0.00 ppm solvent residue.",
+    detailedAnswer: "Unlike traditional steam distillation which exposes delicate botanicals to high steam temperatures (100°C+) that can alter or thermal-degrade sensitive aroma compounds, Supercritical Fluid Extraction (SFE) uses pressurized, food-grade liquid CO₂ as a natural, non-flammable solvent. When pressure is released, the CO₂ gas evaporates completely, leaving 100% pure, unadulterated botanical extract. CO₂ extracts (such as Cardamom CO₂, Ginger CO₂, Vanilla CO₂, Turmeric CO₂, and Jasmine CO₂) capture both volatile aroma notes and heavier therapeutic lipophilic compounds (e.g. gingerols, curcuminoids, and lactones) that cannot pass through steam condensers, resulting in an aroma and chemical profile almost identical to the live botanical.",
+    icon: <Sparkles size={20} color="#EC4899" />,
+    tags: ["Supercritical SFE (31.1°C)", "0.00 ppm Solvent Residue", "Full-Spectrum Bioactives", "True-to-Nature Aroma"],
+  },
+  {
     id: "gcms-purity",
     question: "How is 100% purity and GC-MS chromatography guaranteed for every batch?",
     shortAnswer: "Every container includes an individual batch code linked to public Gas Chromatography–Mass Spectrometry (GC-MS) spectra and Certificate of Analysis (CoA).",
@@ -40,12 +52,44 @@ const B2B_FAQS: FAQItem[] = [
     tags: ["GC-MS Tested", "Instant Batch Lookup", "Zero Adulteration"],
   },
   {
+    id: "packaging-bottling",
+    question: "What custom packaging, glass bottle finishes, and dropper caps are available for private labeling?",
+    shortAnswer: "We offer Amber, Clear, and Matte finish glass bottles (10ml–500ml), European droppers, calibrated glass pipettes, sealed tamper-evident caps, outer cushion box packing, and aluminum/HDPE drums.",
+    detailedAnswer: "Our climate-controlled packaging suites support comprehensive contract packaging. We supply 5ml, 10ml, 20ml, 50ml, 100ml, 200ml, and 500ml glass bottles across Amber (UV-blocking), Clear, Matte Frosted, Cobalt Blue, and Emerald Green finishes. Closures include European dropper type droppers (precision drop-by-drop orifice reducers), glass pipettes, tamper-evident sealed caps, and flip tops. We also provide break-proof cushion box packing, retail presentation boxes, and ultra-pure nitrogen inerting on request.",
+    icon: <PackageCheck size={20} color="#7C3AED" />,
+    tags: ["10ml–500ml Glassware", "European Droppers", "Cushion Box Packing", "Private Label OEM"],
+  },
+  {
+    id: "dispatch-timeline",
+    question: "What is your standard order dispatch turnaround and shipping speed?",
+    shortAnswer: "We maintain ready bulk inventories of all 238+ standard oils in our New Delhi warehouse and despatch all regular orders within 48 hours of payment.",
+    detailedAnswer: "Our specialty is our promptness in service. Because we maintain substantial bulk stocks in our 1,000 MT climate-controlled warehouse, standard wholesale orders are packed and dispatched within 48 hours. We have direct tie-ups with major ocean shipping lines and express air cargo networks (DHL, FedEx, UPS Cargo), with air shipments arriving globally within 3–6 business days and full container load (FCL) sea freight via Mundra and Nhava Sheva ports.",
+    icon: <Clock size={20} color="#059669" />,
+    tags: ["⚡ 48-Hour Order Dispatch", "Ready Bulk Stock", "Worldwide Air & Sea Freight"],
+  },
+  {
+    id: "carrier-oils-cold-pressed",
+    question: "How are your virgin carrier and base oils extracted to preserve natural nutrients and fatty acids?",
+    shortAnswer: "100% mechanical cold-pressed extraction maintained strictly below 45°C without petrochemical solvents, preserving natural tocopherols, squalene, and omega fatty acids.",
+    detailedAnswer: "Our carrier oils (including Virgin Jojoba, Moringa, Rosehip, Argan, Neem, and Apricot Kernel) are extracted via hydraulic and mechanical screw expellers from premium seeds and kernels. We never apply external heating or chemical refining agents (hexane-free), yielding unrefined, cosmetic-grade virgin oils rich in natural antioxidants, essential fatty acids, and active phytosterols.",
+    icon: <Droplets size={20} color="#059669" />,
+    tags: ["Cold-Pressed (<45°C)", "Hexane-Free", "Virgin Cosmetic Grade", "Rich in Tocopherols"],
+  },
+  {
+    id: "nitrogen-capping-shelf-life",
+    question: "What is the shelf life of your botanical oils and how are they protected from oxidation?",
+    shortAnswer: "Typical shelf life ranges from 24 to 36 months, protected via amber UV-filtering glass, food-grade epoxy linings, and automated 99.999% nitrogen gas headspace inerting.",
+    detailedAnswer: "When stored in cool, dark conditions (18°C–22°C), pure essential oils and CO₂ extracts maintain peak chemical and olfactory stability for 2–3 years. To prevent oxidative rancidity during maritime logistics and long-term storage, we utilize automated 99.999% ultra-pure nitrogen gas displacement capping, replacing atmospheric oxygen in bottle and drum headspaces with inert gas.",
+    icon: <Wind size={20} color="#0284C7" />,
+    tags: ["24–36 Months Shelf Life", "99.999% Nitrogen Inerting", "Climate-Controlled Storage"],
+  },
+  {
     id: "moq-shipping",
-    question: "What are your wholesale Minimum Order Quantities (MOQ) and global delivery timelines?",
-    shortAnswer: "Wholesale supply starting from 25 kg industrial carboys up to 200 kg steel drum consignments with rapid dispatch from New Delhi.",
-    detailedAnswer: "We specialize in commercial B2B supply for cosmetic brands, personal care formulators, and pharmaceutical manufacturers worldwide. Shipments are packed in 25 kg fluorinated HDPE carboys and 200 kg epoxy-coated UN steel drums. We manage full IATA/IMDG dangerous goods declarations, with air cargo transit in 3–6 business days and full container load (FCL) sea freight via Mundra and Nhava Sheva ports.",
+    question: "What are your wholesale Minimum Order Quantities (MOQ) and packaging capacities?",
+    shortAnswer: "Wholesale supply starting from 1 kg aluminum canisters and 25 kg industrial carboys up to 200 kg steel drum consignments with rapid dispatch from New Delhi.",
+    detailedAnswer: "We specialize in commercial B2B supply for cosmetic brands, personal care formulators, and pharmaceutical manufacturers worldwide. Packaging ranges from 1kg–25kg aluminum bottles, 5kg–50kg HDPE carboys, to 200kg epoxy-lined steel drums. We manage full IATA/IMDG dangerous goods declarations, with air cargo transit in 3–6 business days and full container load (FCL) sea freight.",
     icon: <Globe2 size={20} color="#7C3AED" />,
-    tags: ["MOQ 25 kg", "200 kg Steel Drums", "Worldwide Air & Sea Freight"],
+    tags: ["MOQ 1 kg / 25 kg", "200 kg Steel Drums", "UN-Certified Hazardous Goods"],
   },
   {
     id: "compliance-docs",
@@ -56,12 +100,12 @@ const B2B_FAQS: FAQItem[] = [
     tags: ["IFRA Compliant", "GHS/MSDS Dossier", "EU & US FDA Ready"],
   },
   {
-    id: "private-label",
-    question: "Do you offer private labeling, custom botanical formulations, and custom drum packaging?",
-    shortAnswer: "Yes. Full OEM/ODM services including bespoke botanical blending, custom carrier dilutions, amber dropper bottling (10ml–100ml), and customized bulk packaging.",
-    detailedAnswer: "We support brands globally with end-to-end contract manufacturing and private labeling. Whether you require customized therapeutic essential oil blends, specialized carrier oil dilutions (Jojoba, Argan, Rosehip), or bespoke retail-ready amber glass dropper bottles with customized labeling, our New Delhi production facility is equipped to fulfill custom orders.",
-    icon: <PackageCheck size={20} color="#7C3AED" />,
-    tags: ["Private Label OEM", "Custom Blending", "10ml–200kg Packaging"],
+    id: "download-catalog",
+    question: "Can I download your complete botanical catalog and technical specifications offline?",
+    shortAnswer: "Yes. You can instantly download our complete 2026 Botanical Wholesale Catalog containing all 238+ verified oils, CAS numbers, extraction methods, and MOQs directly from our website.",
+    detailedAnswer: "We offer instant offline access to our complete 2026 product index. The downloadable catalog includes comprehensive specifications, botanical names, active constituents, standard packaging formats, and minimum order quantities. Custom wholesale quotes can also be submitted online with 24-hour turnaround from our technical commercial desk.",
+    icon: <FileText size={20} color="#7C3AED" />,
+    tags: ["Downloadable Catalog (2026)", "238+ Botanical Oils", "24h Quote Turnaround"],
   },
 ];
 

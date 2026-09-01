@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Footer } from "@/components/server/Footer";
 import { HeroSlideshow } from "@/components/client/HeroSlideshow";
@@ -6,6 +7,12 @@ import { HomeUniversalSearchBar } from "@/components/client/HomeUniversalSearchB
 import { PopularOilsSection } from "@/components/client/PopularOilsSection";
 import { CompanyVideoSection } from "@/components/client/CompanyVideoSection";
 import { HomeB2BSection } from "@/components/client/HomeB2BSection";
+
+export const metadata: Metadata = {
+  title: "Indian Essential Oil Manufacturer & B2B Exporter | India Essential Oils",
+  description:
+    "Bulk essential oils, carrier oils, spice oils and botanical extracts from India for cosmetic, personal-care, aromatherapy and formulation companies worldwide.",
+};
 
 export default function Home() {
   return (
@@ -17,7 +24,7 @@ export default function Home() {
           <HeroSlideshow />
 
           <div style={{ position: "relative", zIndex: 10, width: "100%", maxWidth: "1280px", margin: "0 auto", padding: "0 48px" }}>
-            <div style={{ maxWidth: "660px" }}>
+            <div style={{ maxWidth: "820px" }}>
 
               {/* Liquid glass badge matching navbar opacity */}
               <span
@@ -41,8 +48,19 @@ export default function Home() {
                 Direct Distillery · B2B Wholesale Exporter
               </span>
 
-              <h1 style={{ fontSize: "clamp(2.8rem, 6vw, 4.5rem)", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "white", lineHeight: 1.08, marginBottom: "22px", textShadow: "0 2px 20px rgba(0,0,0,0.35)" }}>
-                Pure Botanical<br />Extracts & Essential Oils.
+              <h1
+                style={{
+                  fontSize: "clamp(2.4rem, 4.8vw, 3.8rem)",
+                  fontWeight: 700,
+                  fontFamily: "var(--font-lora), Georgia, serif",
+                  color: "white",
+                  lineHeight: 1.25,
+                  letterSpacing: "0.015em",
+                  marginBottom: "28px",
+                  textShadow: "0 2px 20px rgba(0,0,0,0.35)",
+                }}
+              >
+                Indian Essential Oil Manufacturer<br />&amp; B2B Exporter
               </h1>
 
               {/* High-Contrast Frosted Liquid Glass Highlight Plaque for 100% Legibility */}
@@ -55,7 +73,7 @@ export default function Home() {
                   borderRadius: "22px",
                   padding: "20px 24px",
                   marginBottom: "36px",
-                  maxWidth: "580px",
+                  maxWidth: "620px",
                   boxShadow: "0 16px 40px rgba(0, 0, 0, 0.42), inset 0 1px 0 rgba(255, 255, 255, 0.22)",
                 }}
               >
@@ -73,11 +91,11 @@ export default function Home() {
                   }}
                 >
                   <span style={{ width: "7px", height: "7px", borderRadius: "50%", backgroundColor: "#A855F7" }} />
-                  A Division of Mother Herbs Pvt. Ltd.
+                  A Division of Mother Herbs Pvt. Ltd. · WHO-GMP &amp; ISO 22000 Certified
                 </div>
                 <p
                   style={{
-                    fontSize: "1.02rem",
+                    fontSize: "1.05rem",
                     color: "#FFFFFF",
                     lineHeight: 1.65,
                     margin: 0,
@@ -85,7 +103,7 @@ export default function Home() {
                     textShadow: "0 1px 3px rgba(0,0,0,0.4)",
                   }}
                 >
-                  WHO-GMP and ISO 22000 certified steam distillation plant in New Delhi. Supplying 100% pure essential oils, cold-pressed carrier oils, and GC-MS verified extracts in wholesale carboys and 200kg export drums.
+                  Bulk essential oils, carrier oils, spice oils and botanical extracts from India for cosmetic, personal-care, aromatherapy and formulation companies worldwide.
                 </p>
               </div>
 

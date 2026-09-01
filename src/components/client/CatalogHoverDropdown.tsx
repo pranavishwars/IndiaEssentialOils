@@ -99,22 +99,22 @@ export function CatalogHoverDropdown({ isLightNav, textColor, textShadow }: Cata
   };
 
   const handleMouseLeave = () => {
-    // Buffer to prevent flickering
+    // Smooth buffer to prevent flickering across gap
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
     timeoutRef.current = setTimeout(() => {
       setIsOpen(false);
-    }, 100);
+    }, 220);
   };
 
-  const dropdownBg = isLightNav ? "rgba(255, 255, 255, 0.82)" : "rgba(24, 13, 38, 0.76)";
-  const dropdownBorder = isLightNav ? "1px solid rgba(255, 255, 255, 0.9)" : "1px solid rgba(255, 255, 255, 0.32)";
-  const itemHoverBg = isLightNav ? "rgba(124, 58, 237, 0.08)" : "rgba(255, 255, 255, 0.16)";
-  const itemHoverBorder = isLightNav ? "1px solid rgba(124, 58, 237, 0.2)" : "1px solid rgba(255, 255, 255, 0.3)";
+  const dropdownBg = isLightNav ? "rgba(255, 255, 255, 0.94)" : "rgba(24, 13, 38, 0.92)";
+  const dropdownBorder = isLightNav ? "1px solid rgba(255, 255, 255, 0.95)" : "1px solid rgba(255, 255, 255, 0.35)";
+  const itemHoverBg = isLightNav ? "rgba(124, 58, 237, 0.1)" : "rgba(255, 255, 255, 0.18)";
+  const itemHoverBorder = isLightNav ? "1px solid rgba(124, 58, 237, 0.22)" : "1px solid rgba(255, 255, 255, 0.35)";
   const itemTitleColor = isLightNav ? "#180D26" : "#FFFFFF";
-  const itemSubColor = isLightNav ? "#5B486E" : "rgba(255, 255, 255, 0.85)";
+  const itemSubColor = isLightNav ? "#5B486E" : "rgba(255, 255, 255, 0.88)";
   const shadow = isLightNav
-    ? "0 30px 80px rgba(24, 13, 38, 0.16), 0 4px 24px rgba(124, 58, 237, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.98)"
-    : "0 30px 80px rgba(0, 0, 0, 0.75), 0 0 40px rgba(124, 58, 237, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.25)";
+    ? "0 30px 80px rgba(24, 13, 38, 0.18), 0 4px 24px rgba(124, 58, 237, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.98)"
+    : "0 30px 80px rgba(0, 0, 0, 0.8), 0 0 40px rgba(124, 58, 237, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.28)";
 
   return (
     <div
@@ -164,15 +164,16 @@ export function CatalogHoverDropdown({ isLightNav, textColor, textShadow }: Cata
         />
       </Link>
 
-      {/* Liquid Glass Dropdown Menu with Heavy Optical Background Diffusion */}
+      {/* Liquid Glass Dropdown Menu with Clean Navbar Clearance */}
       {isOpen && (
         <div
           className="liquid-glass-elevated"
           style={{
             position: "absolute",
-            top: "calc(100% + 12px)",
+            top: "calc(100% + 22px)",
             left: "-180px",
             width: "660px",
+            maxWidth: "min(660px, calc(100vw - 32px))",
             backgroundColor: dropdownBg,
             backdropFilter: "blur(64px) saturate(210%) brightness(105%)",
             WebkitBackdropFilter: "blur(64px) saturate(210%) brightness(105%)",
@@ -195,8 +196,8 @@ export function CatalogHoverDropdown({ isLightNav, textColor, textShadow }: Cata
               padding: "14px 18px",
               borderRadius: "18px",
               background: isLightNav
-                ? "linear-gradient(135deg, rgba(124, 58, 237, 0.14) 0%, rgba(255, 255, 255, 0.55) 100%)"
-                : "linear-gradient(135deg, rgba(124, 58, 237, 0.45) 0%, rgba(35, 24, 48, 0.45) 100%)",
+                ? "linear-gradient(135deg, rgba(124, 58, 237, 0.16) 0%, rgba(255, 255, 255, 0.85) 100%)"
+                : "linear-gradient(135deg, rgba(124, 58, 237, 0.55) 0%, rgba(35, 24, 48, 0.75) 100%)",
               backdropFilter: "blur(30px)",
               WebkitBackdropFilter: "blur(30px)",
               border: isLightNav

@@ -20,6 +20,7 @@ export function Footer() {
     { label: "Home Page", href: "/" },
     { label: "About Mother Herbs", href: "/about" },
     { label: "Distillery Infrastructure", href: "/infrastructure" },
+    { label: "Packaging & OEM Solutions", href: "/packaging" },
     { label: "International Certifications", href: "/certifications" },
     { label: "Quality & GC-MS Testing", href: "/quality" },
     { label: "GC-MS Batch Lookup", href: "/batch-lookup" },

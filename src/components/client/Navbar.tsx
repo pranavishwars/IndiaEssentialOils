@@ -134,6 +134,7 @@ export function Navbar() {
             {[
               ["About", "/about"],
               ["Infrastructure", "/infrastructure"],
+              ["Packaging", "/packaging"],
               ["Certifications", "/certifications"],
               ["Quality", "/quality"],
               ["Contact", "/contact"],
@@ -252,6 +253,7 @@ export function Navbar() {
             ["Botanical Catalog", "/products"],
             ["About Mother Herbs", "/about"],
             ["Distillery & Infrastructure", "/infrastructure"],
+            ["Packaging & OEM Bottling", "/packaging"],
             ["International Certifications", "/certifications"],
             ["Quality & GC-MS Testing", "/quality"],
             ["GC-MS Batch Lookup", "/batch-lookup"],

@@ -220,7 +220,7 @@ export default function ContactPage() {
                     <Mail size={16} color="#7C3AED" /> {COMPANY_INFO.contact.email}
                   </div>
                   <div style={{ fontSize: "0.95rem", color: "#180D26", display: "flex", alignItems: "center", gap: "6px" }}>
-                    <Phone size={16} color="#7C3AED" /> +91-11-27041414 / +91-9810000000
+                    <Phone size={16} color="#7C3AED" /> {COMPANY_INFO.contact.phone} / {COMPANY_INFO.contact.landline}
                   </div>
                 </div>
               </div>
