@@ -7,7 +7,7 @@ import {
   Sparkles, 
   ChevronLeft, 
   ChevronRight, 
-  ChevronDown,
+  ChevronDown, 
   ArrowRight, 
   ShieldCheck, 
   ThermometerSnowflake,
@@ -221,6 +221,9 @@ const CO2_PAGES: {
   },
 ];
 
+// Flat array of all products for mobile view
+const ALL_CO2_PRODUCTS: Co2Product[] = CO2_PAGES.flatMap((p) => p.products);
+
 // Verified scientific benefits grounded in Supercritical Fluid Extraction (SFE) principles & Pharmacopoeias
 const CO2_BENEFITS_DATA = [
   {
@@ -273,12 +276,12 @@ const CO2_BENEFITS_DATA = [
   },
 ];
 
-type SlideItem =
+// Desktop Slides: 1 Cover + 4 Pages (4 products each)
+type DesktopSlideItem =
   | { type: "cover" }
   | { type: "products"; pageIndex: number; pageData: typeof CO2_PAGES[number] };
 
-// Build real slides (5 total): 0 = cover, 1..4 = CO2_PAGES[0..3]
-const REAL_SLIDES: SlideItem[] = [
+const DESKTOP_REAL_SLIDES: DesktopSlideItem[] = [
   { type: "cover" },
   { type: "products", pageIndex: 0, pageData: CO2_PAGES[0] },
   { type: "products", pageIndex: 1, pageData: CO2_PAGES[1] },
@@ -286,15 +289,35 @@ const REAL_SLIDES: SlideItem[] = [
   { type: "products", pageIndex: 3, pageData: CO2_PAGES[3] },
 ];
 
-// Cloned track array for seamless infinite looping: [Slide 4, Slide 0, 1, 2, 3, 4, Slide 0]
-const TRACK_SLIDES: SlideItem[] = [
-  REAL_SLIDES[4], // Clone of last slide at index 0
-  ...REAL_SLIDES, // Indices 1 to 5
-  REAL_SLIDES[0], // Clone of first slide at index 6
+const DESKTOP_TRACK_SLIDES: DesktopSlideItem[] = [
+  DESKTOP_REAL_SLIDES[DESKTOP_REAL_SLIDES.length - 1],
+  ...DESKTOP_REAL_SLIDES,
+  DESKTOP_REAL_SLIDES[0],
+];
+
+// Mobile Slides: 1 Cover + 16 Single Product Slides (1 product per slide for vertical aspect ratio)
+type MobileSlideItem =
+  | { type: "cover" }
+  | { type: "single_product"; product: Co2Product; productIndex: number; totalProducts: number };
+
+const MOBILE_REAL_SLIDES: MobileSlideItem[] = [
+  { type: "cover" },
+  ...ALL_CO2_PRODUCTS.map((prod, idx) => ({
+    type: "single_product" as const,
+    product: prod,
+    productIndex: idx + 1,
+    totalProducts: ALL_CO2_PRODUCTS.length,
+  })),
+];
+
+const MOBILE_TRACK_SLIDES: MobileSlideItem[] = [
+  MOBILE_REAL_SLIDES[MOBILE_REAL_SLIDES.length - 1],
+  ...MOBILE_REAL_SLIDES,
+  MOBILE_REAL_SLIDES[0],
 ];
 
 export function ExploreLatestLineSection() {
-  // Track index: starts at 1 (real Slide 0 = Cover)
+  const [isMobile, setIsMobile] = useState(false);
   const [trackIndex, setTrackIndex] = useState(1);
   const [withTransition, setWithTransition] = useState(true);
   const [showBenefits, setShowBenefits] = useState(false);
@@ -304,7 +327,24 @@ export function ExploreLatestLineSection() {
   const touchEndX = useRef<number | null>(null);
   const isHoveredRef = useRef(false);
 
-  const totalRealSlides = REAL_SLIDES.length; // 5
+  useEffect(() => {
+    const handleResize = () => {
+      const mobile = window.innerWidth < 768;
+      setIsMobile((prev) => {
+        if (prev !== mobile) {
+          setWithTransition(false);
+          setTrackIndex(1);
+        }
+        return mobile;
+      });
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const totalRealSlides = isMobile ? MOBILE_REAL_SLIDES.length : DESKTOP_REAL_SLIDES.length;
+  const currentTrackSlides = isMobile ? MOBILE_TRACK_SLIDES : DESKTOP_TRACK_SLIDES;
 
   const goToNext = () => {
     if (isTransitioningRef.current) return;
@@ -330,18 +370,16 @@ export function ExploreLatestLineSection() {
   // Seamless infinite loop transition reset
   const handleTransitionEnd = () => {
     isTransitioningRef.current = false;
-    if (trackIndex === TRACK_SLIDES.length - 1) {
-      // Reached the clone of Slide 0 at the end -> jump to real Slide 0 (index 1) without animation
+    if (trackIndex === currentTrackSlides.length - 1) {
       setWithTransition(false);
       setTrackIndex(1);
     } else if (trackIndex === 0) {
-      // Reached the clone of Slide 4 at the start -> jump to real Slide 4 (index 5) without animation
       setWithTransition(false);
-      setTrackIndex(5);
+      setTrackIndex(totalRealSlides);
     }
   };
 
-  // Continuous auto-play timer
+  // Auto-play timer
   useEffect(() => {
     const timer = setInterval(() => {
       if (!isHoveredRef.current) {
@@ -350,7 +388,7 @@ export function ExploreLatestLineSection() {
     }, 6000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [isMobile]);
 
   const handleTouchStart = (e: React.TouchEvent) => {
     touchStartX.current = e.touches[0].clientX;
@@ -363,9 +401,9 @@ export function ExploreLatestLineSection() {
   const handleTouchEnd = () => {
     if (touchStartX.current !== null && touchEndX.current !== null) {
       const diff = touchStartX.current - touchEndX.current;
-      if (diff > 50) {
+      if (diff > 45) {
         goToNext();
-      } else if (diff < -50) {
+      } else if (diff < -45) {
         goToPrev();
       }
     }
@@ -373,14 +411,14 @@ export function ExploreLatestLineSection() {
     touchEndX.current = null;
   };
 
-  // Compute active dot index (0 to 4)
+  // Compute active dot index
   const activeDotIndex = (trackIndex - 1 + totalRealSlides) % totalRealSlides;
 
   return (
     <section
       id="explore-latest-line"
       style={{
-        padding: "0 24px 80px",
+        padding: "0 clamp(16px, 4vw, 24px) clamp(48px, 8vh, 80px)",
         maxWidth: "1320px",
         margin: "0 auto",
       }}
@@ -388,11 +426,7 @@ export function ExploreLatestLineSection() {
       onMouseLeave={() => { isHoveredRef.current = false; }}
     >
       {/* Section Header */}
-      <div
-        style={{
-          marginBottom: "28px",
-        }}
-      >
+      <div style={{ marginBottom: "28px" }}>
         <div
           style={{
             display: "inline-flex",
@@ -480,7 +514,7 @@ export function ExploreLatestLineSection() {
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             border: 1.5px solid rgba(124, 58, 237, 0.35);
-            color: #180D26;
+            color: "#180D26";
             display: flex;
             align-items: center;
             justify-content: center;
@@ -522,30 +556,30 @@ export function ExploreLatestLineSection() {
               height: 38px;
             }
             .co2-catalog-arrow-left {
-              left: 4px;
+              left: 6px;
             }
             .co2-catalog-arrow-right {
-              right: 4px;
+              right: 6px;
             }
           }
         `}</style>
 
-        {/* Left Side Navigation Arrow — Positioned outward */}
+        {/* Left Side Navigation Arrow */}
         <button
           onClick={goToPrev}
           aria-label="Previous catalog page"
           className="co2-catalog-arrow co2-catalog-arrow-left"
         >
-          <ChevronLeft size={24} />
+          <ChevronLeft size={22} />
         </button>
 
-        {/* Right Side Navigation Arrow — Positioned outward */}
+        {/* Right Side Navigation Arrow */}
         <button
           onClick={goToNext}
           aria-label="Next catalog page"
           className="co2-catalog-arrow co2-catalog-arrow-right"
         >
-          <ChevronRight size={24} />
+          <ChevronRight size={22} />
         </button>
 
         {/* Infinite Looping Slider Viewport (100% Full Width) */}
@@ -569,11 +603,78 @@ export function ExploreLatestLineSection() {
               willChange: "transform",
             }}
           >
-            {TRACK_SLIDES.map((slide, sIdx) => {
-              if (slide.type === "cover") {
+            {/* MOBILE RENDER: 1 Product Per Slide */}
+            {isMobile &&
+              (currentTrackSlides as MobileSlideItem[]).map((slide, sIdx) => {
+                if (slide.type === "cover") {
+                  return (
+                    <div
+                      key={`slide-mob-cover-${sIdx}`}
+                      style={{
+                        flex: "0 0 100%",
+                        width: "100%",
+                        minWidth: "100%",
+                        boxSizing: "border-box",
+                        padding: "0 4px",
+                      }}
+                    >
+                      <div
+                        className="liquid-glass-elevated"
+                        style={{
+                          position: "relative",
+                          width: "100%",
+                          height: "clamp(460px, 75vh, 560px)",
+                          borderRadius: "24px",
+                          overflow: "hidden",
+                          border: "1px solid rgba(124, 58, 237, 0.2)",
+                          boxShadow: "0 10px 30px rgba(24, 13, 38, 0.06)",
+                        }}
+                      >
+                        <Image
+                          src="/co2_extracts_collection.jpg"
+                          alt="India Essential Oils Supercritical CO2 Extracts Lineup"
+                          fill
+                          priority
+                          sizes="100vw"
+                          style={{ objectFit: "cover", objectPosition: "center" }}
+                        />
+
+                        <button
+                          onClick={goToNext}
+                          className="btn-vibrant-primary"
+                          style={{
+                            position: "absolute",
+                            bottom: "20px",
+                            right: "20px",
+                            padding: "12px 24px",
+                            borderRadius: "9999px",
+                            fontWeight: 700,
+                            fontSize: "0.88rem",
+                            display: "inline-flex",
+                            alignItems: "center",
+                            gap: "8px",
+                            border: "none",
+                            cursor: "pointer",
+                            boxShadow: "0 8px 24px rgba(124, 58, 237, 0.55)",
+                            zIndex: 10,
+                          }}
+                        >
+                          <span>Browse Products</span>
+                          <ArrowRight size={15} />
+                        </button>
+                      </div>
+                    </div>
+                  );
+                }
+
+                // Single Product Slide on Mobile
+                const prod = slide.product;
+                const isFullCatalogCard = prod.slug === "explore-all-co2";
+                const targetHref = isFullCatalogCard ? "/products/co2-oils" : `/products/co2-oils/${prod.slug}`;
+
                 return (
                   <div
-                    key={`slide-cover-${sIdx}`}
+                    key={`slide-mob-prod-${sIdx}`}
                     style={{
                       flex: "0 0 100%",
                       width: "100%",
@@ -582,295 +683,462 @@ export function ExploreLatestLineSection() {
                       padding: "0 4px",
                     }}
                   >
-                    {/* Showcase Hero Frame matching Product Grid height — Edge-to-Edge with 0 side bars */}
-                    <div
-                      className="liquid-glass-elevated"
-                      style={{
-                        position: "relative",
-                        width: "100%",
-                        height: "clamp(340px, 50vw, 680px)",
-                        borderRadius: "24px",
-                        overflow: "hidden",
-                        border: "1px solid rgba(124, 58, 237, 0.2)",
-                        boxShadow: "0 10px 30px rgba(24, 13, 38, 0.06)",
-                      }}
+                    <Link
+                      href={targetHref}
+                      style={{ textDecoration: "none", display: "block", width: "100%" }}
                     >
-                      <Image
-                        src="/co2_extracts_collection.jpg"
-                        alt="India Essential Oils Supercritical CO2 Extracts Lineup - Turmeric, Ginger, Cardamom, Sandalwood, Jasmine, Vanilla"
-                        fill
-                        priority
-                        sizes="(max-width: 1280px) 100vw, 1280px"
-                        style={{ objectFit: "cover", objectPosition: "center" }}
-                      />
-
-                      {/* Floating Browse Button — No blur or overlay text */}
-                      <button
-                        onClick={goToNext}
-                        className="btn-vibrant-primary"
+                      <div
+                        className="liquid-glass-elevated"
                         style={{
-                          position: "absolute",
-                          bottom: "clamp(16px, 3vw, 24px)",
-                          right: "clamp(16px, 3vw, 24px)",
-                          padding: "clamp(10px, 2vh, 14px) clamp(18px, 3vw, 28px)",
-                          borderRadius: "9999px",
-                          fontWeight: 700,
-                          fontSize: "clamp(0.82rem, 1.2vw, 0.92rem)",
-                          display: "inline-flex",
-                          alignItems: "center",
-                          gap: "8px",
-                          border: "none",
-                          cursor: "pointer",
-                          boxShadow: "0 8px 24px rgba(124, 58, 237, 0.55)",
-                          zIndex: 10,
-                          transition: "transform 0.2s ease, box-shadow 0.2s ease",
-                        }}
-                        onMouseEnter={(e) => {
-                          e.currentTarget.style.transform = "translateY(-2px) scale(1.03)";
-                          e.currentTarget.style.boxShadow = "0 12px 30px rgba(124, 58, 237, 0.7)";
-                        }}
-                        onMouseLeave={(e) => {
-                          e.currentTarget.style.transform = "translateY(0) scale(1)";
-                          e.currentTarget.style.boxShadow = "0 8px 24px rgba(124, 58, 237, 0.55)";
+                          width: "100%",
+                          display: "flex",
+                          flexDirection: "column",
+                          justifyContent: "space-between",
+                          borderRadius: "24px",
+                          padding: "22px",
+                          backgroundColor: isFullCatalogCard ? "rgba(24, 13, 38, 0.95)" : "rgba(255, 255, 255, 0.94)",
+                          color: isFullCatalogCard ? "#FFFFFF" : "#180D26",
+                          border: isFullCatalogCard ? "1px solid rgba(139, 92, 246, 0.4)" : "1px solid rgba(124, 58, 237, 0.22)",
+                          boxShadow: "0 10px 32px rgba(24, 13, 38, 0.08)",
+                          boxSizing: "border-box",
+                          minHeight: "clamp(460px, 75vh, 560px)",
                         }}
                       >
-                        <span>Browse Products</span>
-                        <ArrowRight size={16} />
-                      </button>
+                        <div>
+                          {/* Top Status Bar */}
+                          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "14px" }}>
+                            <span style={{ fontSize: "0.72rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase", letterSpacing: "0.08em" }}>
+                              PRODUCT {slide.productIndex} OF {slide.totalProducts}
+                            </span>
+                            <span
+                              style={{
+                                fontSize: "0.7rem",
+                                fontWeight: 700,
+                                padding: "3px 10px",
+                                borderRadius: "9999px",
+                                backgroundColor: isFullCatalogCard ? "rgba(139, 92, 246, 0.25)" : "rgba(124, 58, 237, 0.1)",
+                                color: isFullCatalogCard ? "#DDD6FE" : "#7C3AED",
+                              }}
+                            >
+                              Supercritical SFE
+                            </span>
+                          </div>
+
+                          {/* Product Image */}
+                          <div
+                            style={{
+                              position: "relative",
+                              width: "100%",
+                              height: "220px",
+                              borderRadius: "16px",
+                              overflow: "hidden",
+                              marginBottom: "16px",
+                              backgroundColor: isFullCatalogCard ? "rgba(255, 255, 255, 0.05)" : "#EDE8DF",
+                              border: "1px solid rgba(124, 58, 237, 0.14)",
+                            }}
+                          >
+                            <Image
+                              src={prod.compositeImageUrl}
+                              alt={prod.name}
+                              fill
+                              sizes="100vw"
+                              style={{ objectFit: "cover", objectPosition: "center" }}
+                            />
+                          </div>
+
+                          {/* Product Details */}
+                          <h3
+                            style={{
+                              fontSize: "1.3rem",
+                              fontWeight: 700,
+                              fontFamily: "var(--font-lora), Georgia, serif",
+                              color: isFullCatalogCard ? "#FFFFFF" : "#180D26",
+                              margin: "0 0 6px 0",
+                              lineHeight: 1.25,
+                            }}
+                          >
+                            {renderWithCo2(prod.name)}
+                          </h3>
+
+                          <div
+                            style={{
+                              fontSize: "0.9rem",
+                              fontStyle: "italic",
+                              color: isFullCatalogCard ? "#C4B5FD" : "#7C3AED",
+                              fontWeight: 600,
+                              marginBottom: "6px",
+                            }}
+                          >
+                            {prod.botanicalName}
+                          </div>
+
+                          <div
+                            style={{
+                              fontSize: "0.8rem",
+                              color: isFullCatalogCard ? "rgba(255, 255, 255, 0.75)" : "#6B7280",
+                              fontWeight: 600,
+                              marginBottom: "10px",
+                            }}
+                          >
+                            {renderWithCo2(prod.shortSpec)}
+                          </div>
+
+                          <p
+                            style={{
+                              fontSize: "0.88rem",
+                              color: isFullCatalogCard ? "rgba(255, 255, 255, 0.9)" : "#4B5563",
+                              lineHeight: 1.55,
+                              margin: 0,
+                            }}
+                          >
+                            {renderWithCo2(prod.highlight)}
+                          </p>
+                        </div>
+
+                        {/* Action CTA Link */}
+                        <div
+                          style={{
+                            borderTop: isFullCatalogCard ? "1px solid rgba(255, 255, 255, 0.15)" : "1px solid rgba(124, 58, 237, 0.14)",
+                            paddingTop: "12px",
+                            marginTop: "16px",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "space-between",
+                          }}
+                        >
+                          <span style={{ fontSize: "0.85rem", fontWeight: 700, color: isFullCatalogCard ? "#DDD6FE" : "#7C3AED" }}>
+                            {isFullCatalogCard ? "Explore Full CO₂ Catalog" : "View Specifications & CoA"}
+                          </span>
+                          <div
+                            style={{
+                              width: "28px",
+                              height: "28px",
+                              borderRadius: "50%",
+                              backgroundColor: isFullCatalogCard ? "rgba(139, 92, 246, 0.3)" : "rgba(124, 58, 237, 0.12)",
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "center",
+                              color: isFullCatalogCard ? "#FFFFFF" : "#7C3AED",
+                            }}
+                          >
+                            <ArrowRight size={14} />
+                          </div>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                );
+              })}
+
+            {/* DESKTOP RENDER: 4 Products Per Slide (Unchanged) */}
+            {!isMobile &&
+              (currentTrackSlides as DesktopSlideItem[]).map((slide, sIdx) => {
+                if (slide.type === "cover") {
+                  return (
+                    <div
+                      key={`slide-desk-cover-${sIdx}`}
+                      style={{
+                        flex: "0 0 100%",
+                        width: "100%",
+                        minWidth: "100%",
+                        boxSizing: "border-box",
+                        padding: "0 4px",
+                      }}
+                    >
+                      <div
+                        className="liquid-glass-elevated"
+                        style={{
+                          position: "relative",
+                          width: "100%",
+                          height: "clamp(540px, 52vw, 680px)",
+                          borderRadius: "24px",
+                          overflow: "hidden",
+                          border: "1px solid rgba(124, 58, 237, 0.2)",
+                          boxShadow: "0 10px 30px rgba(24, 13, 38, 0.06)",
+                        }}
+                      >
+                        <Image
+                          src="/co2_extracts_collection.jpg"
+                          alt="India Essential Oils Supercritical CO2 Extracts Lineup"
+                          fill
+                          priority
+                          sizes="(max-width: 1280px) 100vw, 1280px"
+                          style={{ objectFit: "cover", objectPosition: "center" }}
+                        />
+
+                        <button
+                          onClick={goToNext}
+                          className="btn-vibrant-primary"
+                          style={{
+                            position: "absolute",
+                            bottom: "24px",
+                            right: "24px",
+                            padding: "14px 28px",
+                            borderRadius: "9999px",
+                            fontWeight: 700,
+                            fontSize: "0.92rem",
+                            display: "inline-flex",
+                            alignItems: "center",
+                            gap: "8px",
+                            border: "none",
+                            cursor: "pointer",
+                            boxShadow: "0 8px 24px rgba(124, 58, 237, 0.55)",
+                            zIndex: 10,
+                          }}
+                        >
+                          <span>Browse Products</span>
+                          <ArrowRight size={16} />
+                        </button>
+                      </div>
+                    </div>
+                  );
+                }
+
+                // Desktop Products Slide (4 products per page)
+                const page = slide.pageData;
+                return (
+                  <div
+                    key={`slide-desk-prod-${sIdx}`}
+                    style={{
+                      flex: "0 0 100%",
+                      width: "100%",
+                      minWidth: "100%",
+                      boxSizing: "border-box",
+                      padding: "0 4px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        display: "grid",
+                        gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
+                        gap: "18px",
+                        minHeight: "clamp(540px, 52vw, 680px)",
+                      }}
+                    >
+                      {page.products.map((prod) => {
+                        const isFullCatalogCard = prod.slug === "explore-all-co2";
+                        const targetHref = isFullCatalogCard
+                          ? "/products/co2-oils"
+                          : `/products/co2-oils/${prod.slug}`;
+
+                        return (
+                          <Link
+                            key={prod.id}
+                            href={targetHref}
+                            style={{ textDecoration: "none", display: "flex", height: "100%" }}
+                          >
+                            <div
+                              className="liquid-glass-elevated"
+                              style={{
+                                width: "100%",
+                                display: "flex",
+                                flexDirection: "column",
+                                justifyContent: "space-between",
+                                borderRadius: "22px",
+                                padding: "22px",
+                                backgroundColor: isFullCatalogCard
+                                  ? "rgba(24, 13, 38, 0.95)"
+                                  : "rgba(255, 255, 255, 0.88)",
+                                color: isFullCatalogCard ? "#FFFFFF" : "#180D26",
+                                border: isFullCatalogCard
+                                  ? "1px solid rgba(139, 92, 246, 0.4)"
+                                  : "1px solid rgba(124, 58, 237, 0.2)",
+                                boxShadow: "0 8px 24px rgba(24, 13, 38, 0.05)",
+                                transition: "transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.25s ease",
+                                cursor: "pointer",
+                                boxSizing: "border-box",
+                              }}
+                              onMouseEnter={(e) => {
+                                e.currentTarget.style.transform = "translateY(-5px)";
+                                e.currentTarget.style.boxShadow = isFullCatalogCard
+                                  ? "0 16px 40px rgba(124, 58, 237, 0.4)"
+                                  : "0 14px 36px rgba(124, 58, 237, 0.16)";
+                                e.currentTarget.style.borderColor = "rgba(124, 58, 237, 0.45)";
+                              }}
+                              onMouseLeave={(e) => {
+                                e.currentTarget.style.transform = "translateY(0)";
+                                e.currentTarget.style.boxShadow = "0 8px 24px rgba(24, 13, 38, 0.05)";
+                                e.currentTarget.style.borderColor = isFullCatalogCard
+                                  ? "rgba(139, 92, 246, 0.4)"
+                                  : "rgba(124, 58, 237, 0.2)";
+                              }}
+                            >
+                              <div style={{ display: "flex", flexDirection: "column", flex: 1 }}>
+                                <div
+                                  style={{
+                                    position: "relative",
+                                    width: "100%",
+                                    height: "260px",
+                                    borderRadius: "16px",
+                                    overflow: "hidden",
+                                    marginBottom: "20px",
+                                    backgroundColor: isFullCatalogCard ? "rgba(255, 255, 255, 0.05)" : "#EDE8DF",
+                                    border: "1px solid rgba(124, 58, 237, 0.12)",
+                                  }}
+                                >
+                                  <Image
+                                    src={prod.compositeImageUrl}
+                                    alt={prod.name}
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, 320px"
+                                    style={{
+                                      objectFit: "cover",
+                                      objectPosition: "center",
+                                    }}
+                                  />
+                                </div>
+
+                                <div style={{ display: "flex", flexDirection: "column", flex: 1, justifyContent: "space-between" }}>
+                                  <div>
+                                    <h4
+                                      style={{
+                                        fontSize: "1.24rem",
+                                        fontWeight: 700,
+                                        fontFamily: "var(--font-lora), Georgia, serif",
+                                        color: isFullCatalogCard ? "#FFFFFF" : "#180D26",
+                                        margin: "0 0 8px 0",
+                                        lineHeight: 1.3,
+                                      }}
+                                    >
+                                      {renderWithCo2(prod.name)}
+                                    </h4>
+                                    <div
+                                      style={{
+                                        fontSize: "0.92rem",
+                                        fontStyle: "italic",
+                                        color: isFullCatalogCard ? "#C4B5FD" : "#7C3AED",
+                                        fontWeight: 600,
+                                        marginBottom: "10px",
+                                        letterSpacing: "0.01em",
+                                      }}
+                                    >
+                                      {prod.botanicalName}
+                                    </div>
+                                    <div
+                                      style={{
+                                        fontSize: "0.82rem",
+                                        color: isFullCatalogCard ? "rgba(255, 255, 255, 0.75)" : "#6B7280",
+                                        fontWeight: 600,
+                                        marginBottom: "14px",
+                                      }}
+                                    >
+                                      {renderWithCo2(prod.shortSpec)}
+                                    </div>
+                                  </div>
+                                  <p
+                                    style={{
+                                      fontSize: "0.9rem",
+                                      color: isFullCatalogCard ? "rgba(255, 255, 255, 0.88)" : "#5B486E",
+                                      lineHeight: 1.65,
+                                      margin: "0 0 12px 0",
+                                    }}
+                                  >
+                                    {renderWithCo2(prod.highlight)}
+                                  </p>
+                                </div>
+                              </div>
+
+                              <div
+                                style={{
+                                  borderTop: isFullCatalogCard
+                                    ? "1px solid rgba(255, 255, 255, 0.15)"
+                                    : "1px solid rgba(124, 58, 237, 0.12)",
+                                  paddingTop: "14px",
+                                  marginTop: "16px",
+                                  display: "flex",
+                                  alignItems: "center",
+                                  justifyContent: "space-between",
+                                  gap: "6px",
+                                }}
+                              >
+                                <span
+                                  style={{
+                                    fontSize: "0.82rem",
+                                    fontWeight: 700,
+                                    color: isFullCatalogCard ? "#DDD6FE" : "#7C3AED",
+                                  }}
+                                >
+                                  {isFullCatalogCard ? "Explore All Categories" : "View Specifications"}
+                                </span>
+                                <div
+                                  style={{
+                                    width: "26px",
+                                    height: "26px",
+                                    borderRadius: "50%",
+                                    backgroundColor: isFullCatalogCard
+                                      ? "rgba(139, 92, 246, 0.3)"
+                                      : "rgba(124, 58, 237, 0.1)",
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center",
+                                    color: isFullCatalogCard ? "#FFFFFF" : "#7C3AED",
+                                  }}
+                                >
+                                  <ArrowRight size={13} />
+                                </div>
+                              </div>
+                            </div>
+                          </Link>
+                        );
+                      })}
                     </div>
                   </div>
                 );
-              }
-
-              // Products Slide (Pages 1 to 4)
-              const page = slide.pageData;
-              return (
-                <div
-                  key={`slide-prod-${sIdx}`}
-                  style={{
-                    flex: "0 0 100%",
-                    width: "100%",
-                    minWidth: "100%",
-                    boxSizing: "border-box",
-                    padding: "0 4px",
-                  }}
-                >
-                  {/* 4-Product Grid matching Slide 0 height */}
-                  <div
-                    style={{
-                      display: "grid",
-                      gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 220px), 1fr))",
-                      gap: "clamp(12px, 2vw, 18px)",
-                      minHeight: "clamp(340px, 50vw, 680px)",
-                    }}
-                  >
-                    {page.products.map((prod) => {
-                      const isFullCatalogCard = prod.slug === "explore-all-co2";
-                      const targetHref = isFullCatalogCard
-                        ? "/products/co2-oils"
-                        : `/products/co2-oils/${prod.slug}`;
-
-                      return (
-                        <Link
-                          key={prod.id}
-                          href={targetHref}
-                          style={{ textDecoration: "none", display: "flex", height: "100%" }}
-                        >
-                          <div
-                            className="liquid-glass-elevated"
-                            style={{
-                              width: "100%",
-                              display: "flex",
-                              flexDirection: "column",
-                              justifyContent: "space-between",
-                              borderRadius: "22px",
-                              padding: "22px",
-                              backgroundColor: isFullCatalogCard
-                                ? "rgba(24, 13, 38, 0.95)"
-                                : "rgba(255, 255, 255, 0.88)",
-                              color: isFullCatalogCard ? "#FFFFFF" : "#180D26",
-                              border: isFullCatalogCard
-                                ? "1px solid rgba(139, 92, 246, 0.4)"
-                                : "1px solid rgba(124, 58, 237, 0.2)",
-                              boxShadow: "0 8px 24px rgba(24, 13, 38, 0.05)",
-                              transition: "transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.25s ease",
-                              cursor: "pointer",
-                              boxSizing: "border-box",
-                            }}
-                            onMouseEnter={(e) => {
-                              e.currentTarget.style.transform = "translateY(-5px)";
-                              e.currentTarget.style.boxShadow = isFullCatalogCard
-                                ? "0 16px 40px rgba(124, 58, 237, 0.4)"
-                                : "0 14px 36px rgba(124, 58, 237, 0.16)";
-                              e.currentTarget.style.borderColor = "rgba(124, 58, 237, 0.45)";
-                            }}
-                            onMouseLeave={(e) => {
-                              e.currentTarget.style.transform = "translateY(0)";
-                              e.currentTarget.style.boxShadow = "0 8px 24px rgba(24, 13, 38, 0.05)";
-                              e.currentTarget.style.borderColor = isFullCatalogCard
-                                ? "rgba(139, 92, 246, 0.4)"
-                                : "rgba(124, 58, 237, 0.2)";
-                            }}
-                          >
-                            <div style={{ display: "flex", flexDirection: "column", flex: 1 }}>
-                              {/* Product Thumbnail / Image */}
-                              <div
-                                style={{
-                                  position: "relative",
-                                  width: "100%",
-                                  height: "260px",
-                                  borderRadius: "16px",
-                                  overflow: "hidden",
-                                  marginBottom: "20px",
-                                  backgroundColor: isFullCatalogCard ? "rgba(255, 255, 255, 0.05)" : "#EDE8DF",
-                                  border: "1px solid rgba(124, 58, 237, 0.12)",
-                                }}
-                              >
-                                <Image
-                                  src={prod.compositeImageUrl}
-                                  alt={prod.name}
-                                  fill
-                                  sizes="(max-width: 768px) 100vw, 320px"
-                                  style={{
-                                    objectFit: "cover",
-                                    objectPosition: "center",
-                                  }}
-                                />
-                              </div>
-
-                              {/* Header & Botanical Info */}
-                              <div style={{ display: "flex", flexDirection: "column", flex: 1, justifyContent: "space-between" }}>
-                                <div>
-                                  <h4
-                                    style={{
-                                      fontSize: "1.24rem",
-                                      fontWeight: 700,
-                                      fontFamily: "var(--font-lora), Georgia, serif",
-                                      color: isFullCatalogCard ? "#FFFFFF" : "#180D26",
-                                      margin: "0 0 8px 0",
-                                      lineHeight: 1.3,
-                                    }}
-                                  >
-                                    {renderWithCo2(prod.name)}
-                                  </h4>
-                                  <div
-                                    style={{
-                                      fontSize: "0.92rem",
-                                      fontStyle: "italic",
-                                      color: isFullCatalogCard ? "#C4B5FD" : "#7C3AED",
-                                      fontWeight: 600,
-                                      marginBottom: "10px",
-                                      letterSpacing: "0.01em",
-                                    }}
-                                  >
-                                    {prod.botanicalName}
-                                  </div>
-                                  <div
-                                    style={{
-                                      fontSize: "0.82rem",
-                                      color: isFullCatalogCard ? "rgba(255, 255, 255, 0.75)" : "#6B7280",
-                                      fontWeight: 600,
-                                      marginBottom: "14px",
-                                    }}
-                                  >
-                                    {renderWithCo2(prod.shortSpec)}
-                                  </div>
-                                </div>
-                                <p
-                                  style={{
-                                    fontSize: "0.9rem",
-                                    color: isFullCatalogCard ? "rgba(255, 255, 255, 0.88)" : "#5B486E",
-                                    lineHeight: 1.65,
-                                    margin: "0 0 12px 0",
-                                  }}
-                                >
-                                  {renderWithCo2(prod.highlight)}
-                                </p>
-                              </div>
-                            </div>
-
-                            {/* Action Bottom Button */}
-                            <div
-                              style={{
-                                borderTop: isFullCatalogCard
-                                  ? "1px solid rgba(255, 255, 255, 0.15)"
-                                  : "1px solid rgba(124, 58, 237, 0.12)",
-                                paddingTop: "14px",
-                                marginTop: "16px",
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "space-between",
-                                gap: "6px",
-                              }}
-                            >
-                              <span
-                                style={{
-                                  fontSize: "0.82rem",
-                                  fontWeight: 700,
-                                  color: isFullCatalogCard ? "#DDD6FE" : "#7C3AED",
-                                }}
-                              >
-                                {isFullCatalogCard ? "Explore All Categories" : "View Specifications"}
-                              </span>
-                              <div
-                                style={{
-                                  width: "26px",
-                                  height: "26px",
-                                  borderRadius: "50%",
-                                  backgroundColor: isFullCatalogCard
-                                    ? "rgba(139, 92, 246, 0.3)"
-                                    : "rgba(124, 58, 237, 0.1)",
-                                  display: "flex",
-                                  alignItems: "center",
-                                  justifyContent: "center",
-                                  color: isFullCatalogCard ? "#FFFFFF" : "#7C3AED",
-                                }}
-                              >
-                                <ArrowRight size={13} />
-                              </div>
-                            </div>
-                          </div>
-                        </Link>
-                      );
-                    })}
-                  </div>
-                </div>
-              );
-            })}
+              })}
           </div>
         </div>
       </div>
 
-      {/* Slide Navigation Indicator Dots */}
+      {/* Slide Navigation Indicator: Smart Counter on Mobile vs Sleek Dots on Desktop */}
       <div
         style={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          gap: "10px",
-          marginTop: "24px",
+          gap: isMobile ? "6px" : "10px",
+          marginTop: "22px",
+          flexWrap: "wrap",
         }}
       >
-        {Array.from({ length: totalRealSlides }).map((_, idx) => (
-          <button
-            key={idx}
-            onClick={() => goToDot(idx)}
-            aria-label={`Go to catalog page ${idx + 1}`}
+        {isMobile ? (
+          <div
             style={{
-              height: "8px",
-              width: activeDotIndex === idx ? "32px" : "8px",
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "8px",
+              padding: "6px 16px",
               borderRadius: "9999px",
-              backgroundColor: activeDotIndex === idx ? "#7C3AED" : "rgba(124, 58, 237, 0.25)",
-              border: "none",
-              cursor: "pointer",
-              transition: "all 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
-              padding: 0,
+              backgroundColor: "rgba(124, 58, 237, 0.08)",
+              border: "1px solid rgba(124, 58, 237, 0.22)",
+              fontSize: "0.8rem",
+              fontWeight: 700,
+              color: "#7C3AED",
             }}
-          />
-        ))}
+          >
+            <span>{activeDotIndex === 0 ? "CO₂ Extraction Lineup" : `Product ${activeDotIndex} of ${totalRealSlides - 1}`}</span>
+          </div>
+        ) : (
+          Array.from({ length: totalRealSlides }).map((_, idx) => (
+            <button
+              key={idx}
+              onClick={() => goToDot(idx)}
+              aria-label={`Go to catalog page ${idx + 1}`}
+              style={{
+                height: "8px",
+                width: activeDotIndex === idx ? "32px" : "8px",
+                borderRadius: "9999px",
+                backgroundColor: activeDotIndex === idx ? "#7C3AED" : "rgba(124, 58, 237, 0.25)",
+                border: "none",
+                cursor: "pointer",
+                transition: "all 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
+                padding: 0,
+              }}
+            />
+          ))
+        )}
       </div>
 
-      {/* Interactive Dropdown Section: "Click to know benefits of CO2 oil" */}
+      {/* Interactive Dropdown Section: "Click to know benefits of CO2 oil" with High-Legibility Mobile Typography */}
       <div
         style={{
           marginTop: "36px",
@@ -888,17 +1156,18 @@ export function ExploreLatestLineSection() {
             display: "inline-flex",
             alignItems: "center",
             justifyContent: "space-between",
-            gap: "16px",
-            padding: "16px 28px",
-            borderRadius: "9999px",
-            backgroundColor: showBenefits ? "rgba(124, 58, 237, 0.12)" : "rgba(255, 255, 255, 0.92)",
+            gap: "clamp(10px, 2vw, 16px)",
+            padding: "clamp(12px, 2.5vw, 16px) clamp(16px, 3.5vw, 28px)",
+            borderRadius: "clamp(18px, 4vw, 9999px)",
+            backgroundColor: showBenefits ? "rgba(124, 58, 237, 0.12)" : "rgba(255, 255, 255, 0.94)",
             border: showBenefits ? "1.5px solid #7C3AED" : "1.5px solid rgba(124, 58, 237, 0.3)",
             color: "#180D26",
             cursor: "pointer",
             boxShadow: showBenefits ? "0 8px 30px rgba(124, 58, 237, 0.22)" : "0 6px 20px rgba(24, 13, 38, 0.06)",
             transition: "all 0.25s cubic-bezier(0.16, 1, 0.3, 1)",
-            maxWidth: "680px",
+            maxWidth: "700px",
             width: "100%",
+            boxSizing: "border-box",
           }}
           onMouseEnter={(e) => {
             e.currentTarget.style.borderColor = "#7C3AED";
@@ -909,7 +1178,7 @@ export function ExploreLatestLineSection() {
             e.currentTarget.style.transform = "translateY(0)";
           }}
         >
-          <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", minWidth: 0, flex: 1 }}>
             <div
               style={{
                 width: "36px",
@@ -925,17 +1194,22 @@ export function ExploreLatestLineSection() {
             >
               <Sparkles size={18} />
             </div>
-            <span
-              style={{
-                fontSize: "1.08rem",
-                fontWeight: 700,
-                fontFamily: "var(--font-lora), Georgia, serif",
-                color: "#180D26",
-                textAlign: "left",
-              }}
-            >
-              Click to know benefits of <Co2Sub /> oil
-            </span>
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", textAlign: "left", minWidth: 0 }}>
+              <span
+                style={{
+                  fontSize: "clamp(0.95rem, 2.8vw, 1.08rem)",
+                  fontWeight: 700,
+                  fontFamily: "var(--font-lora), Georgia, serif",
+                  color: "#180D26",
+                  lineHeight: 1.25,
+                }}
+              >
+                Benefits of Supercritical <Co2Sub /> Extraction
+              </span>
+              <span style={{ fontSize: "0.76rem", color: "#5B486E", fontWeight: 500, marginTop: "2px" }}>
+                Verified scientific &amp; pharmacopoeia standards
+              </span>
+            </div>
           </div>
 
           <div
@@ -945,13 +1219,16 @@ export function ExploreLatestLineSection() {
               gap: "6px",
               color: "#7C3AED",
               fontWeight: 700,
-              fontSize: "0.85rem",
+              fontSize: "0.82rem",
               flexShrink: 0,
+              padding: "6px 12px",
+              borderRadius: "9999px",
+              backgroundColor: "rgba(124, 58, 237, 0.08)",
             }}
           >
-            <span>{showBenefits ? "Hide Benefits" : "View Scientific Benefits"}</span>
+            <span>{showBenefits ? "Hide" : "Explore"}</span>
             <ChevronDown
-              size={18}
+              size={16}
               style={{
                 transform: showBenefits ? "rotate(180deg)" : "rotate(0deg)",
                 transition: "transform 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
@@ -968,11 +1245,12 @@ export function ExploreLatestLineSection() {
               marginTop: "20px",
               width: "100%",
               borderRadius: "28px",
-              padding: "clamp(24px, 4vw, 36px)",
+              padding: "clamp(20px, 4vw, 36px)",
               backgroundColor: "rgba(255, 255, 255, 0.94)",
               border: "1.5px solid rgba(124, 58, 237, 0.28)",
               boxShadow: "0 20px 60px rgba(24, 13, 38, 0.1)",
               animation: "fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1)",
+              boxSizing: "border-box",
             }}
           >
             {/* Header Banner */}
@@ -1010,20 +1288,21 @@ export function ExploreLatestLineSection() {
                 </div>
                 <h3
                   style={{
-                    fontSize: "1.4rem",
+                    fontSize: "clamp(1.2rem, 2.5vw, 1.45rem)",
                     fontWeight: 700,
                     fontFamily: "var(--font-lora), Georgia, serif",
                     color: "#180D26",
                     margin: 0,
+                    lineHeight: 1.25,
                   }}
                 >
-                  Key Scientific & Clinical Advantages of Supercritical <Co2Sub /> Extraction
+                  Key Scientific &amp; Clinical Advantages of Supercritical <Co2Sub /> Extraction
                 </h3>
                 <p
                   style={{
                     fontSize: "0.9rem",
                     color: "#5B486E",
-                    margin: "4px 0 0 0",
+                    margin: "6px 0 0 0",
                     maxWidth: "880px",
                     lineHeight: 1.55,
                   }}
@@ -1037,8 +1316,8 @@ export function ExploreLatestLineSection() {
             <div
               style={{
                 display: "grid",
-                gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-                gap: "24px",
+                gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))",
+                gap: "clamp(16px, 3vw, 24px)",
               }}
             >
               {CO2_BENEFITS_DATA.map((item, bIdx) => {
@@ -1049,7 +1328,7 @@ export function ExploreLatestLineSection() {
                     className="liquid-glass"
                     style={{
                       borderRadius: "22px",
-                      padding: "24px",
+                      padding: "clamp(18px, 3vw, 24px)",
                       backgroundColor: "rgba(255, 255, 255, 0.88)",
                       border: "1.5px solid rgba(124, 58, 237, 0.18)",
                       boxShadow: "0 6px 20px rgba(24, 13, 38, 0.04)",
@@ -1074,22 +1353,20 @@ export function ExploreLatestLineSection() {
                     }}
                   >
                     <div style={{ display: "flex", flexDirection: "column", flex: 1 }}>
-                      {/* Top Action Bar (Icon + Metric Badge) — Fixed height, zero wrapping */}
                       <div
                         style={{
                           display: "flex",
                           alignItems: "center",
                           justifyContent: "space-between",
-                          height: "42px",
-                          marginBottom: "16px",
-                          flexWrap: "nowrap",
+                          marginBottom: "14px",
                           gap: "10px",
+                          flexWrap: "wrap",
                         }}
                       >
                         <div
                           style={{
-                            width: "40px",
-                            height: "40px",
+                            width: "38px",
+                            height: "38px",
                             borderRadius: "12px",
                             backgroundColor: "rgba(124, 58, 237, 0.12)",
                             display: "flex",
@@ -1103,111 +1380,74 @@ export function ExploreLatestLineSection() {
                         </div>
                         <span
                           style={{
-                            fontSize: "0.74rem",
-                            fontWeight: 700,
+                            fontSize: "0.75rem",
+                            fontWeight: 800,
                             padding: "4px 10px",
                             borderRadius: "9999px",
-                            backgroundColor: "rgba(16, 185, 129, 0.1)",
-                            border: "1px solid rgba(16, 185, 129, 0.25)",
+                            backgroundColor: "rgba(5, 150, 105, 0.1)",
                             color: "#059669",
-                            whiteSpace: "nowrap",
-                            flexShrink: 0,
+                            letterSpacing: "0.02em",
                           }}
                         >
                           {item.metric}
                         </span>
                       </div>
 
-                      {/* Card Title — Fixed minHeight for identical paragraph baseline */}
-                      <div
+                      <h4
                         style={{
-                          minHeight: "56px",
-                          display: "flex",
-                          alignItems: "flex-start",
-                          marginBottom: "10px",
+                          fontSize: "1.1rem",
+                          fontWeight: 700,
+                          fontFamily: "var(--font-lora), Georgia, serif",
+                          color: "#180D26",
+                          marginBottom: "8px",
+                          lineHeight: 1.3,
                         }}
                       >
-                        <h4
-                          style={{
-                            fontSize: "1.12rem",
-                            fontWeight: 700,
-                            fontFamily: "var(--font-lora), Georgia, serif",
-                            color: "#180D26",
-                            margin: 0,
-                            lineHeight: 1.35,
-                          }}
-                        >
-                          {renderWithCo2(item.title)}
-                        </h4>
-                      </div>
+                        {item.title}
+                      </h4>
 
-                      {/* Summary Description — Fixed minHeight for uniform vertical rhythm */}
-                      <div
+                      <p
                         style={{
-                          minHeight: "136px",
-                          display: "flex",
-                          alignItems: "flex-start",
-                          flex: 1,
+                          fontSize: "0.88rem",
+                          color: "#5B486E",
+                          lineHeight: 1.6,
+                          margin: 0,
                         }}
                       >
-                        <p
-                          style={{
-                            fontSize: "0.88rem",
-                            color: "#5B486E",
-                            lineHeight: 1.62,
-                            margin: 0,
-                          }}
-                        >
-                          {renderWithCo2(item.summary)}
-                        </p>
-                      </div>
+                        {item.summary}
+                      </p>
+                    </div>
+
+                    <div
+                      style={{
+                        marginTop: "16px",
+                        paddingTop: "12px",
+                        borderTop: "1px solid rgba(124, 58, 237, 0.1)",
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "6px",
+                        fontSize: "0.72rem",
+                        color: "#6B7280",
+                        fontWeight: 500,
+                      }}
+                    >
+                      <CheckCircle2 size={13} color="#059669" style={{ flexShrink: 0 }} />
+                      <span>{item.source}</span>
                     </div>
                   </div>
                 );
               })}
             </div>
-
-            {/* Bottom Compliance & Verification Bar */}
-            <div
-              style={{
-                marginTop: "28px",
-                padding: "16px 24px",
-                borderRadius: "16px",
-                backgroundColor: "rgba(124, 58, 237, 0.06)",
-                border: "1px solid rgba(124, 58, 237, 0.18)",
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-                flexWrap: "wrap",
-                gap: "14px",
-              }}
-            >
-              <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-                <ShieldCheck size={20} color="#7C3AED" />
-                <span style={{ fontSize: "0.85rem", color: "#180D26", fontWeight: 600 }}>
-                  All CO2 extracts supplied with batch-specific GC-MS analysis, heavy metal screening, and micro-assay dossiers.
-                </span>
-              </div>
-
-              <Link
-                href="/products/co2-oils"
-                style={{
-                  fontSize: "0.85rem",
-                  fontWeight: 700,
-                  color: "#7C3AED",
-                  textDecoration: "none",
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "6px",
-                }}
-              >
-                <span>Browse All 15 Supercritical Extracts</span>
-                <ArrowRight size={14} />
-              </Link>
-            </div>
           </div>
         )}
       </div>
+
+      <style>{`
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(6px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+      `}</style>
     </section>
   );
 }

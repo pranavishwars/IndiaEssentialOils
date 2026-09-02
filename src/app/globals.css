@@ -318,24 +318,44 @@ body.translated-rtl {
   transform: scaleX(-1);
 }
 
-[dir="rtl"] .chatbot-float-container {
-  left: 28px;
-  right: auto;
+.floating-actions-dock {
+  position: fixed !important;
+  bottom: calc(20px + env(safe-area-inset-bottom, 0px)) !important;
+  inset-inline-end: calc(20px + env(safe-area-inset-right, 0px)) !important;
+  z-index: var(--z-float-dock) !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+.chatbot-float-container,
+.language-floating-container {
+  position: relative !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 @media (max-width: 768px) {
-  .chatbot-float-container {
-    bottom: 20px !important;
-    right: 16px !important;
+  .floating-actions-dock {
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px)) !important;
+    inset-inline-end: calc(16px + env(safe-area-inset-right, 0px)) !important;
+    gap: 8px !important;
   }
 
-  [dir="rtl"] .chatbot-float-container {
-    left: 16px !important;
-    right: auto !important;
+  body:has(.mobile-sticky-pdp-bar) .floating-actions-dock {
+    bottom: calc(76px + env(safe-area-inset-bottom, 0px)) !important;
   }
+}
 
-  body:has(.mobile-sticky-pdp-bar) .chatbot-float-container {
-    bottom: 76px !important;
+[dir="rtl"] .floating-actions-dock {
+  inset-inline-end: auto !important;
+  inset-inline-start: calc(20px + env(safe-area-inset-left, 0px)) !important;
+}
+
+@media (max-width: 768px) {
+  [dir="rtl"] .floating-actions-dock {
+    inset-inline-start: calc(16px + env(safe-area-inset-left, 0px)) !important;
   }
 }
 

@@ -696,23 +696,25 @@ export function LanguageSelector({ variant = "floating" }: LanguageSelectorProps
         onMouseLeave={() => setIsHovered(false)}
         className="language-trigger-btn"
         style={{
-          height: "56px",
+          height: "50px",
           padding: "0 18px",
           borderRadius: "9999px",
           backgroundColor: isOpen ? "rgba(24, 13, 38, 0.9)" : "rgba(252, 250, 246, 0.88)",
           backdropFilter: "blur(24px) saturate(180%)",
           WebkitBackdropFilter: "blur(24px) saturate(180%)",
           color: isOpen ? "#FFFFFF" : "#180D26",
-          display: "flex",
+          display: "inline-flex",
           alignItems: "center",
+          justifyContent: "center",
           gap: "8px",
-          border: "2px solid rgba(124, 58, 237, 0.35)",
+          border: "1.5px solid rgba(124, 58, 237, 0.35)",
           boxShadow: isOpen
             ? "0 6px 24px rgba(24, 13, 38, 0.35)"
             : "0 6px 24px rgba(124, 58, 237, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.9)",
           cursor: "pointer",
           transition: "transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s, background-color 0.2s, border-color 0.2s",
-          transform: isHovered ? "scale(1.05) translateY(-2px)" : "scale(1)",
+          transform: isHovered ? "scale(1.04) translateY(-1px)" : "scale(1)",
+          boxSizing: "border-box",
         }}
         aria-label={`Change language, currently ${currentLanguageInfo.name}`}
         aria-haspopup="dialog"

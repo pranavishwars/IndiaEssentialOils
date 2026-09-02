@@ -258,23 +258,26 @@ export function ChatbotWidget() {
           onMouseLeave={() => setIsHovered(false)}
           className="liquid-glass-dock-btn"
           style={{
-            width: "52px",
-            height: "52px",
+            width: "50px",
+            height: "50px",
             borderRadius: "50%",
             backgroundColor: isOpen ? "#7C3AED" : "rgba(124, 58, 237, 0.92)",
             color: "#FFFFFF",
-            display: "flex",
+            display: "inline-flex",
             alignItems: "center",
             justifyContent: "center",
             boxShadow: "0 8px 28px rgba(124, 58, 237, 0.5)",
-            border: "1px solid rgba(255, 255, 255, 0.35)",
+            border: "1.5px solid rgba(255, 255, 255, 0.35)",
             cursor: "pointer",
-            transition: "all 0.25s cubic-bezier(0.16, 1, 0.3, 1)",
+            transition: "all 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s",
+            transform: isHovered ? "scale(1.04) translateY(-1px)" : "scale(1)",
+            boxSizing: "border-box",
+            flexShrink: 0,
             position: "relative",
           }}
           aria-label={isOpen ? "Close Botanical Assistant" : "Open Botanical Chat Assistant"}
         >
-          {isOpen ? <X size={22} /> : <MessageSquare size={22} />}
+          {isOpen ? <X size={20} /> : <MessageSquare size={20} />}
         </button>
       </div>
 

@@ -10,11 +10,12 @@ export function FloatingActionsDock() {
       className="floating-actions-dock"
       style={{
         position: "fixed",
-        bottom: "24px",
-        insetInlineEnd: "24px",
+        bottom: "calc(20px + env(safe-area-inset-bottom, 0px))",
+        insetInlineEnd: "calc(20px + env(safe-area-inset-right, 0px))",
         zIndex: "var(--z-float-dock)" as unknown as number,
         display: "flex",
         alignItems: "center",
+        justifyContent: "flex-end",
         gap: "10px",
       }}
     >
