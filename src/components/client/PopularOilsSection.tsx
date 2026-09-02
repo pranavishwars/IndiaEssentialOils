@@ -15,7 +15,7 @@ export function PopularOilsSection() {
         const res = await fetch("/api/search?sort=popularity");
         if (res.ok) {
           const data = await res.json();
-          setPopularProducts(data.results.slice(0, 6)); // Top 6 trending products
+          setPopularProducts(data.results.slice(0, 8)); // Top 8 trending products
         }
       } catch (err) {
         console.error("Failed to load popular oils:", err);
