@@ -49,20 +49,7 @@
     ],
     "answer": "100% of our production batches undergo rigorous Gas Chromatography-Mass Spectrometry (GC-MS) and refractive index audits. Every shipment includes a Certificate of Analysis (CoA) confirming the exact chemical terpene profile."
   },
-  {
-    "id": "batch_lookup",
-    "patterns": [
-      "batch lookup",
-      "batch number",
-      "batch report",
-      "lot number",
-      "verify bottle",
-      "qr code",
-      "lookup batch",
-      "check batch"
-    ],
-    "answer": "You can verify and download the complete GC-MS purity report for any bottle on our Batch Lookup page. Simply enter the batch code printed on your bottle or packaging (e.g. IEO-LAV-2024-08)."
-  },
+
   {
     "id": "certifications",
     "patterns": [
@@ -288,10 +275,9 @@
       "headquarters",
       "office address",
       "distillation plant",
-      "where is your factory",
-      "facility visit"
+      "where is your factory"
     ],
-    "answer": "Our corporate headquarters and analytical laboratories are based in New Delhi, India, with distillation plants in Uttarakhand and Himachal Pradesh. B2B facility inspection visits can be scheduled in advance."
+    "answer": "Our corporate headquarters and commercial operations are based in New Delhi, India, with regional distillation facilities in Uttarakhand and Himachal Pradesh."
   },
   {
     "id": "contact_human",

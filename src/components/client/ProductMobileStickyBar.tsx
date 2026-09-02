@@ -35,7 +35,7 @@ export function ProductMobileStickyBar({ product, onOpenQuote }: ProductMobileSt
         bottom: 0,
         left: 0,
         right: 0,
-        zIndex: 9990,
+        zIndex: "var(--z-sticky-bar)" as unknown as number,
         backgroundColor: "rgba(252, 250, 246, 0.84)",
         backdropFilter: "blur(28px) saturate(180%)",
         WebkitBackdropFilter: "blur(28px) saturate(180%)",

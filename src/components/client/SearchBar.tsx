@@ -322,7 +322,7 @@ export function SearchBar({
             borderRadius: "20px",
             boxShadow: "0 20px 50px rgba(24, 13, 38, 0.18), 0 2px 10px rgba(255, 255, 255, 0.6) inset",
             padding: "8px",
-            zIndex: 10002,
+            zIndex: "var(--z-search-bar)" as unknown as number,
             overflow: "hidden",
             animation: "searchFadeIn 0.18s cubic-bezier(0.16, 1, 0.3, 1)",
           }}

@@ -55,7 +55,7 @@ export function ProductStickyTabBar() {
       style={{
         position: "sticky",
         top: "68px",
-        zIndex: 50,
+        zIndex: "var(--z-sticky-tab)" as unknown as number,
         width: "100%",
         padding: "12px 0",
         marginBottom: "36px",

@@ -1,15 +1,20 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { SearchBar } from "./SearchBar";
 import { LanguageSelector } from "./LanguageSelector";
 import { CatalogHoverDropdown } from "./CatalogHoverDropdown";
+import { AboutHoverDropdown, ABOUT_SUBMENU } from "./AboutHoverDropdown";
+import { PackagingHoverDropdown, PACKAGING_SUBMENU } from "./PackagingHoverDropdown";
+import { COMPANY_INFO } from "@/lib/data";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [mobileAboutOpen, setMobileAboutOpen] = useState(false);
+  const [mobilePackagingOpen, setMobilePackagingOpen] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -23,6 +28,28 @@ export function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const touchStartY = useRef<number | null>(null);
+  const touchCurrentY = useRef<number | null>(null);
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartY.current = e.touches[0].clientY;
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    touchCurrentY.current = e.touches[0].clientY;
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartY.current !== null && touchCurrentY.current !== null) {
+      const diff = touchStartY.current - touchCurrentY.current; // upward swipe
+      if (diff > 50) {
+        setIsOpen(false);
+      }
+    }
+    touchStartY.current = null;
+    touchCurrentY.current = null;
+  };
 
   // On the homepage, unscrolled header sits over the dark hero (white text).
   // When scrolled on home OR on any secondary page (which starts on a light background), use dark theme.
@@ -39,7 +66,7 @@ export function Navbar() {
         top: 0,
         left: 0,
         right: 0,
-        zIndex: 9999,
+        zIndex: "var(--z-navbar)" as unknown as number,
         transition: "all 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
         backgroundColor: isLightNav ? "rgba(252, 250, 246, 0.82)" : "transparent",
         backdropFilter: isLightNav ? "blur(24px) saturate(180%)" : "none",
@@ -52,7 +79,7 @@ export function Navbar() {
         style={{
           width: "100%",
           padding: "0 clamp(16px, 4vw, 48px)",
-          height: "68px",
+          minHeight: "68px",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
@@ -60,11 +87,11 @@ export function Navbar() {
         }}
       >
         {/* Logo — adapts automatically to dark/light background */}
-        <div style={{ marginInlineStart: "max(0px, calc((100vw - 1280px) / 2))", flexShrink: 0 }}>
+        <div style={{ marginInlineStart: "max(0px, calc((100vw - 1280px) / 2))", flexShrink: 0, minWidth: 0, overflow: "hidden" }}>
           <Link
             href="/"
             style={{
-              fontSize: "1.35rem",
+              fontSize: "var(--font-size-h3)",
               fontWeight: 700,
               fontFamily: "var(--font-lora), Georgia, serif",
               color: textColor,
@@ -72,9 +99,13 @@ export function Navbar() {
               transition: "color 0.3s ease, text-shadow 0.3s ease",
               textShadow,
               whiteSpace: "nowrap",
+              overflow: "hidden",
+              textOverflow: "ellipsis",
+              minWidth: 0,
+              display: "block",
             }}
           >
-            India Essential Oils
+            {COMPANY_INFO.name}
           </Link>
         </div>
 
@@ -131,38 +162,77 @@ export function Navbar() {
             {/* Instantaneous Liquid Glass Catalog Dropdown */}
             <CatalogHoverDropdown isLightNav={isLightNav} textColor={textColor} textShadow={textShadow} />
 
-            {[
-              ["About", "/about"],
-              ["Infrastructure", "/infrastructure"],
-              ["Packaging", "/packaging"],
-              ["Certifications", "/certifications"],
-              ["Quality", "/quality"],
-              ["Contact", "/contact"],
-            ].map(([label, href]) => (
-              <Link
-                key={label}
-                href={href}
-                style={{
-                  color: textColor,
-                  textDecoration: "none",
-                  fontWeight: 600,
-                  fontSize: "0.875rem",
-                  padding: "6px 14px",
-                  borderRadius: "9999px",
-                  transition: "background 0.2s, color 0.4s",
-                  textShadow,
-                  letterSpacing: "0.01em",
-                  whiteSpace: "nowrap",
-                }}
-                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = isLightNav ? "rgba(124, 58, 237, 0.12)" : "rgba(255, 255, 255, 0.22)")}
-                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "transparent")}
-              >
-                {label}
-              </Link>
-            ))}
+            {/* Instantaneous Liquid Glass About Dropdown */}
+            <AboutHoverDropdown isLightNav={isLightNav} textColor={textColor} textShadow={textShadow} />
+
+            {/* Infrastructure */}
+            <Link
+              href="/infrastructure"
+              style={{
+                color: textColor,
+                textDecoration: "none",
+                fontWeight: 600,
+                fontSize: "0.875rem",
+                padding: "6px 14px",
+                borderRadius: "9999px",
+                transition: "background 0.2s, color 0.4s",
+                textShadow,
+                letterSpacing: "0.01em",
+                whiteSpace: "nowrap",
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = isLightNav ? "rgba(124, 58, 237, 0.12)" : "rgba(255, 255, 255, 0.22)")}
+              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "transparent")}
+            >
+              Infrastructure
+            </Link>
+
+            {/* Instantaneous Liquid Glass Packaging Dropdown */}
+            <PackagingHoverDropdown isLightNav={isLightNav} textColor={textColor} textShadow={textShadow} />
+
+            {/* Certifications */}
+            <Link
+              href="/certifications"
+              style={{
+                color: textColor,
+                textDecoration: "none",
+                fontWeight: 600,
+                fontSize: "0.875rem",
+                padding: "6px 14px",
+                borderRadius: "9999px",
+                transition: "background 0.2s, color 0.4s",
+                textShadow,
+                letterSpacing: "0.01em",
+                whiteSpace: "nowrap",
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = isLightNav ? "rgba(124, 58, 237, 0.12)" : "rgba(255, 255, 255, 0.22)")}
+              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "transparent")}
+            >
+              Certifications
+            </Link>
+
+            {/* Quality */}
+            <Link
+              href="/quality"
+              style={{
+                color: textColor,
+                textDecoration: "none",
+                fontWeight: 600,
+                fontSize: "0.875rem",
+                padding: "6px 14px",
+                borderRadius: "9999px",
+                transition: "background 0.2s, color 0.4s",
+                textShadow,
+                letterSpacing: "0.01em",
+                whiteSpace: "nowrap",
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = isLightNav ? "rgba(124, 58, 237, 0.12)" : "rgba(255, 255, 255, 0.22)")}
+              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "transparent")}
+            >
+              Quality
+            </Link>
 
             <Link
-              href="/request-quote"
+              href="/contact"
               style={{
                 background: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)",
                 color: "white",
@@ -175,28 +245,29 @@ export function Navbar() {
                 boxShadow: "0 4px 18px rgba(124, 58, 237, 0.45)",
                 transition: "transform 0.2s, box-shadow 0.2s",
                 whiteSpace: "nowrap",
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "4px",
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = "translateY(-1px)";
-                e.currentTarget.style.boxShadow = "0 6px 24px rgba(124, 58, 237, 0.65)";
+                e.currentTarget.style.boxShadow = "0 6px 24px rgba(124, 58, 237, 0.6)";
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = "translateY(0)";
                 e.currentTarget.style.boxShadow = "0 4px 18px rgba(124, 58, 237, 0.45)";
               }}
             >
-              Request Quote
+              Contact Us
             </Link>
           </nav>
         </div>
 
-        {/* Mobile Header Right Cluster */}
-        <div className="mobile-header-actions" style={{ display: "none", alignItems: "center", gap: "8px" }}>
+        {/* Mobile controls */}
+        <div style={{ display: "flex", alignItems: "center", gap: "8px" }} className="mobile-nav-toggle">
           <LanguageSelector scrolled={isLightNav} />
-
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="mobile-menu-btn"
             style={{
               background: isLightNav ? "rgba(124, 58, 237, 0.07)" : "rgba(35, 24, 48, 0.48)",
               border: isLightNav ? "1px solid rgba(124, 58, 237, 0.25)" : "1px solid rgba(255, 255, 255, 0.3)",
@@ -209,8 +280,8 @@ export function Navbar() {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              minWidth: "40px",
-              minHeight: "40px",
+              minWidth: "44px",
+              minHeight: "44px",
             }}
             aria-label="Toggle menu"
           >
@@ -228,62 +299,200 @@ export function Navbar() {
       {/* Mobile Menu — glass panel */}
       {isOpen && (
         <div
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
           style={{
-            backgroundColor: "rgba(252, 250, 246, 0.88)",
+            backgroundColor: "rgba(252, 250, 246, 0.94)",
             backdropFilter: "blur(28px) saturate(180%)",
             WebkitBackdropFilter: "blur(28px) saturate(180%)",
-            padding: "20px 24px 28px",
+            padding: "16px 24px 28px",
             borderTop: "1px solid rgba(124, 58, 237, 0.15)",
             display: "flex",
             flexDirection: "column",
-            gap: "10px",
+            gap: "6px",
             maxHeight: "calc(100dvh - 68px)",
             overflowY: "auto",
           }}
         >
+          {/* Drag to close indicator handle */}
+          <div style={{ width: "100%", display: "flex", justifyContent: "center", paddingBottom: "8px", cursor: "grab" }}>
+            <div style={{ width: "36px", height: "4px", borderRadius: "9999px", backgroundColor: "rgba(124, 58, 237, 0.25)" }} />
+          </div>
+
           <div style={{ marginBottom: "6px" }}>
             <SearchBar variant="full" onSelect={() => setIsOpen(false)} />
           </div>
 
-          <div style={{ marginBottom: "10px" }}>
-            <LanguageSelector variant="mobile-menu" scrolled={true} />
+          <Link
+            href="/"
+            onClick={() => setIsOpen(false)}
+            style={{
+              color: "#180D26",
+              textDecoration: "none",
+              fontSize: "0.95rem",
+              fontWeight: 600,
+              padding: "10px 14px",
+              borderRadius: "12px",
+            }}
+          >
+            Home
+          </Link>
+
+          <Link
+            href="/products"
+            onClick={() => setIsOpen(false)}
+            style={{
+              color: "#180D26",
+              textDecoration: "none",
+              fontSize: "0.95rem",
+              fontWeight: 600,
+              padding: "10px 14px",
+              borderRadius: "12px",
+            }}
+          >
+            Products
+          </Link>
+
+          {/* Mobile About Accordion */}
+          <div>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                padding: "10px 14px",
+                borderRadius: "12px",
+                cursor: "pointer",
+                backgroundColor: mobileAboutOpen ? "rgba(124, 58, 237, 0.08)" : "transparent",
+              }}
+              onClick={() => setMobileAboutOpen(!mobileAboutOpen)}
+            >
+              <span style={{ fontSize: "0.95rem", fontWeight: 600, color: "#180D26" }}>About</span>
+              <span style={{ fontSize: "0.8rem", color: "#7C3AED", fontWeight: 700 }}>
+                {mobileAboutOpen ? "▲" : "▼"}
+              </span>
+            </div>
+            {mobileAboutOpen && (
+              <div style={{ paddingLeft: "16px", display: "flex", flexDirection: "column", gap: "4px", marginTop: "4px" }}>
+                {ABOUT_SUBMENU.map((item) => (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    onClick={() => setIsOpen(false)}
+                    style={{
+                      padding: "8px 12px",
+                      fontSize: "0.85rem",
+                      color: "#5B486E",
+                      textDecoration: "none",
+                      borderRadius: "8px",
+                      fontWeight: 500,
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "8px",
+                    }}
+                  >
+                    {item.icon}
+                    <span>{item.name}</span>
+                  </Link>
+                ))}
+              </div>
+            )}
           </div>
 
-          {[
-            ["Botanical Catalog", "/products"],
-            ["About Mother Herbs", "/about"],
-            ["Distillery & Infrastructure", "/infrastructure"],
-            ["Packaging & OEM Bottling", "/packaging"],
-            ["International Certifications", "/certifications"],
-            ["Quality & GC-MS Testing", "/quality"],
-            ["GC-MS Batch Lookup", "/batch-lookup"],
-            ["Knowledge Hub & Blog", "/blog"],
-            ["Verified Client Reviews", "/reviews"],
-            ["Commercial Quote Desk", "/request-quote"],
-            ["Corporate Contact & Office", "/contact"],
-          ].map(([label, href]) => (
-            <Link
-              key={label}
-              href={href}
-              onClick={() => setIsOpen(false)}
-              style={{
-                color: "#180D26",
-                textDecoration: "none",
-                fontSize: "1rem",
-                fontWeight: 600,
-                padding: "12px 16px",
-                borderRadius: "12px",
-                transition: "background 0.2s",
-                display: "block",
-              }}
-              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "rgba(124, 58, 237, 0.1)")}
-              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "transparent")}
-            >
-              {label}
-            </Link>
-          ))}
           <Link
-            href="/request-quote"
+            href="/infrastructure"
+            onClick={() => setIsOpen(false)}
+            style={{
+              color: "#180D26",
+              textDecoration: "none",
+              fontSize: "0.95rem",
+              fontWeight: 600,
+              padding: "10px 14px",
+              borderRadius: "12px",
+            }}
+          >
+            Infrastructure
+          </Link>
+
+          {/* Mobile Packaging Accordion */}
+          <div>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                padding: "10px 14px",
+                borderRadius: "12px",
+                cursor: "pointer",
+                backgroundColor: mobilePackagingOpen ? "rgba(124, 58, 237, 0.08)" : "transparent",
+              }}
+              onClick={() => setMobilePackagingOpen(!mobilePackagingOpen)}
+            >
+              <span style={{ fontSize: "0.95rem", fontWeight: 600, color: "#180D26" }}>Packaging</span>
+              <span style={{ fontSize: "0.8rem", color: "#7C3AED", fontWeight: 700 }}>
+                {mobilePackagingOpen ? "▲" : "▼"}
+              </span>
+            </div>
+            {mobilePackagingOpen && (
+              <div style={{ paddingLeft: "16px", display: "flex", flexDirection: "column", gap: "4px", marginTop: "4px" }}>
+                {PACKAGING_SUBMENU.map((item) => (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    onClick={() => setIsOpen(false)}
+                    style={{
+                      padding: "8px 12px",
+                      fontSize: "0.85rem",
+                      color: "#5B486E",
+                      textDecoration: "none",
+                      borderRadius: "8px",
+                      fontWeight: 500,
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "8px",
+                    }}
+                  >
+                    {item.icon}
+                    <span>{item.name}</span>
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
+          <Link
+            href="/certifications"
+            onClick={() => setIsOpen(false)}
+            style={{
+              color: "#180D26",
+              textDecoration: "none",
+              fontSize: "0.95rem",
+              fontWeight: 600,
+              padding: "10px 14px",
+              borderRadius: "12px",
+            }}
+          >
+            Certifications
+          </Link>
+
+          <Link
+            href="/quality"
+            onClick={() => setIsOpen(false)}
+            style={{
+              color: "#180D26",
+              textDecoration: "none",
+              fontSize: "0.95rem",
+              fontWeight: 600,
+              padding: "10px 14px",
+              borderRadius: "12px",
+            }}
+          >
+            Quality
+          </Link>
+
+          <Link
+            href="/contact"
             onClick={() => setIsOpen(false)}
             style={{
               background: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)",
@@ -295,9 +504,10 @@ export function Navbar() {
               textAlign: "center",
               fontSize: "1rem",
               boxShadow: "0 4px 18px rgba(124, 58, 237, 0.45)",
+              marginTop: "8px",
             }}
           >
-            Request Commercial Quote
+            Contact Us
           </Link>
         </div>
       )}

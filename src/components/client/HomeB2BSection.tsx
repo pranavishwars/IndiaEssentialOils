@@ -45,11 +45,11 @@ const B2B_FAQS: FAQItem[] = [
   },
   {
     id: "gcms-purity",
-    question: "How is 100% purity and GC-MS chromatography guaranteed for every batch?",
-    shortAnswer: "Every container includes an individual batch code linked to public Gas Chromatography–Mass Spectrometry (GC-MS) spectra and Certificate of Analysis (CoA).",
-    detailedAnswer: "Our in-house analytical laboratory utilizes Shimadzu Gas Chromatography–Mass Spectrometry (GC-MS), Anton Paar polarimeters (optical rotation), and Abbe refractometers. We quantify active constituents (such as Linalool, Menthol, Terpinen-4-ol, and Eugenol) to confirm precise botanical chemotypes and test for zero pesticide residues or heavy metals. Buyers can verify their batch code 24/7 on our online Batch Lookup portal.",
+    question: "How is 100% purity and GC-MS chromatography verified for botanical distillates?",
+    shortAnswer: "Every botanical distillation undergoes Gas Chromatography–Mass Spectrometry (GC-MS) analysis and Certificate of Analysis (CoA) verification.",
+    detailedAnswer: "Our in-house analytical laboratory utilizes Shimadzu Gas Chromatography–Mass Spectrometry (GC-MS), Anton Paar polarimeters (optical rotation), and Abbe refractometers. We quantify active constituents (such as Linalool, Menthol, Terpinen-4-ol, and Eugenol) to confirm precise botanical chemotypes and test for zero pesticide residues or heavy metals.",
     icon: <FlaskConical size={20} color="#059669" />,
-    tags: ["GC-MS Tested", "Instant Batch Lookup", "Zero Adulteration"],
+    tags: ["GC-MS Tested", "In-House Lab", "Zero Adulteration"],
   },
   {
     id: "packaging-bottling",
@@ -352,16 +352,16 @@ export function HomeB2BSection() {
           <FlaskConical size={22} color="#7C3AED" />
           <div>
             <div style={{ fontSize: "0.95rem", fontWeight: 700, color: "#180D26" }}>
-              Need Batch Purity Verification or CoA Download?
+              Learn More About Our In-House GC-MS Testing
             </div>
             <div style={{ fontSize: "0.82rem", color: "#5B486E" }}>
-              Enter any container code for instant GC-MS chromatogram & analytical specs.
+              Explore our analytical lab capabilities, GC-MS testing protocols, and quality standards.
             </div>
           </div>
         </div>
 
         <Link
-          href="/batch-lookup"
+          href="/quality"
           style={{
             display: "inline-flex",
             alignItems: "center",
@@ -377,7 +377,7 @@ export function HomeB2BSection() {
             transition: "all 0.2s ease",
           }}
         >
-          <span>Batch Lookup</span>
+          <span>Quality Standards</span>
           <ArrowRight size={14} />
         </Link>
       </div>

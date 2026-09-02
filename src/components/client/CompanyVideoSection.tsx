@@ -303,7 +303,7 @@ export function CompanyVideoSection() {
               Explore Full Infrastructure <ArrowRight size={16} />
             </Link>
             <Link
-              href="/request-quote"
+              href="/contact"
               className="btn-vibrant-primary"
               style={{
                 padding: "12px 26px",
@@ -316,7 +316,7 @@ export function CompanyVideoSection() {
                 gap: "6px",
               }}
             >
-              Request Commercial Quote
+              Contact Us
             </Link>
           </div>
         </div>

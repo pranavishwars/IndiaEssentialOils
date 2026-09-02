@@ -253,8 +253,8 @@ function checkShippingQuery(normalized: string): FaqEntry | null {
 • **Ocean Freight (FCL / LCL):** Containerized seafreight via Mundra and Nhava Sheva (JNPT) ports with temperature-controlled reefer container options.
 • **Full Post-Shipment Support:** Real-time consignment tracking, timely documentation, and country-specific customs facilitation.`,
     actionLink: {
-      label: "Request a Shipping & Delivery Quote",
-      href: "/request-quote",
+      label: "Contact Us",
+      href: "/contact",
     },
   };
 }
@@ -265,29 +265,26 @@ function checkShippingQuery(normalized: string): FaqEntry | null {
 function checkExportCountriesQuery(normalized: string): FaqEntry | null {
   const exportPatterns = [
     "export", "countries", "usa", "america", "australia", "new zealand", "nz",
-    "middle east", "dubai", "saudi", "europe", "eu", "uk", "reach", "ifra", "norms", "regulations"
+    "middle east", "dubai", "saudi", "europe", "where do you export"
   ];
 
   const matches = exportPatterns.some(p => normalized.includes(p));
   if (!matches) return null;
 
   return {
-    id: "export_countries_norms_expert",
+    id: "export_countries_expert",
     patterns: exportPatterns,
-    answer: `🌍 **Prominent Global Export Corridors & Regulatory Standards:**
+    answer: `🌍 **Prominent Global Export Destinations:**
 
-India Essential Oils exports bulk botanical oils to verified formulators in over 50 countries across 5 prominent regions:
+India Essential Oils exports bulk botanical oils and extracts across 5 prominent international markets:
 
-1. **United States of America (USA):** High-volume corridor for USDA organic essential oils, cold-pressed base oils, and CO₂ extracts compliant with US FDA regulations and OSHA GHS Safety Data Sheets.
-2. **Australia & New Zealand (Oceania):** Therapeutic and aromatherapy grade botanicals compliant with TGA, AICIS, and EPA New Zealand standards.
-3. **Middle East (UAE, Saudi Arabia, Qatar, Oman):** Luxury perfumery absolutes, high-grade oudh/agarwood, and spice oils with Halal certification and GSO conformity.
-4. **Europe (EU & UK) — Specialized High-Compliance Focus:** We successfully navigate complex European regulatory frameworks by providing:
-   • **EU Cosmetics Regulation (EC No 1223/2009)** & CosIng ingredient dossiers.
-   • **EU REACH & CLP** chemical registration support.
-   • **IFRA 51st Amendment** certificates across all 11 fragrance categories.
-   • Government-certified Phytosanitary & EUR.1 / REX trade facilitation.`,
+1. **United States of America (USA):** Major bulk export destination for pure essential oils, cold-pressed virgin carrier oils, and supercritical CO₂ extracts.
+2. **Australia:** Therapeutic and aromatherapy market for pure essential oils and bulk distillates.
+3. **New Zealand:** Key destination for virgin carrier oils and pure botanical extracts for natural skincare and cosmetic formulators.
+4. **Middle East:** Supplying floral absolutes, agarwood/oudh oils, and spice distillates across UAE, Saudi Arabia, Qatar, and Oman.
+5. **Europe:** Established export market for pure essential oils and botanical distillates (subject to evolving European trade and import norms).`,
     actionLink: {
-      label: "Read About Our Global Trade Corridors",
+      label: "Read About Our Export Destinations",
       href: "/about",
     },
   };

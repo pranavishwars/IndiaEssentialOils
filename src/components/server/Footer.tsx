@@ -1,10 +1,21 @@
 import React from "react";
 import Link from "next/link";
-import { ArrowRight, ShieldCheck, Mail, MapPin, Sparkles } from "lucide-react";
+import { ArrowRight, ShieldCheck, Mail, MapPin, Phone } from "lucide-react";
 import { COMPANY_INFO } from "@/lib/data";
 
 export function Footer() {
-  const productLinks = [
+  const navigationLinks = [
+    { label: "Home", href: "/" },
+    { label: "Catalog", href: "/products" },
+    { label: "About", href: "/about" },
+    { label: "Infrastructure", href: "/infrastructure" },
+    { label: "Packaging", href: "/packaging" },
+    { label: "Certifications", href: "/certifications" },
+    { label: "Quality", href: "/quality" },
+    { label: "Contact Us", href: "/contact" },
+  ];
+
+  const catalogLinks = [
     { name: "CO2 Oils (Extracts)", href: "/products/co2-oils", badge: "Trending ✨" },
     { name: "Essential Oils", href: "/products/essential-oils" },
     { name: "Spice Oils", href: "/products/spice-oils" },
@@ -16,39 +27,44 @@ export function Footer() {
     { name: "Ayurvedic Oils", href: "/products/ayurvedic-oils" },
   ];
 
-  const trustLinks = [
-    { label: "Home Page", href: "/" },
-    { label: "About Mother Herbs", href: "/about" },
-    { label: "Distillery Infrastructure", href: "/infrastructure" },
-    { label: "Packaging & OEM Solutions", href: "/packaging" },
-    { label: "International Certifications", href: "/certifications" },
-    { label: "Quality & GC-MS Testing", href: "/quality" },
-    { label: "GC-MS Batch Lookup", href: "/batch-lookup" },
-    { label: "Verified Client Reviews", href: "/reviews" },
-    { label: "Knowledge Hub & Blog", href: "/blog" },
-    { label: "Commercial Quote Desk", href: "/request-quote" },
-    { label: "Corporate Contact", href: "/contact" },
+  // Only the exact elements present in the About dropdown menu
+  const aboutLinks = [
+    { label: "Profile", href: "/about/profile" },
+    { label: "The Trust We've Built", href: "/about/trust-we-built" },
+    { label: "Why Us", href: "/about/why-us" },
+    { label: "Industries We Serve", href: "/about/industries-we-serve" },
+    { label: "The Countries We Serve", href: "/about/countries-we-serve" },
+    { label: "How to Order", href: "/about/how-to-order" },
+    { label: "Founders Note", href: "/about/founders-note" },
+  ];
+
+  // Only the exact elements present in the Packaging dropdown menu
+  const packagingLinks = [
+    { label: "Packaging Process", href: "/packaging/process" },
+    { label: "Packaging Sizes", href: "/packaging/sizes" },
+    { label: "Shipment Policy", href: "/packaging/shipment-policy" },
+    { label: "FAQs", href: "/packaging/faqs" },
   ];
 
   return (
     <footer style={{ margin: "0 12px 12px", borderRadius: "2.5rem", overflow: "hidden", backgroundColor: "#180D26", boxShadow: "0 -4px 30px rgba(0, 0, 0, 0.08)" }}>
-      <div style={{ padding: "64px 48px 0" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "48px", marginBottom: "64px" }}>
+      <div style={{ padding: "64px 36px 48px" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "36px" }}>
 
           {/* Brand Column */}
-          <div style={{ maxWidth: "340px" }}>
+          <div style={{ maxWidth: "320px" }}>
             <Link href="/" style={{ textDecoration: "none" }}>
-              <h2 style={{ fontSize: "1.6rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#C4B5FD", marginBottom: "16px" }}>
+              <h2 style={{ fontSize: "var(--font-size-h2)", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#C4B5FD", marginBottom: "16px" }}>
                 {COMPANY_INFO.name}
               </h2>
             </Link>
             <p style={{ fontSize: "0.875rem", color: "rgba(255,255,255,0.7)", lineHeight: 1.75, marginBottom: "20px" }}>
-              A Division of Mother Herbs Private Limited. Premier WHO-GMP & ISO 22000 certified steam distillation distillery and bulk wholesale exporter of pure botanical oils.
+              A Division of Mother Herbs Private Limited. Premier WHO-GMP &amp; ISO 22000 certified steam distillation distillery and bulk wholesale exporter of pure botanical oils.
             </p>
 
             <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginBottom: "24px" }}>
               <a
-                href="mailto:pranavishwars@gmail.com"
+                href={`mailto:${COMPANY_INFO.contact.salesEmail}`}
                 style={{
                   display: "inline-flex",
                   alignItems: "center",
@@ -60,7 +76,22 @@ export function Footer() {
                 }}
               >
                 <Mail size={16} color="#A855F7" />
-                <span>pranavishwars@gmail.com</span>
+                <span>{COMPANY_INFO.contact.salesEmail}</span>
+              </a>
+
+              <a
+                href={`tel:${COMPANY_INFO.contact.phone}`}
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "8px",
+                  color: "rgba(255,255,255,0.75)",
+                  fontSize: "0.85rem",
+                  textDecoration: "none",
+                }}
+              >
+                <Phone size={16} color="#A855F7" />
+                <span>{COMPANY_INFO.contact.phone}</span>
               </a>
 
               <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", color: "rgba(255,255,255,0.65)", fontSize: "0.85rem" }}>
@@ -69,7 +100,7 @@ export function Footer() {
               </div>
             </div>
 
-            <div style={{ display: "flex", gap: "10px" }}>
+            <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
               <a
                 href={COMPANY_INFO.contact.indiamart}
                 target="_blank"
@@ -94,23 +125,64 @@ export function Footer() {
               >
                 <ShieldCheck size={16} /> TrustSeal Verified
               </a>
+
+              <Link
+                href="/contact"
+                style={{
+                  height: "38px",
+                  padding: "0 16px",
+                  borderRadius: "12px",
+                  backgroundColor: "rgba(124, 58, 237, 0.22)",
+                  border: "1px solid rgba(124, 58, 237, 0.4)",
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "6px",
+                  color: "#FFFFFF",
+                  fontSize: "0.75rem",
+                  fontWeight: 700,
+                  textDecoration: "none",
+                  transition: "all 0.2s",
+                }}
+              >
+                <span>Contact Us</span>
+                <ArrowRight size={13} />
+              </Link>
             </div>
           </div>
 
-          {/* Botanical Products Column */}
+          {/* Navigation Column */}
           <div>
             <h3 style={{ fontSize: "0.75rem", fontWeight: 800, color: "#A855F7", textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: "20px" }}>
-              Botanical Catalog
+              Navigation
             </h3>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "10px" }}>
-              {productLinks.map((item) => (
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "9px" }}>
+              {navigationLinks.map((item) => (
+                <li key={item.label}>
+                  <Link
+                    href={item.href}
+                    style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none", fontSize: "0.85rem", transition: "color 0.2s" }}
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Catalog Column */}
+          <div>
+            <h3 style={{ fontSize: "0.75rem", fontWeight: 800, color: "#A855F7", textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: "20px" }}>
+              Catalog
+            </h3>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "9px" }}>
+              {catalogLinks.map((item) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}
                     style={{
                       color: "rgba(255,255,255,0.7)",
                       textDecoration: "none",
-                      fontSize: "0.875rem",
+                      fontSize: "0.85rem",
                       transition: "color 0.2s",
                       display: "inline-flex",
                       alignItems: "center",
@@ -141,10 +213,10 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
-              <li style={{ marginTop: "6px" }}>
+              <li style={{ marginTop: "4px" }}>
                 <Link
                   href="/products"
-                  style={{ color: "#C4B5FD", textDecoration: "none", fontSize: "0.875rem", fontWeight: 700, display: "inline-flex", alignItems: "center", gap: "4px" }}
+                  style={{ color: "#C4B5FD", textDecoration: "none", fontSize: "0.85rem", fontWeight: 700, display: "inline-flex", alignItems: "center", gap: "4px" }}
                 >
                   View Complete Catalog <ArrowRight size={14} />
                 </Link>
@@ -152,17 +224,17 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Verification & Trust Column */}
+          {/* About Column (Strictly matching dropdown menu) */}
           <div>
             <h3 style={{ fontSize: "0.75rem", fontWeight: 800, color: "#A855F7", textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: "20px" }}>
-              Navigation & Trust
+              About
             </h3>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "10px" }}>
-              {trustLinks.map((item) => (
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "9px" }}>
+              {aboutLinks.map((item) => (
                 <li key={item.label}>
                   <Link
                     href={item.href}
-                    style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none", fontSize: "0.875rem", transition: "color 0.2s" }}
+                    style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none", fontSize: "0.85rem", transition: "color 0.2s" }}
                   >
                     {item.label}
                   </Link>
@@ -171,71 +243,23 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Newsletter / Bulletin */}
+          {/* Packaging Column (Strictly matching dropdown menu) */}
           <div>
             <h3 style={{ fontSize: "0.75rem", fontWeight: 800, color: "#A855F7", textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: "20px" }}>
-              Export Market Bulletin
+              Packaging
             </h3>
-            <p style={{ fontSize: "0.875rem", color: "rgba(255,255,255,0.7)", marginBottom: "16px", lineHeight: 1.6 }}>
-              Receive seasonal harvest yields, crop pricing advisories, and GC-MS compliance updates.
-            </p>
-            <form action="/api/subscribe" method="POST" style={{ display: "flex", gap: "8px", marginBottom: "20px" }}>
-              <input
-                type="email"
-                name="email"
-                required
-                placeholder="procurement@brand.com"
-                style={{
-                  flex: 1,
-                  backgroundColor: "rgba(255,255,255,0.1)",
-                  border: "1px solid rgba(255,255,255,0.2)",
-                  borderRadius: "14px",
-                  padding: "12px 16px",
-                  fontSize: "0.875rem",
-                  color: "white",
-                  outline: "none",
-                  backdropFilter: "blur(8px)",
-                }}
-              />
-              <button
-                type="submit"
-                style={{
-                  background: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)",
-                  color: "white",
-                  border: "none",
-                  borderRadius: "14px",
-                  padding: "12px 22px",
-                  fontSize: "0.875rem",
-                  fontWeight: 700,
-                  cursor: "pointer",
-                  whiteSpace: "nowrap",
-                  boxShadow: "0 4px 14px rgba(124, 58, 237, 0.4)",
-                  transition: "transform 0.2s",
-                }}
-              >
-                Join
-              </button>
-            </form>
-
-            <Link
-              href="/request-quote"
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "8px",
-                padding: "12px 20px",
-                borderRadius: "14px",
-                backgroundColor: "rgba(124, 58, 237, 0.18)",
-                border: "1px solid rgba(124, 58, 237, 0.35)",
-                color: "#C4B5FD",
-                fontSize: "0.85rem",
-                fontWeight: 700,
-                textDecoration: "none",
-              }}
-            >
-              <span>Request Commercial Quote</span>
-              <ArrowRight size={14} />
-            </Link>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "9px" }}>
+              {packagingLinks.map((item) => (
+                <li key={item.label}>
+                  <Link
+                    href={item.href}
+                    style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none", fontSize: "0.85rem", transition: "color 0.2s" }}
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
 
         </div>
@@ -254,7 +278,7 @@ export function Footer() {
         }}
       >
         <p style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.5)", margin: 0 }}>
-          &copy; {new Date().getFullYear()} {COMPANY_INFO.name} ({COMPANY_INFO.parentCompany}). All rights reserved. &bull; Contact: <a href="mailto:pranavishwars@gmail.com" style={{ color: "#C4B5FD", textDecoration: "none" }}>pranavishwars@gmail.com</a>
+          &copy; {new Date().getFullYear()} {COMPANY_INFO.name} ({COMPANY_INFO.parentCompany}). All rights reserved. &bull; Contact: <a href={`mailto:${COMPANY_INFO.contact.salesEmail}`} style={{ color: "#C4B5FD", textDecoration: "none" }}>{COMPANY_INFO.contact.salesEmail}</a>
         </p>
         <div style={{ display: "flex", gap: "24px" }}>
           <Link href="/privacy" style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>

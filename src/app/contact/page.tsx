@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { COMPANY_INFO } from "@/lib/data";
 import { Footer } from "@/components/server/Footer";
@@ -12,26 +13,48 @@ import {
   Send,
   CheckCircle2,
   Clock,
-  Calculator,
+  Loader2,
   ArrowRight,
-  HelpCircle,
-  Loader2
+  Package
 } from "lucide-react";
-import { ScrollReveal } from "@/components/client/ScrollReveal";
+import { productStore } from "@/lib/products-store";
 
-export default function ContactPage() {
+function ContactFormContent() {
+  const searchParams = useSearchParams();
+  const prefilledProduct = searchParams.get("product") || "";
+
+  const allProducts = productStore.getAll();
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     company: "",
-    subject: "General Inquiry & Information",
+    country: "",
+    selectedProduct: "General Wholesale Inquiry",
+    quantityTier: "1 kg - Formulation / Evaluation Sample",
+    packagingType: "Standard Industrial Bulk (Aluminum / HDPE / Steel Drums)",
     message: "",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
+
+  // Handle pre-selected product from URL query
+  useEffect(() => {
+    if (prefilledProduct) {
+      const found = allProducts.find(
+        (p) => p.slug === prefilledProduct || p.name.toLowerCase().includes(prefilledProduct.toLowerCase())
+      );
+      if (found) {
+        setFormData((prev) => ({
+          ...prev,
+          selectedProduct: `${found.name} (${found.botanicalName || "Pure Distillate"})`,
+        }));
+      }
+    }
+  }, [prefilledProduct, allProducts]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -43,12 +66,15 @@ export default function ContactPage() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          type: "CONTACT",
+          type: "CONTACT_AND_QUOTE",
           name: formData.name,
           email: formData.email,
           phone: formData.phone,
           company: formData.company,
-          subject: formData.subject,
+          country: formData.country,
+          productName: formData.selectedProduct !== "General Wholesale Inquiry" ? formData.selectedProduct : undefined,
+          quantity: formData.quantityTier,
+          packaging: formData.packagingType,
           message: formData.message,
         }),
       });
@@ -56,13 +82,16 @@ export default function ContactPage() {
       const data = await res.json();
 
       if (!res.ok) {
-        throw new Error(data.error || "Failed to submit message.");
+        throw new Error(data.error || "Failed to submit inquiry.");
       }
 
       setIsSuccess(true);
     } catch (err: any) {
       console.error(err);
-      setErrorMessage(err.message || "An unexpected error occurred. Please try again or email us directly at pranavishwars@gmail.com.");
+      setErrorMessage(
+        err.message ||
+          "An unexpected error occurred. Please try again or email us directly at info@motherherbs.com."
+      );
     } finally {
       setIsSubmitting(false);
     }
@@ -70,7 +99,7 @@ export default function ContactPage() {
 
   return (
     <div style={{ backgroundColor: "#FCFAF6", minHeight: "100vh", display: "flex", flexDirection: "column", paddingTop: "100px" }}>
-      <main style={{ flex: 1, padding: "20px 24px 80px", maxWidth: "1140px", margin: "0 auto", width: "100%" }}>
+      <main style={{ flex: 1, padding: "20px 24px 80px", maxWidth: "1200px", margin: "0 auto", width: "100%" }}>
 
         {/* Page Header */}
         <div style={{ textAlign: "center", marginBottom: "40px" }}>
@@ -89,12 +118,12 @@ export default function ContactPage() {
               border: "1px solid rgba(124, 58, 237, 0.25)",
             }}
           >
-            <Building2 size={14} color="#7C3AED" /> Corporate Headquarters & Plant Contacts
+            <Building2 size={14} color="#7C3AED" /> CORPORATE HEADQUARTERS &amp; COMMERCIAL DESK
           </div>
 
           <h1
             style={{
-              fontSize: "clamp(2.4rem, 4vw, 3.4rem)",
+              fontSize: "clamp(2.4rem, 4.5vw, 3.4rem)",
               fontWeight: 700,
               fontFamily: "var(--font-lora), Georgia, serif",
               color: "#180D26",
@@ -102,86 +131,448 @@ export default function ContactPage() {
               marginBottom: "16px",
             }}
           >
-            Contact India Essential Oils
+            Contact Us &amp; Request Wholesale Quotes
           </h1>
 
-          <p style={{ fontSize: "1.15rem", color: "#5B486E", maxWidth: "680px", margin: "0 auto", lineHeight: 1.7 }}>
-            Connect with our corporate office, distillation distillery facilities, customer support, or technical quality teams in New Delhi, India.
+          <p style={{ fontSize: "1.12rem", color: "#5B486E", maxWidth: "780px", margin: "0 auto", lineHeight: 1.7 }}>
+            Connect with our New Delhi distillery headquarters. Submit wholesale pricing inquiries, custom retail dropper bottling specifications, sample requests, or general business queries.
           </p>
         </div>
 
-        {/* Cross-Link Banner: Dedicated Request Quote Redirect */}
-        <div
-          style={{
-            backgroundColor: "rgba(124, 58, 237, 0.06)",
-            backdropFilter: "blur(20px) saturate(160%)",
-            WebkitBackdropFilter: "blur(20px) saturate(160%)",
-            border: "1px solid rgba(124, 58, 237, 0.22)",
-            borderRadius: "20px",
-            padding: "16px 24px",
-            marginBottom: "40px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            flexWrap: "wrap",
-            gap: "14px",
-          }}
-        >
-          <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-            <Calculator size={20} color="#7C3AED" />
-            <div style={{ fontSize: "0.92rem", color: "#180D26" }}>
-              <strong>Looking for Bulk Commercial Pricing, Volume Discounts, or Custom Drum Quotes?</strong>{" "}
-              <span style={{ color: "#5B486E" }}>For B2B wholesale price sheets, custom blends, and CoA requests, use our quote desk.</span>
-            </div>
-          </div>
+        {/* 2-Column Main Layout: Form (Left) & Corporate Details (Right) */}
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(360px, 1fr))", gap: "36px", alignItems: "start" }}>
 
-          <Link
-            href="/request-quote"
+          {/* Left Column: Unified Contact & Quote Form */}
+          <div
+            className="liquid-glass-elevated"
             style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "6px",
-              backgroundColor: "#7C3AED",
-              color: "white",
-              padding: "8px 18px",
-              borderRadius: "9999px",
-              fontWeight: 700,
-              fontSize: "0.85rem",
-              textDecoration: "none",
-              boxShadow: "0 4px 12px rgba(124, 58, 237, 0.3)",
-              transition: "all 0.2s ease",
+              borderRadius: "28px",
+              padding: "36px 32px",
+              backgroundColor: "rgba(255, 255, 255, 0.88)",
+              border: "1px solid rgba(124, 58, 237, 0.22)",
+              boxShadow: "0 16px 48px rgba(24, 13, 38, 0.06)",
             }}
           >
-            <span>Commercial Quote Desk</span>
-            <ArrowRight size={14} />
-          </Link>
-        </div>
+            <div style={{ marginBottom: "24px" }}>
+              <h2 style={{ fontSize: "var(--font-size-h2)", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", margin: "0 0 6px 0" }}>
+                Submit Your Inquiry or Quote Request
+              </h2>
+              <p style={{ fontSize: "0.88rem", color: "#5B486E", margin: 0 }}>
+                Our commercial desk reviews all inquiries within 24 business hours.
+              </p>
+            </div>
 
-        {/* 2-Column Contact Grid */}
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(360px, 1fr))", gap: "48px", alignItems: "start" }}>
+            {isSuccess ? (
+              <div
+                style={{
+                  padding: "36px 24px",
+                  borderRadius: "20px",
+                  backgroundColor: "rgba(16, 185, 129, 0.08)",
+                  border: "1px solid rgba(16, 185, 129, 0.25)",
+                  textAlign: "center",
+                }}
+              >
+                <div
+                  style={{
+                    width: "56px",
+                    height: "56px",
+                    borderRadius: "50%",
+                    backgroundColor: "#059669",
+                    color: "white",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    margin: "0 auto 16px",
+                    boxShadow: "0 6px 20px rgba(5, 150, 105, 0.35)",
+                  }}
+                >
+                  <CheckCircle2 size={32} />
+                </div>
+                <h3 style={{ fontSize: "var(--font-size-h3)", fontWeight: 700, color: "#065F46", marginBottom: "8px" }}>
+                  Inquiry Received Successfully
+                </h3>
+                <p style={{ fontSize: "0.92rem", color: "#047857", lineHeight: 1.6, maxWidth: "460px", margin: "0 auto 20px" }}>
+                  Thank you, <strong>{formData.name}</strong>. Our technical export team has received your request and will respond to <strong>{formData.email}</strong> with complete pricing and specifications.
+                </p>
+                <div style={{ display: "flex", justifyContent: "center", gap: "10px", flexWrap: "wrap" }}>
+                  <a
+                    href={`mailto:${COMPANY_INFO.contact.salesEmail}`}
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: "6px",
+                      padding: "10px 20px",
+                      borderRadius: "9999px",
+                      backgroundColor: "#7C3AED",
+                      color: "white",
+                      fontSize: "0.85rem",
+                      fontWeight: 700,
+                      textDecoration: "none",
+                      boxShadow: "0 4px 14px rgba(124, 58, 237, 0.3)",
+                    }}
+                  >
+                    <Mail size={16} /> Email Sales Team
+                  </a>
+                  <button
+                    onClick={() => {
+                      setIsSuccess(false);
+                      setFormData({
+                        name: "",
+                        email: "",
+                        phone: "",
+                        company: "",
+                        country: "",
+                        selectedProduct: "General Wholesale Inquiry",
+                        quantityTier: "1 kg - Formulation / Evaluation Sample",
+                        packagingType: "Standard Industrial Bulk (Aluminum / HDPE / Steel Drums)",
+                        message: "",
+                      });
+                    }}
+                    style={{
+                      padding: "10px 20px",
+                      borderRadius: "9999px",
+                      backgroundColor: "rgba(124, 58, 237, 0.1)",
+                      border: "1px solid rgba(124, 58, 237, 0.25)",
+                      color: "#7C3AED",
+                      fontSize: "0.85rem",
+                      fontWeight: 700,
+                      cursor: "pointer",
+                    }}
+                  >
+                    Submit Another Inquiry
+                  </button>
+                </div>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "18px" }}>
+                {errorMessage && (
+                  <div
+                    style={{
+                      padding: "12px 16px",
+                      borderRadius: "12px",
+                      backgroundColor: "rgba(239, 68, 68, 0.1)",
+                      border: "1px solid rgba(239, 68, 68, 0.25)",
+                      color: "#DC2626",
+                      fontSize: "0.86rem",
+                    }}
+                  >
+                    {errorMessage}
+                  </div>
+                )}
 
-          {/* Left Column: Headquarters & Direct Directory */}
+                {/* Name & Email */}
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "14px" }}>
+                  <div>
+                    <label style={{ display: "block", fontSize: "0.82rem", fontWeight: 700, color: "#180D26", marginBottom: "6px", minHeight: "18px" }}>
+                      Your Full Name <span style={{ color: "#EF4444" }}>*</span>
+                    </label>
+                    <input
+                      type="text"
+                      required
+                      value={formData.name}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      placeholder="e.g. Eleanor Vance"
+                      style={{
+                        width: "100%",
+                        padding: "11px 14px",
+                        borderRadius: "12px",
+                        border: "1px solid rgba(124, 58, 237, 0.22)",
+                        backgroundColor: "rgba(255, 255, 255, 0.95)",
+                        fontSize: "0.9rem",
+                        color: "#180D26",
+                        outline: "none",
+                        boxSizing: "border-box",
+                      }}
+                    />
+                  </div>
+
+                  <div>
+                    <label style={{ display: "block", fontSize: "0.82rem", fontWeight: 700, color: "#180D26", marginBottom: "6px", minHeight: "18px" }}>
+                      Business Email <span style={{ color: "#EF4444" }}>*</span>
+                    </label>
+                    <input
+                      type="email"
+                      required
+                      value={formData.email}
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      placeholder="name@company.com"
+                      style={{
+                        width: "100%",
+                        padding: "11px 14px",
+                        borderRadius: "12px",
+                        border: "1px solid rgba(124, 58, 237, 0.22)",
+                        backgroundColor: "rgba(255, 255, 255, 0.95)",
+                        fontSize: "0.9rem",
+                        color: "#180D26",
+                        outline: "none",
+                        boxSizing: "border-box",
+                      }}
+                    />
+                  </div>
+                </div>
+
+                {/* Phone & Company (Aligned) */}
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "14px" }}>
+                  <div>
+                    <label style={{ display: "block", fontSize: "0.82rem", fontWeight: 700, color: "#180D26", marginBottom: "6px", minHeight: "18px", whiteSpace: "nowrap" }}>
+                      Phone Number (with Country Code)
+                    </label>
+                    <input
+                      type="tel"
+                      value={formData.phone}
+                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                      placeholder="+1 (555) 000-0000"
+                      style={{
+                        width: "100%",
+                        padding: "11px 14px",
+                        borderRadius: "12px",
+                        border: "1px solid rgba(124, 58, 237, 0.22)",
+                        backgroundColor: "rgba(255, 255, 255, 0.95)",
+                        fontSize: "0.9rem",
+                        color: "#180D26",
+                        outline: "none",
+                        boxSizing: "border-box",
+                      }}
+                    />
+                  </div>
+
+                  <div>
+                    <label style={{ display: "block", fontSize: "0.82rem", fontWeight: 700, color: "#180D26", marginBottom: "6px", minHeight: "18px", whiteSpace: "nowrap" }}>
+                      Company Name / Brand
+                    </label>
+                    <input
+                      type="text"
+                      value={formData.company}
+                      onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                      placeholder="e.g. Apex Aromatics LLC"
+                      style={{
+                        width: "100%",
+                        padding: "11px 14px",
+                        borderRadius: "12px",
+                        border: "1px solid rgba(124, 58, 237, 0.22)",
+                        backgroundColor: "rgba(255, 255, 255, 0.95)",
+                        fontSize: "0.9rem",
+                        color: "#180D26",
+                        outline: "none",
+                        boxSizing: "border-box",
+                      }}
+                    />
+                  </div>
+                </div>
+
+                {/* Country / Destination */}
+                <div>
+                  <label style={{ display: "block", fontSize: "0.82rem", fontWeight: 700, color: "#180D26", marginBottom: "6px", minHeight: "18px" }}>
+                    Destination Country / Region
+                  </label>
+                  <input
+                    type="text"
+                    value={formData.country}
+                    onChange={(e) => setFormData({ ...formData, country: e.target.value })}
+                    placeholder="e.g. United States, Australia, Germany, UAE, New Zealand..."
+                    style={{
+                      width: "100%",
+                      padding: "11px 14px",
+                      borderRadius: "12px",
+                      border: "1px solid rgba(124, 58, 237, 0.22)",
+                      backgroundColor: "rgba(255, 255, 255, 0.95)",
+                      fontSize: "0.9rem",
+                      color: "#180D26",
+                      outline: "none",
+                      boxSizing: "border-box",
+                    }}
+                  />
+                </div>
+
+                {/* Product Selection */}
+                <div>
+                  <label style={{ display: "block", fontSize: "0.82rem", fontWeight: 700, color: "#180D26", marginBottom: "6px", minHeight: "18px" }}>
+                    Product of Interest
+                  </label>
+                  <select
+                    value={formData.selectedProduct}
+                    onChange={(e) => setFormData({ ...formData, selectedProduct: e.target.value })}
+                    style={{
+                      width: "100%",
+                      padding: "11px 14px",
+                      borderRadius: "12px",
+                      border: "1px solid rgba(124, 58, 237, 0.22)",
+                      backgroundColor: "rgba(255, 255, 255, 0.95)",
+                      fontSize: "0.9rem",
+                      color: "#180D26",
+                      outline: "none",
+                      cursor: "pointer",
+                      boxSizing: "border-box",
+                    }}
+                  >
+                    <option value="General Wholesale Inquiry">General Wholesale / Multi-Product Inquiry</option>
+                    <optgroup label="Popular Essential Oils &amp; CO2 Extracts">
+                      <option value="Jasmine CO2 Extract (Jasminum sambac)">Jasmine CO₂ Extract</option>
+                      <option value="Cardamom CO2 Extract (Elettaria cardamomum)">Cardamom CO₂ Extract</option>
+                      <option value="Lavender Essential Oil (Lavandula angustifolia)">Lavender Essential Oil</option>
+                      <option value="Indian Sandalwood Oil (Santalum album)">Indian Sandalwood Oil</option>
+                      <option value="Peppermint Essential Oil (Mentha piperita)">Peppermint Essential Oil</option>
+                      <option value="Tea Tree Essential Oil (Melaleuca alternifolia)">Tea Tree Essential Oil</option>
+                      <option value="Frankincense Essential Oil (Boswellia serrata)">Frankincense Essential Oil</option>
+                      <option value="Rose Damascena Absolute (Rosa damascena)">Rose Damascena Absolute</option>
+                      <option value="Golden Jojoba Carrier Oil (Simmondsia chinensis)">Golden Jojoba Carrier Oil</option>
+                      <option value="Virgin Argan Carrier Oil (Argania spinosa)">Virgin Argan Carrier Oil</option>
+                      <option value="Kumkumadi Ayurvedic Tailam">Kumkumadi Ayurvedic Tailam</option>
+                    </optgroup>
+                    <optgroup label="All 238+ Botanical Distillates">
+                      {allProducts.map((p) => (
+                        <option key={p.slug} value={`${p.name} (${p.botanicalName || "Pure"})`}>
+                          {p.name} {p.botanicalName ? `(${p.botanicalName})` : ""}
+                        </option>
+                      ))}
+                    </optgroup>
+                  </select>
+                </div>
+
+                {/* Quantity Tier & Packaging Preference */}
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "14px" }}>
+                  <div>
+                    <label style={{ display: "block", fontSize: "0.82rem", fontWeight: 700, color: "#180D26", marginBottom: "6px", minHeight: "18px" }}>
+                      Estimated Order Volume
+                    </label>
+                    <select
+                      value={formData.quantityTier}
+                      onChange={(e) => setFormData({ ...formData, quantityTier: e.target.value })}
+                      style={{
+                        width: "100%",
+                        padding: "11px 14px",
+                        borderRadius: "12px",
+                        border: "1px solid rgba(124, 58, 237, 0.22)",
+                        backgroundColor: "rgba(255, 255, 255, 0.95)",
+                        fontSize: "0.88rem",
+                        color: "#180D26",
+                        outline: "none",
+                        cursor: "pointer",
+                        boxSizing: "border-box",
+                      }}
+                    >
+                      <option value="1 kg - Formulation / Evaluation Sample">1 kg - Formulation / Evaluation Sample</option>
+                      <option value="5 kg - 25 kg Aluminum Canisters">5 kg - 25 kg Aluminum Canisters</option>
+                      <option value="25 kg - 50 kg HDPE Carboy">25 kg - 50 kg HDPE Carboy</option>
+                      <option value="200 kg UN Steel Export Drum">200 kg UN Steel Export Drum</option>
+                      <option value="Metric Ton / Multi-Drum Contract">Metric Ton / Multi-Drum Contract</option>
+                      <option value="Retail Private Label Droppers (10ml–500ml)">Retail Private Label Droppers (10ml–500ml)</option>
+                      <option value="General Corporate Question / Other">General Corporate Question / Other</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label style={{ display: "block", fontSize: "0.82rem", fontWeight: 700, color: "#180D26", marginBottom: "6px", minHeight: "18px" }}>
+                      Packaging Preference
+                    </label>
+                    <select
+                      value={formData.packagingType}
+                      onChange={(e) => setFormData({ ...formData, packagingType: e.target.value })}
+                      style={{
+                        width: "100%",
+                        padding: "11px 14px",
+                        borderRadius: "12px",
+                        border: "1px solid rgba(124, 58, 237, 0.22)",
+                        backgroundColor: "rgba(255, 255, 255, 0.95)",
+                        fontSize: "0.88rem",
+                        color: "#180D26",
+                        outline: "none",
+                        cursor: "pointer",
+                        boxSizing: "border-box",
+                      }}
+                    >
+                      <option value="Standard Industrial Bulk (Aluminum / HDPE / Steel Drums)">Standard Industrial Bulk (Aluminum / HDPE / Steel Drums)</option>
+                      <option value="Retail Glass Dropper Bottles (10ml–500ml Amber/Clear/Matte)">Retail Glass Dropper Bottles (10ml–500ml Amber/Clear/Matte)</option>
+                      <option value="Outer Cushion Box Packing & Secondary Cartons">Outer Cushion Box Packing &amp; Secondary Cartons</option>
+                      <option value="Custom OEM Private Labeling & Printing">Custom OEM Private Labeling &amp; Printing</option>
+                      <option value="Nitrogen Inerting / Displacement Capping">Nitrogen Inerting / Displacement Capping</option>
+                    </select>
+                  </div>
+                </div>
+
+                {/* Message Details */}
+                <div>
+                  <label style={{ display: "block", fontSize: "0.82rem", fontWeight: 700, color: "#180D26", marginBottom: "6px", minHeight: "18px" }}>
+                    Inquiry Details / Specific Requirements
+                  </label>
+                  <textarea
+                    rows={5}
+                    value={formData.message}
+                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    placeholder="Provide details regarding target botanical grades, custom labeling specifications, target delivery timeline, or any questions..."
+                    style={{
+                      width: "100%",
+                      padding: "12px 14px",
+                      borderRadius: "12px",
+                      border: "1px solid rgba(124, 58, 237, 0.22)",
+                      backgroundColor: "rgba(255, 255, 255, 0.95)",
+                      fontSize: "0.9rem",
+                      color: "#180D26",
+                      outline: "none",
+                      resize: "vertical",
+                      fontFamily: "inherit",
+                      boxSizing: "border-box",
+                    }}
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="btn-vibrant-primary"
+                  style={{
+                    padding: "14px 28px",
+                    borderRadius: "9999px",
+                    fontWeight: 700,
+                    fontSize: "0.95rem",
+                    display: "inline-flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: "8px",
+                    border: "none",
+                    cursor: isSubmitting ? "wait" : "pointer",
+                    boxShadow: "0 6px 20px rgba(124, 58, 237, 0.4)",
+                    marginTop: "6px",
+                  }}
+                >
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 size={18} className="animate-spin" />
+                      <span>Sending Inquiry...</span>
+                    </>
+                  ) : (
+                    <>
+                      <Send size={18} />
+                      <span>Send Inquiry &amp; Quote Request</span>
+                    </>
+                  )}
+                </button>
+              </form>
+            )}
+          </div>
+
+          {/* Right Column: Corporate Headquarters & Official Contacts */}
           <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
 
-            {/* Headquarters Glass Card */}
+            {/* Corporate Headquarters Plaque */}
             <div
               className="liquid-glass"
               style={{
                 borderRadius: "28px",
                 padding: "36px",
-                backgroundColor: "rgba(255, 255, 255, 0.76)",
-                border: "1px solid rgba(124, 58, 237, 0.18)",
-                boxShadow: "0 8px 32px rgba(24, 13, 38, 0.04)"
+                backgroundColor: "rgba(255, 255, 255, 0.88)",
+                border: "1px solid rgba(124, 58, 237, 0.22)",
+                boxShadow: "0 16px 48px rgba(24, 13, 38, 0.05)",
               }}
             >
-              <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "20px" }}>
-                <Building2 size={22} color="#7C3AED" />
-                <h2 style={{ fontSize: "1.35rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", margin: 0 }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "20px" }}>
+                <Building2 size={24} color="#7C3AED" />
+                <h2 style={{ fontSize: "var(--font-size-h2)", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", margin: 0 }}>
                   Corporate Headquarters
                 </h2>
               </div>
 
-              <div style={{ display: "flex", flexDirection: "column", gap: "18px" }}>
+              <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
                 <div>
                   <div style={{ fontSize: "0.75rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: "4px" }}>
                     Company Structure
@@ -196,10 +587,11 @@ export default function ContactPage() {
 
                 <div>
                   <div style={{ fontSize: "0.75rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: "4px" }}>
-                    Facility Location
+                    Plant &amp; Office Location
                   </div>
-                  <div style={{ fontSize: "0.95rem", color: "#180D26", display: "flex", alignItems: "center", gap: "6px" }}>
-                    <MapPin size={16} color="#7C3AED" /> {COMPANY_INFO.contact.address}
+                  <div style={{ fontSize: "0.95rem", color: "#180D26", display: "flex", alignItems: "flex-start", gap: "8px", lineHeight: 1.5 }}>
+                    <MapPin size={18} color="#7C3AED" style={{ flexShrink: 0, marginTop: "2px" }} />
+                    <span>{COMPANY_INFO.contact.address}</span>
                   </div>
                 </div>
 
@@ -207,7 +599,7 @@ export default function ContactPage() {
                   <div style={{ fontSize: "0.75rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: "4px" }}>
                     Operating Hours
                   </div>
-                  <div style={{ fontSize: "0.92rem", color: "#180D26", display: "flex", alignItems: "center", gap: "6px" }}>
+                  <div style={{ fontSize: "0.92rem", color: "#180D26", display: "flex", alignItems: "center", gap: "8px" }}>
                     <Clock size={16} color="#7C3AED" /> Monday &ndash; Saturday: 9:00 AM &ndash; 6:30 PM (IST)
                   </div>
                 </div>
@@ -216,322 +608,48 @@ export default function ContactPage() {
                   <div style={{ fontSize: "0.75rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: "4px" }}>
                     Official Contacts
                   </div>
-                  <div style={{ fontSize: "0.95rem", color: "#180D26", display: "flex", alignItems: "center", gap: "6px", marginBottom: "4px" }}>
-                    <Mail size={16} color="#7C3AED" /> {COMPANY_INFO.contact.email}
+                  <div style={{ fontSize: "0.95rem", color: "#180D26", display: "flex", alignItems: "center", gap: "8px", marginBottom: "8px" }}>
+                    <Mail size={16} color="#7C3AED" />
+                    <a href={`mailto:${COMPANY_INFO.contact.email}`} style={{ color: "#180D26", textDecoration: "none" }}>
+                      {COMPANY_INFO.contact.email}
+                    </a>
                   </div>
-                  <div style={{ fontSize: "0.95rem", color: "#180D26", display: "flex", alignItems: "center", gap: "6px" }}>
-                    <Phone size={16} color="#7C3AED" /> {COMPANY_INFO.contact.phone} / {COMPANY_INFO.contact.landline}
+                  <div style={{ fontSize: "0.95rem", color: "#180D26", display: "flex", alignItems: "center", gap: "8px", marginBottom: "8px" }}>
+                    <Mail size={16} color="#7C3AED" />
+                    <a href={`mailto:${COMPANY_INFO.contact.salesEmail}`} style={{ color: "#180D26", textDecoration: "none" }}>
+                      {COMPANY_INFO.contact.salesEmail}
+                    </a>
+                  </div>
+                  <div style={{ fontSize: "0.95rem", color: "#180D26", display: "flex", alignItems: "center", gap: "8px" }}>
+                    <Phone size={16} color="#7C3AED" />
+                    <a href={`tel:${COMPANY_INFO.contact.phone}`} style={{ color: "#180D26", textDecoration: "none" }}>
+                      {COMPANY_INFO.contact.phone}
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Direct Support Email Desk Card */}
-            <div
-              className="liquid-glass"
-              style={{
-                borderRadius: "24px",
-                padding: "26px",
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-                gap: "16px",
-                flexWrap: "wrap",
-                backgroundColor: "rgba(255, 255, 255, 0.76)",
-                border: "1px solid rgba(124, 58, 237, 0.18)"
-              }}
-            >
-              <div>
-                <div style={{ fontSize: "1.05rem", fontWeight: 700, color: "#180D26", marginBottom: "2px" }}>
-                  Direct Executive Support
-                </div>
-                <div style={{ fontSize: "0.85rem", color: "#5B486E" }}>
-                  Email our corporate team at <strong style={{ color: "#7C3AED" }}>pranavishwars@gmail.com</strong>
-                </div>
-              </div>
-
-              <a
-                href="mailto:pranavishwars@gmail.com?subject=Direct%20Corporate%20Inquiry"
-                className="btn-vibrant-primary"
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "6px",
-                  padding: "11px 20px",
-                  borderRadius: "9999px",
-                  fontWeight: 700,
-                  fontSize: "0.85rem",
-                  textDecoration: "none",
-                  boxShadow: "0 4px 14px rgba(124, 58, 237, 0.35)",
-                }}
-              >
-                <Mail size={16} /> Email Us
-              </a>
-            </div>
-
           </div>
-
-          {/* Right Column: General Contact Form */}
-          <div
-            className="liquid-glass-elevated"
-            style={{
-              borderRadius: "28px",
-              padding: "36px",
-              backgroundColor: "rgba(255, 255, 255, 0.82)",
-              border: "1px solid rgba(124, 58, 237, 0.25)",
-              boxShadow: "0 16px 48px rgba(24, 13, 38, 0.08)"
-            }}
-          >
-            {isSuccess ? (
-              <div style={{ textAlign: "center", padding: "32px 12px" }}>
-                <div
-                  style={{
-                    width: "64px",
-                    height: "64px",
-                    borderRadius: "50%",
-                    backgroundColor: "rgba(16, 185, 129, 0.15)",
-                    color: "#059669",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    margin: "0 auto 16px",
-                  }}
-                >
-                  <CheckCircle2 size={36} />
-                </div>
-                <h3 style={{ fontSize: "1.5rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginBottom: "8px" }}>
-                  Message Transmitted
-                </h3>
-                <p style={{ fontSize: "0.95rem", color: "#5B486E", lineHeight: 1.6, marginBottom: "24px" }}>
-                  Thank you, <strong>{formData.name}</strong>. Your correspondence has been routed to our corporate administration. We will reply to <strong>{formData.email}</strong> shortly.
-                </p>
-                <button
-                  onClick={() => {
-                    setIsSuccess(false);
-                    setFormData(prev => ({ ...prev, message: "" }));
-                  }}
-                  style={{
-                    background: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)",
-                    color: "white",
-                    border: "none",
-                    borderRadius: "9999px",
-                    padding: "12px 28px",
-                    fontWeight: 700,
-                    fontSize: "0.9rem",
-                    cursor: "pointer",
-                    boxShadow: "0 4px 16px rgba(124, 58, 237, 0.4)",
-                  }}
-                >
-                  Send Another Message
-                </button>
-              </div>
-            ) : (
-              <div>
-                <h2 style={{ fontSize: "1.45rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginBottom: "4px" }}>
-                  Send a General Message
-                </h2>
-                <p style={{ fontSize: "0.88rem", color: "#5B486E", marginBottom: "24px" }}>
-                  For general business inquiries, technical questions, or corporate communications.
-                </p>
-
-                {errorMessage && (
-                  <div style={{ padding: "12px 16px", borderRadius: "12px", backgroundColor: "rgba(239, 68, 68, 0.1)", border: "1px solid rgba(239, 68, 68, 0.25)", color: "#DC2626", fontSize: "0.88rem", marginBottom: "16px" }}>
-                    {errorMessage}
-                  </div>
-                )}
-
-                <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "18px" }}>
-                  <div>
-                    <label style={{ display: "block", fontSize: "0.825rem", fontWeight: 700, color: "#180D26", marginBottom: "6px" }}>
-                      Full Name *
-                    </label>
-                    <input
-                      type="text"
-                      required
-                      placeholder="e.g. Eleanor Vance"
-                      value={formData.name}
-                      onChange={e => setFormData({ ...formData, name: e.target.value })}
-                      style={{
-                        width: "100%",
-                        padding: "12px 14px",
-                        borderRadius: "12px",
-                        border: "1px solid rgba(124, 58, 237, 0.25)",
-                        backgroundColor: "rgba(255, 255, 255, 0.9)",
-                        fontSize: "0.9rem",
-                        color: "#180D26",
-                        outline: "none",
-                        boxSizing: "border-box",
-                      }}
-                    />
-                  </div>
-
-                  <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "14px" }}>
-                    <div>
-                      <label style={{ display: "block", fontSize: "0.825rem", fontWeight: 700, color: "#180D26", marginBottom: "6px" }}>
-                        Email Address *
-                      </label>
-                      <input
-                        type="email"
-                        required
-                        placeholder="yourname@domain.com"
-                        value={formData.email}
-                        onChange={e => setFormData({ ...formData, email: e.target.value })}
-                        style={{
-                          width: "100%",
-                          padding: "12px 14px",
-                          borderRadius: "12px",
-                          border: "1px solid rgba(124, 58, 237, 0.25)",
-                          backgroundColor: "rgba(255, 255, 255, 0.9)",
-                          fontSize: "0.9rem",
-                          color: "#180D26",
-                          outline: "none",
-                          boxSizing: "border-box",
-                        }}
-                      />
-                    </div>
-
-                    <div>
-                      <label style={{ display: "block", fontSize: "0.825rem", fontWeight: 700, color: "#180D26", marginBottom: "6px" }}>
-                        Phone / Mobile
-                      </label>
-                      <input
-                        type="tel"
-                        placeholder="+91 / +1 ..."
-                        value={formData.phone}
-                        onChange={e => setFormData({ ...formData, phone: e.target.value })}
-                        style={{
-                          width: "100%",
-                          padding: "12px 14px",
-                          borderRadius: "12px",
-                          border: "1px solid rgba(124, 58, 237, 0.25)",
-                          backgroundColor: "rgba(255, 255, 255, 0.9)",
-                          fontSize: "0.9rem",
-                          color: "#180D26",
-                          outline: "none",
-                          boxSizing: "border-box",
-                        }}
-                      />
-                    </div>
-                  </div>
-
-                  <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "14px" }}>
-                    <div>
-                      <label style={{ display: "block", fontSize: "0.825rem", fontWeight: 700, color: "#180D26", marginBottom: "6px" }}>
-                        Company / Organization
-                      </label>
-                      <input
-                        type="text"
-                        placeholder="Company name"
-                        value={formData.company}
-                        onChange={e => setFormData({ ...formData, company: e.target.value })}
-                        style={{
-                          width: "100%",
-                          padding: "12px 14px",
-                          borderRadius: "12px",
-                          border: "1px solid rgba(124, 58, 237, 0.25)",
-                          backgroundColor: "rgba(255, 255, 255, 0.9)",
-                          fontSize: "0.9rem",
-                          color: "#180D26",
-                          outline: "none",
-                          boxSizing: "border-box",
-                        }}
-                      />
-                    </div>
-
-                    <div>
-                      <label style={{ display: "block", fontSize: "0.825rem", fontWeight: 700, color: "#180D26", marginBottom: "6px" }}>
-                        Inquiry Subject *
-                      </label>
-                      <select
-                        value={formData.subject}
-                        onChange={e => setFormData({ ...formData, subject: e.target.value })}
-                        style={{
-                          width: "100%",
-                          padding: "12px 14px",
-                          borderRadius: "12px",
-                          border: "1px solid rgba(124, 58, 237, 0.25)",
-                          backgroundColor: "rgba(255, 255, 255, 0.9)",
-                          fontSize: "0.85rem",
-                          color: "#180D26",
-                          outline: "none",
-                          cursor: "pointer",
-                          boxSizing: "border-box",
-                        }}
-                      >
-                        <option value="General Inquiry & Information">General Inquiry</option>
-                        <option value="Customer Support & Order Status">Customer Support & Tracking</option>
-                        <option value="Quality Assurance & Lab Audits">Quality & Factory Audits</option>
-                        <option value="Partnership, Distribution & Agency">Partnership & Distribution</option>
-                        <option value="Media, Press & Corporate Affairs">Media & Press</option>
-                        <option value="Career & Research Opportunities">Careers & Research</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div>
-                    <label style={{ display: "block", fontSize: "0.825rem", fontWeight: 700, color: "#180D26", marginBottom: "6px" }}>
-                      Message *
-                    </label>
-                    <textarea
-                      required
-                      rows={4}
-                      placeholder="How can we assist you today?"
-                      value={formData.message}
-                      onChange={e => setFormData({ ...formData, message: e.target.value })}
-                      style={{
-                        width: "100%",
-                        padding: "12px 14px",
-                        borderRadius: "12px",
-                        border: "1px solid rgba(124, 58, 237, 0.25)",
-                        backgroundColor: "rgba(255, 255, 255, 0.9)",
-                        fontSize: "0.9rem",
-                        color: "#180D26",
-                        outline: "none",
-                        boxSizing: "border-box",
-                        resize: "vertical",
-                      }}
-                    />
-                  </div>
-
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    style={{
-                      display: "inline-flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      gap: "8px",
-                      background: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)",
-                      color: "white",
-                      border: "none",
-                      borderRadius: "9999px",
-                      padding: "14px 28px",
-                      fontWeight: 700,
-                      fontSize: "0.95rem",
-                      cursor: isSubmitting ? "not-allowed" : "pointer",
-                      boxShadow: "0 4px 16px rgba(124, 58, 237, 0.4)",
-                      transition: "all 0.2s ease",
-                      marginTop: "6px",
-                    }}
-                  >
-                    {isSubmitting ? (
-                      "Sending Message..."
-                    ) : (
-                      <>
-                        <span>Submit General Inquiry</span>
-                        <Send size={16} />
-                      </>
-                    )}
-                  </button>
-                </form>
-              </div>
-            )}
-          </div>
-
         </div>
+
       </main>
 
       <Footer />
     </div>
+  );
+}
+
+export default function ContactPage() {
+  return (
+    <Suspense
+      fallback={
+        <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: "#FCFAF6" }}>
+          <Loader2 size={32} color="#7C3AED" className="animate-spin" />
+        </div>
+      }
+    >
+      <ContactFormContent />
+    </Suspense>
   );
 }

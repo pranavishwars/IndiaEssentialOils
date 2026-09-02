@@ -163,7 +163,7 @@ export default function QualityPage() {
             <span style={{ fontSize: "0.75rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase", letterSpacing: "0.12em" }}>
               Climate-Controlled Packaging &amp; Preservation
             </span>
-            <h2 style={{ fontSize: "2.2rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginTop: "6px" }}>
+            <h2 style={{ fontSize: "var(--font-size-h1)", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginTop: "6px" }}>
               Export Packaging &amp; Nitrogen Inerting Standards
             </h2>
             <p style={{ fontSize: "1.05rem", color: "#5B486E", maxWidth: "760px", margin: "10px auto 0", lineHeight: 1.65 }}>
@@ -217,7 +217,7 @@ export default function QualityPage() {
             >
               <div>
                 <div style={{ fontSize: "1.2rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#C4B5FD" }}>
-                  Turnkey Private Labeling &amp; Bulk Container Formats
+                  Private Labeling &amp; Bulk Container Formats
                 </div>
                 <div style={{ fontSize: "0.85rem", color: "rgba(255, 255, 255, 0.75)", marginTop: "2px" }}>
                   From 5ml Amber Pipette Bottles to 200kg UN-Rated Epoxy Steel Drums
@@ -345,7 +345,7 @@ export default function QualityPage() {
           </div>
 
           <Link
-            href="/request-quote"
+            href="/contact"
             className="btn-vibrant-primary"
             style={{
               padding: "15px 30px",
@@ -358,7 +358,7 @@ export default function QualityPage() {
               gap: "8px",
             }}
           >
-            Request CoA &amp; Packaging Quote <ArrowRight size={16} />
+            Contact Us <ArrowRight size={16} />
           </Link>
         </div>
 

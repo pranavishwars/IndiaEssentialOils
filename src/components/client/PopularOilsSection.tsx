@@ -49,7 +49,7 @@ export function PopularOilsSection() {
           >
             <TrendingUp size={14} color="#7C3AED" /> 90-Day Market Demand
           </div>
-          <h2 style={{ fontSize: "2.4rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", margin: 0 }}>
+          <h2 style={{ fontSize: "var(--font-size-h1)", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", margin: 0 }}>
             Most Popular & Trending Oils
           </h2>
         </div>

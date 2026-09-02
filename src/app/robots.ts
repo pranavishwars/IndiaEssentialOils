@@ -10,7 +10,7 @@ export default function robots(): MetadataRoute.Robots {
       },
       {
         userAgent: ["GPTBot", "ChatGPT-User", "PerplexityBot", "ClaudeBot", "Google-Extended", "Applebot-Extended", "CCBot"],
-        allow: ["/", "/llms.txt", "/llms-full.txt", "/products", "/batch-lookup", "/about", "/certifications", "/quality"],
+        allow: ["/", "/llms.txt", "/llms-full.txt", "/products", "/about", "/certifications", "/quality"],
         disallow: ["/admin", "/api/"],
       },
     ],

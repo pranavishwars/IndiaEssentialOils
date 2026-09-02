@@ -290,7 +290,7 @@ export function ChatbotWidget() {
                 inset: 0,
                 backgroundColor: "rgba(0, 0, 0, 0.5)",
                 backdropFilter: "blur(4px)",
-                zIndex: 99998,
+                zIndex: "var(--z-chatbot)" as unknown as number,
               }}
             />
           )}
@@ -314,7 +314,7 @@ export function ChatbotWidget() {
               display: "flex",
               flexDirection: "column",
               overflow: "hidden",
-              zIndex: 99999,
+              zIndex: "var(--z-chatbot-ui)" as unknown as number,
               animation: isMobile ? "slideUp 0.25s cubic-bezier(0.16, 1, 0.3, 1)" : "fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1)",
             }}
           >
@@ -519,27 +519,23 @@ export function ChatbotWidget() {
                       {msg.isFallback && (
                         <div style={{ marginTop: "12px", display: "flex", flexDirection: "column", gap: "8px" }}>
                           <a
-                            href={`https://wa.me/918043807715?text=${encodeURIComponent(
-                              `Hello India Essential Oils team, I have an inquiry: ${msg.queryForEscalation || ""}`
-                            )}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
+                            href={`tel:${COMPANY_INFO.contact.phone}`}
                             style={{
                               display: "inline-flex",
                               alignItems: "center",
                               justifyContent: "center",
                               gap: "8px",
                               padding: "9px 14px",
-                              backgroundColor: "#059669",
+                              backgroundColor: "#7C3AED",
                               color: "white",
                               borderRadius: "9999px",
                               fontWeight: 700,
                               fontSize: "0.82rem",
                               textDecoration: "none",
-                              boxShadow: "0 3px 10px rgba(5, 150, 105, 0.35)",
+                              boxShadow: "0 3px 10px rgba(124, 58, 237, 0.35)",
                             }}
                           >
-                            <Phone size={14} /> WhatsApp Export Desk (+91 8043807715)
+                            <Phone size={14} /> Call Technical Desk ({COMPANY_INFO.contact.phone})
                           </a>
 
                           <a
@@ -565,7 +561,7 @@ export function ChatbotWidget() {
                           </a>
 
                           <Link
-                            href="/request-quote"
+                            href="/contact"
                             onClick={() => setIsOpen(false)}
                             style={{
                               display: "inline-flex",
@@ -582,7 +578,7 @@ export function ChatbotWidget() {
                               textDecoration: "none",
                             }}
                           >
-                            <Calculator size={14} /> Open B2B Commercial Quote Desk
+                            <Calculator size={14} /> Contact Us
                           </Link>
                         </div>
                       )}

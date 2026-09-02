@@ -130,7 +130,7 @@ export function CatalogView({ preselectedCategory }: CatalogViewProps = {}) {
   };
 
   return (
-    <div style={{ display: "grid", gridTemplateColumns: "280px 1fr", gap: "36px", alignItems: "start" }}>
+    <div style={{ display: "grid", gridTemplateColumns: "clamp(220px, 22%, 280px) 1fr", gap: "36px", alignItems: "start" }} className="catalog-layout">
       {/* Left Sidebar Filter — Vibrant Liquid Glass */}
       <aside
         style={{
@@ -284,7 +284,7 @@ export function CatalogView({ preselectedCategory }: CatalogViewProps = {}) {
 
         {/* Product Grid */}
         {products.length > 0 ? (
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "24px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", containerType: "inline-size" } as React.CSSProperties}>
             {products.map(product => (
               <div
                 key={product.id}
@@ -388,7 +388,7 @@ export function CatalogView({ preselectedCategory }: CatalogViewProps = {}) {
                   </div>
 
                   <Link
-                    href="/request-quote"
+                    href={`/contact?product=${encodeURIComponent(product.slug)}`}
                     style={{
                       fontSize: "0.85rem",
                       fontWeight: 700,

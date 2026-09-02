@@ -398,7 +398,26 @@ export function HomeUniversalSearchBar() {
                       display: "flex",
                       flexDirection: "column",
                       backgroundColor: "rgba(255, 255, 255, 0.9)",
-                      border: "1px solid rgba(124, 58, 237, 0.16)",
+                      border: "1.5px solid rgba(124, 58, 237, 0.16)",
+                      boxShadow: "0 4px 16px rgba(24, 13, 38, 0.04)",
+                      transition: "transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.25s ease, background-color 0.25s ease",
+                      cursor: "pointer",
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = "translateY(-6px)";
+                      e.currentTarget.style.borderColor = "rgba(124, 58, 237, 0.65)";
+                      e.currentTarget.style.boxShadow = "0 16px 36px rgba(124, 58, 237, 0.22)";
+                      e.currentTarget.style.backgroundColor = "#FFFFFF";
+                      const img = e.currentTarget.querySelector("img");
+                      if (img) img.style.transform = "scale(1.06)";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = "translateY(0)";
+                      e.currentTarget.style.borderColor = "rgba(124, 58, 237, 0.16)";
+                      e.currentTarget.style.boxShadow = "0 4px 16px rgba(24, 13, 38, 0.04)";
+                      e.currentTarget.style.backgroundColor = "rgba(255, 255, 255, 0.9)";
+                      const img = e.currentTarget.querySelector("img");
+                      if (img) img.style.transform = "scale(1)";
                     }}
                   >
                     <div
@@ -410,12 +429,20 @@ export function HomeUniversalSearchBar() {
                         display: "block",
                         overflow: "hidden",
                         marginBottom: "12px",
+                        backgroundColor: "#EDE8DF",
                       }}
                     >
                       <img
                         src={product.compositeImageUrl || `/products/${product.slug}.webp`}
                         alt={product.name}
-                        style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block" }}
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "cover",
+                          objectPosition: "center",
+                          display: "block",
+                          transition: "transform 0.35s ease",
+                        }}
                       />
                     </div>
 
@@ -471,7 +498,19 @@ export function HomeUniversalSearchBar() {
                       <span className="notranslate" translate="no" style={{ color: "#180D26", fontWeight: 600, whiteSpace: "nowrap", flexShrink: 0 }}>
                         MOQ: <strong>{product.moq}</strong>
                       </span>
-                      <span style={{ color: "#7C3AED", fontWeight: 700, whiteSpace: "nowrap", flexShrink: 0 }}>Inspect &rarr;</span>
+                      <span
+                        style={{
+                          color: "#7C3AED",
+                          fontWeight: 700,
+                          whiteSpace: "nowrap",
+                          flexShrink: 0,
+                          display: "inline-flex",
+                          alignItems: "center",
+                          gap: "3px",
+                        }}
+                      >
+                        Inspect &rarr;
+                      </span>
                     </div>
                   </Link>
                 );
@@ -487,7 +526,7 @@ export function HomeUniversalSearchBar() {
                 We distill custom botanical batches and rare chemotypes on demand. Send us your required Latin botanical name or CAS number.
               </p>
               <Link
-                href="/request-quote"
+                href="/contact"
                 className="btn-vibrant-primary"
                 style={{
                   display: "inline-flex",
@@ -501,7 +540,7 @@ export function HomeUniversalSearchBar() {
                   textDecoration: "none",
                 }}
               >
-                <span>Request Custom Distillation Quote</span>
+                <span>Contact Us</span>
                 <ArrowRight size={14} />
               </Link>
             </div>

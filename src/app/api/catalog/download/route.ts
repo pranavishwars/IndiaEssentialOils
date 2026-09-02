@@ -9,7 +9,7 @@ export async function GET() {
 INDIA ESSENTIAL OILS — OFFICIAL BOTANICAL WHOLESALE CATALOG (2026 EDITION)
 A Division of ${COMPANY_INFO.parentCompany}
 Address: ${COMPANY_INFO.contact.address}
-Phone: ${COMPANY_INFO.contact.phone} | Landline: ${COMPANY_INFO.contact.landline}
+Phone: ${COMPANY_INFO.contact.phone}
 Email: ${COMPANY_INFO.contact.email} | ${COMPANY_INFO.contact.salesEmail}
 Web: https://indiaessentialoils.com
 Certifications: ISO 9001:2015, ISO 22000:2005, WHO-GMP, NPOP Organic, IndiaMART TrustSeal
@@ -17,7 +17,7 @@ Certifications: ISO 9001:2015, ISO 22000:2005, WHO-GMP, NPOP Organic, IndiaMART 
 
 Total Verified Botanical Products: ${products.length}
 Packaging Suites: 10ml–500ml Glass (Amber, Clear, Matte) | 1kg–25kg Aluminum | 20kg–200kg HDPE/Steel
-Cleanroom Nitrogen Inerting, Cushion Box Packing & Turnkey Private Labeling Available.
+Cleanroom Nitrogen Inerting, Cushion Box Packing & Private Labeling Available.
 Standard Dispatch: Within 48 Hours of Payment.
 
 --------------------------------------------------------------------------------

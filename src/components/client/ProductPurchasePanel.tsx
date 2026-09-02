@@ -156,7 +156,7 @@ export function ProductPurchasePanel({ product, onOpenQuote }: ProductPurchasePa
         <div style={{ fontSize: "0.8rem", color: "#5B486E", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "4px" }}>
           Approximate Wholesale Price
         </div>
-        <div style={{ fontSize: "1.8rem", fontWeight: 700, color: "#180D26", fontFamily: "var(--font-lora), Georgia, serif" }}>
+        <div style={{ fontSize: "var(--font-size-h2)", fontWeight: 700, color: "#180D26", fontFamily: "var(--font-lora), Georgia, serif" }}>
           {product.priceDisplay || "Request Quote for Pricing"}
         </div>
         <div style={{ fontSize: "0.78rem", color: "#5B486E", marginTop: "4px" }}>
@@ -170,12 +170,12 @@ export function ProductPurchasePanel({ product, onOpenQuote }: ProductPurchasePa
           </strong>
         </div>
 
-        {/* Private Label / Turnkey OEM Customization Highlight */}
+        {/* Private Label & Custom Bottling Highlight */}
         <div style={{ marginTop: "16px", padding: "12px 14px", borderRadius: "12px", backgroundColor: "rgba(124, 58, 237, 0.05)", border: "1px dashed rgba(124, 58, 237, 0.35)", display: "flex", alignItems: "center", gap: "10px" }}>
           <span style={{ fontSize: "1.1rem" }}>🏷️</span>
           <div style={{ fontSize: "0.82rem", color: "#374151", lineHeight: 1.4 }}>
-            <strong style={{ color: "#7C3AED", display: "block" }}>Custom Labeling &amp; OEM Ready</strong>
-            We print your brand logo, custom barcodes, and provide turnkey bottle packaging for your brand.
+            <strong style={{ color: "#7C3AED", display: "block" }}>Custom Labeling &amp; Private Label Ready</strong>
+            We print custom labels, barcodes, and provide retail bottle packaging according to client specifications.
           </div>
         </div>
       </div>
@@ -214,10 +214,10 @@ export function ProductPurchasePanel({ product, onOpenQuote }: ProductPurchasePa
         </button>
       </div>
 
-      {/* Batch Lookup Direct Link */}
+      {/* Quality Standards Direct Link */}
       <div style={{ borderTop: "1px solid rgba(124, 58, 237, 0.15)", paddingTop: "18px" }}>
         <Link
-          href="/batch-lookup"
+          href="/quality"
           style={{
             display: "inline-flex",
             alignItems: "center",
@@ -232,7 +232,7 @@ export function ProductPurchasePanel({ product, onOpenQuote }: ProductPurchasePa
           onMouseLeave={e => (e.currentTarget.style.color = "#7C3AED")}
         >
           <FlaskConical size={16} color="#7C3AED" />
-          Have a bottle? Look up your batch report &rarr;
+          Learn about our GC-MS purity &amp; testing standards &rarr;
         </Link>
       </div>
     </div>

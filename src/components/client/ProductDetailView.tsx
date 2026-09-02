@@ -296,18 +296,18 @@ export function ProductDetailView({ product }: ProductDetailViewProps) {
             >
               <div>
                 <div style={{ display: "flex", alignItems: "center", gap: "6px", fontSize: "0.8rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase" }}>
-                  <FlaskConical size={16} /> Instant GC-MS Traceability
+                  <FlaskConical size={16} /> GC-MS Purity Standards
                 </div>
-                <h3 style={{ fontSize: "1.25rem", fontWeight: 700, color: "#180D26", marginTop: "4px", marginBottom: "4px" }}>
-                  Inspect Full Batch Chromatography Reports
+                <h3 style={{ fontSize: "var(--font-size-h3)", fontWeight: 700, color: "#180D26", marginTop: "4px", marginBottom: "4px" }}>
+                  In-House Analytical Laboratory Testing
                 </h3>
                 <p style={{ fontSize: "0.9rem", color: "#5B486E", margin: 0 }}>
-                  Enter your container batch code to download authentic GC-MS spectra and Certificates of Analysis (CoA).
+                  Explore our Shimadzu GC-MS assays, optical rotation verifications, and strict purity protocols.
                 </p>
               </div>
 
               <Link
-                href="/batch-lookup"
+                href="/quality"
                 style={{
                   display: "inline-flex",
                   alignItems: "center",
@@ -332,7 +332,7 @@ export function ProductDetailView({ product }: ProductDetailViewProps) {
                   e.currentTarget.style.boxShadow = "0 4px 16px rgba(124, 58, 237, 0.4)";
                 }}
               >
-                Go to Batch Lookup <ArrowRight size={15} />
+                Explore Quality Standards <ArrowRight size={15} />
               </Link>
             </div>
           </section>

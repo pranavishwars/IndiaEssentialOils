@@ -289,7 +289,7 @@ export function CertificationsGrid() {
           style={{
             position: "fixed",
             inset: 0,
-            zIndex: 100000,
+            zIndex: "var(--z-modal)" as unknown as number,
             backgroundColor: "rgba(18, 10, 30, 0.82)",
             backdropFilter: "blur(16px)",
             WebkitBackdropFilter: "blur(16px)",

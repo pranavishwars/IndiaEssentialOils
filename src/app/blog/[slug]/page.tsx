@@ -187,7 +187,7 @@ export default async function BlogPostPage({
               whiteSpace: "nowrap",
             }}
           >
-            Contact Lab Experts <ArrowRight size={15} />
+            Contact Us <ArrowRight size={15} />
           </Link>
         </div>
 

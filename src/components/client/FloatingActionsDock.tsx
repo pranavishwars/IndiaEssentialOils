@@ -12,7 +12,7 @@ export function FloatingActionsDock() {
         position: "fixed",
         bottom: "24px",
         insetInlineEnd: "24px",
-        zIndex: 9998,
+        zIndex: "var(--z-float-dock)" as unknown as number,
         display: "flex",
         alignItems: "center",
         gap: "10px",

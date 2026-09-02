@@ -107,6 +107,7 @@ export default function PackagingPage() {
       title: "Aluminum Bottles & Canisters",
       sizes: "1 Kg, 2 Kg, 5 Kg, 10 Kg, 25 Kg and more",
       desc: "Ideal for high-value floral absolutes, rare essential oils, and supercritical CO₂ extracts. Puncture-resistant with food-grade epoxy barrier linings.",
+      image: "/images/packaging/aluminum_canisters.jpg",
       icon: <Layers size={24} color="#EC4899" />,
       features: [
         "100% light-proof & vapor-tight seal",
@@ -118,6 +119,7 @@ export default function PackagingPage() {
       title: "HDPE Drums & Barrels",
       sizes: "5 kg, 20 Kg, 25 Kg, 50 kg, 200 kg (Open Top & Closed Top)",
       desc: "Virgin food-grade high-density polyethylene drums and 200kg barrels engineered for safe domestic transit and international sea freight.",
+      image: "/images/packaging/hdpe_drums.jpg",
       icon: <Package size={24} color="#059669" />,
       features: [
         "Induction heat-sealed foil membrane option",
@@ -129,6 +131,7 @@ export default function PackagingPage() {
       title: "STEEL & GI Drums",
       sizes: "20 Kg, 40 Kg, 200 Kg (Open Top with Narrow Mouth)",
       desc: "Heavy-duty cold-rolled steel and galvanized iron drums with internal epoxy-phenolic coatings for large-volume industrial chemical compatibility.",
+      image: "/images/packaging/steel_drums.jpg",
       icon: <Truck size={24} color="#D97706" />,
       features: [
         "UN-certified heavy gauge steel construction",
@@ -140,6 +143,7 @@ export default function PackagingPage() {
       title: "Plastic PET Bottles (Retail)",
       sizes: "10 ml, 20 ml, 50 ml, 1 kg, 2 kg and more",
       desc: "Versatile lightweight plastic PET bottles in a wide selection of custom colors for cosmetics, bath products, and floral waters.",
+      image: "/images/packaging/pet_bottles.jpg",
       icon: <BoxSelect size={24} color="#7C3AED" />,
       features: [
         "Colors: Natural, White, Clear, Blue, Amber, Green, Black, Purple",
@@ -169,6 +173,10 @@ export default function PackagingPage() {
     {
       q: "Is Nitrogen capping available for oxidation protection?",
       a: "Yes. We offer Nitrogen capping for specific oils on special requests. Our automated cleanroom capping line purges atmospheric oxygen from the container headspace with ultra-pure nitrogen gas before sealing, safeguarding sensitive botanical oils against oxidative rancidity.",
+    },
+    {
+      q: "How do I place an order and what is the response turnaround?",
+      a: "You can send an enquiry through our online customized request form or contact desk. We are committed to replying to all enquiries in less than 30 minutes during Indian business hours (10:00 AM – 9:00 PM IST) with full lot pricing, batch specifications, and technical dossiers.",
     },
     {
       q: "What is your standard order dispatch and delivery turnaround?",
@@ -210,7 +218,7 @@ export default function PackagingPage() {
               marginBottom: "20px",
             }}
           >
-            Climate-Controlled Packaging Suites<br />&amp; Turnkey Private Labeling
+            Climate-Controlled Packaging Suites<br />&amp; Private Labeling
           </h1>
 
           <p style={{ fontSize: "1.12rem", color: "#5B486E", maxWidth: "860px", margin: "0 auto 28px", lineHeight: 1.75 }}>
@@ -220,7 +228,7 @@ export default function PackagingPage() {
           <div style={{ display: "flex", justifyContent: "center", gap: "14px", flexWrap: "wrap", marginBottom: "36px" }}>
             <DownloadCatalogButton variant="primary" label="Download Botanical Catalog (PDF/Spec)" />
             <Link
-              href="/request-quote"
+              href="/contact"
               className="liquid-glass-pill"
               style={{
                 padding: "14px 28px",
@@ -236,8 +244,7 @@ export default function PackagingPage() {
                 gap: "8px",
               }}
             >
-              <span>Request Packaging Quote</span>
-              <ArrowRight size={16} />
+              <Package size={18} /> Contact Us
             </Link>
           </div>
 
@@ -268,8 +275,8 @@ export default function PackagingPage() {
           </div>
         </section>
 
-        {/* Highlighted Section: Customized Packaging & Private Labeling */}
-        <section style={{ marginBottom: "64px" }}>
+        {/* Section 1: Packaging Process */}
+        <section id="packaging-process" style={{ scrollMarginTop: "120px", marginBottom: "64px" }}>
           <div
             className="liquid-glass-elevated"
             style={{
@@ -282,14 +289,76 @@ export default function PackagingPage() {
           >
             <div style={{ textAlign: "center", maxWidth: "780px", margin: "0 auto 36px" }}>
               <span style={{ fontSize: "0.75rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase", letterSpacing: "0.12em" }}>
-                OEM Contract Manufacturing
+                OEM &amp; Private Labeling
               </span>
-              <h2 style={{ fontSize: "2.1rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginTop: "6px" }}>
-                Customized Packaging &amp; Private Labeling
+              <h2 style={{ fontSize: "var(--font-size-h1)", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginTop: "6px" }}>
+                Packaging Process: Custom Bottling &amp; Private Labeling
               </h2>
               <p style={{ color: "#5B486E", fontSize: "1rem", lineHeight: 1.7, marginTop: "12px" }}>
                 India Essential Oils specializes in customized packaging, commonly called private labeling of oils with dropper facilities. We can pack particular materials in customized bottles, barrels, drums, and containers with or without custom printing according to client specifications.
               </p>
+            </div>
+
+            {/* Visual Glass Dropper Showcase Image */}
+            <div
+              style={{
+                position: "relative",
+                width: "100%",
+                height: "280px",
+                borderRadius: "22px",
+                overflow: "hidden",
+                marginBottom: "36px",
+                border: "1px solid rgba(124, 58, 237, 0.2)",
+                boxShadow: "0 8px 24px rgba(24, 13, 38, 0.06)",
+              }}
+            >
+              <img
+                src="/images/packaging/glass_droppers.jpg"
+                alt="Luxury Amber, Matte & Clear Glass Dropper Bottles with Pipettes and Outer Box Packaging"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  display: "block",
+                }}
+              />
+              <div
+                style={{
+                  position: "absolute",
+                  bottom: "0",
+                  left: "0",
+                  right: "0",
+                  padding: "16px 24px",
+                  background: "linear-gradient(to top, rgba(24, 13, 38, 0.85) 0%, rgba(24, 13, 38, 0) 100%)",
+                  color: "white",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "flex-end",
+                  flexWrap: "wrap",
+                  gap: "10px",
+                }}
+              >
+                <div>
+                  <div style={{ fontSize: "1.1rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif" }}>
+                    Private Label Retail Glass Droppers &amp; Cushion Boxes
+                  </div>
+                  <div style={{ fontSize: "0.82rem", color: "rgba(255, 255, 255, 0.85)", marginTop: "2px" }}>
+                    European droppers, calibrated glass pipettes, amber/frosted glassware, and custom printed outer cartons.
+                  </div>
+                </div>
+                <span
+                  style={{
+                    fontSize: "0.75rem",
+                    fontWeight: 800,
+                    padding: "4px 12px",
+                    borderRadius: "9999px",
+                    backgroundColor: "#7C3AED",
+                    color: "white",
+                  }}
+                >
+                  Sizes: 10ml &ndash; 500ml
+                </span>
+              </div>
             </div>
 
             {/* Glass Finishes & Sizes Grid */}
@@ -435,26 +504,26 @@ export default function PackagingPage() {
           </div>
         </section>
 
-        {/* Complete Packing Range for Bulk Oils, Oleoresins & Floral Water */}
-        <section style={{ marginBottom: "64px" }}>
+        {/* Section 2: Packaging sizes (Add images) */}
+        <section id="packaging-sizes" style={{ scrollMarginTop: "120px", marginBottom: "64px" }}>
           <div style={{ textAlign: "center", marginBottom: "40px" }}>
             <span style={{ fontSize: "0.75rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase", letterSpacing: "0.12em" }}>
               Commercial &amp; Wholesale Formats
             </span>
-            <h2 style={{ fontSize: "2.2rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginTop: "6px" }}>
-              Packing Range for Oils, Oleoresins &amp; Floral Waters
+            <h2 style={{ fontSize: "var(--font-size-h1)", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginTop: "6px" }}>
+              Packaging Sizes: Oils, Oleoresins &amp; Floral Waters
             </h2>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(360px, 1fr))", gap: "28px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(460px, 1fr))", gap: "28px" }}>
             {bulkCategories.map((item, idx) => (
               <div
                 key={idx}
                 className="liquid-glass"
                 style={{
                   borderRadius: "28px",
-                  padding: "36px",
-                  backgroundColor: "rgba(255, 255, 255, 0.8)",
+                  padding: "28px",
+                  backgroundColor: "rgba(255, 255, 255, 0.9)",
                   border: "1px solid rgba(124, 58, 237, 0.18)",
                   boxShadow: "0 8px 32px rgba(24, 13, 38, 0.04)",
                   display: "flex",
@@ -463,21 +532,47 @@ export default function PackagingPage() {
                 }}
               >
                 <div>
-                  <div style={{ display: "flex", alignItems: "center", gap: "16px", marginBottom: "16px" }}>
-                    <div style={{ width: "52px", height: "52px", borderRadius: "14px", backgroundColor: "rgba(124, 58, 237, 0.1)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                  {/* Container Reference Photo with Warm Studio Beige Gradient */}
+                  <div
+                    style={{
+                      position: "relative",
+                      width: "100%",
+                      height: "260px",
+                      borderRadius: "20px",
+                      overflow: "hidden",
+                      marginBottom: "20px",
+                      border: "1px solid rgba(124, 58, 237, 0.14)",
+                      background: "linear-gradient(135deg, #FBF8F3 0%, #EFE9E0 100%)",
+                      boxShadow: "inset 0 0 20px rgba(0, 0, 0, 0.02)",
+                    }}
+                  >
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                        display: "block",
+                      }}
+                    />
+                  </div>
+
+                  <div style={{ display: "flex", alignItems: "center", gap: "14px", marginBottom: "14px" }}>
+                    <div style={{ width: "46px", height: "46px", borderRadius: "12px", backgroundColor: "rgba(124, 58, 237, 0.1)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                       {item.icon}
                     </div>
                     <div>
-                      <h3 style={{ fontSize: "1.2rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", margin: 0 }}>
+                      <h3 style={{ fontSize: "1.15rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", margin: 0 }}>
                         {item.title}
                       </h3>
-                      <span style={{ fontSize: "0.78rem", fontWeight: 700, color: "#7C3AED" }}>
+                      <span style={{ fontSize: "0.76rem", fontWeight: 700, color: "#7C3AED" }}>
                         {item.sizes}
                       </span>
                     </div>
                   </div>
 
-                  <p style={{ color: "#5B486E", lineHeight: 1.65, fontSize: "0.92rem", marginBottom: "20px" }}>
+                  <p style={{ color: "#5B486E", lineHeight: 1.65, fontSize: "0.9rem", marginBottom: "20px" }}>
                     {item.desc}
                   </p>
                 </div>
@@ -485,7 +580,7 @@ export default function PackagingPage() {
                 <div style={{ borderTop: "1px solid rgba(124, 58, 237, 0.12)", paddingTop: "16px" }}>
                   <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
                     {item.features.map((feat, fIdx) => (
-                      <li key={fIdx} style={{ display: "flex", alignItems: "center", gap: "10px", fontSize: "0.86rem", color: "#2E1A47", fontWeight: 500 }}>
+                      <li key={fIdx} style={{ display: "flex", alignItems: "center", gap: "10px", fontSize: "0.85rem", color: "#2E1A47", fontWeight: 500 }}>
                         <CheckCircle2 size={16} color="#059669" style={{ flexShrink: 0 }} />
                         <span>{feat}</span>
                       </li>
@@ -520,8 +615,8 @@ export default function PackagingPage() {
           </div>
         </section>
 
-        {/* Shipping, Logistics & 48h Prompt Delivery Period */}
-        <section style={{ marginBottom: "64px" }}>
+        {/* Section 3: Shipment policy */}
+        <section id="shipment-policy" style={{ scrollMarginTop: "120px", marginBottom: "64px" }}>
           <div
             className="liquid-glass-elevated"
             style={{
@@ -536,8 +631,8 @@ export default function PackagingPage() {
               <span style={{ fontSize: "0.75rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase", letterSpacing: "0.12em" }}>
                 Global Fulfillment &amp; Supply Security
               </span>
-              <h2 style={{ fontSize: "2.1rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginTop: "6px" }}>
-                Economical Shipping &amp; 48-Hour Dispatch
+              <h2 style={{ fontSize: "var(--font-size-h1)", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginTop: "6px" }}>
+                Shipment Policy &amp; 48-Hour Order Dispatch
               </h2>
             </div>
 
@@ -599,14 +694,14 @@ export default function PackagingPage() {
         {/* Download Full Catalog Banner */}
         <DownloadCatalogButton variant="banner" label="Download Full Botanical Catalog" />
 
-        {/* Frequently Asked Questions (FAQ) Section */}
-        <section style={{ marginBottom: "64px" }}>
+        {/* Section 4: FAQs */}
+        <section id="faqs" style={{ scrollMarginTop: "120px", marginBottom: "64px" }}>
           <div style={{ textAlign: "center", marginBottom: "36px" }}>
             <span style={{ fontSize: "0.75rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase", letterSpacing: "0.12em" }}>
               Frequently Asked Questions
             </span>
-            <h2 style={{ fontSize: "2.1rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginTop: "6px" }}>
-              Packaging &amp; Private Label FAQ
+            <h2 style={{ fontSize: "var(--font-size-h1)", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginTop: "6px" }}>
+              Packaging &amp; Private Labeling FAQs
             </h2>
           </div>
 
@@ -667,7 +762,7 @@ export default function PackagingPage() {
                 marginBottom: "16px",
               }}
             >
-              Turnkey OEM &amp; Private Label
+              OEM &amp; Private Labeling
             </span>
             <h2 style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.4rem)", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "white", lineHeight: 1.2, marginBottom: "12px" }}>
               Request Custom Packaging &amp; Volume Pricing
@@ -679,7 +774,7 @@ export default function PackagingPage() {
 
           <div style={{ display: "flex", gap: "14px", flexWrap: "wrap" }}>
             <Link
-              href="/request-quote"
+              href="/contact"
               className="btn-vibrant-primary"
               style={{
                 padding: "16px 32px",
@@ -693,10 +788,10 @@ export default function PackagingPage() {
                 boxShadow: "0 8px 24px rgba(124, 58, 237, 0.5)",
               }}
             >
-              Request Custom Quote <ArrowRight size={18} />
+              Contact Us <ArrowRight size={18} />
             </Link>
-            <Link
-              href="/contact"
+            <a
+              href="tel:+918043807715"
               style={{
                 padding: "16px 28px",
                 borderRadius: "9999px",
@@ -713,8 +808,8 @@ export default function PackagingPage() {
                 transition: "background 0.2s",
               }}
             >
-              Contact Packaging Desk
-            </Link>
+              Call (+91 8043807715)
+            </a>
           </div>
         </section>
 

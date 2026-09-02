@@ -82,9 +82,9 @@ export const CATALOG_CATEGORIES_MENU = [
     icon: <Sprout size={18} color="#14B8A6" />,
   },
   {
-    name: "Batch CoA Lookup",
-    href: "/batch-lookup",
-    desc: "Instant GC-MS chemical analysis",
+    name: "Quality & GC-MS Testing",
+    href: "/quality",
+    desc: "In-house analytical assay standards",
     icon: <ShieldCheck size={18} color="#059669" />,
   },
 ];
@@ -181,7 +181,7 @@ export function CatalogHoverDropdown({ isLightNav, textColor, textShadow }: Cata
             borderRadius: "28px",
             padding: "20px",
             boxShadow: shadow,
-            zIndex: 10005,
+            zIndex: "var(--z-dropdown)" as unknown as number,
             animation: "quickFadeIn 0.18s cubic-bezier(0.16, 1, 0.3, 1)",
           }}
         >

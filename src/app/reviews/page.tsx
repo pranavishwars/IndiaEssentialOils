@@ -177,7 +177,7 @@ export default function ReviewsPage() {
             Request sample vials, CoA certificates, and customized bulk volume wholesale pricing for your formulations.
           </p>
           <Link
-            href="/request-quote"
+            href="/contact"
             style={{
               display: "inline-flex",
               alignItems: "center",
@@ -200,7 +200,7 @@ export default function ReviewsPage() {
               e.currentTarget.style.boxShadow = "0 4px 18px rgba(124, 58, 237, 0.45)";
             }}
           >
-            Request B2B Quote <ArrowRight size={16} />
+            Contact Us <ArrowRight size={16} />
           </Link>
         </div>
 

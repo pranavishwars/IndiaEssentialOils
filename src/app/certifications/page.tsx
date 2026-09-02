@@ -155,7 +155,7 @@ export default function CertificationsPage() {
 
                 <h3
                   style={{
-                    fontSize: "1.45rem",
+                    fontSize: "var(--font-size-h2)",
                     fontWeight: 700,
                     fontFamily: "var(--font-lora), Georgia, serif",
                     color: "#180D26",
@@ -308,15 +308,15 @@ export default function CertificationsPage() {
               <FlaskConical size={16} /> Instant GC-MS Verification
             </div>
             <h3 style={{ fontSize: "1.45rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginBottom: "6px" }}>
-              Have a Product Batch Number?
+              In-House Analytical Laboratory Testing
             </h3>
             <p style={{ fontSize: "0.95rem", color: "#5B486E", margin: 0 }}>
-              Access our public analytical database to inspect and download the exact GC-MS chromatogram for your oil.
+              Learn how our Shimadzu GC-MS, polarimetry, and refractive index tests verify 100% botanical purity.
             </p>
           </div>
 
           <Link
-            href="/batch-lookup"
+            href="/quality"
             className="btn-vibrant-primary"
             style={{
               padding: "15px 30px",
@@ -329,7 +329,7 @@ export default function CertificationsPage() {
               gap: "8px",
             }}
           >
-            Launch Batch Lookup <ArrowRight size={16} />
+            Explore Quality Standards <ArrowRight size={16} />
           </Link>
         </div>
 

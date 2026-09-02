@@ -100,41 +100,6 @@ export default function InfrastructurePage() {
     },
   ];
 
-  const flagshipOils = {
-    essentials: [
-      { name: "Lemongrass Oil", region: "Kerala / Assam", note: "High Citral Content (>80%)" },
-      { name: "Himalayan Cedarwood", region: "Himachal Pradesh", note: "Rich Cedrol & Himachalenes" },
-      { name: "Citronella Oil (Java)", region: "Northeast India", note: "High Citronellal & Geraniol" },
-      { name: "Palmarosa Oil", region: "Central India", note: "Pure Geraniol (>85%)" },
-      { name: "Holy Basil (Tulsi)", region: "Uttar Pradesh", note: "High Eugenol Fraction" },
-      { name: "Vetiver (Khus) Oil", region: "Kannauj Terroir", note: "Traditional Hydro-Distilled" },
-      { name: "Cinnamon Bark & Leaf", region: "Western Ghats", note: "High Cinnamaldehyde" },
-      { name: "Ajowan Seed Oil", region: "Rajasthan", note: "Natural Thymol Content (>50%)" },
-    ],
-    carriers: [
-      { name: "Virgin Moringa Seed Oil", note: "High Oleic Acid / Behenic Acid" },
-      { name: "Cold-Pressed Pumpkin Seed", note: "Phytosterol & Zinc Rich" },
-      { name: "Wild Apricot Kernel Oil", note: "Himalayan Cold-Pressed Guti" },
-      { name: "Golden Virgin Jojoba Oil", note: "Natural Liquid Wax Esters" },
-      { name: "Pomegranate Seed Oil", note: "Punicic Acid Super-Antioxidant" },
-      { name: "Pure Cold-Pressed Neem Oil", note: "High Azadirachtin Content" },
-    ],
-  };
-
-  const logisticsPillars = [
-    {
-      title: "1,000 MT Climate-Controlled Storage",
-      desc: "Closed warehouse facilities maintaining standardized 18°C–22°C temperatures and controlled relative humidity, safeguarding delicate aroma compounds from atmospheric fluctuation.",
-    },
-    {
-      title: "Phytosanitary & Custom Regulatory Clearance",
-      desc: "Full pre-clearance facilitation including Certificates of Analysis (CoA), MSDS, Certificate of Origin (COO), CITES declarations, and specialized country-specific import compliance.",
-    },
-    {
-      title: "Direct Shipping Line & Air Freight Tie-Ups",
-      desc: "Long-standing agreements with major ocean freight carriers and air cargo express networks ensure preferential shipping rates, temperature-controlled cargo handling, and live GPS consignment tracking.",
-    },
-  ];
 
   return (
     <div style={{ backgroundColor: "#FCFAF6", minHeight: "100vh", display: "flex", flexDirection: "column", paddingTop: "100px" }}>
@@ -243,7 +208,7 @@ export default function InfrastructurePage() {
             <span style={{ fontSize: "0.75rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase", letterSpacing: "0.12em" }}>
               Core Technical Capabilities
             </span>
-            <h2 style={{ fontSize: "2.2rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginTop: "6px" }}>
+            <h2 style={{ fontSize: "var(--font-size-h1)", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginTop: "6px" }}>
               Engineered for Botanical Purity
             </h2>
           </div>
@@ -374,103 +339,8 @@ export default function InfrastructurePage() {
           </div>
         </section>
 
-        {/* Agricultural Sourcing & Flagship Crop Yields */}
-        <section style={{ marginBottom: "80px" }}>
-          <div
-            className="liquid-glass-elevated"
-            style={{
-              borderRadius: "32px",
-              padding: "48px 40px",
-              backgroundColor: "rgba(255, 255, 255, 0.85)",
-              border: "1px solid rgba(124, 58, 237, 0.2)",
-              boxShadow: "0 16px 48px rgba(24, 13, 38, 0.06)",
-            }}
-          >
-            <div style={{ textAlign: "center", maxWidth: "720px", margin: "0 auto 40px" }}>
-              <span style={{ fontSize: "0.75rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase", letterSpacing: "0.12em" }}>
-                Agronomic Terroir &amp; Direct Crop Control
-              </span>
-              <h2 style={{ fontSize: "2rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginTop: "6px" }}>
-                Flagship Distillation Capacities
-              </h2>
-              <p style={{ color: "#5B486E", fontSize: "0.95rem", lineHeight: 1.6, marginTop: "8px" }}>
-                With over 100 acres of contract cultivation and 5,000 hectares of sustainable wild harvesting rights across the Indian subcontinent, we maintain direct pipeline stability for the world's most demanded natural oils.
-              </p>
-            </div>
 
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "32px" }}>
-              {/* Signature Essential Oils */}
-              <div style={{ backgroundColor: "#FCFAF6", borderRadius: "20px", padding: "28px", border: "1px solid rgba(124, 58, 237, 0.12)" }}>
-                <h3 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#180D26", marginBottom: "16px", display: "flex", alignItems: "center", gap: "8px" }}>
-                  <Flame size={20} color="#7C3AED" /> Signature Essential Oils
-                </h3>
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px" }}>
-                  {flagshipOils.essentials.map((oil, i) => (
-                    <div key={i} style={{ padding: "10px 14px", borderRadius: "12px", backgroundColor: "white", border: "1px solid rgba(0,0,0,0.06)" }}>
-                      <div style={{ fontWeight: 700, fontSize: "0.9rem", color: "#180D26" }}>{oil.name}</div>
-                      <div style={{ fontSize: "0.75rem", color: "#7C3AED", fontWeight: 600 }}>{oil.region}</div>
-                      <div style={{ fontSize: "0.72rem", color: "#6B7280" }}>{oil.note}</div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Signature Carrier Oils */}
-              <div style={{ backgroundColor: "#FCFAF6", borderRadius: "20px", padding: "28px", border: "1px solid rgba(16, 185, 129, 0.15)" }}>
-                <h3 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#180D26", marginBottom: "16px", display: "flex", alignItems: "center", gap: "8px" }}>
-                  <Droplets size={20} color="#059669" /> Signature Virgin Carrier Oils
-                </h3>
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px" }}>
-                  {flagshipOils.carriers.map((oil, i) => (
-                    <div key={i} style={{ padding: "10px 14px", borderRadius: "12px", backgroundColor: "white", border: "1px solid rgba(0,0,0,0.06)" }}>
-                      <div style={{ fontWeight: 700, fontSize: "0.9rem", color: "#180D26" }}>{oil.name}</div>
-                      <div style={{ fontSize: "0.75rem", color: "#059669", fontWeight: 600 }}>{oil.note}</div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Global Logistics & Warehousing Section */}
-        <section style={{ marginBottom: "80px" }}>
-          <div style={{ textAlign: "center", marginBottom: "40px" }}>
-            <span style={{ fontSize: "0.75rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase", letterSpacing: "0.12em" }}>
-              Fulfillment &amp; Export Reach
-            </span>
-            <h2 style={{ fontSize: "2.2rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginTop: "6px" }}>
-              Global Cold-Chain &amp; Warehouse Network
-            </h2>
-          </div>
-
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px" }}>
-            {logisticsPillars.map((item, i) => (
-              <div
-                key={i}
-                className="liquid-glass"
-                style={{
-                  borderRadius: "24px",
-                  padding: "32px",
-                  backgroundColor: "rgba(255, 255, 255, 0.75)",
-                  border: "1px solid rgba(124, 58, 237, 0.16)",
-                }}
-              >
-                <div style={{ width: "48px", height: "48px", borderRadius: "14px", backgroundColor: "rgba(124, 58, 237, 0.1)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "16px" }}>
-                  {i === 0 ? <Boxes size={24} color="#7C3AED" /> : i === 1 ? <ShieldCheck size={24} color="#7C3AED" /> : <Truck size={24} color="#7C3AED" />}
-                </div>
-                <h3 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#180D26", marginBottom: "10px" }}>
-                  {item.title}
-                </h3>
-                <p style={{ color: "#5B486E", fontSize: "0.92rem", lineHeight: 1.65, margin: 0 }}>
-                  {item.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Audit & Commercial Inquiries CTA */}
+        {/* Commercial Inquiries CTA */}
         <section
           className="liquid-glass-elevated"
           style={{
@@ -503,19 +373,19 @@ export default function InfrastructurePage() {
                 marginBottom: "16px",
               }}
             >
-              Direct Distillery Access
+              Wholesale Supply Inquiries
             </span>
             <h2 style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.4rem)", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "white", lineHeight: 1.2, marginBottom: "12px" }}>
-              Request a Technical Facility Audit or Commercial Quote
+              Request Wholesale Pricing &amp; Commercial Quotation
             </h2>
             <p style={{ color: "rgba(255, 255, 255, 0.82)", fontSize: "1rem", lineHeight: 1.6, margin: 0 }}>
-              Connect directly with our head of distillation and regulatory affairs for custom production runs, contract farming partnerships, and bulk container pricing.
+              Connect directly with our commercial desk for wholesale pricing, custom batch distillations, and bulk export container specifications.
             </p>
           </div>
 
           <div style={{ display: "flex", gap: "14px", flexWrap: "wrap" }}>
             <Link
-              href="/request-quote"
+              href="/contact"
               className="btn-vibrant-primary"
               style={{
                 padding: "16px 32px",
@@ -529,10 +399,10 @@ export default function InfrastructurePage() {
                 boxShadow: "0 8px 24px rgba(124, 58, 237, 0.5)",
               }}
             >
-              Request Wholesale Quote <ArrowRight size={18} />
+              Contact Us <ArrowRight size={18} />
             </Link>
-            <Link
-              href="/contact"
+            <a
+              href="tel:+918043807715"
               style={{
                 padding: "16px 28px",
                 borderRadius: "9999px",
@@ -549,8 +419,8 @@ export default function InfrastructurePage() {
                 transition: "background 0.2s",
               }}
             >
-              Schedule Facility Visit
-            </Link>
+              Call (+91 8043807715)
+            </a>
           </div>
         </section>
 

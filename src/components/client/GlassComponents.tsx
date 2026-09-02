@@ -131,7 +131,7 @@ export function GlassHeroButtons() {
 
       {/* Secondary Button — High Contrast Frosted Liquid Glass */}
       <Link
-        href="/request-quote"
+        href="/contact"
         style={{
           flex: "1 1 250px",
           minHeight: "64px",
@@ -164,7 +164,7 @@ export function GlassHeroButtons() {
           e.currentTarget.style.boxShadow = "0 10px 32px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.25)";
         }}
       >
-        Request a Bulk Quote
+        Contact Us
       </Link>
     </div>
   );

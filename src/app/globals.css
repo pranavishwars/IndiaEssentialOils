@@ -6,7 +6,80 @@
     --foreground: #180D26;
     --font-inter: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     --font-lora: var(--font-lora), Georgia, Cambria, "Times New Roman", Times, serif;
+
+    /* ── Fluid Typography Scale (Phase 11) ──────────────────────────────── */
+    --font-size-h1:      clamp(1.75rem, 1.2rem + 2.5vw, 2.75rem);
+    --font-size-h2:      clamp(1.375rem, 1.1rem + 1.4vw, 1.75rem);
+    --font-size-h3:      clamp(1.1rem, 1rem + 0.5vw, 1.35rem);
+    --font-size-body:    clamp(0.9rem, 0.88rem + 0.1vw, 1rem);
+    --font-size-small:   clamp(0.8rem, 0.78rem + 0.1vw, 0.875rem);
+    --font-size-caption: clamp(0.72rem, 0.7rem + 0.1vw, 0.8125rem);
+    --font-size-label:   clamp(0.7rem, 0.68rem + 0.1vw, 0.75rem);
+
+    /* ── Z-Index Registry (Phase 11) ───────────────────────────────────── */
+    --z-base:        10;
+    --z-sticky-tab:  50;
+    --z-hero:        25;
+    --z-gallery:     10;
+    --z-sticky-bar:  9990;
+    --z-float-dock:  9998;
+    --z-navbar:      9999;
+    --z-modal:       10000;
+    --z-lang-picker: 10001;
+    --z-search-bar:  10002;
+    --z-dropdown:    10005;
+    --z-chatbot:     99998;
+    --z-chatbot-ui:  99999;
+
+    /* ── Structural Breakpoints (Phase 11) ─────────────────────────────── */
+    --bp-xs:  320px;
+    --bp-sm:  480px;
+    --bp-md:  768px;
+    --bp-lg:  1024px;
+    --bp-xl:  1280px;
+    --bp-2xl: 1536px;
   }
+}
+
+/* ── Phase 11: Fluid Layout Utilities ──────────────────────────────────────── */
+
+/* Prevents text overflow in flex children — apply to any flex child containing text */
+.flex-text-child {
+  min-width: 0;
+}
+
+/* Navbar responsive visibility — desktop nav hidden below 768px, mobile toggle hidden above */
+@media (max-width: 767px) {
+  .desktop-nav {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-nav-toggle {
+    display: none !important;
+  }
+}
+
+/* Catalog sidebar collapses to single column on mobile */
+@media (max-width: 767px) {
+  .catalog-layout {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* On mobile, hide the sticky sidebar filter — the category select is available inline */
+  .catalog-layout > aside {
+    display: none;
+  }
+}
+
+/* Touch target minimum (44×44px) utility */
+.touch-target {
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Modern Liquid Glass styling utility classes */

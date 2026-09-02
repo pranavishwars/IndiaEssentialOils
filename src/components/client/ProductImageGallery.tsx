@@ -84,7 +84,7 @@ export function ProductImageGallery({ product }: ProductImageGalleryProps) {
             borderRadius: "9999px",
             border: "1px solid rgba(124, 58, 237, 0.22)",
             boxShadow: "0 4px 16px rgba(0,0,0,0.06)",
-            zIndex: 10,
+            zIndex: "var(--z-gallery)" as unknown as number,
           }}
         >
           <button

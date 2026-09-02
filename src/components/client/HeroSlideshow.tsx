@@ -90,7 +90,7 @@ export function HeroSlideshow() {
           alignItems: "center",
           justifyContent: "center",
           cursor: "pointer",
-          zIndex: 25,
+          zIndex: "var(--z-hero)" as unknown as number,
           boxShadow: "0 8px 32px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.25)",
           transition: "transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease",
         }}

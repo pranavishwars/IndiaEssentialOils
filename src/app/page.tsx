@@ -4,6 +4,7 @@ import { Footer } from "@/components/server/Footer";
 import { HeroSlideshow } from "@/components/client/HeroSlideshow";
 import { GlassFeatureCards, GlassHeroButtons } from "@/components/client/GlassComponents";
 import { HomeUniversalSearchBar } from "@/components/client/HomeUniversalSearchBar";
+import { ExploreLatestLineSection } from "@/components/client/ExploreLatestLineSection";
 import { PopularOilsSection } from "@/components/client/PopularOilsSection";
 import { CompanyVideoSection } from "@/components/client/CompanyVideoSection";
 import { HomeB2BSection } from "@/components/client/HomeB2BSection";
@@ -117,6 +118,9 @@ export default function Home() {
 
         {/* Universal Search Bar — Full Aesthetic Length with In-Flow Dynamic Push */}
         <HomeUniversalSearchBar />
+
+        {/* Explore our Latest Line — Supercritical CO2 Extracts Moving Catalog */}
+        <ExploreLatestLineSection />
 
         {/* Dynamic Popular & Trending Oils */}
         <PopularOilsSection />

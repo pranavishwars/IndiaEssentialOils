@@ -67,7 +67,7 @@ export function ProductQuoteModal({ isOpen, onClose, product }: ProductQuoteModa
       style={{
         position: "fixed",
         inset: 0,
-        zIndex: 10000,
+        zIndex: "var(--z-modal)" as unknown as number,
         backgroundColor: "rgba(24, 13, 38, 0.7)",
         backdropFilter: "blur(16px)",
         WebkitBackdropFilter: "blur(16px)",

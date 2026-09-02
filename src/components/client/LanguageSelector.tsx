@@ -56,6 +56,28 @@ export function LanguageSelector({ variant = "floating" }: LanguageSelectorProps
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
+  const touchStartY = useRef<number | null>(null);
+  const touchCurrentY = useRef<number | null>(null);
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartY.current = e.touches[0].clientY;
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    touchCurrentY.current = e.touches[0].clientY;
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartY.current !== null && touchCurrentY.current !== null) {
+      const diff = touchCurrentY.current - touchStartY.current;
+      if (diff > 50) {
+        handleClose();
+      }
+    }
+    touchStartY.current = null;
+    touchCurrentY.current = null;
+  };
+
   // Lock body scroll only when mobile sheet is open on phone
   useEffect(() => {
     if (isOpen && (isMobile || variant === "mobile-menu")) {
@@ -189,7 +211,7 @@ export function LanguageSelector({ variant = "floating" }: LanguageSelectorProps
         style={{
           position: "fixed",
           inset: 0,
-          zIndex: 10001,
+          zIndex: "var(--z-lang-picker)" as unknown as number,
           backgroundColor: "rgba(24, 13, 38, 0.65)",
           backdropFilter: "blur(16px)",
           WebkitBackdropFilter: "blur(16px)",
@@ -659,7 +681,7 @@ export function LanguageSelector({ variant = "floating" }: LanguageSelectorProps
             border: "1px solid rgba(124, 58, 237, 0.35)",
             animation: "fadeIn 0.2s ease-out",
             pointerEvents: "none",
-            zIndex: 10000,
+            zIndex: "var(--z-modal)" as unknown as number,
           }}
         >
           Select Language ({currentLanguageInfo.name})
@@ -731,7 +753,7 @@ export function LanguageSelector({ variant = "floating" }: LanguageSelectorProps
                 backgroundColor: "rgba(24, 13, 38, 0.6)",
                 backdropFilter: "blur(12px)",
                 WebkitBackdropFilter: "blur(12px)",
-                zIndex: 10001,
+                zIndex: "var(--z-lang-picker)" as unknown as number,
               }}
             />
           )}
@@ -755,13 +777,33 @@ export function LanguageSelector({ variant = "floating" }: LanguageSelectorProps
               overflow: "hidden",
               display: "flex",
               flexDirection: "column",
-              zIndex: 10005,
+              zIndex: "var(--z-dropdown)" as unknown as number,
               animation: isMobile ? "slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1)" : "fadeIn 0.2s ease-out",
             }}
             role="dialog"
             aria-label="Select Language"
             aria-modal="true"
           >
+            {/* Mobile Drag-to-Dismiss Handle */}
+            {isMobile && (
+              <div
+                onTouchStart={handleTouchStart}
+                onTouchMove={handleTouchMove}
+                onTouchEnd={handleTouchEnd}
+                style={{
+                  width: "100%",
+                  display: "flex",
+                  justifyContent: "center",
+                  padding: "10px 0 6px",
+                  cursor: "grab",
+                  touchAction: "none",
+                  backgroundColor: "rgba(255, 255, 255, 0.6)",
+                }}
+              >
+                <div style={{ width: "40px", height: "4px", borderRadius: "9999px", backgroundColor: "rgba(124, 58, 237, 0.3)" }} />
+              </div>
+            )}
+
             {/* Top Row: Search Bar */}
             <div
               style={{
