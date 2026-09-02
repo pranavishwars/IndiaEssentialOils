@@ -20,45 +20,73 @@ export default function Home() {
     <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh", backgroundColor: "#FCFAF6" }}>
       <main style={{ flex: 1 }}>
 
-        {/* Hero — full viewport cover, clean liquid glass typography without purple glow */}
-        <section style={{ position: "relative", height: "100vh", minHeight: "640px", display: "flex", alignItems: "center", overflow: "hidden", borderRadius: 0, marginBottom: "0px" }}>
+        {/* Hero — full viewport cover with dynamic viewport height & proper navbar clearance */}
+        <section
+          style={{
+            position: "relative",
+            minHeight: "100dvh",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            overflow: "hidden",
+            borderRadius: 0,
+            paddingTop: "calc(var(--navbar-height, 68px) + clamp(16px, 4vh, 48px))",
+            paddingBottom: "clamp(36px, 6vh, 64px)",
+            boxSizing: "border-box",
+          }}
+        >
           <HeroSlideshow />
 
-          <div style={{ position: "relative", zIndex: 10, width: "100%", maxWidth: "1280px", margin: "0 auto", padding: "0 48px" }}>
-            <div style={{ maxWidth: "820px" }}>
+          <div
+            style={{
+              position: "relative",
+              zIndex: 10,
+              width: "100%",
+              maxWidth: "1280px",
+              margin: "0 auto",
+              padding: "0 clamp(16px, 4vw, 48px)",
+              boxSizing: "border-box",
+            }}
+          >
+            <div style={{ maxWidth: "820px", width: "100%" }}>
 
               {/* Liquid glass badge matching navbar opacity */}
-              <span
-                style={{
-                  display: "inline-block",
-                  padding: "8px 20px",
-                  borderRadius: "9999px",
-                  backgroundColor: "rgba(35, 24, 48, 0.48)",
-                  backdropFilter: "blur(24px) saturate(180%)",
-                  WebkitBackdropFilter: "blur(24px) saturate(180%)",
-                  border: "1px solid rgba(255, 255, 255, 0.3)",
-                  color: "white",
-                  fontWeight: 800,
-                  fontSize: "0.75rem",
-                  letterSpacing: "0.14em",
-                  textTransform: "uppercase",
-                  marginBottom: "24px",
-                  boxShadow: "0 8px 32px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.2)",
-                }}
-              >
-                Direct Distillery · B2B Wholesale Exporter
-              </span>
+              <div style={{ marginBottom: "clamp(12px, 2.5vh, 22px)" }}>
+                <span
+                  style={{
+                    display: "inline-block",
+                    padding: "clamp(6px, 1.2vh, 8px) clamp(14px, 2vw, 20px)",
+                    borderRadius: "9999px",
+                    backgroundColor: "rgba(35, 24, 48, 0.48)",
+                    backdropFilter: "blur(24px) saturate(180%)",
+                    WebkitBackdropFilter: "blur(24px) saturate(180%)",
+                    border: "1px solid rgba(255, 255, 255, 0.3)",
+                    color: "white",
+                    fontWeight: 800,
+                    fontSize: "clamp(0.68rem, 1.1vw, 0.75rem)",
+                    letterSpacing: "0.12em",
+                    textTransform: "uppercase",
+                    boxShadow: "0 8px 32px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.2)",
+                    lineHeight: 1.4,
+                  }}
+                >
+                  Direct Distillery · B2B Wholesale Exporter
+                </span>
+              </div>
 
+              {/* Main Headline without logo (logo remains strictly in navbar) */}
               <h1
                 style={{
-                  fontSize: "clamp(2.4rem, 4.8vw, 3.8rem)",
+                  fontSize: "clamp(1.85rem, 4.2vw, 3.5rem)",
                   fontWeight: 700,
                   fontFamily: "var(--font-lora), Georgia, serif",
                   color: "white",
-                  lineHeight: 1.25,
+                  lineHeight: 1.18,
                   letterSpacing: "0.015em",
-                  marginBottom: "28px",
+                  marginBottom: "clamp(16px, 2.8vh, 26px)",
                   textShadow: "0 2px 20px rgba(0,0,0,0.35)",
+                  overflowWrap: "break-word",
+                  hyphens: "auto",
                 }}
               >
                 Indian Essential Oil Manufacturer<br />&amp; B2B Exporter
@@ -72,10 +100,11 @@ export default function Home() {
                   WebkitBackdropFilter: "blur(28px) saturate(190%)",
                   border: "1px solid rgba(255, 255, 255, 0.32)",
                   borderRadius: "22px",
-                  padding: "20px 24px",
-                  marginBottom: "36px",
-                  maxWidth: "620px",
+                  padding: "clamp(14px, 2.5vw, 20px) clamp(16px, 3vw, 24px)",
+                  marginBottom: "clamp(20px, 3.2vh, 34px)",
+                  maxWidth: "min(100%, 640px)",
                   boxShadow: "0 16px 40px rgba(0, 0, 0, 0.42), inset 0 1px 0 rgba(255, 255, 255, 0.22)",
+                  boxSizing: "border-box",
                 }}
               >
                 <div
@@ -83,22 +112,23 @@ export default function Home() {
                     display: "inline-flex",
                     alignItems: "center",
                     gap: "6px",
-                    fontSize: "0.72rem",
+                    fontSize: "clamp(0.68rem, 1vw, 0.74rem)",
                     fontWeight: 800,
                     color: "#DDD6FE",
                     letterSpacing: "0.08em",
                     textTransform: "uppercase",
                     marginBottom: "8px",
+                    flexWrap: "wrap",
                   }}
                 >
-                  <span style={{ width: "7px", height: "7px", borderRadius: "50%", backgroundColor: "#A855F7" }} />
+                  <span style={{ width: "7px", height: "7px", borderRadius: "50%", backgroundColor: "#A855F7", flexShrink: 0 }} />
                   A Division of Mother Herbs Pvt. Ltd. · WHO-GMP &amp; ISO 22000 Certified
                 </div>
                 <p
                   style={{
-                    fontSize: "1.05rem",
+                    fontSize: "clamp(0.88rem, 1.3vw, 1.02rem)",
                     color: "#FFFFFF",
-                    lineHeight: 1.65,
+                    lineHeight: 1.6,
                     margin: 0,
                     fontWeight: 450,
                     textShadow: "0 1px 3px rgba(0,0,0,0.4)",

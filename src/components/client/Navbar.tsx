@@ -87,11 +87,14 @@ export function Navbar() {
         }}
       >
         {/* Logo — adapts automatically to dark/light background */}
-        <div style={{ marginInlineStart: "max(0px, calc((100vw - 1280px) / 2))", flexShrink: 0, minWidth: 0, overflow: "hidden" }}>
+        <div style={{ marginInlineStart: "max(0px, calc((100vw - 1280px) / 2))", flexShrink: 0, minWidth: 0, maxWidth: "calc(100vw - 80px)" }}>
           <Link
             href="/"
             style={{
-              fontSize: "var(--font-size-h3)",
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "clamp(6px, 1.5vw, 10px)",
+              fontSize: "clamp(1.02rem, 3.6vw, 1.35rem)",
               fontWeight: 700,
               fontFamily: "var(--font-lora), Georgia, serif",
               color: textColor,
@@ -101,11 +104,23 @@ export function Navbar() {
               whiteSpace: "nowrap",
               overflow: "hidden",
               textOverflow: "ellipsis",
-              minWidth: 0,
-              display: "block",
             }}
           >
-            {COMPANY_INFO.name}
+            <img
+              src="/images/logo.png"
+              alt="India Essential Oils Logo"
+              style={{
+                width: "clamp(28px, 5vw, 36px)",
+                height: "clamp(28px, 5vw, 36px)",
+                borderRadius: "50%",
+                objectFit: "cover",
+                backgroundColor: "#FFFFFF",
+                boxShadow: isLightNav ? "0 2px 8px rgba(124, 58, 237, 0.15)" : "0 2px 10px rgba(0, 0, 0, 0.4)",
+                border: isLightNav ? "1.5px solid rgba(124, 58, 237, 0.25)" : "1.5px solid rgba(255, 255, 255, 0.4)",
+                flexShrink: 0,
+              }}
+            />
+            <span style={{ overflow: "hidden", textOverflow: "ellipsis" }}>{COMPANY_INFO.name}</span>
           </Link>
         </div>
 
@@ -265,7 +280,6 @@ export function Navbar() {
 
         {/* Mobile controls */}
         <div style={{ display: "flex", alignItems: "center", gap: "8px" }} className="mobile-nav-toggle">
-          <LanguageSelector scrolled={isLightNav} />
           <button
             onClick={() => setIsOpen(!isOpen)}
             style={{

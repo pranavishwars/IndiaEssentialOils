@@ -53,8 +53,22 @@ export function Footer() {
 
           {/* Brand Column */}
           <div style={{ maxWidth: "320px" }}>
-            <Link href="/" style={{ textDecoration: "none" }}>
-              <h2 style={{ fontSize: "var(--font-size-h2)", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#C4B5FD", marginBottom: "16px" }}>
+            <Link href="/" style={{ textDecoration: "none", display: "inline-flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
+              <img
+                src="/images/logo.png"
+                alt="India Essential Oils Logo"
+                style={{
+                  width: "36px",
+                  height: "36px",
+                  borderRadius: "50%",
+                  objectFit: "cover",
+                  backgroundColor: "#FFFFFF",
+                  padding: "2px",
+                  border: "1.5px solid rgba(196, 181, 253, 0.4)",
+                  flexShrink: 0,
+                }}
+              />
+              <h2 style={{ fontSize: "var(--font-size-h2)", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#C4B5FD", margin: 0 }}>
                 {COMPANY_INFO.name}
               </h2>
             </Link>

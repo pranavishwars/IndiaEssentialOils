@@ -27,8 +27,8 @@ export function PopularOilsSection() {
   }, []);
 
   return (
-    <section style={{ padding: "0 24px 80px", maxWidth: "1280px", margin: "0 auto" }}>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: "40px", flexWrap: "wrap", gap: "16px" }}>
+    <section style={{ padding: "0 clamp(16px, 4vw, 24px) clamp(48px, 8vh, 80px)", maxWidth: "1280px", margin: "0 auto" }}>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: "clamp(24px, 4vh, 40px)", flexWrap: "wrap", gap: "16px" }}>
         <div>
           <div
             style={{
@@ -87,7 +87,7 @@ export function PopularOilsSection() {
         </Link>
       </div>
 
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))", gap: "24px" }}>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 280px), 1fr))", gap: "clamp(16px, 3vw, 24px)" }}>
         {popularProducts.map((product, index) => (
           <div
             key={product.id}
@@ -97,7 +97,7 @@ export function PopularOilsSection() {
               WebkitBackdropFilter: "blur(24px) saturate(160%)",
               border: "1px solid rgba(124, 58, 237, 0.18)",
               borderRadius: "24px",
-              padding: "28px",
+              padding: "clamp(20px, 3vw, 28px)",
               display: "flex",
               flexDirection: "column",
               boxShadow: "0 8px 30px rgba(24, 13, 38, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.8)",

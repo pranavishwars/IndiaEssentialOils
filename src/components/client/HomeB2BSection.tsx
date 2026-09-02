@@ -62,10 +62,10 @@ const B2B_FAQS: FAQItem[] = [
   {
     id: "dispatch-timeline",
     question: "What is your standard order dispatch turnaround and shipping speed?",
-    shortAnswer: "We maintain ready bulk inventories of all 238+ standard oils in our New Delhi warehouse and despatch all regular orders within 48 hours of payment.",
-    detailedAnswer: "Our specialty is our promptness in service. Because we maintain substantial bulk stocks in our 1,000 MT climate-controlled warehouse, standard wholesale orders are packed and dispatched within 48 hours. We have direct tie-ups with major ocean shipping lines and express air cargo networks (DHL, FedEx, UPS Cargo), with air shipments arriving globally within 3–6 business days and full container load (FCL) sea freight via Mundra and Nhava Sheva ports.",
+    shortAnswer: "We maintain ready bulk inventories of all standard botanical oils in our New Delhi facility and despatch regular orders within 48 hours of payment.",
+    detailedAnswer: "Our specialty is our promptness in service. Because we maintain substantial bulk stocks in our climate-controlled warehouse, standard wholesale orders are packed and dispatched within 48 hours, serving corporate and formulation clients in over 45 countries worldwide.",
     icon: <Clock size={20} color="#059669" />,
-    tags: ["⚡ 48-Hour Order Dispatch", "Ready Bulk Stock", "Worldwide Air & Sea Freight"],
+    tags: ["⚡ 48-Hour Order Dispatch", "Ready Bulk Stock", "Export to 45+ Countries"],
   },
   {
     id: "carrier-oils-cold-pressed",

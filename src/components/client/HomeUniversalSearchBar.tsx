@@ -92,18 +92,19 @@ export function HomeUniversalSearchBar() {
       style={{
         width: "100%",
         maxWidth: "1280px",
-        margin: "16px auto 72px",
-        padding: "0 24px",
+        margin: "16px auto clamp(40px, 6vh, 72px)",
+        padding: "0 clamp(16px, 4vw, 24px)",
         position: "relative",
         zIndex: 30,
+        boxSizing: "border-box",
       }}
     >
       {/* Search Input Bar Card */}
       <div
         className="liquid-glass-elevated"
         style={{
-          borderRadius: "28px",
-          padding: "20px 24px",
+          borderRadius: "clamp(18px, 3vw, 28px)",
+          padding: "clamp(12px, 2vw, 20px) clamp(14px, 2.5vw, 24px)",
           backgroundColor: "rgba(255, 255, 255, 0.88)",
           backdropFilter: "blur(28px) saturate(180%)",
           WebkitBackdropFilter: "blur(28px) saturate(180%)",
@@ -114,15 +115,16 @@ export function HomeUniversalSearchBar() {
             ? "0 20px 50px rgba(124, 58, 237, 0.16), 0 0 0 4px rgba(124, 58, 237, 0.1)"
             : "0 12px 36px rgba(24, 13, 38, 0.08)",
           transition: "all 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
+          boxSizing: "border-box",
         }}
       >
         {/* Main Search Input Row */}
-        <div style={{ display: "flex", alignItems: "center", gap: "14px" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "clamp(8px, 1.8vw, 14px)", width: "100%" }}>
           <div
             style={{
-              width: "48px",
-              height: "48px",
-              borderRadius: "16px",
+              width: "clamp(36px, 5.5vw, 48px)",
+              height: "clamp(36px, 5.5vw, 48px)",
+              borderRadius: "14px",
               backgroundColor: "rgba(124, 58, 237, 0.1)",
               display: "flex",
               alignItems: "center",
@@ -130,10 +132,10 @@ export function HomeUniversalSearchBar() {
               flexShrink: 0,
             }}
           >
-            <Search size={22} color="#7C3AED" strokeWidth={2.2} />
+            <Search size={18} color="#7C3AED" strokeWidth={2.2} />
           </div>
 
-          <div style={{ flex: 1, position: "relative" }}>
+          <div style={{ flex: 1, position: "relative", minWidth: 0 }}>
             <input
               ref={inputRef}
               type="text"
@@ -145,13 +147,13 @@ export function HomeUniversalSearchBar() {
               }}
               onBlur={() => setIsFocused(false)}
               onKeyDown={handleKeyDown}
-              placeholder="Search 200+ botanical oils, botanical names, carrier oils, CAS numbers..."
+              placeholder="Search 200+ botanical oils, CAS numbers..."
               style={{
                 width: "100%",
                 border: "none",
                 outline: "none",
                 backgroundColor: "transparent",
-                fontSize: "clamp(1rem, 1.6vw, 1.15rem)",
+                fontSize: "clamp(0.92rem, 1.4vw, 1.12rem)",
                 fontWeight: 600,
                 color: "#180D26",
                 fontFamily: "inherit",
@@ -161,7 +163,7 @@ export function HomeUniversalSearchBar() {
 
           {isLoading && (
             <Loader2
-              size={20}
+              size={18}
               className="animate-spin"
               style={{ color: "#7C3AED", flexShrink: 0 }}
             />
@@ -175,8 +177,8 @@ export function HomeUniversalSearchBar() {
                 background: "rgba(124, 58, 237, 0.1)",
                 border: "none",
                 borderRadius: "50%",
-                width: "32px",
-                height: "32px",
+                width: "28px",
+                height: "28px",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -186,7 +188,7 @@ export function HomeUniversalSearchBar() {
                 transition: "all 0.2s",
               }}
             >
-              <X size={16} />
+              <X size={14} />
             </button>
           )}
 
@@ -196,10 +198,10 @@ export function HomeUniversalSearchBar() {
             style={{
               display: "inline-flex",
               alignItems: "center",
-              gap: "8px",
-              padding: "12px 24px",
+              gap: "6px",
+              padding: "clamp(8px, 1.4vh, 12px) clamp(14px, 2vw, 22px)",
               borderRadius: "9999px",
-              fontSize: "0.95rem",
+              fontSize: "clamp(0.82rem, 1.1vw, 0.92rem)",
               fontWeight: 700,
               textDecoration: "none",
               color: "white",
@@ -208,7 +210,7 @@ export function HomeUniversalSearchBar() {
             }}
           >
             <span>Search</span>
-            <ArrowRight size={16} />
+            <ArrowRight size={14} />
           </Link>
         </div>
 

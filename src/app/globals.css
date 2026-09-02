@@ -7,10 +7,13 @@
     --font-inter: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     --font-lora: var(--font-lora), Georgia, Cambria, "Times New Roman", Times, serif;
 
+    /* ── Layout & Viewport Sizing (Phase 6 & 11) ─────────────────────────── */
+    --navbar-height:     68px;
+
     /* ── Fluid Typography Scale (Phase 11) ──────────────────────────────── */
     --font-size-h1:      clamp(1.75rem, 1.2rem + 2.5vw, 2.75rem);
     --font-size-h2:      clamp(1.375rem, 1.1rem + 1.4vw, 1.75rem);
-    --font-size-h3:      clamp(1.1rem, 1rem + 0.5vw, 1.35rem);
+    --font-size-h3:      clamp(1.05rem, 0.95rem + 0.4vw, 1.35rem);
     --font-size-body:    clamp(0.9rem, 0.88rem + 0.1vw, 1rem);
     --font-size-small:   clamp(0.8rem, 0.78rem + 0.1vw, 0.875rem);
     --font-size-caption: clamp(0.72rem, 0.7rem + 0.1vw, 0.8125rem);

@@ -588,7 +588,7 @@ export function ExploreLatestLineSection() {
                       style={{
                         position: "relative",
                         width: "100%",
-                        height: "clamp(540px, 52vw, 680px)",
+                        height: "clamp(340px, 50vw, 680px)",
                         borderRadius: "24px",
                         overflow: "hidden",
                         border: "1px solid rgba(124, 58, 237, 0.2)",
@@ -610,12 +610,12 @@ export function ExploreLatestLineSection() {
                         className="btn-vibrant-primary"
                         style={{
                           position: "absolute",
-                          bottom: "24px",
-                          right: "24px",
-                          padding: "14px 28px",
+                          bottom: "clamp(16px, 3vw, 24px)",
+                          right: "clamp(16px, 3vw, 24px)",
+                          padding: "clamp(10px, 2vh, 14px) clamp(18px, 3vw, 28px)",
                           borderRadius: "9999px",
                           fontWeight: 700,
-                          fontSize: "0.92rem",
+                          fontSize: "clamp(0.82rem, 1.2vw, 0.92rem)",
                           display: "inline-flex",
                           alignItems: "center",
                           gap: "8px",
@@ -659,9 +659,9 @@ export function ExploreLatestLineSection() {
                   <div
                     style={{
                       display: "grid",
-                      gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
-                      gap: "18px",
-                      minHeight: "clamp(540px, 52vw, 680px)",
+                      gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 220px), 1fr))",
+                      gap: "clamp(12px, 2vw, 18px)",
+                      minHeight: "clamp(340px, 50vw, 680px)",
                     }}
                   >
                     {page.products.map((prod) => {
