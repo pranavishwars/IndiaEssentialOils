@@ -393,7 +393,7 @@ export function ChatbotWidget() {
                   </div>
                   <div style={{ fontSize: "0.72rem", color: "#C4B5FD", display: "flex", alignItems: "center", gap: "4px" }}>
                     <span style={{ width: "6px", height: "6px", borderRadius: "50%", backgroundColor: "#10B981" }} />
-                    238+ In-Stock Oils · Ready to Assist
+                    273+ In-Stock Botanicals · Ready to Assist
                   </div>
                 </div>
               </div>

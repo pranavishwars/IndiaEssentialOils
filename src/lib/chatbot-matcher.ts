@@ -273,9 +273,9 @@ const CATEGORY_DEFINITIONS: CategoryDefinition[] = [
       "floral water", "floral waters", "hydrosol", "hydrosols", "distillate water", "rose water", "flower water"
     ],
     description: "100% pure aqueous distillates produced as natural coproducts during the steam distillation of aromatic botanicals. Rich in micro-dispersed essential oil molecules and water-soluble plant acids, perfect for facial mists, toners, and cosmetic water phases.",
-    totalCount: 12,
-    highlightedSlugs: ["rose-damascena-oil", "lavender-oil"],
-    features: ["Natural Steam Distillate", "Alcohol & Preservative Free", "Immediate Facial Tonic Base", "25kg to 200kg Food-Grade HDPE"],
+    totalCount: 35,
+    highlightedSlugs: ["rose-floral-water", "lavender-floral-water", "neroli-floral-water", "rosemary-hydrosol", "tea-tree-floral-water", "saffron-floral-water"],
+    features: ["100% Pure Steam Distillate", "Alcohol & Preservative Free", "Immediate Facial Tonic Base", "25kg to 200kg Food-Grade HDPE"],
   },
   {
     id: "cat_oleoresins",
@@ -445,7 +445,7 @@ All botanicals are batch-tested via dual GC-MS and supplied with lot Certificate
 }
 
 /**
- * Intelligent Dynamic Product Search Across all 238 Products
+ * Intelligent Dynamic Product Search Across all 273 Products
  */
 function searchProductCatalogSmart(normalized: string): FaqEntry | null {
   const allProducts = INITIAL_PRODUCTS;
@@ -958,9 +958,9 @@ For details specific to your destination — such as applicable import duties, r
  */
 function checkExportCountriesQuery(normalized: string): FaqEntry | null {
   const exportPatterns = [
-    "export countries", "which countries", "countries you serve", "countries you export",
-    "countries served", "global reach", "where do you export", "where do you ship", "countries we serve",
-    "list of countries"
+    "export countries", "which countries", "what countries", "countries you serve", "countries do you serve",
+    "countries do u serve", "countries you export", "countries served", "global reach", "where do you export",
+    "where do you ship", "countries we serve", "list of countries", "countries do you deliver"
   ];
 
   const matches = exportPatterns.some(p => normalized.includes(p));
@@ -1031,7 +1031,7 @@ For bulk orders, we recommend submitting your product list and required quantiti
       patterns: ["minimum order", "moq", "min order"],
       answer: `📦 **Yes — there is a Minimum Order Quantity (MOQ) of 1 kg across all products.**
 
-Our standard MOQ is **1 kg** for every product in our catalog of 238+ botanicals — whether essential oils, carrier oils, CO₂ extracts, spice oils, oleoresins, or floral absolutes.
+Our standard MOQ is **1 kg** for every product in our catalog of 273+ botanicals — whether essential oils, carrier oils, CO₂ extracts, spice oils, oleoresins, floral waters, or floral absolutes.
 
 For higher volumes, we offer bulk packaging in UN-certified seamless aluminum canisters (5 kg, 25 kg), food-grade HDPE drums, and heavy-gauge steel export drums (200 kg) for large-scale industrial requirements.
 
@@ -1057,7 +1057,7 @@ To get pricing for your required quantity and product, please submit an enquiry 
 
 • **Certified Organic Range:** We offer **20 USDA/NPOP certified organic oils**, including Organic Lavender, Organic Peppermint, Organic Jojoba, Organic Ginger, Organic Jasmine, and others. These are cultivated without synthetic pesticides, herbicides, or GMOs and are verified by accredited international organic certification agencies with full Organic Transaction Certificates (TC).
 
-• **Conventional Pure Range:** Our broader catalog of 238+ products covers 100% pure, unadulterated steam-distilled and cold-pressed botanicals — all rigorously GC-MS tested and free of synthetic extenders or adulterants, even in the non-certified organic range.
+• **Conventional Pure Range:** Our broader catalog of 273+ products covers 100% pure, unadulterated steam-distilled and cold-pressed botanicals — all rigorously GC-MS tested and free of synthetic extenders or adulterants, even in the non-certified organic range.
 
 If you specifically require certified organic grade with transaction certificates, please mention it in your enquiry.`,
       actionLink: {
@@ -1314,7 +1314,7 @@ If your message is sent outside business hours, our team will get back to you on
 India Essential Oils is a premier manufacturing and global export division of **Mother Herbs Pvt. Ltd.**, established in **New Delhi, India in 2004**.
 
 We specialize in:
-• Manufacturing and exporting **238+ pharmacopoeial-grade botanical extracts** across 9 product divisions — Essential Oils, CO₂ Extracts, Carrier Oils, Spice Oils, Floral Absolutes, Floral Waters, Oleoresins, Ayurvedic Oils, and Organic Oils.
+• Manufacturing and exporting **273+ pharmacopoeial-grade botanical extracts** across 9 product divisions — Essential Oils, CO₂ Extracts, Carrier Oils, Spice Oils, Floral Absolutes, Floral Waters, Oleoresins, Ayurvedic Oils, and Organic Oils.
 • In-house **Shimadzu GC-MS analytical laboratory** for batch purity verification.
 • Certified under **WHO-GMP, ISO 22000, ISO 9001:2015, US FDA, and USDA Organic (NOP)** standards.
 • Exporting worldwide with 48-hour order dispatch from our 1,000 MT climate-controlled warehouse.
@@ -1346,7 +1346,7 @@ function checkDownloadCatalogQuery(normalized: string): FaqEntry | null {
     patterns: downloadPatterns,
     answer: `📑 **Official 2026 Botanical Wholesale Catalog (PDF):**
 
-You can download our official 44-page September 2026 Wholesale Catalog (PDF) containing all 238+ verified pure botanical extracts, botanical names, processing methods, harvest origins, MOQs, and technical dossiers.`,
+You can download our official 44-page September 2026 Wholesale Catalog (PDF) containing all 273+ verified pure botanical extracts, botanical names, processing methods, harvest origins, MOQs, and technical dossiers.`,
     actionLink: {
       label: "Download Official 2026 Catalog (PDF)",
       href: "/api/catalog/download",
@@ -1432,7 +1432,7 @@ export function matchFaq(userInput: string, faqData: FaqEntry[]): FaqEntry | nul
   const orderMatch = checkOrderAndSamplesQuery(normalized);
   if (orderMatch) return orderMatch;
 
-  // 12. High Priority: Direct & Intelligent Product Catalog Search across all 238 items
+  // 12. High Priority: Direct & Intelligent Product Catalog Search across all 273 items
   const productMatch = searchProductCatalogSmart(normalized);
   if (productMatch) return productMatch;
 

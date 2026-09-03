@@ -545,7 +545,7 @@ function ContactFormContent() {
                     Operating Hours
                   </div>
                   <div style={{ fontSize: "0.92rem", color: "#180D26", display: "flex", alignItems: "center", gap: "8px" }}>
-                    <Clock size={16} color="#7C3AED" /> Monday &ndash; Saturday: 9:00 AM &ndash; 6:30 PM (IST)
+                    <Clock size={16} color="#7C3AED" /> Monday &ndash; Friday: 9:00 AM &ndash; 6:00 PM (IST)
                   </div>
                 </div>
 

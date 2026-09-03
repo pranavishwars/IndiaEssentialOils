@@ -13,6 +13,7 @@ import {
   FlaskConical,
   CheckCircle2,
   ArrowRight,
+  ArrowLeft,
   AlertCircle
 } from "lucide-react";
 import { CERTIFICATIONS } from "@/lib/data";
@@ -23,6 +24,7 @@ interface ProductDetailViewProps {
 
 export function ProductDetailView({ product }: ProductDetailViewProps) {
   const [isQuoteOpen, setIsQuoteOpen] = useState(false);
+  const categorySlug = getCategorySlug(product.category);
 
   useEffect(() => {
     // Log VIEW event for popularity engine
@@ -49,6 +51,45 @@ export function ProductDetailView({ product }: ProductDetailViewProps) {
   return (
     <div style={{ backgroundColor: "#FCFAF6", minHeight: "100vh", paddingTop: "100px", paddingBottom: "80px" }}>
       <div style={{ maxWidth: "1240px", margin: "0 auto", padding: "0 28px" }}>
+
+        {/* Back Button Navigation */}
+        <div style={{ marginBottom: "20px" }}>
+          <Link
+            href={`/products/${categorySlug}`}
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "8px",
+              padding: "8px 18px",
+              borderRadius: "9999px",
+              backgroundColor: "rgba(255, 255, 255, 0.8)",
+              backdropFilter: "blur(16px)",
+              WebkitBackdropFilter: "blur(16px)",
+              border: "1px solid rgba(124, 58, 237, 0.2)",
+              color: "#5B486E",
+              fontSize: "0.85rem",
+              fontWeight: 700,
+              textDecoration: "none",
+              boxShadow: "0 2px 10px rgba(24, 13, 38, 0.03)",
+              transition: "all 0.2s cubic-bezier(0.16, 1, 0.3, 1)",
+            }}
+            onMouseEnter={e => {
+              e.currentTarget.style.transform = "translateX(-3px)";
+              e.currentTarget.style.color = "#7C3AED";
+              e.currentTarget.style.borderColor = "rgba(124, 58, 237, 0.4)";
+              e.currentTarget.style.boxShadow = "0 4px 16px rgba(124, 58, 237, 0.12)";
+            }}
+            onMouseLeave={e => {
+              e.currentTarget.style.transform = "translateX(0)";
+              e.currentTarget.style.color = "#5B486E";
+              e.currentTarget.style.borderColor = "rgba(124, 58, 237, 0.2)";
+              e.currentTarget.style.boxShadow = "0 2px 10px rgba(24, 13, 38, 0.03)";
+            }}
+          >
+            <ArrowLeft size={16} />
+            <span>Back to {product.category.replace(/_/g, " ").toLowerCase().replace(/\b\w/g, c => c.toUpperCase())}</span>
+          </Link>
+        </div>
 
         {/* ZONE 1: Above-the-fold */}
         <div

@@ -13,6 +13,7 @@ export function invalidateProductsCache(): void {
   cachedProducts = null;
   lastCacheTime = 0;
 }
+invalidateProductsCache();
 
 /**
  * Fetches all products from the PostgreSQL database, falling back gracefully

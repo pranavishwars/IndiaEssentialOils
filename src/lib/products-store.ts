@@ -12983,6 +12983,1897 @@ export const INITIAL_PRODUCTS: Product[] = [
           }
       ]
   }
+,
+  {
+    "id": "fw-angelica-floral-water",
+    "slug": "angelica-floral-water",
+    "name": "Angelica Floral Water",
+    "botanicalName": "Angelica Archangelica",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Angelica Floral Water (Angelica Archangelica). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Direct Steam Distillate · 100% Pure Hydrosol · Food / Cosmetic Grade",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 60,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Angelica Floral Water distilled from prime Angelica Archangelica. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/angelica-floral-water.png",
+    "compositeImageUrl": "/products/angelica-floral-water.webp"
+  },
+  {
+    "id": "fw-aniseed-floral-water",
+    "slug": "aniseed-floral-water",
+    "name": "Aniseed Floral Water",
+    "botanicalName": "Pimpinella anisum",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Aniseed Floral Water (Pimpinella anisum). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Steam Distilled Seed Hydrosol · Alcohol-Free · Natural Aromatic Mist",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 61,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Aniseed Floral Water distilled from prime Pimpinella anisum. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/aniseed-floral-water.png",
+    "compositeImageUrl": "/products/aniseed-floral-water.webp"
+  },
+  {
+    "id": "fw-cardamom-floral-water",
+    "slug": "cardamom-floral-water",
+    "name": "Cardamom Floral Water",
+    "botanicalName": "Elettaria cardamomum",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Cardamom Floral Water (Elettaria cardamomum). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Indian Cardamom Pod Distillate · Cosmetic Tonic Base · Hexane-Free",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 62,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Cardamom Floral Water distilled from prime Elettaria cardamomum. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/cardamom-floral-water.png",
+    "compositeImageUrl": "/products/cardamom-floral-water.webp"
+  },
+  {
+    "id": "fw-cedarwood-floral-water",
+    "slug": "cedarwood-floral-water",
+    "name": "Cedarwood Floral Water",
+    "botanicalName": "Cedrus deodara",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Cedarwood Floral Water (Cedrus deodara). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Himalayan Deodar Distillate · Natural Astringent · Scalp Care Tonic",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 63,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Cedarwood Floral Water distilled from prime Cedrus deodara. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/cedarwood-floral-water.png",
+    "compositeImageUrl": "/products/cedarwood-floral-water.webp"
+  },
+  {
+    "id": "fw-chamomile-blue-floral-water",
+    "slug": "chamomile-blue-floral-water",
+    "name": "Chamomile Blue Floral Water",
+    "botanicalName": "Matricaria chamomilla",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Chamomile Blue Floral Water (Matricaria chamomilla). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "German Blue Chamomile Distillate · Anti-Inflammatory Soothing Mist",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 64,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Chamomile Blue Floral Water distilled from prime Matricaria chamomilla. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/chamomile-blue-floral-water.png",
+    "compositeImageUrl": "/products/chamomile-blue-floral-water.webp"
+  },
+  {
+    "id": "fw-cinnamon-floral-water",
+    "slug": "cinnamon-floral-water",
+    "name": "Cinnamon Floral Water",
+    "botanicalName": "Cinnamomum zeylanicum",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Cinnamon Floral Water (Cinnamomum zeylanicum). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "True Ceylon Cinnamon Distillate · Invigorating Botanical Water",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 65,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Cinnamon Floral Water distilled from prime Cinnamomum zeylanicum. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/cinnamon-floral-water.png",
+    "compositeImageUrl": "/products/cinnamon-floral-water.webp"
+  },
+  {
+    "id": "fw-clary-sage-floral-water",
+    "slug": "clary-sage-floral-water",
+    "name": "Clary Sage Floral Water",
+    "botanicalName": "Salvia sclarea",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Clary Sage Floral Water (Salvia sclarea). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Steam Distilled Tops · Balancing Facial Hydrosol · Pore Clarifying",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 66,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Clary Sage Floral Water distilled from prime Salvia sclarea. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/clary-sage-floral-water.png",
+    "compositeImageUrl": "/products/clary-sage-floral-water.webp"
+  },
+  {
+    "id": "fw-clove-floral-water",
+    "slug": "clove-floral-water",
+    "name": "Clove Floral Water",
+    "botanicalName": "Eugenia caryophyllus",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Clove Floral Water (Eugenia caryophyllus). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Madagascar Clove Bud Distillate · Purifying Oral & Cosmetic Mist",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 67,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Clove Floral Water distilled from prime Eugenia caryophyllus. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/clove-floral-water.png",
+    "compositeImageUrl": "/products/clove-floral-water.webp"
+  },
+  {
+    "id": "fw-cypress-floral-water",
+    "slug": "cypress-floral-water",
+    "name": "Cypress Floral Water",
+    "botanicalName": "Cupressus sempervirens",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Cypress Floral Water (Cupressus sempervirens). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Mediterranean Cypress Twig Distillate · Venous & Lymphatic Tonic",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 68,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Cypress Floral Water distilled from prime Cupressus sempervirens. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/cypress-floral-water.png",
+    "compositeImageUrl": "/products/cypress-floral-water.webp"
+  },
+  {
+    "id": "fw-eucalyptus-floral-water",
+    "slug": "eucalyptus-floral-water",
+    "name": "Eucalyptus Floral Water",
+    "botanicalName": "Eucalyptus globulus",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Eucalyptus Floral Water (Eucalyptus globulus). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Nilgiri Eucalyptus Distillate · Respiratory & Cleansing Hydrosol",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 69,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Eucalyptus Floral Water distilled from prime Eucalyptus globulus. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/eucalyptus-floral-water.png",
+    "compositeImageUrl": "/products/eucalyptus-floral-water.webp"
+  },
+  {
+    "id": "fw-frankincense-floral-water",
+    "slug": "frankincense-floral-water",
+    "name": "Frankincense Floral Water",
+    "botanicalName": "Boswellia carterii",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Frankincense Floral Water (Boswellia carterii). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Sacred Olibanum Resin Distillate · Mature Skin Restorative Mist",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 70,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Frankincense Floral Water distilled from prime Boswellia carterii. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/frankincense-floral-water.png",
+    "compositeImageUrl": "/products/frankincense-floral-water.webp"
+  },
+  {
+    "id": "fw-geranium-floral-water",
+    "slug": "geranium-floral-water",
+    "name": "Geranium Floral Water",
+    "botanicalName": "Pelargonium graveolens",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Geranium Floral Water (Pelargonium graveolens). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Steam Distilled Leaf & Blossom · Sebum-Balancing Facial Hydrosol",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 71,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Geranium Floral Water distilled from prime Pelargonium graveolens. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/geranium-floral-water.png",
+    "compositeImageUrl": "/products/geranium-floral-water.webp"
+  },
+  {
+    "id": "fw-hedychium-floral-water",
+    "slug": "hedychium-floral-water",
+    "name": "Hedychium Floral Water",
+    "botanicalName": "Hedychium spicatum",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Hedychium Floral Water (Hedychium spicatum). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Kapoorkachri Root Distillate · Ayurvedic Hair & Skin Tonic",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 72,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Hedychium Floral Water distilled from prime Hedychium spicatum. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/hedychium-floral-water.png",
+    "compositeImageUrl": "/products/hedychium-floral-water.webp"
+  },
+  {
+    "id": "fw-helichrysum-floral-water",
+    "slug": "helichrysum-floral-water",
+    "name": "Helichrysum Floral Water",
+    "botanicalName": "Helichrysum italicum",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Helichrysum Floral Water (Helichrysum italicum). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Everlasting Flower Hydrosol · Tissue Regeneration & Redness Relief",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 73,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Helichrysum Floral Water distilled from prime Helichrysum italicum. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/helichrysum-floral-water.png",
+    "compositeImageUrl": "/products/helichrysum-floral-water.webp"
+  },
+  {
+    "id": "fw-hyssop-floral-water",
+    "slug": "hyssop-floral-water",
+    "name": "Hyssop Floral Water",
+    "botanicalName": "Hyssopus officinalis",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Hyssop Floral Water (Hyssopus officinalis). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Steam Distilled Herb · Respiratory Clarity & Skin Cleansing Mist",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 74,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Hyssop Floral Water distilled from prime Hyssopus officinalis. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/hyssop-floral-water.png",
+    "compositeImageUrl": "/products/hyssop-floral-water.webp"
+  },
+  {
+    "id": "fw-jasmine-grandiflorum-floral-water",
+    "slug": "jasmine-grandiflorum-floral-water",
+    "name": "Jasmine Grandiflorum Floral Water",
+    "botanicalName": "Jasminum grandiflorum",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Jasmine Grandiflorum Floral Water (Jasminum grandiflorum). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Hydro-Distilled Jasmine Petals · Luxury Skin Perfumed Water",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 75,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Jasmine Grandiflorum Floral Water distilled from prime Jasminum grandiflorum. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/jasmine-grandiflorum-floral-water.png",
+    "compositeImageUrl": "/products/jasmine-grandiflorum-floral-water.webp"
+  },
+  {
+    "id": "fw-jasminum-sambac-floral-water",
+    "slug": "jasminum-sambac-floral-water",
+    "name": "Jasminum Sambac Floral Water",
+    "botanicalName": "Jasminum sambac",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Jasminum Sambac Floral Water (Jasminum sambac). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Indian Mogra Blossom Water · Facial Mist & Natural Attar Carrier",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 76,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Jasminum Sambac Floral Water distilled from prime Jasminum sambac. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/jasminum-sambac-floral-water.png",
+    "compositeImageUrl": "/products/jasminum-sambac-floral-water.webp"
+  },
+  {
+    "id": "fw-juniperus-floral-water",
+    "slug": "juniperus-floral-water",
+    "name": "Juniperus Floral Water",
+    "botanicalName": "Juniperus communis",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Juniperus Floral Water (Juniperus communis). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Ripe Juniper Berry Distillate · Detoxifying & Pore Tightening Mist",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 77,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Juniperus Floral Water distilled from prime Juniperus communis. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/juniperus-floral-water.png",
+    "compositeImageUrl": "/products/juniperus-floral-water.webp"
+  },
+  {
+    "id": "fw-khus-vetiver-floral-water",
+    "slug": "khus-vetiver-floral-water",
+    "name": "Khus (Vetiver) Floral Water",
+    "botanicalName": "Chrysopogon zizanioides",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Khus (Vetiver) Floral Water (Chrysopogon zizanioides). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Wild Indian Vetiver Root Distillate · Classical Ayurvedic Pitta Shaman",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 78,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Khus (Vetiver) Floral Water distilled from prime Chrysopogon zizanioides. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/khus-vetiver-floral-water.png",
+    "compositeImageUrl": "/products/khus-vetiver-floral-water.webp"
+  },
+  {
+    "id": "fw-lavender-floral-water",
+    "slug": "lavender-floral-water",
+    "name": "Lavender Floral Water",
+    "botanicalName": "Lavandula angustifolia",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Lavender Floral Water (Lavandula angustifolia). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Kashmir Lavender Blossom Distillate · Gentle Universal Skin Tonic",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 79,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Lavender Floral Water distilled from prime Lavandula angustifolia. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/lavender-floral-water.png",
+    "compositeImageUrl": "/products/lavender-floral-water.webp"
+  },
+  {
+    "id": "fw-lemon-floral-water",
+    "slug": "lemon-floral-water",
+    "name": "Lemon Floral Water",
+    "botanicalName": "Citrus limonum",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Lemon Floral Water (Citrus limonum). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Cold-Pressed & Distilled Peel Water · Vitamin C Clarifying Mist",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 80,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Lemon Floral Water distilled from prime Citrus limonum. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/lemon-floral-water.png",
+    "compositeImageUrl": "/products/lemon-floral-water.webp"
+  },
+  {
+    "id": "fw-lemongrass-floral-water",
+    "slug": "lemongrass-floral-water",
+    "name": "Lemongrass Floral Water",
+    "botanicalName": "Cymbopogon flexuosus",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Lemongrass Floral Water (Cymbopogon flexuosus). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Indian Lemongrass Distillate · Uplifting Room & Toner Base",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 81,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Lemongrass Floral Water distilled from prime Cymbopogon flexuosus. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/lemongrass-floral-water.png",
+    "compositeImageUrl": "/products/lemongrass-floral-water.webp"
+  },
+  {
+    "id": "fw-lime-floral-water",
+    "slug": "lime-floral-water",
+    "name": "Lime Floral Water",
+    "botanicalName": "Citrus aurantifolia",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Lime Floral Water (Citrus aurantifolia). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Steam Distilled Key Lime Peel · Natural Astringent Facial Water",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 82,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Lime Floral Water distilled from prime Citrus aurantifolia. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/lime-floral-water.png",
+    "compositeImageUrl": "/products/lime-floral-water.webp"
+  },
+  {
+    "id": "fw-melissa-floral-water",
+    "slug": "melissa-floral-water",
+    "name": "Melissa Floral Water",
+    "botanicalName": "Melissa officinalis",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Melissa Floral Water (Melissa officinalis). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Lemon Balm Hydrosol · Soothing Sensitive & Reactive Skin Mist",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 83,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Melissa Floral Water distilled from prime Melissa officinalis. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/melissa-floral-water.png",
+    "compositeImageUrl": "/products/melissa-floral-water.webp"
+  },
+  {
+    "id": "fw-neroli-floral-water",
+    "slug": "neroli-floral-water",
+    "name": "Neroli Floral Water",
+    "botanicalName": "Citrus aurantium",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Neroli Floral Water (Citrus aurantium). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Bitter Orange Blossom Distillate · Premium Anti-Stress Skin Tonic",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 84,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Neroli Floral Water distilled from prime Citrus aurantium. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/neroli-floral-water.png",
+    "compositeImageUrl": "/products/neroli-floral-water.webp"
+  },
+  {
+    "id": "fw-orange-floral-water",
+    "slug": "orange-floral-water",
+    "name": "Orange Floral Water",
+    "botanicalName": "Citrus aurantium",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Orange Floral Water (Citrus aurantium). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Orange Blossom Water · Delicate Hydrating Facial Mist & Flavor",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 60,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Orange Floral Water distilled from prime Citrus aurantium. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/orange-floral-water.png",
+    "compositeImageUrl": "/products/orange-floral-water.webp"
+  },
+  {
+    "id": "fw-parsley-floral-water",
+    "slug": "parsley-floral-water",
+    "name": "Parsley Floral Water",
+    "botanicalName": "Petroselinum sativum",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Parsley Floral Water (Petroselinum sativum). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Steam Distilled Herb Hydrosol · Eye Area & Discoloration Tonic",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 61,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Parsley Floral Water distilled from prime Petroselinum sativum. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/parsley-floral-water.png",
+    "compositeImageUrl": "/products/parsley-floral-water.webp"
+  },
+  {
+    "id": "fw-peppermint-floral-water",
+    "slug": "peppermint-floral-water",
+    "name": "Peppermint Floral Water",
+    "botanicalName": "Mentha piperita",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Peppermint Floral Water (Mentha piperita). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Indian Peppermint Distillate · Instant Refreshment & Scalp Revitalizer",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 62,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Peppermint Floral Water distilled from prime Mentha piperita. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/peppermint-floral-water.png",
+    "compositeImageUrl": "/products/peppermint-floral-water.webp"
+  },
+  {
+    "id": "fw-rose-floral-water",
+    "slug": "rose-floral-water",
+    "name": "Rose Floral Water",
+    "botanicalName": "Rosa damascena",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Rose Floral Water (Rosa damascena). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Traditional Kannauj Deg-Bhapka Distillate · 100% Pure Gulab Jal",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 63,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Rose Floral Water distilled from prime Rosa damascena. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/rose-floral-water.png",
+    "compositeImageUrl": "/products/rose-floral-water.webp"
+  },
+  {
+    "id": "fw-rosemary-hydrosol",
+    "slug": "rosemary-hydrosol",
+    "name": "Rosemary Hydrosol",
+    "botanicalName": "Rosmarinus officinalis",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Rosemary Hydrosol (Rosmarinus officinalis). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Steam Distilled Needle Hydrosol · Hair Follicle Stimulating Mist",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 64,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Rosemary Hydrosol distilled from prime Rosmarinus officinalis. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/rosemary-hydrosol.png",
+    "compositeImageUrl": "/products/rosemary-hydrosol.webp"
+  },
+  {
+    "id": "fw-saffron-floral-water",
+    "slug": "saffron-floral-water",
+    "name": "Saffron Floral Water",
+    "botanicalName": "Crocus sativus",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Saffron Floral Water (Crocus sativus). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Kashmir Kesar Blossom Distillate · Luxury Complexion Glow Water",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 65,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Saffron Floral Water distilled from prime Crocus sativus. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/saffron-floral-water.png",
+    "compositeImageUrl": "/products/saffron-floral-water.webp"
+  },
+  {
+    "id": "fw-spearmint-floral-water",
+    "slug": "spearmint-floral-water",
+    "name": "Spearmint Floral Water",
+    "botanicalName": "Mentha spicata",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Spearmint Floral Water (Mentha spicata). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Mild Carvone Distillate · Calming Mouthwash & Refreshing Mist",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 66,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Spearmint Floral Water distilled from prime Mentha spicata. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/spearmint-floral-water.png",
+    "compositeImageUrl": "/products/spearmint-floral-water.webp"
+  },
+  {
+    "id": "fw-spikenard-floral-water",
+    "slug": "spikenard-floral-water",
+    "name": "Spikenard Floral Water",
+    "botanicalName": "Nardostachys jatamansi",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Spikenard Floral Water (Nardostachys jatamansi). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Himalayan Jatamansi Root Distillate · Ayurvedic Grounding Water",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 67,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Spikenard Floral Water distilled from prime Nardostachys jatamansi. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/spikenard-floral-water.png",
+    "compositeImageUrl": "/products/spikenard-floral-water.webp"
+  },
+  {
+    "id": "fw-tea-tree-floral-water",
+    "slug": "tea-tree-floral-water",
+    "name": "Tea Tree Floral Water",
+    "botanicalName": "Melaleuca alternifolia",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Tea Tree Floral Water (Melaleuca alternifolia). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Steam Distilled Foliage · Blemish Prone Skin Clarifying Tonic",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 68,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Tea Tree Floral Water distilled from prime Melaleuca alternifolia. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/tea-tree-floral-water.png",
+    "compositeImageUrl": "/products/tea-tree-floral-water.webp"
+  },
+  {
+    "id": "fw-ylang-ylang-floral-water",
+    "slug": "ylang-ylang-floral-water",
+    "name": "Ylang Ylang Floral Water",
+    "botanicalName": "Cananga odorata",
+    "category": "FLORAL_WATER",
+    "description": "100% pure steam-distilled Ylang Ylang Floral Water (Cananga odorata). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
+    "shortSpec": "Freshly Picked Cananga Flower Water · Balance & Shine Hair Mist",
+    "moq": "1 kg",
+    "priceDisplay": "Request Quote",
+    "popularityScore": 69,
+    "bottleFormat": "BOTTLE_100ML",
+    "manufacturingSteps": [
+      {
+        "stepNumber": 1,
+        "title": "Botanical Selection & Washing",
+        "description": "Freshly harvested flowers, leaves, or roots are thoroughly rinsed in purified demineralized water."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Gentle Hydro / Steam Distillation",
+        "description": "Slow, low-temperature steam distillation in 316-grade stainless steel stills preserves delicate hydrophilic aromatic compounds."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Condensation & Gravity Separation",
+        "description": "Condensate is collected in chilled Florentine flasks, allowing volatile essential oil to separate from pure aqueous distillate."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Microfiltration & Microbial QC",
+        "description": "Passed through sterile 0.22-micron membrane filtration. Batch-tested for zero alcohol, heavy metals, or preservatives."
+      }
+    ],
+    "overview": "100% authentic, preservative-free Ylang Ylang Floral Water distilled from prime Cananga odorata. A pure floral water (hydrosol) containing cellular plant water, organic acids, and suspended micro-droplets of pure essential oil. Ideal for toners, facial mists, skin tonics, and natural cosmetic water-phase replacements.",
+    "history": "Distilled under strict WHO-GMP and ISO 22000 cleanroom controls at our New Delhi botanical processing facility. Supplied in UN-certified food-grade HDPE carboys with nitrogen headspace capping.",
+    "benefits": [
+      {
+        "title": "Hydrating & Balancing Facial Tonic",
+        "description": "Restores natural skin pH, cools sensitive areas, and delivers botanical moisture without heaviness or greasiness."
+      },
+      {
+        "title": "Clean Cosmetic Water-Phase Base",
+        "description": "Replaces plain deionized water in high-end lotions, creams, serums, and body washes to enhance therapeutic value."
+      },
+      {
+        "title": "Aromatherapeutic Refreshment & Calming",
+        "description": "Gentle, non-irritating aromatic profile suitable for direct room misting, pillow sprays, and holistic relaxation."
+      }
+    ],
+    "signatureColor": "#2A5F6E",
+    "labelImageUrl": "/labels/ylang-ylang-floral-water.png",
+    "compositeImageUrl": "/products/ylang-ylang-floral-water.webp"
+  }
 ];
 
 // ============================

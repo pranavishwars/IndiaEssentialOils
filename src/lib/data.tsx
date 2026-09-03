@@ -51,7 +51,7 @@ export const PRODUCT_CATEGORIES = [
   {
     id: "floral-water",
     name: "Floral Water (Hydrosols)",
-    slug: "floral-water",
+    slug: "floral-waters",
     description: "Pure hydrosols and floral waters — the water-based byproduct of steam distillation, rich in therapeutic compounds.",
     icon: <Waves size={24} strokeWidth={1.5} />,
     sampleProducts: ["Chamomile Water", "Jasmine Water", "Lavender Water", "Neroli Water", "Rose Water", "Rosemary Water", "Tea Tree Water"],
