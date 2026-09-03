@@ -84,7 +84,7 @@ export const PRODUCT_CATEGORIES = [
 
 export const COMPANY_INFO = {
   name: "India Essential Oils",
-  parentCompany: "Mother Herbs Private Limited",
+  parentCompany: "Mother Herbs Pvt. Ltd.",
   location: "New Delhi, India",
   certifications: [
     { name: "ISO 9001:2015", body: "Quality Management System (UKAF)", icon: <CheckCircle size={40} strokeWidth={1.5} /> },
@@ -93,9 +93,9 @@ export const COMPANY_INFO = {
     { name: "India Organic (NPOP)", body: "National Organic Programme (RSOCA)", icon: <ShieldCheck size={40} strokeWidth={1.5} /> },
     { name: "IndiaMART TrustSeal", body: "Verified Star B2B Exporter", icon: <ShieldCheck size={40} strokeWidth={1.5} /> },
   ],
-  about: `India Essential Oils is a commercial manufacturing division of Mother Herbs Private Limited, operating steam distillation plants and botanical processing facilities in New Delhi, India. Established in 2004, we manufacture and export bulk essential oils, cold-pressed carrier oils, oleoresins, floral absolutes, and certified organic extracts.
+  about: `India Essential Oils is a commercial manufacturing division of Mother Herbs Pvt. Ltd., operating steam distillation plants and botanical processing facilities in New Delhi, India. Established in 2004, we manufacture and export bulk essential oils, cold-pressed carrier oils, oleoresins, floral absolutes, and certified organic extracts.
 
-We supply verified B2B formulators, cosmetic manufacturers, pharmaceutical houses, and commercial fragrance brands across more than 50 countries. Every production run is distilled without synthetic carriers, mineral oil, or chemical extenders, and batch-verified in our laboratory via Gas Chromatography-Mass Spectrometry (GC-MS).
+We supply verified B2B formulators, cosmetic manufacturers, pharmaceutical houses, and commercial fragrance brands worldwide. Every production run is distilled without synthetic carriers, mineral oil, or chemical extenders, and batch-verified in our laboratory via Gas Chromatography-Mass Spectrometry (GC-MS).
 
 Our industrial catalog spans over 200 botanical oils across 8 primary categories. We fulfill commercial wholesale orders in 25kg fluorinated carboys, 50kg steel drums, and 200kg export drums, accompanied by lot-specific Certificates of Analysis (CoA) and full technical dossiers.`,
   contact: {
@@ -110,7 +110,7 @@ Our industrial catalog spans over 200 botanical oils across 8 primary categories
     { value: "200+", label: "Botanical Oils" },
     { value: "8", label: "Product Categories" },
     { value: "25+", label: "Years Experience" },
-    { value: "50+", label: "Countries Served" },
+    { value: "Worldwide", label: "Global Delivery" },
   ],
 };
 

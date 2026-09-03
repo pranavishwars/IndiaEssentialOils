@@ -10,13 +10,12 @@ import {
   ArrowRight, 
   ChevronRight,
   PackageCheck,
-  AlertTriangle,
   Building2
 } from "lucide-react";
 
 export const metadata = {
   title: "Shipment Policy | India Essential Oils",
-  description: "Our international export shipping policies: 48-hour prompt order dispatch, UN-certified hazmat compliance, and comprehensive export dossiers.",
+  description: "Our international export shipping policies: 48-hour prompt order dispatch, heavy-duty export packaging, and comprehensive export dossiers.",
 };
 
 export default function ShipmentPolicyPage() {
@@ -28,19 +27,13 @@ export default function ShipmentPolicyPage() {
       color: "#059669",
     },
     {
-      title: "2. Hazardous & Flammable Material Compliance (IATA/ICAO)",
-      desc: "Certain high-terpene essential oils (such as citrus oils, pine distillates, and mint fractions) are classified as Class 3 Flammable Liquids under international aviation norms. We strictly utilize UN-certified drums and authorized dangerous goods packaging approved for international air and ocean cargo.",
-      icon: <AlertTriangle size={24} color="#D97706" />,
-      color: "#D97706",
-    },
-    {
-      title: "3. Heavy-Duty Master Carton & Pallet Packing",
+      title: "2. Heavy-Duty Master Carton & Pallet Packing",
       desc: "All retail and aluminum bottles are packed into 5-ply and 7-ply heavy-duty corrugated export master cartons with water-repellent shrink wrapping. For maritime shipments, cartons are strapped onto heat-treated ISPM-15 certified wooden pallets with edge protectors.",
       icon: <PackageCheck size={24} color="#7C3AED" />,
       color: "#7C3AED",
     },
     {
-      title: "4. Complete International Export Dossiers",
+      title: "3. Complete International Export Dossiers",
       desc: "Every export shipment is dispatched with an exhaustive documentation set: Commercial Invoice, Packing List, Certificate of Origin, Certificate of Analysis (CoA) with GC-MS report, Safety Data Sheet (MSDS/SDS), and Phytosanitary Certificate on buyer request.",
       icon: <FileCheck2 size={24} color="#0284C7" />,
       color: "#0284C7",
@@ -96,7 +89,7 @@ export default function ShipmentPolicyPage() {
           </h1>
 
           <p style={{ fontSize: "1.15rem", color: "#5B486E", maxWidth: "800px", margin: "0 auto", lineHeight: 1.7 }}>
-            Guaranteed 48-hour order dispatch, UN-certified dangerous goods compliance, and worldwide express delivery.
+            Guaranteed 48-hour order dispatch, heavy-duty export packaging, and worldwide express delivery.
           </p>
         </div>
 
@@ -165,13 +158,13 @@ export default function ShipmentPolicyPage() {
               Explore Next
             </span>
             <h3 style={{ fontSize: "1.3rem", fontWeight: 700, color: "#180D26", margin: "4px 0 0 0" }}>
-              Packaging &amp; OEM FAQs
+              Packaging Sizes &bull; Export Drums &amp; Canisters
             </h3>
           </div>
 
           <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
             <Link
-              href="/packaging/faqs"
+              href="/packaging/sizes"
               className="btn-vibrant-primary"
               style={{
                 padding: "12px 24px",
@@ -184,7 +177,7 @@ export default function ShipmentPolicyPage() {
                 gap: "6px",
               }}
             >
-              Packaging FAQs <ArrowRight size={14} />
+              Packaging Sizes <ArrowRight size={14} />
             </Link>
           </div>
         </div>

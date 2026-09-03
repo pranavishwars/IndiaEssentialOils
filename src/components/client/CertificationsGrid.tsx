@@ -44,7 +44,7 @@ const CERTIFICATES: CertificateItem[] = [
     license: "70427",
     validity: "Multi-Year Audited System",
     imageSrc: "/certificates/iso_22000_2005_certificate.jpg",
-    entityName: "Mother Herbs (P) Ltd.",
+    entityName: "Mother Herbs Pvt. Ltd.",
     badgeColor: "#059669",
     accentBg: "rgba(16, 185, 129, 0.12)",
   },

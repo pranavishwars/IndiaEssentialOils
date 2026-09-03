@@ -26,7 +26,7 @@ export function CompanyVideoSection() {
     {
       icon: <Globe size={20} color="#BAE6FD" />,
       title: "Global Export Network",
-      desc: "Direct customs-cleared freight delivery to partners across 65+ nations.",
+      desc: "Direct customs-cleared freight delivery to partners worldwide.",
     },
   ];
 

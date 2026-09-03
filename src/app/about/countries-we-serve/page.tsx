@@ -10,7 +10,7 @@ import {
 
 export const metadata = {
   title: "The Countries We Serve | India Essential Oils",
-  description: "Explore our global delivery presence across 50+ countries: USA, Canada, Europe, Middle East, Asia-Pacific, and Oceania.",
+  description: "Explore our global delivery presence worldwide: USA, Canada, Europe, Middle East, Asia-Pacific, and Oceania.",
 };
 
 export default function CountriesWeServePage() {

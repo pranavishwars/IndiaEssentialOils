@@ -9,7 +9,7 @@ import {
 
 export const metadata = {
   title: "Company Profile | India Essential Oils (Mother Herbs)",
-  description: "Company Profile of India Essential Oils, a division of Mother Herbs Private Limited. Leading Natural Medicinal & Cosmetic Herbs, Essential Oils & Oleoresins supplier.",
+  description: "Company Profile of India Essential Oils, a division of Mother Herbs Pvt. Ltd. Leading Natural Medicinal & Cosmetic Herbs, Essential Oils & Oleoresins supplier.",
 };
 
 export default function ProfilePage() {
@@ -62,7 +62,7 @@ export default function ProfilePage() {
           </h1>
 
           <p style={{ fontSize: "1.15rem", color: "#5B486E", maxWidth: "800px", margin: "0 auto", lineHeight: 1.7 }}>
-            A Division of <strong>Mother Herbs Private Limited</strong>
+            A Division of <strong>Mother Herbs Pvt. Ltd.</strong>
           </p>
         </div>
 
@@ -89,7 +89,7 @@ export default function ProfilePage() {
             }}
           >
             <p style={{ margin: 0 }}>
-              India Essential Oils is a Division of Mother Herbs Private Limited. Mother Herbs has been involved in almost every aspect of Herbal supply chain, from agricultural production to International Commodity Trading. We are one of India&apos;s leading Natural Medicinal, Cosmetic Herbs &amp; Extract Suppliers. We are committed to offering the highest quality, therapeutic-grade, 100% natural botanicals &amp; innovative range of Essential oils, Aromatherapy products, Oleoresins to real seekers of purity. Essential Oils was a natural gateway for Mother Herbs, in command of vast Natural Resources of India. Mother Herbs promises to offer Natures best in value added form, still maintaining the purity and sanctity of Natural Materials.
+              India Essential Oils is a Division of Mother Herbs Pvt. Ltd. Mother Herbs has been involved in almost every aspect of Herbal supply chain, from agricultural production to International Commodity Trading. We are one of India&apos;s leading Natural Medicinal, Cosmetic Herbs &amp; Extract Suppliers. We are committed to offering the highest quality, therapeutic-grade, 100% natural botanicals &amp; innovative range of Essential oils, Aromatherapy products, Oleoresins to real seekers of purity. Essential Oils was a natural gateway for Mother Herbs, in command of vast Natural Resources of India. Mother Herbs promises to offer Natures best in value added form, still maintaining the purity and sanctity of Natural Materials.
             </p>
 
             <p style={{ margin: 0 }}>

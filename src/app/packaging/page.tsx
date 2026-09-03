@@ -153,37 +153,6 @@ export default function PackagingPage() {
     },
   ];
 
-  const faqs = [
-    {
-      q: "What glass bottle sizes and finishes do you supply for private labeling?",
-      a: "We offer 5 ml, 10 ml, 20 ml, 50 ml, 100 ml, 200 ml, 500 ml, 1 kg, and 2 kg glass bottles. Available finishes include Amber Glass (maximum UV protection), Clear Glass (high optical clarity), Matte Finish Glass (frosted luxury velvet touch), as well as Cobalt Blue and Emerald Green glass.",
-    },
-    {
-      q: "What cap and dropper mechanisms are available?",
-      a: "Our closures include European dropper type droppers (controlled drop-by-drop orifice reducers), calibrated glass droppers (pipettes), tamper-evident sealed caps with breakaway rings, flip top caps, fine mist atomizers, treatment pumps, and stainless steel rollerballs.",
-    },
-    {
-      q: "Do you offer Outer Box and Cushion Box packing?",
-      a: "Yes! We specialize in customized outer box packaging and cushion box packing. Our cushion box packing utilizes molded shock-absorbing internal padding to protect bottles from vibrations and compression during domestic and international transit. We also design bespoke gift packaging and presentation boxes on request.",
-    },
-    {
-      q: "What are your bulk packaging sizes for essential oils, oleoresins, and floral waters?",
-      a: "Our bulk range includes Aluminum Bottles (1kg, 2kg, 5kg, 10kg, 25kg+), HDPE Drums (5kg, 20kg, 25kg, 50kg, 200kg+), HDPE Barrels (200kg open top & 200kg closed top), and Steel & GI Drums (20kg, 40kg, 200kg open top with narrow mouth).",
-    },
-    {
-      q: "Is Nitrogen capping available for oxidation protection?",
-      a: "Yes. We offer Nitrogen capping for specific oils on special requests. Our automated cleanroom capping line purges atmospheric oxygen from the container headspace with ultra-pure nitrogen gas before sealing, safeguarding sensitive botanical oils against oxidative rancidity.",
-    },
-    {
-      q: "How do I place an order and what is the response turnaround?",
-      a: "You can send an enquiry through our online customized request form or contact desk. We are committed to replying to all enquiries in less than 30 minutes during Indian business hours (10:00 AM – 9:00 PM IST) with full lot pricing, batch specifications, and technical dossiers.",
-    },
-    {
-      q: "What is your standard order dispatch and delivery turnaround?",
-      a: "Our specialty is promptness in service. We maintain substantial bulk stocks of regular products in our climate-controlled warehouse, which enables us to despatch orders within 48 hours of payment unless custom manufacturing or urgent priority is requested.",
-    },
-  ];
-
   return (
     <div style={{ backgroundColor: "#FCFAF6", minHeight: "100vh", display: "flex", flexDirection: "column", paddingTop: "100px" }}>
       <main style={{ flex: 1, padding: "20px 24px 80px", maxWidth: "1240px", margin: "0 auto", width: "100%" }}>
@@ -693,41 +662,6 @@ export default function PackagingPage() {
 
         {/* Download Full Catalog Banner */}
         <DownloadCatalogButton variant="banner" label="Download Full Botanical Catalog" />
-
-        {/* Section 4: FAQs */}
-        <section id="faqs" style={{ scrollMarginTop: "120px", marginBottom: "64px" }}>
-          <div style={{ textAlign: "center", marginBottom: "36px" }}>
-            <span style={{ fontSize: "0.75rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase", letterSpacing: "0.12em" }}>
-              Frequently Asked Questions
-            </span>
-            <h2 style={{ fontSize: "var(--font-size-h1)", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginTop: "6px" }}>
-              Packaging &amp; Private Labeling FAQs
-            </h2>
-          </div>
-
-          <div style={{ display: "flex", flexDirection: "column", gap: "16px", maxWidth: "900px", margin: "0 auto" }}>
-            {faqs.map((faq, idx) => (
-              <div
-                key={idx}
-                className="liquid-glass"
-                style={{
-                  borderRadius: "20px",
-                  padding: "24px 28px",
-                  backgroundColor: "rgba(255, 255, 255, 0.8)",
-                  border: "1px solid rgba(124, 58, 237, 0.16)",
-                }}
-              >
-                <h3 style={{ fontSize: "1.05rem", fontWeight: 700, color: "#180D26", marginBottom: "8px", display: "flex", alignItems: "center", gap: "10px" }}>
-                  <HelpCircle size={18} color="#7C3AED" style={{ flexShrink: 0 }} />
-                  {faq.q}
-                </h3>
-                <p style={{ color: "#5B486E", fontSize: "0.92rem", lineHeight: 1.65, margin: "0 0 0 28px" }}>
-                  {faq.a}
-                </p>
-              </div>
-            ))}
-          </div>
-        </section>
 
         {/* Commercial Packaging Quotation CTA */}
         <section

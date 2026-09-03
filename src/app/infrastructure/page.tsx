@@ -50,7 +50,8 @@ export default function InfrastructurePage() {
       title: "1. Multi-Stage Steam Distillation Stills",
       subtitle: "Low-Pressure Hydro-Thermal Distillation",
       desc: "Our primary processing bays feature computer-regulated low-pressure steam injection systems linked to 316-grade stainless steel stills. Low vapor velocity prevents thermal degradation of volatile monoterpenes and sesquiterpenes, yielding uncharred, aromatic profiles.",
-      icon: <Flame size={28} color="#7C3AED" />,
+      image: "/images/infrastructure/steam_distillation.jpg",
+      icon: <Flame size={24} color="#7C3AED" />,
       bg: "rgba(124, 58, 237, 0.12)",
       border: "rgba(124, 58, 237, 0.25)",
       features: [
@@ -63,7 +64,8 @@ export default function InfrastructurePage() {
       title: "2. Mechanical Cold-Pressed Expeller Units",
       subtitle: "Solvent-Free Virgin Seed & Kernel Extraction",
       desc: "Dedicated virgin cold-pressing expellers extract nutrient-dense carrier oils from seeds, nuts, and kernels without external heat or petrochemical solvents. Temperatures are maintained strictly below 45°C to preserve natural tocopherols, essential fatty acids, and active sterols.",
-      icon: <Droplets size={28} color="#059669" />,
+      image: "/images/infrastructure/cold_press.jpg",
+      icon: <Droplets size={24} color="#059669" />,
       bg: "rgba(16, 185, 129, 0.12)",
       border: "rgba(16, 185, 129, 0.25)",
       features: [
@@ -76,7 +78,8 @@ export default function InfrastructurePage() {
       title: "3. Botanical Conditioning & Milling",
       subtitle: "Pre-Distillation Harvest Optimization",
       desc: "Raw botanical foliage, roots, barks, and seeds are conditioned immediately post-harvest. Solar-assisted hygienic drying tunnels, multi-tier cleaning screens, and cryogenic pulverizers ensure optimal surface area exposure for homogenous steam percolation.",
-      icon: <TreePine size={28} color="#D97706" />,
+      image: "/images/infrastructure/botanical_conditioning.jpg",
+      icon: <TreePine size={24} color="#D97706" />,
       bg: "rgba(245, 158, 11, 0.12)",
       border: "rgba(245, 158, 11, 0.25)",
       features: [
@@ -89,7 +92,8 @@ export default function InfrastructurePage() {
       title: "4. Supercritical CO₂ Fluid Extraction (SFE)",
       subtitle: "Sub-Zero Thermal & Solvent-Free Bioactive Recovery",
       desc: "Our high-pressure supercritical CO₂ extraction bays operate at physiological temperatures (31.1°C), recovering pristine volatile monoterpenes, top-note aromatics, and lipophilic spice fractions with zero petrochemical solvents or thermal scorching.",
-      icon: <Wind size={28} color="#0284C7" />,
+      image: "/images/infrastructure/co2_supercritical.jpg",
+      icon: <Wind size={24} color="#0284C7" />,
       bg: "rgba(2, 132, 199, 0.12)",
       border: "rgba(2, 132, 199, 0.25)",
       features: [
@@ -202,7 +206,7 @@ export default function InfrastructurePage() {
           </div>
         </section>
 
-        {/* Four Key Infrastructure Units */}
+        {/* Four Key Infrastructure Units — 2x2 Grid */}
         <section style={{ marginBottom: "80px" }}>
           <div style={{ textAlign: "center", marginBottom: "48px" }}>
             <span style={{ fontSize: "0.75rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase", letterSpacing: "0.12em" }}>
@@ -213,29 +217,70 @@ export default function InfrastructurePage() {
             </h2>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(360px, 1fr))", gap: "28px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 480px), 1fr))", gap: "28px" }}>
             {facilities.map((fac, idx) => (
               <div
                 key={idx}
-                className="liquid-glass"
+                className="liquid-glass-elevated"
                 style={{
                   borderRadius: "28px",
-                  padding: "36px",
-                  backgroundColor: "rgba(255, 255, 255, 0.8)",
-                  border: "1px solid rgba(124, 58, 237, 0.18)",
-                  boxShadow: "0 8px 32px rgba(24, 13, 38, 0.04)",
+                  padding: "clamp(24px, 3vw, 32px)",
+                  backgroundColor: "rgba(255, 255, 255, 0.92)",
+                  border: "1.5px solid rgba(124, 58, 237, 0.18)",
+                  boxShadow: "0 10px 32px rgba(24, 13, 38, 0.05)",
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "space-between",
+                  overflow: "hidden",
                 }}
               >
                 <div>
-                  <div style={{ display: "flex", alignItems: "center", gap: "16px", marginBottom: "20px" }}>
+                  {/* Step Image Banner */}
+                  <div
+                    style={{
+                      position: "relative",
+                      width: "100%",
+                      height: "230px",
+                      borderRadius: "18px",
+                      overflow: "hidden",
+                      marginBottom: "22px",
+                      backgroundColor: "#EDE8DF",
+                      border: "1px solid rgba(124, 58, 237, 0.14)",
+                    }}
+                  >
+                    <Image
+                      src={fac.image}
+                      alt={fac.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 560px"
+                      style={{ objectFit: "cover" }}
+                    />
                     <div
                       style={{
-                        width: "56px",
-                        height: "56px",
-                        borderRadius: "16px",
+                        position: "absolute",
+                        top: "14px",
+                        left: "14px",
+                        padding: "4px 12px",
+                        borderRadius: "9999px",
+                        backgroundColor: "rgba(24, 13, 38, 0.8)",
+                        backdropFilter: "blur(12px)",
+                        color: "white",
+                        fontSize: "0.72rem",
+                        fontWeight: 700,
+                        letterSpacing: "0.04em",
+                        textTransform: "uppercase",
+                      }}
+                    >
+                      Step {idx + 1}
+                    </div>
+                  </div>
+
+                  <div style={{ display: "flex", alignItems: "center", gap: "14px", marginBottom: "16px" }}>
+                    <div
+                      style={{
+                        width: "48px",
+                        height: "48px",
+                        borderRadius: "14px",
                         backgroundColor: fac.bg,
                         display: "flex",
                         alignItems: "center",
@@ -250,22 +295,22 @@ export default function InfrastructurePage() {
                       <span style={{ fontSize: "0.75rem", fontWeight: 700, color: "#7C3AED", textTransform: "uppercase", letterSpacing: "0.06em" }}>
                         {fac.subtitle}
                       </span>
-                      <h3 style={{ fontSize: "1.25rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", margin: 0 }}>
+                      <h3 style={{ fontSize: "1.2rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", margin: 0 }}>
                         {fac.title}
                       </h3>
                     </div>
                   </div>
 
-                  <p style={{ color: "#5B486E", lineHeight: 1.7, fontSize: "0.95rem", marginBottom: "24px" }}>
+                  <p style={{ color: "#5B486E", lineHeight: 1.65, fontSize: "0.92rem", marginBottom: "20px" }}>
                     {fac.desc}
                   </p>
                 </div>
 
-                <div style={{ borderTop: "1px solid rgba(124, 58, 237, 0.12)", paddingTop: "18px" }}>
+                <div style={{ borderTop: "1px solid rgba(124, 58, 237, 0.12)", paddingTop: "16px" }}>
                   <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
                     {fac.features.map((feat, fIdx) => (
-                      <li key={fIdx} style={{ display: "flex", alignItems: "center", gap: "10px", fontSize: "0.88rem", color: "#2E1A47", fontWeight: 500 }}>
-                        <CheckCircle2 size={16} color="#059669" style={{ flexShrink: 0 }} />
+                      <li key={fIdx} style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "0.85rem", color: "#2E1A47", fontWeight: 500 }}>
+                        <CheckCircle2 size={15} color="#059669" style={{ flexShrink: 0 }} />
                         <span>{feat}</span>
                       </li>
                     ))}

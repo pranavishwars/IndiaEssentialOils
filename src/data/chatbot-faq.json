@@ -87,7 +87,7 @@
       "local delivery",
       "domestic delivery"
     ],
-    "answer": "Across India, domestic wholesale orders are dispatched via express surface/air cargo (Blue Dart, Safechem Logistics) within 24–48 hours of dispatch, with delivery typically in 2–5 business days depending on location."
+    "answer": "Across India, domestic wholesale orders are dispatched via express surface or air cargo within 24–48 hours of payment confirmation. Transit timelines vary by destination — contact our sales desk for details."
   },
   {
     "id": "shipping_international",
@@ -105,7 +105,7 @@
       "export delivery",
       "customs"
     ],
-    "answer": "We export globally to 50+ countries via IATA air freight (DHL, FedEx Express, Air Cargo) and LCL/FCL ocean freight from Nhava Sheva & Mundra ports. Standard international air transit is 4–7 business days."
+    "answer": "We provide worldwide delivery via IATA air cargo and LCL/FCL ocean freight from Nhava Sheva & Mundra ports. Standard wholesale orders are dispatched within 48 hours; for specific transit timelines and freight arrangements to your location, please contact our export desk."
   },
   {
     "id": "export_documents",
@@ -293,6 +293,6 @@
       "reach out",
       "call you"
     ],
-    "answer": "You can reach our commercial sales desk directly by email at pranavishwars@gmail.com or by submitting our online enquiry form. Our export team responds within 2 hours during business hours."
+    "answer": "You can reach our commercial sales desk directly by email at pranavishwars@gmail.com or by submitting our online enquiry form. Our export team will get back to you during business hours (Monday to Friday, 9 AM – 6 PM IST)."
   }
 ]

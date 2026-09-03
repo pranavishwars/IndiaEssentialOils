@@ -87,7 +87,7 @@ export default function FoundersNotePage() {
         >
           <div style={{ fontSize: "1.08rem", color: "#3B284C", lineHeight: 1.9, display: "flex", flexDirection: "column", gap: "24px" }}>
             <p style={{ margin: 0, fontSize: "1.18rem", fontWeight: 600, color: "#180D26", fontStyle: "italic", fontFamily: "var(--font-lora), Georgia, serif" }}>
-              &ldquo;When Mother Herbs Private Limited established India Essential Oils, our mission was simple yet absolute: to bridge the vast botanical wealth of India with the exacting standards of the world&apos;s leading formulators, while strictly preserving the purity and sanctity of natural materials.&rdquo;
+              &ldquo;When Mother Herbs Pvt. Ltd. established India Essential Oils, our mission was simple yet absolute: to bridge the vast botanical wealth of India with the exacting standards of the world&apos;s leading formulators, while strictly preserving the purity and sanctity of natural materials.&rdquo;
             </p>
 
             <p style={{ margin: 0 }}>
@@ -124,7 +124,7 @@ export default function FoundersNotePage() {
                 Leadership Team &amp; President
               </div>
               <div style={{ fontSize: "0.9rem", color: "#7C3AED", fontWeight: 700 }}>
-                Mother Herbs Private Limited &bull; India Essential Oils
+                Mother Herbs Pvt. Ltd. &bull; India Essential Oils
               </div>
             </div>
 

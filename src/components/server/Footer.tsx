@@ -12,6 +12,7 @@ export function Footer() {
     { label: "Packaging", href: "/packaging" },
     { label: "Certifications", href: "/certifications" },
     { label: "Quality", href: "/quality" },
+    { label: "FAQs", href: "/faqs" },
     { label: "Contact Us", href: "/contact" },
   ];
 
@@ -43,7 +44,6 @@ export function Footer() {
     { label: "Packaging Process", href: "/packaging/process" },
     { label: "Packaging Sizes", href: "/packaging/sizes" },
     { label: "Shipment Policy", href: "/packaging/shipment-policy" },
-    { label: "FAQs", href: "/packaging/faqs" },
   ];
 
   return (
@@ -73,7 +73,7 @@ export function Footer() {
               </h2>
             </Link>
             <p style={{ fontSize: "0.875rem", color: "rgba(255,255,255,0.7)", lineHeight: 1.75, marginBottom: "20px" }}>
-              A Division of Mother Herbs Private Limited. Premier WHO-GMP &amp; ISO 22000 certified steam distillation distillery and bulk wholesale exporter of pure botanical oils.
+              A Division of Mother Herbs Pvt. Ltd. Premier WHO-GMP &amp; ISO 22000 certified steam distillation distillery and bulk wholesale exporter of pure botanical oils.
             </p>
 
             <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginBottom: "24px" }}>
@@ -294,12 +294,15 @@ export function Footer() {
         <p style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.5)", margin: 0 }}>
           &copy; {new Date().getFullYear()} {COMPANY_INFO.name} ({COMPANY_INFO.parentCompany}). All rights reserved. &bull; Contact: <a href={`mailto:${COMPANY_INFO.contact.salesEmail}`} style={{ color: "#C4B5FD", textDecoration: "none" }}>{COMPANY_INFO.contact.salesEmail}</a>
         </p>
-        <div style={{ display: "flex", gap: "24px" }}>
+        <div style={{ display: "flex", gap: "24px", flexWrap: "wrap" }}>
           <Link href="/privacy" style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>
             Privacy Policy
           </Link>
           <Link href="/terms" style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>
             Terms of Service
+          </Link>
+          <Link href="/faqs" style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>
+            FAQs
           </Link>
           <Link href="/contact" style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>
             Contact Us

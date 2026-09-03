@@ -7,14 +7,7 @@ import {
   Sparkles, 
   ChevronLeft, 
   ChevronRight, 
-  ChevronDown, 
   ArrowRight, 
-  ShieldCheck, 
-  ThermometerSnowflake,
-  FlaskConical,
-  Droplets,
-  Leaf,
-  CheckCircle2,
 } from "lucide-react";
 
 export function Co2Sub() {
@@ -53,7 +46,7 @@ const CO2_PAGES: {
 }[] = [
   {
     pageTitle: "Spices & Therapeutic Rhizomes",
-    pageSubtitle: "Subcritical & dense-phase CO2 extraction preserving pungent non-volatile actives",
+    pageSubtitle: "Gentle CO2 extraction preserving authentic aromas and active natural richness",
     products: [
       {
         id: "prod-co2-turmeric",
@@ -95,7 +88,7 @@ const CO2_PAGES: {
   },
   {
     pageTitle: "Aromatics, Buds & Aged Roots",
-    pageSubtitle: "Low-temperature fractionated botanicals for fragrance & pharmaceutical formulation",
+    pageSubtitle: "Pure low-temperature botanicals for fine fragrance and cosmetics",
     products: [
       {
         id: "prod-co2-clove",
@@ -137,7 +130,7 @@ const CO2_PAGES: {
   },
   {
     pageTitle: "Precious Woods, Pods & Specialized Alliums",
-    pageSubtitle: "Solvent-free heartwood, Bourbon vanilla, and high-purity organosulfur extracts",
+    pageSubtitle: "Pure heartwood, Bourbon vanilla, and concentrated botanical oils",
     products: [
       {
         id: "prod-co2-sandalwood",
@@ -224,58 +217,6 @@ const CO2_PAGES: {
 // Flat array of all products for mobile view
 const ALL_CO2_PRODUCTS: Co2Product[] = CO2_PAGES.flatMap((p) => p.products);
 
-// Verified scientific benefits grounded in Supercritical Fluid Extraction (SFE) principles & Pharmacopoeias
-const CO2_BENEFITS_DATA = [
-  {
-    title: "Sub-Thermal Extraction (Zero Thermal Degradation)",
-    icon: ThermometerSnowflake,
-    metric: "31.1°C / 73.8 bar Sub-Thermal",
-    summary:
-      "Unlike steam distillation which operates at 100°C+ and degrades fragile terpenes, supercritical CO2 reaches its dense extraction phase at just 31.1°C (subcritical / ambient range), preserving delicate heat-sensitive esters, monoterpenes, and top-notes without burnt thermal artifacts.",
-    source: "Supercritical Fluid Extraction (SFE) Thermodynamics & Botanical Pharmacopoeia Standards",
-  },
-  {
-    title: "100% Solvent-Free Purity (0.00 ppm Residue)",
-    icon: ShieldCheck,
-    metric: "0.00 ppm Solvent Residue",
-    summary:
-      "Carbon dioxide is chemically inert, non-toxic, and non-flammable. Upon depressurization, CO2 completely returns to ambient gaseous state and separates cleanly from the extract, guaranteeing 0.00 ppm residual solvent—eliminating harmful petrochemical residues found in chemical solvent extracts.",
-    source: "European Pharmacopoeia (EP) & FDA GRAS (Generally Recognized As Safe) Standards",
-  },
-  {
-    title: "Captures Heavy Bioactives & Non-Volatiles",
-    icon: FlaskConical,
-    metric: "Active Non-Volatiles",
-    summary:
-      "Dense-phase supercritical CO2 possesses liquid-like dissolving power to extract heavy, therapeutic lipophilic molecules that steam distillation cannot vaporize—including ar-turmerone in Turmeric, pungent gingerols/shogaols in Ginger, and bioavailable piperine in Black Pepper.",
-    source: "Phytochemical Characterization via GC-MS & HPLC Profiling",
-  },
-  {
-    title: "True-to-Nature Olfactive Fidelity",
-    icon: Sparkles,
-    metric: "100% Intact Terpenes",
-    summary:
-      "Because extraction occurs under low temperatures in an oxygen-free atmosphere, the aromatic profile of a CO2 extract is virtually identical to the live raw plant material, capturing both delicate initial top-notes and rich tenacious heart-notes.",
-    source: "Sensory & Gas Chromatography Volatile Component Mapping",
-  },
-  {
-    title: "Oxygen-Free Oxidation Resistance & Stability",
-    icon: Droplets,
-    metric: "Zero Auto-Oxidation",
-    summary:
-      "Extraction occurs within a completely deoxygenated, pressurized CO2 closed loop. This prevents lipid auto-oxidation and free-radical breakdown of sensitive fatty acids and terpenes during processing, yielding superior natural shelf stability.",
-    source: "Lipid Oxidation & Antioxidant Stability Studies (AOCS Standards)",
-  },
-  {
-    title: "Closed-Loop Green & Sustainable Technology",
-    icon: Leaf,
-    metric: "100% Recycled · Zero Waste",
-    summary:
-      "Supercritical extraction is recognized globally as green chemistry. Over 95% of the carbon dioxide is continuously recycled and reused within closed-loop systems, producing zero toxic chemical effluent, zero VOC emissions, and minimal environmental footprint.",
-    source: "Clean Technology & Green Chemistry Protocols (EPA & ISO 14001 Standards)",
-  },
-];
-
 // Desktop Slides: 1 Cover + 4 Pages (4 products each)
 type DesktopSlideItem =
   | { type: "cover" }
@@ -320,7 +261,6 @@ export function ExploreLatestLineSection() {
   const [isMobile, setIsMobile] = useState(false);
   const [trackIndex, setTrackIndex] = useState(1);
   const [withTransition, setWithTransition] = useState(true);
-  const [showBenefits, setShowBenefits] = useState(false);
 
   const isTransitioningRef = useRef(false);
   const touchStartX = useRef<number | null>(null);
@@ -425,8 +365,8 @@ export function ExploreLatestLineSection() {
       onMouseEnter={() => { isHoveredRef.current = true; }}
       onMouseLeave={() => { isHoveredRef.current = false; }}
     >
-      {/* Section Header */}
-      <div style={{ marginBottom: "28px" }}>
+      {/* Section Header with Simple 3-4 Line Explanation */}
+      <div style={{ marginBottom: "clamp(24px, 4vh, 36px)" }}>
         <div
           style={{
             display: "inline-flex",
@@ -444,10 +384,11 @@ export function ExploreLatestLineSection() {
             marginBottom: "12px",
           }}
         >
-          <Sparkles size={14} color="#7C3AED" /> NEW EXTRACTION LINEUP · SUB-45°C SUPERCRITICAL SFE
+          <Sparkles size={14} color="#7C3AED" /> NEW BOTANICAL LINEUP · 100% PURE &amp; CLEAN
         </div>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", flexWrap: "wrap", gap: "16px" }}>
-          <div>
+        
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: "20px" }}>
+          <div style={{ maxWidth: "860px", flex: 1 }}>
             <h2
               style={{
                 fontSize: "var(--font-size-h1)",
@@ -460,8 +401,17 @@ export function ExploreLatestLineSection() {
             >
               Explore our Latest Line
             </h2>
-            <p style={{ fontSize: "1rem", color: "#5B486E", maxWidth: "820px", margin: "8px 0 0 0", lineHeight: 1.6 }}>
-              Supercritical <Co2Sub /> Botanical Extracts—distilled under subcritical and dense-phase pressures (31.1°C) to capture heat-sensitive top-notes and active bioactives with 0.00 ppm solvent residue.
+            
+            {/* Simple, Non-Technical 3-4 Line Explanation */}
+            <p
+              style={{
+                fontSize: "clamp(0.95rem, 1.3vw, 1.04rem)",
+                color: "#4A3E56",
+                margin: "12px 0 0 0",
+                lineHeight: 1.7,
+              }}
+            >
+              CO₂ extracts are natural plant oils crafted using clean, gentle carbon dioxide instead of high heat or harsh chemicals. Because no extreme heat is used, the oils retain the true, fresh scent and complete natural richness of the original plant just as found in nature. They are 100% pure and chemical-free, making them the preferred choice for premium skincare, fragrances, and wellness products.
             </p>
           </div>
 
@@ -475,11 +425,13 @@ export function ExploreLatestLineSection() {
               display: "inline-flex",
               alignItems: "center",
               gap: "6px",
-              padding: "8px 18px",
+              padding: "10px 20px",
               borderRadius: "9999px",
               backgroundColor: "rgba(124, 58, 237, 0.08)",
               border: "1px solid rgba(124, 58, 237, 0.22)",
               transition: "all 0.2s ease",
+              flexShrink: 0,
+              marginTop: "4px",
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.backgroundColor = "rgba(124, 58, 237, 0.16)";
@@ -720,7 +672,7 @@ export function ExploreLatestLineSection() {
                                 color: isFullCatalogCard ? "#DDD6FE" : "#7C3AED",
                               }}
                             >
-                              Supercritical SFE
+                              Pure CO₂ Extract
                             </span>
                           </div>
 
@@ -807,7 +759,7 @@ export function ExploreLatestLineSection() {
                           }}
                         >
                           <span style={{ fontSize: "0.85rem", fontWeight: 700, color: isFullCatalogCard ? "#DDD6FE" : "#7C3AED" }}>
-                            {isFullCatalogCard ? "Explore Full CO₂ Catalog" : "View Specifications & CoA"}
+                            {isFullCatalogCard ? "Explore Full CO₂ Catalog" : "View Specifications"}
                           </span>
                           <div
                             style={{
@@ -1137,317 +1089,6 @@ export function ExploreLatestLineSection() {
           ))
         )}
       </div>
-
-      {/* Interactive Dropdown Section: "Click to know benefits of CO2 oil" with High-Legibility Mobile Typography */}
-      <div
-        style={{
-          marginTop: "36px",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          width: "100%",
-        }}
-      >
-        <button
-          onClick={() => setShowBenefits((prev) => !prev)}
-          className="liquid-glass-elevated"
-          aria-expanded={showBenefits}
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            gap: "clamp(10px, 2vw, 16px)",
-            padding: "clamp(12px, 2.5vw, 16px) clamp(16px, 3.5vw, 28px)",
-            borderRadius: "clamp(18px, 4vw, 9999px)",
-            backgroundColor: showBenefits ? "rgba(124, 58, 237, 0.12)" : "rgba(255, 255, 255, 0.94)",
-            border: showBenefits ? "1.5px solid #7C3AED" : "1.5px solid rgba(124, 58, 237, 0.3)",
-            color: "#180D26",
-            cursor: "pointer",
-            boxShadow: showBenefits ? "0 8px 30px rgba(124, 58, 237, 0.22)" : "0 6px 20px rgba(24, 13, 38, 0.06)",
-            transition: "all 0.25s cubic-bezier(0.16, 1, 0.3, 1)",
-            maxWidth: "700px",
-            width: "100%",
-            boxSizing: "border-box",
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.borderColor = "#7C3AED";
-            e.currentTarget.style.transform = "translateY(-2px)";
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.borderColor = showBenefits ? "#7C3AED" : "rgba(124, 58, 237, 0.3)";
-            e.currentTarget.style.transform = "translateY(0)";
-          }}
-        >
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", minWidth: 0, flex: 1 }}>
-            <div
-              style={{
-                width: "36px",
-                height: "36px",
-                borderRadius: "50%",
-                backgroundColor: "rgba(124, 58, 237, 0.14)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                color: "#7C3AED",
-                flexShrink: 0,
-              }}
-            >
-              <Sparkles size={18} />
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", textAlign: "left", minWidth: 0 }}>
-              <span
-                style={{
-                  fontSize: "clamp(0.95rem, 2.8vw, 1.08rem)",
-                  fontWeight: 700,
-                  fontFamily: "var(--font-lora), Georgia, serif",
-                  color: "#180D26",
-                  lineHeight: 1.25,
-                }}
-              >
-                Benefits of Supercritical <Co2Sub /> Extraction
-              </span>
-              <span style={{ fontSize: "0.76rem", color: "#5B486E", fontWeight: 500, marginTop: "2px" }}>
-                Verified scientific &amp; pharmacopoeia standards
-              </span>
-            </div>
-          </div>
-
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "6px",
-              color: "#7C3AED",
-              fontWeight: 700,
-              fontSize: "0.82rem",
-              flexShrink: 0,
-              padding: "6px 12px",
-              borderRadius: "9999px",
-              backgroundColor: "rgba(124, 58, 237, 0.08)",
-            }}
-          >
-            <span>{showBenefits ? "Hide" : "Explore"}</span>
-            <ChevronDown
-              size={16}
-              style={{
-                transform: showBenefits ? "rotate(180deg)" : "rotate(0deg)",
-                transition: "transform 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
-              }}
-            />
-          </div>
-        </button>
-
-        {/* Dropdown Menu Box */}
-        {showBenefits && (
-          <div
-            className="liquid-glass-elevated"
-            style={{
-              marginTop: "20px",
-              width: "100%",
-              borderRadius: "28px",
-              padding: "clamp(20px, 4vw, 36px)",
-              backgroundColor: "rgba(255, 255, 255, 0.94)",
-              border: "1.5px solid rgba(124, 58, 237, 0.28)",
-              boxShadow: "0 20px 60px rgba(24, 13, 38, 0.1)",
-              animation: "fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1)",
-              boxSizing: "border-box",
-            }}
-          >
-            {/* Header Banner */}
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "flex-start",
-                paddingBottom: "20px",
-                borderBottom: "1px solid rgba(124, 58, 237, 0.14)",
-                marginBottom: "28px",
-                flexWrap: "wrap",
-                gap: "16px",
-              }}
-            >
-              <div>
-                <div
-                  style={{
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: "6px",
-                    backgroundColor: "rgba(124, 58, 237, 0.1)",
-                    border: "1px solid rgba(124, 58, 237, 0.22)",
-                    padding: "4px 12px",
-                    borderRadius: "9999px",
-                    color: "#7C3AED",
-                    fontWeight: 800,
-                    fontSize: "0.72rem",
-                    textTransform: "uppercase",
-                    letterSpacing: "0.08em",
-                    marginBottom: "8px",
-                  }}
-                >
-                  <ShieldCheck size={13} /> PEER-REVIEWED EXTRACTION SCIENCE & PHARMACOPOEIA STANDARDS
-                </div>
-                <h3
-                  style={{
-                    fontSize: "clamp(1.2rem, 2.5vw, 1.45rem)",
-                    fontWeight: 700,
-                    fontFamily: "var(--font-lora), Georgia, serif",
-                    color: "#180D26",
-                    margin: 0,
-                    lineHeight: 1.25,
-                  }}
-                >
-                  Key Scientific &amp; Clinical Advantages of Supercritical <Co2Sub /> Extraction
-                </h3>
-                <p
-                  style={{
-                    fontSize: "0.9rem",
-                    color: "#5B486E",
-                    margin: "6px 0 0 0",
-                    maxWidth: "880px",
-                    lineHeight: 1.55,
-                  }}
-                >
-                  Supercritical Fluid Extraction (SFE) with dense-phase carbon dioxide provides significant chemical, therapeutic, and purity advantages over conventional steam distillation and organic solvent absolutes.
-                </p>
-              </div>
-            </div>
-
-            {/* 6 Scientific Benefit Cards Grid */}
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))",
-                gap: "clamp(16px, 3vw, 24px)",
-              }}
-            >
-              {CO2_BENEFITS_DATA.map((item, bIdx) => {
-                const IconComponent = item.icon;
-                return (
-                  <div
-                    key={bIdx}
-                    className="liquid-glass"
-                    style={{
-                      borderRadius: "22px",
-                      padding: "clamp(18px, 3vw, 24px)",
-                      backgroundColor: "rgba(255, 255, 255, 0.88)",
-                      border: "1.5px solid rgba(124, 58, 237, 0.18)",
-                      boxShadow: "0 6px 20px rgba(24, 13, 38, 0.04)",
-                      display: "flex",
-                      flexDirection: "column",
-                      justifyContent: "space-between",
-                      height: "100%",
-                      boxSizing: "border-box",
-                      transition: "all 0.25s cubic-bezier(0.16, 1, 0.3, 1)",
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.transform = "translateY(-4px)";
-                      e.currentTarget.style.borderColor = "rgba(124, 58, 237, 0.5)";
-                      e.currentTarget.style.boxShadow = "0 14px 36px rgba(124, 58, 237, 0.14)";
-                      e.currentTarget.style.backgroundColor = "#FFFFFF";
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.transform = "translateY(0)";
-                      e.currentTarget.style.borderColor = "rgba(124, 58, 237, 0.18)";
-                      e.currentTarget.style.boxShadow = "0 6px 20px rgba(24, 13, 38, 0.04)";
-                      e.currentTarget.style.backgroundColor = "rgba(255, 255, 255, 0.88)";
-                    }}
-                  >
-                    <div style={{ display: "flex", flexDirection: "column", flex: 1 }}>
-                      <div
-                        style={{
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "space-between",
-                          marginBottom: "14px",
-                          gap: "10px",
-                          flexWrap: "wrap",
-                        }}
-                      >
-                        <div
-                          style={{
-                            width: "38px",
-                            height: "38px",
-                            borderRadius: "12px",
-                            backgroundColor: "rgba(124, 58, 237, 0.12)",
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                            color: "#7C3AED",
-                            flexShrink: 0,
-                          }}
-                        >
-                          <IconComponent size={20} />
-                        </div>
-                        <span
-                          style={{
-                            fontSize: "0.75rem",
-                            fontWeight: 800,
-                            padding: "4px 10px",
-                            borderRadius: "9999px",
-                            backgroundColor: "rgba(5, 150, 105, 0.1)",
-                            color: "#059669",
-                            letterSpacing: "0.02em",
-                          }}
-                        >
-                          {item.metric}
-                        </span>
-                      </div>
-
-                      <h4
-                        style={{
-                          fontSize: "1.1rem",
-                          fontWeight: 700,
-                          fontFamily: "var(--font-lora), Georgia, serif",
-                          color: "#180D26",
-                          marginBottom: "8px",
-                          lineHeight: 1.3,
-                        }}
-                      >
-                        {item.title}
-                      </h4>
-
-                      <p
-                        style={{
-                          fontSize: "0.88rem",
-                          color: "#5B486E",
-                          lineHeight: 1.6,
-                          margin: 0,
-                        }}
-                      >
-                        {item.summary}
-                      </p>
-                    </div>
-
-                    <div
-                      style={{
-                        marginTop: "16px",
-                        paddingTop: "12px",
-                        borderTop: "1px solid rgba(124, 58, 237, 0.1)",
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "6px",
-                        fontSize: "0.72rem",
-                        color: "#6B7280",
-                        fontWeight: 500,
-                      }}
-                    >
-                      <CheckCircle2 size={13} color="#059669" style={{ flexShrink: 0 }} />
-                      <span>{item.source}</span>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        )}
-      </div>
-
-      <style>{`
-        @keyframes fadeIn {
-          from { opacity: 0; transform: translateY(6px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-      `}</style>
     </section>
   );
 }

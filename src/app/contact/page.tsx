@@ -31,9 +31,8 @@ function ContactFormContent() {
     phone: "",
     company: "",
     country: "",
-    selectedProduct: "General Wholesale Inquiry",
+    productOfInterest: "",
     quantityTier: "1 kg - Formulation / Evaluation Sample",
-    packagingType: "Standard Industrial Bulk (Aluminum / HDPE / Steel Drums)",
     message: "",
   });
 
@@ -47,12 +46,10 @@ function ContactFormContent() {
       const found = allProducts.find(
         (p) => p.slug === prefilledProduct || p.name.toLowerCase().includes(prefilledProduct.toLowerCase())
       );
-      if (found) {
-        setFormData((prev) => ({
-          ...prev,
-          selectedProduct: `${found.name} (${found.botanicalName || "Pure Distillate"})`,
-        }));
-      }
+      setFormData((prev) => ({
+        ...prev,
+        productOfInterest: found ? `${found.name} (${found.botanicalName || "Pure"})` : prefilledProduct,
+      }));
     }
   }, [prefilledProduct, allProducts]);
 
@@ -72,9 +69,8 @@ function ContactFormContent() {
           phone: formData.phone,
           company: formData.company,
           country: formData.country,
-          productName: formData.selectedProduct !== "General Wholesale Inquiry" ? formData.selectedProduct : undefined,
+          productName: formData.productOfInterest.trim() || undefined,
           quantity: formData.quantityTier,
-          packaging: formData.packagingType,
           message: formData.message,
         }),
       });
@@ -222,9 +218,8 @@ function ContactFormContent() {
                         phone: "",
                         company: "",
                         country: "",
-                        selectedProduct: "General Wholesale Inquiry",
+                        productOfInterest: "",
                         quantityTier: "1 kg - Formulation / Evaluation Sample",
-                        packagingType: "Standard Industrial Bulk (Aluminum / HDPE / Steel Drums)",
                         message: "",
                       });
                     }}
@@ -360,77 +355,31 @@ function ContactFormContent() {
                   </div>
                 </div>
 
-                {/* Country / Destination */}
-                <div>
-                  <label style={{ display: "block", fontSize: "0.82rem", fontWeight: 700, color: "#180D26", marginBottom: "6px", minHeight: "18px" }}>
-                    Destination Country / Region
-                  </label>
-                  <input
-                    type="text"
-                    value={formData.country}
-                    onChange={(e) => setFormData({ ...formData, country: e.target.value })}
-                    placeholder="e.g. United States, Australia, Germany, UAE, New Zealand..."
-                    style={{
-                      width: "100%",
-                      padding: "11px 14px",
-                      borderRadius: "12px",
-                      border: "1px solid rgba(124, 58, 237, 0.22)",
-                      backgroundColor: "rgba(255, 255, 255, 0.95)",
-                      fontSize: "0.9rem",
-                      color: "#180D26",
-                      outline: "none",
-                      boxSizing: "border-box",
-                    }}
-                  />
-                </div>
-
-                {/* Product Selection */}
-                <div>
-                  <label style={{ display: "block", fontSize: "0.82rem", fontWeight: 700, color: "#180D26", marginBottom: "6px", minHeight: "18px" }}>
-                    Product of Interest
-                  </label>
-                  <select
-                    value={formData.selectedProduct}
-                    onChange={(e) => setFormData({ ...formData, selectedProduct: e.target.value })}
-                    style={{
-                      width: "100%",
-                      padding: "11px 14px",
-                      borderRadius: "12px",
-                      border: "1px solid rgba(124, 58, 237, 0.22)",
-                      backgroundColor: "rgba(255, 255, 255, 0.95)",
-                      fontSize: "0.9rem",
-                      color: "#180D26",
-                      outline: "none",
-                      cursor: "pointer",
-                      boxSizing: "border-box",
-                    }}
-                  >
-                    <option value="General Wholesale Inquiry">General Wholesale / Multi-Product Inquiry</option>
-                    <optgroup label="Popular Essential Oils &amp; CO2 Extracts">
-                      <option value="Jasmine CO2 Extract (Jasminum sambac)">Jasmine CO₂ Extract</option>
-                      <option value="Cardamom CO2 Extract (Elettaria cardamomum)">Cardamom CO₂ Extract</option>
-                      <option value="Lavender Essential Oil (Lavandula angustifolia)">Lavender Essential Oil</option>
-                      <option value="Indian Sandalwood Oil (Santalum album)">Indian Sandalwood Oil</option>
-                      <option value="Peppermint Essential Oil (Mentha piperita)">Peppermint Essential Oil</option>
-                      <option value="Tea Tree Essential Oil (Melaleuca alternifolia)">Tea Tree Essential Oil</option>
-                      <option value="Frankincense Essential Oil (Boswellia serrata)">Frankincense Essential Oil</option>
-                      <option value="Rose Damascena Absolute (Rosa damascena)">Rose Damascena Absolute</option>
-                      <option value="Golden Jojoba Carrier Oil (Simmondsia chinensis)">Golden Jojoba Carrier Oil</option>
-                      <option value="Virgin Argan Carrier Oil (Argania spinosa)">Virgin Argan Carrier Oil</option>
-                      <option value="Kumkumadi Ayurvedic Tailam">Kumkumadi Ayurvedic Tailam</option>
-                    </optgroup>
-                    <optgroup label="All 238+ Botanical Distillates">
-                      {allProducts.map((p) => (
-                        <option key={p.slug} value={`${p.name} (${p.botanicalName || "Pure"})`}>
-                          {p.name} {p.botanicalName ? `(${p.botanicalName})` : ""}
-                        </option>
-                      ))}
-                    </optgroup>
-                  </select>
-                </div>
-
-                {/* Quantity Tier & Packaging Preference */}
+                {/* Country / Destination & Estimated Order Volume */}
                 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "14px" }}>
+                  <div>
+                    <label style={{ display: "block", fontSize: "0.82rem", fontWeight: 700, color: "#180D26", marginBottom: "6px", minHeight: "18px" }}>
+                      Destination Country / Region
+                    </label>
+                    <input
+                      type="text"
+                      value={formData.country}
+                      onChange={(e) => setFormData({ ...formData, country: e.target.value })}
+                      placeholder="e.g. United States, Australia, Germany..."
+                      style={{
+                        width: "100%",
+                        padding: "11px 14px",
+                        borderRadius: "12px",
+                        border: "1px solid rgba(124, 58, 237, 0.22)",
+                        backgroundColor: "rgba(255, 255, 255, 0.95)",
+                        fontSize: "0.9rem",
+                        color: "#180D26",
+                        outline: "none",
+                        boxSizing: "border-box",
+                      }}
+                    />
+                  </div>
+
                   <div>
                     <label style={{ display: "block", fontSize: "0.82rem", fontWeight: 700, color: "#180D26", marginBottom: "6px", minHeight: "18px" }}>
                       Estimated Order Volume
@@ -460,34 +409,30 @@ function ContactFormContent() {
                       <option value="General Corporate Question / Other">General Corporate Question / Other</option>
                     </select>
                   </div>
+                </div>
 
-                  <div>
-                    <label style={{ display: "block", fontSize: "0.82rem", fontWeight: 700, color: "#180D26", marginBottom: "6px", minHeight: "18px" }}>
-                      Packaging Preference
-                    </label>
-                    <select
-                      value={formData.packagingType}
-                      onChange={(e) => setFormData({ ...formData, packagingType: e.target.value })}
-                      style={{
-                        width: "100%",
-                        padding: "11px 14px",
-                        borderRadius: "12px",
-                        border: "1px solid rgba(124, 58, 237, 0.22)",
-                        backgroundColor: "rgba(255, 255, 255, 0.95)",
-                        fontSize: "0.88rem",
-                        color: "#180D26",
-                        outline: "none",
-                        cursor: "pointer",
-                        boxSizing: "border-box",
-                      }}
-                    >
-                      <option value="Standard Industrial Bulk (Aluminum / HDPE / Steel Drums)">Standard Industrial Bulk (Aluminum / HDPE / Steel Drums)</option>
-                      <option value="Retail Glass Dropper Bottles (10ml–500ml Amber/Clear/Matte)">Retail Glass Dropper Bottles (10ml–500ml Amber/Clear/Matte)</option>
-                      <option value="Outer Cushion Box Packing & Secondary Cartons">Outer Cushion Box Packing &amp; Secondary Cartons</option>
-                      <option value="Custom OEM Private Labeling & Printing">Custom OEM Private Labeling &amp; Printing</option>
-                      <option value="Nitrogen Inerting / Displacement Capping">Nitrogen Inerting / Displacement Capping</option>
-                    </select>
-                  </div>
+                {/* Product of Interest (Text Box) */}
+                <div>
+                  <label style={{ display: "block", fontSize: "0.82rem", fontWeight: 700, color: "#180D26", marginBottom: "6px", minHeight: "18px" }}>
+                    Product of Interest
+                  </label>
+                  <input
+                    type="text"
+                    value={formData.productOfInterest}
+                    onChange={(e) => setFormData({ ...formData, productOfInterest: e.target.value })}
+                    placeholder="e.g. Lavender Essential Oil, Cardamom CO2 Extract, Kumkumadi Oil, Virgin Jojoba..."
+                    style={{
+                      width: "100%",
+                      padding: "11px 14px",
+                      borderRadius: "12px",
+                      border: "1px solid rgba(124, 58, 237, 0.22)",
+                      backgroundColor: "rgba(255, 255, 255, 0.95)",
+                      fontSize: "0.9rem",
+                      color: "#180D26",
+                      outline: "none",
+                      boxSizing: "border-box",
+                    }}
+                  />
                 </div>
 
                 {/* Message Details */}

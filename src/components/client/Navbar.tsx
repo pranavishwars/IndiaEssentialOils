@@ -246,6 +246,27 @@ export function Navbar() {
               Quality
             </Link>
 
+            {/* FAQs */}
+            <Link
+              href="/faqs"
+              style={{
+                color: textColor,
+                textDecoration: "none",
+                fontWeight: 600,
+                fontSize: "0.875rem",
+                padding: "6px 14px",
+                borderRadius: "9999px",
+                transition: "background 0.2s, color 0.4s",
+                textShadow,
+                letterSpacing: "0.01em",
+                whiteSpace: "nowrap",
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = isLightNav ? "rgba(124, 58, 237, 0.12)" : "rgba(255, 255, 255, 0.22)")}
+              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "transparent")}
+            >
+              FAQs
+            </Link>
+
             <Link
               href="/contact"
               style={{
@@ -503,6 +524,21 @@ export function Navbar() {
             }}
           >
             Quality
+          </Link>
+
+          <Link
+            href="/faqs"
+            onClick={() => setIsOpen(false)}
+            style={{
+              color: "#180D26",
+              textDecoration: "none",
+              fontSize: "0.95rem",
+              fontWeight: 600,
+              padding: "10px 14px",
+              borderRadius: "12px",
+            }}
+          >
+            FAQs
           </Link>
 
           <Link

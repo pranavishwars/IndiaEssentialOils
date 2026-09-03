@@ -112,7 +112,7 @@ export function GlobalPresenceMap() {
         </h2>
 
         <p style={{ fontSize: "1.02rem", color: "#5B486E", margin: 0, lineHeight: 1.65 }}>
-          Supplying 100% pure essential oils, oleoresins, floral waters, and carrier oils to corporate clients and manufacturers across 50+ countries.
+          Supplying 100% pure essential oils, oleoresins, floral waters, and carrier oils to corporate clients and manufacturers worldwide.
         </p>
       </div>
 

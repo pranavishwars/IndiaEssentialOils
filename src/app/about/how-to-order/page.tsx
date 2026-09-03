@@ -3,16 +3,16 @@ import Link from "next/link";
 import { Footer } from "@/components/server/Footer";
 import { 
   Mail, 
-  Clock, 
   CheckCircle2, 
   ArrowRight,
   ChevronRight,
-  FileText
+  FileText,
+  Sparkles
 } from "lucide-react";
 
 export const metadata = {
   title: "How to Order | India Essential Oils",
-  description: "Learn how to place wholesale and export orders with India Essential Oils. Guaranteed 30-minute response commitment and 48-hour order dispatch.",
+  description: "Learn how to place wholesale and export orders with India Essential Oils. Transparent 3-step procurement process and 48-hour order dispatch.",
 };
 
 export default function HowToOrderPage() {
@@ -20,26 +20,20 @@ export default function HowToOrderPage() {
     {
       step: "01",
       title: "Submit Your Enquiry",
-      desc: "Send your product requirements (botanical name, quantity in kg/drums, destination port) via our online customized web enquiry form or contact desk.",
+      desc: "Send your product requirements (botanical name, quantity in kg/drums, packaging requirements) via our online customized web enquiry form or sales desk.",
       icon: <Mail size={24} color="#7C3AED" />,
     },
     {
       step: "02",
-      title: "Receive Quotation in < 30 Minutes",
-      desc: "Our dedicated executives are committed to replying in less than 30 minutes during Indian business hours (10:00 AM – 9:00 PM IST) with full lot pricing, CoA dossiers, and batch specifications.",
-      icon: <Clock size={24} color="#059669" />,
-    },
-    {
-      step: "03",
-      title: "Sample Verification or Proforma Invoice",
-      desc: "Receive pre-shipment evaluation samples for lab validation, or confirm your order through our formal Proforma Invoice (PI) detailing verified order specifications.",
+      title: "Quotation & Technical Verification",
+      desc: "Receive our comprehensive quotation with volume pricing, Certificates of Analysis (CoA), and pre-shipment evaluation samples for technical lab verification.",
       icon: <FileText size={24} color="#0284C7" />,
     },
     {
-      step: "04",
-      title: "48-Hour Order Dispatch",
-      desc: "Because we maintain substantial bulk stock in our climate-controlled warehouse, your consignment is packaged into UN-certified drums/aluminum canisters and dispatched within 48 hours of confirmation.",
-      icon: <CheckCircle2 size={24} color="#D97706" />,
+      step: "03",
+      title: "Order Confirmation & 48-Hour Dispatch",
+      desc: "Confirm your order with a formal Proforma Invoice (PI). Your consignment is packed into UN-certified drums or aluminum canisters and dispatched within 48 hours.",
+      icon: <CheckCircle2 size={24} color="#059669" />,
     },
   ];
 
@@ -75,7 +69,7 @@ export default function HowToOrderPage() {
               letterSpacing: "0.08em",
             }}
           >
-            <Clock size={14} color="#7C3AED" /> 30-Minute Response Commitment
+            <Sparkles size={14} color="#7C3AED" /> Streamlined 3-Step Sourcing
           </div>
 
           <h1
@@ -96,8 +90,8 @@ export default function HowToOrderPage() {
           </p>
         </div>
 
-        {/* Ordering Steps Grid */}
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "24px", marginBottom: "48px" }}>
+        {/* 3 Ordering Steps Grid */}
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 300px), 1fr))", gap: "24px", marginBottom: "48px" }}>
           {orderingSteps.map((step) => (
             <div
               key={step.step}

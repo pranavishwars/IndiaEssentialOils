@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { COMPANY_INFO } from "@/lib/data";
 import { Footer } from "@/components/server/Footer";
@@ -30,7 +31,7 @@ import {
 
 export const metadata = {
   title: "About Us | India Essential Oils (Mother Herbs)",
-  description: "Learn about India Essential Oils, a division of Mother Herbs Private Limited. 100% Pure & Natural Essential Oils, Oleoresins & Carrier Oils supplier worldwide.",
+  description: "Learn about India Essential Oils, a division of Mother Herbs Pvt. Ltd. 100% Pure & Natural Essential Oils, Oleoresins & Carrier Oils supplier worldwide.",
 };
 
 export default function AboutPage() {
@@ -38,7 +39,7 @@ export default function AboutPage() {
     {
       title: "Established in the Industry",
       subtitle: "95% Buyer Retention & 90% Repeat Orders",
-      desc: "As a premier division of Mother Herbs Private Limited, we have built an enduring global reputation supplying 100% Pure & Natural Essential Oils and Oleoresins to corporate clients and international formulators across 50+ countries.",
+      desc: "As a premier division of Mother Herbs Pvt. Ltd., we have built an enduring global reputation supplying 100% Pure & Natural Essential Oils and Oleoresins to corporate clients and international formulators worldwide.",
       icon: <Award size={24} color="#059669" />,
       badge: "Industry Leader",
       badgeColor: "#059669",
@@ -77,30 +78,35 @@ export default function AboutPage() {
     {
       title: "Cosmetics & Personal Care",
       desc: "Cold-pressed virgin carrier oils, floral hydrosols, and therapeutic essential oils for clean beauty, anti-aging skincare, serums, and luxury cosmetic formulations.",
+      image: "/images/industries/cosmetics_personal_care.jpg",
       icon: <Sparkle size={24} color="#EC4899" />,
       examples: "Rosehip, Jojoba, Argan, Lavender, Tea Tree, Rose Water",
     },
     {
       title: "Food, Beverage & Flavoring",
       desc: "Standardized spice oils and oleoresins delivering authentic aromatic flavor profiles for food manufacturing, confectioneries, savory seasonings, and beverages.",
+      image: "/images/industries/food_beverage_flavor.jpg",
       icon: <Apple size={24} color="#D97706" />,
       examples: "Cardamom, Black Pepper, Ginger, Clove, Cinnamon, Nutmeg Oleoresins",
     },
     {
       title: "Pharmaceutical & Healthcare",
       desc: "High-purity botanical extracts and therapeutic-grade distillates complying with rigorous international pharmacopoeia standards and GMP documentation.",
+      image: "/images/industries/pharmaceutical_healthcare.jpg",
       icon: <HeartPulse size={24} color="#DC2626" />,
       examples: "Turmeric Extract, Eucalyptus, Peppermint, Frankincense CO2, Wintergreen",
     },
     {
       title: "Perfumery & Fine Fragrance",
       desc: "Solvent-extracted floral absolutes, rare attars, and exquisite aromatic compounds crafted for fine fragrance houses and luxury artisanal perfumers.",
+      image: "/images/industries/perfumery_fine_fragrance.jpg",
       icon: <Flower size={24} color="#8B5CF6" />,
       examples: "Jasmine Sambac, Rose Damascena, Lotus Absolute, Champaca, Oudh",
     },
     {
       title: "Aromatherapy & Holistic Wellness",
       desc: "100% natural, unadulterated essential oils and custom therapeutic blends with dual GC-MS verification for wellness practitioners and diffusions.",
+      image: "/images/industries/aromatherapy_wellness.jpg",
       icon: <Leaf size={24} color="#059669" />,
       examples: "German Chamomile, Clary Sage, Bergamot, Rosemary, Vetiver",
     },
@@ -144,7 +150,7 @@ export default function AboutPage() {
           </h1>
 
           <p style={{ fontSize: "1.15rem", color: "#5B486E", maxWidth: "760px", margin: "0 auto", lineHeight: 1.7 }}>
-            A premier division of Mother Herbs Private Limited, supplying 100% pure &amp; natural essential oils, spice distillates, cold-pressed carrier oils, and oleoresins to global industries.
+            A premier division of Mother Herbs Pvt. Ltd., supplying 100% pure &amp; natural essential oils, spice distillates, cold-pressed carrier oils, and oleoresins to global industries.
           </p>
         </div>
 
@@ -213,7 +219,7 @@ export default function AboutPage() {
 
             <div style={{ fontSize: "1.04rem", color: "#3B284C", lineHeight: 1.85, display: "flex", flexDirection: "column", gap: "18px" }}>
               <p style={{ margin: 0 }}>
-                <strong>India Essential Oils is a Division of Mother Herbs Private Limited.</strong> Mother Herbs has been involved in almost every aspect of Herbal supply chain, from agricultural production to International Commodity Trading. We are one of India&apos;s leading Natural Medicinal, Cosmetic Herbs &amp; Extract Suppliers. We are committed to offering the highest quality, therapeutic-grade, 100% natural botanicals &amp; innovative range of Essential oils, Aromatherapy products, Oleoresins to real seekers of purity. Essential Oils was a natural gateway for Mother Herbs, in command of vast Natural Resources of India. Mother Herbs promises to offer Natures best in value added form, still maintaining the purity and sanctity of Natural Materials.
+                <strong>India Essential Oils is a Division of Mother Herbs Pvt. Ltd.</strong> Mother Herbs has been involved in almost every aspect of Herbal supply chain, from agricultural production to International Commodity Trading. We are one of India&apos;s leading Natural Medicinal, Cosmetic Herbs &amp; Extract Suppliers. We are committed to offering the highest quality, therapeutic-grade, 100% natural botanicals &amp; innovative range of Essential oils, Aromatherapy products, Oleoresins to real seekers of purity. Essential Oils was a natural gateway for Mother Herbs, in command of vast Natural Resources of India. Mother Herbs promises to offer Natures best in value added form, still maintaining the purity and sanctity of Natural Materials.
               </p>
               <p style={{ margin: 0 }}>
                 India Essential Oils was started 5 years ago as a company identified with our capabilities to meet the increasing demands for Essential Oils &amp; Oleoresins Products of Food, Pharmaceutical, Perfumery, Flavor and Cosmetic industry in India and Overseas. With a view to preserve the environment by sustained efforts in pollution control and conservation.
@@ -469,37 +475,60 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "24px", marginBottom: "24px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 480px), 1fr))", gap: "28px", marginBottom: "32px" }}>
             {industries.map((ind, idx) => (
               <div
                 key={idx}
-                className="liquid-glass"
+                className="liquid-glass-elevated"
                 style={{
-                  borderRadius: "24px",
-                  padding: "32px",
-                  backgroundColor: "rgba(255, 255, 255, 0.82)",
-                  border: "1px solid rgba(124, 58, 237, 0.18)",
+                  borderRadius: "28px",
+                  padding: "clamp(22px, 3vw, 28px)",
+                  backgroundColor: "rgba(255, 255, 255, 0.92)",
+                  border: "1.5px solid rgba(124, 58, 237, 0.18)",
+                  boxShadow: "0 10px 30px rgba(24, 13, 38, 0.04)",
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "space-between",
+                  overflow: "hidden",
                 }}
               >
                 <div>
-                  <div style={{ display: "flex", alignItems: "center", gap: "14px", marginBottom: "16px" }}>
-                    <div style={{ width: "48px", height: "48px", borderRadius: "14px", backgroundColor: "rgba(124, 58, 237, 0.08)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                  <div
+                    style={{
+                      position: "relative",
+                      width: "100%",
+                      height: "210px",
+                      borderRadius: "18px",
+                      overflow: "hidden",
+                      marginBottom: "18px",
+                      backgroundColor: "#EDE8DF",
+                      border: "1px solid rgba(124, 58, 237, 0.14)",
+                    }}
+                  >
+                    <Image
+                      src={ind.image}
+                      alt={ind.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 540px"
+                      style={{ objectFit: "cover" }}
+                    />
+                  </div>
+
+                  <div style={{ display: "flex", alignItems: "center", gap: "14px", marginBottom: "14px" }}>
+                    <div style={{ width: "44px", height: "44px", borderRadius: "14px", backgroundColor: "rgba(124, 58, 237, 0.08)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                       {ind.icon}
                     </div>
-                    <h3 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#180D26", margin: 0 }}>
+                    <h3 style={{ fontSize: "1.2rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", margin: 0 }}>
                       {ind.title}
                     </h3>
                   </div>
-                  <p style={{ fontSize: "0.92rem", color: "#5B486E", lineHeight: 1.65, marginBottom: "16px" }}>
+                  <p style={{ fontSize: "0.92rem", color: "#4A3E56", lineHeight: 1.65, marginBottom: "16px" }}>
                     {ind.desc}
                   </p>
                 </div>
 
                 <div style={{ borderTop: "1px solid rgba(124, 58, 237, 0.12)", paddingTop: "14px" }}>
-                  <span style={{ fontSize: "0.75rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase", letterSpacing: "0.06em", display: "block", marginBottom: "4px" }}>
+                  <span style={{ fontSize: "0.72rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase", letterSpacing: "0.06em", display: "block", marginBottom: "4px" }}>
                     Key Ingredients
                   </span>
                   <span style={{ fontSize: "0.85rem", color: "#180D26", fontWeight: 600 }}>
@@ -579,7 +608,7 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              {/* Step 2: 30-Minute Response Commitment */}
+              {/* Step 2: Quotation & Technical Verification */}
               <div style={{ backgroundColor: "#FCFAF6", borderRadius: "20px", padding: "26px", border: "1px solid rgba(16, 185, 129, 0.25)" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "12px" }}>
                   <div style={{ width: "42px", height: "42px", borderRadius: "12px", backgroundColor: "rgba(16, 185, 129, 0.12)", display: "flex", alignItems: "center", justifyContent: "center" }}>
@@ -587,19 +616,19 @@ export default function AboutPage() {
                   </div>
                   <div>
                     <h3 style={{ fontSize: "1.05rem", fontWeight: 700, color: "#180D26", margin: 0 }}>
-                      2. 30-Min Fast Response
+                      2. Quotation &amp; Verification
                     </h3>
                     <span style={{ fontSize: "0.78rem", color: "#059669", fontWeight: 700 }}>
-                      Dedicated Account Lead
+                      Pricing &amp; CoA Dossiers
                     </span>
                   </div>
                 </div>
                 <p style={{ fontSize: "0.88rem", color: "#5B486E", lineHeight: 1.6, margin: 0 }}>
-                  We are committed to replying to all enquiries in <strong>less than 30 minutes</strong> during Indian business hours with lot pricing and technical dossiers.
+                  Receive comprehensive lot pricing, Certificates of Analysis (CoA), and pre-shipment evaluation samples for technical verification.
                 </p>
               </div>
 
-              {/* Step 3: Proforma Invoice & Validation */}
+              {/* Step 3: Confirmation & 48-Hour Dispatch */}
               <div style={{ backgroundColor: "#FCFAF6", borderRadius: "20px", padding: "26px", border: "1px solid rgba(217, 119, 6, 0.2)" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "12px" }}>
                   <div style={{ width: "42px", height: "42px", borderRadius: "12px", backgroundColor: "rgba(217, 119, 6, 0.12)", display: "flex", alignItems: "center", justifyContent: "center" }}>
@@ -615,7 +644,7 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <p style={{ fontSize: "0.88rem", color: "#5B486E", lineHeight: 1.6, margin: 0 }}>
-                  Pre-shipment lab samples are provided upon request, and consignments are dispatched from warehouse stock within 48 hours of confirmation.
+                  Confirm your order through a formal Proforma Invoice. Consignments are packaged in UN-certified drums and dispatched within 48 hours.
                 </p>
               </div>
             </div>
@@ -633,7 +662,7 @@ export default function AboutPage() {
                   gap: "4px",
                 }}
               >
-                View Full Ordering Procedure &amp; FAQs &rarr;
+                View Full Ordering Procedure &rarr;
               </Link>
             </div>
           </div>
@@ -704,7 +733,7 @@ export default function AboutPage() {
 
             <div style={{ fontSize: "1.05rem", color: "#3B284C", lineHeight: 1.85, display: "flex", flexDirection: "column", gap: "18px" }}>
               <p style={{ margin: 0 }}>
-                When Mother Herbs Private Limited established <strong>India Essential Oils</strong>, our mission was clear: to meet the escalating global demand for pure essential oils and oleoresins across the food, pharmaceutical, perfumery, and cosmetic industries while strictly preserving the purity and sanctity of natural botanical materials.
+                When Mother Herbs Pvt. Ltd. established <strong>India Essential Oils</strong>, our mission was clear: to meet the escalating global demand for pure essential oils and oleoresins across the food, pharmaceutical, perfumery, and cosmetic industries while strictly preserving the purity and sanctity of natural botanical materials.
               </p>
               <p style={{ margin: 0 }}>
                 Mother Herbs promises to offer Nature&apos;s best in value-added form. By combining advanced distillation technologies with direct cultivator guidance on eco-friendly practices, we ensure <strong>100% natural, unadulterated extracts</strong> that stay ahead of time.
@@ -731,7 +760,7 @@ export default function AboutPage() {
                   Leadership Team &amp; President
                 </div>
                 <div style={{ fontSize: "0.85rem", color: "#7C3AED", fontWeight: 700 }}>
-                  Mother Herbs Private Limited / India Essential Oils
+                  Mother Herbs Pvt. Ltd. / India Essential Oils
                 </div>
               </div>
 

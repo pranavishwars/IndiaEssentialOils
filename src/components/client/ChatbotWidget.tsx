@@ -21,6 +21,7 @@ import {
   Layers
 } from "lucide-react";
 import { FaqEntry, QUICK_QUESTIONS, matchFaq } from "@/lib/chatbot-matcher";
+import { getCategorySlug } from "@/lib/products-store";
 import { COMPANY_INFO } from "@/lib/data";
 import faqDataRaw from "@/data/chatbot-faq.json";
 
@@ -49,7 +50,7 @@ interface ChatMessage {
 const INITIAL_BOT_GREETING: ChatMessage = {
   id: "greeting",
   sender: "bot",
-  text: "👋 Hello! I am your AI Botanical & Wholesale Export Consultant. Ask me about **Supercritical CO₂ Extracts**, **Packaging & European Droppers**, **48-Hour Order Dispatch**, **GC-MS Purity Reports**, or request **Oil Recommendations** for your formulations.",
+  text: "👋 Hello! I am your AI Botanical & Wholesale Export Consultant. Ask me about **Essential Oils (86 varieties)**, **Carrier Oils**, **Supercritical CO₂ Extracts**, **Packaging & Droppers**, **48-Hour Order Dispatch**, **GC-MS Purity Reports**, or request **Oil Recommendations** for your formulations.",
   timestamp: "Just now",
 };
 
@@ -95,6 +96,7 @@ export function ChatbotWidget() {
   const [, startTransition] = useTransition();
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const messagesContainerRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
   // Check mobile viewport
@@ -126,11 +128,48 @@ export function ChatbotWidget() {
     } catch { }
   };
 
-  // Scroll to bottom on new messages
+  // Intelligent auto-scroll: When bot answers, scroll to the START of the bot's response,
+  // NOT to the bottom of the container, so the user can read from the beginning!
   useEffect(() => {
-    if (isOpen) {
-      messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-    }
+    if (!isOpen) return;
+
+    const timer = setTimeout(() => {
+      if (messages.length <= 1) return;
+
+      const lastMsg = messages[messages.length - 1];
+      const container = messagesContainerRef.current;
+      if (!container || !lastMsg) return;
+
+      const msgElement = document.getElementById(`chat-msg-${lastMsg.id}`);
+
+      if (lastMsg.sender === "bot") {
+        // Anchor viewport at the top/start of the bot's response
+        if (msgElement) {
+          const containerRect = container.getBoundingClientRect();
+          const elemRect = msgElement.getBoundingClientRect();
+          const targetScroll = container.scrollTop + (elemRect.top - containerRect.top) - 10;
+          container.scrollTo({
+            top: Math.max(0, targetScroll),
+            behavior: "smooth",
+          });
+        }
+      } else if (lastMsg.sender === "user") {
+        // When user sends a message, make sure user message is in view
+        if (msgElement) {
+          const containerRect = container.getBoundingClientRect();
+          const elemRect = msgElement.getBoundingClientRect();
+          const targetScroll = container.scrollTop + (elemRect.top - containerRect.top) - 10;
+          container.scrollTo({
+            top: Math.max(0, targetScroll),
+            behavior: "smooth",
+          });
+        } else {
+          messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    }, 60);
+
+    return () => clearTimeout(timer);
   }, [messages, isOpen]);
 
   // Focus input and lock body scroll on mobile
@@ -400,6 +439,7 @@ export function ChatbotWidget() {
 
             {/* Scrollable Messages Area */}
             <div
+              ref={messagesContainerRef}
               style={{
                 flex: 1,
                 overflowY: "auto",
@@ -416,6 +456,7 @@ export function ChatbotWidget() {
                 return (
                   <div
                     key={msg.id}
+                    id={`chat-msg-${msg.id}`}
                     style={{
                       display: "flex",
                       flexDirection: "column",
@@ -455,7 +496,7 @@ export function ChatbotWidget() {
                           {msg.recommendedProducts.map((p) => (
                             <Link
                               key={p.slug}
-                              href={`/products/${p.slug}`}
+                              href={`/products/${getCategorySlug(p.category)}/${p.slug}`}
                               onClick={() => {
                                 if (isMobile) setIsOpen(false);
                               }}
@@ -680,7 +721,7 @@ export function ChatbotWidget() {
                 type="text"
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
-                placeholder="Ask about CO2 oils, packaging, MOQ, shipping..."
+                placeholder="Ask about lavender, essential oils, packaging, MOQ, shipping..."
                 style={{
                   flex: 1,
                   padding: "10px 14px",

@@ -37,12 +37,6 @@ export const PACKAGING_SUBMENU = [
     desc: "48-hour order dispatch, hazmat air express & ocean freight",
     icon: <Truck size={18} color="#0284C7" />,
   },
-  {
-    name: "FAQs",
-    href: "/packaging/faqs",
-    desc: "MOQ, private labeling, cushion box packing & compliance",
-    icon: <HelpCircle size={18} color="#D97706" />,
-  },
 ];
 
 export function PackagingHoverDropdown({ isLightNav, textColor, textShadow }: PackagingHoverDropdownProps) {

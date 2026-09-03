@@ -165,7 +165,7 @@ export default function CertificationsPage() {
                   IndiaMART TrustSeal™ Verified Star Supplier
                 </h3>
                 <div style={{ fontSize: "0.88rem", color: "#5B486E", marginTop: "2px" }}>
-                  Mother Herbs (P) Ltd. · Division of India Essential Oils · Audited by Independent Credit Agency
+                  Mother Herbs Pvt. Ltd. · Division of India Essential Oils · Audited by Independent Credit Agency
                 </div>
               </div>
             </div>
@@ -239,7 +239,7 @@ export default function CertificationsPage() {
                 <CheckCircle2 size={16} color="#059669" /> Star Exporter Track Record
               </div>
               <p style={{ fontSize: "0.8rem", color: "#6B7280", margin: 0, lineHeight: 1.45 }}>
-                20+ years supplying 65+ export destinations with high customer satisfaction ratings.
+                20+ years supplying global export destinations worldwide with high customer satisfaction ratings.
               </p>
             </div>
           </div>

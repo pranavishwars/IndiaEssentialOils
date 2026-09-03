@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     "pure essential oils B2B export",
   ],
   authors: [{ name: "India Essential Oils", url: "https://indiaessentialoils.com" }],
-  creator: "Mother Herbs Private Limited",
+  creator: "Mother Herbs Pvt. Ltd.",
   publisher: "India Essential Oils",
   robots: {
     index: true,
@@ -104,7 +104,7 @@ const jsonLdGraph = {
       "@type": ["Organization", "Manufacturer"],
       "@id": "https://indiaessentialoils.com/#organization",
       "name": "India Essential Oils",
-      "legalName": "Mother Herbs Private Limited",
+      "legalName": "Mother Herbs Pvt. Ltd.",
       "url": "https://indiaessentialoils.com",
       "logo": "https://indiaessentialoils.com/essential_oil_bottle.jpg",
       "image": "https://indiaessentialoils.com/essential_oil_bottle.jpg",

@@ -17,13 +17,18 @@ export function DownloadCatalogButton({ variant = "primary", label }: DownloadCa
       setDownloading(true);
       // Trigger download
       const res = await fetch("/api/catalog/download");
-      if (!res.ok) throw new Error("Failed to download catalog");
-      
+      const disposition = res.headers.get("Content-Disposition");
+      let filename = "India-Essential-Oils-Botanical-Catalog-September-2026.pdf";
+      if (disposition && disposition.includes("filename=")) {
+        const match = disposition.match(/filename="?([^"]+)"?/);
+        if (match && match[1]) filename = match[1];
+      }
+
       const blob = await res.blob();
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement("a");
       a.href = url;
-      a.download = "India-Essential-Oils-Botanical-Catalog-2026.txt";
+      a.download = filename;
       document.body.appendChild(a);
       a.click();
       window.URL.revokeObjectURL(url);
@@ -67,7 +72,7 @@ export function DownloadCatalogButton({ variant = "primary", label }: DownloadCa
         ) : (
           <Download size={15} />
         )}
-        <span>{downloaded ? "Catalog Downloaded!" : (label || "Download Catalog (PDF/Spec)")}</span>
+        <span>{downloaded ? "Catalog Downloaded!" : (label || "Download Catalog (PDF)")}</span>
       </button>
     );
   }
@@ -154,7 +159,7 @@ export function DownloadCatalogButton({ variant = "primary", label }: DownloadCa
           ) : (
             <Download size={17} />
           )}
-          <span>{downloaded ? "Download Complete!" : (label || "Download Complete Catalog")}</span>
+          <span>{downloaded ? "Download Complete!" : (label || "Download Complete Catalog (PDF)")}</span>
         </button>
       </div>
     );
@@ -188,7 +193,7 @@ export function DownloadCatalogButton({ variant = "primary", label }: DownloadCa
       ) : (
         <Download size={18} />
       )}
-      <span>{downloaded ? "Catalog Downloaded!" : (label || "Download Full Catalog")}</span>
+      <span>{downloaded ? "Catalog Downloaded!" : (label || "Download Full Catalog (PDF)")}</span>
     </button>
   );
 }

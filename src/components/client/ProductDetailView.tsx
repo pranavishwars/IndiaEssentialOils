@@ -12,11 +12,9 @@ import {
   ShieldCheck,
   FlaskConical,
   CheckCircle2,
-  Star,
   ArrowRight,
   AlertCircle
 } from "lucide-react";
-import { REVIEWS_DATA } from "@/lib/reviews-data";
 import { CERTIFICATIONS } from "@/lib/data";
 
 interface ProductDetailViewProps {
@@ -341,93 +339,25 @@ export function ProductDetailView({ product }: ProductDetailViewProps) {
           <section id="reviews" style={{ scrollMarginTop: "140px" }}>
             <h2 style={{ fontSize: "1.6rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginBottom: "14px" }}>
               Verified B2B Client Reviews & Audits
-            </h2>
-
-            {/* Ratings Summary Meter */}
-            <div
+            </h2>            <div
               style={{
                 backgroundColor: "white",
                 borderRadius: "24px",
-                padding: "28px",
+                padding: "36px 28px",
                 border: "1px solid rgba(124, 58, 237, 0.18)",
                 boxShadow: "0 6px 24px rgba(24, 13, 38, 0.04)",
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
-                gap: "24px",
-                alignItems: "center",
-                marginBottom: "24px",
+                textAlign: "center",
               }}
             >
-              <div style={{ textAlign: "center" }}>
-                <div style={{ fontSize: "3.4rem", fontWeight: 800, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", lineHeight: 1 }}>
-                  4.9
-                </div>
-                <div style={{ display: "flex", justifyContent: "center", gap: "3px", margin: "8px 0" }}>
-                  {[1, 2, 3, 4, 5].map(s => (
-                    <Star key={s} size={18} fill="#F59E0B" color="#F59E0B" />
-                  ))}
-                </div>
-                <div style={{ fontSize: "0.82rem", color: "#5B486E", fontWeight: 600 }}>
-                  Based on 48 Verified B2B Shipments
-                </div>
+              <div style={{ display: "inline-flex", padding: "12px", borderRadius: "50%", backgroundColor: "rgba(124, 58, 237, 0.08)", marginBottom: "12px" }}>
+                <CheckCircle2 size={24} color="#7C3AED" />
               </div>
-
-              {/* Progress Bars Breakdown */}
-              <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
-                {[
-                  { star: "5 Star", pct: 92 },
-                  { star: "4 Star", pct: 8 },
-                  { star: "3 Star", pct: 0 },
-                  { star: "2 Star", pct: 0 },
-                  { star: "1 Star", pct: 0 },
-                ].map(r => (
-                  <div key={r.star} style={{ display: "flex", alignItems: "center", gap: "10px", fontSize: "0.78rem", color: "#180D26", fontWeight: 600 }}>
-                    <span style={{ width: "45px" }}>{r.star}</span>
-                    <div style={{ flex: 1, height: "8px", backgroundColor: "rgba(124, 58, 237, 0.1)", borderRadius: "9999px", overflow: "hidden" }}>
-                      <div style={{ width: `${r.pct}%`, height: "100%", background: "linear-gradient(135deg, #F59E0B 0%, #D97706 100%)", borderRadius: "9999px" }} />
-                    </div>
-                    <span style={{ width: "30px", textAlign: "right", color: "#5B486E" }}>{r.pct}%</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Individual Reviews Cards */}
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "20px" }}>
-              {REVIEWS_DATA.slice(0, 3).map(rev => (
-                <div
-                  key={rev.id}
-                  style={{
-                    backgroundColor: "white",
-                    borderRadius: "20px",
-                    padding: "24px",
-                    border: "1px solid rgba(124, 58, 237, 0.18)",
-                    boxShadow: "0 6px 20px rgba(24, 13, 38, 0.03)",
-                    display: "flex",
-                    flexDirection: "column",
-                  }}
-                >
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "12px" }}>
-                    <div style={{ display: "flex", gap: "2px" }}>
-                      {[...Array(rev.rating)].map((_, i) => (
-                        <Star key={i} size={15} fill="#F59E0B" color="#F59E0B" />
-                      ))}
-                    </div>
-                    <span style={{ fontSize: "0.72rem", fontWeight: 700, color: "#059669", backgroundColor: "rgba(16, 185, 129, 0.1)", padding: "3px 10px", borderRadius: "9999px" }}>
-                      Verified Formulator
-                    </span>
-                  </div>
-
-                  <p style={{ fontSize: "0.92rem", color: "#180D26", lineHeight: 1.6, fontStyle: "italic", marginBottom: "16px", flexGrow: 1 }}>
-                    &ldquo;{rev.content}&rdquo;
-                  </p>
-
-                  <div style={{ borderTop: "1px solid rgba(124, 58, 237, 0.12)", paddingTop: "12px", fontSize: "0.78rem" }}>
-                    <div style={{ fontWeight: 700, color: "#180D26" }}>{rev.author}</div>
-                    <div style={{ color: "#5B486E" }}>{rev.role} · {rev.company} ({rev.country})</div>
-                  </div>
-                </div>
-              ))}
+              <h3 style={{ fontSize: "1.15rem", fontFamily: "var(--font-lora), Georgia, serif", fontWeight: 700, color: "#180D26", marginBottom: "6px" }}>
+                Client Reviews Coming Soon
+              </h3>
+              <p style={{ fontSize: "0.9rem", color: "#5B486E", margin: 0, maxWidth: "520px", marginLeft: "auto", marginRight: "auto", lineHeight: 1.55 }}>
+                Verified customer audits, formulation feedback, and laboratory testimonials for this botanical extract will be published here shortly.
+              </p>
             </div>
           </section>
 

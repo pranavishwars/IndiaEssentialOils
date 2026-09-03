@@ -17,7 +17,7 @@ import {
 
 export const metadata = {
   title: "The Trust We've Built | India Essential Oils",
-  description: "Learn about the trust India Essential Oils has built across 50+ countries with 95% buyer retention, 90% repeat orders, and ISO/GMP accreditations.",
+  description: "Learn about the trust India Essential Oils has built worldwide with 95% buyer retention, 90% repeat orders, and ISO/GMP accreditations.",
 };
 
 export default function TrustWeBuiltPage() {
@@ -25,7 +25,7 @@ export default function TrustWeBuiltPage() {
     {
       title: "Established in the Industry",
       subtitle: "95% Buyer Retention & 90% Repeat Orders",
-      desc: "As a premier division of Mother Herbs Private Limited, we have built an enduring global reputation supplying 100% Pure & Natural Essential Oils and Oleoresins to corporate clients and international formulators across 50+ countries. Our long-term partnerships are cemented by unwavering reliability and batch-to-batch consistency.",
+      desc: "As a premier division of Mother Herbs Pvt. Ltd., we have built an enduring global reputation supplying 100% Pure & Natural Essential Oils and Oleoresins to corporate clients and international formulators worldwide. Our long-term partnerships are cemented by unwavering reliability and batch-to-batch consistency.",
       icon: <Award size={24} color="#059669" />,
       badge: "Industry Leader",
       badgeColor: "#059669",
@@ -92,7 +92,7 @@ export default function TrustWeBuiltPage() {
               letterSpacing: "0.08em",
             }}
           >
-            <Award size={14} color="#059669" /> Proven Track Record &bull; 50+ Countries
+            <CheckCircle2 size={14} color="#059669" /> Proven Track Record &bull; Worldwide Delivery
           </div>
 
           <h1

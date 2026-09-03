@@ -139,7 +139,7 @@ export function ProductQuoteModal({ isOpen, onClose, product }: ProductQuoteModa
               Quote Request Received
             </h3>
             <p style={{ fontSize: "0.95rem", color: "#5B486E", lineHeight: 1.6, marginBottom: "24px" }}>
-              Thank you! Our wholesale sales desk will send tiered commercial pricing, specifications, and CoA documentation for <strong>{product.name}</strong> to your email within 2 hours.
+              Thank you! Our wholesale sales desk will get back to you with tiered commercial pricing, specifications, and CoA documentation for <strong>{product.name}</strong> during business hours.
             </p>
 
             <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>

@@ -55,7 +55,7 @@ export const ABOUT_SUBMENU = [
   {
     name: "How to Order",
     href: "/about/how-to-order",
-    desc: "30-minute response commitment & 48-hour order dispatch",
+    desc: "Transparent 3-step procurement & 48-hour order dispatch",
     icon: <Clock size={18} color="#8B5CF6" />,
   },
   {

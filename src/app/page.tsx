@@ -5,9 +5,7 @@ import { HeroSlideshow } from "@/components/client/HeroSlideshow";
 import { GlassFeatureCards, GlassHeroButtons } from "@/components/client/GlassComponents";
 import { HomeUniversalSearchBar } from "@/components/client/HomeUniversalSearchBar";
 import { ExploreLatestLineSection } from "@/components/client/ExploreLatestLineSection";
-import { PopularOilsSection } from "@/components/client/PopularOilsSection";
 import { CompanyVideoSection } from "@/components/client/CompanyVideoSection";
-import { HomeB2BSection } from "@/components/client/HomeB2BSection";
 
 export const metadata: Metadata = {
   title: "Indian Essential Oil Manufacturer & B2B Exporter | India Essential Oils",
@@ -152,14 +150,9 @@ export default function Home() {
         {/* Explore our Latest Line — Supercritical CO2 Extracts Moving Catalog */}
         <ExploreLatestLineSection />
 
-        {/* Dynamic Popular & Trending Oils */}
-        <PopularOilsSection />
-
         {/* Corporate Film & Distillery Video Tour Section */}
         <CompanyVideoSection />
 
-        {/* Global B2B Sourcing & Technical Standards Section */}
-        <HomeB2BSection />
       </main>
 
       <Footer />
