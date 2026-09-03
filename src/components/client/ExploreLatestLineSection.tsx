@@ -387,8 +387,8 @@ export function ExploreLatestLineSection() {
           <Sparkles size={14} color="#7C3AED" /> NEW BOTANICAL LINEUP · 100% PURE &amp; CLEAN
         </div>
         
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: "20px" }}>
-          <div style={{ maxWidth: "860px", flex: 1 }}>
+        <div className="co2-section-header-row" style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: "20px" }}>
+          <div className="co2-section-header-text" style={{ maxWidth: "860px", flex: 1 }}>
             <h2
               style={{
                 fontSize: "var(--font-size-h1)",
@@ -417,6 +417,7 @@ export function ExploreLatestLineSection() {
 
           <Link
             href="/products/co2-oils"
+            className="co2-section-header-btn"
             style={{
               fontSize: "0.88rem",
               fontWeight: 700,
@@ -503,6 +504,20 @@ export function ExploreLatestLineSection() {
             }
           }
           @media (max-width: 768px) {
+            .co2-section-header-row {
+              flex-direction: column !important;
+              align-items: flex-start !important;
+              gap: 16px !important;
+            }
+            .co2-section-header-text {
+              width: 100% !important;
+              max-width: 100% !important;
+              flex: none !important;
+            }
+            .co2-section-header-btn {
+              align-self: flex-start !important;
+              margin-top: 0 !important;
+            }
             .co2-catalog-arrow {
               width: 38px;
               height: 38px;

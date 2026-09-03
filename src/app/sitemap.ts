@@ -15,7 +15,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/packaging",
     "/certifications",
     "/quality",
-    "/reviews",
     "/blog",
     "/faqs",
     "/contact",

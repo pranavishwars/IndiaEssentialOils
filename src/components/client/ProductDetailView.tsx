@@ -376,31 +376,7 @@ export function ProductDetailView({ product }: ProductDetailViewProps) {
             </div>
           </section>
 
-          {/* 5.6 Verified B2B Reviews Section */}
-          <section id="reviews" style={{ scrollMarginTop: "140px" }}>
-            <h2 style={{ fontSize: "1.6rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginBottom: "14px" }}>
-              Verified B2B Client Reviews & Audits
-            </h2>            <div
-              style={{
-                backgroundColor: "white",
-                borderRadius: "24px",
-                padding: "36px 28px",
-                border: "1px solid rgba(124, 58, 237, 0.18)",
-                boxShadow: "0 6px 24px rgba(24, 13, 38, 0.04)",
-                textAlign: "center",
-              }}
-            >
-              <div style={{ display: "inline-flex", padding: "12px", borderRadius: "50%", backgroundColor: "rgba(124, 58, 237, 0.08)", marginBottom: "12px" }}>
-                <CheckCircle2 size={24} color="#7C3AED" />
-              </div>
-              <h3 style={{ fontSize: "1.15rem", fontFamily: "var(--font-lora), Georgia, serif", fontWeight: 700, color: "#180D26", marginBottom: "6px" }}>
-                Client Reviews Coming Soon
-              </h3>
-              <p style={{ fontSize: "0.9rem", color: "#5B486E", margin: 0, maxWidth: "520px", marginLeft: "auto", marginRight: "auto", lineHeight: 1.55 }}>
-                Verified customer audits, formulation feedback, and laboratory testimonials for this botanical extract will be published here shortly.
-              </p>
-            </div>
-          </section>
+
 
         </div>
 

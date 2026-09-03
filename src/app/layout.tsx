@@ -153,13 +153,7 @@ const jsonLdGraph = {
       ],
       "sameAs": [
         "https://www.indiamart.com/indiaessentialoils/"
-      ],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.95",
-        "reviewCount": "280",
-        "bestRating": "5"
-      }
+      ]
     },
     {
       "@type": "WebSite",

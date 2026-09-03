@@ -8,7 +8,6 @@ const SECTIONS = [
   { id: "benefits", label: "Benefits & Uses" },
   { id: "manufacturing", label: "How It's Made" },
   { id: "certifications", label: "Certifications & Lab" },
-  { id: "reviews", label: "Reviews" },
 ];
 
 export function ProductStickyTabBar() {

@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { Product, getCategorySlug } from "@/lib/products-store";
-import { Star, ArrowRight, FlaskConical } from "lucide-react";
+import { ArrowRight, FlaskConical } from "lucide-react";
 
 interface ProductPurchasePanelProps {
   product: Product;
@@ -13,14 +13,6 @@ interface ProductPurchasePanelProps {
 export function ProductPurchasePanel({ product, onOpenQuote }: ProductPurchasePanelProps) {
   const categorySlug = getCategorySlug(product.category);
   const categoryLabel = product.category.replace(/_/g, " ");
-
-  const scrollToReviews = (e: React.MouseEvent) => {
-    e.preventDefault();
-    const reviewsEl = document.getElementById("reviews");
-    if (reviewsEl) {
-      reviewsEl.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   return (
     <div
@@ -132,21 +124,7 @@ export function ProductPurchasePanel({ product, onOpenQuote }: ProductPurchasePa
         {product.shortSpec}
       </div>
 
-      {/* Star Rating & Review Link */}
-      <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "20px" }}>
-        <div style={{ display: "flex", gap: "2px" }}>
-          {[1, 2, 3, 4, 5].map(s => (
-            <Star key={s} size={16} fill="#F59E0B" color="#F59E0B" />
-          ))}
-        </div>
-        <a
-          href="#reviews"
-          onClick={scrollToReviews}
-          style={{ fontSize: "0.88rem", color: "#7C3AED", fontWeight: 700, textDecoration: "none", cursor: "pointer" }}
-        >
-          4.9 (48 Verified B2B Reviews)
-        </a>
-      </div>
+
 
       {/* Divider */}
       <div style={{ height: "1px", backgroundColor: "rgba(124, 58, 237, 0.15)", marginBottom: "20px" }} />

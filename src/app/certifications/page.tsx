@@ -239,7 +239,7 @@ export default function CertificationsPage() {
                 <CheckCircle2 size={16} color="#059669" /> Star Exporter Track Record
               </div>
               <p style={{ fontSize: "0.8rem", color: "#6B7280", margin: 0, lineHeight: 1.45 }}>
-                20+ years supplying global export destinations worldwide with high customer satisfaction ratings.
+                20+ years supplying global export destinations worldwide with verified consignment delivery.
               </p>
             </div>
           </div>
