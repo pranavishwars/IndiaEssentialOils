@@ -86,7 +86,7 @@ function ContactFormContent() {
       console.error(err);
       setErrorMessage(
         err.message ||
-          "An unexpected error occurred. Please try again or email us directly at info@motherherbs.com."
+          "An unexpected error occurred. Please try again or email us directly at rahul@motherherbs.com."
       );
     } finally {
       setIsSubmitting(false);
@@ -557,12 +557,6 @@ function ContactFormContent() {
                     <Mail size={16} color="#7C3AED" />
                     <a href={`mailto:${COMPANY_INFO.contact.email}`} style={{ color: "#180D26", textDecoration: "none" }}>
                       {COMPANY_INFO.contact.email}
-                    </a>
-                  </div>
-                  <div style={{ fontSize: "0.95rem", color: "#180D26", display: "flex", alignItems: "center", gap: "8px", marginBottom: "8px" }}>
-                    <Mail size={16} color="#7C3AED" />
-                    <a href={`mailto:${COMPANY_INFO.contact.salesEmail}`} style={{ color: "#180D26", textDecoration: "none" }}>
-                      {COMPANY_INFO.contact.salesEmail}
                     </a>
                   </div>
                   <div style={{ fontSize: "0.95rem", color: "#180D26", display: "flex", alignItems: "center", gap: "8px" }}>

@@ -102,8 +102,8 @@ Our industrial catalog spans over 200 botanical oils across 8 primary categories
     address: "C-39, 2nd Floor, 13th Street, Madhu Vihar, Patparganj, New Delhi - 110092, Delhi, India",
     phone: "+91 8043807715",
     landline: "+91-11-22233301",
-    email: "info@motherherbs.com",
-    salesEmail: "sales@indiaessentialoils.com",
+    email: "rahul@motherherbs.com",
+    salesEmail: "rahul@motherherbs.com",
     indiamart: "https://trustseal.indiamart.com/members/indiaessentialoils/",
   },
   stats: [
