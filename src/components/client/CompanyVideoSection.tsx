@@ -20,8 +20,8 @@ export function CompanyVideoSection() {
     },
     {
       icon: <ShieldCheck size={20} color="#FDE68A" />,
-      title: "ISO 22000 & WHO-GMP",
-      desc: "Strict pharmaceutical and cosmetic hygiene standards certified internationally.",
+      title: "ISO 9001:2015 & GMP",
+      desc: "Strict quality management and hygienic manufacturing standards certified internationally.",
     },
     {
       icon: <Globe size={20} color="#BAE6FD" />,

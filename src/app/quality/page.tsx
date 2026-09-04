@@ -83,7 +83,7 @@ export default function QualityPage() {
           </h1>
 
           <p style={{ fontSize: "1.15rem", color: "#5B486E", maxWidth: "720px", margin: "0 auto", lineHeight: 1.7 }}>
-            As an ISO 9001:2008 and ISO 22000:2005 certified manufacturer, we maintain stringent control across every stage of the botanical production process.
+            As an ISO 9001:2015 and GMP certified botanical manufacturer, we maintain stringent control across every stage of the extraction and distillation process.
           </p>
         </div>
 

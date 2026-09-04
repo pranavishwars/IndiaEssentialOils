@@ -251,7 +251,7 @@ const CATEGORY_DEFINITIONS: CategoryDefinition[] = [
     description: "India is the spice capital of the world. Our 39 pure spice oils are distilled from fresh, hand-selected spices from Kerala and southern India, yielding concentrated, highly pungent volatile oils for food processing, pharmaceuticals, confectionery, and perfumery.",
     totalCount: 39,
     highlightedSlugs: ["cardamom-oil", "black-pepper-oil", "clove-bud-oil", "cinnamon-bark-oil", "ginger-oil", "nutmeg-oil", "cumin-oil"],
-    features: ["Distilled from Prime Spices", "High Volatile Oil Potency", "FSSAI & ISO 22000 Certified", "UN-Certified Hazardous Export Packing"],
+    features: ["Distilled from Prime Spices", "High Volatile Oil Potency", "ISO 9001:2015 & GMP Certified", "UN-Certified Hazardous Export Packing"],
   },
   {
     id: "cat_floral_absolutes",
@@ -860,11 +860,11 @@ function checkCertificationsQuery(normalized: string): FaqEntry | null {
     patterns: certPatterns,
     answer: `🏆 **Company Heritage & International Quality Certifications:**
 
-• **Company Profile:** India Essential Oils is a premier manufacturing and global export division of **Mother Herbs Pvt. Ltd.** (established in 2004 in New Delhi, India).
-• **WHO-GMP Certified:** Manufacturing facilities comply strictly with World Health Organization Good Manufacturing Practices (WHO-GMP) for botanical extracts.
-• **ISO 22000 & ISO 9001:2015:** Certified food safety management and total quality management frameworks across all distillation stills and bottling cleanrooms.
-• **US FDA Registered Facility:** Compliant with United States FDA cGMP regulations for export into North America.
-• **Additional Accreditations:** USDA Organic (NOP), Kosher, Halal, and FSSAI approved.`,
+• **Company Profile:** India Essential Oils is a premier manufacturing and global export division of **Mother Herbs Pvt. Ltd.** (incorporated in 2006 in New Delhi, India).
+• **ISO 9001:2015 Certified:** Certified Quality Management System (QAMS / UKAF accredited) guaranteeing international standardization across extraction, distillation, and bulk dispatch.
+• **GMP Compliant:** State-of-the-art facilities complying with Good Manufacturing Practices for essential oils and botanical extracts.
+• **Ministry of MSME Registered:** Recognized under Udyam Registration (UDYAM-DL-02-0101578), Govt. of India.
+• **IndiaMART TrustSeal Verified:** Audited physical premises, statutory certifications, and verified export operations.`,
     actionLink: {
       label: "View All Audit Certifications",
       href: "/certifications",
@@ -1316,7 +1316,7 @@ India Essential Oils is a premier manufacturing and global export division of **
 We specialize in:
 • Manufacturing and exporting **273+ pharmacopoeial-grade botanical extracts** across 9 product divisions — Essential Oils, CO₂ Extracts, Carrier Oils, Spice Oils, Floral Absolutes, Floral Waters, Oleoresins, Ayurvedic Oils, and Organic Oils.
 • In-house **Shimadzu GC-MS analytical laboratory** for batch purity verification.
-• Certified under **WHO-GMP, ISO 22000, ISO 9001:2015, US FDA, and USDA Organic (NOP)** standards.
+• Certified under **ISO 9001:2015, GMP Compliance, and Ministry of MSME Udyam Registration** standards.
 • Exporting worldwide with 48-hour order dispatch from our 1,000 MT climate-controlled warehouse.
 
 We serve manufacturers, formulators, cosmetic brands, pharmaceutical companies, and distributors globally.`,
@@ -1368,7 +1368,7 @@ function checkFaqsPageQuery(normalized: string): FaqEntry | null {
     answer: `❓ **Comprehensive Frequently Asked Questions (FAQs):**
 
 We have an extensive, dedicated FAQs page answering all questions across:
-• **General & Company Background** (Mother Herbs division, WHO-GMP & ISO 22000 facility)
+• **General & Company Background** (Mother Herbs division, ISO 9001:2015 & GMP facility)
 • **Ordering & Dispatch** (3-step ordering process, 48-hour order dispatch, evaluation samples)
 • **Product Quality & Testing** (Dual GC-MS batch profiling, CoAs, non-GMO assurance)
 • **Packaging & OEM** (10ml–500ml droppers, cushion box packing, UN aluminum & steel drums)

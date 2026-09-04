@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | India Essential Oils",
   },
   description:
-    "Premier WHO-GMP & ISO 22000 certified manufacturer, steam distillation distillery, and bulk exporter of 100% pure essential oils, cold-pressed carrier oils, floral absolutes, and GC-MS verified botanical extracts in New Delhi, India.",
+    "Premier ISO 9001:2015 & GMP certified manufacturer, steam distillation distillery, and bulk exporter of 100% pure essential oils, cold-pressed carrier oils, floral absolutes, and GC-MS verified botanical extracts in New Delhi, India.",
   keywords: [
     "essential oil manufacturer India",
     "bulk essential oils supplier",
@@ -33,8 +33,8 @@ export const metadata: Metadata = {
     "GC-MS certified pure essential oils",
     "cold pressed carrier oils bulk India",
     "floral absolutes exporter",
-    "WHO-GMP essential oils",
-    "ISO 22000 botanical extracts",
+    "ISO 9001 essential oils",
+    "GMP botanical extracts",
     "Mother Herbs Pvt Ltd",
     "natural fragrance ingredients",
     "pure lavender oil bulk",

@@ -58,12 +58,6 @@ export const ABOUT_SUBMENU = [
     desc: "Transparent 3-step procurement & 48-hour order dispatch",
     icon: <Clock size={18} color="#8B5CF6" />,
   },
-  {
-    name: "Founders Note",
-    href: "/about/founders-note",
-    desc: "Our founding commitment to unadulterated botanical purity",
-    icon: <Quote size={18} color="#D97706" />,
-  },
 ];
 
 export function AboutHoverDropdown({ isLightNav, textColor, textShadow }: AboutHoverDropdownProps) {

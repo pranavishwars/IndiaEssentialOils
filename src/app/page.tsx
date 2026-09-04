@@ -120,7 +120,7 @@ export default function Home() {
                   }}
                 >
                   <span style={{ width: "7px", height: "7px", borderRadius: "50%", backgroundColor: "#A855F7", flexShrink: 0 }} />
-                  A Division of Mother Herbs Pvt. Ltd. · WHO-GMP &amp; ISO 22000 Certified
+                  A Division of Mother Herbs Pvt. Ltd. · ISO 9001:2015 &amp; GMP Certified
                 </div>
                 <p
                   style={{

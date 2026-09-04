@@ -7,14 +7,14 @@ import { CertificationsGrid } from "@/components/client/CertificationsGrid";
 import { ShieldCheck, FlaskConical, ArrowRight, FileCheck, CheckCircle2, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Accredited International Certifications | India Essential Oils",
+  title: "Accredited Quality Certifications | India Essential Oils",
   description:
-    "Official ISO 9001:2015, ISO 22000:2005, WHO-GMP, NPOP India Organic certificates, and IndiaMART TrustSeal for India Essential Oils & Mother Herbs Pvt. Ltd.",
+    "Official ISO 9001:2015, GMP Certificate of Compliance, Udyam MSME Registration, Certificate of Incorporation, and IndiaMART TrustSeal for India Essential Oils & Mother Herbs Pvt. Ltd.",
   keywords: [
     "ISO 9001 essential oil certificate",
-    "ISO 22000 essential oil manufacturer",
     "GMP compliant botanical extraction",
-    "NPOP organic certified essential oils India",
+    "Udyam registration essential oils",
+    "Mother Herbs Certificate of Incorporation",
     "IndiaMART TrustSeal essential oils",
     "India Essential Oils certificates",
   ],
@@ -172,7 +172,7 @@ export default function CertificationsPage() {
 
             {/* External Verification Link */}
             <a
-              href="https://www.indiamart.com/indiaessentialoils/"
+              href="https://trustseal.indiamart.com/members/indiaessentialoils/"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -266,7 +266,7 @@ export default function CertificationsPage() {
             Every commercial consignment shipped by India Essential Oils is accompanied by batch-specific Certificates of Analysis (CoA), full 16-point Material Safety Data Sheets (MSDS), Technical Specifications, Certificates of Origin (COO), and Allergen Declarations conforming to EU Cosmetic Regulation (EC) No 1223/2009, US FDA GRAS, and IFRA 51st Amendment standards.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: "12px" }}>
-            {["EU (EC) No 834/2007 Equivalent", "Swiss Organic Farming Ordinance", "UKAF UK Accredited", "UDEM International Audited", "IFRA Standards Compliant", "IndiaMART TrustSeal Audited"].map((badge, idx) => (
+            {["ISO 9001:2015 Certified", "GMP Compliant Processing", "Ministry of MSME Registered", "Statutory Registered Corporation", "UKAF UK Accredited", "IndiaMART TrustSeal Audited"].map((badge, idx) => (
               <span
                 key={idx}
                 style={{

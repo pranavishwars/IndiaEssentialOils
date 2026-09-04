@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "World-Class Distillation & Extraction Infrastructure | India Essential Oils",
     description:
-      "Modern 316-grade stainless steel steam distillation columns, supercritical CO2 extractors, expellers, 1,000 MT warehousing, and ISO 22000/GMP certified processing plants.",
+      "Modern 316-grade stainless steel steam distillation columns, supercritical CO2 extractors, expellers, 1,000 MT warehousing, and ISO 9001:2015 & GMP certified processing plants.",
     images: ["/infrastructure_hero.jpg"],
   },
 };

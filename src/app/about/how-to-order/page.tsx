@@ -148,13 +148,13 @@ export default function HowToOrderPage() {
               Explore Next
             </span>
             <h3 style={{ fontSize: "1.3rem", fontWeight: 700, color: "#180D26", margin: "4px 0 0 0" }}>
-              Founders&apos; Note
+              Company Profile
             </h3>
           </div>
 
           <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
             <Link
-              href="/about/founders-note"
+              href="/about/profile"
               className="btn-vibrant-primary"
               style={{
                 padding: "12px 24px",
@@ -167,7 +167,7 @@ export default function HowToOrderPage() {
                 gap: "6px",
               }}
             >
-              Founders&apos; Note <ArrowRight size={14} />
+              Company Profile <ArrowRight size={14} />
             </Link>
           </div>
         </div>

@@ -87,10 +87,10 @@ export const COMPANY_INFO = {
   parentCompany: "Mother Herbs Pvt. Ltd.",
   location: "New Delhi, India",
   certifications: [
-    { name: "ISO 9001:2015", body: "Quality Management System (UKAF)", icon: <CheckCircle size={40} strokeWidth={1.5} /> },
-    { name: "ISO 22000:2005", body: "Food Safety Management System (UDEM)", icon: <Trophy size={40} strokeWidth={1.5} /> },
+    { name: "ISO 9001:2015", body: "Quality Management System (UKAF/QAMS)", icon: <CheckCircle size={40} strokeWidth={1.5} /> },
     { name: "GMP Compliant", body: "Good Manufacturing Practice (QAMS)", icon: <Microscope size={40} strokeWidth={1.5} /> },
-    { name: "India Organic (NPOP)", body: "National Organic Programme (RSOCA)", icon: <ShieldCheck size={40} strokeWidth={1.5} /> },
+    { name: "Udyam Registration", body: "Ministry of MSME, Govt. of India", icon: <Trophy size={40} strokeWidth={1.5} /> },
+    { name: "Incorporation Charter", body: "Registrar of Companies, MCA", icon: <ShieldCheck size={40} strokeWidth={1.5} /> },
     { name: "IndiaMART TrustSeal", body: "Verified Star B2B Exporter", icon: <ShieldCheck size={40} strokeWidth={1.5} /> },
   ],
   about: `India Essential Oils is a commercial manufacturing division of Mother Herbs Pvt. Ltd., operating steam distillation plants and botanical processing facilities in New Delhi, India. Established in 2004, we manufacture and export bulk essential oils, cold-pressed carrier oils, oleoresins, floral absolutes, and certified organic extracts.
@@ -104,7 +104,7 @@ Our industrial catalog spans over 200 botanical oils across 8 primary categories
     landline: "+91-11-22233301",
     email: "info@motherherbs.com",
     salesEmail: "sales@indiaessentialoils.com",
-    indiamart: "https://www.indiamart.com/indiaessentialoils/",
+    indiamart: "https://trustseal.indiamart.com/members/indiaessentialoils/",
   },
   stats: [
     { value: "200+", label: "Botanical Oils" },
@@ -115,10 +115,10 @@ Our industrial catalog spans over 200 botanical oils across 8 primary categories
 };
 
 export const CERTIFICATIONS = [
-  { id: "iso-9001", name: "ISO 9001:2015", issuer: "Quality Management (UKAF/QAMS)", licenseNo: "23UQAA0704" },
-  { id: "iso-22000", name: "ISO 22000:2005", issuer: "Food Safety Management (UDEM)", licenseNo: "70427" },
-  { id: "gmp", name: "GMP Compliance", issuer: "Good Manufacturing Practices (QAMS)", licenseNo: "23UGAA0804" },
-  { id: "npop-organic", name: "India Organic (NPOP)", issuer: "Organic Standards (RSOCA)", licenseNo: "ORG/SC/2202/000426" },
+  { id: "iso-9001", name: "ISO 9001:2015", issuer: "Quality Management (UKAF/QAMS)", licenseNo: "23UQBJ2932" },
+  { id: "gmp", name: "GMP Compliance", issuer: "Good Manufacturing Practices (QAMS)", licenseNo: "23UGBJ3032" },
+  { id: "udyam", name: "Udyam MSME Registration", issuer: "Ministry of MSME, Govt. of India", licenseNo: "UDYAM-DL-02-0101578" },
+  { id: "incorporation", name: "Certificate of Incorporation", issuer: "Registrar of Companies, Delhi", licenseNo: "U01122DL2006PTC145334" },
   { id: "indiamart", name: "IndiaMART TrustSeal", issuer: "Verified Star B2B Exporter", licenseNo: "IM-TS-981002" },
 ];
 

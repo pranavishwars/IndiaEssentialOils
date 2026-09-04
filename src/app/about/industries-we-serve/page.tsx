@@ -41,7 +41,7 @@ export default function IndustriesWeServePage() {
       color: "#D97706",
       bg: "rgba(217, 119, 6, 0.1)",
       examples: "Cardamom, Black Pepper, Ginger, Clove Bud, Ceylon Cinnamon, Nutmeg Oleoresins",
-      cert: "ISO 22000 Food Safety Certified",
+      cert: "ISO 9001:2015 & GMP Certified",
     },
     {
       title: "Pharmaceutical & Healthcare",

@@ -36,7 +36,6 @@ export function Footer() {
     { label: "Industries We Serve", href: "/about/industries-we-serve" },
     { label: "The Countries We Serve", href: "/about/countries-we-serve" },
     { label: "How to Order", href: "/about/how-to-order" },
-    { label: "Founders Note", href: "/about/founders-note" },
   ];
 
   // Only the exact elements present in the Packaging dropdown menu
@@ -73,7 +72,7 @@ export function Footer() {
               </h2>
             </Link>
             <p style={{ fontSize: "0.875rem", color: "rgba(255,255,255,0.7)", lineHeight: 1.75, marginBottom: "20px" }}>
-              A Division of Mother Herbs Pvt. Ltd. Premier WHO-GMP &amp; ISO 22000 certified steam distillation distillery and bulk wholesale exporter of pure botanical oils.
+              A Division of Mother Herbs Pvt. Ltd. Premier ISO 9001:2015 &amp; GMP certified steam distillation distillery and bulk wholesale exporter of pure botanical oils.
             </p>
 
             <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginBottom: "24px" }}>

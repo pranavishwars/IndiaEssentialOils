@@ -99,7 +99,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Ambrette Seed Oil (Abelmoschus moschatus) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -153,7 +153,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Amyris Oil (Amyris balsamifera) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -207,7 +207,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Angelica Root Oil (Angelica archangelica) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -261,7 +261,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Armoise Oil (Artemisia vulgaris) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -315,7 +315,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Basil Oil (Ocimum basilicum) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -369,7 +369,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Betel Leaf Oil (Piper betle) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -423,7 +423,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Birch Tar Oil (Betula pendula) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -477,7 +477,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Bitter Orange Oil (Citrus aurantium) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -531,7 +531,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Black Seed Oil (Nigella sativa) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -586,7 +586,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
     "featured": true,
     "overview": "100% pure steam distilled Bergamot Oil (Citrus bergamia) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -640,7 +640,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Cade Oil (Juniperus oxycedrus) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -694,7 +694,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Cajeput Oil (Melaleuca cajuputi) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -748,7 +748,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Camphor Oil (Cinnamomum camphora) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -802,7 +802,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Carrot Seed Oil (Daucus carota) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -857,7 +857,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
     "featured": true,
     "overview": "100% pure steam distilled Cedarwood Oil (Cedrus atlantica / Cedrus deodara) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -912,7 +912,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
     "featured": true,
     "overview": "100% pure steam distilled Chamomile Oil (Blue) (Matricaria chamomilla) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -966,7 +966,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Chamomile Oil (Roman) (Anthemis nobilis) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1074,7 +1074,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Chulmoogra Oil (Hydnocarpus wightianus) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1128,7 +1128,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Citriodora Oil (Eucalyptus citriodora) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1182,7 +1182,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Distilled from prime Cymbopogon nardus cultivated in the renowned terroir of Assam & Brahmaputra valley. This botanical lot exhibits an exceptional volatile fraction highlighted by Citronellal (35%+), Geraniol (22%+), grown under Humid tropical alluvial floodplains with fertile organic silt. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1237,7 +1237,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
     "featured": true,
     "overview": "100% pure steam distilled Clary Sage Oil (Salvia sclarea) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1291,7 +1291,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Coffee Oil (Coffea arabica) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1345,7 +1345,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Costus Root Oil (Saussurea costus) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1399,7 +1399,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Croton Oil (Croton tiglium) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1453,7 +1453,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Custard Apple Oil (Annona squamosa) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1507,7 +1507,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Cypress Oil (Cupressus sempervirens) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1561,7 +1561,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Cypriol Oil (Nagarmotha Oil) (Cyperus scariosus) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1615,7 +1615,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Davana Oil (Artemisia pallens) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1669,7 +1669,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Elemi Oil (Canarium luzonicum) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1724,7 +1724,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
     "featured": true,
     "overview": "Distilled from prime Eucalyptus globulus cultivated in the renowned terroir of Nilgiri Blue Mountains, South India. This botanical lot exhibits an exceptional volatile fraction highlighted by Eucalyptol / 1,8-Cineole (82%+), Alpha-Pinene, grown under High-altitude eucalyptus plantations harvested since 1843. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1779,7 +1779,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
     "featured": true,
     "overview": "Distilled from prime Boswellia serrata cultivated in the renowned terroir of Shekhawati / Aravalli Hills, Rajasthan. This botanical lot exhibits an exceptional volatile fraction highlighted by Alpha-Pinene (52%+), Boswellic derivatives, grown under Arid rocky calcareous soils yielding high-resin oleogum. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1833,7 +1833,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Gandhapura Oil (Gaultheria fragrantissima) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1888,7 +1888,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
     "featured": true,
     "overview": "100% pure steam distilled Geranium Oil (Pelargonium graveolens) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1996,7 +1996,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Grapefruit Oil (Citrus paradisi) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2050,7 +2050,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Gaultheria Fragrantissima Oil (Gaultheria fragrantissima) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2104,7 +2104,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Hedychium Oil (Hedychium spicatum) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2159,7 +2159,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
     "featured": true,
     "overview": "100% pure steam distilled Helichrysum Oil (Immortelle) (Helichrysum italicum) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2213,7 +2213,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Henna Oil (Lawsonia inermis) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2321,7 +2321,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Juniper Berry Oil (Juniperus communis) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2375,7 +2375,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Kewra Oil (Pandanus odoratissimus) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2430,7 +2430,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2484,7 +2484,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Lemon Balm Oil (Melissa officinalis) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2539,7 +2539,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
     "featured": true,
     "overview": "100% pure steam distilled Lemon Oil (Citrus limon) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2593,7 +2593,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Lemon Verbena Oil (Aloysia citriodora) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2648,7 +2648,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
     "featured": true,
     "overview": "Distilled from prime Cymbopogon flexuosus cultivated in the renowned terroir of Cochin / Wayanad, Kerala. This botanical lot exhibits an exceptional volatile fraction highlighted by Citral (78%+), Geraniol, Myrcene, grown under Malabar tropical coastal terroir receiving dual monsoons. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2702,7 +2702,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Lily Oil (Lilium candidum) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2756,7 +2756,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Melissa Oil (Melissa officinalis) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2810,7 +2810,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Mentha Citrata Oil (Mentha aquatica var. citrata) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2865,7 +2865,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
     "featured": true,
     "overview": "100% pure steam distilled Mint Oil (Mentha arvensis) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2919,7 +2919,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Myrrh Oil (Commiphora myrrha) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2973,7 +2973,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Myrtle Oil (Myrtus communis) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -3028,7 +3028,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
     "featured": true,
     "overview": "100% pure steam distilled Neroli Oil (Citrus aurantium) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -3082,7 +3082,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Niaouli Oil (Melaleuca quinquenervia) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -3136,7 +3136,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Nutmeg Oil (Myristica fragrans) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -3190,7 +3190,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Distilled from prime Cymbopogon martinii cultivated in the renowned terroir of Satpura Range, Madhya Pradesh. This botanical lot exhibits an exceptional volatile fraction highlighted by Geraniol (85%+), Geranyl Acetate, grown under Wild grassland plateaus harvested before midday peak heat. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -3245,7 +3245,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
     "featured": true,
     "overview": "Distilled from prime Pogostemon cablin cultivated in the renowned terroir of Coastal Karnataka & Western Ghats. This botanical lot exhibits an exceptional volatile fraction highlighted by Patchoulol (32%+), Alpha-Bulnesene, grown under Shaded tropical understory with deep humus forest floor. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -3354,7 +3354,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Peru Balsam Oil (Myroxylon balsamum) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -3408,7 +3408,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Petitgrain Oil (Citrus aurantium (leaf)) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -3462,7 +3462,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Pimento Berry Oil (Pimenta dioica) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -3516,7 +3516,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Pine Oil (Pinus sylvestris) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -3570,7 +3570,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Psoralea Corylifolia Oil (Psoralea corylifolia) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -3788,7 +3788,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Spearmint Oil (Mentha spicata) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -3842,7 +3842,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Spikenard Oil (Jatamansi Oil) (Nardostachys jatamansi) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -3896,7 +3896,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled St. John's Wort Oil (Hypericum perforatum) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -3950,7 +3950,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Sugandh Mantri Oil (Homalomena aromatica) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -4005,7 +4005,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
     "featured": true,
     "overview": "100% pure steam distilled Sweet Orange Oil (Citrus sinensis) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -4059,7 +4059,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Tagetes Oil (Tagetes minuta) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -4113,7 +4113,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Tangerine (Mandarine) Oil (Citrus reticulata) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -4168,7 +4168,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
     "featured": true,
     "overview": "100% pure steam distilled Tea Tree Oil (Melaleuca alternifolia) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -4222,7 +4222,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Thuja Wood Oil (Thuja occidentalis) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -4276,7 +4276,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Turmeric Leaf Oil (Curcuma longa (leaf)) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -4330,7 +4330,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Vanilla Oil (Vanilla planifolia) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -4384,7 +4384,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Valerian Oil (Valeriana officinalis) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -4493,7 +4493,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Wintergreen Oil (Gaultheria procumbens) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -4547,7 +4547,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Worm Wood Oil (Artemisia absinthium) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -4601,7 +4601,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Yarrow Oil (Yara Yara) (Achillea millefolium) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -4656,7 +4656,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
     "featured": true,
     "overview": "100% pure steam distilled Ylang Ylang Oil (Cananga odorata) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -4710,7 +4710,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "100% pure steam distilled Zanthoxylum Oil (Zanthoxylum armatum) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -8935,7 +8935,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Ferula asafoetida. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -8989,7 +8989,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Trachyspermum ammi. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -9043,7 +9043,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Ocimum basilicum. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -9097,7 +9097,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Capsicum annuum. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -9151,7 +9151,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Capsicum annuum. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -9205,7 +9205,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Capsicum annuum. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -9259,7 +9259,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Capsicum annuum. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -9367,7 +9367,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Apium graveolens. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -9475,7 +9475,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Coriandrum sativum. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -9529,7 +9529,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Piper cubeba. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -9583,7 +9583,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Cuminum cyminum. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -9637,7 +9637,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Trigonella foenum-graecum. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -9691,7 +9691,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Foeniculum vulgare dulce. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -9799,7 +9799,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Myristica fragrans (mace). Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -9853,7 +9853,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Myristica fragrans Houttuyn. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -9961,7 +9961,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Allium cepa. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -10015,7 +10015,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Origanum vulgare. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -10069,7 +10069,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Capsicum annuum (sweet). Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -10123,7 +10123,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Petroselinum crispum. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -10231,7 +10231,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Certified organic extraction of Citrus bergamia grown on certified organic farms adhering to USDA NOP and EU organic standards. Harvested with zero synthetic agrochemicals and steam-distilled under gentle vapor pressure to preserve the full energetic and chemical integrity of the raw botanical.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -10285,7 +10285,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Certified organic extraction of Cedrus deodara grown on certified organic farms adhering to USDA NOP and EU organic standards. Harvested with zero synthetic agrochemicals and steam-distilled under gentle vapor pressure to preserve the full energetic and chemical integrity of the raw botanical.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -10339,7 +10339,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Certified organic extraction of Matricaria chamomilla grown on certified organic farms adhering to USDA NOP and EU organic standards. Harvested with zero synthetic agrochemicals and steam-distilled under gentle vapor pressure to preserve the full energetic and chemical integrity of the raw botanical.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -10501,7 +10501,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Distilled from prime Eucalyptus globulus cultivated in the renowned terroir of Nilgiri Blue Mountains, South India. This botanical lot exhibits an exceptional volatile fraction highlighted by Eucalyptol / 1,8-Cineole (82%+), Alpha-Pinene, grown under High-altitude eucalyptus plantations harvested since 1843. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -10555,7 +10555,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Distilled from prime Boswellia serrata cultivated in the renowned terroir of Shekhawati / Aravalli Hills, Rajasthan. This botanical lot exhibits an exceptional volatile fraction highlighted by Alpha-Pinene (52%+), Boswellic derivatives, grown under Arid rocky calcareous soils yielding high-resin oleogum. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -10771,7 +10771,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Distilled from prime Simmondsia chinensis cultivated in the renowned terroir of Thar Desert, Rajasthan. This botanical lot exhibits an exceptional volatile fraction highlighted by Gadoleic Acid (72%), Erucic Acid, Wax Esters, grown under Arid sunshine terroir producing ultra-stable liquid wax esters. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -10825,7 +10825,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Certified organic extraction of Citrus limon grown on certified organic farms adhering to USDA NOP and EU organic standards. Harvested with zero synthetic agrochemicals and steam-distilled under gentle vapor pressure to preserve the full energetic and chemical integrity of the raw botanical.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -10879,7 +10879,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Distilled from prime Cymbopogon flexuosus cultivated in the renowned terroir of Cochin / Wayanad, Kerala. This botanical lot exhibits an exceptional volatile fraction highlighted by Citral (78%+), Geraniol, Myrcene, grown under Malabar tropical coastal terroir receiving dual monsoons. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -10933,7 +10933,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Distilled from prime Moringa oleifera cultivated in the renowned terroir of Madurai & Dindigul, Tamil Nadu. This botanical lot exhibits an exceptional volatile fraction highlighted by Oleic Acid (73%+), Behenic Acid, grown under Semi-arid tropical plains yielding cold-hardy nutrient-rich seeds. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -10987,7 +10987,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Distilled from prime Azadirachta indica cultivated in the renowned terroir of Bundelkhand & Central Deccan, India. This botanical lot exhibits an exceptional volatile fraction highlighted by Azadirachtin A/B, Nimbin, Salannin, grown under Sun-baked drought-tolerant native woodland agroforestry. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -11041,7 +11041,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Certified organic extraction of Citrus sinensis grown on certified organic farms adhering to USDA NOP and EU organic standards. Harvested with zero synthetic agrochemicals and steam-distilled under gentle vapor pressure to preserve the full energetic and chemical integrity of the raw botanical.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -11258,7 +11258,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Certified organic extraction of Punica granatum grown on certified organic farms adhering to USDA NOP and EU organic standards. Harvested with zero synthetic agrochemicals and steam-distilled under gentle vapor pressure to preserve the full energetic and chemical integrity of the raw botanical.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict WHO-GMP and ISO 22000 processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",

@@ -501,7 +501,7 @@ export function ProductImageGallery({ product }: ProductImageGalleryProps) {
       <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "10px" }}>
         <Link
           href="/certifications"
-          title="View accredited ISO 9001, ISO 22000, GMP & Organic Certificates"
+          title="View accredited ISO 9001:2015, GMP, Udyam & Statutory Certificates"
           style={{
             backgroundColor: "rgba(255, 255, 255, 0.72)",
             backdropFilter: "blur(16px) saturate(160%)",
@@ -527,7 +527,7 @@ export function ProductImageGallery({ product }: ProductImageGalleryProps) {
           }}
         >
           <Award size={18} color="#7C3AED" />
-          <span style={{ fontSize: "0.75rem", fontWeight: 700, color: "#180D26" }}>ISO 22000 &amp; GMP</span>
+          <span style={{ fontSize: "0.75rem", fontWeight: 700, color: "#180D26" }}>ISO 9001 &amp; GMP</span>
         </Link>
 
         <div

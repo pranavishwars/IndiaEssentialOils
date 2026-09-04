@@ -562,7 +562,7 @@ export function GlobalPresenceMap() {
           <Award size={20} color="#059669" style={{ flexShrink: 0 }} />
           <div>
             <span style={{ fontSize: "0.85rem", fontWeight: 800, color: "#180D26", display: "block" }}>
-              WHO-GMP &amp; ISO 22000
+              ISO 9001:2015 &amp; GMP
             </span>
             <span style={{ fontSize: "0.75rem", color: "#5B486E" }}>
               International quality certified

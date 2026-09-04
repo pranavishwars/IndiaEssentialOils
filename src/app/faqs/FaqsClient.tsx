@@ -44,8 +44,8 @@ const FAQ_DATA: FAQItem[] = [
     id: "gen-3",
     category: "General",
     question: "What manufacturing standards and certifications do your facilities maintain?",
-    answer: "Our facilities operate under stringent international quality frameworks, holding ISO 9001:2015 (Quality Management), ISO 22000 (Food Safety), WHO-GMP (Good Manufacturing Practices) certifications, and US FDA facility registration with in-house GC-MS testing.",
-    highlight: "WHO-GMP • ISO 22000 • US FDA Registered",
+    answer: "Our facilities operate under stringent international quality frameworks, holding ISO 9001:2015 (Quality Management), GMP (Good Manufacturing Practices) Compliance, Ministry of MSME Udyam Registration, and active in-house GC-MS testing.",
+    highlight: "ISO 9001:2015 • GMP Certified • MSME Registered",
   },
   {
     id: "ord-1",
