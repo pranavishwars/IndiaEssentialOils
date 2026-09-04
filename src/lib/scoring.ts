@@ -93,6 +93,9 @@ export async function calculatePopularityScores(): Promise<{
 
       if (updates.length > 0) {
         await prisma.$transaction(updates).catch(() => {});
+        // Invalidate cached product queries so updated scores are immediately visible
+        const { invalidateProductsCache } = await import("./products-db");
+        await invalidateProductsCache();
       }
     }
   } catch (err) {

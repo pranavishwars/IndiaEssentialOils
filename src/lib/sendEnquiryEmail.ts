@@ -31,7 +31,7 @@ export function getRecipientEmail(): string {
   return (
     process.env.ENQUIRY_NOTIFICATION_EMAIL ||
     process.env.ENQUIRY_RECIPIENT_EMAIL ||
-    "pranavishwars@gmail.com"
+    "rahul@motherherbs.com"
   );
 }
 

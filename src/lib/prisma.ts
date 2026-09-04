@@ -3,17 +3,19 @@ import { PrismaPg } from "@prisma/adapter-pg";
 import { Pool } from "pg";
 
 const prismaClientSingleton = () => {
-  const connectionString = process.env.DIRECT_DATABASE_URL ?? process.env.DATABASE_URL;
+  // Always prioritize the pooled connection endpoint (-pooler / PgBouncer in transaction mode)
+  // for runtime queries to minimize connection overhead on Neon. DIRECT_DATABASE_URL is reserved for migrations.
+  const connectionString = process.env.DATABASE_URL ?? process.env.DIRECT_DATABASE_URL;
   if (!connectionString) {
     console.warn("No DATABASE_URL set — Prisma client not initialized.");
     return null;
   }
   try {
-    // Low connection limit and prompt 10s idle timeout to allow serverless Postgres compute to auto-suspend
+    // Conservative connection limit (max: 5) and prompt 8s idle timeout to allow serverless Postgres compute to auto-suspend
     const pool = new Pool({
       connectionString,
       max: 5,
-      idleTimeoutMillis: 10000, // 10s idle connection timeout for fast compute hibernation
+      idleTimeoutMillis: 8000, // 8s idle connection timeout allows rapid compute scale-to-zero
       connectionTimeoutMillis: 5000,
     });
     const adapter = new PrismaPg(pool);

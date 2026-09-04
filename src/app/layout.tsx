@@ -122,7 +122,7 @@ const jsonLdGraph = {
         "@type": "ContactPoint",
         "telephone": "+91-11-27041414",
         "contactType": "sales",
-        "email": "pranavishwars@gmail.com",
+        "email": "rahul@motherherbs.com",
         "availableLanguage": ["English", "Hindi", "French", "German", "Spanish", "Arabic"]
       },
       "knowsAbout": [

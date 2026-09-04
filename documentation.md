@@ -507,8 +507,8 @@ DIRECT_DATABASE_URL="postgresql://neondb_owner:npg_W9plvYAQMjZ7@ep-lingering-but
 # Primary Provider: Resend (https://resend.com)
 RESEND_API_KEY="re_N8q1rzLp_9c7skVRkUB1mYLT473JhsCTd"
 RESEND_FROM_EMAIL="India Essential Oils <onboarding@resend.dev>"
-ENQUIRY_NOTIFICATION_EMAIL="pranavishwars@gmail.com"
-ENQUIRY_RECIPIENT_EMAIL="pranavishwars@gmail.com"
+ENQUIRY_NOTIFICATION_EMAIL="rahul@motherherbs.com"
+ENQUIRY_RECIPIENT_EMAIL="rahul@motherherbs.com"
 
 # Secondary Fallback: Gmail SMTP Credentials (e.g. Gmail App Password)
 # Host: smtp.gmail.com | Port: 465 | Secure: true

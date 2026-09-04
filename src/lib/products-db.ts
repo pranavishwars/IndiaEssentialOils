@@ -1,98 +1,89 @@
 import prisma from "@/lib/prisma";
 import { productStore, mapDbProduct, Product } from "@/lib/products-store";
+import { getOrSetCache, invalidateCachePrefix, invalidateCacheKey } from "@/lib/cache";
 
-let cachedProducts: Product[] | null = null;
-let lastCacheTime = 0;
-const CACHE_TTL_MS = 10 * 60 * 1000; // 10 minutes cache to drastically cut serverless compute wakeups
-let isFetchingFromDb = false;
+// TTL for product collections (15 minutes) - drastically slashes Neon compute usage
+const PRODUCTS_COLLECTION_TTL_SEC = 15 * 60;
+// TTL for individual product pages (30 minutes)
+const PRODUCT_ITEM_TTL_SEC = 30 * 60;
 
 /**
- * Invalidate the product cache manually (e.g. after catalog imports or updates)
+ * Invalidate the product cache manually (e.g. after catalog updates, imports, or cron scoring)
  */
-export function invalidateProductsCache(): void {
-  cachedProducts = null;
-  lastCacheTime = 0;
+export async function invalidateProductsCache(): Promise<void> {
+  await invalidateCachePrefix("products:");
 }
-invalidateProductsCache();
 
 /**
- * Fetches all products from the PostgreSQL database, falling back gracefully
- * to the in-memory product catalog if the database is offline or not configured.
- * Cached in-memory for 10 minutes for ultra-low database compute consumption.
+ * Fetches all products from the PostgreSQL database using the Cache-Aside pattern.
+ * Checks LRU memory first (0ms latency, 0 Neon compute).
+ * Falls back gracefully to in-memory static catalog if the database is offline or asleep.
  */
 export async function getProductsFromDb(): Promise<Product[]> {
-  const now = Date.now();
-  if (cachedProducts && cachedProducts.length > 0 && now - lastCacheTime < CACHE_TTL_MS) {
-    return cachedProducts;
-  }
-
-  // Prevent multiple concurrent DB roundtrips (stampede protection)
-  if (isFetchingFromDb && cachedProducts && cachedProducts.length > 0) {
-    return cachedProducts;
-  }
-
-  try {
-    if (prisma) {
-      isFetchingFromDb = true;
-      const rows = await prisma.product.findMany({
-        orderBy: { popularityScore: "desc" },
-      });
-      if (rows && rows.length > 0) {
-        const mapped = rows.map(mapDbProduct);
-        cachedProducts = mapped;
-        lastCacheTime = now;
-        productStore.setProducts(mapped);
-        return mapped;
+  return getOrSetCache<Product[]>(
+    "products:all:popularity",
+    PRODUCTS_COLLECTION_TTL_SEC,
+    async () => {
+      try {
+        if (prisma) {
+          const rows = await prisma.product.findMany({
+            orderBy: { popularityScore: "desc" },
+          });
+          if (rows && rows.length > 0) {
+            const mapped = rows.map(mapDbProduct);
+            productStore.setProducts(mapped);
+            return mapped;
+          }
+        }
+      } catch (err) {
+        console.warn("[Database] Neon products query fallback to static catalog:", err);
       }
-    }
-  } catch (err) {
-    console.warn("Prisma products lookup fallback to in-memory store:", err);
-  } finally {
-    isFetchingFromDb = false;
-  }
 
-  cachedProducts = productStore.getAll();
-  lastCacheTime = now;
-  return cachedProducts;
+      return productStore.getAll();
+    }
+  );
 }
 
 /**
- * Fetches a single product by slug with zero-query in-memory cache resolution.
- * If the product is in memory, requires 0 database queries.
+ * Fetches a single product by slug with Cache-Aside pattern.
+ * Resolution:
+ * 1. Checks Cache (0ms, 0 Neon compute).
+ * 2. If missed, checks pre-loaded productStore.
+ * 3. Only if completely unresolved, queries Neon Postgres.
  */
 export async function getProductBySlugFromDb(slug: string): Promise<Product | undefined> {
-  // 1. Check in-memory store / cache first (0 DB compute used)
+  // 1. Direct memoryStore fast-path check
   const memoryMatch = productStore.getBySlug(slug);
   if (memoryMatch) {
     return memoryMatch;
   }
 
-  // 2. Check full cached list if populated
-  if (cachedProducts) {
-    const found = cachedProducts.find(p => p.slug === slug);
-    if (found) return found;
-  }
-
-  // 3. Fallback to DB only if not found in memory
-  try {
-    if (prisma) {
-      const row = await prisma.product.findUnique({
-        where: { slug },
-      });
-      if (row) {
-        return mapDbProduct(row);
+  // 2. Cache-Aside resolution
+  return getOrSetCache<Product | undefined>(
+    `products:slug:${slug}`,
+    PRODUCT_ITEM_TTL_SEC,
+    async () => {
+      try {
+        if (prisma) {
+          const row = await prisma.product.findUnique({
+            where: { slug },
+          });
+          if (row) {
+            return mapDbProduct(row);
+          }
+        }
+      } catch (err) {
+        console.warn(`[Database] Neon product lookup for '${slug}' fallback:`, err);
       }
+
+      return productStore.getBySlug(slug);
     }
-  } catch (err) {
-    console.warn(`Prisma product lookup for '${slug}' fallback:`, err);
-  }
-  return productStore.getBySlug(slug);
+  );
 }
 
 /**
  * Ensures the in-memory productStore has loaded the latest catalog from PostgreSQL.
  */
 export async function syncProductStoreFromDb(): Promise<void> {
-  if (cachedProducts && cachedProducts.length > 0) return;
   await getProductsFromDb();
 }

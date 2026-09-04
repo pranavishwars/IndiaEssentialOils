@@ -35,6 +35,10 @@ model Product {
   createdAt          DateTime       @default(now())
   updatedAt          DateTime       @updatedAt
   events             ProductEvent[]
+
+  @@index([popularityScore(sort: Desc)])
+  @@index([category, popularityScore(sort: Desc)])
+  @@index([featured])
 }
 
 enum Category {
@@ -63,6 +67,10 @@ model ProductEvent {
   product   Product   @relation(fields: [productId], references: [id], onDelete: Cascade)
   type      EventType
   createdAt DateTime  @default(now())
+
+  @@index([productId])
+  @@index([createdAt(sort: Desc)])
+  @@index([productId, type, createdAt(sort: Desc)])
 }
 
 enum EventType {
@@ -92,4 +100,7 @@ model Inquiry {
   emailSentAt   DateTime?
   emailAttempts Int         @default(0)
   createdAt     DateTime    @default(now())
+
+  @@index([emailStatus, createdAt(sort: Asc)])
+  @@index([createdAt(sort: Desc)])
 }

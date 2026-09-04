@@ -28,10 +28,17 @@ export async function GET(request: NextRequest) {
       // Default relevance
       sorted.sort((a, b) => b.popularityScore - a.popularityScore);
     }
-    return NextResponse.json({
-      results: sorted,
-      total: sorted.length,
-    });
+    return NextResponse.json(
+      {
+        results: sorted,
+        total: sorted.length,
+      },
+      {
+        headers: {
+          "Cache-Control": "public, s-maxage=300, stale-while-revalidate=60",
+        },
+      }
+    );
   }
 
   // Split query into search terms
@@ -123,9 +130,16 @@ export async function GET(request: NextRequest) {
     scoredList.sort((a, b) => b.totalScore - a.totalScore);
   }
 
-  return NextResponse.json({
-    results: scoredList.map(s => s.product),
-    total: scoredList.length,
-    query: q,
-  });
+  return NextResponse.json(
+    {
+      results: scoredList.map(s => s.product),
+      total: scoredList.length,
+      query: q,
+    },
+    {
+      headers: {
+        "Cache-Control": "public, s-maxage=300, stale-while-revalidate=60",
+      },
+    }
+  );
 }

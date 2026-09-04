@@ -4,14 +4,14 @@ import prisma from "../src/lib/prisma";
 
 async function main() {
   console.log("==================================================");
-  console.log("  Testing Email Dispatch to pranavishwars@gmail.com ");
+  console.log("  Testing Email Dispatch to rahul@motherherbs.com ");
   console.log("==================================================");
   console.log(`RESEND_API_KEY: ${process.env.RESEND_API_KEY ? "[Configured]" : "[Not set / Empty]"}`);
   console.log(`RESEND_FROM_EMAIL: ${process.env.RESEND_FROM_EMAIL || "India Essential Oils <onboarding@resend.dev>"}`);
   console.log(`SMTP_HOST: ${process.env.SMTP_HOST || "Not set"}`);
   console.log(`SMTP_USER: ${process.env.SMTP_USER || "Not set"}`);
   console.log(`SMTP_PASS: ${process.env.SMTP_PASS ? "[Configured]" : "[Empty / Missing]"}`);
-  console.log(`NOTIFICATION_EMAIL: ${process.env.ENQUIRY_NOTIFICATION_EMAIL || process.env.ENQUIRY_RECIPIENT_EMAIL || "pranavishwars@gmail.com"}`);
+  console.log(`NOTIFICATION_EMAIL: ${process.env.ENQUIRY_NOTIFICATION_EMAIL || process.env.ENQUIRY_RECIPIENT_EMAIL || "rahul@motherherbs.com"}`);
   console.log("--------------------------------------------------");
 
   const samplePayload: EnquiryPayload = {
