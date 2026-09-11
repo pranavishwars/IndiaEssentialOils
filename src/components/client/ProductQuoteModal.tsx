@@ -154,7 +154,7 @@ export function ProductQuoteModal({ isOpen, onClose, product }: ProductQuoteModa
                   fontWeight: 700,
                   fontSize: "0.95rem",
                   cursor: "pointer",
-                  boxShadow: "0 4px 18px rgba(124, 58, 237, 0.45)",
+                  boxShadow: "0 4px 14px rgba(24, 13, 38, 0.15)",
                 }}
               >
                 Back to Product Details
@@ -355,7 +355,7 @@ export function ProductQuoteModal({ isOpen, onClose, product }: ProductQuoteModa
                   alignItems: "center",
                   justifyContent: "center",
                   gap: "8px",
-                  boxShadow: "0 4px 18px rgba(124, 58, 237, 0.45)",
+                  boxShadow: "0 4px 14px rgba(24, 13, 38, 0.15)",
                   marginTop: "6px",
                   transition: "all 0.2s",
                 }}

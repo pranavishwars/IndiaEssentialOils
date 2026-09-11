@@ -305,7 +305,7 @@ export function ChatbotWidget() {
             display: "inline-flex",
             alignItems: "center",
             justifyContent: "center",
-            boxShadow: "0 8px 28px rgba(124, 58, 237, 0.5)",
+            boxShadow: "0 6px 20px rgba(24, 13, 38, 0.22)",
             border: "1.5px solid rgba(255, 255, 255, 0.35)",
             cursor: "pointer",
             transition: "all 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s",
@@ -352,7 +352,7 @@ export function ChatbotWidget() {
               WebkitBackdropFilter: "blur(32px) saturate(200%)",
               border: "1px solid rgba(124, 58, 237, 0.22)",
               borderRadius: isMobile ? "24px 24px 0 0" : "28px",
-              boxShadow: "0 24px 64px rgba(24, 13, 38, 0.25), 0 4px 20px rgba(124, 58, 237, 0.15)",
+              boxShadow: "0 24px 64px rgba(24, 13, 38, 0.25)",
               display: "flex",
               flexDirection: "column",
               overflow: "hidden",
@@ -382,7 +382,7 @@ export function ChatbotWidget() {
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    boxShadow: "0 4px 12px rgba(124, 58, 237, 0.4)",
+                    boxShadow: "0 2px 8px rgba(0, 0, 0, 0.2)",
                   }}
                 >
                   <Bot size={20} />
@@ -475,7 +475,7 @@ export function ChatbotWidget() {
                         fontSize: "0.88rem",
                         lineHeight: 1.5,
                         boxShadow: isUser
-                          ? "0 4px 14px rgba(124, 58, 237, 0.35)"
+                          ? "0 2px 8px rgba(24, 13, 38, 0.12)"
                           : "0 2px 10px rgba(24, 13, 38, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.8)",
                         border: isUser ? "none" : "1px solid rgba(124, 58, 237, 0.16)",
                         wordBreak: "break-word",
@@ -549,7 +549,7 @@ export function ChatbotWidget() {
                               fontSize: "0.82rem",
                               fontWeight: 700,
                               textDecoration: "none",
-                              boxShadow: "0 4px 12px rgba(124, 58, 237, 0.35)",
+                              boxShadow: "0 2px 8px rgba(24, 13, 38, 0.12)",
                               transition: "all 0.15s ease",
                             }}
                           >
@@ -576,7 +576,7 @@ export function ChatbotWidget() {
                               fontWeight: 700,
                               fontSize: "0.82rem",
                               textDecoration: "none",
-                              boxShadow: "0 3px 10px rgba(124, 58, 237, 0.35)",
+                              boxShadow: "0 2px 8px rgba(24, 13, 38, 0.12)",
                             }}
                           >
                             <Phone size={14} /> Call Technical Desk ({COMPANY_INFO.contact.phone})
@@ -752,7 +752,7 @@ export function ChatbotWidget() {
                   alignItems: "center",
                   justifyContent: "center",
                   cursor: inputValue.trim() ? "pointer" : "default",
-                  boxShadow: inputValue.trim() ? "0 4px 12px rgba(124, 58, 237, 0.4)" : "none",
+                  boxShadow: inputValue.trim() ? "0 2px 8px rgba(24, 13, 38, 0.15)" : "none",
                   transition: "all 0.15s ease",
                   flexShrink: 0,
                 }}

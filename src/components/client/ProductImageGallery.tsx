@@ -21,6 +21,8 @@ export function ProductImageGallery({ product }: ProductImageGalleryProps) {
   const [origin, setOrigin] = useState({ x: 50, y: 50 });
   const [isHoverZooming, setIsHoverZooming] = useState(false);
 
+  const [isMouseDown, setIsMouseDown] = useState(false);
+
   const containerRef = useRef<HTMLDivElement>(null);
   const touchStartDistRef = useRef<number | null>(null);
   const touchStartScaleRef = useRef<number>(1);
@@ -31,13 +33,24 @@ export function ProductImageGallery({ product }: ProductImageGalleryProps) {
   const labelSrc = product.labelImageUrl || `/labels/${product.slug}.png`;
   const currentSrc = activeTab === "BOTTLE" ? bottleSrc : labelSrc;
 
-  // Desktop Mouse Movement (smooth hover zoom when at 1x)
+  // Desktop Mouse Movement: image moves in the same direction as the cursor
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!containerRef.current) return;
+    // Prevent mouse move from interfering with mobile touch interactions
+    if (touchStartDistRef.current !== null || lastTouchPosRef.current !== null) return;
+
     const rect = containerRef.current.getBoundingClientRect();
-    const x = ((e.clientX - rect.left) / rect.width) * 100;
-    const y = ((e.clientY - rect.top) / rect.height) * 100;
-    setOrigin({ x, y });
+    const rawX = ((e.clientX - rect.left) / rect.width) * 100;
+    const rawY = ((e.clientY - rect.top) / rect.height) * 100;
+
+    // Invert the origin percentage so the image moves in the same direction as the cursor
+    const x = 100 - rawX;
+    const y = 100 - rawY;
+
+    setOrigin({
+      x: Math.max(0, Math.min(100, x)),
+      y: Math.max(0, Math.min(100, y)),
+    });
   };
 
   // Mouse Wheel Zoom Support
@@ -70,6 +83,7 @@ export function ProductImageGallery({ product }: ProductImageGalleryProps) {
     setPanOffset({ x: 0, y: 0 });
     setOrigin({ x: 50, y: 50 });
     setIsHoverZooming(false);
+    setIsMouseDown(false);
   };
 
   // Touch Screen Gestures: Double-Tap & Pinch-to-Zoom
@@ -186,18 +200,28 @@ export function ProductImageGallery({ product }: ProductImageGalleryProps) {
       <div
         ref={containerRef}
         onMouseEnter={() => {
-          if (zoomScale === 1) setIsHoverZooming(true);
+          if (zoomScale === 1 && touchStartDistRef.current === null && lastTouchPosRef.current === null) {
+            setIsHoverZooming(true);
+          }
         }}
         onMouseLeave={() => {
+          setIsMouseDown(false);
           setIsHoverZooming(false);
           if (zoomScale === 1) {
             setPanOffset({ x: 0, y: 0 });
             setOrigin({ x: 50, y: 50 });
           }
         }}
+        onMouseDown={(e) => {
+          if (e.button === 0) setIsMouseDown(true);
+        }}
+        onMouseUp={() => setIsMouseDown(false)}
         onMouseMove={handleMouseMove}
         onWheel={handleWheel}
-        onTouchStart={handleTouchStart}
+        onTouchStart={(e) => {
+          setIsHoverZooming(false);
+          handleTouchStart(e);
+        }}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
         onTouchCancel={handleTouchEnd}
@@ -212,7 +236,7 @@ export function ProductImageGallery({ product }: ProductImageGalleryProps) {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          cursor: isZoomed ? "grab" : "crosshair",
+          cursor: isZoomed ? (isMouseDown ? "grabbing" : "grab") : "crosshair",
           touchAction: isZoomed ? "none" : "pan-y",
           boxShadow: "0 10px 36px rgba(24, 13, 38, 0.06)",
           userSelect: "none",
@@ -234,9 +258,9 @@ export function ProductImageGallery({ product }: ProductImageGalleryProps) {
               ? `translate3d(${panOffset.x}px, ${panOffset.y}px, 0) scale(${effectiveScale})`
               : "scale(1)",
             transition:
-              touchStartDistRef.current !== null
+              touchStartDistRef.current !== null || isMouseDown
                 ? "none"
-                : isHoverZooming
+                : isZoomed
                 ? "transform 0.08s ease-out"
                 : "transform 0.25s cubic-bezier(0.2, 0, 0, 1)",
             pointerEvents: "none",
@@ -245,21 +269,21 @@ export function ProductImageGallery({ product }: ProductImageGalleryProps) {
           }}
         />
 
-        {/* View Mode Toggle Pill (Top-Right) */}
+        {/* View Mode Toggle Pill (Bottom-Right) */}
         <div
           style={{
             position: "absolute",
-            top: "16px",
+            bottom: "16px",
             right: "16px",
             display: "flex",
-            gap: "6px",
-            backgroundColor: "rgba(255, 255, 255, 0.86)",
-            backdropFilter: "blur(20px) saturate(160%)",
-            WebkitBackdropFilter: "blur(20px) saturate(160%)",
+            gap: "4px",
+            backgroundColor: "rgba(255, 255, 255, 0.9)",
+            backdropFilter: "blur(20px) saturate(180%)",
+            WebkitBackdropFilter: "blur(20px) saturate(180%)",
             padding: "4px",
             borderRadius: "9999px",
-            border: "1px solid rgba(124, 58, 237, 0.22)",
-            boxShadow: "0 4px 16px rgba(0,0,0,0.08)",
+            border: "1px solid rgba(124, 58, 237, 0.25)",
+            boxShadow: "0 4px 16px rgba(24, 13, 38, 0.12)",
             zIndex: 15,
           }}
         >
@@ -426,31 +450,6 @@ export function ProductImageGallery({ product }: ProductImageGalleryProps) {
               Reset
             </button>
           )}
-        </div>
-
-        {/* Dynamic Zoom Hint Badge (Bottom-Right) */}
-        <div
-          style={{
-            position: "absolute",
-            bottom: "18px",
-            right: "18px",
-            backgroundColor: "rgba(255, 255, 255, 0.82)",
-            backdropFilter: "blur(16px) saturate(160%)",
-            WebkitBackdropFilter: "blur(16px) saturate(160%)",
-            color: "#5B486E",
-            fontSize: "0.74rem",
-            fontWeight: 700,
-            padding: "5px 12px",
-            borderRadius: "9999px",
-            border: "1px solid rgba(124, 58, 237, 0.2)",
-            pointerEvents: "none",
-            zIndex: 12,
-            boxShadow: "0 2px 10px rgba(0,0,0,0.04)",
-          }}
-        >
-          {isZoomed
-            ? "Drag to pan · Double-tap or Reset to exit"
-            : "Pinch, double-tap, or + / - to zoom"}
         </div>
       </div>
 

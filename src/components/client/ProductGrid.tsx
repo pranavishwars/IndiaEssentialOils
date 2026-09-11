@@ -26,7 +26,7 @@ export function ProductGrid() {
             }}
             onMouseEnter={e => {
               e.currentTarget.style.transform = "translateY(-6px)";
-              e.currentTarget.style.boxShadow = "0 18px 45px rgba(124, 58, 237, 0.18)";
+              e.currentTarget.style.boxShadow = "0 18px 45px rgba(24, 13, 38, 0.12)";
               e.currentTarget.style.borderColor = "rgba(124, 58, 237, 0.35)";
             }}
             onMouseLeave={e => {

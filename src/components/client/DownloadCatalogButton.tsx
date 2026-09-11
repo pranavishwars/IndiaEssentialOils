@@ -61,7 +61,7 @@ export function DownloadCatalogButton({ variant = "primary", label }: DownloadCa
           backgroundColor: "rgba(124, 58, 237, 0.1)",
           border: "1px solid rgba(124, 58, 237, 0.28)",
           cursor: downloading ? "wait" : "pointer",
-          boxShadow: "0 2px 10px rgba(124, 58, 237, 0.12)",
+          boxShadow: "0 2px 8px rgba(24, 13, 38, 0.06)",
           transition: "all 0.2s ease",
         }}
       >
@@ -105,7 +105,7 @@ export function DownloadCatalogButton({ variant = "primary", label }: DownloadCa
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              boxShadow: "0 6px 16px rgba(124, 58, 237, 0.35)",
+              boxShadow: "0 4px 12px rgba(24, 13, 38, 0.1)",
               flexShrink: 0,
             }}
           >
@@ -137,7 +137,6 @@ export function DownloadCatalogButton({ variant = "primary", label }: DownloadCa
             gap: "8px",
             border: "none",
             cursor: downloading ? "wait" : "pointer",
-            boxShadow: "0 6px 20px rgba(124, 58, 237, 0.4)",
           }}
         >
           {downloading ? (
@@ -170,7 +169,7 @@ export function DownloadCatalogButton({ variant = "primary", label }: DownloadCa
         color: variant === "secondary" ? "#7C3AED" : "#FFFFFF",
         backgroundColor: variant === "secondary" ? "rgba(124, 58, 237, 0.1)" : undefined,
         cursor: downloading ? "wait" : "pointer",
-        boxShadow: variant === "secondary" ? "0 4px 14px rgba(124, 58, 237, 0.1)" : "0 6px 20px rgba(124, 58, 237, 0.4)",
+        boxShadow: variant === "secondary" ? "0 2px 8px rgba(24, 13, 38, 0.06)" : undefined,
         transition: "all 0.2s ease",
       }}
     >

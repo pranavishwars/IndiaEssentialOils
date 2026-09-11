@@ -171,7 +171,7 @@ export function GlobalPresenceMap() {
           backgroundColor: "#FBF9F5",
           border: "1.5px solid rgba(124, 58, 237, 0.18)",
           padding: "16px 8px 24px",
-          boxShadow: "inset 0 0 40px rgba(124, 58, 237, 0.04)",
+          boxShadow: "inset 0 0 40px rgba(24, 13, 38, 0.03)",
           overflow: "hidden",
         }}
       >

@@ -56,7 +56,7 @@ export default function CertificationsPage() {
             padding: "36px 40px",
             backgroundColor: "rgba(255, 255, 255, 0.88)",
             border: "1px solid rgba(124, 58, 237, 0.2)",
-            boxShadow: "0 14px 40px rgba(124, 58, 237, 0.06)",
+            boxShadow: "0 14px 40px rgba(24, 13, 38, 0.05)",
             marginBottom: "48px",
             position: "relative",
             overflow: "hidden",

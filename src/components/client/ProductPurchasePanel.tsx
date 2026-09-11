@@ -64,7 +64,7 @@ export function ProductPurchasePanel({ product, onOpenQuote }: ProductPurchasePa
               border: "1px solid rgba(124, 58, 237, 0.2)",
             }}
           >
-            {categoryLabel} {product.subCategory ? `· ${product.subCategory}` : ""}
+            {categoryLabel}
           </span>
 
 
@@ -108,11 +108,11 @@ export function ProductPurchasePanel({ product, onOpenQuote }: ProductPurchasePa
           *Tiered volume discounts applied at invoice based on purchase quantity.
         </div>
 
-        <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "16px", fontSize: "0.88rem", color: "#180D26", flexWrap: "wrap" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "6px", marginTop: "16px", fontSize: "0.88rem", color: "#180D26", flexWrap: "wrap" }}>
           <span style={{ fontWeight: 600, color: "#5B486E" }}>Minimum Order Qty (MOQ):</span>
-          <strong className="notranslate" translate="no" style={{ backgroundColor: "rgba(124, 58, 237, 0.12)", color: "#7C3AED", padding: "4px 12px", borderRadius: "8px", border: "1px solid rgba(124, 58, 237, 0.2)", whiteSpace: "nowrap" }}>
+          <span className="notranslate" translate="no" style={{ fontWeight: 700, color: "#180D26" }}>
             {product.moq}
-          </strong>
+          </span>
         </div>
 
         {/* Private Label & Custom Bottling Highlight */}
@@ -143,16 +143,16 @@ export function ProductPurchasePanel({ product, onOpenQuote }: ProductPurchasePa
             alignItems: "center",
             justifyContent: "center",
             gap: "8px",
-            boxShadow: "0 6px 22px rgba(124, 58, 237, 0.5)",
+            boxShadow: "0 4px 14px rgba(24, 13, 38, 0.15)",
             transition: "transform 0.2s, box-shadow 0.2s",
           }}
           onMouseEnter={e => {
             e.currentTarget.style.transform = "translateY(-2px)";
-            e.currentTarget.style.boxShadow = "0 8px 28px rgba(124, 58, 237, 0.65)";
+            e.currentTarget.style.boxShadow = "0 6px 20px rgba(24, 13, 38, 0.2)";
           }}
           onMouseLeave={e => {
             e.currentTarget.style.transform = "translateY(0)";
-            e.currentTarget.style.boxShadow = "0 6px 22px rgba(124, 58, 237, 0.5)";
+            e.currentTarget.style.boxShadow = "0 4px 14px rgba(24, 13, 38, 0.15)";
           }}
         >
           Request Bulk Quote / CoA <ArrowRight size={18} />

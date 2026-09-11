@@ -90,7 +90,7 @@ export function ProductStickyTabBar() {
                 cursor: "pointer",
                 whiteSpace: "nowrap",
                 transition: "all 0.25s ease",
-                boxShadow: isActive ? "0 4px 14px rgba(124, 58, 237, 0.35)" : "none",
+                boxShadow: isActive ? "0 2px 8px rgba(24, 13, 38, 0.12)" : "none",
               }}
             >
               {s.label}

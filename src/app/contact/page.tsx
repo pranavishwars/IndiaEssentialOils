@@ -161,7 +161,7 @@ function ContactFormContent() {
                     alignItems: "center",
                     justifyContent: "center",
                     margin: "0 auto 16px",
-                    boxShadow: "0 6px 20px rgba(124, 58, 237, 0.35)",
+                    boxShadow: "0 4px 14px rgba(24, 13, 38, 0.12)",
                   }}
                 >
                   <CheckCircle2 size={32} />
@@ -186,7 +186,7 @@ function ContactFormContent() {
                       fontSize: "0.85rem",
                       fontWeight: 700,
                       textDecoration: "none",
-                      boxShadow: "0 4px 14px rgba(124, 58, 237, 0.3)",
+                      boxShadow: "0 4px 14px rgba(24, 13, 38, 0.14)",
                     }}
                   >
                     <Mail size={16} /> Email Sales Team
@@ -458,7 +458,7 @@ function ContactFormContent() {
                     gap: "8px",
                     border: "none",
                     cursor: isSubmitting ? "wait" : "pointer",
-                    boxShadow: "0 6px 20px rgba(124, 58, 237, 0.4)",
+                    boxShadow: "0 4px 16px rgba(24, 13, 38, 0.18)",
                     marginTop: "6px",
                   }}
                 >

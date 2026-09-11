@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Play, Sparkles } from "lucide-react";
+import { Play } from "lucide-react";
 
 export function CompanyVideoSection() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -25,26 +25,6 @@ export function CompanyVideoSection() {
 
         {/* Section Header */}
         <div style={{ textAlign: "center", maxWidth: "780px", margin: "0 auto 56px" }}>
-          <div
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "8px",
-              padding: "8px 20px",
-              borderRadius: "9999px",
-              backgroundColor: "rgba(139, 92, 246, 0.2)",
-              backdropFilter: "blur(16px)",
-              border: "1px solid rgba(167, 139, 250, 0.35)",
-              color: "#C4B5FD",
-              fontSize: "0.8rem",
-              fontWeight: 700,
-              letterSpacing: "0.1em",
-              textTransform: "uppercase",
-              marginBottom: "20px",
-            }}
-          >
-            <Sparkles size={14} color="#C4B5FD" /> Facility Overview &amp; Corporate Film
-          </div>
 
           <h2
             style={{

@@ -82,22 +82,18 @@ export default function PackagingPage() {
     {
       name: "European Dropper Type Dropper",
       desc: "Precision orifice reducer insert allowing controlled drop-by-drop dispensing with tamper-evident seal ring.",
-      icon: <Droplets size={20} color="#7C3AED" />,
     },
     {
       name: "Calibrated Glass Droppers",
       desc: "Graduated glass pipettes with silicone or rubber bulbs for accurate dosage in serum and therapy use.",
-      icon: <Layers size={20} color="#7C3AED" />,
     },
     {
       name: "Sealed Tamper-Evident Caps",
       desc: "Threaded leak-proof closures with breakaway security rings ensuring unadulterated seal integrity.",
-      icon: <ShieldCheck size={20} color="#7C3AED" />,
     },
     {
       name: "Flip Top Caps",
       desc: "Convenient one-handed opening dispensing caps ideal for carrier oils, massage blends, and floral waters.",
-      icon: <Sparkles size={20} color="#7C3AED" />,
     },
   ];
 
@@ -260,7 +256,7 @@ export default function PackagingPage() {
               }}
             >
               <img
-                src="/images/packaging/glass_droppers.jpg"
+                src="/images/packaging/glass_droppers_showcase.jpg"
                 alt="Luxury Amber, Matte & Clear Glass Dropper Bottles with Pipettes and Outer Box Packaging"
                 style={{
                   width: "100%",
@@ -293,18 +289,6 @@ export default function PackagingPage() {
                     European droppers, calibrated glass pipettes, amber/frosted glassware, and custom printed outer cartons.
                   </div>
                 </div>
-                <span
-                  style={{
-                    fontSize: "0.75rem",
-                    fontWeight: 800,
-                    padding: "4px 12px",
-                    borderRadius: "9999px",
-                    backgroundColor: "#7C3AED",
-                    color: "white",
-                  }}
-                >
-                  Sizes: 10ml &ndash; 500ml
-                </span>
               </div>
             </div>
 
@@ -324,27 +308,10 @@ export default function PackagingPage() {
                       border: "1px solid rgba(124, 58, 237, 0.16)",
                     }}
                   >
-                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: "10px", minHeight: "52px", marginBottom: "12px" }}>
-                      <span style={{ fontWeight: 800, fontSize: "1.05rem", color: "#180D26", lineHeight: 1.3 }}>{gf.name}</span>
-                      <span
-                        style={{
-                          fontSize: "0.72rem",
-                          fontWeight: 700,
-                          padding: "4px 10px",
-                          borderRadius: "9999px",
-                          backgroundColor: "rgba(124, 58, 237, 0.12)",
-                          border: "1px solid rgba(124, 58, 237, 0.22)",
-                          color: "#7C3AED",
-                          whiteSpace: "nowrap",
-                          flexShrink: 0,
-                          display: "inline-flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                          lineHeight: 1,
-                        }}
-                      >
-                        {gf.badge}
-                      </span>
+                    <div style={{ marginBottom: "10px" }}>
+                      <h4 style={{ fontWeight: 800, fontSize: "1.05rem", color: "#180D26", lineHeight: 1.3, margin: 0 }}>
+                        {gf.name}
+                      </h4>
                     </div>
                     <p style={{ fontSize: "0.88rem", color: "#5B486E", lineHeight: 1.6, margin: 0 }}>
                       {gf.desc}
@@ -364,26 +331,20 @@ export default function PackagingPage() {
                   <div
                     key={idx}
                     style={{
-                      padding: "22px",
-                      borderRadius: "18px",
+                      padding: "24px",
+                      borderRadius: "20px",
                       backgroundColor: "#FCFAF6",
-                      border: "1px solid rgba(124, 58, 237, 0.14)",
-                      display: "flex",
-                      gap: "14px",
-                      alignItems: "flex-start",
+                      border: "1px solid rgba(124, 58, 237, 0.16)",
                     }}
                   >
-                    <div style={{ width: "42px", height: "42px", borderRadius: "12px", backgroundColor: "rgba(124, 58, 237, 0.1)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                      {cap.icon}
-                    </div>
-                    <div style={{ flex: 1 }}>
-                      <div style={{ fontWeight: 700, fontSize: "0.96rem", color: "#180D26", marginBottom: "4px", minHeight: "44px", lineHeight: 1.3 }}>
+                    <div style={{ marginBottom: "10px" }}>
+                      <h4 style={{ fontWeight: 800, fontSize: "1.05rem", color: "#180D26", lineHeight: 1.3, margin: 0 }}>
                         {cap.name}
-                      </div>
-                      <p style={{ fontSize: "0.85rem", color: "#5B486E", lineHeight: 1.55, margin: 0 }}>
-                        {cap.desc}
-                      </p>
+                      </h4>
                     </div>
+                    <p style={{ fontSize: "0.88rem", color: "#5B486E", lineHeight: 1.6, margin: 0 }}>
+                      {cap.desc}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -413,7 +374,7 @@ export default function PackagingPage() {
                   alignItems: "center",
                   justifyContent: "center",
                   flexShrink: 0,
-                  boxShadow: "0 6px 20px rgba(124, 58, 237, 0.4)",
+                  boxShadow: "0 4px 14px rgba(24, 13, 38, 0.12)",
                 }}
               >
                 <Gift size={30} />
@@ -654,7 +615,7 @@ export default function PackagingPage() {
                 display: "inline-flex",
                 alignItems: "center",
                 gap: "8px",
-                boxShadow: "0 8px 24px rgba(124, 58, 237, 0.5)",
+                boxShadow: "0 4px 16px rgba(24, 13, 38, 0.18)",
               }}
             >
               Contact Us <ArrowRight size={18} />

@@ -115,7 +115,7 @@ export function Navbar() {
                 borderRadius: "50%",
                 objectFit: "cover",
                 backgroundColor: "#FFFFFF",
-                boxShadow: isLightNav ? "0 2px 8px rgba(124, 58, 237, 0.15)" : "0 2px 10px rgba(0, 0, 0, 0.4)",
+                boxShadow: isLightNav ? "0 2px 8px rgba(24, 13, 38, 0.1)" : "0 2px 10px rgba(0, 0, 0, 0.4)",
                 border: isLightNav ? "1.5px solid rgba(124, 58, 237, 0.25)" : "1.5px solid rgba(255, 255, 255, 0.4)",
                 flexShrink: 0,
               }}
@@ -278,7 +278,7 @@ export function Navbar() {
                 fontWeight: 700,
                 fontSize: "0.875rem",
                 marginInlineStart: "4px",
-                boxShadow: "0 4px 18px rgba(124, 58, 237, 0.45)",
+                boxShadow: "0 2px 10px rgba(24, 13, 38, 0.15)",
                 transition: "transform 0.2s, box-shadow 0.2s",
                 whiteSpace: "nowrap",
                 display: "inline-flex",
@@ -287,11 +287,11 @@ export function Navbar() {
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = "translateY(-1px)";
-                e.currentTarget.style.boxShadow = "0 6px 24px rgba(124, 58, 237, 0.6)";
+                e.currentTarget.style.boxShadow = "0 4px 14px rgba(24, 13, 38, 0.2)";
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = "translateY(0)";
-                e.currentTarget.style.boxShadow = "0 4px 18px rgba(124, 58, 237, 0.45)";
+                e.currentTarget.style.boxShadow = "0 2px 10px rgba(24, 13, 38, 0.15)";
               }}
             >
               Contact Us
@@ -553,7 +553,7 @@ export function Navbar() {
               fontWeight: 700,
               textAlign: "center",
               fontSize: "1rem",
-              boxShadow: "0 4px 18px rgba(124, 58, 237, 0.45)",
+              boxShadow: "0 4px 14px rgba(24, 13, 38, 0.15)",
               marginTop: "8px",
             }}
           >

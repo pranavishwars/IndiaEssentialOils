@@ -51,7 +51,7 @@ export default function BlogPage() {
                 fontSize: "0.88rem",
                 fontWeight: 700,
                 cursor: "pointer",
-                boxShadow: selectedCategory === cat ? "0 4px 14px rgba(124, 58, 237, 0.35)" : "none",
+                boxShadow: selectedCategory === cat ? "0 2px 10px rgba(24, 13, 38, 0.12)" : "none",
                 transition: "all 0.2s ease",
               }}
             >
@@ -79,7 +79,7 @@ export default function BlogPage() {
               }}
               onMouseEnter={e => {
                 e.currentTarget.style.transform = "translateY(-4px)";
-                e.currentTarget.style.boxShadow = "0 18px 45px rgba(124, 58, 237, 0.18)";
+                e.currentTarget.style.boxShadow = "0 18px 45px rgba(24, 13, 38, 0.12)";
                 e.currentTarget.style.borderColor = "rgba(124, 58, 237, 0.35)";
               }}
               onMouseLeave={e => {

@@ -96,7 +96,7 @@ export default async function BlogPostPage({
 
           {/* Author Card */}
           <div style={{ display: "flex", alignItems: "center", gap: "12px", borderBottom: "1px solid rgba(124, 58, 237, 0.15)", paddingBottom: "24px", marginBottom: "32px" }}>
-            <div style={{ width: "44px", height: "44px", borderRadius: "50%", background: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)", display: "flex", alignItems: "center", justifyContent: "center", color: "white", boxShadow: "0 2px 8px rgba(124, 58, 237, 0.35)" }}>
+            <div style={{ width: "44px", height: "44px", borderRadius: "50%", background: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)", display: "flex", alignItems: "center", justifyContent: "center", color: "white", boxShadow: "0 2px 8px rgba(24, 13, 38, 0.15)" }}>
               <User size={22} />
             </div>
             <div>

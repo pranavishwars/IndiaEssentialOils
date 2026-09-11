@@ -47,31 +47,6 @@ export default function Home() {
             }}
           >
             <div style={{ maxWidth: "820px", width: "100%" }}>
-
-              {/* Liquid glass badge matching navbar opacity */}
-              <div style={{ marginBottom: "clamp(12px, 2.5vh, 22px)" }}>
-                <span
-                  style={{
-                    display: "inline-block",
-                    padding: "clamp(6px, 1.2vh, 8px) clamp(14px, 2vw, 20px)",
-                    borderRadius: "9999px",
-                    backgroundColor: "rgba(35, 24, 48, 0.48)",
-                    backdropFilter: "blur(24px) saturate(180%)",
-                    WebkitBackdropFilter: "blur(24px) saturate(180%)",
-                    border: "1px solid rgba(255, 255, 255, 0.3)",
-                    color: "white",
-                    fontWeight: 800,
-                    fontSize: "clamp(0.68rem, 1.1vw, 0.75rem)",
-                    letterSpacing: "0.12em",
-                    textTransform: "uppercase",
-                    boxShadow: "0 8px 32px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.2)",
-                    lineHeight: 1.4,
-                  }}
-                >
-                  Direct Distillery · B2B Wholesale Exporter
-                </span>
-              </div>
-
               {/* Main Headline without logo (logo remains strictly in navbar) */}
               <h1
                 style={{

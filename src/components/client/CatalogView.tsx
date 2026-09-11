@@ -257,7 +257,7 @@ export function CatalogView({ preselectedCategory }: CatalogViewProps = {}) {
                   display: "flex",
                   alignItems: "center",
                   transition: "background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease",
-                  boxShadow: isActive ? "0 4px 14px rgba(124, 58, 237, 0.35)" : "none",
+                  boxShadow: isActive ? "0 2px 10px rgba(24, 13, 38, 0.12)" : "none",
                 }}
                 onMouseEnter={e => {
                   if (!isActive) e.currentTarget.style.backgroundColor = "rgba(124, 58, 237, 0.08)";
@@ -387,7 +387,7 @@ export function CatalogView({ preselectedCategory }: CatalogViewProps = {}) {
                 }}
                 onMouseEnter={e => {
                   e.currentTarget.style.transform = "translateY(-6px)";
-                  e.currentTarget.style.boxShadow = "0 18px 45px rgba(124, 58, 237, 0.18)";
+                  e.currentTarget.style.boxShadow = "0 18px 45px rgba(24, 13, 38, 0.12)";
                   e.currentTarget.style.borderColor = "rgba(124, 58, 237, 0.35)";
                 }}
                 onMouseLeave={e => {
@@ -532,7 +532,7 @@ export function CatalogView({ preselectedCategory }: CatalogViewProps = {}) {
                 fontWeight: 700,
                 fontSize: "0.9rem",
                 cursor: "pointer",
-                boxShadow: "0 4px 16px rgba(124, 58, 237, 0.4)",
+                boxShadow: "0 4px 14px rgba(24, 13, 38, 0.16)",
               }}
             >
               Reset Filters

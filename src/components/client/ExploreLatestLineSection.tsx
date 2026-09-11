@@ -4,7 +4,6 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { 
-  Sparkles, 
   ChevronLeft, 
   ChevronRight, 
   ArrowRight, 
@@ -420,25 +419,6 @@ export function ExploreLatestLineSection() {
     >
       {/* Section Header with Simple 3-4 Line Explanation */}
       <div style={{ marginBottom: "clamp(24px, 4vh, 36px)" }}>
-        <div
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "6px",
-            backgroundColor: "rgba(124, 58, 237, 0.1)",
-            border: "1px solid rgba(124, 58, 237, 0.25)",
-            padding: "6px 16px",
-            borderRadius: "9999px",
-            color: "#7C3AED",
-            fontWeight: 800,
-            fontSize: "0.75rem",
-            textTransform: "uppercase",
-            letterSpacing: "0.1em",
-            marginBottom: "12px",
-          }}
-        >
-          <Sparkles size={14} color="#7C3AED" /> NEW BOTANICAL LINEUP · 100% PURE &amp; CLEAN
-        </div>
         
         <div className="co2-section-header-row" style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: "20px" }}>
           <div className="co2-section-header-text" style={{ maxWidth: "860px", flex: 1 }}>
@@ -532,7 +512,7 @@ export function ExploreLatestLineSection() {
             background-color: #7C3AED;
             color: #FFFFFF;
             transform: translateY(-50%) scale(1.1);
-            box-shadow: 0 10px 28px rgba(124, 58, 237, 0.4);
+            box-shadow: 0 8px 24px rgba(24, 13, 38, 0.22);
           }
           .co2-catalog-arrow-left {
             left: -54px;
@@ -675,7 +655,7 @@ export function ExploreLatestLineSection() {
                             gap: "8px",
                             border: "none",
                             cursor: "pointer",
-                            boxShadow: "0 8px 24px rgba(124, 58, 237, 0.55)",
+                            boxShadow: "0 4px 14px rgba(24, 13, 38, 0.16)",
                             zIndex: 10,
                           }}
                         >
@@ -902,7 +882,7 @@ export function ExploreLatestLineSection() {
                             gap: "8px",
                             border: "none",
                             cursor: "pointer",
-                            boxShadow: "0 8px 24px rgba(124, 58, 237, 0.55)",
+                            boxShadow: "0 4px 14px rgba(24, 13, 38, 0.16)",
                             zIndex: 10,
                           }}
                         >

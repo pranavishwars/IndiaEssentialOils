@@ -105,8 +105,8 @@ export function HeroSlideshow() {
         }}
         onMouseEnter={(e) => {
           e.currentTarget.style.transform = "translateX(-50%) translateY(3px) scale(1.08)";
-          e.currentTarget.style.backgroundColor = "rgba(124, 58, 237, 0.75)";
-          e.currentTarget.style.boxShadow = "0 12px 36px rgba(124, 58, 237, 0.5)";
+          e.currentTarget.style.backgroundColor = "rgba(124, 58, 237, 0.85)";
+          e.currentTarget.style.boxShadow = "0 8px 28px rgba(0, 0, 0, 0.35)";
         }}
         onMouseLeave={(e) => {
           e.currentTarget.style.transform = "translateX(-50%) translateY(0) scale(1.0)";

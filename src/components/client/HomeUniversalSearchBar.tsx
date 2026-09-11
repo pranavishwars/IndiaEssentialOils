@@ -208,7 +208,7 @@ export function HomeUniversalSearchBar() {
               textDecoration: "none",
               color: "white",
               flexShrink: 0,
-              boxShadow: "0 4px 16px rgba(124, 58, 237, 0.35)",
+              boxShadow: "0 4px 14px rgba(24, 13, 38, 0.16)",
             }}
           >
             <span>Search</span>
@@ -410,7 +410,7 @@ export function HomeUniversalSearchBar() {
                     onMouseEnter={(e) => {
                       e.currentTarget.style.transform = "translateY(-6px)";
                       e.currentTarget.style.borderColor = "rgba(124, 58, 237, 0.65)";
-                      e.currentTarget.style.boxShadow = "0 16px 36px rgba(124, 58, 237, 0.22)";
+                      e.currentTarget.style.boxShadow = "0 16px 36px rgba(24, 13, 38, 0.12)";
                       e.currentTarget.style.backgroundColor = "#FFFFFF";
                       const img = e.currentTarget.querySelector("img");
                       if (img) img.style.transform = "scale(1.06)";

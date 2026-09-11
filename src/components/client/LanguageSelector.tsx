@@ -642,7 +642,7 @@ export function LanguageSelector({ variant = "floating" }: LanguageSelectorProps
               justifyContent: "center",
               color: "white",
               flexShrink: 0,
-              boxShadow: "0 2px 8px rgba(124, 58, 237, 0.4)",
+              boxShadow: "0 2px 6px rgba(24, 13, 38, 0.15)",
             }}
           >
             <Check size={12} strokeWidth={3} />

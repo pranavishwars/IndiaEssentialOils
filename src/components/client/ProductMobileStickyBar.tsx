@@ -70,7 +70,7 @@ export function ProductMobileStickyBar({ product, onOpenQuote }: ProductMobileSt
           display: "inline-flex",
           alignItems: "center",
           gap: "6px",
-          boxShadow: "0 4px 14px rgba(124, 58, 237, 0.4)",
+          boxShadow: "0 2px 10px rgba(24, 13, 38, 0.15)",
           cursor: "pointer",
           minHeight: "44px",
           whiteSpace: "nowrap",

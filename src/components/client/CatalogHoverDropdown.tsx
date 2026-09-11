@@ -234,7 +234,7 @@ export function CatalogHoverDropdown({ isLightNav, textColor, textShadow }: Cata
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  boxShadow: "0 4px 14px rgba(124, 58, 237, 0.4)",
+                  boxShadow: "0 2px 8px rgba(24, 13, 38, 0.1)",
                   flexShrink: 0,
                 }}
               >

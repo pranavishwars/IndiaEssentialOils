@@ -73,7 +73,7 @@ export function ProductDetailView({ product }: ProductDetailViewProps) {
               e.currentTarget.style.transform = "translateX(-3px)";
               e.currentTarget.style.color = "#7C3AED";
               e.currentTarget.style.borderColor = "rgba(124, 58, 237, 0.4)";
-              e.currentTarget.style.boxShadow = "0 4px 16px rgba(124, 58, 237, 0.12)";
+              e.currentTarget.style.boxShadow = "0 4px 14px rgba(24, 13, 38, 0.1)";
             }}
             onMouseLeave={e => {
               e.currentTarget.style.transform = "translateX(0)";
@@ -205,7 +205,7 @@ export function ProductDetailView({ product }: ProductDetailViewProps) {
                   }}
                   onMouseEnter={e => {
                     e.currentTarget.style.transform = "translateY(-4px)";
-                    e.currentTarget.style.boxShadow = "0 16px 36px rgba(124, 58, 237, 0.18)";
+                    e.currentTarget.style.boxShadow = "0 16px 36px rgba(24, 13, 38, 0.12)";
                     e.currentTarget.style.borderColor = "rgba(124, 58, 237, 0.35)";
                   }}
                   onMouseLeave={e => {

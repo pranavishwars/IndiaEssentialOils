@@ -69,18 +69,18 @@ export function PopularOilsSection() {
             border: "1px solid rgba(124, 58, 237, 0.3)",
             padding: "12px 24px",
             borderRadius: "9999px",
-            boxShadow: "0 4px 16px rgba(124, 58, 237, 0.08)",
+            boxShadow: "0 4px 16px rgba(24, 13, 38, 0.06)",
             transition: "all 0.2s ease",
           }}
           onMouseEnter={(e) => {
             e.currentTarget.style.backgroundColor = "#FFFFFF";
             e.currentTarget.style.transform = "translateX(3px)";
-            e.currentTarget.style.boxShadow = "0 8px 24px rgba(124, 58, 237, 0.18)";
+            e.currentTarget.style.boxShadow = "0 8px 24px rgba(24, 13, 38, 0.12)";
           }}
           onMouseLeave={(e) => {
             e.currentTarget.style.backgroundColor = "rgba(255, 255, 255, 0.76)";
             e.currentTarget.style.transform = "translateX(0)";
-            e.currentTarget.style.boxShadow = "0 4px 16px rgba(124, 58, 237, 0.08)";
+            e.currentTarget.style.boxShadow = "0 4px 16px rgba(24, 13, 38, 0.06)";
           }}
         >
           View Full Catalog <ArrowRight size={16} />
@@ -107,7 +107,7 @@ export function PopularOilsSection() {
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = "translateY(-6px)";
-              e.currentTarget.style.boxShadow = "0 20px 48px rgba(124, 58, 237, 0.18)";
+              e.currentTarget.style.boxShadow = "0 20px 48px rgba(24, 13, 38, 0.12)";
               e.currentTarget.style.borderColor = "rgba(124, 58, 237, 0.35)";
             }}
             onMouseLeave={(e) => {

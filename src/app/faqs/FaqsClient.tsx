@@ -241,7 +241,7 @@ export function FaqsClient() {
                 border: isSelected ? "1.5px solid #7C3AED" : "1px solid rgba(124, 58, 237, 0.2)",
                 backgroundColor: isSelected ? "#7C3AED" : "rgba(255, 255, 255, 0.8)",
                 color: isSelected ? "#FFFFFF" : "#4A3E56",
-                boxShadow: isSelected ? "0 4px 14px rgba(124, 58, 237, 0.3)" : "none",
+                boxShadow: isSelected ? "0 2px 10px rgba(24, 13, 38, 0.12)" : "none",
                 transition: "all 0.2s ease",
                 display: "inline-flex",
                 alignItems: "center",
