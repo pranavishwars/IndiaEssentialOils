@@ -2,13 +2,13 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { ShieldCheck, Award, Eye, Download, X, CheckCircle2, ExternalLink, FileText } from "lucide-react";
+import { Award, Eye, Download, X, ExternalLink } from "lucide-react";
 
 export interface CertificateItem {
   id: string;
   name: string;
   subtitle: string;
-  scope: string;
+  scope?: string;
   description: string;
   issuer: string;
   license: string;
@@ -32,7 +32,7 @@ const CERTIFICATES: CertificateItem[] = [
     imageSrc: "/certificates/iso_9001_2015_certificate.jpg",
     entityName: "Mother Herbs Private Limited",
     badgeColor: "#7C3AED",
-    accentBg: "rgba(124, 58, 237, 0.12)",
+    accentBg: "rgba(124, 58, 237, 0.08)",
   },
   {
     id: "gmp-compliance",
@@ -45,8 +45,8 @@ const CERTIFICATES: CertificateItem[] = [
     validity: "Valid through 27 July 2029 (Issued 28 July 2026)",
     imageSrc: "/certificates/gmp_compliance_certificate.jpg",
     entityName: "Mother Herbs Private Limited",
-    badgeColor: "#059669",
-    accentBg: "rgba(16, 185, 129, 0.12)",
+    badgeColor: "#7C3AED",
+    accentBg: "rgba(124, 58, 237, 0.08)",
   },
   {
     id: "udyam-registration",
@@ -59,8 +59,8 @@ const CERTIFICATES: CertificateItem[] = [
     validity: "Registered Enterprise · Active Classification 2025-26",
     imageSrc: "/certificates/udyam_registration_certificate.jpg",
     entityName: "Mother Herbs Private Limited",
-    badgeColor: "#D97706",
-    accentBg: "rgba(245, 158, 11, 0.12)",
+    badgeColor: "#7C3AED",
+    accentBg: "rgba(124, 58, 237, 0.08)",
   },
   {
     id: "certificate-of-incorporation",
@@ -73,8 +73,8 @@ const CERTIFICATES: CertificateItem[] = [
     validity: "Statutory Incorporation · Established 24 January 2006",
     imageSrc: "/certificates/certificate_of_incorporation.jpg",
     entityName: "Mother Herbs Private Limited",
-    badgeColor: "#0284C7",
-    accentBg: "rgba(2, 132, 199, 0.12)",
+    badgeColor: "#7C3AED",
+    accentBg: "rgba(124, 58, 237, 0.08)",
   },
 ];
 
@@ -108,77 +108,39 @@ export function CertificationsGrid() {
               overflow: "hidden",
             }}
           >
-            {/* Header / Badges */}
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "20px" }}>
-              <div style={{ display: "flex", alignItems: "center", gap: "14px" }}>
-                <div
-                  style={{
-                    width: "52px",
-                    height: "52px",
-                    borderRadius: "16px",
-                    backgroundColor: cert.accentBg,
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    border: `1px solid ${cert.badgeColor}33`,
-                    flexShrink: 0,
-                  }}
-                >
-                  <Award size={26} color={cert.badgeColor} />
-                </div>
-                <div>
-                  <h3
-                    style={{
-                      fontSize: "1.3rem",
-                      fontWeight: 700,
-                      fontFamily: "var(--font-lora), Georgia, serif",
-                      color: "#180D26",
-                      margin: 0,
-                      lineHeight: 1.2,
-                    }}
-                  >
-                    {cert.name}
-                  </h3>
-                  <span style={{ fontSize: "0.8rem", color: cert.badgeColor, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.05em" }}>
-                    {cert.subtitle}
-                  </span>
-                </div>
-              </div>
-
-              <span
+            {/* Header */}
+            <div style={{ display: "flex", alignItems: "center", gap: "14px", marginBottom: "20px" }}>
+              <div
                 style={{
-                  fontSize: "0.72rem",
-                  fontWeight: 700,
-                  color: "#059669",
-                  backgroundColor: "rgba(16, 185, 129, 0.1)",
-                  border: "1px solid rgba(16, 185, 129, 0.25)",
-                  padding: "4px 10px",
-                  borderRadius: "9999px",
-                  display: "inline-flex",
+                  width: "52px",
+                  height: "52px",
+                  borderRadius: "16px",
+                  backgroundColor: cert.accentBg,
+                  display: "flex",
                   alignItems: "center",
-                  gap: "4px",
-                  whiteSpace: "nowrap",
+                  justifyContent: "center",
+                  border: `1px solid ${cert.badgeColor}33`,
+                  flexShrink: 0,
                 }}
               >
-                <CheckCircle2 size={12} /> Verified
-              </span>
-            </div>
-
-            {/* Scope Box */}
-            <div
-              style={{
-                backgroundColor: "#FCFAF6",
-                borderRadius: "14px",
-                padding: "12px 16px",
-                border: "1px solid rgba(124, 58, 237, 0.1)",
-                marginBottom: "16px",
-              }}
-            >
-              <div style={{ fontSize: "0.72rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: "2px" }}>
-                Certified Scope &amp; Activities
+                <Award size={26} color={cert.badgeColor} />
               </div>
-              <div style={{ fontSize: "0.85rem", color: "#2E1A47", fontWeight: 600, lineHeight: 1.4 }}>
-                {cert.scope}
+              <div>
+                <h3
+                  style={{
+                    fontSize: "1.3rem",
+                    fontWeight: 700,
+                    fontFamily: "var(--font-lora), Georgia, serif",
+                    color: "#180D26",
+                    margin: 0,
+                    lineHeight: 1.2,
+                  }}
+                >
+                  {cert.name}
+                </h3>
+                <span style={{ fontSize: "0.8rem", color: cert.badgeColor, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.05em" }}>
+                  {cert.subtitle}
+                </span>
               </div>
             </div>
 
@@ -187,97 +149,40 @@ export function CertificationsGrid() {
               {cert.description}
             </p>
 
-            {/* Compact Document Thumbnail Bar with Interactive View Action */}
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-                gap: "16px",
-                padding: "12px 16px",
-                borderRadius: "16px",
-                backgroundColor: "rgba(255, 255, 255, 0.9)",
-                border: "1px solid rgba(124, 58, 237, 0.15)",
-                marginTop: "auto",
-              }}
-            >
-              {/* Mini Thumbnail */}
-              <div
-                onClick={() => setSelectedCert(cert)}
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "10px",
-                  cursor: "pointer",
-                  flex: 1,
-                  minWidth: 0,
-                }}
-              >
-                <div
-                  style={{
-                    position: "relative",
-                    width: "36px",
-                    height: "48px",
-                    borderRadius: "6px",
-                    overflow: "hidden",
-                    border: "1px solid rgba(0, 0, 0, 0.15)",
-                    boxShadow: "0 2px 6px rgba(0, 0, 0, 0.08)",
-                    flexShrink: 0,
-                  }}
-                >
-                  <Image
-                    src={cert.imageSrc}
-                    alt={`${cert.name} Certificate Document Scan`}
-                    fill
-                    sizes="36px"
-                    style={{ objectFit: "cover" }}
-                  />
-                </div>
-                <div style={{ minWidth: 0 }}>
-                  <div style={{ fontSize: "0.78rem", fontWeight: 700, color: "#180D26", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
-                    Cert No: {cert.license}
-                  </div>
-                  <div style={{ fontSize: "0.72rem", color: "#7A6985", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
-                    {cert.issuer}
-                  </div>
-                </div>
-              </div>
-
-              {/* View Document Button */}
+            {/* View Audit Document Action Button */}
+            <div style={{ marginTop: "auto", paddingTop: "8px" }}>
               <button
                 onClick={() => setSelectedCert(cert)}
                 style={{
-                  padding: "8px 16px",
+                  width: "100%",
+                  padding: "11px 20px",
                   borderRadius: "9999px",
-                  backgroundColor: "rgba(124, 58, 237, 0.1)",
-                  border: "1px solid rgba(124, 58, 237, 0.25)",
+                  backgroundColor: "rgba(124, 58, 237, 0.08)",
+                  border: "1px solid rgba(124, 58, 237, 0.22)",
                   color: "#7C3AED",
                   fontWeight: 700,
-                  fontSize: "0.8rem",
+                  fontSize: "0.86rem",
                   cursor: "pointer",
                   display: "inline-flex",
                   alignItems: "center",
-                  gap: "6px",
+                  justifyContent: "center",
+                  gap: "7px",
                   transition: "all 0.2s ease",
-                  flexShrink: 0,
+                  boxShadow: "0 2px 8px rgba(124, 58, 237, 0.05)",
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.backgroundColor = "#7C3AED";
                   e.currentTarget.style.color = "white";
+                  e.currentTarget.style.boxShadow = "0 4px 14px rgba(124, 58, 237, 0.25)";
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = "rgba(124, 58, 237, 0.1)";
+                  e.currentTarget.style.backgroundColor = "rgba(124, 58, 237, 0.08)";
                   e.currentTarget.style.color = "#7C3AED";
+                  e.currentTarget.style.boxShadow = "0 2px 8px rgba(124, 58, 237, 0.05)";
                 }}
               >
-                <Eye size={14} /> View Audit Doc
+                <Eye size={15} /> View Audit Doc
               </button>
-            </div>
-
-            {/* Entity Footer Details */}
-            <div style={{ marginTop: "12px", display: "flex", justifyContent: "space-between", fontSize: "0.74rem", color: "#8C7A9C" }}>
-              <span>Registered to: <strong style={{ color: "#4A3B5E" }}>{cert.entityName}</strong></span>
-              <span>{cert.validity}</span>
             </div>
           </div>
         ))}

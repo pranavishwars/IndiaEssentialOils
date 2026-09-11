@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Metadata } from "next";
 import { Footer } from "@/components/server/Footer";
 import { CertificationsGrid } from "@/components/client/CertificationsGrid";
-import { ShieldCheck, FlaskConical, ArrowRight, FileCheck, CheckCircle2, ExternalLink } from "lucide-react";
+import { ArrowRight, CheckCircle2, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Accredited Quality Certifications | India Essential Oils",
@@ -27,24 +27,6 @@ export default function CertificationsPage() {
 
         {/* Page Header */}
         <div style={{ textAlign: "center", marginBottom: "56px" }}>
-          <div
-            className="liquid-glass-pill"
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "6px",
-              padding: "6px 18px",
-              fontSize: "0.8rem",
-              fontWeight: 800,
-              color: "#059669",
-              marginBottom: "16px",
-              backgroundColor: "rgba(16, 185, 129, 0.1)",
-              border: "1px solid rgba(16, 185, 129, 0.25)",
-            }}
-          >
-            <ShieldCheck size={16} color="#059669" /> Accredited Compliance &amp; Transparency
-          </div>
-
           <h1
             style={{
               fontSize: "clamp(2.4rem, 4.5vw, 3.6rem)",
@@ -73,27 +55,13 @@ export default function CertificationsPage() {
             borderRadius: "28px",
             padding: "36px 40px",
             backgroundColor: "rgba(255, 255, 255, 0.88)",
-            border: "1px solid rgba(16, 185, 129, 0.3)",
-            boxShadow: "0 14px 40px rgba(16, 185, 129, 0.08)",
+            border: "1px solid rgba(124, 58, 237, 0.2)",
+            boxShadow: "0 14px 40px rgba(124, 58, 237, 0.06)",
             marginBottom: "48px",
             position: "relative",
             overflow: "hidden",
           }}
         >
-          {/* Subtle Accent Glow */}
-          <div
-            style={{
-              position: "absolute",
-              top: "-50px",
-              right: "-50px",
-              width: "240px",
-              height: "240px",
-              borderRadius: "50%",
-              background: "radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, rgba(16, 185, 129, 0) 70%)",
-              pointerEvents: "none",
-            }}
-          />
-
           <div
             style={{
               display: "flex",
@@ -113,8 +81,8 @@ export default function CertificationsPage() {
                   height: "80px",
                   borderRadius: "20px",
                   backgroundColor: "#FFFFFF",
-                  border: "1px solid rgba(16, 185, 129, 0.25)",
-                  boxShadow: "0 8px 24px rgba(16, 185, 129, 0.15)",
+                  border: "1px solid rgba(5, 150, 105, 0.2)",
+                  boxShadow: "0 4px 16px rgba(0, 0, 0, 0.04)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -132,22 +100,7 @@ export default function CertificationsPage() {
               </div>
 
               <div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "4px" }}>
-                  <span
-                    style={{
-                      fontSize: "0.72rem",
-                      fontWeight: 800,
-                      color: "#059669",
-                      textTransform: "uppercase",
-                      letterSpacing: "0.1em",
-                      backgroundColor: "rgba(16, 185, 129, 0.1)",
-                      border: "1px solid rgba(16, 185, 129, 0.25)",
-                      padding: "3px 10px",
-                      borderRadius: "9999px",
-                    }}
-                  >
-                    Audited B2B Business Seal
-                  </span>
+                <div style={{ marginBottom: "4px" }}>
                   <span style={{ fontSize: "0.78rem", color: "#6B7280", fontWeight: 600 }}>
                     Member ID: <strong style={{ color: "#180D26" }}>1752862</strong> (IM-TS-981002)
                   </span>
@@ -187,7 +140,7 @@ export default function CertificationsPage() {
                 backgroundColor: "#059669",
                 color: "white",
                 border: "1px solid rgba(5, 150, 105, 0.3)",
-                boxShadow: "0 6px 20px rgba(5, 150, 105, 0.25)",
+                boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
                 transition: "transform 0.2s ease, background-color 0.2s ease",
               }}
             >
@@ -245,49 +198,6 @@ export default function CertificationsPage() {
           </div>
         </div>
 
-        {/* Trust & Regulatory Accordion / Info Box */}
-        <div
-          className="liquid-glass"
-          style={{
-            borderRadius: "28px",
-            padding: "36px 40px",
-            backgroundColor: "rgba(255, 255, 255, 0.8)",
-            border: "1px solid rgba(124, 58, 237, 0.18)",
-            marginBottom: "48px",
-          }}
-        >
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
-            <FileCheck size={24} color="#7C3AED" />
-            <h3 style={{ fontSize: "1.25rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", margin: 0 }}>
-              Global Customs &amp; Regulatory Dossier Support
-            </h3>
-          </div>
-          <p style={{ color: "#5B486E", fontSize: "0.95rem", lineHeight: 1.7, marginBottom: "20px" }}>
-            Every commercial consignment shipped by India Essential Oils is accompanied by batch-specific Certificates of Analysis (CoA), full 16-point Material Safety Data Sheets (MSDS), Technical Specifications, Certificates of Origin (COO), and Allergen Declarations conforming to EU Cosmetic Regulation (EC) No 1223/2009, US FDA GRAS, and IFRA 51st Amendment standards.
-          </p>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "12px" }}>
-            {["ISO 9001:2015 Certified", "GMP Compliant Processing", "Ministry of MSME Registered", "Statutory Registered Corporation", "UKAF UK Accredited", "IndiaMART TrustSeal Audited"].map((badge, idx) => (
-              <span
-                key={idx}
-                style={{
-                  padding: "6px 14px",
-                  borderRadius: "9999px",
-                  backgroundColor: "rgba(124, 58, 237, 0.08)",
-                  border: "1px solid rgba(124, 58, 237, 0.18)",
-                  fontSize: "0.78rem",
-                  fontWeight: 600,
-                  color: "#5B21B6",
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "6px",
-                }}
-              >
-                <CheckCircle2 size={12} color="#059669" /> {badge}
-              </span>
-            ))}
-          </div>
-        </div>
-
         {/* Batch Traceability Callout Banner */}
         <div
           className="liquid-glass-elevated"
@@ -304,10 +214,7 @@ export default function CertificationsPage() {
           }}
         >
           <div>
-            <div style={{ display: "flex", alignItems: "center", gap: "6px", fontSize: "0.8rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase", marginBottom: "4px" }}>
-              <FlaskConical size={16} /> Instant GC-MS Verification
-            </div>
-            <h3 style={{ fontSize: "1.45rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginBottom: "6px" }}>
+            <h3 style={{ fontSize: "1.45rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginBottom: "6px", marginTop: 0 }}>
               In-House Analytical Laboratory Testing
             </h3>
             <p style={{ fontSize: "0.95rem", color: "#5B486E", margin: 0 }}>

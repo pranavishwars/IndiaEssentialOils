@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
 
-export default function PackagingSizesRedirect() {
+export default function PackagingPolicyAliasRedirect() {
   redirect("/packaging/packaging-policy");
 }

@@ -88,11 +88,13 @@ export function HomeUniversalSearchBar() {
 
   return (
     <section
+      id="home-search-bar"
       ref={containerRef}
       style={{
         width: "100%",
         maxWidth: "1280px",
-        margin: "16px auto clamp(40px, 6vh, 72px)",
+        scrollMarginTop: "100px",
+        margin: "clamp(32px, 5vh, 48px) auto clamp(40px, 6vh, 72px)",
         padding: "0 clamp(16px, 4vw, 24px)",
         position: "relative",
         zIndex: 30,

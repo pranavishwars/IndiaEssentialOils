@@ -34,14 +34,11 @@ export function Footer() {
     { label: "The Trust We've Built", href: "/about/trust-we-built" },
     { label: "Why Us", href: "/about/why-us" },
     { label: "Industries We Serve", href: "/about/industries-we-serve" },
-    { label: "The Countries We Serve", href: "/about/countries-we-serve" },
-    { label: "How to Order", href: "/about/how-to-order" },
   ];
 
   // Only the exact elements present in the Packaging dropdown menu
   const packagingLinks = [
-    { label: "Packaging Process", href: "/packaging/process" },
-    { label: "Packaging Sizes", href: "/packaging/sizes" },
+    { label: "Packaging Policy", href: "/packaging/packaging-policy" },
     { label: "Shipment Policy", href: "/packaging/shipment-policy" },
   ];
 
@@ -210,7 +207,7 @@ export function Footer() {
                           fontWeight: 800,
                           padding: "3px 7px",
                           borderRadius: "9999px",
-                          background: "linear-gradient(135deg, #EC4899 0%, #8B5CF6 100%)",
+                          backgroundColor: "#7C3AED",
                           color: "#FFFFFF",
                           whiteSpace: "nowrap",
                           display: "inline-flex",

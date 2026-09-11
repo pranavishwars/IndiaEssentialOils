@@ -3,12 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { COMPANY_INFO } from "@/lib/data";
 import { Footer } from "@/components/server/Footer";
-import { GlobalPresenceMap } from "@/components/client/GlobalPresenceMap";
+
 import { 
   ShieldCheck, 
   Globe, 
   Leaf, 
-  Sparkles, 
   FlaskConical, 
   ArrowRight,
   Quote,
@@ -17,7 +16,6 @@ import {
   Clock,
   TrendingUp,
   Activity,
-  Building2,
   HeartPulse,
   Apple,
   Flower,
@@ -34,43 +32,46 @@ export const metadata = {
   description: "Learn about India Essential Oils, a division of Mother Herbs Pvt. Ltd. 100% Pure & Natural Essential Oils, Oleoresins & Carrier Oils supplier worldwide.",
 };
 
+function SectionDivider() {
+  return (
+    <div
+      style={{
+        height: "1px",
+        width: "100%",
+        maxWidth: "1140px",
+        margin: "64px auto",
+        background: "linear-gradient(90deg, transparent 0%, rgba(124, 58, 237, 0.15) 12%, rgba(124, 58, 237, 0.35) 50%, rgba(124, 58, 237, 0.15) 88%, transparent 100%)",
+      }}
+      aria-hidden="true"
+    />
+  );
+}
+
 export default function AboutPage() {
   const trustPillars = [
     {
       title: "Established in the Industry",
       subtitle: "95% Buyer Retention & 90% Repeat Orders",
       desc: "As a premier division of Mother Herbs Pvt. Ltd., we have built an enduring global reputation supplying 100% Pure & Natural Essential Oils and Oleoresins to corporate clients and international formulators worldwide.",
-      icon: <Award size={24} color="#059669" />,
-      badge: "Industry Leader",
-      badgeColor: "#059669",
-      badgeBg: "rgba(5, 150, 105, 0.1)",
+      icon: <Award size={24} color="#7C3AED" />,
     },
     {
       title: "Dynamic in Nature",
       subtitle: "Advanced Extraction & Trained Technical Team",
       desc: "We operate on the solid foundation of the latest extraction technologies and state-of-the-art distillation equipment, supported by an agile team of highly qualified, well-trained chemists and process engineers.",
       icon: <Activity size={24} color="#7C3AED" />,
-      badge: "Modern Facility",
-      badgeColor: "#7C3AED",
-      badgeBg: "rgba(124, 58, 237, 0.1)",
     },
     {
       title: "Adapting to Changing Markets",
       subtitle: "Continuous R&D & Custom Regional Cultivation",
       desc: "Our industrial R&D team strives daily for process up-gradation, product improvisation, and development of new botanical lines. We identify optimal micro-climates and promote customized cultivation in specified areas as per customer requirements.",
-      icon: <TrendingUp size={24} color="#0284C7" />,
-      badge: "Agile Sourcing",
-      badgeColor: "#0284C7",
-      badgeBg: "rgba(2, 132, 199, 0.1)",
+      icon: <TrendingUp size={24} color="#7C3AED" />,
     },
     {
       title: "Providing Uncompromising Quality",
       subtitle: "Farm-to-Factory Potency & Dual GC-MS Verification",
       desc: "We monitor raw materials from field to factory to protect active ingredient potency, guide farmers on approved eco-friendly agricultural practices, and verify every batch with dual GC-MS chromatography and accredited ISO/GMP certifications.",
-      icon: <ShieldCheck size={24} color="#D97706" />,
-      badge: "Pure & Certified",
-      badgeColor: "#D97706",
-      badgeBg: "rgba(217, 119, 6, 0.1)",
+      icon: <ShieldCheck size={24} color="#7C3AED" />,
     },
   ];
 
@@ -79,35 +80,35 @@ export default function AboutPage() {
       title: "Cosmetics & Personal Care",
       desc: "Cold-pressed virgin carrier oils, floral hydrosols, and therapeutic essential oils for clean beauty, anti-aging skincare, serums, and luxury cosmetic formulations.",
       image: "/images/industries/cosmetics_personal_care.jpg",
-      icon: <Sparkle size={24} color="#EC4899" />,
+      icon: <Sparkle size={24} color="#7C3AED" />,
       examples: "Rosehip, Jojoba, Argan, Lavender, Tea Tree, Rose Water",
     },
     {
       title: "Food, Beverage & Flavoring",
       desc: "Standardized spice oils and oleoresins delivering authentic aromatic flavor profiles for food manufacturing, confectioneries, savory seasonings, and beverages.",
       image: "/images/industries/food_beverage_flavor.jpg",
-      icon: <Apple size={24} color="#D97706" />,
+      icon: <Apple size={24} color="#7C3AED" />,
       examples: "Cardamom, Black Pepper, Ginger, Clove, Cinnamon, Nutmeg Oleoresins",
     },
     {
       title: "Pharmaceutical & Healthcare",
       desc: "High-purity botanical extracts and therapeutic-grade distillates complying with rigorous international pharmacopoeia standards and GMP documentation.",
       image: "/images/industries/pharmaceutical_healthcare.jpg",
-      icon: <HeartPulse size={24} color="#DC2626" />,
+      icon: <HeartPulse size={24} color="#7C3AED" />,
       examples: "Turmeric Extract, Eucalyptus, Peppermint, Frankincense CO2, Wintergreen",
     },
     {
       title: "Perfumery & Fine Fragrance",
       desc: "Solvent-extracted floral absolutes, rare attars, and exquisite aromatic compounds crafted for fine fragrance houses and luxury artisanal perfumers.",
       image: "/images/industries/perfumery_fine_fragrance.jpg",
-      icon: <Flower size={24} color="#8B5CF6" />,
+      icon: <Flower size={24} color="#7C3AED" />,
       examples: "Jasmine Sambac, Rose Damascena, Lotus Absolute, Champaca, Oudh",
     },
     {
       title: "Aromatherapy & Holistic Wellness",
       desc: "100% natural, unadulterated essential oils and custom therapeutic blends with dual GC-MS verification for wellness practitioners and diffusions.",
       image: "/images/industries/aromatherapy_wellness.jpg",
-      icon: <Leaf size={24} color="#059669" />,
+      icon: <Leaf size={24} color="#7C3AED" />,
       examples: "German Chamomile, Clary Sage, Bergamot, Rosemary, Vetiver",
     },
   ];
@@ -118,24 +119,6 @@ export default function AboutPage() {
 
         {/* Hero Section */}
         <div style={{ textAlign: "center", marginBottom: "48px" }}>
-          <div
-            className="liquid-glass-pill"
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "6px",
-              padding: "6px 18px",
-              fontSize: "0.8rem",
-              fontWeight: 800,
-              color: "#7C3AED",
-              marginBottom: "16px",
-              backgroundColor: "rgba(124, 58, 237, 0.1)",
-              border: "1px solid rgba(124, 58, 237, 0.25)",
-            }}
-          >
-            <Sparkles size={14} color="#7C3AED" /> Trusted Botanical Manufacturer &amp; B2B Exporter
-          </div>
-
           <h1
             style={{
               fontSize: "clamp(2.4rem, 4vw, 3.4rem)",
@@ -168,26 +151,7 @@ export default function AboutPage() {
               overflow: "hidden",
             }}
           >
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "16px", flexWrap: "wrap", gap: "10px" }}>
-              <span
-                className="liquid-glass-pill"
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "6px",
-                  padding: "6px 18px",
-                  fontSize: "0.78rem",
-                  fontWeight: 800,
-                  color: "#7C3AED",
-                  backgroundColor: "rgba(124, 58, 237, 0.1)",
-                  border: "1px solid rgba(124, 58, 237, 0.25)",
-                  textTransform: "uppercase",
-                  letterSpacing: "0.08em",
-                }}
-              >
-                <Building2 size={14} color="#7C3AED" /> Company Profile
-              </span>
-
+            <div style={{ display: "flex", justifyContent: "flex-end", alignItems: "center", marginBottom: "16px", flexWrap: "wrap", gap: "10px" }}>
               <Link
                 href="/about/profile"
                 style={{
@@ -243,28 +207,11 @@ export default function AboutPage() {
           </div>
         </section>
 
+        <SectionDivider />
+
         {/* Section 2: The Trust We've Built */}
-        <section id="trust-we-built" style={{ scrollMarginTop: "120px", marginBottom: "64px" }}>
+        <section id="trust-we-built" style={{ scrollMarginTop: "120px", marginBottom: "0" }}>
           <div style={{ textAlign: "center", marginBottom: "28px" }}>
-            <span
-              className="liquid-glass-pill"
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "6px",
-                padding: "6px 18px",
-                fontSize: "0.78rem",
-                fontWeight: 800,
-                color: "#059669",
-                marginBottom: "8px",
-                backgroundColor: "rgba(5, 150, 105, 0.1)",
-                border: "1px solid rgba(5, 150, 105, 0.25)",
-                textTransform: "uppercase",
-                letterSpacing: "0.08em",
-              }}
-            >
-              <Award size={14} color="#059669" /> The Trust We&apos;ve Built
-            </span>
             <h2
               style={{
                 fontSize: "clamp(1.8rem, 3vw, 2.3rem)",
@@ -298,23 +245,10 @@ export default function AboutPage() {
                 }}
               >
                 <div>
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "16px" }}>
+                  <div style={{ marginBottom: "16px" }}>
                     <div style={{ width: "48px", height: "48px", borderRadius: "14px", backgroundColor: "rgba(124, 58, 237, 0.08)", display: "flex", alignItems: "center", justifyContent: "center" }}>
                       {pillar.icon}
                     </div>
-                    <span
-                      style={{
-                        fontSize: "0.72rem",
-                        fontWeight: 800,
-                        padding: "4px 10px",
-                        borderRadius: "9999px",
-                        backgroundColor: pillar.badgeBg,
-                        color: pillar.badgeColor,
-                        border: `1px solid ${pillar.badgeColor}33`,
-                      }}
-                    >
-                      {pillar.badge}
-                    </span>
                   </div>
 
                   <h3 style={{ fontSize: "1.18rem", fontWeight: 700, color: "#180D26", marginBottom: "4px", lineHeight: 1.3 }}>
@@ -337,7 +271,7 @@ export default function AboutPage() {
               style={{
                 fontSize: "0.9rem",
                 fontWeight: 700,
-                color: "#059669",
+                color: "#7C3AED",
                 textDecoration: "none",
                 display: "inline-flex",
                 alignItems: "center",
@@ -349,28 +283,11 @@ export default function AboutPage() {
           </div>
         </section>
 
+        <SectionDivider />
+
         {/* Section 3: Why Us (Our Foundations) */}
-        <section id="why-us" style={{ scrollMarginTop: "120px", marginBottom: "64px" }}>
+        <section id="why-us" style={{ scrollMarginTop: "120px", marginBottom: "0" }}>
           <div style={{ textAlign: "center", marginBottom: "36px" }}>
-            <span
-              className="liquid-glass-pill"
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "6px",
-                padding: "6px 18px",
-                fontSize: "0.78rem",
-                fontWeight: 800,
-                color: "#7C3AED",
-                marginBottom: "8px",
-                backgroundColor: "rgba(124, 58, 237, 0.1)",
-                border: "1px solid rgba(124, 58, 237, 0.25)",
-                textTransform: "uppercase",
-                letterSpacing: "0.08em",
-              }}
-            >
-              <Sparkles size={14} color="#7C3AED" /> Why Us
-            </span>
             <h2 style={{ fontSize: "var(--font-size-h1)", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginTop: "4px" }}>
               Why Global Brands Choose Us
             </h2>
@@ -378,8 +295,8 @@ export default function AboutPage() {
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px", marginBottom: "24px" }}>
             <div className="liquid-glass" style={{ borderRadius: "24px", padding: "32px", border: "1px solid rgba(124, 58, 237, 0.18)" }}>
-              <div style={{ width: "52px", height: "52px", borderRadius: "14px", backgroundColor: "rgba(16, 185, 129, 0.14)", border: "1px solid rgba(16, 185, 129, 0.25)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "20px" }}>
-                <Leaf size={26} color="#059669" />
+              <div style={{ width: "52px", height: "52px", borderRadius: "14px", backgroundColor: "rgba(124, 58, 237, 0.1)", border: "1px solid rgba(124, 58, 237, 0.2)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "20px" }}>
+                <Leaf size={26} color="#7C3AED" />
               </div>
               <h3 style={{ fontSize: "var(--font-size-h3)", fontWeight: 700, color: "#180D26", marginBottom: "10px" }}>
                 Authentic Terroir Sourcing
@@ -401,10 +318,10 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="liquid-glass" style={{ borderRadius: "24px", padding: "32px", border: "1px solid rgba(245, 158, 11, 0.25)", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+            <div className="liquid-glass" style={{ borderRadius: "24px", padding: "32px", border: "1px solid rgba(124, 58, 237, 0.18)", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
               <div>
-                <div style={{ width: "52px", height: "52px", borderRadius: "14px", backgroundColor: "rgba(245, 158, 11, 0.14)", border: "1px solid rgba(245, 158, 11, 0.25)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "20px" }}>
-                  <Globe size={26} color="#D97706" />
+                <div style={{ width: "52px", height: "52px", borderRadius: "14px", backgroundColor: "rgba(124, 58, 237, 0.1)", border: "1px solid rgba(124, 58, 237, 0.2)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "20px" }}>
+                  <Globe size={26} color="#7C3AED" />
                 </div>
                 <h3 style={{ fontSize: "var(--font-size-h3)", fontWeight: 700, color: "#180D26", marginBottom: "10px" }}>
                   Global Export Compliance
@@ -434,29 +351,11 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Section 4: Industries We Serve */}
-        <section id="industries-we-serve" style={{ scrollMarginTop: "120px", marginBottom: "64px" }}>
-          <div style={{ textAlign: "center", marginBottom: "40px" }}>
-            <span
-              className="liquid-glass-pill"
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "6px",
-                padding: "6px 18px",
-                fontSize: "0.78rem",
-                fontWeight: 800,
-                color: "#7C3AED",
-                marginBottom: "12px",
-                backgroundColor: "rgba(124, 58, 237, 0.1)",
-                border: "1px solid rgba(124, 58, 237, 0.25)",
-                textTransform: "uppercase",
-                letterSpacing: "0.08em",
-              }}
-            >
-              <Building2 size={14} color="#7C3AED" /> B2B Sector Expertise
-            </span>
+        <SectionDivider />
 
+        {/* Section 4: Industries We Serve */}
+        <section id="industries-we-serve" style={{ scrollMarginTop: "120px", marginBottom: "0" }}>
+          <div style={{ textAlign: "center", marginBottom: "40px" }}>
             <h2
               style={{
                 fontSize: "clamp(1.9rem, 3.5vw, 2.5rem)",
@@ -557,13 +456,10 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Section 5: The Countries We Serve - Interactive Dotted Global Presence Map */}
-        <section id="countries-we-serve" style={{ scrollMarginTop: "120px", marginBottom: "64px" }}>
-          <GlobalPresenceMap />
-        </section>
+        <SectionDivider />
 
         {/* Section 6: How to Order & Ordering Guidelines */}
-        <section id="how-to-order" style={{ scrollMarginTop: "120px", marginBottom: "64px" }}>
+        <section id="how-to-order" style={{ scrollMarginTop: "120px", marginBottom: "0" }}>
           <div
             className="liquid-glass-elevated"
             style={{
@@ -575,10 +471,7 @@ export default function AboutPage() {
             }}
           >
             <div style={{ textAlign: "center", maxWidth: "780px", margin: "0 auto 36px" }}>
-              <span style={{ fontSize: "0.75rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase", letterSpacing: "0.12em" }}>
-                Ordering Guidelines &amp; Direct Assistance
-              </span>
-              <h2 style={{ fontSize: "var(--font-size-h1)", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginTop: "6px" }}>
+              <h2 style={{ fontSize: "var(--font-size-h1)", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginTop: "0" }}>
                 How to Order
               </h2>
               <p style={{ color: "#5B486E", fontSize: "1rem", lineHeight: 1.7, marginTop: "12px" }}>
@@ -586,19 +479,19 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "20px", marginBottom: "32px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))", gap: "20px", marginBottom: "32px" }}>
               
               {/* Step 1: Send Enquiry */}
-              <div style={{ backgroundColor: "#FCFAF6", borderRadius: "20px", padding: "26px", border: "1px solid rgba(124, 58, 237, 0.16)" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "12px" }}>
-                  <div style={{ width: "42px", height: "42px", borderRadius: "12px", backgroundColor: "rgba(124, 58, 237, 0.1)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                    <Mail size={20} color="#7C3AED" />
+              <div style={{ backgroundColor: "#FCFAF6", borderRadius: "20px", padding: "24px 22px", border: "1px solid rgba(124, 58, 237, 0.16)", display: "flex", flexDirection: "column" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", marginBottom: "14px" }}>
+                  <div style={{ width: "40px", height: "40px", borderRadius: "12px", backgroundColor: "rgba(124, 58, 237, 0.1)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, marginTop: "2px" }}>
+                    <Mail size={19} color="#7C3AED" />
                   </div>
-                  <div>
-                    <h3 style={{ fontSize: "1.05rem", fontWeight: 700, color: "#180D26", margin: 0 }}>
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <h3 style={{ fontSize: "0.98rem", fontWeight: 700, color: "#180D26", margin: "0 0 3px 0", lineHeight: 1.3, letterSpacing: "-0.01em" }}>
                       1. Submit Enquiry
                     </h3>
-                    <span style={{ fontSize: "0.78rem", color: "#7C3AED", fontWeight: 700 }}>
+                    <span style={{ fontSize: "0.78rem", color: "#7C3AED", fontWeight: 700, display: "block" }}>
                       Online Request Form
                     </span>
                   </div>
@@ -609,16 +502,16 @@ export default function AboutPage() {
               </div>
 
               {/* Step 2: Quotation & Technical Verification */}
-              <div style={{ backgroundColor: "#FCFAF6", borderRadius: "20px", padding: "26px", border: "1px solid rgba(16, 185, 129, 0.25)" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "12px" }}>
-                  <div style={{ width: "42px", height: "42px", borderRadius: "12px", backgroundColor: "rgba(16, 185, 129, 0.12)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                    <Clock size={20} color="#059669" />
+              <div style={{ backgroundColor: "#FCFAF6", borderRadius: "20px", padding: "24px 22px", border: "1px solid rgba(124, 58, 237, 0.16)", display: "flex", flexDirection: "column" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", marginBottom: "14px" }}>
+                  <div style={{ width: "40px", height: "40px", borderRadius: "12px", backgroundColor: "rgba(124, 58, 237, 0.08)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, marginTop: "2px" }}>
+                    <Clock size={19} color="#7C3AED" />
                   </div>
-                  <div>
-                    <h3 style={{ fontSize: "1.05rem", fontWeight: 700, color: "#180D26", margin: 0 }}>
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <h3 style={{ fontSize: "0.98rem", fontWeight: 700, color: "#180D26", margin: "0 0 3px 0", lineHeight: 1.3, letterSpacing: "-0.01em" }}>
                       2. Quotation &amp; Verification
                     </h3>
-                    <span style={{ fontSize: "0.78rem", color: "#059669", fontWeight: 700 }}>
+                    <span style={{ fontSize: "0.78rem", color: "#7C3AED", fontWeight: 700, display: "block" }}>
                       Pricing &amp; CoA Dossiers
                     </span>
                   </div>
@@ -629,16 +522,16 @@ export default function AboutPage() {
               </div>
 
               {/* Step 3: Confirmation & 48-Hour Dispatch */}
-              <div style={{ backgroundColor: "#FCFAF6", borderRadius: "20px", padding: "26px", border: "1px solid rgba(217, 119, 6, 0.2)" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "12px" }}>
-                  <div style={{ width: "42px", height: "42px", borderRadius: "12px", backgroundColor: "rgba(217, 119, 6, 0.12)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                    <CheckCircle2 size={20} color="#D97706" />
+              <div style={{ backgroundColor: "#FCFAF6", borderRadius: "20px", padding: "24px 22px", border: "1px solid rgba(124, 58, 237, 0.16)", display: "flex", flexDirection: "column" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", marginBottom: "14px" }}>
+                  <div style={{ width: "40px", height: "40px", borderRadius: "12px", backgroundColor: "rgba(124, 58, 237, 0.08)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, marginTop: "2px" }}>
+                    <CheckCircle2 size={19} color="#7C3AED" />
                   </div>
-                  <div>
-                    <h3 style={{ fontSize: "1.05rem", fontWeight: 700, color: "#180D26", margin: 0 }}>
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <h3 style={{ fontSize: "0.98rem", fontWeight: 700, color: "#180D26", margin: "0 0 3px 0", lineHeight: 1.3, letterSpacing: "-0.01em" }}>
                       3. Confirmation &amp; Dispatch
                     </h3>
-                    <span style={{ fontSize: "0.78rem", color: "#D97706", fontWeight: 700 }}>
+                    <span style={{ fontSize: "0.78rem", color: "#7C3AED", fontWeight: 700, display: "block" }}>
                       ⚡ 48-Hour Order Dispatch
                     </span>
                   </div>
@@ -651,7 +544,7 @@ export default function AboutPage() {
 
             <div style={{ textAlign: "center" }}>
               <Link
-                href="/about/how-to-order"
+                href="/about/why-us"
                 style={{
                   fontSize: "0.9rem",
                   fontWeight: 700,
@@ -668,7 +561,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-
+        <SectionDivider />
 
         {/* CTA Banner */}
         <div

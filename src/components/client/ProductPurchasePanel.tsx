@@ -67,34 +67,7 @@ export function ProductPurchasePanel({ product, onOpenQuote }: ProductPurchasePa
             {categoryLabel} {product.subCategory ? `· ${product.subCategory}` : ""}
           </span>
 
-          {product.signatureColor && (
-            <span
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "5px",
-                fontSize: "0.72rem",
-                fontWeight: 700,
-                color: "#4B3D60",
-                backgroundColor: "rgba(255, 255, 255, 0.85)",
-                border: "1px solid rgba(124, 58, 237, 0.18)",
-                padding: "3px 10px",
-                borderRadius: "9999px",
-              }}
-              title="Botanical Signature Color"
-            >
-              <span
-                style={{
-                  width: "8px",
-                  height: "8px",
-                  borderRadius: "50%",
-                  backgroundColor: product.signatureColor,
-                  display: "inline-block",
-                }}
-              />
-              {product.signatureColor}
-            </span>
-          )}
+
         </div>
       </div>
 
@@ -119,11 +92,6 @@ export function ProductPurchasePanel({ product, onOpenQuote }: ProductPurchasePa
         </div>
       )}
 
-      {/* Short Spec line */}
-      <div style={{ fontSize: "0.875rem", color: "#180D26", backgroundColor: "rgba(124, 58, 237, 0.08)", border: "1px solid rgba(124, 58, 237, 0.15)", padding: "10px 16px", borderRadius: "12px", marginBottom: "16px", fontWeight: 600 }}>
-        {product.shortSpec}
-      </div>
-
 
 
       {/* Divider */}
@@ -131,9 +99,8 @@ export function ProductPurchasePanel({ product, onOpenQuote }: ProductPurchasePa
 
       {/* Price & MOQ Block */}
       <div style={{ marginBottom: "24px" }}>
-        <div style={{ fontSize: "0.8rem", color: "#5B486E", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "4px" }}>
-          Approximate Wholesale Price
-        </div>
+        {/* Spacer preserving vertical alignment between Request Quote CTA button and product image */}
+        <div style={{ height: "22px" }} aria-hidden="true" />
         <div style={{ fontSize: "var(--font-size-h2)", fontWeight: 700, color: "#180D26", fontFamily: "var(--font-lora), Georgia, serif" }}>
           {product.priceDisplay || "Request Quote for Pricing"}
         </div>

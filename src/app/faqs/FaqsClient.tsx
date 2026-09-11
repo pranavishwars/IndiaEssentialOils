@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useMemo } from "react";
-import Link from "next/link";
 import {
   Search,
   ChevronDown,
@@ -11,10 +10,6 @@ import {
   ShieldCheck,
   Truck,
   Flame,
-  CheckCircle2,
-  ArrowRight,
-  Phone,
-  Mail,
 } from "lucide-react";
 
 export interface FAQItem {
@@ -340,21 +335,7 @@ export function FaqsClient() {
                   }}
                   aria-expanded={isExpanded}
                 >
-                  <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-                    <span
-                      style={{
-                        fontSize: "0.72rem",
-                        fontWeight: 800,
-                        padding: "3px 10px",
-                        borderRadius: "9999px",
-                        backgroundColor: "rgba(124, 58, 237, 0.08)",
-                        color: "#7C3AED",
-                        textTransform: "uppercase",
-                        letterSpacing: "0.04em",
-                      }}
-                    >
-                      {faq.category}
-                    </span>
+                  <div style={{ display: "flex", alignItems: "center", flex: 1 }}>
                     <h3
                       style={{
                         fontSize: "1.05rem",
@@ -401,31 +382,10 @@ export function FaqsClient() {
                         color: "#4A3E56",
                         lineHeight: 1.7,
                         margin: 0,
-                        marginBottom: faq.highlight ? "14px" : "0",
                       }}
                     >
                       {faq.answer}
                     </p>
-
-                    {faq.highlight && (
-                      <div
-                        style={{
-                          display: "inline-flex",
-                          alignItems: "center",
-                          gap: "6px",
-                          padding: "4px 12px",
-                          borderRadius: "8px",
-                          backgroundColor: "rgba(16, 185, 129, 0.08)",
-                          border: "1px solid rgba(16, 185, 129, 0.25)",
-                          color: "#059669",
-                          fontSize: "0.78rem",
-                          fontWeight: 700,
-                        }}
-                      >
-                        <CheckCircle2 size={14} color="#059669" />
-                        <span>{faq.highlight}</span>
-                      </div>
-                    )}
                   </div>
                 )}
               </div>
@@ -434,88 +394,6 @@ export function FaqsClient() {
         )}
       </div>
 
-      {/* Commercial Support CTA Card */}
-      <div
-        className="liquid-glass-elevated"
-        style={{
-          borderRadius: "28px",
-          padding: "40px",
-          background: "linear-gradient(135deg, #2A1744 0%, #180D26 100%)",
-          color: "white",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          flexWrap: "wrap",
-          gap: "28px",
-          boxShadow: "0 16px 48px rgba(24, 13, 38, 0.3)",
-          border: "1px solid rgba(255, 255, 255, 0.15)",
-        }}
-      >
-        <div style={{ maxWidth: "580px" }}>
-          <span
-            style={{
-              display: "inline-block",
-              padding: "4px 12px",
-              borderRadius: "9999px",
-              backgroundColor: "rgba(139, 92, 246, 0.25)",
-              border: "1px solid rgba(139, 92, 246, 0.4)",
-              color: "#C4B5FD",
-              fontSize: "0.75rem",
-              fontWeight: 700,
-              textTransform: "uppercase",
-              letterSpacing: "0.08em",
-              marginBottom: "12px",
-            }}
-          >
-            Direct Commercial Assistance
-          </span>
-          <h2 style={{ fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "white", lineHeight: 1.25, margin: "0 0 10px 0" }}>
-            Have a Specific Formulation or Volume Inquiry?
-          </h2>
-          <p style={{ color: "rgba(255, 255, 255, 0.8)", fontSize: "0.95rem", lineHeight: 1.6, margin: 0 }}>
-            Our commercial export desk and technical chemists are ready to review your botanical specifications and assist with customized quotations.
-          </p>
-        </div>
-
-        <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
-          <Link
-            href="/contact"
-            className="btn-vibrant-primary"
-            style={{
-              padding: "14px 28px",
-              borderRadius: "9999px",
-              fontWeight: 700,
-              fontSize: "0.92rem",
-              textDecoration: "none",
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "8px",
-              boxShadow: "0 6px 20px rgba(124, 58, 237, 0.45)",
-            }}
-          >
-            Contact Sales Desk <ArrowRight size={16} />
-          </Link>
-          <a
-            href="tel:+918043807715"
-            style={{
-              padding: "14px 24px",
-              borderRadius: "9999px",
-              fontWeight: 600,
-              fontSize: "0.92rem",
-              textDecoration: "none",
-              color: "white",
-              backgroundColor: "rgba(255, 255, 255, 0.12)",
-              backdropFilter: "blur(10px)",
-              border: "1px solid rgba(255, 255, 255, 0.22)",
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "6px",
-            }}
-          >
-            <Phone size={16} /> (+91 8043807715)
-          </a>
-        </div>
-      </div>
     </div>
   );
 }

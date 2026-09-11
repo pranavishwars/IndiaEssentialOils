@@ -210,7 +210,7 @@ const CATEGORY_DEFINITIONS: CategoryDefinition[] = [
       "essential oil", "essential oils", "steam distilled oils", "distilled oils", "what essential oils",
       "pure essential oils", "pure essential oil", "volatile oils", "essential oil catalog", "list of essential oils"
     ],
-    description: "We manufacture and export 86 pharmacopoeial-grade, 100% pure steam-distilled essential oils. Sourced directly from premier Indian growing belts (Kashmir lavender, Nilgiri eucalyptus, Kerala spices) and distilled without synthetic diluents, phthalates, or fillers.",
+    description: "We manufacture and export 86 pharmacopoeial-grade, 100% pure steam-distilled essential oils, batch-verified via GC-MS and distilled without synthetic diluents, phthalates, or fillers.",
     totalCount: 86,
     highlightedSlugs: ["lavender-oil", "peppermint-oil", "tea-tree-oil", "eucalyptus-oil", "rosemary-oil", "frankincense-oil", "bergamot-oil", "lemongrass-oil"],
     features: ["100% Steam-Distilled", "Dual GC-MS Tested", "IP / BP / USP Pharmacopoeial Grade", "Available in 1kg to 200kg Drums"],
@@ -248,7 +248,7 @@ const CATEGORY_DEFINITIONS: CategoryDefinition[] = [
     patterns: [
       "spice oil", "spice oils", "culinary oil", "culinary oils", "condiment oils", "food spice oils", "spice distillates"
     ],
-    description: "India is the spice capital of the world. Our 39 pure spice oils are distilled from fresh, hand-selected spices from Kerala and southern India, yielding concentrated, highly pungent volatile oils for food processing, pharmaceuticals, confectionery, and perfumery.",
+    description: "Our 39 pure spice oils are distilled from fresh, hand-selected spices with full batch GC-MS verification, yielding concentrated, highly pungent volatile oils for food processing, pharmaceuticals, confectionery, and perfumery.",
     totalCount: 39,
     highlightedSlugs: ["cardamom-oil", "black-pepper-oil", "clove-bud-oil", "cinnamon-bark-oil", "ginger-oil", "nutmeg-oil", "cumin-oil"],
     features: ["Distilled from Prime Spices", "High Volatile Oil Potency", "ISO 9001:2015 & GMP Certified", "UN-Certified Hazardous Export Packing"],
@@ -982,7 +982,7 @@ India Essential Oils exports bulk botanical oils across major international regi
 For your specific destination, contact our export desk for country-level import duty information and documentation requirements.`,
     actionLink: {
       label: "Read About Our Global Export Destinations",
-      href: "/about/countries-we-serve",
+      href: "/about/why-us",
     },
   };
 }
@@ -1346,7 +1346,7 @@ function checkDownloadCatalogQuery(normalized: string): FaqEntry | null {
     patterns: downloadPatterns,
     answer: `📑 **Official 2026 Botanical Wholesale Catalog (PDF):**
 
-You can download our official 44-page September 2026 Wholesale Catalog (PDF) containing all 273+ verified pure botanical extracts, botanical names, processing methods, harvest origins, MOQs, and technical dossiers.`,
+You can download our official 44-page September 2026 Wholesale Catalog (PDF) containing all 273+ verified pure botanical extracts, botanical names, processing methods, specifications, MOQs, and technical dossiers.`,
     actionLink: {
       label: "Download Official 2026 Catalog (PDF)",
       href: "/api/catalog/download",

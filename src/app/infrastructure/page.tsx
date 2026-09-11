@@ -4,7 +4,6 @@ import Link from "next/link";
 import { Metadata } from "next";
 import { Footer } from "@/components/server/Footer";
 import {
-  Factory,
   Flame,
   Droplets,
   TreePine,
@@ -47,13 +46,13 @@ export default function InfrastructurePage() {
 
   const facilities = [
     {
-      title: "1. Multi-Stage Steam Distillation Stills",
+      title: "1. Multi-Boiler Steam Distillation Bay",
       subtitle: "Low-Pressure Hydro-Thermal Distillation",
       desc: "Our primary processing bays feature computer-regulated low-pressure steam injection systems linked to 316-grade stainless steel stills. Low vapor velocity prevents thermal degradation of volatile monoterpenes and sesquiterpenes, yielding uncharred, aromatic profiles.",
       image: "/images/infrastructure/steam_distillation.jpg",
       icon: <Flame size={24} color="#7C3AED" />,
-      bg: "rgba(124, 58, 237, 0.12)",
-      border: "rgba(124, 58, 237, 0.25)",
+      bg: "rgba(124, 58, 237, 0.08)",
+      border: "rgba(124, 58, 237, 0.2)",
       features: [
         "Vacuum-assisted fractional distillation columns",
         "Dual condenser chilling loops for maximum volatile capture",
@@ -65,9 +64,9 @@ export default function InfrastructurePage() {
       subtitle: "Solvent-Free Virgin Seed & Kernel Extraction",
       desc: "Dedicated virgin cold-pressing expellers extract nutrient-dense carrier oils from seeds, nuts, and kernels without external heat or petrochemical solvents. Temperatures are maintained strictly below 45°C to preserve natural tocopherols, essential fatty acids, and active sterols.",
       image: "/images/infrastructure/cold_press.jpg",
-      icon: <Droplets size={24} color="#059669" />,
-      bg: "rgba(16, 185, 129, 0.12)",
-      border: "rgba(16, 185, 129, 0.25)",
+      icon: <Droplets size={24} color="#7C3AED" />,
+      bg: "rgba(124, 58, 237, 0.08)",
+      border: "rgba(124, 58, 237, 0.2)",
       features: [
         "Heavy-duty hydraulic and screw expeller press bays",
         "Multi-stage fine particulate sedimentation and polishing",
@@ -79,9 +78,9 @@ export default function InfrastructurePage() {
       subtitle: "Pre-Distillation Harvest Optimization",
       desc: "Raw botanical foliage, roots, barks, and seeds are conditioned immediately post-harvest. Solar-assisted hygienic drying tunnels, multi-tier cleaning screens, and cryogenic pulverizers ensure optimal surface area exposure for homogenous steam percolation.",
       image: "/images/infrastructure/botanical_conditioning.jpg",
-      icon: <TreePine size={24} color="#D97706" />,
-      bg: "rgba(245, 158, 11, 0.12)",
-      border: "rgba(245, 158, 11, 0.25)",
+      icon: <TreePine size={24} color="#7C3AED" />,
+      bg: "rgba(124, 58, 237, 0.08)",
+      border: "rgba(124, 58, 237, 0.2)",
       features: [
         "Vibratory foreign-matter destoning and air-sorting",
         "Uniform size-reduction milling without friction heating",
@@ -93,9 +92,9 @@ export default function InfrastructurePage() {
       subtitle: "Sub-Zero Thermal & Solvent-Free Bioactive Recovery",
       desc: "Our high-pressure supercritical CO₂ extraction bays operate at physiological temperatures (31.1°C), recovering pristine volatile monoterpenes, top-note aromatics, and lipophilic spice fractions with zero petrochemical solvents or thermal scorching.",
       image: "/images/infrastructure/co2_supercritical.jpg",
-      icon: <Wind size={24} color="#0284C7" />,
-      bg: "rgba(2, 132, 199, 0.12)",
-      border: "rgba(2, 132, 199, 0.25)",
+      icon: <Wind size={24} color="#7C3AED" />,
+      bg: "rgba(124, 58, 237, 0.08)",
+      border: "rgba(124, 58, 237, 0.2)",
       features: [
         "Dual-vessel high-pressure extraction autoclaves (up to 500 bar)",
         "Closed-loop 99.5% food-grade CO₂ solvent recycling system",
@@ -111,24 +110,6 @@ export default function InfrastructurePage() {
 
         {/* Hero Section */}
         <section style={{ textAlign: "center", marginBottom: "56px" }}>
-          <div
-            className="liquid-glass-pill"
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "6px",
-              padding: "6px 18px",
-              fontSize: "0.8rem",
-              fontWeight: 800,
-              color: "#7C3AED",
-              marginBottom: "16px",
-              backgroundColor: "rgba(124, 58, 237, 0.1)",
-              border: "1px solid rgba(124, 58, 237, 0.25)",
-            }}
-          >
-            <Factory size={14} color="#7C3AED" /> Manufacturing &amp; Distillation Infrastructure
-          </div>
-
           <h1
             style={{
               fontSize: "clamp(2.4rem, 4.5vw, 3.6rem)",
@@ -209,9 +190,6 @@ export default function InfrastructurePage() {
         {/* Four Key Infrastructure Units — 2x2 Grid */}
         <section style={{ marginBottom: "80px" }}>
           <div style={{ textAlign: "center", marginBottom: "48px" }}>
-            <span style={{ fontSize: "0.75rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase", letterSpacing: "0.12em" }}>
-              Core Technical Capabilities
-            </span>
             <h2 style={{ fontSize: "var(--font-size-h1)", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginTop: "6px" }}>
               Engineered for Botanical Purity
             </h2>
@@ -310,7 +288,7 @@ export default function InfrastructurePage() {
                   <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
                     {fac.features.map((feat, fIdx) => (
                       <li key={fIdx} style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "0.85rem", color: "#2E1A47", fontWeight: 500 }}>
-                        <CheckCircle2 size={15} color="#059669" style={{ flexShrink: 0 }} />
+                        <CheckCircle2 size={15} color="#7C3AED" style={{ flexShrink: 0 }} />
                         <span>{feat}</span>
                       </li>
                     ))}
@@ -385,89 +363,7 @@ export default function InfrastructurePage() {
         </section>
 
 
-        {/* Commercial Inquiries CTA */}
-        <section
-          className="liquid-glass-elevated"
-          style={{
-            borderRadius: "32px",
-            padding: "48px",
-            background: "linear-gradient(135deg, #2A1744 0%, #180D26 100%)",
-            color: "white",
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            flexWrap: "wrap",
-            gap: "32px",
-            boxShadow: "0 20px 60px rgba(24, 13, 38, 0.35)",
-            border: "1px solid rgba(255, 255, 255, 0.15)",
-          }}
-        >
-          <div style={{ maxWidth: "640px" }}>
-            <span
-              style={{
-                display: "inline-block",
-                padding: "6px 14px",
-                borderRadius: "9999px",
-                backgroundColor: "rgba(139, 92, 246, 0.25)",
-                border: "1px solid rgba(139, 92, 246, 0.4)",
-                color: "#C4B5FD",
-                fontSize: "0.75rem",
-                fontWeight: 700,
-                letterSpacing: "0.08em",
-                textTransform: "uppercase",
-                marginBottom: "16px",
-              }}
-            >
-              Wholesale Supply Inquiries
-            </span>
-            <h2 style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.4rem)", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "white", lineHeight: 1.2, marginBottom: "12px" }}>
-              Request Wholesale Pricing &amp; Commercial Quotation
-            </h2>
-            <p style={{ color: "rgba(255, 255, 255, 0.82)", fontSize: "1rem", lineHeight: 1.6, margin: 0 }}>
-              Connect directly with our commercial desk for wholesale pricing, custom batch distillations, and bulk export container specifications.
-            </p>
-          </div>
 
-          <div style={{ display: "flex", gap: "14px", flexWrap: "wrap" }}>
-            <Link
-              href="/contact"
-              className="btn-vibrant-primary"
-              style={{
-                padding: "16px 32px",
-                borderRadius: "9999px",
-                fontWeight: 700,
-                fontSize: "1rem",
-                textDecoration: "none",
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "8px",
-                boxShadow: "0 8px 24px rgba(124, 58, 237, 0.5)",
-              }}
-            >
-              Contact Us <ArrowRight size={18} />
-            </Link>
-            <a
-              href="tel:+918043807715"
-              style={{
-                padding: "16px 28px",
-                borderRadius: "9999px",
-                fontWeight: 600,
-                fontSize: "1rem",
-                textDecoration: "none",
-                color: "white",
-                backgroundColor: "rgba(255, 255, 255, 0.12)",
-                backdropFilter: "blur(12px)",
-                border: "1px solid rgba(255, 255, 255, 0.25)",
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "8px",
-                transition: "background 0.2s",
-              }}
-            >
-              Call (+91 8043807715)
-            </a>
-          </div>
-        </section>
 
       </main>
 

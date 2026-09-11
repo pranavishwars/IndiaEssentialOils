@@ -7,6 +7,65 @@ import { Search, Filter, ArrowRight, Loader2 } from "lucide-react";
 import { Product, getCategorySlug, SLUG_TO_CATEGORY } from "@/lib/products-store";
 import { DownloadCatalogButton } from "@/components/client/DownloadCatalogButton";
 
+interface CategoryMeta {
+  title: string;
+  description: string;
+  slug: string;
+}
+
+export const CATEGORY_DETAILS: Record<string, CategoryMeta> = {
+  ALL: {
+    title: "Botanical Catalog & Search",
+    description: "Explore pure, lab-tested botanical extracts across 8 specialized categories with comprehensive chemical analysis and GC-MS documentation.",
+    slug: "",
+  },
+  CO2_OIL: {
+    title: "CO2 Oils (Extracts)",
+    description: "Supercritical fluid CO2 extracted botanical oils capturing full-spectrum, pristine aromatic profiles without thermal degradation or solvent residue.",
+    slug: "co2-oils",
+  },
+  ESSENTIAL_OIL: {
+    title: "Essential Oils",
+    description: "Pure steam distilled and cold pressed essential oils. Available in bulk from 1kg to 200kg drums.",
+    slug: "essential-oils",
+  },
+  SPICE_OIL: {
+    title: "Spice Oils",
+    description: "Authentic spice essential oils steam distilled from the finest quality spices with dual GC-MS batch verification.",
+    slug: "spice-oils",
+  },
+  CARRIER_OIL: {
+    title: "Carrier & Base Oils",
+    description: "Premium cold-pressed carrier oils used for diluting essential oils in aromatherapy, massage therapy, and cosmetic formulations.",
+    slug: "carrier-oils",
+  },
+  FLORAL_ABSOLUTE: {
+    title: "Floral Absolutes",
+    description: "Solvent-extracted floral absolutes capturing the true fragrance of flowers, used in high-end perfumery and luxury cosmetics.",
+    slug: "floral-absolutes",
+  },
+  FLORAL_WATER: {
+    title: "Floral Waters (Hydrosols)",
+    description: "Pure hydrosols and floral waters — the water-based byproduct of steam distillation, rich in therapeutic compounds.",
+    slug: "floral-waters",
+  },
+  OLEORESIN: {
+    title: "Oleoresins",
+    description: "Concentrated plant extracts combining essential oil and resinous matter, widely used in food flavouring, pharmaceuticals, and industrial applications.",
+    slug: "oleoresins",
+  },
+  ORGANIC_OIL: {
+    title: "Organic Oils",
+    description: "Certified organic essential and carrier oils grown without synthetic pesticides or fertilizers. USDA and EU organic certified.",
+    slug: "organic-oils",
+  },
+  AYURVEDIC: {
+    title: "Ayurvedic Oils",
+    description: "Traditional Indian Ayurvedic herbal oils formulated following ancient Ayurvedic texts, used in holistic wellness and therapeutic massage.",
+    slug: "ayurvedic-oils",
+  },
+};
+
 const CATEGORIES = [
   { id: "ALL", label: "All Categories" },
   { id: "CO2_OIL", label: "CO2 Oils (Extracts)" },
@@ -25,6 +84,7 @@ interface CatalogViewProps {
 }
 
 export function CatalogView({ preselectedCategory }: CatalogViewProps = {}) {
+  const router = useRouter();
   const searchParams = useSearchParams();
   const initialQuery = searchParams.get("q") || "";
   const rawInitialCat = searchParams.get("category") || "ALL";
@@ -43,7 +103,7 @@ export function CatalogView({ preselectedCategory }: CatalogViewProps = {}) {
   const [products, setProducts] = useState<Product[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  // Sync with searchParams on URL change
+  // Sync with searchParams or preselectedCategory on change
   useEffect(() => {
     if (searchParams.get("q") !== null) {
       setQuery(searchParams.get("q") || "");
@@ -51,11 +111,16 @@ export function CatalogView({ preselectedCategory }: CatalogViewProps = {}) {
     if (searchParams.get("category")) {
       const rawCat = searchParams.get("category") || "ALL";
       setActiveCategory(SLUG_TO_CATEGORY[rawCat] || rawCat);
+    } else if (preselectedCategory) {
+      const resolved = SLUG_TO_CATEGORY[preselectedCategory] || preselectedCategory;
+      setActiveCategory(resolved);
+    } else {
+      setActiveCategory("ALL");
     }
     if (searchParams.get("sort")) {
       setSortOption(searchParams.get("sort") || "relevance");
     }
-  }, [searchParams]);
+  }, [searchParams, preselectedCategory]);
 
   // Client-side cache for instant 0ms category switching
   const cacheRef = React.useRef<Map<string, Product[]>>(new Map());
@@ -118,8 +183,6 @@ export function CatalogView({ preselectedCategory }: CatalogViewProps = {}) {
     };
   }, [query, activeCategory, sortOption]);
 
-  const router = useRouter();
-
   const handleProductView = (product: Product) => {
     fetch("/api/events", {
       method: "POST",
@@ -129,36 +192,56 @@ export function CatalogView({ preselectedCategory }: CatalogViewProps = {}) {
     router.push(`/products/${getCategorySlug(product.category)}/${product.slug}`);
   };
 
-  return (
-    <div style={{ display: "grid", gridTemplateColumns: "clamp(220px, 22%, 280px) 1fr", gap: "36px", alignItems: "start" }} className="catalog-layout">
-      {/* Left Sidebar Filter — Vibrant Liquid Glass */}
-      <aside
-        style={{
-          position: "sticky",
-          top: "96px",
-          backgroundColor: "rgba(255, 255, 255, 0.74)",
-          backdropFilter: "blur(24px) saturate(160%)",
-          WebkitBackdropFilter: "blur(24px) saturate(160%)",
-          border: "1px solid rgba(124, 58, 237, 0.2)",
-          borderRadius: "24px",
-          padding: "24px 16px",
-          boxShadow: "0 8px 30px rgba(24, 13, 38, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.8)",
-        }}
-      >
-        <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "18px", color: "#180D26", paddingLeft: "6px" }}>
-          <Filter size={18} color="#7C3AED" />
-          <h3 style={{ fontSize: "1.1rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", margin: 0, color: "#180D26" }}>
-            Categories
-          </h3>
-        </div>
+  const handleCategorySelect = (categoryId: string) => {
+    setActiveCategory(categoryId);
+    const meta = CATEGORY_DETAILS[categoryId];
+    const targetUrl = meta && meta.slug ? `/products/${meta.slug}` : "/products";
+    router.push(targetUrl, { scroll: false });
+  };
 
-        <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
-          {CATEGORIES.map(cat => {
-            const isActive = activeCategory === cat.id;
-            return (
-              <button
-                key={cat.id}
-                onClick={() => setActiveCategory(cat.id)}
+  const currentMeta = CATEGORY_DETAILS[activeCategory] || CATEGORY_DETAILS.ALL;
+
+  return (
+    <div>
+      {/* Dynamic Category Header */}
+      <div style={{ marginBottom: "40px" }}>
+        <h1 style={{ fontSize: "3rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginBottom: "12px" }}>
+          {currentMeta.title}
+        </h1>
+        <p style={{ fontSize: "1.05rem", color: "#5B486E", maxWidth: "680px", lineHeight: 1.7 }}>
+          {currentMeta.description}
+        </p>
+      </div>
+
+      <div style={{ display: "grid", gridTemplateColumns: "clamp(220px, 22%, 280px) 1fr", gap: "36px", alignItems: "start" }} className="catalog-layout">
+        {/* Left Sidebar Filter — Vibrant Liquid Glass */}
+        <aside
+          style={{
+            position: "sticky",
+            top: "96px",
+            backgroundColor: "rgba(255, 255, 255, 0.74)",
+            backdropFilter: "blur(24px) saturate(160%)",
+            WebkitBackdropFilter: "blur(24px) saturate(160%)",
+            border: "1px solid rgba(124, 58, 237, 0.2)",
+            borderRadius: "24px",
+            padding: "24px 16px",
+            boxShadow: "0 8px 30px rgba(24, 13, 38, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.8)",
+          }}
+        >
+          <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "18px", color: "#180D26", paddingLeft: "6px" }}>
+            <Filter size={18} color="#7C3AED" />
+            <h3 style={{ fontSize: "1.1rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", margin: 0, color: "#180D26" }}>
+              Categories
+            </h3>
+          </div>
+
+          <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
+            {CATEGORIES.map(cat => {
+              const isActive = activeCategory === cat.id;
+              return (
+                <button
+                  key={cat.id}
+                  onClick={() => handleCategorySelect(cat.id)}
                 style={{
                   width: "100%",
                   textAlign: "left",
@@ -438,7 +521,7 @@ export function CatalogView({ preselectedCategory }: CatalogViewProps = {}) {
             <button
               onClick={() => {
                 setQuery("");
-                setActiveCategory("ALL");
+                handleCategorySelect("ALL");
               }}
               style={{
                 background: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)",
@@ -457,6 +540,7 @@ export function CatalogView({ preselectedCategory }: CatalogViewProps = {}) {
           </div>
         )}
       </section>
+      </div>
     </div>
   );
 }

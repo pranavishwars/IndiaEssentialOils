@@ -7,12 +7,8 @@ import {
   ShieldCheck, 
   Activity, 
   TrendingUp, 
-  CheckCircle2, 
   ArrowRight,
-  ChevronRight,
-  Sparkles,
-  FlaskConical,
-  Building2
+  ChevronRight
 } from "lucide-react";
 
 export const metadata = {
@@ -26,37 +22,25 @@ export default function TrustWeBuiltPage() {
       title: "Established in the Industry",
       subtitle: "95% Buyer Retention & 90% Repeat Orders",
       desc: "As a premier division of Mother Herbs Pvt. Ltd., we have built an enduring global reputation supplying 100% Pure & Natural Essential Oils and Oleoresins to corporate clients and international formulators worldwide. Our long-term partnerships are cemented by unwavering reliability and batch-to-batch consistency.",
-      icon: <Award size={24} color="#059669" />,
-      badge: "Industry Leader",
-      badgeColor: "#059669",
-      badgeBg: "rgba(5, 150, 105, 0.1)",
+      icon: <Award size={24} color="#7C3AED" />,
     },
     {
       title: "Dynamic in Nature",
       subtitle: "Advanced Extraction & Trained Technical Team",
       desc: "We operate on the solid foundation of the latest extraction technologies and state-of-the-art distillation equipment, supported by an agile team of highly qualified, well-trained chemists and process engineers capable of tailoring yields to strict international pharmacopoeias.",
       icon: <Activity size={24} color="#7C3AED" />,
-      badge: "Modern Facility",
-      badgeColor: "#7C3AED",
-      badgeBg: "rgba(124, 58, 237, 0.1)",
     },
     {
       title: "Adapting to Changing Markets",
       subtitle: "Continuous R&D & Custom Regional Cultivation",
       desc: "Our industrial R&D team strives daily for process up-gradation, product improvisation, and development of new botanical lines. We identify optimal micro-climates and promote customized cultivation in specified geographic areas as per customer and regulatory requirements.",
-      icon: <TrendingUp size={24} color="#0284C7" />,
-      badge: "Agile Sourcing",
-      badgeColor: "#0284C7",
-      badgeBg: "rgba(2, 132, 199, 0.1)",
+      icon: <TrendingUp size={24} color="#7C3AED" />,
     },
     {
       title: "Providing Uncompromising Quality",
       subtitle: "Farm-to-Factory Potency & Dual GC-MS Verification",
       desc: "We monitor raw materials from field to factory to protect active ingredient potency, guide farmers on approved eco-friendly agricultural practices, and verify every single lot with dual GC-MS chromatography and accredited ISO 9001:2015 / WHO-GMP certifications.",
-      icon: <ShieldCheck size={24} color="#D97706" />,
-      badge: "Pure & Certified",
-      badgeColor: "#D97706",
-      badgeBg: "rgba(217, 119, 6, 0.1)",
+      icon: <ShieldCheck size={24} color="#7C3AED" />,
     },
   ];
 
@@ -75,26 +59,6 @@ export default function TrustWeBuiltPage() {
 
         {/* Hero Header */}
         <div style={{ textAlign: "center", marginBottom: "40px" }}>
-          <div
-            className="liquid-glass-pill"
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "6px",
-              padding: "6px 18px",
-              fontSize: "0.8rem",
-              fontWeight: 800,
-              color: "#059669",
-              marginBottom: "16px",
-              backgroundColor: "rgba(5, 150, 105, 0.1)",
-              border: "1px solid rgba(5, 150, 105, 0.25)",
-              textTransform: "uppercase",
-              letterSpacing: "0.08em",
-            }}
-          >
-            <CheckCircle2 size={14} color="#059669" /> Proven Track Record &bull; Worldwide Delivery
-          </div>
-
           <h1
             style={{
               fontSize: "clamp(2.4rem, 4vw, 3.4rem)",
@@ -131,23 +95,10 @@ export default function TrustWeBuiltPage() {
               }}
             >
               <div>
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "16px" }}>
+                <div style={{ marginBottom: "16px" }}>
                   <div style={{ width: "48px", height: "48px", borderRadius: "14px", backgroundColor: "rgba(124, 58, 237, 0.08)", display: "flex", alignItems: "center", justifyContent: "center" }}>
                     {pillar.icon}
                   </div>
-                  <span
-                    style={{
-                      fontSize: "0.72rem",
-                      fontWeight: 800,
-                      padding: "4px 10px",
-                      borderRadius: "9999px",
-                      backgroundColor: pillar.badgeBg,
-                      color: pillar.badgeColor,
-                      border: `1px solid ${pillar.badgeColor}33`,
-                    }}
-                  >
-                    {pillar.badge}
-                  </span>
                 </div>
 
                 <h2 style={{ fontSize: "1.25rem", fontWeight: 700, color: "#180D26", marginBottom: "4px", lineHeight: 1.3 }}>
@@ -181,7 +132,7 @@ export default function TrustWeBuiltPage() {
             >
               <div
                 style={{
-                  fontSize: "3rem",
+                  fontSize: "2rem",
                   fontWeight: 800,
                   fontFamily: "var(--font-lora), Georgia, serif",
                   background: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)",
@@ -235,7 +186,7 @@ export default function TrustWeBuiltPage() {
                   textDecoration: "none",
                 }}
               >
-                <ShieldCheck size={16} color="#059669" />
+                <ShieldCheck size={16} color="#7C3AED" />
                 <span>{cert.name}</span>
               </Link>
             ))}
@@ -258,10 +209,7 @@ export default function TrustWeBuiltPage() {
           }}
         >
           <div>
-            <span style={{ fontSize: "0.8rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase" }}>
-              Explore Next
-            </span>
-            <h3 style={{ fontSize: "1.3rem", fontWeight: 700, color: "#180D26", margin: "4px 0 0 0" }}>
+            <h3 style={{ fontSize: "1.3rem", fontWeight: 700, color: "#180D26", margin: 0 }}>
               Why Us &bull; Terroir Sourcing &amp; GC-MS
             </h3>
           </div>

@@ -6,23 +6,23 @@ import { ScrollReveal } from "@/components/client/ScrollReveal";
 
 const features = [
   {
-    icon: <Sprout size={28} strokeWidth={2} color="#059669" />,
-    iconBg: "rgba(16, 185, 129, 0.14)",
-    iconBorder: "rgba(16, 185, 129, 0.25)",
+    icon: <Sprout size={28} strokeWidth={2} color="#7C3AED" />,
+    iconBg: "rgba(124, 58, 237, 0.1)",
+    iconBorder: "rgba(124, 58, 237, 0.2)",
     title: "Direct Steam Distillation",
     body: "Ethically harvested across regional farm networks and distilled in 316 stainless steel stills. 100% unadulterated botanical oil with zero synthetic fillers.",
   },
   {
     icon: <Microscope size={28} strokeWidth={2} color="#7C3AED" />,
-    iconBg: "rgba(124, 58, 237, 0.14)",
-    iconBorder: "rgba(124, 58, 237, 0.25)",
+    iconBg: "rgba(124, 58, 237, 0.1)",
+    iconBorder: "rgba(124, 58, 237, 0.2)",
     title: "GC-MS Batch Verification",
     body: "Every distillation run undergoes gas chromatography testing in our Delhi laboratory. Complete Certificate of Analysis (CoA) provided with every shipment.",
   },
   {
-    icon: <Package size={28} strokeWidth={2} color="#D97706" />,
-    iconBg: "rgba(245, 158, 11, 0.14)",
-    iconBorder: "rgba(245, 158, 11, 0.25)",
+    icon: <Package size={28} strokeWidth={2} color="#7C3AED" />,
+    iconBg: "rgba(124, 58, 237, 0.1)",
+    iconBorder: "rgba(124, 58, 237, 0.2)",
     title: "Wholesale Drum Logistics",
     body: "Export packaging in UN-certified epoxy-lined 25kg carboys and 200kg steel drums, serving institutional formulators and pharmaceutical clients worldwide.",
   },
@@ -109,7 +109,7 @@ export function GlassHeroButtons() {
           fontWeight: 700,
           fontSize: "clamp(0.9rem, 1.2vw, 1.02rem)",
           textDecoration: "none",
-          boxShadow: "0 8px 28px rgba(124, 58, 237, 0.65)",
+          boxShadow: "0 4px 14px rgba(24, 13, 38, 0.15)",
           display: "inline-flex",
           alignItems: "center",
           justifyContent: "center",
@@ -122,11 +122,11 @@ export function GlassHeroButtons() {
         }}
         onMouseEnter={(e) => {
           e.currentTarget.style.transform = "translateY(-2px)";
-          e.currentTarget.style.boxShadow = "0 12px 36px rgba(124, 58, 237, 0.85)";
+          e.currentTarget.style.boxShadow = "0 6px 20px rgba(24, 13, 38, 0.2)";
         }}
         onMouseLeave={(e) => {
           e.currentTarget.style.transform = "translateY(0)";
-          e.currentTarget.style.boxShadow = "0 8px 28px rgba(124, 58, 237, 0.65)";
+          e.currentTarget.style.boxShadow = "0 4px 14px rgba(24, 13, 38, 0.15)";
         }}
       >
         Explore Botanical Catalog

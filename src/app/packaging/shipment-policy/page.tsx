@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import { Footer } from "@/components/server/Footer";
 import { 
-  Truck, 
   Clock, 
   Plane, 
   ShieldCheck, 
@@ -23,8 +22,8 @@ export default function ShipmentPolicyPage() {
     {
       title: "1. Promptness in Service & 48-Hour Order Dispatch",
       desc: "Our specialty is promptness in service. We maintain substantial bulk stocks of regular products in our climate-controlled warehouse, which enables us to despatch standard orders within 48 hours of payment confirmation, unless custom packaging or urgent priority schedules apply.",
-      icon: <Clock size={24} color="#059669" />,
-      color: "#059669",
+      icon: <Clock size={24} color="#7C3AED" />,
+      color: "#7C3AED",
     },
     {
       title: "2. Heavy-Duty Master Carton & Pallet Packing",
@@ -35,8 +34,8 @@ export default function ShipmentPolicyPage() {
     {
       title: "3. Complete International Export Dossiers",
       desc: "Every export shipment is dispatched with an exhaustive documentation set: Commercial Invoice, Packing List, Certificate of Origin, Certificate of Analysis (CoA) with GC-MS report, Safety Data Sheet (MSDS/SDS), and Phytosanitary Certificate on buyer request.",
-      icon: <FileCheck2 size={24} color="#0284C7" />,
-      color: "#0284C7",
+      icon: <FileCheck2 size={24} color="#7C3AED" />,
+      color: "#7C3AED",
     },
   ];
 
@@ -55,26 +54,6 @@ export default function ShipmentPolicyPage() {
 
         {/* Hero Header */}
         <div style={{ textAlign: "center", marginBottom: "40px" }}>
-          <div
-            className="liquid-glass-pill"
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "6px",
-              padding: "6px 18px",
-              fontSize: "0.8rem",
-              fontWeight: 800,
-              color: "#7C3AED",
-              marginBottom: "16px",
-              backgroundColor: "rgba(124, 58, 237, 0.1)",
-              border: "1px solid rgba(124, 58, 237, 0.25)",
-              textTransform: "uppercase",
-              letterSpacing: "0.08em",
-            }}
-          >
-            <Truck size={14} color="#7C3AED" /> Global Logistics &bull; Fast Turnaround
-          </div>
-
           <h1
             style={{
               fontSize: "clamp(2.4rem, 4vw, 3.4rem)",
@@ -154,17 +133,14 @@ export default function ShipmentPolicyPage() {
           }}
         >
           <div>
-            <span style={{ fontSize: "0.8rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase" }}>
-              Explore Next
-            </span>
-            <h3 style={{ fontSize: "1.3rem", fontWeight: 700, color: "#180D26", margin: "4px 0 0 0" }}>
-              Packaging Sizes &bull; Export Drums &amp; Canisters
+            <h3 style={{ fontSize: "1.3rem", fontWeight: 700, color: "#180D26", margin: 0 }}>
+              Packaging Policy &bull; Export Drums &amp; Canisters
             </h3>
           </div>
 
           <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
             <Link
-              href="/packaging/sizes"
+              href="/packaging/packaging-policy"
               className="btn-vibrant-primary"
               style={{
                 padding: "12px 24px",
@@ -177,7 +153,7 @@ export default function ShipmentPolicyPage() {
                 gap: "6px",
               }}
             >
-              Packaging Sizes <ArrowRight size={14} />
+              Packaging Policy <ArrowRight size={14} />
             </Link>
           </div>
         </div>

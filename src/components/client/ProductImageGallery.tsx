@@ -1,13 +1,8 @@
 "use client";
 
 import React, { useState, useRef } from "react";
-import Link from "next/link";
 import { Product } from "@/lib/products-store";
 import {
-  ShieldCheck,
-  Award,
-  FlaskConical,
-  CheckCircle2,
   Eye,
   Box,
   ZoomIn,
@@ -35,7 +30,6 @@ export function ProductImageGallery({ product }: ProductImageGalleryProps) {
   const bottleSrc = product.compositeImageUrl || `/products/${product.slug}.webp`;
   const labelSrc = product.labelImageUrl || `/labels/${product.slug}.png`;
   const currentSrc = activeTab === "BOTTLE" ? bottleSrc : labelSrc;
-  const signatureColor = product.signatureColor || "#275A38";
 
   // Desktop Mouse Movement (smooth hover zoom when at 1x)
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -318,43 +312,6 @@ export function ProductImageGallery({ product }: ProductImageGalleryProps) {
           </button>
         </div>
 
-        {/* Floating Authentic GC-MS Seal Badge */}
-        <div
-          style={{
-            position: "absolute",
-            top: "18px",
-            left: "18px",
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "6px",
-            backgroundColor: "rgba(255, 255, 255, 0.86)",
-            backdropFilter: "blur(20px) saturate(160%)",
-            WebkitBackdropFilter: "blur(20px) saturate(160%)",
-            border: "1px solid rgba(16, 185, 129, 0.3)",
-            borderRadius: "9999px",
-            padding: "5px 14px",
-            fontSize: "0.75rem",
-            fontWeight: 800,
-            color: "#059669",
-            boxShadow: "0 4px 14px rgba(0,0,0,0.06)",
-            zIndex: 15,
-          }}
-        >
-          <ShieldCheck size={14} color="#059669" />
-          <span>GC-MS Authenticated</span>
-          <span
-            style={{
-              width: "8px",
-              height: "8px",
-              borderRadius: "50%",
-              backgroundColor: signatureColor,
-              display: "inline-block",
-              marginLeft: "4px",
-              border: "1px solid rgba(0,0,0,0.15)",
-            }}
-            title={`Signature Botanical Accent: ${signatureColor}`}
-          />
-        </div>
 
         {/* Touch & Desktop Interactive Zoom Controls Dock (Bottom-Left) */}
         <div
@@ -497,77 +454,7 @@ export function ProductImageGallery({ product }: ProductImageGalleryProps) {
         </div>
       </div>
 
-      {/* Quality Feature Badges Strip */}
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "10px" }}>
-        <Link
-          href="/certifications"
-          title="View accredited ISO 9001:2015, GMP, Udyam & Statutory Certificates"
-          style={{
-            backgroundColor: "rgba(255, 255, 255, 0.72)",
-            backdropFilter: "blur(16px) saturate(160%)",
-            WebkitBackdropFilter: "blur(16px) saturate(160%)",
-            border: "1px solid rgba(124, 58, 237, 0.18)",
-            borderRadius: "14px",
-            padding: "12px 10px",
-            textAlign: "center",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: "4px",
-            textDecoration: "none",
-            transition: "transform 0.2s, background-color 0.2s",
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.backgroundColor = "rgba(124, 58, 237, 0.12)";
-            e.currentTarget.style.transform = "translateY(-2px)";
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.backgroundColor = "rgba(255, 255, 255, 0.72)";
-            e.currentTarget.style.transform = "translateY(0)";
-          }}
-        >
-          <Award size={18} color="#7C3AED" />
-          <span style={{ fontSize: "0.75rem", fontWeight: 700, color: "#180D26" }}>ISO 9001 &amp; GMP</span>
-        </Link>
 
-        <div
-          style={{
-            backgroundColor: "rgba(255, 255, 255, 0.72)",
-            backdropFilter: "blur(16px) saturate(160%)",
-            WebkitBackdropFilter: "blur(16px) saturate(160%)",
-            border: "1px solid rgba(124, 58, 237, 0.18)",
-            borderRadius: "14px",
-            padding: "12px 10px",
-            textAlign: "center",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: "4px",
-          }}
-        >
-          <FlaskConical size={18} color="#059669" />
-          <span style={{ fontSize: "0.75rem", fontWeight: 700, color: "#180D26" }}>100% Pure & Uncut</span>
-        </div>
-
-        <div
-          style={{
-            backgroundColor: "rgba(255, 255, 255, 0.72)",
-            backdropFilter: "blur(16px) saturate(160%)",
-            WebkitBackdropFilter: "blur(16px) saturate(160%)",
-            border: "1px solid rgba(124, 58, 237, 0.18)",
-            borderRadius: "14px",
-            padding: "12px 10px",
-            textAlign: "center",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: "4px",
-          }}
-        >
-          <CheckCircle2 size={18} color="#D97706" />
-          <span style={{ fontSize: "0.75rem", fontWeight: 700, color: "#180D26" }}>Batch Traceable</span>
-        </div>
-      </div>
     </div>
   );
 }

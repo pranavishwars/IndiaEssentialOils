@@ -67,10 +67,19 @@ export function HeroSlideshow() {
       {/* Downward Scroll Action Button */}
       <button
         onClick={() => {
-          window.scrollTo({
-            top: window.innerHeight,
-            behavior: "smooth",
-          });
+          const searchEl = document.getElementById("home-search-bar");
+          if (searchEl) {
+            const elementPosition = searchEl.getBoundingClientRect().top + window.scrollY;
+            window.scrollTo({
+              top: Math.max(0, elementPosition - 96),
+              behavior: "smooth",
+            });
+          } else {
+            window.scrollTo({
+              top: Math.max(0, window.innerHeight - 140),
+              behavior: "smooth",
+            });
+          }
         }}
         aria-label="Scroll down to explore catalog"
         style={{

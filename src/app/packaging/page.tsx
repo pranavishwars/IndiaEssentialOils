@@ -5,7 +5,6 @@ import { Metadata } from "next";
 import { Footer } from "@/components/server/Footer";
 import { DownloadCatalogButton } from "@/components/client/DownloadCatalogButton";
 import {
-  Boxes,
   Wind,
   ShieldCheck,
   CheckCircle2,
@@ -88,17 +87,17 @@ export default function PackagingPage() {
     {
       name: "Calibrated Glass Droppers",
       desc: "Graduated glass pipettes with silicone or rubber bulbs for accurate dosage in serum and therapy use.",
-      icon: <Layers size={20} color="#059669" />,
+      icon: <Layers size={20} color="#7C3AED" />,
     },
     {
       name: "Sealed Tamper-Evident Caps",
       desc: "Threaded leak-proof closures with breakaway security rings ensuring unadulterated seal integrity.",
-      icon: <ShieldCheck size={20} color="#D97706" />,
+      icon: <ShieldCheck size={20} color="#7C3AED" />,
     },
     {
       name: "Flip Top Caps",
       desc: "Convenient one-handed opening dispensing caps ideal for carrier oils, massage blends, and floral waters.",
-      icon: <Sparkles size={20} color="#0284C7" />,
+      icon: <Sparkles size={20} color="#7C3AED" />,
     },
   ];
 
@@ -108,7 +107,7 @@ export default function PackagingPage() {
       sizes: "1 Kg, 2 Kg, 5 Kg, 10 Kg, 25 Kg and more",
       desc: "Ideal for high-value floral absolutes, rare essential oils, and supercritical CO₂ extracts. Puncture-resistant with food-grade epoxy barrier linings.",
       image: "/images/packaging/aluminum_canisters.jpg",
-      icon: <Layers size={24} color="#EC4899" />,
+      icon: <Layers size={24} color="#7C3AED" />,
       features: [
         "100% light-proof & vapor-tight seal",
         "Threaded security cap with internal sealing plug",
@@ -120,7 +119,7 @@ export default function PackagingPage() {
       sizes: "5 kg, 20 Kg, 25 Kg, 50 kg, 200 kg (Open Top & Closed Top)",
       desc: "Virgin food-grade high-density polyethylene drums and 200kg barrels engineered for safe domestic transit and international sea freight.",
       image: "/images/packaging/hdpe_drums.jpg",
-      icon: <Package size={24} color="#059669" />,
+      icon: <Package size={24} color="#7C3AED" />,
       features: [
         "Induction heat-sealed foil membrane option",
         "Stackable interlocking bases with carry handles",
@@ -132,7 +131,7 @@ export default function PackagingPage() {
       sizes: "20 Kg, 40 Kg, 200 Kg (Open Top with Narrow Mouth)",
       desc: "Heavy-duty cold-rolled steel and galvanized iron drums with internal epoxy-phenolic coatings for large-volume industrial chemical compatibility.",
       image: "/images/packaging/steel_drums.jpg",
-      icon: <Truck size={24} color="#D97706" />,
+      icon: <Truck size={24} color="#7C3AED" />,
       features: [
         "UN-certified heavy gauge steel construction",
         "Dual 2\" and 3/4\" bung closures with nitrile gaskets",
@@ -159,24 +158,6 @@ export default function PackagingPage() {
 
         {/* Hero Section */}
         <section style={{ textAlign: "center", marginBottom: "56px" }}>
-          <div
-            className="liquid-glass-pill"
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "6px",
-              padding: "6px 18px",
-              fontSize: "0.8rem",
-              fontWeight: 800,
-              color: "#7C3AED",
-              marginBottom: "16px",
-              backgroundColor: "rgba(124, 58, 237, 0.1)",
-              border: "1px solid rgba(124, 58, 237, 0.25)",
-            }}
-          >
-            <Boxes size={14} color="#7C3AED" /> PACKAGING &amp; PRIVATE LABELING
-          </div>
-
           <h1
             style={{
               fontSize: "clamp(2.4rem, 4.5vw, 3.6rem)",
@@ -257,9 +238,6 @@ export default function PackagingPage() {
             }}
           >
             <div style={{ textAlign: "center", maxWidth: "780px", margin: "0 auto 36px" }}>
-              <span style={{ fontSize: "0.75rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase", letterSpacing: "0.12em" }}>
-                OEM &amp; Private Labeling
-              </span>
               <h2 style={{ fontSize: "var(--font-size-h1)", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginTop: "6px" }}>
                 Packaging Process: Custom Bottling &amp; Private Labeling
               </h2>
@@ -441,29 +419,9 @@ export default function PackagingPage() {
                 <Gift size={30} />
               </div>
               <div style={{ flex: 1, minWidth: "280px" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "10px", flexWrap: "wrap", marginBottom: "8px" }}>
-                  <h3 style={{ fontSize: "1.25rem", fontWeight: 700, color: "#180D26", margin: 0 }}>
-                    Outer Box &amp; Cushion Box Packing (Gift Packaging Available)
-                  </h3>
-                  <span
-                    style={{
-                      fontSize: "0.72rem",
-                      fontWeight: 800,
-                      padding: "4px 10px",
-                      borderRadius: "9999px",
-                      backgroundColor: "#059669",
-                      color: "#FFFFFF",
-                      whiteSpace: "nowrap",
-                      flexShrink: 0,
-                      display: "inline-flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      lineHeight: 1,
-                    }}
-                  >
-                    Break-Proof Protection
-                  </span>
-                </div>
+                <h3 style={{ fontSize: "1.25rem", fontWeight: 700, color: "#180D26", margin: "0 0 8px 0" }}>
+                  Outer Box &amp; Cushion Box Packing (Gift Packaging Available)
+                </h3>
                 <p style={{ fontSize: "0.92rem", color: "#4B5563", lineHeight: 1.65, margin: 0 }}>
                   <strong>Outer Box &amp; Cushion Box Packing:</strong> We provide secondary presentation boxes, rigid protective outer cartons, and specialized cushion box packing engineered to absorb mechanical vibrations and impact forces during long-distance domestic and international transit. Custom gift packaging and presentation kits are also designed upon request.
                 </p>
@@ -476,9 +434,6 @@ export default function PackagingPage() {
         {/* Section 2: Packaging sizes (Add images) */}
         <section id="packaging-sizes" style={{ scrollMarginTop: "120px", marginBottom: "64px" }}>
           <div style={{ textAlign: "center", marginBottom: "40px" }}>
-            <span style={{ fontSize: "0.75rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase", letterSpacing: "0.12em" }}>
-              Commercial &amp; Wholesale Formats
-            </span>
             <h2 style={{ fontSize: "var(--font-size-h1)", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginTop: "6px" }}>
               Packaging Sizes: Oils, Oleoresins &amp; Floral Waters
             </h2>
@@ -550,7 +505,7 @@ export default function PackagingPage() {
                   <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
                     {item.features.map((feat, fIdx) => (
                       <li key={fIdx} style={{ display: "flex", alignItems: "center", gap: "10px", fontSize: "0.85rem", color: "#2E1A47", fontWeight: 500 }}>
-                        <CheckCircle2 size={16} color="#059669" style={{ flexShrink: 0 }} />
+                        <CheckCircle2 size={16} color="#7C3AED" style={{ flexShrink: 0 }} />
                         <span>{feat}</span>
                       </li>
                     ))}
@@ -567,17 +522,17 @@ export default function PackagingPage() {
               marginTop: "28px",
               borderRadius: "20px",
               padding: "20px 28px",
-              backgroundColor: "rgba(2, 132, 199, 0.08)",
-              border: "1px solid rgba(2, 132, 199, 0.25)",
+              backgroundColor: "rgba(124, 58, 237, 0.08)",
+              border: "1px solid rgba(124, 58, 237, 0.2)",
               display: "flex",
               alignItems: "center",
               gap: "16px",
             }}
           >
-            <Wind size={26} color="#0284C7" style={{ flexShrink: 0 }} />
+            <Wind size={26} color="#7C3AED" style={{ flexShrink: 0 }} />
             <div>
-              <strong style={{ color: "#0369A1", fontSize: "0.95rem" }}>Specialized Nitrogen Capping:</strong>
-              <span style={{ color: "#334155", fontSize: "0.9rem", marginLeft: "6px" }}>
+              <strong style={{ color: "#7C3AED", fontSize: "0.95rem" }}>Specialized Nitrogen Capping:</strong>
+              <span style={{ color: "#5B486E", fontSize: "0.9rem", marginLeft: "6px" }}>
                 We offer ultra-pure Nitrogen capping for specific oils on special requests to purge atmospheric oxygen from container headspaces and prevent oxidation during overseas shipping.
               </span>
             </div>
@@ -597,9 +552,6 @@ export default function PackagingPage() {
             }}
           >
             <div style={{ textAlign: "center", maxWidth: "780px", margin: "0 auto 36px" }}>
-              <span style={{ fontSize: "0.75rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase", letterSpacing: "0.12em" }}>
-                Global Fulfillment &amp; Supply Security
-              </span>
               <h2 style={{ fontSize: "var(--font-size-h1)", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginTop: "6px" }}>
                 Shipment Policy &amp; 48-Hour Order Dispatch
               </h2>
@@ -619,24 +571,24 @@ export default function PackagingPage() {
                 </p>
                 <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
                   <li style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "0.86rem", color: "#180D26" }}>
-                    <CheckCircle2 size={16} color="#059669" /> Best shipping rates for all major destinations worldwide
+                    <CheckCircle2 size={16} color="#7C3AED" /> Best shipping rates for all major destinations worldwide
                   </li>
                   <li style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "0.86rem", color: "#180D26" }}>
-                    <CheckCircle2 size={16} color="#059669" /> Real-time consignment movement tracking &amp; status updates
+                    <CheckCircle2 size={16} color="#7C3AED" /> Real-time consignment movement tracking &amp; status updates
                   </li>
                   <li style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "0.86rem", color: "#180D26" }}>
-                    <CheckCircle2 size={16} color="#059669" /> Country-specific regulatory documentation &amp; phytosanitary clearance
+                    <CheckCircle2 size={16} color="#7C3AED" /> Country-specific regulatory documentation &amp; phytosanitary clearance
                   </li>
                   <li style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "0.86rem", color: "#180D26" }}>
-                    <CheckCircle2 size={16} color="#059669" /> Direct tie-ups with major shipping lines &amp; reputed clearing agents
+                    <CheckCircle2 size={16} color="#7C3AED" /> Direct tie-ups with major shipping lines &amp; reputed clearing agents
                   </li>
                 </ul>
               </div>
 
               {/* Prompt Delivery Period */}
-              <div style={{ backgroundColor: "#FCFAF6", borderRadius: "24px", padding: "32px", border: "1px solid rgba(16, 185, 129, 0.2)" }}>
+              <div style={{ backgroundColor: "#FCFAF6", borderRadius: "24px", padding: "32px", border: "1px solid rgba(124, 58, 237, 0.15)" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "14px" }}>
-                  <Clock size={24} color="#059669" />
+                  <Clock size={24} color="#7C3AED" />
                   <h3 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#180D26", margin: 0 }}>
                     Prompt Delivery Period — Dispatch in 48 Hours
                   </h3>
@@ -644,11 +596,11 @@ export default function PackagingPage() {
                 <p style={{ color: "#5B486E", fontSize: "0.92rem", lineHeight: 1.7, margin: "0 0 14px 0" }}>
                   Our speciality is our promptness in service. We always have most botanical oils available in stock in bulk quantities.
                 </p>
-                <div style={{ padding: "16px", borderRadius: "14px", backgroundColor: "rgba(16, 185, 129, 0.1)", border: "1px solid rgba(16, 185, 129, 0.25)", marginBottom: "14px" }}>
-                  <span style={{ fontSize: "0.95rem", fontWeight: 700, color: "#065F46" }}>
+                <div style={{ padding: "16px", borderRadius: "14px", backgroundColor: "rgba(124, 58, 237, 0.08)", border: "1px solid rgba(124, 58, 237, 0.18)", marginBottom: "14px" }}>
+                  <span style={{ fontSize: "0.95rem", fontWeight: 700, color: "#7C3AED" }}>
                     ⚡ 48-Hour Standard Order Dispatch
                   </span>
-                  <p style={{ fontSize: "0.84rem", color: "#047857", margin: "4px 0 0 0", lineHeight: 1.5 }}>
+                  <p style={{ fontSize: "0.84rem", color: "#5B486E", margin: "4px 0 0 0", lineHeight: 1.5 }}>
                     We usually despatch all orders within 48 hours of payment unless custom packaging or urgent rush handling is requested.
                   </p>
                 </div>
@@ -681,23 +633,6 @@ export default function PackagingPage() {
           }}
         >
           <div style={{ maxWidth: "640px" }}>
-            <span
-              style={{
-                display: "inline-block",
-                padding: "6px 14px",
-                borderRadius: "9999px",
-                backgroundColor: "rgba(139, 92, 246, 0.25)",
-                border: "1px solid rgba(139, 92, 246, 0.4)",
-                color: "#C4B5FD",
-                fontSize: "0.75rem",
-                fontWeight: 700,
-                letterSpacing: "0.08em",
-                textTransform: "uppercase",
-                marginBottom: "16px",
-              }}
-            >
-              OEM &amp; Private Labeling
-            </span>
             <h2 style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.4rem)", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "white", lineHeight: 1.2, marginBottom: "12px" }}>
               Request Custom Packaging &amp; Volume Pricing
             </h2>

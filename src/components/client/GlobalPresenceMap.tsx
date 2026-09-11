@@ -185,11 +185,7 @@ export function GlobalPresenceMap() {
           }}
         >
           <defs>
-            {/* Glowing Pulse Filter */}
-            <filter id="mapGlow" x="-30%" y="-30%" width="160%" height="160%">
-              <feGaussianBlur stdDeviation="4" result="blur" />
-              <feComposite in="SourceGraphic" in2="blur" operator="over" />
-            </filter>
+
 
             {/* Subtle Country Shadow */}
             <filter id="landDrop" x="-5%" y="-5%" width="110%" height="110%">
@@ -262,12 +258,12 @@ export function GlobalPresenceMap() {
               <animate attributeName="r" values="8;28;8" dur="2.4s" repeatCount="indefinite" />
               <animate attributeName="opacity" values="0.8;0;0.8" dur="2.4s" repeatCount="indefinite" />
             </circle>
-            <circle r="7.5" fill="#059669" stroke="#FFFFFF" strokeWidth="2.5" filter="url(#mapGlow)" />
+            <circle r="7.5" fill="#059669" stroke="#FFFFFF" strokeWidth="2.5" />
             <circle r="3" fill="#FFFFFF" />
 
             {/* Hub Badge Tag */}
             <g transform="translate(10, -14)">
-              <rect x="0" y="0" width="138" height="22" rx="6" fill="#059669" filter="url(#mapGlow)" />
+              <rect x="0" y="0" width="138" height="22" rx="6" fill="#059669" />
               <text x="6" y="15" fill="#FFFFFF" fontSize="9" fontWeight="800" letterSpacing="0.06em" fontFamily="system-ui, sans-serif">
                 ★ HQ &bull; NEW DELHI (INDIA)
               </text>
@@ -314,7 +310,6 @@ export function GlobalPresenceMap() {
                   fill={pinColor}
                   stroke="#FFFFFF"
                   strokeWidth={isMajor ? "1.8" : "1.2"}
-                  filter={isMajor || isHovered ? "url(#mapGlow)" : undefined}
                 />
                 
                 {/* Center Star or Dot */}

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { 
@@ -53,7 +53,7 @@ const CO2_PAGES: {
         slug: "turmeric-co2-extract",
         name: "Turmeric CO2 Extract",
         botanicalName: "Curcuma longa",
-        shortSpec: "Erode, India · 65% Turmerones",
+        shortSpec: "Supercritical CO2 · 65% Turmerones",
         highlight: "Rich in natural ar-turmerone & active curcuminoids with 0.00 ppm solvent residue.",
         compositeImageUrl: "/products/turmeric-co2-extract.webp",
       },
@@ -62,7 +62,7 @@ const CO2_PAGES: {
         slug: "ginger-co2-extract",
         name: "Ginger CO2 Extract",
         botanicalName: "Zingiber officinale",
-        shortSpec: "Cochin, India · Standardized Gingerols",
+        shortSpec: "Supercritical CO2 · Standardized Gingerols",
         highlight: "True-to-nature warmth capturing both volatile zingiberene and non-volatile pungent gingerols.",
         compositeImageUrl: "/products/ginger-co2-extract.webp",
       },
@@ -71,7 +71,7 @@ const CO2_PAGES: {
         slug: "black-pepper-co2-extract",
         name: "Black Pepper CO2 Extract",
         botanicalName: "Piper nigrum",
-        shortSpec: "Malabar, India · Standardized Piperine",
+        shortSpec: "Supercritical CO2 · Standardized Piperine",
         highlight: "Freshly cracked pepper top-notes combined with bioavailable piperine alkaloids.",
         compositeImageUrl: "/products/black-pepper-co2-extract.webp",
       },
@@ -80,7 +80,7 @@ const CO2_PAGES: {
         slug: "cardamom-co2-extract",
         name: "Cardamom CO2 Extract",
         botanicalName: "Elettaria cardamomum",
-        shortSpec: "Idukki, India · High α-Terpinyl Acetate",
+        shortSpec: "Supercritical CO2 · High α-Terpinyl Acetate",
         highlight: "Exquisite sweet-balsamic eucalyptus citrus aroma free from burnt thermal degradation.",
         compositeImageUrl: "/products/cardamom-co2-extract.webp",
       },
@@ -95,7 +95,7 @@ const CO2_PAGES: {
         slug: "clove-co2-extract",
         name: "Clove CO2 Extract",
         botanicalName: "Syzygium aromaticum",
-        shortSpec: "Kanyakumari, India · >85% Eugenol",
+        shortSpec: "Supercritical CO2 · >85% Eugenol",
         highlight: "Dense bud extract yielding exceptional eugenol purity and rich natural eugenyl acetate sweetness.",
         compositeImageUrl: "/products/clove-co2-extract.webp",
       },
@@ -104,7 +104,7 @@ const CO2_PAGES: {
         slug: "tulsi-holy-basil-co2-extract",
         name: "Holy Basil / Tulsi CO2 Extract",
         botanicalName: "Ocimum sanctum",
-        shortSpec: "Varanasi, India · Adaptogenic Actives",
+        shortSpec: "Supercritical CO2 · Adaptogenic Actives",
         highlight: "Sacred Tulsi extract capturing volatile eugenol-caryophyllene and lipophilic ursolic acid.",
         compositeImageUrl: "/products/tulsi-holy-basil-co2-extract.webp",
       },
@@ -113,7 +113,7 @@ const CO2_PAGES: {
         slug: "rosemary-co2-extract",
         name: "Rosemary CO2 Extract",
         botanicalName: "Salvia rosmarinus",
-        shortSpec: "Nilgiris, India · High Carnosic Acid",
+        shortSpec: "Supercritical CO2 · High Carnosic Acid",
         highlight: "Gold-standard natural antioxidant extract for stabilizing cosmetics and high-lipid formulations.",
         compositeImageUrl: "/products/rosemary-co2-extract.webp",
       },
@@ -122,7 +122,7 @@ const CO2_PAGES: {
         slug: "vetiver-co2-extract",
         name: "Vetiver CO2 Extract",
         botanicalName: "Chrysopogon zizanioides",
-        shortSpec: "Kannauj, India · High Khusimol",
+        shortSpec: "Supercritical CO2 · High Khusimol",
         highlight: "Smoky-woody, balsamic-earthy longevity from aged wild Ruh Khus roots with dense khusimol.",
         compositeImageUrl: "/products/vetiver-co2-extract.webp",
       },
@@ -137,8 +137,8 @@ const CO2_PAGES: {
         slug: "sandalwood-co2-extract",
         name: "Sandalwood CO2 Extract",
         botanicalName: "Santalum album",
-        shortSpec: "Mysore, India · >90% Santalols",
-        highlight: "Aged East Indian Sandalwood heartwood extract with creamy, sacred woody tenacity.",
+        shortSpec: "Supercritical CO2 · >90% Santalols",
+        highlight: "Aged Sandalwood heartwood extract with creamy, sacred woody tenacity.",
         compositeImageUrl: "/products/sandalwood-co2-extract.webp",
       },
       {
@@ -146,7 +146,7 @@ const CO2_PAGES: {
         slug: "vanilla-co2-extract",
         name: "Vanilla CO2 Extract",
         botanicalName: "Vanilla planifolia",
-        shortSpec: "Pollachi, India · High Natural Vanillin",
+        shortSpec: "Supercritical CO2 · High Natural Vanillin",
         highlight: "Pure Bourbon vanilla bean extract with rich natural vanillin, completely alcohol and solvent-free.",
         compositeImageUrl: "/products/vanilla-co2-extract.webp",
       },
@@ -155,7 +155,7 @@ const CO2_PAGES: {
         slug: "onion-co2-extract",
         name: "Onion CO2 Extract",
         botanicalName: "Allium cepa",
-        shortSpec: "Nashik, India · High Quercetin",
+        shortSpec: "Supercritical CO2 · High Quercetin",
         highlight: "Potent red onion extract rich in organosulfur compounds for clinical hair strengthening.",
         compositeImageUrl: "/products/onion-co2-extract.webp",
       },
@@ -164,7 +164,7 @@ const CO2_PAGES: {
         slug: "garlic-co2-extract",
         name: "Garlic CO2 Extract",
         botanicalName: "Allium sativum",
-        shortSpec: "Neemuch, India · Standardized Allicin",
+        shortSpec: "Supercritical CO2 · Standardized Allicin",
         highlight: "100x concentrated garlic extract rich in diallyl disulfides with zero carrier oil dilution.",
         compositeImageUrl: "/products/garlic-co2-extract.webp",
       },
@@ -179,8 +179,8 @@ const CO2_PAGES: {
         slug: "jasmine-co2-extract",
         name: "Jasmine CO2 Extract",
         botanicalName: "Jasminum sambac",
-        shortSpec: "Madurai, India · 0.00 ppm Hexane",
-        highlight: "Pre-dawn Madurai Sambac flowers capturing radiant, live floral heart notes without hexane residue.",
+        shortSpec: "Supercritical CO2 · 0.00 ppm Hexane",
+        highlight: "Freshly picked Sambac flowers capturing radiant, live floral heart notes without hexane residue.",
         compositeImageUrl: "/products/jasmine-co2-extract.webp",
       },
       {
@@ -188,7 +188,7 @@ const CO2_PAGES: {
         slug: "ambrette-co2-extract",
         name: "Ambrette CO2 Extract",
         botanicalName: "Abelmoschus moschatus",
-        shortSpec: "Deccan, India · (E)-Ambrettolide",
+        shortSpec: "Supercritical CO2 · (E)-Ambrettolide",
         highlight: "Premier 100% natural cruelty-free botanical musk for luxury clean perfumery formulation.",
         compositeImageUrl: "/products/ambrette-co2-extract.webp",
       },
@@ -197,7 +197,7 @@ const CO2_PAGES: {
         slug: "champaca-co2-extract",
         name: "Champaca CO2 Extract",
         botanicalName: "Magnolia champaca",
-        shortSpec: "Nilgiris, India · True Floral",
+        shortSpec: "Supercritical CO2 · True Floral",
         highlight: "Sacred golden flower extract radiating exotic apricot-tea floral sweetness for niche fragrances.",
         compositeImageUrl: "/products/champaca-co2-extract.webp",
       },
@@ -262,10 +262,14 @@ export function ExploreLatestLineSection() {
   const [trackIndex, setTrackIndex] = useState(1);
   const [withTransition, setWithTransition] = useState(true);
 
+  const TRANSITION_DURATION_MS = 550;
+  const SLIDE_INTERVAL_MS = 4000;
+
   const isTransitioningRef = useRef(false);
+  const transitionTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
   const touchStartX = useRef<number | null>(null);
   const touchEndX = useRef<number | null>(null);
-  const isHoveredRef = useRef(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -286,9 +290,22 @@ export function ExploreLatestLineSection() {
   const totalRealSlides = isMobile ? MOBILE_REAL_SLIDES.length : DESKTOP_REAL_SLIDES.length;
   const currentTrackSlides = isMobile ? MOBILE_TRACK_SLIDES : DESKTOP_TRACK_SLIDES;
 
+  const clearTransitionLock = () => {
+    isTransitioningRef.current = false;
+    if (transitionTimeoutRef.current) {
+      clearTimeout(transitionTimeoutRef.current);
+      transitionTimeoutRef.current = null;
+    }
+  };
+
   const goToNext = () => {
     if (isTransitioningRef.current) return;
     isTransitioningRef.current = true;
+    if (transitionTimeoutRef.current) clearTimeout(transitionTimeoutRef.current);
+    transitionTimeoutRef.current = setTimeout(() => {
+      isTransitioningRef.current = false;
+    }, TRANSITION_DURATION_MS + 60);
+
     setWithTransition(true);
     setTrackIndex((prev) => prev + 1);
   };
@@ -296,6 +313,11 @@ export function ExploreLatestLineSection() {
   const goToPrev = () => {
     if (isTransitioningRef.current) return;
     isTransitioningRef.current = true;
+    if (transitionTimeoutRef.current) clearTimeout(transitionTimeoutRef.current);
+    transitionTimeoutRef.current = setTimeout(() => {
+      isTransitioningRef.current = false;
+    }, TRANSITION_DURATION_MS + 60);
+
     setWithTransition(true);
     setTrackIndex((prev) => prev - 1);
   };
@@ -303,13 +325,48 @@ export function ExploreLatestLineSection() {
   const goToDot = (realIdx: number) => {
     if (isTransitioningRef.current) return;
     isTransitioningRef.current = true;
+    if (transitionTimeoutRef.current) clearTimeout(transitionTimeoutRef.current);
+    transitionTimeoutRef.current = setTimeout(() => {
+      isTransitioningRef.current = false;
+    }, TRANSITION_DURATION_MS + 60);
+
     setWithTransition(true);
     setTrackIndex(realIdx + 1);
   };
 
+  // Auto-play timer resetting helper: schedules next switch 1.5s from now
+  const resetTimer = useCallback(() => {
+    if (timerRef.current) {
+      clearInterval(timerRef.current);
+    }
+    timerRef.current = setInterval(() => {
+      goToNext();
+    }, SLIDE_INTERVAL_MS);
+  }, []);
+
+  // Manual actions that immediately slide and refresh the 1.5s timer
+  const handleManualNext = () => {
+    goToNext();
+    resetTimer();
+  };
+
+  const handleManualPrev = () => {
+    goToPrev();
+    resetTimer();
+  };
+
+  const handleManualDot = (realIdx: number) => {
+    goToDot(realIdx);
+    resetTimer();
+  };
+
   // Seamless infinite loop transition reset
-  const handleTransitionEnd = () => {
-    isTransitioningRef.current = false;
+  const handleTransitionEnd = (e: React.TransitionEvent<HTMLDivElement>) => {
+    // Only handle transitions on the slider track itself, ignoring child transitions
+    if (e.target !== e.currentTarget) return;
+
+    clearTransitionLock();
+
     if (trackIndex === currentTrackSlides.length - 1) {
       setWithTransition(false);
       setTrackIndex(1);
@@ -319,16 +376,14 @@ export function ExploreLatestLineSection() {
     }
   };
 
-  // Auto-play timer
+  // Auto-play timer: switches page once every 1.5 seconds
   useEffect(() => {
-    const timer = setInterval(() => {
-      if (!isHoveredRef.current) {
-        goToNext();
-      }
-    }, 6000);
-
-    return () => clearInterval(timer);
-  }, [isMobile]);
+    resetTimer();
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+      if (transitionTimeoutRef.current) clearTimeout(transitionTimeoutRef.current);
+    };
+  }, [resetTimer, isMobile]);
 
   const handleTouchStart = (e: React.TouchEvent) => {
     touchStartX.current = e.touches[0].clientX;
@@ -342,9 +397,9 @@ export function ExploreLatestLineSection() {
     if (touchStartX.current !== null && touchEndX.current !== null) {
       const diff = touchStartX.current - touchEndX.current;
       if (diff > 45) {
-        goToNext();
+        handleManualNext();
       } else if (diff < -45) {
-        goToPrev();
+        handleManualPrev();
       }
     }
     touchStartX.current = null;
@@ -362,8 +417,6 @@ export function ExploreLatestLineSection() {
         maxWidth: "1320px",
         margin: "0 auto",
       }}
-      onMouseEnter={() => { isHoveredRef.current = true; }}
-      onMouseLeave={() => { isHoveredRef.current = false; }}
     >
       {/* Section Header with Simple 3-4 Line Explanation */}
       <div style={{ marginBottom: "clamp(24px, 4vh, 36px)" }}>
@@ -399,7 +452,7 @@ export function ExploreLatestLineSection() {
                 lineHeight: 1.2,
               }}
             >
-              Explore our Latest Line
+              Explore our Latest Products
             </h2>
             
             {/* Simple, Non-Technical 3-4 Line Explanation */}
@@ -533,7 +586,7 @@ export function ExploreLatestLineSection() {
 
         {/* Left Side Navigation Arrow */}
         <button
-          onClick={goToPrev}
+          onClick={handleManualPrev}
           aria-label="Previous catalog page"
           className="co2-catalog-arrow co2-catalog-arrow-left"
         >
@@ -542,7 +595,7 @@ export function ExploreLatestLineSection() {
 
         {/* Right Side Navigation Arrow */}
         <button
-          onClick={goToNext}
+          onClick={handleManualNext}
           aria-label="Next catalog page"
           className="co2-catalog-arrow co2-catalog-arrow-right"
         >
@@ -566,7 +619,7 @@ export function ExploreLatestLineSection() {
               display: "flex",
               width: "100%",
               transform: `translateX(-${trackIndex * 100}%)`,
-              transition: withTransition ? "transform 0.65s cubic-bezier(0.16, 1, 0.3, 1)" : "none",
+              transition: withTransition ? "transform 0.55s cubic-bezier(0.16, 1, 0.3, 1)" : "none",
               willChange: "transform",
             }}
           >
@@ -1088,7 +1141,7 @@ export function ExploreLatestLineSection() {
           Array.from({ length: totalRealSlides }).map((_, idx) => (
             <button
               key={idx}
-              onClick={() => goToDot(idx)}
+              onClick={() => handleManualDot(idx)}
               aria-label={`Go to catalog page ${idx + 1}`}
               style={{
                 height: "8px",

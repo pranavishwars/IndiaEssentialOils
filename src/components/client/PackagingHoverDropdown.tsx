@@ -20,22 +20,16 @@ interface PackagingHoverDropdownProps {
 
 export const PACKAGING_SUBMENU = [
   {
-    name: "Packaging Process",
-    href: "/packaging/process",
-    desc: "Amber/Clear glassware, European droppers & custom closures",
-    icon: <Boxes size={18} color="#7C3AED" />,
-  },
-  {
-    name: "Packaging Sizes",
-    href: "/packaging/sizes",
-    desc: "10ml–500ml glass, 1kg–25kg aluminum & 200kg steel drums",
-    icon: <Package size={18} color="#059669" />,
+    name: "Packaging Policy",
+    href: "/packaging/packaging-policy",
+    desc: "Certified export sizes, aluminum canisters, drums & cleanroom bottling",
+    icon: <Package size={18} color="#7C3AED" />,
   },
   {
     name: "Shipment Policy",
     href: "/packaging/shipment-policy",
     desc: "48-hour order dispatch, hazmat air express & ocean freight",
-    icon: <Truck size={18} color="#0284C7" />,
+    icon: <Truck size={18} color="#7C3AED" />,
   },
 ];
 

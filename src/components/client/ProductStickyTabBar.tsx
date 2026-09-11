@@ -4,10 +4,6 @@ import React, { useEffect, useState } from "react";
 
 const SECTIONS = [
   { id: "overview", label: "Overview" },
-  { id: "history", label: "History & Origin" },
-  { id: "benefits", label: "Benefits & Uses" },
-  { id: "manufacturing", label: "How It's Made" },
-  { id: "certifications", label: "Certifications & Lab" },
 ];
 
 export function ProductStickyTabBar() {

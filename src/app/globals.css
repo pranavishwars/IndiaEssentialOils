@@ -117,25 +117,16 @@
   transform: translateY(-1px);
 }
 
-/* Botanical Glow Highlights */
-.glow-purple {
-  box-shadow: 0 0 40px -10px rgba(176, 152, 213, 0.5);
-}
-
-.glow-subtle {
-  box-shadow: 0 8px 30px rgba(74, 59, 82, 0.06);
-}
-
 .btn-vibrant-primary {
   background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 50%, #6D28D9 100%) !important;
   color: #FFFFFF !important;
-  box-shadow: 0 8px 28px rgba(124, 58, 237, 0.65);
+  box-shadow: 0 4px 14px rgba(24, 13, 38, 0.12);
   transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s;
 }
 
 .btn-vibrant-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 36px rgba(124, 58, 237, 0.85);
+  box-shadow: 0 6px 20px rgba(24, 13, 38, 0.16);
 }
 
 .btn-vibrant-secondary {
@@ -225,24 +216,7 @@ h6 {
   animation: float 4s ease-in-out infinite;
 }
 
-/* Glow pulse animation */
-@keyframes pulse-glow {
 
-  0%,
-  100% {
-    opacity: 0.6;
-    transform: scale(1);
-  }
-
-  50% {
-    opacity: 1;
-    transform: scale(1.05);
-  }
-}
-
-.animate-pulse-glow {
-  animation: pulse-glow 3s ease-in-out infinite;
-}
 
 /* ==========================================================================
    Google Translate Elements Suppression & Clean Layout

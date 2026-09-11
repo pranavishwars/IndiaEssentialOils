@@ -10,8 +10,8 @@ export interface BatchReport {
   botanicalName: string;
   distillationDate: string;
   expiryDate: string;
-  origin: string;
-  harvestFarm: string;
+  origin?: string;
+  harvestFarm?: string;
   extractionMethod: string;
   specificGravity: string;
   refractiveIndex: string;
@@ -28,8 +28,6 @@ export const BATCH_DATABASE: Record<string, BatchReport> = {
     botanicalName: "Lavandula angustifolia",
     distillationDate: "August 12, 2024",
     expiryDate: "August 2027",
-    origin: "Kashmir Valley, India",
-    harvestFarm: "Mother Herbs Contract Cultivation Block #4B",
     extractionMethod: "Steam Distillation (Low Pressure)",
     specificGravity: "0.884 @ 20°C (Standard: 0.880 - 0.890)",
     refractiveIndex: "1.461 @ 20°C (Standard: 1.458 - 1.464)",
@@ -52,8 +50,6 @@ export const BATCH_DATABASE: Record<string, BatchReport> = {
     botanicalName: "Santalum album",
     distillationDate: "May 18, 2024",
     expiryDate: "May 2030",
-    origin: "Karnataka, India",
-    harvestFarm: "Govt. Regulated Plantation #12",
     extractionMethod: "Hydro-Distillation of Heartwood",
     specificGravity: "0.974 @ 20°C (Standard: 0.965 - 0.980)",
     refractiveIndex: "1.505 @ 20°C (Standard: 1.500 - 1.510)",
@@ -74,8 +70,6 @@ export const BATCH_DATABASE: Record<string, BatchReport> = {
     botanicalName: "Mentha piperita",
     distillationDate: "September 04, 2024",
     expiryDate: "September 2027",
-    origin: "Uttar Pradesh, India",
-    harvestFarm: "Ganges Basin Cultivators Collective",
     extractionMethod: "Steam Distillation of Flowering Tops",
     specificGravity: "0.902 @ 20°C (Standard: 0.896 - 0.910)",
     refractiveIndex: "1.460 @ 20°C (Standard: 1.458 - 1.465)",
@@ -97,8 +91,6 @@ export const BATCH_DATABASE: Record<string, BatchReport> = {
     botanicalName: "Melaleuca alternifolia",
     distillationDate: "July 22, 2024",
     expiryDate: "July 2027",
-    origin: "Organic Estate Block #2",
-    harvestFarm: "Mother Herbs Certified Organic Farm",
     extractionMethod: "Steam Distillation of Leaves",
     specificGravity: "0.894 @ 20°C (Standard: 0.885 - 0.906)",
     refractiveIndex: "1.478 @ 20°C (Standard: 1.475 - 1.482)",
@@ -120,8 +112,6 @@ export const BATCH_DATABASE: Record<string, BatchReport> = {
     botanicalName: "Rosa damascena",
     distillationDate: "June 10, 2024",
     expiryDate: "June 2028",
-    origin: "Rajasthan, India",
-    harvestFarm: "Pushkar Rose Valley Collective",
     extractionMethod: "Food Grade Solvent Extraction",
     specificGravity: "0.962 @ 20°C (Standard: 0.950 - 0.990)",
     refractiveIndex: "1.512 @ 20°C (Standard: 1.500 - 1.520)",

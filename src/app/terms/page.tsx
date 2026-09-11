@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { COMPANY_INFO } from "@/lib/data";
 import { Footer } from "@/components/server/Footer";
-import { FileCheck, ArrowLeft } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 
 export default function TermsOfServicePage() {
   return (
@@ -28,24 +28,6 @@ export default function TermsOfServicePage() {
 
         {/* Header */}
         <div style={{ marginBottom: "40px" }}>
-          <div
-            className="liquid-glass-pill"
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "6px",
-              padding: "6px 18px",
-              fontSize: "0.8rem",
-              fontWeight: 800,
-              color: "#7C3AED",
-              marginBottom: "16px",
-              backgroundColor: "rgba(124, 58, 237, 0.1)",
-              border: "1px solid rgba(124, 58, 237, 0.25)",
-            }}
-          >
-            <FileCheck size={14} color="#7C3AED" /> Commercial Terms of Trade
-          </div>
-
           <h1
             style={{
               fontSize: "clamp(2.2rem, 3.5vw, 3rem)",

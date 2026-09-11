@@ -99,24 +99,6 @@ function ContactFormContent() {
 
         {/* Page Header */}
         <div style={{ textAlign: "center", marginBottom: "40px" }}>
-          <div
-            className="liquid-glass-pill"
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "6px",
-              padding: "6px 18px",
-              fontSize: "0.8rem",
-              fontWeight: 800,
-              color: "#7C3AED",
-              marginBottom: "16px",
-              backgroundColor: "rgba(124, 58, 237, 0.1)",
-              border: "1px solid rgba(124, 58, 237, 0.25)",
-            }}
-          >
-            <Building2 size={14} color="#7C3AED" /> CORPORATE HEADQUARTERS &amp; COMMERCIAL DESK
-          </div>
-
           <h1
             style={{
               fontSize: "clamp(2.4rem, 4.5vw, 3.4rem)",
@@ -163,8 +145,8 @@ function ContactFormContent() {
                 style={{
                   padding: "36px 24px",
                   borderRadius: "20px",
-                  backgroundColor: "rgba(16, 185, 129, 0.08)",
-                  border: "1px solid rgba(16, 185, 129, 0.25)",
+                  backgroundColor: "rgba(124, 58, 237, 0.08)",
+                  border: "1px solid rgba(124, 58, 237, 0.22)",
                   textAlign: "center",
                 }}
               >
@@ -173,21 +155,21 @@ function ContactFormContent() {
                     width: "56px",
                     height: "56px",
                     borderRadius: "50%",
-                    backgroundColor: "#059669",
+                    backgroundColor: "#7C3AED",
                     color: "white",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
                     margin: "0 auto 16px",
-                    boxShadow: "0 6px 20px rgba(5, 150, 105, 0.35)",
+                    boxShadow: "0 6px 20px rgba(124, 58, 237, 0.35)",
                   }}
                 >
                   <CheckCircle2 size={32} />
                 </div>
-                <h3 style={{ fontSize: "var(--font-size-h3)", fontWeight: 700, color: "#065F46", marginBottom: "8px" }}>
+                <h3 style={{ fontSize: "var(--font-size-h3)", fontWeight: 700, color: "#180D26", marginBottom: "8px" }}>
                   Inquiry Received Successfully
                 </h3>
-                <p style={{ fontSize: "0.92rem", color: "#047857", lineHeight: 1.6, maxWidth: "460px", margin: "0 auto 20px" }}>
+                <p style={{ fontSize: "0.92rem", color: "#5B486E", lineHeight: 1.6, maxWidth: "460px", margin: "0 auto 20px" }}>
                   Thank you, <strong>{formData.name}</strong>. Our technical export team has received your request and will respond to <strong>{formData.email}</strong> with complete pricing and specifications.
                 </p>
                 <div style={{ display: "flex", justifyContent: "center", gap: "10px", flexWrap: "wrap" }}>

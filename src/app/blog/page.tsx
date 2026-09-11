@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { BookOpen, Clock, ArrowRight, User } from "lucide-react";
+import { Clock, ArrowRight, User } from "lucide-react";
 import { BLOG_POSTS } from "@/lib/blog-data";
 
 export default function BlogPage() {
@@ -20,26 +20,6 @@ export default function BlogPage() {
 
         {/* Header */}
         <div style={{ textAlign: "center", marginBottom: "40px" }}>
-          <div
-            className="liquid-glass-pill"
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "6px",
-              backgroundColor: "rgba(124, 58, 237, 0.1)",
-              border: "1px solid rgba(124, 58, 237, 0.25)",
-              color: "#7C3AED",
-              padding: "6px 18px",
-              borderRadius: "9999px",
-              fontSize: "0.8rem",
-              fontWeight: 800,
-              textTransform: "uppercase",
-              letterSpacing: "0.08em",
-              marginBottom: "16px",
-            }}
-          >
-            <BookOpen size={16} color="#7C3AED" /> Knowledge Hub & Formulation Guides
-          </div>
           <h1
             style={{
               fontSize: "clamp(2rem, 4vw, 2.8rem)",

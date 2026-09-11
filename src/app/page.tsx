@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Footer } from "@/components/server/Footer";
 import { HeroSlideshow } from "@/components/client/HeroSlideshow";
-import { GlassFeatureCards, GlassHeroButtons } from "@/components/client/GlassComponents";
+import { GlassHeroButtons } from "@/components/client/GlassComponents";
 import { HomeUniversalSearchBar } from "@/components/client/HomeUniversalSearchBar";
 import { ExploreLatestLineSection } from "@/components/client/ExploreLatestLineSection";
 import { CompanyVideoSection } from "@/components/client/CompanyVideoSection";
@@ -141,13 +141,10 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Value Proposition — Liquid Glass feature cards (3 boxes) */}
-        <GlassFeatureCards />
-
         {/* Universal Search Bar — Full Aesthetic Length with In-Flow Dynamic Push */}
         <HomeUniversalSearchBar />
 
-        {/* Explore our Latest Line — Supercritical CO2 Extracts Moving Catalog */}
+        {/* Explore our Latest Products — Supercritical CO2 Extracts Moving Catalog */}
         <ExploreLatestLineSection />
 
         {/* Corporate Film & Distillery Video Tour Section */}

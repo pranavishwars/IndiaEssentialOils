@@ -4,14 +4,11 @@ import React, { useState, useRef } from "react";
 import Link from "next/link";
 import { 
   Sparkles, 
-  Globe, 
   ShieldCheck, 
-  FileText, 
   ChevronDown, 
   ArrowRight,
   Award,
   Building2,
-  Clock,
   Quote
 } from "lucide-react";
 
@@ -32,7 +29,7 @@ export const ABOUT_SUBMENU = [
     name: "The Trust We've Built",
     href: "/about/trust-we-built",
     desc: "95% buyer retention, 90% repeat orders & ISO/GMP certified",
-    icon: <ShieldCheck size={18} color="#059669" />,
+    icon: <ShieldCheck size={18} color="#7C3AED" />,
   },
   {
     name: "Why Us",
@@ -44,19 +41,7 @@ export const ABOUT_SUBMENU = [
     name: "Industries We Serve",
     href: "/about/industries-we-serve",
     desc: "Cosmetics, Food & Flavor, Pharma, Fragrance & Wellness",
-    icon: <Building2 size={18} color="#EC4899" />,
-  },
-  {
-    name: "The Countries We Serve",
-    href: "/about/countries-we-serve",
-    desc: "Supplying USA, Australia, New Zealand, Middle East & Europe",
-    icon: <Globe size={18} color="#0284C7" />,
-  },
-  {
-    name: "How to Order",
-    href: "/about/how-to-order",
-    desc: "Transparent 3-step procurement & 48-hour order dispatch",
-    icon: <Clock size={18} color="#8B5CF6" />,
+    icon: <Building2 size={18} color="#7C3AED" />,
   },
 ];
 

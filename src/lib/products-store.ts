@@ -71,7 +71,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Abelmoschus moschatus",
     "category": "ESSENTIAL_OIL",
     "description": "Rich musk-like aromatic oil steam distilled from ambrette seeds, widely used in premium perfumery and fixative blends.",
-    "shortSpec": "Steam Distilled · India · Musk Note",
+    "shortSpec": "Steam Distilled · Musk Note",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 55,
@@ -79,8 +79,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -98,8 +98,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Ambrette Seed Oil (Abelmoschus moschatus) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Ambrette Seed Oil (Abelmoschus moschatus). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -125,7 +125,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Amyris balsamifera",
     "category": "ESSENTIAL_OIL",
     "description": "Creamy, woody essential oil steam distilled from amyris wood, an economical sandalwood alternative in perfumery.",
-    "shortSpec": "Steam Distilled · Caribbean · Woody Fixative",
+    "shortSpec": "Steam Distilled · Woody Fixative",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 48,
@@ -133,8 +133,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -152,8 +152,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Amyris Oil (Amyris balsamifera) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Amyris Oil (Amyris balsamifera). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -179,7 +179,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Angelica archangelica",
     "category": "ESSENTIAL_OIL",
     "description": "Complex, earthy-herbaceous oil distilled from angelica roots, prized in fine perfumery and herbal medicine.",
-    "shortSpec": "Steam Distilled · European Origin · Complex Aroma",
+    "shortSpec": "Steam Distilled · Complex Aroma",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 42,
@@ -187,8 +187,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -206,8 +206,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Angelica Root Oil (Angelica archangelica) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Angelica Root Oil (Angelica archangelica). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -233,7 +233,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Artemisia vulgaris",
     "category": "ESSENTIAL_OIL",
     "description": "Herbaceous oil from mugwort leaves used in aromatherapy and as a starting material in flavour applications.",
-    "shortSpec": "Steam Distilled · India · Herbaceous",
+    "shortSpec": "Steam Distilled · Herbaceous",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 30,
@@ -241,8 +241,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -260,8 +260,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Armoise Oil (Artemisia vulgaris) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Armoise Oil (Artemisia vulgaris). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -287,7 +287,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Ocimum basilicum",
     "category": "ESSENTIAL_OIL",
     "description": "Sweet, spicy-herbaceous essential oil from fresh basil leaves with high methyl chavicol and linalool content.",
-    "shortSpec": "Steam Distilled · India · Sweet Basil",
+    "shortSpec": "Steam Distilled · Sweet Basil",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 62,
@@ -295,8 +295,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -314,8 +314,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Basil Oil (Ocimum basilicum) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Basil Oil (Ocimum basilicum). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -341,7 +341,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Piper betle",
     "category": "ESSENTIAL_OIL",
     "description": "Pungent, phenolic oil from betel leaves used in oral care, flavourings, and traditional medicine.",
-    "shortSpec": "Steam Distilled · India · Phenolic Profile",
+    "shortSpec": "Steam Distilled · Phenolic Profile",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 34,
@@ -349,8 +349,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -368,8 +368,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Betel Leaf Oil (Piper betle) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Betel Leaf Oil (Piper betle). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -395,7 +395,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Betula pendula",
     "category": "ESSENTIAL_OIL",
     "description": "Smoky, tarry oil obtained from destructive distillation of birch bark. Used in leather scents and dermatological preparations.",
-    "shortSpec": "Destructive Distillation · Eastern Europe · Smoky",
+    "shortSpec": "Destructive Distillation · Smoky",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 28,
@@ -403,8 +403,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -422,8 +422,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Birch Tar Oil (Betula pendula) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Birch Tar Oil (Betula pendula). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -449,7 +449,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Citrus aurantium",
     "category": "ESSENTIAL_OIL",
     "description": "Cold-pressed peel oil with a rich, intense citrus character, preferred over sweet orange in high-end fragrance compositions.",
-    "shortSpec": "Cold Pressed · Mediterranean · Bitter Citrus",
+    "shortSpec": "Cold Pressed · Bitter Citrus",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 58,
@@ -457,8 +457,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -476,8 +476,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Bitter Orange Oil (Citrus aurantium) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Bitter Orange Oil (Citrus aurantium). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -503,7 +503,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Nigella sativa",
     "category": "ESSENTIAL_OIL",
     "description": "Valued for its thymoquinone-rich profile and therapeutic reputation across Middle Eastern, South Asian, and Unani traditions.",
-    "shortSpec": "Cold Pressed · India · Therapeutic Grade",
+    "shortSpec": "Cold Pressed · Therapeutic Grade",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 70,
@@ -530,8 +530,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Packaged under inert nitrogen blanket to prevent lipid peroxidation during export."
       }
     ],
-    "overview": "100% pure steam distilled Black Seed Oil (Nigella sativa) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Black Seed Oil (Nigella sativa). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -557,7 +557,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Citrus bergamia",
     "category": "ESSENTIAL_OIL",
     "description": "Iconic Italian citrus essential oil with a bright, uplifting, floral-fruity scent — one of the most important perfumery materials.",
-    "shortSpec": "Cold Pressed · Calabria, Italy Origin · Bergapten-Free",
+    "shortSpec": "Cold Pressed · Bergapten-Free",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 82,
@@ -565,8 +565,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -585,8 +585,8 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "100% pure steam distilled Bergamot Oil (Citrus bergamia) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Bergamot Oil (Citrus bergamia). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -612,7 +612,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Juniperus oxycedrus",
     "category": "ESSENTIAL_OIL",
     "description": "Smoky, creosolic oil distilled from cade juniper wood, historically used in dermatological preparations and leather perfumery.",
-    "shortSpec": "Dry Distillation · Mediterranean · Tarry-Smoky",
+    "shortSpec": "Dry Distillation · Tarry-Smoky",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 26,
@@ -620,8 +620,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -639,8 +639,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Cade Oil (Juniperus oxycedrus) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Cade Oil (Juniperus oxycedrus). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -666,7 +666,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Melaleuca cajuputi",
     "category": "ESSENTIAL_OIL",
     "description": "Camphorous, medicinal oil closely related to tea tree, commonly used in respiratory and analgesic liniment preparations.",
-    "shortSpec": "Steam Distilled · Southeast Asia · Medicinal",
+    "shortSpec": "Steam Distilled · Medicinal",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 44,
@@ -674,8 +674,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -693,8 +693,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Cajeput Oil (Melaleuca cajuputi) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Cajeput Oil (Melaleuca cajuputi). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -720,7 +720,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Cinnamomum camphora",
     "category": "ESSENTIAL_OIL",
     "description": "Powerfully camphorous oil from camphor wood. Used in analgesic balms, moth repellents, and pharmaceutical preparations.",
-    "shortSpec": "Steam Distilled · India/China · Camphor Dominant",
+    "shortSpec": "Steam Distilled · Camphor Dominant",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 56,
@@ -728,8 +728,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -747,8 +747,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Camphor Oil (Cinnamomum camphora) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Camphor Oil (Cinnamomum camphora). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -774,7 +774,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Daucus carota",
     "category": "ESSENTIAL_OIL",
     "description": "Earthy, warm root oil valued in cosmetics for its carotol content and skin-rejuvenating and toning properties.",
-    "shortSpec": "Steam Distilled · India/France · Skin Renewing",
+    "shortSpec": "Steam Distilled · Skin Renewing",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 60,
@@ -782,8 +782,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -801,8 +801,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Carrot Seed Oil (Daucus carota) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Carrot Seed Oil (Daucus carota). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -828,7 +828,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Cedrus atlantica / Cedrus deodara",
     "category": "ESSENTIAL_OIL",
     "description": "Warm, woody fixative oil distilled from Himalayan or Atlas cedar wood. An essential base note in Oriental and woody fragrances.",
-    "shortSpec": "Steam Distilled · Himalayas, India · Woody Base Note",
+    "shortSpec": "Steam Distilled · Woody Base Note",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 75,
@@ -836,8 +836,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -856,8 +856,8 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "100% pure steam distilled Cedarwood Oil (Cedrus atlantica / Cedrus deodara) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Cedarwood Oil (Cedrus atlantica / Cedrus deodara). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -883,7 +883,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Matricaria chamomilla",
     "category": "ESSENTIAL_OIL",
     "description": "Deep indigo-blue essential oil rich in chamazulene, revered for its potent anti-inflammatory and skin-calming properties.",
-    "shortSpec": "Steam Distilled · Egypt/Germany · High Chamazulene",
+    "shortSpec": "Steam Distilled · High Chamazulene",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 72,
@@ -891,8 +891,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -911,8 +911,8 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "100% pure steam distilled Chamomile Oil (Blue) (Matricaria chamomilla) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Chamomile Oil (Blue) (Matricaria chamomilla). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -938,7 +938,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Anthemis nobilis",
     "category": "ESSENTIAL_OIL",
     "description": "Sweet, apple-scented Roman chamomile oil with gentle, sedating therapeutic properties and wide use in luxury skincare.",
-    "shortSpec": "Steam Distilled · France/UK · Sweet Floral",
+    "shortSpec": "Steam Distilled · Sweet Floral",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 68,
@@ -946,8 +946,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -965,8 +965,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Chamomile Oil (Roman) (Anthemis nobilis) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Chamomile Oil (Roman) (Anthemis nobilis). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -992,7 +992,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Michelia champaca",
     "category": "ESSENTIAL_OIL",
     "description": "Intensely floral, jasmine-like champaca oil distilled from golden magnolia flowers, central to Indian perfumery and attar making.",
-    "shortSpec": "Steam Distilled · India · Floral Absolute-Like",
+    "shortSpec": "Steam Distilled · Floral Absolute-Like",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 60,
@@ -1000,8 +1000,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -1019,7 +1019,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Champaca Oil (Michelia champaca) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "overview": "100% pure steam distilled Champaca Oil (Michelia champaca). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
     "history": "Integral to the historic royal perfumery of Kannauj (the Grasse of the East) dating back to the Mughal courts. The delicate petals are hand-harvested exclusively at pre-dawn twilight before direct sunlight can evaporate delicate floral volatiles, ensuring complete olfactory fidelity.",
     "benefits": [
       {
@@ -1046,7 +1046,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Hydnocarpus wightianus",
     "category": "ESSENTIAL_OIL",
     "description": "Traditional Ayurvedic oil from chaulmoogra seeds used in dermatological and anti-fungal preparations.",
-    "shortSpec": "Cold Pressed · India · Traditional Medicinal",
+    "shortSpec": "Cold Pressed · Traditional Medicinal",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 22,
@@ -1073,8 +1073,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Packaged under inert nitrogen blanket to prevent lipid peroxidation during export."
       }
     ],
-    "overview": "100% pure steam distilled Chulmoogra Oil (Hydnocarpus wightianus) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Chulmoogra Oil (Hydnocarpus wightianus). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1100,7 +1100,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Eucalyptus citriodora",
     "category": "ESSENTIAL_OIL",
     "description": "Lemon-scented eucalyptus oil high in citronellal, used as a natural insect repellent and in fragrance applications.",
-    "shortSpec": "Steam Distilled · India/Australia · Citrus-Eucalyptus",
+    "shortSpec": "Steam Distilled · Citrus-Eucalyptus",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 50,
@@ -1108,8 +1108,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -1127,8 +1127,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Citriodora Oil (Eucalyptus citriodora) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Citriodora Oil (Eucalyptus citriodora). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1154,7 +1154,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Cymbopogon nardus",
     "category": "ESSENTIAL_OIL",
     "description": "Classic natural insect-repellent oil with a fresh, lemon-like scent widely used in outdoor candles, sprays, and personal care.",
-    "shortSpec": "Steam Distilled · Sri Lanka/India · Insect Repellent",
+    "shortSpec": "Steam Distilled · Insect Repellent",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 66,
@@ -1162,8 +1162,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -1181,8 +1181,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Distilled from prime Cymbopogon nardus cultivated in the renowned terroir of Assam & Brahmaputra valley. This botanical lot exhibits an exceptional volatile fraction highlighted by Citronellal (35%+), Geraniol (22%+), grown under Humid tropical alluvial floodplains with fertile organic silt. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "Distilled from prime Cymbopogon nardus. This botanical lot exhibits an exceptional volatile fraction highlighted by Citronellal (35%+), Geraniol (22%+), grown under Humid tropical alluvial floodplains with fertile organic silt. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1208,7 +1208,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Salvia sclarea",
     "category": "ESSENTIAL_OIL",
     "description": "Nutty, sweet-herbaceous oil with natural sclareol and linalyl acetate. Highly valued in female wellness formulations and fixatives.",
-    "shortSpec": "Steam Distilled · France/India · High Linalyl Acetate",
+    "shortSpec": "Steam Distilled · High Linalyl Acetate",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 67,
@@ -1216,8 +1216,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -1236,8 +1236,8 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "100% pure steam distilled Clary Sage Oil (Salvia sclarea) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Clary Sage Oil (Salvia sclarea). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1263,7 +1263,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Coffea arabica",
     "category": "ESSENTIAL_OIL",
     "description": "Rich, roasted CO2-extracted or steam-distilled coffee oil used in niche perfumery and anti-cellulite cosmetic formulas.",
-    "shortSpec": "CO2 Extracted · India · Rich Roasted Aroma",
+    "shortSpec": "CO2 Extracted · Rich Roasted Aroma",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 40,
@@ -1271,8 +1271,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -1290,8 +1290,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Coffee Oil (Coffea arabica) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Coffee Oil (Coffea arabica). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1317,7 +1317,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Saussurea costus",
     "category": "ESSENTIAL_OIL",
     "description": "Rare, animal-like, deeply earthy fixative oil from costus roots. Heavily prized in Oriental and Indian attars.",
-    "shortSpec": "Steam Distilled · India · Fixative Base Note",
+    "shortSpec": "Steam Distilled · Fixative Base Note",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 35,
@@ -1325,8 +1325,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -1344,8 +1344,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Costus Root Oil (Saussurea costus) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Costus Root Oil (Saussurea costus). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1371,7 +1371,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Croton tiglium",
     "category": "ESSENTIAL_OIL",
     "description": "Potent fixed oil used in pharmaceutical and research applications. Requires careful handling due to high phorbol ester content.",
-    "shortSpec": "Cold Pressed · India · Pharmaceutical Grade",
+    "shortSpec": "Cold Pressed · Pharmaceutical Grade",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 18,
@@ -1398,8 +1398,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Packaged under inert nitrogen blanket to prevent lipid peroxidation during export."
       }
     ],
-    "overview": "100% pure steam distilled Croton Oil (Croton tiglium) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Croton Oil (Croton tiglium). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1425,7 +1425,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Annona squamosa",
     "category": "ESSENTIAL_OIL",
     "description": "Traditional Indian botanical oil from custard apple seeds, used in hair care and Ayurvedic pesticidal preparations.",
-    "shortSpec": "Cold Pressed · India · Hair Care",
+    "shortSpec": "Cold Pressed · Hair Care",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 20,
@@ -1452,8 +1452,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Packaged under inert nitrogen blanket to prevent lipid peroxidation during export."
       }
     ],
-    "overview": "100% pure steam distilled Custard Apple Oil (Annona squamosa) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Custard Apple Oil (Annona squamosa). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1479,7 +1479,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Cupressus sempervirens",
     "category": "ESSENTIAL_OIL",
     "description": "Fresh, woody-herbaceous oil with natural terpinol and cedrol content, used in men's fragrances and lymphatic massage blends.",
-    "shortSpec": "Steam Distilled · Mediterranean · Fresh-Woody",
+    "shortSpec": "Steam Distilled · Fresh-Woody",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 58,
@@ -1487,8 +1487,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -1506,8 +1506,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Cypress Oil (Cupressus sempervirens) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Cypress Oil (Cupressus sempervirens). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1533,7 +1533,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Cyperus scariosus",
     "category": "ESSENTIAL_OIL",
     "description": "Earthy, woody oud-like oil from cypriol tubers, popular in Middle Eastern perfumery and attar compositions.",
-    "shortSpec": "Steam Distilled · India · Earthy-Woody-Oud",
+    "shortSpec": "Steam Distilled · Earthy-Woody-Oud",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 55,
@@ -1541,8 +1541,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -1560,8 +1560,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Cypriol Oil (Nagarmotha Oil) (Cyperus scariosus) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Cypriol Oil (Nagarmotha Oil) (Cyperus scariosus). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1587,7 +1587,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Artemisia pallens",
     "category": "ESSENTIAL_OIL",
     "description": "Unique, sweet-fruity Indian essential oil from Davana plant. Smells differently on each person due to interaction with skin chemistry.",
-    "shortSpec": "Steam Distilled · Karnataka, India · Unique Fruity-Sweet",
+    "shortSpec": "Steam Distilled · Unique Fruity-Sweet",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 48,
@@ -1595,8 +1595,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -1614,8 +1614,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Davana Oil (Artemisia pallens) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Davana Oil (Artemisia pallens). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1641,7 +1641,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Canarium luzonicum",
     "category": "ESSENTIAL_OIL",
     "description": "Fresh, spicy-citrus resinous oil from elemi gum, used in skin care for cell regeneration and as a base note in fine perfumery.",
-    "shortSpec": "Steam Distilled · Philippines · Resinous-Citrus",
+    "shortSpec": "Steam Distilled · Resinous-Citrus",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 36,
@@ -1649,8 +1649,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -1668,8 +1668,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Elemi Oil (Canarium luzonicum) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Elemi Oil (Canarium luzonicum). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1695,7 +1695,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Eucalyptus globulus",
     "category": "ESSENTIAL_OIL",
     "description": "The world's leading medicinal essential oil, with 80–85% cineole (eucalyptol), used in pharmaceutical, dental, and cleaning products.",
-    "shortSpec": "Steam Distilled · India/Australia · 80% Cineole Min",
+    "shortSpec": "Steam Distilled · 80% Cineole Min",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 90,
@@ -1703,8 +1703,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -1723,8 +1723,8 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "Distilled from prime Eucalyptus globulus cultivated in the renowned terroir of Nilgiri Blue Mountains, South India. This botanical lot exhibits an exceptional volatile fraction highlighted by Eucalyptol / 1,8-Cineole (82%+), Alpha-Pinene, grown under High-altitude eucalyptus plantations harvested since 1843. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "Distilled from prime Eucalyptus globulus. This botanical lot exhibits an exceptional volatile fraction highlighted by Eucalyptol / 1,8-Cineole (82%+), Alpha-Pinene, grown under High-altitude eucalyptus plantations harvested since 1843. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1750,7 +1750,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Boswellia serrata",
     "category": "ESSENTIAL_OIL",
     "description": "Sacred steam-distilled Indian olibanum (frankincense) with alpha-pinene and incensole. Used in luxury skin care, meditation, and high-end perfumery.",
-    "shortSpec": "Steam Distilled · Rajasthan, India · Sacred Resin",
+    "shortSpec": "Steam Distilled · Sacred Resin",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 87,
@@ -1758,8 +1758,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -1778,8 +1778,8 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "Distilled from prime Boswellia serrata cultivated in the renowned terroir of Shekhawati / Aravalli Hills, Rajasthan. This botanical lot exhibits an exceptional volatile fraction highlighted by Alpha-Pinene (52%+), Boswellic derivatives, grown under Arid rocky calcareous soils yielding high-resin oleogum. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "Distilled from prime Boswellia serrata. This botanical lot exhibits an exceptional volatile fraction highlighted by Alpha-Pinene (52%+), Boswellic derivatives, grown under Arid rocky calcareous soils yielding high-resin oleogum. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1805,7 +1805,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Gaultheria fragrantissima",
     "category": "ESSENTIAL_OIL",
     "description": "Indian wintergreen oil rich in natural methyl salicylate, widely used in pain relief balms and topical analgesic preparations.",
-    "shortSpec": "Steam Distilled · Himalayas · High Methyl Salicylate",
+    "shortSpec": "Steam Distilled · High Methyl Salicylate",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 52,
@@ -1813,8 +1813,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -1832,8 +1832,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Gandhapura Oil (Gaultheria fragrantissima) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Gandhapura Oil (Gaultheria fragrantissima). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1859,7 +1859,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Pelargonium graveolens",
     "category": "ESSENTIAL_OIL",
     "description": "Rose-like, balancing geranium oil from India and Egypt. A top perfumery material and skin care active with high citronellol content.",
-    "shortSpec": "Steam Distilled · India · High Citronellol",
+    "shortSpec": "Steam Distilled · High Citronellol",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 83,
@@ -1867,8 +1867,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -1887,8 +1887,8 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "100% pure steam distilled Geranium Oil (Pelargonium graveolens) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Geranium Oil (Pelargonium graveolens). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -1914,7 +1914,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Cymbopogon martinii var. sofia",
     "category": "ESSENTIAL_OIL",
     "description": "Earthy, fresh-grassy oil distilled from ginger grass with high perillyl alcohol. Distinct from palmarosa — frequently used in soap making.",
-    "shortSpec": "Steam Distilled · India · Earthy-Grassy",
+    "shortSpec": "Steam Distilled · Earthy-Grassy",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 38,
@@ -1922,8 +1922,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -1941,7 +1941,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Distilled from prime Cymbopogon martinii var. sofia cultivated in the renowned terroir of Cochin & Wayanad, Kerala. This botanical lot exhibits an exceptional volatile fraction highlighted by Zingiberene (35%+), Curcumene, Gingerols, grown under Organic mountain loam renowned for intense aromatic pungency. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "overview": "Distilled from prime Cymbopogon martinii var. sofia. This botanical lot exhibits an exceptional volatile fraction highlighted by Zingiberene (35%+), Curcumene, Gingerols, grown under Organic mountain loam renowned for intense aromatic pungency. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -1968,7 +1968,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Citrus paradisi",
     "category": "ESSENTIAL_OIL",
     "description": "Bright, uplifting cold-pressed grapefruit peel oil with high limonene. Used in slimming products, detox blends, and fresh fragrances.",
-    "shortSpec": "Cold Pressed · USA/Israel · High Limonene",
+    "shortSpec": "Cold Pressed · High Limonene",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 70,
@@ -1976,8 +1976,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -1995,8 +1995,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Grapefruit Oil (Citrus paradisi) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Grapefruit Oil (Citrus paradisi). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2022,7 +2022,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Gaultheria fragrantissima",
     "category": "ESSENTIAL_OIL",
     "description": "Natural Indian wintergreen — methyl salicylate dominant oil used in analgesic and anti-inflammatory formulations.",
-    "shortSpec": "Steam Distilled · Himalayas · Wintergreen",
+    "shortSpec": "Steam Distilled · Wintergreen",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 44,
@@ -2030,8 +2030,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -2049,8 +2049,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Gaultheria Fragrantissima Oil (Gaultheria fragrantissima) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Gaultheria Fragrantissima Oil (Gaultheria fragrantissima). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2076,7 +2076,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Hedychium spicatum",
     "category": "ESSENTIAL_OIL",
     "description": "Rare Himalayan ginger lily oil with a unique floral-spicy aroma, used in traditional Ayurvedic applications and Indian attars.",
-    "shortSpec": "Steam Distilled · Himalayas · Floral-Spicy",
+    "shortSpec": "Steam Distilled · Floral-Spicy",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 30,
@@ -2084,8 +2084,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -2103,8 +2103,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Hedychium Oil (Hedychium spicatum) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Hedychium Oil (Hedychium spicatum). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2130,7 +2130,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Helichrysum italicum",
     "category": "ESSENTIAL_OIL",
     "description": "Prestigious Italian everlasting flower oil with strong anti-inflammatory and skin-regenerating properties. A key activa in anti-ageing cosmetics.",
-    "shortSpec": "Steam Distilled · Corsica/Balkans · Skin Regenerating",
+    "shortSpec": "Steam Distilled · Skin Regenerating",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 78,
@@ -2138,8 +2138,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -2158,8 +2158,8 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "100% pure steam distilled Helichrysum Oil (Immortelle) (Helichrysum italicum) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Helichrysum Oil (Immortelle) (Helichrysum italicum). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2185,7 +2185,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Lawsonia inermis",
     "category": "ESSENTIAL_OIL",
     "description": "Traditional Indian oil from henna flowers, used in hair oils, body care, and as a floral accent in Indian attars.",
-    "shortSpec": "Steam Distilled · India · Floral-Herbaceous",
+    "shortSpec": "Steam Distilled · Floral-Herbaceous",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 35,
@@ -2193,8 +2193,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -2212,8 +2212,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Henna Oil (Lawsonia inermis) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Henna Oil (Lawsonia inermis). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2239,7 +2239,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Ocimum sanctum",
     "category": "ESSENTIAL_OIL",
     "description": "Sacred tulsi essential oil with high eugenol content, used in Ayurvedic medicine and natural health products globally.",
-    "shortSpec": "Steam Distilled · India · High Eugenol",
+    "shortSpec": "Steam Distilled · High Eugenol",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 60,
@@ -2247,8 +2247,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -2266,7 +2266,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Holy Basil Oil (Ocimum Sanctum Oil) (Ocimum sanctum) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "overview": "100% pure steam distilled Holy Basil Oil (Ocimum Sanctum Oil) (Ocimum sanctum). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
     "history": "Documented extensively in the ancient Charaka Samhita and Sushruta Samhita treatises spanning over 3,000 years of traditional Indian medicinal heritage. Harvesting follows time-tested seasonal cycles aligned with lunar and diurnal peaks in plant bio-energy, preserved by multi-generational farming communities.",
     "benefits": [
       {
@@ -2293,7 +2293,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Juniperus communis",
     "category": "ESSENTIAL_OIL",
     "description": "Fresh, coniferous juniper berry oil with high alpha-pinene content. Used in detox blends, men's fragrances, and gin flavoring.",
-    "shortSpec": "Steam Distilled · Europe/India · Alpine-Fresh",
+    "shortSpec": "Steam Distilled · Alpine-Fresh",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 68,
@@ -2301,8 +2301,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -2320,8 +2320,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Juniper Berry Oil (Juniperus communis) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Juniper Berry Oil (Juniperus communis). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2347,7 +2347,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Pandanus odoratissimus",
     "category": "ESSENTIAL_OIL",
     "description": "Exotic floral oil from screwpine flowers. Intensely sweet, rose-like with tropical character, central to Indian and Middle Eastern perfumery.",
-    "shortSpec": "Steam Distilled · India · Tropical Floral",
+    "shortSpec": "Steam Distilled · Tropical Floral",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 45,
@@ -2355,8 +2355,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -2374,8 +2374,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Kewra Oil (Pandanus odoratissimus) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Kewra Oil (Pandanus odoratissimus). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2401,7 +2401,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Lavandula angustifolia",
     "category": "ESSENTIAL_OIL",
     "description": "100% pure steam-distilled Lavender Oil known for its calming, therapeutic aroma and soothing skincare properties. Certified GC-MS tested.",
-    "shortSpec": "Steam Distilled · Kashmir, India · 100% Pure",
+    "shortSpec": "Steam Distilled · 100% Pure",
     "overview": "Our Kashmiri Lavender Essential Oil is harvested from high-altitude slopes in the Kashmir Valley, characterized by an exceptionally sweet, floral-herbaceous aroma with high natural concentrations of linalool (38%+) and linalyl acetate (34%+). Revered globally by cosmetic chemists and luxury perfumers.",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -2410,8 +2410,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -2430,7 +2430,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2456,7 +2456,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Melissa officinalis",
     "category": "ESSENTIAL_OIL",
     "description": "One of the most prized and expensive essential oils, rich in citral and citronellal, used in natural pharmacy and high-end cosmetics.",
-    "shortSpec": "Steam Distilled · Europe · High Citral",
+    "shortSpec": "Steam Distilled · High Citral",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 55,
@@ -2464,8 +2464,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -2483,8 +2483,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Lemon Balm Oil (Melissa officinalis) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Lemon Balm Oil (Melissa officinalis). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2510,7 +2510,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Citrus limon",
     "category": "ESSENTIAL_OIL",
     "description": "Bright, zesty cold-pressed lemon peel oil with high limonene. Versatile in fragrances, flavor systems, and cleaning product formulations.",
-    "shortSpec": "Cold Pressed · India/Italy · High Limonene",
+    "shortSpec": "Cold Pressed · High Limonene",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 85,
@@ -2518,8 +2518,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -2538,8 +2538,8 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "100% pure steam distilled Lemon Oil (Citrus limon) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Lemon Oil (Citrus limon). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2565,7 +2565,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Aloysia citriodora",
     "category": "ESSENTIAL_OIL",
     "description": "Delicate, intensely lemony oil from verbena leaves. Used in high-end fragrances, tea flavouring, and luxury personal care.",
-    "shortSpec": "Steam Distilled · France/Spain · Delicate Lemon",
+    "shortSpec": "Steam Distilled · Delicate Lemon",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 48,
@@ -2573,8 +2573,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -2592,8 +2592,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Lemon Verbena Oil (Aloysia citriodora) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Lemon Verbena Oil (Aloysia citriodora). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2619,7 +2619,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Cymbopogon flexuosus",
     "category": "ESSENTIAL_OIL",
     "description": "India's most exported essential oil — high-citral lemongrass with a bold, grassy-lemon character used in soaps, cosmetics, and flavoring.",
-    "shortSpec": "Steam Distilled · Kerala, India · High Citral",
+    "shortSpec": "Steam Distilled · High Citral",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 92,
@@ -2627,8 +2627,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -2647,8 +2647,8 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "Distilled from prime Cymbopogon flexuosus cultivated in the renowned terroir of Cochin / Wayanad, Kerala. This botanical lot exhibits an exceptional volatile fraction highlighted by Citral (78%+), Geraniol, Myrcene, grown under Malabar tropical coastal terroir receiving dual monsoons. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "Distilled from prime Cymbopogon flexuosus. This botanical lot exhibits an exceptional volatile fraction highlighted by Citral (78%+), Geraniol, Myrcene, grown under Malabar tropical coastal terroir receiving dual monsoons. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2674,7 +2674,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Lilium candidum",
     "category": "ESSENTIAL_OIL",
     "description": "Delicate floral absolute-style oil from white lily blooms used in luxury perfumery and high-end skincare formulations.",
-    "shortSpec": "Solvent Extracted · India · Delicate Floral",
+    "shortSpec": "Solvent Extracted · Delicate Floral",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 38,
@@ -2682,8 +2682,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -2701,8 +2701,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Lily Oil (Lilium candidum) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Lily Oil (Lilium candidum). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2728,7 +2728,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Melissa officinalis",
     "category": "ESSENTIAL_OIL",
     "description": "True steam-distilled melissa oil (lemon balm). Very rare and expensive due to extremely low yield, with calming and antiviral properties.",
-    "shortSpec": "Steam Distilled · Europe · Ultra-Rare",
+    "shortSpec": "Steam Distilled · Ultra-Rare",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 52,
@@ -2736,8 +2736,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -2755,8 +2755,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Melissa Oil (Melissa officinalis) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Melissa Oil (Melissa officinalis). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2782,7 +2782,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Mentha aquatica var. citrata",
     "category": "ESSENTIAL_OIL",
     "description": "Bergamot mint oil with a distinctive citrus-mint blend, used in personal care, perfumery, and flavour applications.",
-    "shortSpec": "Steam Distilled · India · Citrus-Mint",
+    "shortSpec": "Steam Distilled · Citrus-Mint",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 40,
@@ -2790,8 +2790,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -2809,8 +2809,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Mentha Citrata Oil (Mentha aquatica var. citrata) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Mentha Citrata Oil (Mentha aquatica var. citrata). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2836,7 +2836,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Mentha arvensis",
     "category": "ESSENTIAL_OIL",
     "description": "Indian cornmint oil — the world's primary natural menthol source. Used in oral care, pharmaceuticals, and confectionery globally.",
-    "shortSpec": "Steam Distilled · Uttar Pradesh · High Natural Menthol",
+    "shortSpec": "Steam Distilled · High Natural Menthol",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 88,
@@ -2844,8 +2844,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -2864,8 +2864,8 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "100% pure steam distilled Mint Oil (Mentha arvensis) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Mint Oil (Mentha arvensis). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2891,7 +2891,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Commiphora myrrha",
     "category": "ESSENTIAL_OIL",
     "description": "Ancient sacred resin oil from Somalia and Ethiopia, used in incense, luxury skincare, oral care, and spiritual aromatherapy.",
-    "shortSpec": "Steam Distilled · East Africa · Sacred Resin",
+    "shortSpec": "Steam Distilled · Sacred Resin",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 72,
@@ -2899,8 +2899,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -2918,8 +2918,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Myrrh Oil (Commiphora myrrha) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Myrrh Oil (Commiphora myrrha). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2945,7 +2945,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Myrtus communis",
     "category": "ESSENTIAL_OIL",
     "description": "Fresh, camphor-like Mediterranean myrtle oil used in respiratory preparations, skincare for oily skin, and light perfumery.",
-    "shortSpec": "Steam Distilled · Morocco/Iran · Fresh-Camphor",
+    "shortSpec": "Steam Distilled · Fresh-Camphor",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 42,
@@ -2953,8 +2953,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -2972,8 +2972,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Myrtle Oil (Myrtus communis) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Myrtle Oil (Myrtus communis). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -2999,7 +2999,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Citrus aurantium",
     "category": "ESSENTIAL_OIL",
     "description": "Exquisite, precious orange blossom essential oil — the most expensive citrus oil in perfumery. Calming and deeply floral.",
-    "shortSpec": "Steam Distilled · Egypt/Tunisia · Luxury Grade",
+    "shortSpec": "Steam Distilled · Luxury Grade",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 80,
@@ -3007,8 +3007,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -3027,8 +3027,8 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "100% pure steam distilled Neroli Oil (Citrus aurantium) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Neroli Oil (Citrus aurantium). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -3054,7 +3054,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Melaleuca quinquenervia",
     "category": "ESSENTIAL_OIL",
     "description": "Therapeutic cineole-rich oil from New Caledonia, used in pharmaceutical respiratory preparations and wound-healing applications.",
-    "shortSpec": "Steam Distilled · Oceania · Medicinal Grade",
+    "shortSpec": "Steam Distilled · Medicinal Grade",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 38,
@@ -3062,8 +3062,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -3081,8 +3081,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Niaouli Oil (Melaleuca quinquenervia) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Niaouli Oil (Melaleuca quinquenervia). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -3108,7 +3108,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Myristica fragrans",
     "category": "ESSENTIAL_OIL",
     "description": "Warm, spicy-woody nutmeg essential oil used in flavour systems, traditional medicine, and as a middle note in Oriental perfumery.",
-    "shortSpec": "Steam Distilled · Kerala, India · Spicy-Woody",
+    "shortSpec": "Steam Distilled · Spicy-Woody",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 60,
@@ -3116,8 +3116,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -3135,8 +3135,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Nutmeg Oil (Myristica fragrans) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Nutmeg Oil (Myristica fragrans). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -3162,7 +3162,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Cymbopogon martinii",
     "category": "ESSENTIAL_OIL",
     "description": "High-geraniol palmarosa oil from Indian grass species — the most geraniol-rich natural material, extensively used as a rose extender.",
-    "shortSpec": "Steam Distilled · India · 85%+ Geraniol",
+    "shortSpec": "Steam Distilled · 85%+ Geraniol",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 70,
@@ -3170,8 +3170,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -3189,8 +3189,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Distilled from prime Cymbopogon martinii cultivated in the renowned terroir of Satpura Range, Madhya Pradesh. This botanical lot exhibits an exceptional volatile fraction highlighted by Geraniol (85%+), Geranyl Acetate, grown under Wild grassland plateaus harvested before midday peak heat. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "Distilled from prime Cymbopogon martinii. This botanical lot exhibits an exceptional volatile fraction highlighted by Geraniol (85%+), Geranyl Acetate, grown under Wild grassland plateaus harvested before midday peak heat. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -3216,7 +3216,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Pogostemon cablin",
     "category": "ESSENTIAL_OIL",
     "description": "Deep, earthy, sweet-musky patchouli from aged Indian leaves. An irreplaceable fixative and base note in modern perfumery.",
-    "shortSpec": "Steam Distilled · India/Indonesia · Aged Dark Grade",
+    "shortSpec": "Steam Distilled · Aged Dark Grade",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 86,
@@ -3224,8 +3224,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -3244,8 +3244,8 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "Distilled from prime Pogostemon cablin cultivated in the renowned terroir of Coastal Karnataka & Western Ghats. This botanical lot exhibits an exceptional volatile fraction highlighted by Patchoulol (32%+), Alpha-Bulnesene, grown under Shaded tropical understory with deep humus forest floor. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "Distilled from prime Pogostemon cablin. This botanical lot exhibits an exceptional volatile fraction highlighted by Patchoulol (32%+), Alpha-Bulnesene, grown under Shaded tropical understory with deep humus forest floor. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -3271,7 +3271,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Mentha piperita",
     "category": "ESSENTIAL_OIL",
     "description": "High-menthol steam distilled peppermint oil offering a crisp, invigorating scent and cooling effect for pharmaceuticals, aromatherapy, and cosmetics.",
-    "shortSpec": "Steam Distilled · Uttar Pradesh · High Menthol",
+    "shortSpec": "Steam Distilled · High Menthol",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 93,
@@ -3279,8 +3279,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -3299,7 +3299,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "Distilled from prime Mentha piperita cultivated in the renowned terroir of Uttar Pradesh Terai alluvial plains. This botanical lot exhibits an exceptional volatile fraction highlighted by Menthol (45%+), Menthone (20%+), grown under Rich Gangetic loam with high summer solar radiation. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "overview": "Distilled from prime Mentha piperita. This botanical lot exhibits an exceptional volatile fraction highlighted by Menthol (45%+), Menthone (20%+), grown under Rich Gangetic loam with high summer solar radiation. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -3326,7 +3326,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Myroxylon balsamum",
     "category": "ESSENTIAL_OIL",
     "description": "Sweet, vanilla-like balsamic resin oil from El Salvador used as a fixative in perfumery and in pharmaceutical ointments.",
-    "shortSpec": "Steam Distilled · El Salvador · Balsamic Fixative",
+    "shortSpec": "Steam Distilled · Balsamic Fixative",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 32,
@@ -3334,8 +3334,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -3353,8 +3353,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Peru Balsam Oil (Myroxylon balsamum) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Peru Balsam Oil (Myroxylon balsamum). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -3380,7 +3380,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Citrus aurantium (leaf)",
     "category": "ESSENTIAL_OIL",
     "description": "Fresh, woody-green oil from bitter orange leaves and twigs. A key ingredient in men's fragrances and eau de colognes.",
-    "shortSpec": "Steam Distilled · Paraguay/India · Woody-Green",
+    "shortSpec": "Steam Distilled · Woody-Green",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 62,
@@ -3388,8 +3388,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -3407,8 +3407,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Petitgrain Oil (Citrus aurantium (leaf)) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Petitgrain Oil (Citrus aurantium (leaf)). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -3434,7 +3434,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Pimenta dioica",
     "category": "ESSENTIAL_OIL",
     "description": "Allspice oil — spicy, clove-like with warm cinnamon undertones. Used in flavour, fragrance, and as a topical warming agent.",
-    "shortSpec": "Steam Distilled · Jamaica/India · Spicy-Warm",
+    "shortSpec": "Steam Distilled · Spicy-Warm",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 44,
@@ -3442,8 +3442,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -3461,8 +3461,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Pimento Berry Oil (Pimenta dioica) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Pimento Berry Oil (Pimenta dioica). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -3488,7 +3488,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Pinus sylvestris",
     "category": "ESSENTIAL_OIL",
     "description": "Fresh, clean coniferous pine oil with high alpha-pinene. Used in household cleaners, industrial disinfectants, and woodland fragrances.",
-    "shortSpec": "Steam Distilled · Europe/India · High Alpha-Pinene",
+    "shortSpec": "Steam Distilled · High Alpha-Pinene",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 56,
@@ -3496,8 +3496,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -3515,8 +3515,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Pine Oil (Pinus sylvestris) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Pine Oil (Pinus sylvestris). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -3542,7 +3542,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Psoralea corylifolia",
     "category": "ESSENTIAL_OIL",
     "description": "Bakuchi seed oil used in Ayurvedic medicine and increasingly in natural cosmetics for its bakuchiol content as a retinol alternative.",
-    "shortSpec": "Cold Pressed · India · Bakuchiol Rich",
+    "shortSpec": "Cold Pressed · Bakuchiol Rich",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 42,
@@ -3569,8 +3569,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Packaged under inert nitrogen blanket to prevent lipid peroxidation during export."
       }
     ],
-    "overview": "100% pure steam distilled Psoralea Corylifolia Oil (Psoralea corylifolia) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Psoralea Corylifolia Oil (Psoralea corylifolia). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -3596,7 +3596,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Rosa damascena",
     "category": "ESSENTIAL_OIL",
     "description": "Precious Bulgarian/Indian rose otto — the world's most prized floral oil. Extraordinary complexity with geraniol, citronellol, and rose oxide.",
-    "shortSpec": "Steam Distilled · Bulgaria/India · Rose Otto",
+    "shortSpec": "Steam Distilled · Rose Otto",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 96,
@@ -3604,8 +3604,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -3624,7 +3624,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "Distilled from prime Rosa damascena cultivated in the renowned terroir of Pushkar, Rajasthan & Aligarh, UP. This botanical lot exhibits an exceptional volatile fraction highlighted by Citronellol (38%), Geraniol (20%), Rose Oxide, grown under Chaitri Rose blooming cycle harvested before sunrise. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "overview": "Distilled from prime Rosa damascena. This botanical lot exhibits an exceptional volatile fraction highlighted by Citronellol (38%), Geraniol (20%), Rose Oxide, grown under Chaitri Rose blooming cycle harvested before sunrise. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
     "history": "Integral to the historic royal perfumery of Kannauj (the Grasse of the East) dating back to the Mughal courts. The delicate petals are hand-harvested exclusively at pre-dawn twilight before direct sunlight can evaporate delicate floral volatiles, ensuring complete olfactory fidelity.",
     "benefits": [
       {
@@ -3651,7 +3651,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Rosmarinus officinalis",
     "category": "ESSENTIAL_OIL",
     "description": "Invigorating camphor-cineole rosemary oil from Spain and India. Used in hair care, muscle blends, and memory-enhancement aromatherapy.",
-    "shortSpec": "Steam Distilled · India/Spain · Cineole Chemotype",
+    "shortSpec": "Steam Distilled · Cineole Chemotype",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 84,
@@ -3659,8 +3659,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -3679,7 +3679,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "Distilled from prime Rosmarinus officinalis cultivated in the renowned terroir of Nilgiri Hills, Tamil Nadu. This botanical lot exhibits an exceptional volatile fraction highlighted by 1,8-Cineole (45%+), Alpha-Pinene, Camphor, grown under Cool montane elevation with continuous misty cloud cover. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "overview": "Distilled from prime Rosmarinus officinalis. This botanical lot exhibits an exceptional volatile fraction highlighted by 1,8-Cineole (45%+), Alpha-Pinene, Camphor, grown under Cool montane elevation with continuous misty cloud cover. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
     "history": "Integral to the historic royal perfumery of Kannauj (the Grasse of the East) dating back to the Mughal courts. The delicate petals are hand-harvested exclusively at pre-dawn twilight before direct sunlight can evaporate delicate floral volatiles, ensuring complete olfactory fidelity.",
     "benefits": [
       {
@@ -3706,7 +3706,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Aniba rosaeodora",
     "category": "ESSENTIAL_OIL",
     "description": "Soft, floral-woody oil from South American rosewood (sustainably sourced), high in linalool and used in luxury skincare.",
-    "shortSpec": "Steam Distilled · Brazil · Sustainable Grade",
+    "shortSpec": "Steam Distilled · Sustainable Grade",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 44,
@@ -3714,8 +3714,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -3733,7 +3733,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Distilled from prime Aniba rosaeodora cultivated in the renowned terroir of Pushkar, Rajasthan & Aligarh, UP. This botanical lot exhibits an exceptional volatile fraction highlighted by Citronellol (38%), Geraniol (20%), Rose Oxide, grown under Chaitri Rose blooming cycle harvested before sunrise. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "overview": "Distilled from prime Aniba rosaeodora. This botanical lot exhibits an exceptional volatile fraction highlighted by Citronellol (38%), Geraniol (20%), Rose Oxide, grown under Chaitri Rose blooming cycle harvested before sunrise. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
     "history": "Integral to the historic royal perfumery of Kannauj (the Grasse of the East) dating back to the Mughal courts. The delicate petals are hand-harvested exclusively at pre-dawn twilight before direct sunlight can evaporate delicate floral volatiles, ensuring complete olfactory fidelity.",
     "benefits": [
       {
@@ -3760,7 +3760,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Mentha spicata",
     "category": "ESSENTIAL_OIL",
     "description": "Sweeter, milder mint oil compared to peppermint, dominated by carvone rather than menthol. Used in flavour, oral care, and cosmetics.",
-    "shortSpec": "Steam Distilled · India · High Carvone",
+    "shortSpec": "Steam Distilled · High Carvone",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 65,
@@ -3768,8 +3768,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -3787,8 +3787,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Spearmint Oil (Mentha spicata) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Spearmint Oil (Mentha spicata). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -3814,7 +3814,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Nardostachys jatamansi",
     "category": "ESSENTIAL_OIL",
     "description": "Ancient Himalayan root oil mentioned in the Bible and Vedas. Earthy, animalic, and profoundly calming — prized in spiritual and luxury perfumery.",
-    "shortSpec": "Steam Distilled · Himalayas · Sacred Ancient",
+    "shortSpec": "Steam Distilled · Sacred Ancient",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 55,
@@ -3822,8 +3822,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -3841,8 +3841,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Spikenard Oil (Jatamansi Oil) (Nardostachys jatamansi) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Spikenard Oil (Jatamansi Oil) (Nardostachys jatamansi). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -3868,7 +3868,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Hypericum perforatum",
     "category": "ESSENTIAL_OIL",
     "description": "Hypericin-rich macerated oil used in topical formulations for nerve pain, wound healing, and light sensitivity applications.",
-    "shortSpec": "Macerated · Europe · Hypericin Rich",
+    "shortSpec": "Macerated · Hypericin Rich",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 45,
@@ -3876,8 +3876,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -3895,8 +3895,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled St. John's Wort Oil (Hypericum perforatum) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled St. John's Wort Oil (Hypericum perforatum). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -3922,7 +3922,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Homalomena aromatica",
     "category": "ESSENTIAL_OIL",
     "description": "Rare northeast Indian aromatic oil with anise-like aroma, used in traditional medicine and high-value attar compositions.",
-    "shortSpec": "Steam Distilled · Northeast India · Anisic-Spicy",
+    "shortSpec": "Steam Distilled · Anisic-Spicy",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 22,
@@ -3930,8 +3930,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -3949,8 +3949,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Sugandh Mantri Oil (Homalomena aromatica) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Sugandh Mantri Oil (Homalomena aromatica). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -3976,7 +3976,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Citrus sinensis",
     "category": "ESSENTIAL_OIL",
     "description": "Bright, cheerful cold-pressed orange peel oil — the world's most widely used fragrance material. High limonene content with a happy citrus burst.",
-    "shortSpec": "Cold Pressed · India/Brazil · High Limonene",
+    "shortSpec": "Cold Pressed · High Limonene",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 90,
@@ -3984,8 +3984,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -4004,8 +4004,8 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "100% pure steam distilled Sweet Orange Oil (Citrus sinensis) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Sweet Orange Oil (Citrus sinensis). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -4031,7 +4031,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Tagetes minuta",
     "category": "ESSENTIAL_OIL",
     "description": "Pungent, tropical marigold oil from India with high tagetone content, used as a natural insecticide and in flavour/fragrance.",
-    "shortSpec": "Steam Distilled · India · High Tagetone",
+    "shortSpec": "Steam Distilled · High Tagetone",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 30,
@@ -4039,8 +4039,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -4058,8 +4058,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Tagetes Oil (Tagetes minuta) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Tagetes Oil (Tagetes minuta). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -4085,7 +4085,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Citrus reticulata",
     "category": "ESSENTIAL_OIL",
     "description": "Sweet, mild citrus oil from mandarine peel, gentle enough for children's blends and widely used in confectionery flavor systems.",
-    "shortSpec": "Cold Pressed · India/Sicily · Sweet-Mild Citrus",
+    "shortSpec": "Cold Pressed · Sweet-Mild Citrus",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 62,
@@ -4093,8 +4093,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -4112,8 +4112,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Tangerine (Mandarine) Oil (Citrus reticulata) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Tangerine (Mandarine) Oil (Citrus reticulata). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -4139,7 +4139,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Melaleuca alternifolia",
     "category": "ESSENTIAL_OIL",
     "description": "Australia's most famous medicinal oil — ISO 4730 compliant with 40%+ terpinen-4-ol. The global standard for natural antimicrobial skincare.",
-    "shortSpec": "Steam Distilled · Australia · ISO 4730 Compliant",
+    "shortSpec": "Steam Distilled · ISO 4730 Compliant",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 94,
@@ -4147,8 +4147,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -4167,8 +4167,8 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "100% pure steam distilled Tea Tree Oil (Melaleuca alternifolia) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Tea Tree Oil (Melaleuca alternifolia). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -4194,7 +4194,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Thuja occidentalis",
     "category": "ESSENTIAL_OIL",
     "description": "Cedar-like medicinal oil from white cedar wood used in pharmaceutical applications. Handle with care due to high thujone content.",
-    "shortSpec": "Steam Distilled · Canada/India · Thujone-Rich",
+    "shortSpec": "Steam Distilled · Thujone-Rich",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 22,
@@ -4202,8 +4202,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -4221,8 +4221,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Thuja Wood Oil (Thuja occidentalis) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Thuja Wood Oil (Thuja occidentalis). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -4248,7 +4248,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Curcuma longa (leaf)",
     "category": "ESSENTIAL_OIL",
     "description": "Spicy, earthy oil distilled from turmeric leaves rather than rhizomes, offering a distinct aromatic profile used in perfumery and spas.",
-    "shortSpec": "Steam Distilled · India · Leaf-Distilled",
+    "shortSpec": "Steam Distilled · Leaf-Distilled",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 34,
@@ -4256,8 +4256,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -4275,8 +4275,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Turmeric Leaf Oil (Curcuma longa (leaf)) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Turmeric Leaf Oil (Curcuma longa (leaf)). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -4302,7 +4302,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Vanilla planifolia",
     "category": "ESSENTIAL_OIL",
     "description": "Warm, sweet vanilla CO2 extract or absolute, a cornerstone of oriental, gourmand, and dessert-inspired fragrance compositions.",
-    "shortSpec": "CO2 Extract · Madagascar/India · Vanillin Rich",
+    "shortSpec": "CO2 Extract · Vanillin Rich",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 78,
@@ -4310,8 +4310,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -4329,8 +4329,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Vanilla Oil (Vanilla planifolia) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Vanilla Oil (Vanilla planifolia). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -4356,7 +4356,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Valeriana officinalis",
     "category": "ESSENTIAL_OIL",
     "description": "Earthy, musty root oil with powerful sedative and anxiolytic properties, used in natural sleep and stress-relief formulations.",
-    "shortSpec": "Steam Distilled · Europe/India · Sedative Grade",
+    "shortSpec": "Steam Distilled · Sedative Grade",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 50,
@@ -4364,8 +4364,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -4383,8 +4383,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Valerian Oil (Valeriana officinalis) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Valerian Oil (Valeriana officinalis). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -4410,7 +4410,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Chrysopogon zizanioides",
     "category": "ESSENTIAL_OIL",
     "description": "Deep, smoky, earthy vetiver from Indian roots — an essential perfumery fixative and base note prized in high-end masculine fragrances.",
-    "shortSpec": "Steam Distilled · Rajasthan, India · Earthy Fixative",
+    "shortSpec": "Steam Distilled · Earthy Fixative",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 84,
@@ -4418,8 +4418,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -4438,7 +4438,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "Distilled from prime Chrysopogon zizanioides cultivated in the renowned terroir of Bharatpur, Rajasthan & Bundelkhand. This botanical lot exhibits an exceptional volatile fraction highlighted by Khusimol (18%+), Vetivone, Isovalencenol, grown under Heavy alluvial clay soil where root systems anchor 3 meters deep. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "overview": "Distilled from prime Chrysopogon zizanioides. This botanical lot exhibits an exceptional volatile fraction highlighted by Khusimol (18%+), Vetivone, Isovalencenol, grown under Heavy alluvial clay soil where root systems anchor 3 meters deep. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
     "history": "Documented extensively in the ancient Charaka Samhita and Sushruta Samhita treatises spanning over 3,000 years of traditional Indian medicinal heritage. Harvesting follows time-tested seasonal cycles aligned with lunar and diurnal peaks in plant bio-energy, preserved by multi-generational farming communities.",
     "benefits": [
       {
@@ -4465,7 +4465,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Gaultheria procumbens",
     "category": "ESSENTIAL_OIL",
     "description": "Natural methyl salicylate-dominant oil from wintergreen leaves. The foundational ingredient in pain-relief balms and sports preparations.",
-    "shortSpec": "Steam Distilled · Nepal/India · 99%+ Methyl Salicylate",
+    "shortSpec": "Steam Distilled · 99%+ Methyl Salicylate",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 62,
@@ -4473,8 +4473,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -4492,8 +4492,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Wintergreen Oil (Gaultheria procumbens) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Wintergreen Oil (Gaultheria procumbens). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -4519,7 +4519,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Artemisia absinthium",
     "category": "ESSENTIAL_OIL",
     "description": "Bitter, camphorous wormwood oil used in pharmaceutical preparations. Contains thujone — regulated use in food applications.",
-    "shortSpec": "Steam Distilled · Europe · High Thujone",
+    "shortSpec": "Steam Distilled · High Thujone",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 20,
@@ -4527,8 +4527,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -4546,8 +4546,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Worm Wood Oil (Artemisia absinthium) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Worm Wood Oil (Artemisia absinthium). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -4573,7 +4573,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Achillea millefolium",
     "category": "ESSENTIAL_OIL",
     "description": "Deep blue chamazulene-rich yarrow oil with anti-inflammatory and astringent properties for cosmetic and therapeutic use.",
-    "shortSpec": "Steam Distilled · India/Europe · Blue-Chamazulene",
+    "shortSpec": "Steam Distilled · Blue-Chamazulene",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 44,
@@ -4581,8 +4581,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -4600,8 +4600,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Yarrow Oil (Yara Yara) (Achillea millefolium) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Yarrow Oil (Yara Yara) (Achillea millefolium). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -4627,7 +4627,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Cananga odorata",
     "category": "ESSENTIAL_OIL",
     "description": "Intoxicating tropical flower oil from the Comoro Islands. A cornerstone of luxury perfumery and romantic, floral fragrance families.",
-    "shortSpec": "Fractional Steam Distilled · Comoros · Extra Grade",
+    "shortSpec": "Fractional Steam Distilled · Extra Grade",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 88,
@@ -4635,8 +4635,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -4655,8 +4655,8 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "100% pure steam distilled Ylang Ylang Oil (Cananga odorata) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Ylang Ylang Oil (Cananga odorata). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -4682,7 +4682,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Zanthoxylum armatum",
     "category": "ESSENTIAL_OIL",
     "description": "Himalayan spice oil from prickly ash berries with fresh, lemon-pepper character used in culinary flavouring and cosmetics.",
-    "shortSpec": "Steam Distilled · Himalayas · Lemon-Pepper",
+    "shortSpec": "Steam Distilled · Lemon-Pepper",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 30,
@@ -4690,8 +4690,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -4709,8 +4709,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "100% pure steam distilled Zanthoxylum Oil (Zanthoxylum armatum) sourced from prime Indian harvesting regions. Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "100% pure steam distilled Zanthoxylum Oil (Zanthoxylum armatum). Tested by Gas Chromatography-Mass Spectrometry to ensure batch-to-batch consistency for B2B cosmetic, pharmaceutical, and perfumery manufacturing.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -4736,7 +4736,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Trachyspermum ammi",
     "category": "SPICE_OIL",
     "description": "Thyme-like Indian spice oil from carom seeds, very high in thymol. Powerful antimicrobial agent used in pharmaceutical applications.",
-    "shortSpec": "Steam Distilled · India · High Thymol",
+    "shortSpec": "Steam Distilled · High Thymol",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 50,
@@ -4744,8 +4744,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -4763,7 +4763,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Derived from steam distillation of select Trachyspermum ammi sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Trachyspermum ammi. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -4790,7 +4790,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Pimenta dioica",
     "category": "SPICE_OIL",
     "description": "Warm, clove-cinnamon-nutmeg combined spice oil from allspice berries used in flavour, fragrance, and warming massage blends.",
-    "shortSpec": "Steam Distilled · Jamaica/India · Warm Spice",
+    "shortSpec": "Steam Distilled · Warm Spice",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 45,
@@ -4798,8 +4798,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -4817,7 +4817,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Derived from steam distillation of select Pimenta dioica sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Pimenta dioica. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -4844,7 +4844,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Pimpinella anisum",
     "category": "SPICE_OIL",
     "description": "Sweet, liquorice-like anise seed oil with high trans-anethole content, used in confectionery flavoring and oral care products.",
-    "shortSpec": "Steam Distilled · Turkey/India · High Anethole",
+    "shortSpec": "Steam Distilled · High Anethole",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 55,
@@ -4852,8 +4852,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -4871,7 +4871,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Derived from steam distillation of select Pimpinella anisum sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Pimpinella anisum. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -4898,7 +4898,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Ferula asafoetida",
     "category": "SPICE_OIL",
     "description": "Intensely pungent hing oil from asafoetida resin, used in culinary flavoring, digestive preparations, and Indian traditional medicine.",
-    "shortSpec": "Steam Distilled · Iran/Afghanistan · Sulfurous-Pungent",
+    "shortSpec": "Steam Distilled · Sulfurous-Pungent",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 40,
@@ -4906,8 +4906,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -4925,7 +4925,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Derived from steam distillation of select Ferula asafoetida sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Ferula asafoetida. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -4952,7 +4952,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Laurus nobilis",
     "category": "SPICE_OIL",
     "description": "Warm, spicy-herbal bay laurel oil rich in cineole and eugenol, used in men's fragrances, flavour, and skin care.",
-    "shortSpec": "Steam Distilled · Turkey/India · Cineole-Eugenol",
+    "shortSpec": "Steam Distilled · Cineole-Eugenol",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 48,
@@ -4960,8 +4960,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -4979,7 +4979,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Derived from steam distillation of select Laurus nobilis sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Laurus nobilis. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -5006,7 +5006,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Nigella sativa",
     "category": "SPICE_OIL",
     "description": "Therapeutic spice oil from Nigella sativa seeds, rich in thymoquinone with proven immunomodulatory and anti-inflammatory activity.",
-    "shortSpec": "Cold Pressed · India/Egypt · Thymoquinone Rich",
+    "shortSpec": "Cold Pressed · Thymoquinone Rich",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 68,
@@ -5033,7 +5033,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Packaged under inert nitrogen blanket to prevent lipid peroxidation during export."
       }
     ],
-    "overview": "Derived from steam distillation of select Nigella sativa sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Nigella sativa. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -5060,7 +5060,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Piper nigrum",
     "category": "SPICE_OIL",
     "description": "Sharp, warm black pepper spice oil with high beta-caryophyllene and piperine content. Used in flavour, fragrance, and warming massage oils.",
-    "shortSpec": "Steam Distilled · Kerala, India · Spicy-Warming",
+    "shortSpec": "Steam Distilled · Spicy-Warming",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 75,
@@ -5068,8 +5068,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -5088,7 +5088,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "Derived from steam distillation of select Piper nigrum sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Piper nigrum. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -5115,7 +5115,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Acorus calamus",
     "category": "SPICE_OIL",
     "description": "Sweet, warm root oil from calamus (sweet flag) with traditional Ayurvedic applications in cognition and neurological preparations.",
-    "shortSpec": "Steam Distilled · India · Warm-Woody",
+    "shortSpec": "Steam Distilled · Warm-Woody",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 35,
@@ -5123,8 +5123,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -5142,7 +5142,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Derived from steam distillation of select Acorus calamus sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Acorus calamus. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Documented extensively in the ancient Charaka Samhita and Sushruta Samhita treatises spanning over 3,000 years of traditional Indian medicinal heritage. Harvesting follows time-tested seasonal cycles aligned with lunar and diurnal peaks in plant bio-energy, preserved by multi-generational farming communities.",
     "benefits": [
       {
@@ -5169,7 +5169,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Garcinia cambogia",
     "category": "SPICE_OIL",
     "description": "CO2 extract from Garcinia cambogia rind used in weight management products and as a flavour agent in nutraceutical formulations.",
-    "shortSpec": "CO2 Extract · India · Hydroxycitric Acid",
+    "shortSpec": "CO2 Extract · Hydroxycitric Acid",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 32,
@@ -5177,8 +5177,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -5196,7 +5196,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Derived from steam distillation of select Garcinia cambogia sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Garcinia cambogia. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -5223,7 +5223,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Capsicum annuum",
     "category": "SPICE_OIL",
     "description": "Warming capsaicin-rich chili oil used in topical pain management preparations, muscle relaxants, and warming liniment formulations.",
-    "shortSpec": "Oleoresin/CO2 · India · Capsaicin-Rich",
+    "shortSpec": "Oleoresin/CO2 · Capsaicin-Rich",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 55,
@@ -5231,8 +5231,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -5250,7 +5250,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Derived from steam distillation of select Capsicum annuum sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Capsicum annuum. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -5277,7 +5277,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Carum carvi",
     "category": "SPICE_OIL",
     "description": "Distinctive warm-spicy caraway seed oil with high carvone content used in rye bread flavoring, digestive health preparations, and perfumery.",
-    "shortSpec": "Steam Distilled · India/Europe · High Carvone",
+    "shortSpec": "Steam Distilled · High Carvone",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 44,
@@ -5285,8 +5285,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -5304,7 +5304,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Derived from steam distillation of select Carum carvi sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Carum carvi. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -5331,7 +5331,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Elettaria cardamomum",
     "category": "SPICE_OIL",
     "description": "The queen of spices oil — sweet, spicy, and richly aromatic with high terpinyl acetate. Used in luxury perfumery and flavour applications.",
-    "shortSpec": "Steam Distilled · Kerala, India · High Terpinyl Acetate",
+    "shortSpec": "Steam Distilled · High Terpinyl Acetate",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 80,
@@ -5339,8 +5339,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -5359,7 +5359,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "Distilled from prime Elettaria cardamomum cultivated in the renowned terroir of Cardamom Hills, Idukki, Kerala. This botanical lot exhibits an exceptional volatile fraction highlighted by Terpinyl Acetate (40%+), 1,8-Cineole (32%+), grown under Shaded evergreen rainforest canopy at 1,000m elevation. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "overview": "Distilled from prime Elettaria cardamomum. This botanical lot exhibits an exceptional volatile fraction highlighted by Terpinyl Acetate (40%+), 1,8-Cineole (32%+), grown under Shaded evergreen rainforest canopy at 1,000m elevation. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -5386,7 +5386,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Cinnamomum cassia",
     "category": "SPICE_OIL",
     "description": "Chinese cinnamon oil with high cinnamaldehyde content — bolder and less complex than Ceylon cinnamon but widely used in flavouring.",
-    "shortSpec": "Steam Distilled · China/India · High Cinnamaldehyde",
+    "shortSpec": "Steam Distilled · High Cinnamaldehyde",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 52,
@@ -5394,8 +5394,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -5413,7 +5413,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Derived from steam distillation of select Cinnamomum cassia sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Cinnamomum cassia. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -5440,7 +5440,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Apium graveolens",
     "category": "SPICE_OIL",
     "description": "Warm, spicy seed oil from celery with phthalide content. Used in food flavouring, men's fragrances, and traditional diuretic preparations.",
-    "shortSpec": "Steam Distilled · India · Phthalide-Rich",
+    "shortSpec": "Steam Distilled · Phthalide-Rich",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 38,
@@ -5448,8 +5448,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -5467,7 +5467,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Derived from steam distillation of select Apium graveolens sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Apium graveolens. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -5494,7 +5494,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Cinnamomum zeylanicum",
     "category": "SPICE_OIL",
     "description": "True Ceylon cinnamon bark oil — the gold standard of cinnamon with 65–75% cinnamaldehyde. Used in premium flavouring and spice perfumery.",
-    "shortSpec": "Steam Distilled · Sri Lanka/India · 70% Cinnamaldehyde",
+    "shortSpec": "Steam Distilled · 70% Cinnamaldehyde",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 78,
@@ -5502,8 +5502,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -5522,7 +5522,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "Distilled from prime Cinnamomum zeylanicum cultivated in the renowned terroir of Malabar Coast & Sri Lanka borderlands. This botanical lot exhibits an exceptional volatile fraction highlighted by Cinnamaldehyde (72%+), Eugenol (8%+), grown under Tropical coastal laterite belt harvested from peeled coppiced shoots. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "overview": "Distilled from prime Cinnamomum zeylanicum. This botanical lot exhibits an exceptional volatile fraction highlighted by Cinnamaldehyde (72%+), Eugenol (8%+), grown under Tropical coastal laterite belt harvested from peeled coppiced shoots. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -5549,7 +5549,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Cinnamomum zeylanicum (leaf)",
     "category": "SPICE_OIL",
     "description": "Eugenol-dominant cinnamon leaf oil — more affordable than bark oil and widely used in soaps, antiseptic preparations, and flavouring.",
-    "shortSpec": "Steam Distilled · Sri Lanka/India · 85% Eugenol",
+    "shortSpec": "Steam Distilled · 85% Eugenol",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 66,
@@ -5557,8 +5557,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -5576,7 +5576,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Distilled from prime Cinnamomum zeylanicum (leaf) cultivated in the renowned terroir of Malabar Coast & Sri Lanka borderlands. This botanical lot exhibits an exceptional volatile fraction highlighted by Cinnamaldehyde (72%+), Eugenol (8%+), grown under Tropical coastal laterite belt harvested from peeled coppiced shoots. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "overview": "Distilled from prime Cinnamomum zeylanicum (leaf). This botanical lot exhibits an exceptional volatile fraction highlighted by Cinnamaldehyde (72%+), Eugenol (8%+), grown under Tropical coastal laterite belt harvested from peeled coppiced shoots. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -5603,7 +5603,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Syzygium aromaticum",
     "category": "SPICE_OIL",
     "description": "Premium 85%+ eugenol clove bud oil from Zanzibar and South India. The most powerful natural eugenol source used in dental anaesthetics.",
-    "shortSpec": "Steam Distilled · India/Zanzibar · 85%+ Eugenol",
+    "shortSpec": "Steam Distilled · 85%+ Eugenol",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 82,
@@ -5611,8 +5611,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -5631,7 +5631,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "Distilled from prime Syzygium aromaticum cultivated in the renowned terroir of Kanyakumari & Nilgiris, Tamil Nadu. This botanical lot exhibits an exceptional volatile fraction highlighted by Eugenol (86%+), Eugenyl Acetate, grown under Coastal maritime humid microclimate of Southern peninsular India. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "overview": "Distilled from prime Syzygium aromaticum. This botanical lot exhibits an exceptional volatile fraction highlighted by Eugenol (86%+), Eugenyl Acetate, grown under Coastal maritime humid microclimate of Southern peninsular India. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -5658,7 +5658,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Syzygium aromaticum (leaf)",
     "category": "SPICE_OIL",
     "description": "Higher-yield, more economical clove eugenol source from leaves rather than buds. Widely used in soap making and industrial applications.",
-    "shortSpec": "Steam Distilled · India/Zanzibar · Industrial Eugenol",
+    "shortSpec": "Steam Distilled · Industrial Eugenol",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 58,
@@ -5666,8 +5666,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -5685,7 +5685,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Distilled from prime Syzygium aromaticum (leaf) cultivated in the renowned terroir of Kanyakumari & Nilgiris, Tamil Nadu. This botanical lot exhibits an exceptional volatile fraction highlighted by Eugenol (86%+), Eugenyl Acetate, grown under Coastal maritime humid microclimate of Southern peninsular India. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "overview": "Distilled from prime Syzygium aromaticum (leaf). This botanical lot exhibits an exceptional volatile fraction highlighted by Eugenol (86%+), Eugenyl Acetate, grown under Coastal maritime humid microclimate of Southern peninsular India. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -5712,7 +5712,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Coriandrum sativum",
     "category": "SPICE_OIL",
     "description": "Sweet, aromatic coriander seed oil rich in linalool. A lighter, floral-spicy oil used in gin flavouring, perfumery, and digestive preparations.",
-    "shortSpec": "Steam Distilled · India · High Linalool",
+    "shortSpec": "Steam Distilled · High Linalool",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 60,
@@ -5720,8 +5720,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -5739,7 +5739,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Derived from steam distillation of select Coriandrum sativum sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Coriandrum sativum. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -5766,7 +5766,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Cuminum cyminum",
     "category": "SPICE_OIL",
     "description": "Pungent, warm spice oil from cumin seeds used in Middle Eastern and Indian flavor systems, and in amber/oriental fragrance compositions.",
-    "shortSpec": "Steam Distilled · Rajasthan, India · Cumin Aldehyde",
+    "shortSpec": "Steam Distilled · Cumin Aldehyde",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 62,
@@ -5774,8 +5774,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -5793,7 +5793,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Derived from steam distillation of select Cuminum cyminum sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Cuminum cyminum. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -5820,7 +5820,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Murraya koenigii",
     "category": "SPICE_OIL",
     "description": "Distinctive South Indian spice oil from curry leaves with a characteristic green-spicy aroma. Used in flavouring and hair care applications.",
-    "shortSpec": "Steam Distilled · South India · Aromatic",
+    "shortSpec": "Steam Distilled · Aromatic",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 35,
@@ -5828,8 +5828,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -5847,7 +5847,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Derived from steam distillation of select Murraya koenigii sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Murraya koenigii. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -5874,7 +5874,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Anethum graveolens",
     "category": "SPICE_OIL",
     "description": "Fresh, herby dill seed oil with high carvone and limonene content used in pickle flavoring, antispasmodic preparations, and aromatherapy.",
-    "shortSpec": "Steam Distilled · India · High Carvone",
+    "shortSpec": "Steam Distilled · High Carvone",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 40,
@@ -5882,8 +5882,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -5901,7 +5901,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Derived from steam distillation of select Anethum graveolens sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Anethum graveolens. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -5928,7 +5928,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Foeniculum vulgare",
     "category": "SPICE_OIL",
     "description": "Sweet aniseed-like fennel oil with high trans-anethole. Used in oral care, digestive aids, flavour systems, and anti-cellulite cosmetics.",
-    "shortSpec": "Steam Distilled · India/Mediterranean · High Anethole",
+    "shortSpec": "Steam Distilled · High Anethole",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 58,
@@ -5936,8 +5936,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -5955,7 +5955,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Derived from steam distillation of select Foeniculum vulgare sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Foeniculum vulgare. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -5982,7 +5982,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Trigonella foenum-graecum",
     "category": "SPICE_OIL",
     "description": "Maple syrup-like aromatic oil from fenugreek seeds used in hair growth preparations, Indian flavouring, and traditional medicine.",
-    "shortSpec": "Steam Distilled/Cold Press · India · Sotolone-Rich",
+    "shortSpec": "Steam Distilled/Cold Press · Sotolone-Rich",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 50,
@@ -5990,8 +5990,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -6009,7 +6009,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Derived from steam distillation of select Trigonella foenum-graecum sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Trigonella foenum-graecum. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -6036,7 +6036,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Alpinia galanga",
     "category": "SPICE_OIL",
     "description": "Ginger-related spice oil from galangal rhizomes with a medicinal, camphor-like aroma used in Southeast Asian food and pharmaceuticals.",
-    "shortSpec": "Steam Distilled · India/Thailand · Spicy-Camphor",
+    "shortSpec": "Steam Distilled · Spicy-Camphor",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 36,
@@ -6044,8 +6044,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -6063,7 +6063,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Derived from steam distillation of select Alpinia galanga sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Alpinia galanga. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -6090,7 +6090,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Allium sativum",
     "category": "SPICE_OIL",
     "description": "Potent allicin-containing garlic oil used in pharmaceutical cardiovascular preparations, natural insect repellents, and food flavouring.",
-    "shortSpec": "Steam Distilled · India · Allicin-Rich",
+    "shortSpec": "Steam Distilled · Allicin-Rich",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 48,
@@ -6098,8 +6098,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -6117,7 +6117,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Derived from steam distillation of select Allium sativum sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Allium sativum. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -6143,8 +6143,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Ginger Oil",
     "botanicalName": "Zingiber officinale",
     "category": "SPICE_OIL",
-    "description": "Warm, pungent steam-distilled ginger oil from Cochin, India. Used in nausea relief, warming massage blends, and spice fragrance accords.",
-    "shortSpec": "Steam Distilled · Cochin, India · Zingiber Content",
+    "description": "Warm, pungent steam-distilled ginger oil with warm, pungent aroma. Used in nausea relief, warming massage blends, and spice fragrance accords.",
+    "shortSpec": "Steam Distilled · Zingiber Content",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 80,
@@ -6152,8 +6152,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -6172,7 +6172,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "Distilled from prime Zingiber officinale cultivated in the renowned terroir of Cochin & Wayanad, Kerala. This botanical lot exhibits an exceptional volatile fraction highlighted by Zingiberene (35%+), Curcumene, Gingerols, grown under Organic mountain loam renowned for intense aromatic pungency. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "overview": "Distilled from prime Zingiber officinale. This botanical lot exhibits an exceptional volatile fraction highlighted by Zingiberene (35%+), Curcumene, Gingerols, grown under Organic mountain loam renowned for intense aromatic pungency. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -6199,7 +6199,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Hyssopus officinalis",
     "category": "SPICE_OIL",
     "description": "Herbaceous, camphor-like European herb oil used in expectorant preparations, liqueur flavoring (Chartreuse), and respiratory aromatherapy.",
-    "shortSpec": "Steam Distilled · France/Spain · Pinocamphone-Rich",
+    "shortSpec": "Steam Distilled · Pinocamphone-Rich",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 30,
@@ -6207,8 +6207,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -6226,7 +6226,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Derived from steam distillation of select Hyssopus officinalis sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Hyssopus officinalis. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -6253,7 +6253,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Laurus nobilis (fruit)",
     "category": "SPICE_OIL",
     "description": "Traditional Syrian and Turkish extraction from laurel berry fruit, yielding a uniquely thick, herbal-spicy oil used in Aleppo soap making.",
-    "shortSpec": "Cold Pressed · Syria/Turkey · Traditional",
+    "shortSpec": "Cold Pressed · Traditional",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 38,
@@ -6280,7 +6280,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Packaged under inert nitrogen blanket to prevent lipid peroxidation during export."
       }
     ],
-    "overview": "Derived from steam distillation of select Laurus nobilis (fruit) sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Laurus nobilis (fruit). Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -6307,7 +6307,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Myristica fragrans (mace)",
     "category": "SPICE_OIL",
     "description": "Nutmeg's reddish outer husk yields a softer, more floral spice oil with elegant woody-spicy notes used in high-end Oriental perfumery.",
-    "shortSpec": "Steam Distilled · Indonesia/India · Softer-Nutmeg",
+    "shortSpec": "Steam Distilled · Softer-Nutmeg",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 44,
@@ -6315,8 +6315,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -6334,7 +6334,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Derived from steam distillation of select Myristica fragrans (mace) sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Myristica fragrans (mace). Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -6361,7 +6361,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Origanum majorana",
     "category": "SPICE_OIL",
     "description": "Warm, spicy-herbaceous marjoram oil used in muscle massage blends, respiratory aromatherapy, and Mediterranean food flavouring.",
-    "shortSpec": "Steam Distilled · Egypt/India · Terpinene-4-ol Rich",
+    "shortSpec": "Steam Distilled · Terpinene-4-ol Rich",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 55,
@@ -6369,8 +6369,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -6388,7 +6388,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Derived from steam distillation of select Origanum majorana sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Origanum majorana. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -6415,7 +6415,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Allium cepa",
     "category": "SPICE_OIL",
     "description": "Sulfurous, pungent onion oil used in pharmaceutical preparations, hair growth stimulation, and savoury food flavouring.",
-    "shortSpec": "Steam Distilled · India · Allyl Sulfide-Rich",
+    "shortSpec": "Steam Distilled · Allyl Sulfide-Rich",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 35,
@@ -6423,8 +6423,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -6442,7 +6442,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Derived from steam distillation of select Allium cepa sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Allium cepa. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -6469,7 +6469,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Origanum vulgare",
     "category": "SPICE_OIL",
     "description": "High-carvacrol oregano oil — one of nature's most powerful natural antimicrobials. Used in natural antibiotic supplements and immune support.",
-    "shortSpec": "Steam Distilled · Turkey/India · High Carvacrol",
+    "shortSpec": "Steam Distilled · High Carvacrol",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 72,
@@ -6477,8 +6477,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -6496,7 +6496,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Derived from steam distillation of select Origanum vulgare sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Origanum vulgare. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -6523,7 +6523,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Petroselinum crispum",
     "category": "SPICE_OIL",
     "description": "Spicy, warm herbaceous oil from parsley seeds with apiole content. Used in diuretic preparations and as a flavour ingredient.",
-    "shortSpec": "Steam Distilled · Europe/India · Apiole-Rich",
+    "shortSpec": "Steam Distilled · Apiole-Rich",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 30,
@@ -6531,8 +6531,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -6550,7 +6550,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Derived from steam distillation of select Petroselinum crispum sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Petroselinum crispum. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -6577,7 +6577,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Crocus sativus",
     "category": "SPICE_OIL",
     "description": "Precious saffron CO2 extract or attar from the world's most expensive spice. Safranal-rich — used in luxury perfumery and cosmetics.",
-    "shortSpec": "CO2 Extract · Kashmir, India · Ultra Premium",
+    "shortSpec": "CO2 Extract · Ultra Premium",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 60,
@@ -6585,8 +6585,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -6604,7 +6604,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Derived from steam distillation of select Crocus sativus sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Crocus sativus. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -6631,7 +6631,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Salvia officinalis",
     "category": "SPICE_OIL",
     "description": "Herbaceous, camphor-dominant Dalmatian sage oil used in oral care, deodorant formulations, and flavouring for processed meats.",
-    "shortSpec": "Steam Distilled · Balkans/India · High Thujone/Camphor",
+    "shortSpec": "Steam Distilled · High Thujone/Camphor",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 50,
@@ -6639,8 +6639,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -6658,7 +6658,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Derived from steam distillation of select Salvia officinalis sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Salvia officinalis. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -6685,7 +6685,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Artemisia dracunculus",
     "category": "SPICE_OIL",
     "description": "Anise-herbal French tarragon oil with methyl chavicol dominant profile used in high-end culinary flavouring and fine fragrance.",
-    "shortSpec": "Steam Distilled · France/India · Methyl Chavicol",
+    "shortSpec": "Steam Distilled · Methyl Chavicol",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 32,
@@ -6693,8 +6693,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -6712,7 +6712,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Derived from steam distillation of select Artemisia dracunculus sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Artemisia dracunculus. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -6739,7 +6739,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Thymus vulgaris",
     "category": "SPICE_OIL",
     "description": "Potent antimicrobial thyme oil with high thymol content. Used in antiseptic preparations, mouthwashes, and respiratory aromatherapy.",
-    "shortSpec": "Steam Distilled · Spain/India · High Thymol",
+    "shortSpec": "Steam Distilled · High Thymol",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 66,
@@ -6747,8 +6747,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -6766,7 +6766,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Derived from steam distillation of select Thymus vulgaris sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Thymus vulgaris. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -6793,7 +6793,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Curcuma longa",
     "category": "SPICE_OIL",
     "description": "Ar-turmerone rich spice oil from turmeric rhizomes with strong anti-inflammatory activity and warm, spicy-woody scent.",
-    "shortSpec": "Steam Distilled · India · High Turmerone",
+    "shortSpec": "Steam Distilled · High Turmerone",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 68,
@@ -6801,8 +6801,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -6820,7 +6820,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Derived from steam distillation of select Curcuma longa sourced directly from India's prime spice growing belts. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
+    "overview": "Derived from steam distillation of select Curcuma longa. Characterized by intense pungent and warming aromatic notes with superior volatile purity, making it ideal for flavor compounding, nutraceutical active supply, and topical analgesic formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -6847,7 +6847,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Prunus amygdalus var. amara",
     "category": "CARRIER_OIL",
     "description": "Dearomatized bitter almond fatty oil used as a carrier and in pharmaceutical preparations. Not for undiluted use.",
-    "shortSpec": "Cold Pressed · India · Pharmaceutical Grade",
+    "shortSpec": "Cold Pressed · Pharmaceutical Grade",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 35,
@@ -6901,7 +6901,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Prunus dulcis",
     "category": "CARRIER_OIL",
     "description": "Classic, light, emollient sweet almond oil — one of the most widely used carrier oils in massage and skincare formulations globally.",
-    "shortSpec": "Cold Pressed · India · Light Emollient",
+    "shortSpec": "Cold Pressed · Light Emollient",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 88,
@@ -6956,7 +6956,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Phyllanthus emblica",
     "category": "CARRIER_OIL",
     "description": "Indian gooseberry oil rich in Vitamin C and gallic acid. An Ayurvedic hair care powerhouse used in scalp oils and hair tonics.",
-    "shortSpec": "Cold Pressed · India · Vitamin C Rich",
+    "shortSpec": "Cold Pressed · Vitamin C Rich",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 72,
@@ -7010,7 +7010,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Prunus armeniaca",
     "category": "CARRIER_OIL",
     "description": "Lightweight, skin-softening apricot kernel oil with high oleic acid. Excellent for sensitive and mature skin formulations.",
-    "shortSpec": "Cold Pressed · India/Turkey · Lightweight Emollient",
+    "shortSpec": "Cold Pressed · Lightweight Emollient",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 70,
@@ -7064,7 +7064,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Arachis hypogaea",
     "category": "CARRIER_OIL",
     "description": "Refined peanut carrier oil used in pharmaceutical injections (oleaginous vehicle), topical preparations, and as a cooking oil.",
-    "shortSpec": "Cold Pressed · India · USP Pharmaceutical Grade",
+    "shortSpec": "Cold Pressed · USP Pharmaceutical Grade",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 48,
@@ -7118,7 +7118,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Argania spinosa",
     "category": "CARRIER_OIL",
     "description": "Moroccan 'liquid gold' — rich in oleic acid and natural Vitamin E. Premier luxury skin and hair oil with exceptional oxidative stability.",
-    "shortSpec": "Cold Pressed · Morocco · Virgin Unrefined",
+    "shortSpec": "Cold Pressed · Virgin Unrefined",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 90,
@@ -7146,7 +7146,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "Distilled from prime Argania spinosa cultivated in the renowned terroir of Souss Valley / Atlas Biosphere. This botanical lot exhibits an exceptional volatile fraction highlighted by Oleic Acid (48%), Linoleic Acid (33%), Tocopherols, grown under UNESCO Biosphere reserve arid limestone mineral soils. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "overview": "Distilled from prime Argania spinosa. This botanical lot exhibits an exceptional volatile fraction highlighted by Oleic Acid (48%), Linoleic Acid (33%), Tocopherols, grown under UNESCO Biosphere reserve arid limestone mineral soils. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
     "history": "Mechanically expeller-pressed in our processing plant without solvent extraction or external chemical refining. Filtered and packed under inert nitrogen blanket in 50kg to 200kg drums for international export.",
     "benefits": [
       {
@@ -7173,7 +7173,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Persea americana",
     "category": "CARRIER_OIL",
     "description": "Rich, heavy avocado oil high in oleic acid and vitamins A, D, E. Superb for dry, aged skin and deeply nourishing hair masks.",
-    "shortSpec": "Cold Pressed · Mexico/India · Deep Nourishing",
+    "shortSpec": "Cold Pressed · Deep Nourishing",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 78,
@@ -7227,7 +7227,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Bacopa monnieri",
     "category": "CARRIER_OIL",
     "description": "Ayurvedic medicated hair oil infused with Brahmi herb in sesame or coconut base. Used for scalp health and cognitive support.",
-    "shortSpec": "Infused/Pressed · India · Ayurvedic Hair Oil",
+    "shortSpec": "Infused/Pressed · Ayurvedic Hair Oil",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 65,
@@ -7281,7 +7281,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Borago officinalis",
     "category": "CARRIER_OIL",
     "description": "The richest plant source of gamma-linolenic acid (GLA, 20–24%). Essential for anti-inflammatory cosmetic formulations and eczema relief.",
-    "shortSpec": "Cold Pressed · Europe/India · 22% GLA",
+    "shortSpec": "Cold Pressed · 22% GLA",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 68,
@@ -7335,7 +7335,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Ricinus communis",
     "category": "CARRIER_OIL",
     "description": "India's #1 industrial and cosmetic oil export. Rich in ricinoleic acid (90%). Used in lip glosses, hair serums, and pharmaceutical laxatives.",
-    "shortSpec": "Cold Pressed · India · 90% Ricinoleic Acid",
+    "shortSpec": "Cold Pressed · 90% Ricinoleic Acid",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 88,
@@ -7363,7 +7363,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "Distilled from prime Ricinus communis cultivated in the renowned terroir of Kutch & Saurashtra, Gujarat. This botanical lot exhibits an exceptional volatile fraction highlighted by Ricinoleic Acid (88%+), Oleic Acid, grown under Semi-arid saline-tolerant soil with high seed oil concentration. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "overview": "Distilled from prime Ricinus communis. This botanical lot exhibits an exceptional volatile fraction highlighted by Ricinoleic Acid (88%+), Oleic Acid, grown under Semi-arid saline-tolerant soil with high seed oil concentration. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
     "history": "Mechanically expeller-pressed in our processing plant without solvent extraction or external chemical refining. Filtered and packed under inert nitrogen blanket in 50kg to 200kg drums for international export.",
     "benefits": [
       {
@@ -7390,7 +7390,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Cucumis sativus",
     "category": "CARRIER_OIL",
     "description": "Light, linoleic acid-rich cucumber seed oil with natural cooling properties used in after-sun, anti-aging, and sensitive skin formulations.",
-    "shortSpec": "Cold Pressed · India · Linoleic-Rich",
+    "shortSpec": "Cold Pressed · Linoleic-Rich",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 55,
@@ -7444,7 +7444,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Oenothera biennis",
     "category": "CARRIER_OIL",
     "description": "GLA-rich evening primrose oil with proven efficacy for hormonal skin conditions, eczema, and PMS management in supplement formulations.",
-    "shortSpec": "Cold Pressed · Europe/China · 9% GLA",
+    "shortSpec": "Cold Pressed · 9% GLA",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 80,
@@ -7472,7 +7472,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "Distilled from prime Oenothera biennis cultivated in the renowned terroir of Pushkar, Rajasthan & Aligarh, UP. This botanical lot exhibits an exceptional volatile fraction highlighted by Citronellol (38%), Geraniol (20%), Rose Oxide, grown under Chaitri Rose blooming cycle harvested before sunrise. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "overview": "Distilled from prime Oenothera biennis. This botanical lot exhibits an exceptional volatile fraction highlighted by Citronellol (38%), Geraniol (20%), Rose Oxide, grown under Chaitri Rose blooming cycle harvested before sunrise. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
     "history": "Integral to the historic royal perfumery of Kannauj (the Grasse of the East) dating back to the Mughal courts. The delicate petals are hand-harvested exclusively at pre-dawn twilight before direct sunlight can evaporate delicate floral volatiles, ensuring complete olfactory fidelity.",
     "benefits": [
       {
@@ -7499,7 +7499,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Linum usitatissimum",
     "category": "CARRIER_OIL",
     "description": "Omega-3 rich flaxseed oil (55% ALA) used in anti-inflammatory nutritional supplements and in industrial paint/coating applications.",
-    "shortSpec": "Cold Pressed · Canada/India · 55% ALA",
+    "shortSpec": "Cold Pressed · 55% ALA",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 62,
@@ -7553,7 +7553,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Vitis vinifera",
     "category": "CARRIER_OIL",
     "description": "Light, non-greasy carrier oil from wine industry by-products. High in linoleic acid and OPC antioxidants for oily skin formulations.",
-    "shortSpec": "Cold Pressed · Italy/France · Non-Greasy",
+    "shortSpec": "Cold Pressed · Non-Greasy",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 72,
@@ -7607,7 +7607,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Corylus avellana",
     "category": "CARRIER_OIL",
     "description": "Dry, slightly astringent hazelnut carrier oil with high oleic acid — ideal for oily/combination skin types in light facial formulations.",
-    "shortSpec": "Cold Pressed · Turkey · Dry-Finish",
+    "shortSpec": "Cold Pressed · Dry-Finish",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 60,
@@ -7661,7 +7661,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Simmondsia chinensis",
     "category": "CARRIER_OIL",
     "description": "Technically a liquid wax, jojoba mimics human sebum and offers exceptional oxidative stability. A universal carrier for serums and hair oils.",
-    "shortSpec": "Cold Pressed · India/USA · Liquid Wax",
+    "shortSpec": "Cold Pressed · Liquid Wax",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 92,
@@ -7689,7 +7689,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "Distilled from prime Simmondsia chinensis cultivated in the renowned terroir of Thar Desert, Rajasthan. This botanical lot exhibits an exceptional volatile fraction highlighted by Gadoleic Acid (72%), Erucic Acid, Wax Esters, grown under Arid sunshine terroir producing ultra-stable liquid wax esters. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "overview": "Distilled from prime Simmondsia chinensis. This botanical lot exhibits an exceptional volatile fraction highlighted by Gadoleic Acid (72%), Erucic Acid, Wax Esters, grown under Arid sunshine terroir producing ultra-stable liquid wax esters. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
     "history": "Mechanically expeller-pressed in our processing plant without solvent extraction or external chemical refining. Filtered and packed under inert nitrogen blanket in 50kg to 200kg drums for international export.",
     "benefits": [
       {
@@ -7716,7 +7716,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Macadamia integrifolia",
     "category": "CARRIER_OIL",
     "description": "Rich in palmitoleic acid (omega-7) which mirrors skin's natural lipids. Exceptional for mature skin care and dry hair conditioning.",
-    "shortSpec": "Cold Pressed · Australia/India · Palmitoleic-Rich",
+    "shortSpec": "Cold Pressed · Palmitoleic-Rich",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 64,
@@ -7770,7 +7770,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Moringa oleifera",
     "category": "CARRIER_OIL",
     "description": "Ben oil from moringa seeds — exceptionally stable, high oleic acid carrier resistant to rancidity. Used in luxury face oils and hair serums.",
-    "shortSpec": "Cold Pressed · India · 73% Oleic Acid",
+    "shortSpec": "Cold Pressed · 73% Oleic Acid",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 74,
@@ -7797,7 +7797,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Packaged under inert nitrogen blanket to prevent lipid peroxidation during export."
       }
     ],
-    "overview": "Distilled from prime Moringa oleifera cultivated in the renowned terroir of Madurai & Dindigul, Tamil Nadu. This botanical lot exhibits an exceptional volatile fraction highlighted by Oleic Acid (73%+), Behenic Acid, grown under Semi-arid tropical plains yielding cold-hardy nutrient-rich seeds. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "overview": "Distilled from prime Moringa oleifera. This botanical lot exhibits an exceptional volatile fraction highlighted by Oleic Acid (73%+), Behenic Acid, grown under Semi-arid tropical plains yielding cold-hardy nutrient-rich seeds. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
     "history": "Mechanically expeller-pressed in our processing plant without solvent extraction or external chemical refining. Filtered and packed under inert nitrogen blanket in 50kg to 200kg drums for international export.",
     "benefits": [
       {
@@ -7824,7 +7824,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Cucumis melo",
     "category": "CARRIER_OIL",
     "description": "Light carrier oil from muskmelon (cantaloupe) seeds with linoleic acid dominance for sensitive and oily skin formulations.",
-    "shortSpec": "Cold Pressed · India · Linoleic-Rich",
+    "shortSpec": "Cold Pressed · Linoleic-Rich",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 30,
@@ -7878,7 +7878,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Azadirachta indica",
     "category": "CARRIER_OIL",
     "description": "India's most powerful natural pesticide oil. Azadirachtin-rich for agricultural use plus skincare benefits in anti-acne and scalp preparations.",
-    "shortSpec": "Cold Pressed · India · High Azadirachtin",
+    "shortSpec": "Cold Pressed · High Azadirachtin",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 80,
@@ -7906,7 +7906,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "Distilled from prime Azadirachta indica cultivated in the renowned terroir of Bundelkhand & Central Deccan, India. This botanical lot exhibits an exceptional volatile fraction highlighted by Azadirachtin A/B, Nimbin, Salannin, grown under Sun-baked drought-tolerant native woodland agroforestry. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "overview": "Distilled from prime Azadirachta indica. This botanical lot exhibits an exceptional volatile fraction highlighted by Azadirachtin A/B, Nimbin, Salannin, grown under Sun-baked drought-tolerant native woodland agroforestry. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
     "history": "Mechanically expeller-pressed in our processing plant without solvent extraction or external chemical refining. Filtered and packed under inert nitrogen blanket in 50kg to 200kg drums for international export.",
     "benefits": [
       {
@@ -7933,7 +7933,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Olea europaea",
     "category": "CARRIER_OIL",
     "description": "Mediterranean extra virgin olive carrier oil rich in squalene, oleic acid, and polyphenols for traditional soap making and skincare.",
-    "shortSpec": "Cold Pressed · Mediterranean/India · Extra Virgin Grade",
+    "shortSpec": "Cold Pressed · Extra Virgin Grade",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 75,
@@ -7987,7 +7987,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Prunus persica",
     "category": "CARRIER_OIL",
     "description": "Delicate, light carrier from peach kernels very similar to apricot oil. Suitable for facial products and delicate baby care formulations.",
-    "shortSpec": "Cold Pressed · India/China · Delicate & Light",
+    "shortSpec": "Cold Pressed · Delicate & Light",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 55,
@@ -8041,7 +8041,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Punica granatum",
     "category": "CARRIER_OIL",
     "description": "The only plant source of punicic acid (CLnA omega-5). Potent antioxidant carrier used in anti-aging, sun damage repair, and skin rejuvenation.",
-    "shortSpec": "Cold Pressed · India · Punicic Acid (CLnA)",
+    "shortSpec": "Cold Pressed · Punicic Acid (CLnA)",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 76,
@@ -8095,7 +8095,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Cucurbita pepo",
     "category": "CARRIER_OIL",
     "description": "Deep green, nutty pumpkin seed oil high in tocopherols, zinc, and phytosterols. Used in hair loss prevention and prostate health supplements.",
-    "shortSpec": "Cold Pressed · India/Austria · Tocopherol-Rich",
+    "shortSpec": "Cold Pressed · Tocopherol-Rich",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 52,
@@ -8149,7 +8149,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Oryza sativa",
     "category": "CARRIER_OIL",
     "description": "Gamma-oryzanol rich rice bran oil widely used in Asian skincare, sunscreen, and hair care formulations for its UV-filtering properties.",
-    "shortSpec": "Refined/Cold Pressed · India · Gamma-Oryzanol",
+    "shortSpec": "Refined/Cold Pressed · Gamma-Oryzanol",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 65,
@@ -8203,7 +8203,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Rosa rubiginosa / Rosa canina",
     "category": "CARRIER_OIL",
     "description": "Chile's prized rosehip oil with 42% linoleic and 34% alpha-linolenic acid plus natural trans-retinoic acid. A gold-standard anti-aging active.",
-    "shortSpec": "Cold Pressed · Chile/India · Trans-Retinoic Active",
+    "shortSpec": "Cold Pressed · Trans-Retinoic Active",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 90,
@@ -8231,7 +8231,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "Distilled from prime Rosa rubiginosa / Rosa canina cultivated in the renowned terroir of Himalayan alpine valleys & Kashmir. This botanical lot exhibits an exceptional volatile fraction highlighted by Linoleic Acid (44%), Alpha-Linolenic Acid (34%), grown under Sub-zero winter frost hardening seed antioxidant reserves. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "overview": "Distilled from prime Rosa rubiginosa / Rosa canina. This botanical lot exhibits an exceptional volatile fraction highlighted by Linoleic Acid (44%), Alpha-Linolenic Acid (34%), grown under Sub-zero winter frost hardening seed antioxidant reserves. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
     "history": "Integral to the historic royal perfumery of Kannauj (the Grasse of the East) dating back to the Mughal courts. The delicate petals are hand-harvested exclusively at pre-dawn twilight before direct sunlight can evaporate delicate floral volatiles, ensuring complete olfactory fidelity.",
     "benefits": [
       {
@@ -8258,7 +8258,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Carthamus tinctorius",
     "category": "CARRIER_OIL",
     "description": "Ultra-light, high-linoleic acid safflower oil ideal for oily skin formulations requiring a fast-absorbing, non-comedogenic carrier.",
-    "shortSpec": "Cold Pressed · India · High Linoleic Non-Comedogenic",
+    "shortSpec": "Cold Pressed · High Linoleic Non-Comedogenic",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 55,
@@ -8312,7 +8312,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Sesamum indicum",
     "category": "CARRIER_OIL",
     "description": "Ancient Ayurvedic base oil rich in sesamol and sesamin with natural UV protection (SPF ~4). The foundational oil in Abhyanga massage.",
-    "shortSpec": "Cold Pressed · India · Natural Antioxidant",
+    "shortSpec": "Cold Pressed · Natural Antioxidant",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 74,
@@ -8366,7 +8366,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Helianthus annuus",
     "category": "CARRIER_OIL",
     "description": "High-oleic sunflower carrier oil — cost-effective, lightweight, and non-greasy. Widely used as a base in commercial cosmetic formulations.",
-    "shortSpec": "Cold Pressed · India · High-Oleic Variant",
+    "shortSpec": "Cold Pressed · High-Oleic Variant",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 68,
@@ -8420,7 +8420,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Juglans regia",
     "category": "CARRIER_OIL",
     "description": "Rich in ALA omega-3, walnut oil is used in anti-inflammatory skin preparations, hair treatments, and as a culinary-grade carrier.",
-    "shortSpec": "Cold Pressed · India/France · 10% ALA Omega-3",
+    "shortSpec": "Cold Pressed · 10% ALA Omega-3",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 58,
@@ -8474,7 +8474,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Citrullus lanatus",
     "category": "CARRIER_OIL",
     "description": "Kalahari melon seed oil — ultra-light, fast-absorbing with high linoleic acid. A modern cosmetic carrier for lightweight serums and lotions.",
-    "shortSpec": "Cold Pressed · Africa/India · Ultra-Light",
+    "shortSpec": "Cold Pressed · Ultra-Light",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 52,
@@ -8528,7 +8528,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Triticum vulgare",
     "category": "CARRIER_OIL",
     "description": "The richest natural source of Vitamin E (tocopherols). An antioxidant power carrier oil ideal for anti-aging and scar-healing preparations.",
-    "shortSpec": "Cold Pressed · India/Germany · Highest Vitamin E",
+    "shortSpec": "Cold Pressed · Highest Vitamin E",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 70,
@@ -8582,7 +8582,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Nymphaea caerulea",
     "category": "FLORAL_ABSOLUTE",
     "description": "Sacred Egyptian blue lotus absolute — deeply spiritual, rich, and narcotic floral with blue nuances used in luxury perfumery.",
-    "shortSpec": "Solvent Extracted · Egypt/India · Sacred Floral",
+    "shortSpec": "Solvent Extracted · Sacred Floral",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 65,
@@ -8590,8 +8590,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -8636,7 +8636,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Boronia megastigma",
     "category": "FLORAL_ABSOLUTE",
     "description": "Australian floral absolute from boronia flowers with an extraordinary violet-rose-fruity character used in the most exclusive fragrances.",
-    "shortSpec": "Solvent Extracted · Australia · Ultra Premium",
+    "shortSpec": "Solvent Extracted · Ultra Premium",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 40,
@@ -8644,8 +8644,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -8690,7 +8690,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Calendula officinalis",
     "category": "FLORAL_ABSOLUTE",
     "description": "CO2 extracted marigold absolute rich in carotenoids and flavonoids. Premier healing botanical oil for sensitive and inflamed skin.",
-    "shortSpec": "CO2 Extracted · Europe/India · High Carotenoids",
+    "shortSpec": "CO2 Extracted · High Carotenoids",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 78,
@@ -8698,8 +8698,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -8745,7 +8745,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Acacia dealbata",
     "category": "FLORAL_ABSOLUTE",
     "description": "Soft, powdery, honey-like French mimosa absolute from wattle flowers. A classic perfumery material used in chypre and floral accords.",
-    "shortSpec": "Solvent Extracted · France/India · Powdery-Floral",
+    "shortSpec": "Solvent Extracted · Powdery-Floral",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 48,
@@ -8753,8 +8753,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -8799,7 +8799,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Evernia prunastri",
     "category": "FLORAL_ABSOLUTE",
     "description": "Deep, forest-earthy oakmoss absolute — a treasured ingredient in classic chypre fragrances and green, woody compositions.",
-    "shortSpec": "Solvent Extracted · Europe · Chypre Accord",
+    "shortSpec": "Solvent Extracted · Chypre Accord",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 42,
@@ -8807,8 +8807,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -8853,7 +8853,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Nymphaea lotus",
     "category": "FLORAL_ABSOLUTE",
     "description": "Delicate white lotus absolute with a clean, subtle aquatic-floral character. Used in meditation blends and luxury skin care serums.",
-    "shortSpec": "Solvent Extracted · India/Egypt · Aquatic-Floral",
+    "shortSpec": "Solvent Extracted · Aquatic-Floral",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 58,
@@ -8861,8 +8861,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -8907,7 +8907,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Ferula asafoetida",
     "category": "OLEORESIN",
     "description": "Concentrated hing oleoresin capturing the full volatile and resin spectrum from asafoetida gum for food flavouring applications.",
-    "shortSpec": "Oleoresin · Iran/India · Sulphur Compounds",
+    "shortSpec": "Oleoresin · Sulphur Compounds",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 45,
@@ -8915,8 +8915,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -8935,7 +8935,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Ferula asafoetida. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -8961,7 +8961,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Trachyspermum ammi",
     "category": "OLEORESIN",
     "description": "Thymol-rich ajowan oleoresin with superior stability over the essential oil. Used in pharmaceutical and functional food applications.",
-    "shortSpec": "Oleoresin · India · High Thymol",
+    "shortSpec": "Oleoresin · High Thymol",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 38,
@@ -8969,8 +8969,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -8989,7 +8989,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Trachyspermum ammi. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -9015,7 +9015,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Ocimum basilicum",
     "category": "OLEORESIN",
     "description": "Full-spectrum basil oleoresin capturing both volatile and non-volatile components for intense, stable basil flavour applications.",
-    "shortSpec": "Oleoresin · India · Full-Spectrum",
+    "shortSpec": "Oleoresin · Full-Spectrum",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 40,
@@ -9023,8 +9023,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -9043,7 +9043,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Ocimum basilicum. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -9069,7 +9069,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Capsicum annuum",
     "category": "OLEORESIN",
     "description": "Standardized 10% capsaicin/capsaicinoid oleoresin for topical pain relief formulations and pharmaceutical grade applications.",
-    "shortSpec": "Oleoresin · India · 10% Capsaicin",
+    "shortSpec": "Oleoresin · 10% Capsaicin",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 55,
@@ -9077,8 +9077,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -9097,7 +9097,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Capsicum annuum. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -9123,7 +9123,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Capsicum annuum",
     "category": "OLEORESIN",
     "description": "2 MSHU (Million Scoville Heat Units) standardized capsicum oleoresin at 13% concentration for nutraceutical and defensive applications.",
-    "shortSpec": "Oleoresin · India · 2 MSHU / 13% Capsaicin",
+    "shortSpec": "Oleoresin · 2 MSHU / 13% Capsaicin",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 42,
@@ -9131,8 +9131,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -9151,7 +9151,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Capsicum annuum. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -9177,7 +9177,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Capsicum annuum",
     "category": "OLEORESIN",
     "description": "High-concentration 40% capsaicin oleoresin for pharmaceutical active ingredient supply and high-potency topical analgesics.",
-    "shortSpec": "Oleoresin · India · 40% Capsaicin",
+    "shortSpec": "Oleoresin · 40% Capsaicin",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 38,
@@ -9185,8 +9185,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -9205,7 +9205,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Capsicum annuum. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -9231,7 +9231,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Capsicum annuum",
     "category": "OLEORESIN",
     "description": "6.6% capsaicinoid standardized oleoresin for food grade chili heat applications in hot sauces and seasoning blends.",
-    "shortSpec": "Oleoresin · India · Food Grade 6.6%",
+    "shortSpec": "Oleoresin · Food Grade 6.6%",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 36,
@@ -9239,8 +9239,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -9259,7 +9259,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Capsicum annuum. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -9285,7 +9285,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Elettaria cardamomum",
     "category": "OLEORESIN",
     "description": "Premium cardamom oleoresin with full aroma spectrum — superior stability and colour for use in food, beverages, and nutraceuticals.",
-    "shortSpec": "Oleoresin · India · 10% Volatile Oil",
+    "shortSpec": "Oleoresin · 10% Volatile Oil",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 52,
@@ -9293,8 +9293,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -9312,7 +9312,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Distilled from prime Elettaria cardamomum cultivated in the renowned terroir of Cardamom Hills, Idukki, Kerala. This botanical lot exhibits an exceptional volatile fraction highlighted by Terpinyl Acetate (40%+), 1,8-Cineole (32%+), grown under Shaded evergreen rainforest canopy at 1,000m elevation. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "overview": "Distilled from prime Elettaria cardamomum. This botanical lot exhibits an exceptional volatile fraction highlighted by Terpinyl Acetate (40%+), 1,8-Cineole (32%+), grown under Shaded evergreen rainforest canopy at 1,000m elevation. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -9339,7 +9339,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Apium graveolens",
     "category": "OLEORESIN",
     "description": "Full-spectrum celery seed oleoresin with 8% volatile oil — used in savoury flavourings, seasoning blends, and pharmaceutical diuretic products.",
-    "shortSpec": "Oleoresin · India · 8% Volatile Oil",
+    "shortSpec": "Oleoresin · 8% Volatile Oil",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 35,
@@ -9347,8 +9347,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -9367,7 +9367,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Apium graveolens. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -9393,7 +9393,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Syzygium aromaticum",
     "category": "OLEORESIN",
     "description": "25% eugenol-standardized clove bud oleoresin for pharmaceutical dental applications, food flavouring, and antiseptic preparations.",
-    "shortSpec": "Oleoresin · India/Zanzibar · 25% Eugenol",
+    "shortSpec": "Oleoresin · 25% Eugenol",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 48,
@@ -9401,8 +9401,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -9420,7 +9420,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Distilled from prime Syzygium aromaticum cultivated in the renowned terroir of Kanyakumari & Nilgiris, Tamil Nadu. This botanical lot exhibits an exceptional volatile fraction highlighted by Eugenol (86%+), Eugenyl Acetate, grown under Coastal maritime humid microclimate of Southern peninsular India. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "overview": "Distilled from prime Syzygium aromaticum. This botanical lot exhibits an exceptional volatile fraction highlighted by Eugenol (86%+), Eugenyl Acetate, grown under Coastal maritime humid microclimate of Southern peninsular India. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -9447,7 +9447,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Coriandrum sativum",
     "category": "OLEORESIN",
     "description": "Full-spectrum coriander oleoresin combining fixed and volatile fractions for stable, intense coriander flavour in processed food applications.",
-    "shortSpec": "Oleoresin · India · 1.5% Volatile Oil",
+    "shortSpec": "Oleoresin · 1.5% Volatile Oil",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 32,
@@ -9455,8 +9455,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -9475,7 +9475,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Coriandrum sativum. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -9501,7 +9501,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Piper cubeba",
     "category": "OLEORESIN",
     "description": "Cubeb pepper oleoresin with characteristic warm, spicy, slightly camphor-like character used in gin botanicals and pharmaceutical preparations.",
-    "shortSpec": "Oleoresin · Indonesia/India · Warm-Camphor",
+    "shortSpec": "Oleoresin · Warm-Camphor",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 28,
@@ -9509,8 +9509,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -9529,7 +9529,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Piper cubeba. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -9555,7 +9555,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Cuminum cyminum",
     "category": "OLEORESIN",
     "description": "Concentrated cumin oleoresin capturing the full pungent, warm character for use in Middle Eastern cuisine seasoning and flavouring extracts.",
-    "shortSpec": "Oleoresin · Rajasthan, India · Cumin Aldehyde",
+    "shortSpec": "Oleoresin · Cumin Aldehyde",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 42,
@@ -9563,8 +9563,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -9583,7 +9583,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Cuminum cyminum. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -9609,7 +9609,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Trigonella foenum-graecum",
     "category": "OLEORESIN",
     "description": "Maple syrup-character fenugreek oleoresin for flavouring applications in artificial maple, imitation dairy, and savoury product categories.",
-    "shortSpec": "Oleoresin · India · Sotolone-Rich",
+    "shortSpec": "Oleoresin · Sotolone-Rich",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 35,
@@ -9617,8 +9617,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -9637,7 +9637,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Trigonella foenum-graecum. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -9663,7 +9663,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Foeniculum vulgare dulce",
     "category": "OLEORESIN",
     "description": "Sweet anise-character fennel oleoresin for stable, heat-processable flavour delivery in beverages, confections, and dietary supplements.",
-    "shortSpec": "Oleoresin · India · Anethole-Rich",
+    "shortSpec": "Oleoresin · Anethole-Rich",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 38,
@@ -9671,8 +9671,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -9691,7 +9691,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Foeniculum vulgare dulce. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -9717,7 +9717,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Zingiber officinale",
     "category": "OLEORESIN",
     "description": "30% volatile oil ginger oleoresin for full pungency and heat in beverages, ginger extracts, pharmaceutical antinausea, and confectionery.",
-    "shortSpec": "Oleoresin · Cochin, India · 30% Volatile Oil",
+    "shortSpec": "Oleoresin · 30% Volatile Oil",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 58,
@@ -9725,8 +9725,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -9744,7 +9744,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Distilled from prime Zingiber officinale cultivated in the renowned terroir of Cochin & Wayanad, Kerala. This botanical lot exhibits an exceptional volatile fraction highlighted by Zingiberene (35%+), Curcumene, Gingerols, grown under Organic mountain loam renowned for intense aromatic pungency. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "overview": "Distilled from prime Zingiber officinale. This botanical lot exhibits an exceptional volatile fraction highlighted by Zingiberene (35%+), Curcumene, Gingerols, grown under Organic mountain loam renowned for intense aromatic pungency. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -9771,7 +9771,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Myristica fragrans (mace)",
     "category": "OLEORESIN",
     "description": "Full-spectrum mace oleoresin at 30% volatile oil for superior flavour stability in spice blends, bakery, meat processing, and sauces.",
-    "shortSpec": "Oleoresin · Indonesia/India · 30% Volatile Oil",
+    "shortSpec": "Oleoresin · 30% Volatile Oil",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 35,
@@ -9779,8 +9779,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -9799,7 +9799,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Myristica fragrans (mace). Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -9825,7 +9825,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Myristica fragrans Houttuyn",
     "category": "OLEORESIN",
     "description": "Full-spectrum nutmeg oleoresin with both volatile and fixed components for stable, rich nutmeg flavour in bakery, beverages, and dairy.",
-    "shortSpec": "Oleoresin · Indonesia/India · Full-Spectrum",
+    "shortSpec": "Oleoresin · Full-Spectrum",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 40,
@@ -9833,8 +9833,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -9853,7 +9853,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Myristica fragrans Houttuyn. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -9879,7 +9879,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Piper nigrum",
     "category": "OLEORESIN",
     "description": "Premium 40% piperine black pepper oleoresin for bioavailability enhancement in nutraceuticals, and intense pepper flavour in processed foods.",
-    "shortSpec": "Oleoresin · Kerala, India · 40% Piperine",
+    "shortSpec": "Oleoresin · 40% Piperine",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 60,
@@ -9887,8 +9887,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -9933,7 +9933,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Allium cepa",
     "category": "OLEORESIN",
     "description": "20:1 concentrated onion oleoresin with full flavour profile for use in savory seasoning, condiment manufacturing, and food processing.",
-    "shortSpec": "Oleoresin · India · 20:1 Concentration",
+    "shortSpec": "Oleoresin · 20:1 Concentration",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 38,
@@ -9941,8 +9941,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -9961,7 +9961,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Allium cepa. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -9987,7 +9987,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Origanum vulgare",
     "category": "OLEORESIN",
     "description": "High-carvacrol oregano oleoresin at 10% volatile oil. Used in natural antimicrobial supplements, food preservation, and flavoring.",
-    "shortSpec": "Oleoresin · Turkey/India · 10% Carvacrol",
+    "shortSpec": "Oleoresin · 10% Carvacrol",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 48,
@@ -9995,8 +9995,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -10015,7 +10015,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Origanum vulgare. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -10041,7 +10041,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Capsicum annuum (sweet)",
     "category": "OLEORESIN",
     "description": "Deep red 100,000 colour unit paprika oleoresin for natural red food colouring in processed meats, dairy, snacks, and sauces.",
-    "shortSpec": "Oleoresin · India/Spain · 100,000 CU",
+    "shortSpec": "Oleoresin · 100,000 CU",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 52,
@@ -10049,8 +10049,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -10069,7 +10069,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Capsicum annuum (sweet). Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -10095,7 +10095,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Petroselinum crispum",
     "category": "OLEORESIN",
     "description": "Parsley seed oleoresin with 10% volatile content for stable herbal flavour in savoury foods, seasoning blends, and pharmaceuticals.",
-    "shortSpec": "Oleoresin · India/Europe · 10% Volatile Oil",
+    "shortSpec": "Oleoresin · 10% Volatile Oil",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 28,
@@ -10103,8 +10103,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -10123,7 +10123,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Standardized full-spectrum botanical extract derived from Petroselinum crispum. Combines both volatile essential oil components and non-volatile pungent/pigment fractions, delivering standardized active potency, reliable consistency, and extended shelf stability for food and pharmaceutical applications.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Thermal Microcirculation Stimulation",
@@ -10149,7 +10149,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Rosmarinus officinalis",
     "category": "OLEORESIN",
     "description": "Antioxidant-rich rosemary oleoresin (rosemary extract) used as a natural food preservative, antioxidant supplement, and flavouring agent.",
-    "shortSpec": "Oleoresin · Spain/India · Carnosic Acid Antioxidant",
+    "shortSpec": "Oleoresin · Carnosic Acid Antioxidant",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 55,
@@ -10157,8 +10157,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -10176,7 +10176,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Distilled from prime Rosmarinus officinalis cultivated in the renowned terroir of Nilgiri Hills, Tamil Nadu. This botanical lot exhibits an exceptional volatile fraction highlighted by 1,8-Cineole (45%+), Alpha-Pinene, Camphor, grown under Cool montane elevation with continuous misty cloud cover. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "overview": "Distilled from prime Rosmarinus officinalis. This botanical lot exhibits an exceptional volatile fraction highlighted by 1,8-Cineole (45%+), Alpha-Pinene, Camphor, grown under Cool montane elevation with continuous misty cloud cover. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
     "history": "Integral to the historic royal perfumery of Kannauj (the Grasse of the East) dating back to the Mughal courts. The delicate petals are hand-harvested exclusively at pre-dawn twilight before direct sunlight can evaporate delicate floral volatiles, ensuring complete olfactory fidelity.",
     "benefits": [
       {
@@ -10203,7 +10203,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Citrus bergamia",
     "category": "ORGANIC_OIL",
     "description": "USDA/EU certified organic bergamot essential oil from sustainably certified Italian farms. Bergapten-free variant available.",
-    "shortSpec": "Organic Steam Distilled · Italy · Certified Organic",
+    "shortSpec": "Organic Steam Distilled · Certified Organic",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 70,
@@ -10211,8 +10211,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -10231,7 +10231,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Certified organic extraction of Citrus bergamia grown on certified organic farms adhering to USDA NOP and EU organic standards. Harvested with zero synthetic agrochemicals and steam-distilled under gentle vapor pressure to preserve the full energetic and chemical integrity of the raw botanical.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -10257,7 +10257,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Cedrus deodara",
     "category": "ORGANIC_OIL",
     "description": "Certified organic Himalayan deodara cedarwood oil from responsibly managed forest blocks with full organic chain of custody.",
-    "shortSpec": "Organic Steam Distilled · Himalayas · Certified",
+    "shortSpec": "Organic Steam Distilled · Certified",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 58,
@@ -10265,8 +10265,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -10285,7 +10285,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Certified organic extraction of Cedrus deodara grown on certified organic farms adhering to USDA NOP and EU organic standards. Harvested with zero synthetic agrochemicals and steam-distilled under gentle vapor pressure to preserve the full energetic and chemical integrity of the raw botanical.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -10311,7 +10311,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Matricaria chamomilla",
     "category": "ORGANIC_OIL",
     "description": "Certified organic blue chamomile with guaranteed chamazulene content from organically farmed Egyptian or German crops.",
-    "shortSpec": "Organic Steam Distilled · Egypt/Germany · Blue Grade",
+    "shortSpec": "Organic Steam Distilled · Blue Grade",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 65,
@@ -10319,8 +10319,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -10339,7 +10339,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Certified organic extraction of Matricaria chamomilla grown on certified organic farms adhering to USDA NOP and EU organic standards. Harvested with zero synthetic agrochemicals and steam-distilled under gentle vapor pressure to preserve the full energetic and chemical integrity of the raw botanical.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -10364,8 +10364,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Organic Cinnamon Oil",
     "botanicalName": "Cinnamomum zeylanicum",
     "category": "ORGANIC_OIL",
-    "description": "Certified organic Ceylon cinnamon bark oil from USDA/EU certified Sri Lankan organic farms. Full cinnamaldehyde profile.",
-    "shortSpec": "Organic Steam Distilled · Sri Lanka · Certified",
+    "description": "Certified organic Ceylon cinnamon bark oil with full cinnamaldehyde profile.",
+    "shortSpec": "Organic Steam Distilled · Certified",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 60,
@@ -10373,8 +10373,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -10392,7 +10392,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Distilled from prime Cinnamomum zeylanicum cultivated in the renowned terroir of Malabar Coast & Sri Lanka borderlands. This botanical lot exhibits an exceptional volatile fraction highlighted by Cinnamaldehyde (72%+), Eugenol (8%+), grown under Tropical coastal laterite belt harvested from peeled coppiced shoots. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "overview": "Distilled from prime Cinnamomum zeylanicum. This botanical lot exhibits an exceptional volatile fraction highlighted by Cinnamaldehyde (72%+), Eugenol (8%+), grown under Tropical coastal laterite belt harvested from peeled coppiced shoots. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -10419,7 +10419,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Syzygium aromaticum",
     "category": "ORGANIC_OIL",
     "description": "Certified organic clove bud oil from Zanzibar or South India with full third-party organic certification and GC-MS report.",
-    "shortSpec": "Organic Steam Distilled · Zanzibar · Certified Eugenol",
+    "shortSpec": "Organic Steam Distilled · Certified Eugenol",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 66,
@@ -10427,8 +10427,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -10446,7 +10446,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Distilled from prime Syzygium aromaticum cultivated in the renowned terroir of Kanyakumari & Nilgiris, Tamil Nadu. This botanical lot exhibits an exceptional volatile fraction highlighted by Eugenol (86%+), Eugenyl Acetate, grown under Coastal maritime humid microclimate of Southern peninsular India. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "overview": "Distilled from prime Syzygium aromaticum. This botanical lot exhibits an exceptional volatile fraction highlighted by Eugenol (86%+), Eugenyl Acetate, grown under Coastal maritime humid microclimate of Southern peninsular India. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -10473,7 +10473,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Eucalyptus globulus",
     "category": "ORGANIC_OIL",
     "description": "Certified organic eucalyptus oil with 80%+ cineole from Indian USDA-certified organic eucalyptus plantations.",
-    "shortSpec": "Organic Steam Distilled · India · 80%+ Cineole",
+    "shortSpec": "Organic Steam Distilled · 80%+ Cineole",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 72,
@@ -10481,8 +10481,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -10500,8 +10500,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Distilled from prime Eucalyptus globulus cultivated in the renowned terroir of Nilgiri Blue Mountains, South India. This botanical lot exhibits an exceptional volatile fraction highlighted by Eucalyptol / 1,8-Cineole (82%+), Alpha-Pinene, grown under High-altitude eucalyptus plantations harvested since 1843. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "Distilled from prime Eucalyptus globulus. This botanical lot exhibits an exceptional volatile fraction highlighted by Eucalyptol / 1,8-Cineole (82%+), Alpha-Pinene, grown under High-altitude eucalyptus plantations harvested since 1843. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -10527,7 +10527,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Boswellia serrata",
     "category": "ORGANIC_OIL",
     "description": "Certified organic Indian olibanum oil from wild-harvested and certified Boswellia trees in Rajasthan with organic chain-of-custody.",
-    "shortSpec": "Organic Steam Distilled · Rajasthan · Wild-Certified",
+    "shortSpec": "Organic Steam Distilled · Wild-Certified",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 74,
@@ -10535,8 +10535,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -10554,8 +10554,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Distilled from prime Boswellia serrata cultivated in the renowned terroir of Shekhawati / Aravalli Hills, Rajasthan. This botanical lot exhibits an exceptional volatile fraction highlighted by Alpha-Pinene (52%+), Boswellic derivatives, grown under Arid rocky calcareous soils yielding high-resin oleogum. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "Distilled from prime Boswellia serrata. This botanical lot exhibits an exceptional volatile fraction highlighted by Alpha-Pinene (52%+), Boswellic derivatives, grown under Arid rocky calcareous soils yielding high-resin oleogum. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -10580,8 +10580,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Organic Ginger Oil",
     "botanicalName": "Zingiber officinale",
     "category": "ORGANIC_OIL",
-    "description": "Certified organic ginger oil from Cochin, Kerala — full zingiber content from USDA/EU certified ginger farms.",
-    "shortSpec": "Organic Steam Distilled · Kerala · Certified",
+    "description": "Certified organic ginger oil with full zingiber content.",
+    "shortSpec": "Organic Steam Distilled · Certified",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 68,
@@ -10589,8 +10589,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -10608,7 +10608,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Distilled from prime Zingiber officinale cultivated in the renowned terroir of Cochin & Wayanad, Kerala. This botanical lot exhibits an exceptional volatile fraction highlighted by Zingiberene (35%+), Curcumene, Gingerols, grown under Organic mountain loam renowned for intense aromatic pungency. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "overview": "Distilled from prime Zingiber officinale. This botanical lot exhibits an exceptional volatile fraction highlighted by Zingiberene (35%+), Curcumene, Gingerols, grown under Organic mountain loam renowned for intense aromatic pungency. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -10635,7 +10635,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Ocimum sanctum",
     "category": "ORGANIC_OIL",
     "description": "Sacred certified organic tulsi oil from Ayurvedic certified farms. High eugenol content with complete organic certification documentation.",
-    "shortSpec": "Organic Steam Distilled · India · Certified Tulsi",
+    "shortSpec": "Organic Steam Distilled · Certified Tulsi",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 55,
@@ -10643,8 +10643,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -10689,7 +10689,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Jasminum grandiflorum",
     "category": "ORGANIC_OIL",
     "description": "Certified organic jasmine absolute from hand-picked Jasminum grandiflorum blossoms. One of the most precious organic florals.",
-    "shortSpec": "Organic Solvent Extracted · India · Certified",
+    "shortSpec": "Organic Solvent Extracted · Certified",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 76,
@@ -10697,8 +10697,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -10716,7 +10716,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Distilled from prime Jasminum grandiflorum cultivated in the renowned terroir of Madurai, Tamil Nadu. This botanical lot exhibits an exceptional volatile fraction highlighted by Benzyl Acetate (25%), Linalool, Jasmone, grown under Geographical Indication (GI) certified dawn flower harvest. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "overview": "Distilled from prime Jasminum grandiflorum. This botanical lot exhibits an exceptional volatile fraction highlighted by Benzyl Acetate (25%), Linalool, Jasmone, grown under Geographical Indication (GI) certified dawn flower harvest. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
     "history": "Integral to the historic royal perfumery of Kannauj (the Grasse of the East) dating back to the Mughal courts. The delicate petals are hand-harvested exclusively at pre-dawn twilight before direct sunlight can evaporate delicate floral volatiles, ensuring complete olfactory fidelity.",
     "benefits": [
       {
@@ -10743,7 +10743,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Simmondsia chinensis",
     "category": "ORGANIC_OIL",
     "description": "Certified organic golden jojoba wax from USDA-certified farms. Exceptional stability and sebum-matching properties for luxury cosmetics.",
-    "shortSpec": "Organic Cold Pressed · USA/India · Certified",
+    "shortSpec": "Organic Cold Pressed · Certified",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 80,
@@ -10770,8 +10770,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Packaged under inert nitrogen blanket to prevent lipid peroxidation during export."
       }
     ],
-    "overview": "Distilled from prime Simmondsia chinensis cultivated in the renowned terroir of Thar Desert, Rajasthan. This botanical lot exhibits an exceptional volatile fraction highlighted by Gadoleic Acid (72%), Erucic Acid, Wax Esters, grown under Arid sunshine terroir producing ultra-stable liquid wax esters. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "Distilled from prime Simmondsia chinensis. This botanical lot exhibits an exceptional volatile fraction highlighted by Gadoleic Acid (72%), Erucic Acid, Wax Esters, grown under Arid sunshine terroir producing ultra-stable liquid wax esters. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -10797,7 +10797,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Citrus limon",
     "category": "ORGANIC_OIL",
     "description": "Certified organic cold-pressed lemon peel oil from Italian or Indian certified organic lemon groves.",
-    "shortSpec": "Organic Cold Pressed · Italy/India · Certified",
+    "shortSpec": "Organic Cold Pressed · Certified",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 72,
@@ -10805,8 +10805,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -10825,7 +10825,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Certified organic extraction of Citrus limon grown on certified organic farms adhering to USDA NOP and EU organic standards. Harvested with zero synthetic agrochemicals and steam-distilled under gentle vapor pressure to preserve the full energetic and chemical integrity of the raw botanical.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -10851,7 +10851,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Cymbopogon flexuosus",
     "category": "ORGANIC_OIL",
     "description": "Certified organic lemongrass oil from Kerala certified organic farms with full volatile citral content and traceability.",
-    "shortSpec": "Organic Steam Distilled · Kerala · Certified",
+    "shortSpec": "Organic Steam Distilled · Certified",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 76,
@@ -10859,8 +10859,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -10878,8 +10878,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Distilled from prime Cymbopogon flexuosus cultivated in the renowned terroir of Cochin / Wayanad, Kerala. This botanical lot exhibits an exceptional volatile fraction highlighted by Citral (78%+), Geraniol, Myrcene, grown under Malabar tropical coastal terroir receiving dual monsoons. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "Distilled from prime Cymbopogon flexuosus. This botanical lot exhibits an exceptional volatile fraction highlighted by Citral (78%+), Geraniol, Myrcene, grown under Malabar tropical coastal terroir receiving dual monsoons. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -10905,7 +10905,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Moringa oleifera",
     "category": "ORGANIC_OIL",
     "description": "Certified organic moringa (ben oil) from USDA-certified Indian farms with full chain of custody. Ultra-stable luxury carrier.",
-    "shortSpec": "Organic Cold Pressed · India · Certified Ben Oil",
+    "shortSpec": "Organic Cold Pressed · Certified Ben Oil",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 62,
@@ -10932,8 +10932,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Packaged under inert nitrogen blanket to prevent lipid peroxidation during export."
       }
     ],
-    "overview": "Distilled from prime Moringa oleifera cultivated in the renowned terroir of Madurai & Dindigul, Tamil Nadu. This botanical lot exhibits an exceptional volatile fraction highlighted by Oleic Acid (73%+), Behenic Acid, grown under Semi-arid tropical plains yielding cold-hardy nutrient-rich seeds. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "Distilled from prime Moringa oleifera. This botanical lot exhibits an exceptional volatile fraction highlighted by Oleic Acid (73%+), Behenic Acid, grown under Semi-arid tropical plains yielding cold-hardy nutrient-rich seeds. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -10959,7 +10959,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Azadirachta indica",
     "category": "ORGANIC_OIL",
     "description": "Certified organic cold-pressed neem oil from USDA/EU certified Indian farms. Full azadirachtin profile for agriculture and personal care.",
-    "shortSpec": "Organic Cold Pressed · India · Certified",
+    "shortSpec": "Organic Cold Pressed · Certified",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 68,
@@ -10986,8 +10986,8 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Packaged under inert nitrogen blanket to prevent lipid peroxidation during export."
       }
     ],
-    "overview": "Distilled from prime Azadirachta indica cultivated in the renowned terroir of Bundelkhand & Central Deccan, India. This botanical lot exhibits an exceptional volatile fraction highlighted by Azadirachtin A/B, Nimbin, Salannin, grown under Sun-baked drought-tolerant native woodland agroforestry. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "overview": "Distilled from prime Azadirachta indica. This botanical lot exhibits an exceptional volatile fraction highlighted by Azadirachtin A/B, Nimbin, Salannin, grown under Sun-baked drought-tolerant native woodland agroforestry. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -11013,7 +11013,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Citrus sinensis",
     "category": "ORGANIC_OIL",
     "description": "Certified organic sweet orange peel oil from Indian or Brazilian certified organic orange groves. High limonene, full organic paperwork.",
-    "shortSpec": "Organic Cold Pressed · India/Brazil · Certified",
+    "shortSpec": "Organic Cold Pressed · Certified",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 75,
@@ -11021,8 +11021,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -11041,7 +11041,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Certified organic extraction of Citrus sinensis grown on certified organic farms adhering to USDA NOP and EU organic standards. Harvested with zero synthetic agrochemicals and steam-distilled under gentle vapor pressure to preserve the full energetic and chemical integrity of the raw botanical.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -11067,7 +11067,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Mentha piperita",
     "category": "ORGANIC_OIL",
     "description": "Certified organic peppermint oil from Uttar Pradesh certified organic mentha farms. High natural menthol with complete organic documentation.",
-    "shortSpec": "Organic Steam Distilled · Uttar Pradesh · Certified",
+    "shortSpec": "Organic Steam Distilled · Certified",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 82,
@@ -11075,8 +11075,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -11094,7 +11094,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Distilled from prime Mentha piperita cultivated in the renowned terroir of Uttar Pradesh Terai alluvial plains. This botanical lot exhibits an exceptional volatile fraction highlighted by Menthol (45%+), Menthone (20%+), grown under Rich Gangetic loam with high summer solar radiation. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "overview": "Distilled from prime Mentha piperita. This botanical lot exhibits an exceptional volatile fraction highlighted by Menthol (45%+), Menthone (20%+), grown under Rich Gangetic loam with high summer solar radiation. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
     "history": "Central to the historic Maritime Spice Routes connecting the Malabar Coast of India to ancient Alexandria, Venice, and Lisbon. Traditional spice-grower cooperatives hand-harvest crops at peak maturity, utilizing solar drying and traditional hydro-distillation stills upgraded with modern 316 stainless steel condensation chambers.",
     "benefits": [
       {
@@ -11121,7 +11121,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Rosa damascena",
     "category": "ORGANIC_OIL",
     "description": "Certified organic rose otto distilled from certified Damascus rose gardens in Bulgaria or certified Indian rose fields.",
-    "shortSpec": "Organic Steam Distilled · Bulgaria/India · Certified Otto",
+    "shortSpec": "Organic Steam Distilled · Certified Otto",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 86,
@@ -11129,8 +11129,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -11149,7 +11149,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "featured": true,
-    "overview": "Distilled from prime Rosa damascena cultivated in the renowned terroir of Pushkar, Rajasthan & Aligarh, UP. This botanical lot exhibits an exceptional volatile fraction highlighted by Citronellol (38%), Geraniol (20%), Rose Oxide, grown under Chaitri Rose blooming cycle harvested before sunrise. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "overview": "Distilled from prime Rosa damascena. This botanical lot exhibits an exceptional volatile fraction highlighted by Citronellol (38%), Geraniol (20%), Rose Oxide, grown under Chaitri Rose blooming cycle harvested before sunrise. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
     "history": "Integral to the historic royal perfumery of Kannauj (the Grasse of the East) dating back to the Mughal courts. The delicate petals are hand-harvested exclusively at pre-dawn twilight before direct sunlight can evaporate delicate floral volatiles, ensuring complete olfactory fidelity.",
     "benefits": [
       {
@@ -11176,7 +11176,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Rosmarinus officinalis",
     "category": "ORGANIC_OIL",
     "description": "Certified organic rosemary oil from USDA-certified Spanish or Indian farms. Cineole chemotype, full analytical documentation.",
-    "shortSpec": "Organic Steam Distilled · Spain/India · Certified",
+    "shortSpec": "Organic Steam Distilled · Certified",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 70,
@@ -11184,8 +11184,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -11203,7 +11203,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Distilled from prime Rosmarinus officinalis cultivated in the renowned terroir of Nilgiri Hills, Tamil Nadu. This botanical lot exhibits an exceptional volatile fraction highlighted by 1,8-Cineole (45%+), Alpha-Pinene, Camphor, grown under Cool montane elevation with continuous misty cloud cover. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "overview": "Distilled from prime Rosmarinus officinalis. This botanical lot exhibits an exceptional volatile fraction highlighted by 1,8-Cineole (45%+), Alpha-Pinene, Camphor, grown under Cool montane elevation with continuous misty cloud cover. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
     "history": "Integral to the historic royal perfumery of Kannauj (the Grasse of the East) dating back to the Mughal courts. The delicate petals are hand-harvested exclusively at pre-dawn twilight before direct sunlight can evaporate delicate floral volatiles, ensuring complete olfactory fidelity.",
     "benefits": [
       {
@@ -11230,7 +11230,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Punica granatum",
     "category": "ORGANIC_OIL",
     "description": "Certified organic pomegranate seed oil from Indian USDA-certified pomegranate farms. Full punicic acid (CLnA) profile with organic cert.",
-    "shortSpec": "Organic Cold Pressed · India · Certified Punicic Acid",
+    "shortSpec": "Organic Cold Pressed · Certified Punicic Acid",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 65,
@@ -11258,7 +11258,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Certified organic extraction of Punica granatum grown on certified organic farms adhering to USDA NOP and EU organic standards. Harvested with zero synthetic agrochemicals and steam-distilled under gentle vapor pressure to preserve the full energetic and chemical integrity of the raw botanical.",
-    "history": "Distilled from sustainably cultivated harvests in India under strict ISO 9001:2015 and GMP processing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
+    "history": "Processed under strict ISO 9001:2015 and GMP manufacturing protocols. Packaged for international container and air freight in sealed UN-rated drums.",
     "benefits": [
       {
         "title": "Aromatherapy & Olfactory Depth",
@@ -11284,7 +11284,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Angelica archangelica",
     "category": "AYURVEDIC",
     "description": "Used in Ayurvedic and Unani systems for digestive complaints, respiratory conditions, and as an aromatic nervine tonic.",
-    "shortSpec": "Ayurvedic Grade · India · Digestive & Nervine",
+    "shortSpec": "Ayurvedic Grade · Digestive & Nervine",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 35,
@@ -11292,8 +11292,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -11338,7 +11338,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Acorus calamus",
     "category": "AYURVEDIC",
     "description": "Vacha — one of Ayurveda's most revered herbs for the mind. Calamus oil used for cognitive enhancement and Panchakarma preparations.",
-    "shortSpec": "Ayurvedic Grade · India · Vacha/Cognitive",
+    "shortSpec": "Ayurvedic Grade · Vacha/Cognitive",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 45,
@@ -11346,8 +11346,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -11392,7 +11392,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Saussurea costus",
     "category": "AYURVEDIC",
     "description": "Kuth root oil — a highly sacred Ayurvedic botanical with anti-inflammatory, anti-asthmatic, and deep fixative aromatic properties.",
-    "shortSpec": "Ayurvedic Grade · India · Kuth Sacred",
+    "shortSpec": "Ayurvedic Grade · Kuth Sacred",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 30,
@@ -11400,8 +11400,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -11446,7 +11446,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Cupressus sempervirens",
     "category": "AYURVEDIC",
     "description": "Used in Ayurvedic applications for lymphatic circulation, varicose vein management, and respiratory support preparations.",
-    "shortSpec": "Ayurvedic Grade · India · Circulatory Support",
+    "shortSpec": "Ayurvedic Grade · Circulatory Support",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 38,
@@ -11454,8 +11454,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -11500,7 +11500,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Cyperus scariosus",
     "category": "AYURVEDIC",
     "description": "Nagarmotha — classical Ayurvedic herb for Pitta and skin conditions. Earthy, oud-like oil used in skin treatments and attars.",
-    "shortSpec": "Ayurvedic Grade · India · Nagarmotha/Pitta",
+    "shortSpec": "Ayurvedic Grade · Nagarmotha/Pitta",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 48,
@@ -11508,8 +11508,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -11554,7 +11554,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Gaultheria fragrantissima",
     "category": "AYURVEDIC",
     "description": "Gandhapura — Himalayan wintergreen rich in methyl salicylate. Classical Ayurvedic external application for joint pain and muscle relief.",
-    "shortSpec": "Ayurvedic Grade · Himalayas · Methyl Salicylate Pain Relief",
+    "shortSpec": "Ayurvedic Grade · Methyl Salicylate Pain Relief",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 55,
@@ -11562,8 +11562,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -11608,7 +11608,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Hedychium spicatum",
     "category": "AYURVEDIC",
     "description": "Kapurkachri — Himalayan ginger lily used in classical Ayurveda for Kapha balance, skin brightening, and aromatic ritual preparations.",
-    "shortSpec": "Ayurvedic Grade · Himalayas · Kapha Balance",
+    "shortSpec": "Ayurvedic Grade · Kapha Balance",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 30,
@@ -11616,8 +11616,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -11662,7 +11662,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Ocimum sanctum",
     "category": "AYURVEDIC",
     "description": "Tulsi — the queen of Ayurvedic herbs. Sacred to Vaishnavism and clinically validated for adaptogenic, immunomodulatory, and antimicrobial activity.",
-    "shortSpec": "Ayurvedic Grade · India · Tulsi Sacred Adaptogen",
+    "shortSpec": "Ayurvedic Grade · Tulsi Sacred Adaptogen",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 68,
@@ -11670,8 +11670,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -11717,7 +11717,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Origanum majorana",
     "category": "AYURVEDIC",
     "description": "Ayurvedic grade marjoram for Vata-pacifying massage, digestive support, and as part of rejuvenation (Rasayana) preparations.",
-    "shortSpec": "Ayurvedic Grade · India · Vata Balance",
+    "shortSpec": "Ayurvedic Grade · Vata Balance",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 40,
@@ -11725,8 +11725,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -11771,7 +11771,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Commiphora myrrha",
     "category": "AYURVEDIC",
     "description": "Bol — myrrh gum resin oil with deep Ayurvedic applications for wound healing, oral care, anti-ageing, and spiritual purification rituals.",
-    "shortSpec": "Ayurvedic Grade · India/East Africa · Wound & Oral",
+    "shortSpec": "Ayurvedic Grade · Wound & Oral",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 58,
@@ -11779,8 +11779,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -11825,7 +11825,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Origanum vulgare",
     "category": "AYURVEDIC",
     "description": "Ajwain ka patta — Ayurvedic grade wild oregano for immune support, respiratory care, and natural antimicrobial formulations.",
-    "shortSpec": "Ayurvedic Grade · India · Immune & Respiratory",
+    "shortSpec": "Ayurvedic Grade · Immune & Respiratory",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 55,
@@ -11833,8 +11833,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -11879,7 +11879,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Boswellia serrata",
     "category": "AYURVEDIC",
     "description": "Shallaki — Indian frankincense oil from Boswellia serrata with high boswellic acid content. Classical Ayurvedic anti-arthritic and anti-inflammatory.",
-    "shortSpec": "Ayurvedic Grade · India · Boswellic Acid Anti-Inflammatory",
+    "shortSpec": "Ayurvedic Grade · Boswellic Acid Anti-Inflammatory",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 72,
@@ -11887,8 +11887,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -11934,7 +11934,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Valeriana officinalis",
     "category": "AYURVEDIC",
     "description": "Tagara — classical Ayurvedic nervine sedative used for sleep disorders, anxiety, and Vata-aggravated neurological conditions.",
-    "shortSpec": "Ayurvedic Grade · India/Himalayas · Tagara Sedative",
+    "shortSpec": "Ayurvedic Grade · Tagara Sedative",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 45,
@@ -11942,8 +11942,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -11988,7 +11988,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Chrysopogon zizanioides",
     "category": "AYURVEDIC",
     "description": "Khus — sacred Indian vetiver oil for Pitta balance, mental cooling, and as a tonic for the nervous system and skin conditions.",
-    "shortSpec": "Ayurvedic Grade · Rajasthan · Khus/Pitta Cooling",
+    "shortSpec": "Ayurvedic Grade · Khus/Pitta Cooling",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 65,
@@ -11996,8 +11996,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -12015,7 +12015,7 @@ export const INITIAL_PRODUCTS: Product[] = [
         "description": "Complete GC-MS analysis verifying specific gravity, optical rotation, refractive index, and chemical purity."
       }
     ],
-    "overview": "Distilled from prime Chrysopogon zizanioides cultivated in the renowned terroir of Bharatpur, Rajasthan & Bundelkhand. This botanical lot exhibits an exceptional volatile fraction highlighted by Khusimol (18%+), Vetivone, Isovalencenol, grown under Heavy alluvial clay soil where root systems anchor 3 meters deep. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
+    "overview": "Distilled from prime Chrysopogon zizanioides. This botanical lot exhibits an exceptional volatile fraction highlighted by Khusimol (18%+), Vetivone, Isovalencenol, grown under Heavy alluvial clay soil where root systems anchor 3 meters deep. Revered across industrial fragrance compounding, luxury skincare, and therapeutic wellness formulations.",
     "history": "Documented extensively in the ancient Charaka Samhita and Sushruta Samhita treatises spanning over 3,000 years of traditional Indian medicinal heritage. Harvesting follows time-tested seasonal cycles aligned with lunar and diurnal peaks in plant bio-energy, preserved by multi-generational farming communities.",
     "benefits": [
       {
@@ -12042,7 +12042,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Zanthoxylum armatum",
     "category": "AYURVEDIC",
     "description": "Tejphal — Himalayan Ayurvedic spice oil used for dental care, digestive support, and as a warming nervine in classical preparations.",
-    "shortSpec": "Ayurvedic Grade · Himalayas · Tejphal Dental & Digestive",
+    "shortSpec": "Ayurvedic Grade · Tejphal Dental & Digestive",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 30,
@@ -12050,8 +12050,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -12096,7 +12096,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Curcuma zedoaria",
     "category": "AYURVEDIC",
     "description": "Kachur — a close relative of turmeric used in Ayurvedic preparations for liver conditions, digestive disorders, and as an aromatic anti-inflammatory.",
-    "shortSpec": "Ayurvedic Grade · India · Kachur/Liver-Digestive",
+    "shortSpec": "Ayurvedic Grade · Kachur/Liver-Digestive",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 28,
@@ -12104,8 +12104,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     "manufacturingSteps": [
       {
         "stepNumber": 1,
-        "title": "Raw Material Sourcing",
-        "description": "Harvested at peak seasonal maturity from verified agricultural contract farms across India."
+        "title": "Raw Material Selection",
+        "description": "Selected at peak seasonal maturity under verified agricultural quality standards."
       },
       {
         "stepNumber": 2,
@@ -12151,7 +12151,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       "category": "CO2_OIL",
       "subCategory": "Supercritical Rhizome Extract",
       "description": "Full-spectrum supercritical CO₂ extract of Indian turmeric rhizomes, rich in natural ar-turmerone, α-turmerone, and active curcuminoids with zero solvent residue.",
-      "shortSpec": "Supercritical CO₂ · Erode, India · 65% Turmerones",
+      "shortSpec": "Supercritical CO₂ · 65% Turmerones",
       "moq": "1 kg",
       "priceDisplay": "Request Quote",
       "popularityScore": 96,
@@ -12161,7 +12161,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       "labelImageUrl": "/labels/turmeric-co2-extract.png",
       "compositeImageUrl": "/products/turmeric-co2-extract.webp",
       "overview": "Our Turmeric CO₂ Extract is manufactured using state-of-the-art dense-phase Supercritical Fluid Extraction (SFE) at sub-45°C. This low-temperature process preserves the complete aromatic profile and heavy bioactive fractions—specifically ar-turmerone, curlone, and curcuminoids—that are traditionally destroyed or lost during conventional steam distillation.",
-      "history": "Sourced directly from verified organic farmer cooperatives across Erode and Alleppey, the historical epicenters of Indian turmeric cultivation. Prepared under strict WHO-GMP and ISO 22000 manufacturing standards for B2B pharmaceutical, nutraceutical, and clean-label cosmetic formulations worldwide.",
+      "history": "Prepared under strict WHO-GMP and ISO 22000 manufacturing standards for B2B pharmaceutical, nutraceutical, and clean-label cosmetic formulations worldwide.",
       "manufacturingSteps": [
           {
               "stepNumber": 1,
@@ -12207,7 +12207,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       "category": "CO2_OIL",
       "subCategory": "Supercritical Rhizome Extract",
       "description": "Total supercritical CO₂ ginger extract capturing both volatile zingiberene aromatics and pungent active gingerols & shogaols in true-to-nature balance.",
-      "shortSpec": "Supercritical CO₂ · Cochin, India · High Gingerols",
+      "shortSpec": "Supercritical CO₂ · High Gingerols",
       "moq": "1 kg",
       "priceDisplay": "Request Quote",
       "popularityScore": 94,
@@ -12216,13 +12216,13 @@ export const INITIAL_PRODUCTS: Product[] = [
       "signatureColor": "#CA8A04",
       "labelImageUrl": "/labels/ginger-co2-extract.png",
       "compositeImageUrl": "/products/ginger-co2-extract.webp",
-      "overview": "Ginger CO₂ Extract captures the full pungency, deep warmth, and zesty fresh top-notes of Cochin ginger. Unlike steam-distilled ginger oil which only contains volatile terpenes, supercritical CO₂ extraction extracts the pungent non-volatile gingerols (6-gingerol, 8-gingerol, 10-gingerol) delivering authentic culinary heat and therapeutic potency.",
-      "history": "Distilled from freshly cured ginger grown in the humid, mineral-rich soils of Wayanad and Cochin in Kerala. Handled under stringent clean-room SFE protocols certified under ISO 22000 and HACCP.",
+      "overview": "Ginger CO₂ Extract captures the full pungency, deep warmth, and zesty fresh top-notes of fresh ginger. Unlike steam-distilled ginger oil which only contains volatile terpenes, supercritical CO₂ extraction extracts the pungent non-volatile gingerols (6-gingerol, 8-gingerol, 10-gingerol) delivering authentic culinary heat and therapeutic potency.",
+      "history": "Distilled from freshly cured ginger selected for extraordinarily dense oleoresin concentrations and high natural gingerol content.",
       "manufacturingSteps": [
           {
               "stepNumber": 1,
               "title": "Rhizome Selection & Flaking",
-              "description": "Unbleached Cochin ginger roots are sorted for moisture content and flaked to maximize supercritical contact surface area."
+              "description": "Unbleached ginger roots are sorted for moisture content and flaked to maximize supercritical contact surface area."
           },
           {
               "stepNumber": 2,
@@ -12262,8 +12262,8 @@ export const INITIAL_PRODUCTS: Product[] = [
       "botanicalName": "Piper nigrum",
       "category": "CO2_OIL",
       "subCategory": "Supercritical Berry Extract",
-      "description": "Exquisite supercritical fluid extract of Malabar black peppercorns offering crisp freshly-cracked pepper aroma with standardized bioavailable piperine.",
-      "shortSpec": "Supercritical CO₂ · Malabar, India · Standardized Piperine",
+      "description": "Exquisite supercritical fluid extract of select black peppercorns offering crisp freshly-cracked pepper aroma with standardized bioavailable piperine.",
+      "shortSpec": "Supercritical CO₂ · Standardized Piperine",
       "moq": "1 kg",
       "priceDisplay": "Request Quote",
       "popularityScore": 92,
@@ -12272,8 +12272,8 @@ export const INITIAL_PRODUCTS: Product[] = [
       "signatureColor": "#475569",
       "labelImageUrl": "/labels/black-pepper-co2-extract.png",
       "compositeImageUrl": "/products/black-pepper-co2-extract.webp",
-      "overview": "Black Pepper CO₂ Extract is processed from sun-ripened Tellicherry and Malabar black peppercorns. By utilizing supercritical carbon dioxide extraction, the delicate peppery terpenes (β-caryophyllene, sabinene, limonene) and the stimulating alkaloid piperine are concentrated without thermal degradation.",
-      "history": "Produced from indigenous vines cultivated on the misty mountain slopes of Kerala's Western Ghats—the historical birthplace of the global pepper spice trade.",
+      "overview": "Black Pepper CO₂ Extract is processed from sun-ripened black peppercorns. By utilizing supercritical carbon dioxide extraction, the delicate peppery terpenes (β-caryophyllene, sabinene, limonene) and the stimulating alkaloid piperine are concentrated without thermal degradation.",
+      "history": "Produced from selected peppercorn vines renowned for high piperine density and characteristic pungent warmth.",
       "manufacturingSteps": [
           {
               "stepNumber": 1,
@@ -12319,7 +12319,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       "category": "CO2_OIL",
       "subCategory": "Supercritical Seed Extract",
       "description": "Supreme supercritical CO₂ green cardamom extract with unmatched sweet-balsamic, eucalyptus-citrus aroma free from burnt notes.",
-      "shortSpec": "Supercritical CO₂ · Idukki, India · High α-Terpinyl Acetate",
+      "shortSpec": "Supercritical CO₂ · High α-Terpinyl Acetate",
       "moq": "1 kg",
       "priceDisplay": "Request Quote",
       "popularityScore": 95,
@@ -12329,12 +12329,12 @@ export const INITIAL_PRODUCTS: Product[] = [
       "labelImageUrl": "/labels/cardamom-co2-extract.png",
       "compositeImageUrl": "/products/cardamom-co2-extract.webp",
       "overview": "Cardamom CO₂ Extract represents the gold standard of green spice extraction. Unlike steam distillation which alters delicate esters due to prolonged boiling, low-temperature CO₂ SFE perfectly preserves the sweet α-terpinyl acetate and clean 1,8-cineole ratio for an intoxicating, true-to-pod aromatic experience.",
-      "history": "Cultivated in the shaded high-elevation rainforests of the Cardamom Hills in Idukki, Kerala. Harvested by hand at peak pod maturity to ensure maximum seed aroma intensity.",
+      "history": "Harvested at peak pod maturity under controlled processing parameters to ensure maximum seed aroma intensity.",
       "manufacturingSteps": [
           {
               "stepNumber": 1,
               "title": "Green Pod De-husking",
-              "description": "Whole green Alleppey cardamom pods are gently de-husked and seeds are freshly cracked immediately prior to extraction."
+              "description": "Whole green cardamom pods are gently de-husked and seeds are freshly cracked immediately prior to extraction."
           },
           {
               "stepNumber": 2,
@@ -12375,7 +12375,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       "category": "CO2_OIL",
       "subCategory": "Supercritical Bud Extract",
       "description": "Dense supercritical CO₂ clove bud extract yielding superior eugenol purity and rich eugenyl acetate sweetness without harsh burnt overtones.",
-      "shortSpec": "Supercritical CO₂ · Kanyakumari, India · >85% Eugenol",
+      "shortSpec": "Supercritical CO₂ · >85% Eugenol",
       "moq": "1 kg",
       "priceDisplay": "Request Quote",
       "popularityScore": 90,
@@ -12385,7 +12385,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       "labelImageUrl": "/labels/clove-co2-extract.png",
       "compositeImageUrl": "/products/clove-co2-extract.webp",
       "overview": "Clove CO₂ Extract is produced exclusively from unopened, sun-dried flower buds of Syzygium aromaticum. The supercritical CO₂ process yields a golden, rich oil that retains high levels of delicate eugenyl acetate (often hydrolyzed in steam distillation) providing a sweeter, more nuanced spice profile alongside potent eugenol.",
-      "history": "Harvested from coastal plantation groves in Kanyakumari and the southern Western Ghats, renowned for high essential oil yield and deep aromatic resonance.",
+      "history": "Produced from unopened, sun-dried flower buds renowned for high essential oil yield and deep aromatic resonance.",
       "manufacturingSteps": [
           {
               "stepNumber": 1,
@@ -12431,7 +12431,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       "category": "CO2_OIL",
       "subCategory": "Supercritical Leaf Extract",
       "description": "Sacred Holy Basil (Tulsi) CO₂ extract preserving both volatile eugenol-caryophyllene aromatics and lipophilic ursolic acid adaptogens.",
-      "shortSpec": "Supercritical CO₂ · Varanasi, India · Adaptogenic Actives",
+      "shortSpec": "Supercritical CO₂ · Adaptogenic Actives",
       "moq": "1 kg",
       "priceDisplay": "Request Quote",
       "popularityScore": 93,
@@ -12441,11 +12441,11 @@ export const INITIAL_PRODUCTS: Product[] = [
       "labelImageUrl": "/labels/tulsi-holy-basil-co2-extract.png",
       "compositeImageUrl": "/products/tulsi-holy-basil-co2-extract.webp",
       "overview": "Revered across India as 'The Incomparable One' and the 'Queen of Herbs', Holy Basil (Tulsi) is traditionally used in Ayurvedic rasayana formulations. Our supercritical CO₂ extraction captures both Krishna and Rama Tulsi leaves at low temperatures, preserving fragile aromatic monoterpenes alongside heavy triterpenic adaptogenic actives like ursolic acid.",
-      "history": "Grown sustainably on certified regenerative farms along the fertile Gangetic plains surrounding Varanasi. Extracted in dedicated pharmaceutical-grade stainless steel extraction columns.",
+      "history": "Grown sustainably under regenerative agricultural standards. Extracted under precise low-temperature conditions to preserve volatile monoterpenes alongside therapeutic phenolic acids.",
       "manufacturingSteps": [
           {
               "stepNumber": 1,
-              "title": "Organic Leaf Harvesting",
+              "title": "Botanical Leaf Selection",
               "description": "Tulsi leaves are harvested at dawn, shade-dried under controlled humidity, and gently milled."
           },
           {
@@ -12487,7 +12487,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       "category": "CO2_OIL",
       "subCategory": "Supercritical Antioxidant Extract",
       "description": "Standardized Rosemary CO₂ extract with high carnosic acid content, serving as the gold-standard natural botanical antioxidant for cosmetics and food oils.",
-      "shortSpec": "Supercritical CO₂ · Nilgiris, India · High Carnosic Acid",
+      "shortSpec": "Supercritical CO₂ · High Carnosic Acid",
       "moq": "1 kg",
       "priceDisplay": "Request Quote",
       "popularityScore": 91,
@@ -12497,7 +12497,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       "labelImageUrl": "/labels/rosemary-co2-extract.png",
       "compositeImageUrl": "/products/rosemary-co2-extract.webp",
       "overview": "Rosemary CO₂ Extract is standardized for high concentrations of natural carnosic acid, carnosol, and rosmarinic acid. Widely recognized in the international clean-beauty and organic food sectors as a 100% natural, potent oil-soluble antioxidant that retards lipid oxidation and prevents rancidity in cosmetic oils and emulsions.",
-      "history": "Cultivated in high-altitude sub-tropical organic estates in the Nilgiri Hills of southern India, benefiting from crisp mountain air and optimal sunshine.",
+      "history": "Cultivated in certified organic estates under clean agricultural practices for maximum purity.",
       "manufacturingSteps": [
           {
               "stepNumber": 1,
@@ -12543,7 +12543,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       "category": "CO2_OIL",
       "subCategory": "Supercritical Root Extract",
       "description": "Deep, luminous supercritical CO₂ extract of aged Indian Ruh Khus vetiver roots with smoky-woody, balsamic-earthy longevity.",
-      "shortSpec": "Supercritical CO₂ · Kannauj, India · High Khusimol",
+      "shortSpec": "Supercritical CO₂ · High Khusimol",
       "moq": "1 kg",
       "priceDisplay": "Request Quote",
       "popularityScore": 89,
@@ -12553,7 +12553,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       "labelImageUrl": "/labels/vetiver-co2-extract.png",
       "compositeImageUrl": "/products/vetiver-co2-extract.webp",
       "overview": "Vetiver CO₂ Extract offers an exceptionally clean, rich, and refined alternative to conventional hydrodistilled vetiver. By operating at mild temperatures under supercritical CO₂, the heavy sesquiterpene alcohols (khusimol, isovalencenol) and vetivones are extracted without burnt pyrogenous notes, revealing velvety balsamic woods and sweet roots.",
-      "history": "Harvested from wild-growing riverbed grasses in Kannauj and Bharatpur, where the roots absorb deep mineral wealth over 18 to 24 months before harvesting.",
+      "history": "Extracted from mature botanical roots known for deep aromatic density and longevity.",
       "manufacturingSteps": [
           {
               "stepNumber": 1,
@@ -12599,7 +12599,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       "category": "CO2_OIL",
       "subCategory": "Supercritical Heartwood Extract",
       "description": "Precious supercritical CO₂ extract of aged East Indian Sandalwood heartwood, rich in natural α-santalol and β-santalol with creamy-woody serenity.",
-      "shortSpec": "Supercritical CO₂ · Mysore, India · >90% Santalols",
+      "shortSpec": "Supercritical CO₂ · >90% Santalols",
       "moq": "1 kg",
       "priceDisplay": "Request Quote",
       "popularityScore": 98,
@@ -12608,8 +12608,8 @@ export const INITIAL_PRODUCTS: Product[] = [
       "signatureColor": "#A16207",
       "labelImageUrl": "/labels/sandalwood-co2-extract.png",
       "compositeImageUrl": "/products/sandalwood-co2-extract.webp",
-      "overview": "Sandalwood CO₂ Extract represents the ultimate expression of East Indian Sandalwood (Santalum album). Sourced from sustainable, government-certified plantation timber, this low-temperature supercritical extraction yields an ultra-pure, light golden oil with over 90% combined santalols and an incredibly creamy, sweet, long-lasting woody aroma.",
-      "history": "Distilled from sustainably managed, ethically grown East Indian sandalwood trees in Karnataka and Tamil Nadu, certified under strict state forest department guidelines.",
+      "overview": "Sandalwood CO₂ Extract represents the ultimate expression of Sandalwood (Santalum album). Produced from certified timber, this low-temperature supercritical extraction yields an ultra-pure, light golden oil with over 90% combined santalols and an incredibly creamy, sweet, long-lasting woody aroma.",
+      "history": "Distilled from sustainably managed, ethically grown sandalwood timber under strict forestry department oversight.",
       "manufacturingSteps": [
           {
               "stepNumber": 1,
@@ -12655,7 +12655,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       "category": "CO2_OIL",
       "subCategory": "Supercritical Pod Extract",
       "description": "Pure supercritical CO₂ Bourbon vanilla extract with rich natural vanillin and warm balsamic depth, completely alcohol-free and solventless.",
-      "shortSpec": "Supercritical CO₂ · Pollachi, India · High Natural Vanillin",
+      "shortSpec": "Supercritical CO₂ · High Natural Vanillin",
       "moq": "1 kg",
       "priceDisplay": "Request Quote",
       "popularityScore": 97,
@@ -12665,7 +12665,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       "labelImageUrl": "/labels/vanilla-co2-extract.png",
       "compositeImageUrl": "/products/vanilla-co2-extract.webp",
       "overview": "Unlike alcohol-based vanilla extracts or synthetic vanillin, our Vanilla CO₂ Extract is produced from cured vanilla beans using high-pressure supercritical carbon dioxide. This produces a rich, dark amber oil capturing over 200 trace volatile components alongside natural vanillin, yielding an intensely complex, creamy, sweet-gourmand aromatic profile.",
-      "history": "Grown on hand-pollinated organic vanilla plantations across the shaded microclimates of Pollachi and Coorg in southern India.",
+      "history": "Grown on hand-pollinated organic vanilla plantations and cured to perfection for maximum aromatic richness.",
       "manufacturingSteps": [
           {
               "stepNumber": 1,
@@ -12711,7 +12711,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       "category": "CO2_OIL",
       "subCategory": "Supercritical Bulb Extract",
       "description": "Potent supercritical CO₂ red onion extract rich in active organosulfur compounds and quercetin, widely used in clinical hair fall and follicle strengthening formulations.",
-      "shortSpec": "Supercritical CO₂ · Nashik, India · High Organosulfur & Quercetin",
+      "shortSpec": "Supercritical CO₂ · High Organosulfur & Quercetin",
       "moq": "1 kg",
       "priceDisplay": "Request Quote",
       "popularityScore": 88,
@@ -12720,8 +12720,8 @@ export const INITIAL_PRODUCTS: Product[] = [
       "signatureColor": "#9D174D",
       "labelImageUrl": "/labels/onion-co2-extract.png",
       "compositeImageUrl": "/products/onion-co2-extract.webp",
-      "overview": "Onion CO₂ Extract is extracted from selected Nashik red onions. The supercritical CO₂ method concentrates volatile sulfur compounds (dipropyl disulfide, dipropyl trisulfide) and antioxidant flavonoids (quercetin) at low temperatures without the burnt sulfurous notes caused by steam distillation, creating the premier active for advanced hair care.",
-      "history": "Procured directly from the renowned agricultural belt of Nashik, Maharashtra—the onion capital of India.",
+      "overview": "Onion CO₂ Extract is extracted from selected red onions. The supercritical CO₂ method concentrates volatile sulfur compounds (dipropyl disulfide, dipropyl trisulfide) and antioxidant flavonoids (quercetin) at low temperatures without the burnt sulfurous notes caused by steam distillation, creating the premier active for advanced hair care.",
+      "history": "Manufactured from select alliums under controlled low-temperature extraction parameters.",
       "manufacturingSteps": [
           {
               "stepNumber": 1,
@@ -12767,7 +12767,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       "category": "CO2_OIL",
       "subCategory": "Supercritical Clove Extract",
       "description": "Highly concentrated supercritical CO₂ garlic extract rich in standardized diallyl disulfides and allicin derivatives, with 100x flavor strength and zero carrier oil dilution.",
-      "shortSpec": "Supercritical CO₂ · Neemuch, India · Standardized Diallyl Disulfides",
+      "shortSpec": "Supercritical CO₂ · Standardized Diallyl Disulfides",
       "moq": "1 kg",
       "priceDisplay": "Request Quote",
       "popularityScore": 87,
@@ -12776,8 +12776,8 @@ export const INITIAL_PRODUCTS: Product[] = [
       "signatureColor": "#854D0E",
       "labelImageUrl": "/labels/garlic-co2-extract.png",
       "compositeImageUrl": "/products/garlic-co2-extract.webp",
-      "overview": "Garlic CO₂ Extract is an ultra-concentrated botanical extract manufactured from high-pungency Indian garlic. Supercritical CO₂ preserves the active allicin metabolites, diallyl disulfide (DADS), and diallyl trisulfide (DATS) in a 100% pure, solvent-free state, delivering clean antimicrobial power and standardized flavor intensity.",
-      "history": "Sourced from the prime garlic farming region of Neemuch and Mandsaur in Madhya Pradesh, renowned for dense cloves and high allicin content.",
+      "overview": "Garlic CO₂ Extract is an ultra-concentrated botanical extract manufactured from high-pungency garlic. Supercritical CO₂ preserves the active allicin metabolites, diallyl disulfide (DADS), and diallyl trisulfide (DATS) in a 100% pure, solvent-free state, delivering clean antimicrobial power and standardized flavor intensity.",
+      "history": "Manufactured from selected alliums renowned for dense cloves and high allicin content.",
       "manufacturingSteps": [
           {
               "stepNumber": 1,
@@ -12822,8 +12822,8 @@ export const INITIAL_PRODUCTS: Product[] = [
       "botanicalName": "Jasminum sambac",
       "category": "CO2_OIL",
       "subCategory": "Supercritical Flower Extract",
-      "description": "Ethereal supercritical CO₂ extract of pre-dawn harvested Madurai Jasmine Sambac flowers, capturing radiant floral heart notes without harsh hexane residues.",
-      "shortSpec": "Supercritical CO₂ · Madurai, India · 0.00 ppm Hexane",
+      "description": "Ethereal supercritical CO₂ extract of pre-dawn harvested Jasmine Sambac flowers, capturing radiant floral heart notes without harsh hexane residues.",
+      "shortSpec": "Supercritical CO₂ · 0.00 ppm Hexane",
       "moq": "1 kg",
       "priceDisplay": "Request Quote",
       "popularityScore": 99,
@@ -12833,11 +12833,11 @@ export const INITIAL_PRODUCTS: Product[] = [
       "labelImageUrl": "/labels/jasmine-co2-extract.png",
       "compositeImageUrl": "/products/jasmine-co2-extract.webp",
       "overview": "Jasmine flowers cannot be steam-distilled without scorching their delicate petals. While conventional perfumery relies on hexane-extracted concretes and absolutes, our Jasmine CO₂ Extract utilizes gentle dense CO₂ SFE to yield an exquisite, crystal-pure floral extract that matches the exact aroma of fresh jasmine blossoms blooming at midnight with zero petrochemical residues.",
-      "history": "Hand-harvested in the legendary flower markets of Madurai ('Jasmine City') in Tamil Nadu before sunrise, transported immediately in temperature-controlled crates.",
+      "history": "Hand-harvested before sunrise and transported immediately in temperature-controlled crates to preserve delicate floral notes.",
       "manufacturingSteps": [
           {
               "stepNumber": 1,
-              "title": "Pre-Dawn Hand Harvest",
+              "title": "Fresh Botanical Selection",
               "description": "Unopened jasmine buds are picked before sunrise when volatile indole and ester levels are at their natural peak."
           },
           {
@@ -12879,7 +12879,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       "category": "CO2_OIL",
       "subCategory": "Supercritical Seed Extract",
       "description": "Supreme supercritical CO₂ musk mallow extract with unmatched ambrettolide purity, serving as the premier 100% natural, cruelty-free botanical musk in luxury perfumery.",
-      "shortSpec": "Supercritical CO₂ · Deccan, India · High (E)-Ambrettolide",
+      "shortSpec": "Supercritical CO₂ · High (E)-Ambrettolide",
       "moq": "1 kg",
       "priceDisplay": "Request Quote",
       "popularityScore": 95,
@@ -12889,7 +12889,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       "labelImageUrl": "/labels/ambrette-co2-extract.png",
       "compositeImageUrl": "/products/ambrette-co2-extract.webp",
       "overview": "Ambrette CO₂ Extract is the most prized natural plant musk known to modern perfumery. The supercritical CO₂ extraction of musk mallow seeds isolates high levels of (E)-ambrettolide, farnesyl acetate, and decyl acetate while eliminating heavy fatty acids, delivering an ethereal, silky, skin-like botanical musk of extraordinary tenacity.",
-      "history": "Grown on traditional organic farms across the Deccan Plateau of central India. Extracted under clean-room conditions certified for ethical, cruelty-free perfumery.",
+      "history": "Grown on traditional organic farms and extracted under clean-room conditions to yield an uncompromisingly pure plant musk.",
       "manufacturingSteps": [
           {
               "stepNumber": 1,
@@ -12935,7 +12935,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       "category": "CO2_OIL",
       "subCategory": "Supercritical Flower Extract",
       "description": "Sacred golden Champaca flower CO₂ extract radiating exotic apricot-tea floral sweetness, free from solvent residues for bespoke niche perfumery.",
-      "shortSpec": "Supercritical CO₂ · Nilgiris, India · True-to-Flower Floral",
+      "shortSpec": "Supercritical CO₂ · True-to-Flower Floral",
       "moq": "1 kg",
       "priceDisplay": "Request Quote",
       "popularityScore": 96,
@@ -12945,7 +12945,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       "labelImageUrl": "/labels/champaca-co2-extract.png",
       "compositeImageUrl": "/products/champaca-co2-extract.webp",
       "overview": "Known as the 'Flower of the Gods', golden Champaca blossoms possess an opulent, velvety aroma blending notes of ripe apricot, green tea, sweet spices, and deep floral nectar. Our Champaca CO₂ Extract preserves these ephemeral top notes through gentle subcritical/supercritical CO₂ extraction without thermal destruction.",
-      "history": "Harvested from heritage magnolia trees in the foothills of the Nilgiris and Western Ghats, where the flowers have been woven into temple offerings for thousands of years.",
+      "history": "Harvested from heritage magnolia trees where the flowers have been prized for their sacred, opulent fragrance for centuries.",
       "manufacturingSteps": [
           {
               "stepNumber": 1,
@@ -12991,7 +12991,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Angelica Archangelica",
     "category": "FLORAL_WATER",
     "description": "100% pure steam-distilled Angelica Floral Water (Angelica Archangelica). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
-    "shortSpec": "Direct Steam Distillate · 100% Pure Hydrosol · Food / Cosmetic Grade",
+    "shortSpec": "Direct Steam Distillate · Food / Cosmetic Grade",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 60,
@@ -13045,7 +13045,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Pimpinella anisum",
     "category": "FLORAL_WATER",
     "description": "100% pure steam-distilled Aniseed Floral Water (Pimpinella anisum). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
-    "shortSpec": "Steam Distilled Seed Hydrosol · Alcohol-Free · Natural Aromatic Mist",
+    "shortSpec": "Steam Distilled Seed Hydrosol · Natural Aromatic Mist",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 61,
@@ -13099,7 +13099,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Elettaria cardamomum",
     "category": "FLORAL_WATER",
     "description": "100% pure steam-distilled Cardamom Floral Water (Elettaria cardamomum). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
-    "shortSpec": "Indian Cardamom Pod Distillate · Cosmetic Tonic Base · Hexane-Free",
+    "shortSpec": "Cardamom Pod Distillate · Hexane-Free",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 62,
@@ -13153,7 +13153,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Cedrus deodara",
     "category": "FLORAL_WATER",
     "description": "100% pure steam-distilled Cedarwood Floral Water (Cedrus deodara). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
-    "shortSpec": "Himalayan Deodar Distillate · Natural Astringent · Scalp Care Tonic",
+    "shortSpec": "Deodar Cedarwood Distillate · Scalp Care Tonic",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 63,
@@ -13207,7 +13207,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Matricaria chamomilla",
     "category": "FLORAL_WATER",
     "description": "100% pure steam-distilled Chamomile Blue Floral Water (Matricaria chamomilla). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
-    "shortSpec": "German Blue Chamomile Distillate · Anti-Inflammatory Soothing Mist",
+    "shortSpec": "Blue Chamomile Distillate · Anti-Inflammatory Soothing Mist",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 64,
@@ -13261,7 +13261,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Cinnamomum zeylanicum",
     "category": "FLORAL_WATER",
     "description": "100% pure steam-distilled Cinnamon Floral Water (Cinnamomum zeylanicum). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
-    "shortSpec": "True Ceylon Cinnamon Distillate · Invigorating Botanical Water",
+    "shortSpec": "Pure Cinnamon Bark Distillate · Invigorating Botanical Water",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 65,
@@ -13315,7 +13315,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Salvia sclarea",
     "category": "FLORAL_WATER",
     "description": "100% pure steam-distilled Clary Sage Floral Water (Salvia sclarea). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
-    "shortSpec": "Steam Distilled Tops · Balancing Facial Hydrosol · Pore Clarifying",
+    "shortSpec": "Steam Distilled Tops · Pore Clarifying",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 66,
@@ -13369,7 +13369,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Eugenia caryophyllus",
     "category": "FLORAL_WATER",
     "description": "100% pure steam-distilled Clove Floral Water (Eugenia caryophyllus). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
-    "shortSpec": "Madagascar Clove Bud Distillate · Purifying Oral & Cosmetic Mist",
+    "shortSpec": "Pure Clove Bud Distillate · Purifying Oral & Cosmetic Mist",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 67,
@@ -13423,7 +13423,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Cupressus sempervirens",
     "category": "FLORAL_WATER",
     "description": "100% pure steam-distilled Cypress Floral Water (Cupressus sempervirens). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
-    "shortSpec": "Mediterranean Cypress Twig Distillate · Venous & Lymphatic Tonic",
+    "shortSpec": "Pure Cypress Twig Distillate · Venous & Lymphatic Tonic",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 68,
@@ -13477,7 +13477,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Eucalyptus globulus",
     "category": "FLORAL_WATER",
     "description": "100% pure steam-distilled Eucalyptus Floral Water (Eucalyptus globulus). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
-    "shortSpec": "Nilgiri Eucalyptus Distillate · Respiratory & Cleansing Hydrosol",
+    "shortSpec": "Pure Eucalyptus Distillate · Respiratory & Cleansing Hydrosol",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 69,
@@ -13855,7 +13855,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Jasminum sambac",
     "category": "FLORAL_WATER",
     "description": "100% pure steam-distilled Jasminum Sambac Floral Water (Jasminum sambac). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
-    "shortSpec": "Indian Mogra Blossom Water · Facial Mist & Natural Attar Carrier",
+    "shortSpec": "Mogra Blossom Water · Facial Mist & Natural Attar Carrier",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 76,
@@ -13963,7 +13963,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Chrysopogon zizanioides",
     "category": "FLORAL_WATER",
     "description": "100% pure steam-distilled Khus (Vetiver) Floral Water (Chrysopogon zizanioides). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
-    "shortSpec": "Wild Indian Vetiver Root Distillate · Classical Ayurvedic Pitta Shaman",
+    "shortSpec": "Wild Vetiver Root Distillate · Classical Ayurvedic Pitta Shaman",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 78,
@@ -14017,7 +14017,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Lavandula angustifolia",
     "category": "FLORAL_WATER",
     "description": "100% pure steam-distilled Lavender Floral Water (Lavandula angustifolia). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
-    "shortSpec": "Kashmir Lavender Blossom Distillate · Gentle Universal Skin Tonic",
+    "shortSpec": "Lavender Blossom Distillate · Gentle Universal Skin Tonic",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 79,
@@ -14125,7 +14125,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Cymbopogon flexuosus",
     "category": "FLORAL_WATER",
     "description": "100% pure steam-distilled Lemongrass Floral Water (Cymbopogon flexuosus). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
-    "shortSpec": "Indian Lemongrass Distillate · Uplifting Room & Toner Base",
+    "shortSpec": "Lemongrass Distillate · Uplifting Room & Toner Base",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 81,
@@ -14449,7 +14449,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Mentha piperita",
     "category": "FLORAL_WATER",
     "description": "100% pure steam-distilled Peppermint Floral Water (Mentha piperita). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
-    "shortSpec": "Indian Peppermint Distillate · Instant Refreshment & Scalp Revitalizer",
+    "shortSpec": "Peppermint Distillate · Instant Refreshment & Scalp Revitalizer",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 62,
@@ -14503,7 +14503,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Rosa damascena",
     "category": "FLORAL_WATER",
     "description": "100% pure steam-distilled Rose Floral Water (Rosa damascena). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
-    "shortSpec": "Traditional Kannauj Deg-Bhapka Distillate · 100% Pure Gulab Jal",
+    "shortSpec": "Traditional Deg-Bhapka Distillate · 100% Pure Gulab Jal",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 63,
@@ -14611,7 +14611,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Crocus sativus",
     "category": "FLORAL_WATER",
     "description": "100% pure steam-distilled Saffron Floral Water (Crocus sativus). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
-    "shortSpec": "Kashmir Kesar Blossom Distillate · Luxury Complexion Glow Water",
+    "shortSpec": "Kesar Blossom Distillate · Luxury Complexion Glow Water",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 65,
@@ -14719,7 +14719,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "botanicalName": "Nardostachys jatamansi",
     "category": "FLORAL_WATER",
     "description": "100% pure steam-distilled Spikenard Floral Water (Nardostachys jatamansi). Produced during the gentle primary distillation of fresh aromatic botanicals, delivering micro-dispersed water-soluble plant actives.",
-    "shortSpec": "Himalayan Jatamansi Root Distillate · Ayurvedic Grounding Water",
+    "shortSpec": "Jatamansi Root Distillate · Ayurvedic Grounding Water",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
     "popularityScore": 67,
@@ -14880,6 +14880,15 @@ export const INITIAL_PRODUCTS: Product[] = [
 // CLIENT-SAFE PRODUCT STORE
 // ============================
 
+export function cleanShortSpec(spec: string): string {
+  if (!spec) return "";
+  const parts = spec.split("·").map(s => s.trim());
+  if (parts.length >= 3) {
+    return `${parts[0]} · ${parts.slice(2).join(" · ")}`;
+  }
+  return spec;
+}
+
 // Maps a raw Prisma DB row to our Product interface
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function mapDbProduct(row: any): Product {
@@ -14891,7 +14900,7 @@ export function mapDbProduct(row: any): Product {
     category: row.category as Product["category"],
     subCategory: row.subCategory ?? undefined,
     description: row.description,
-    shortSpec: row.shortSpec ?? "",
+    shortSpec: cleanShortSpec(row.shortSpec ?? ""),
     overview: row.overview ?? undefined,
     history: row.history ?? undefined,
     benefits: Array.isArray(row.benefits) ? (row.benefits as ProductBenefit[]) : undefined,
@@ -14914,12 +14923,12 @@ export class ProductStore {
   private events: ProductEvent[];
 
   constructor(initialProducts: Product[]) {
-    this.products = initialProducts.map(p => ({ ...p }));
+    this.products = initialProducts.map(p => ({ ...p, shortSpec: cleanShortSpec(p.shortSpec) }));
     this.events = [];
   }
 
   setProducts(newProducts: Product[]): void {
-    this.products = newProducts.map(p => ({ ...p }));
+    this.products = newProducts.map(p => ({ ...p, shortSpec: cleanShortSpec(p.shortSpec) }));
   }
 
   getAll(): Product[] { return this.products; }

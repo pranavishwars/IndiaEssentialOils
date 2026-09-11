@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import { Footer } from "@/components/server/Footer";
 import { 
-  Building2, 
   ArrowRight,
   ChevronRight
 } from "lucide-react";
@@ -28,26 +27,6 @@ export default function ProfilePage() {
 
         {/* Hero Header */}
         <div style={{ textAlign: "center", marginBottom: "36px" }}>
-          <div
-            className="liquid-glass-pill"
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "6px",
-              padding: "6px 18px",
-              fontSize: "0.8rem",
-              fontWeight: 800,
-              color: "#7C3AED",
-              marginBottom: "16px",
-              backgroundColor: "rgba(124, 58, 237, 0.1)",
-              border: "1px solid rgba(124, 58, 237, 0.25)",
-              textTransform: "uppercase",
-              letterSpacing: "0.08em",
-            }}
-          >
-            <Building2 size={14} color="#7C3AED" /> Corporate Profile
-          </div>
-
           <h1
             style={{
               fontSize: "clamp(2.4rem, 4vw, 3.4rem)",
@@ -138,10 +117,7 @@ export default function ProfilePage() {
           }}
         >
           <div>
-            <span style={{ fontSize: "0.8rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase" }}>
-              Explore Next
-            </span>
-            <h3 style={{ fontSize: "1.3rem", fontWeight: 700, color: "#180D26", margin: "4px 0 0 0" }}>
+            <h3 style={{ fontSize: "1.3rem", fontWeight: 700, color: "#180D26", margin: 0 }}>
               The Trust We&apos;ve Built
             </h3>
           </div>

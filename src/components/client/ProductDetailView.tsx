@@ -5,18 +5,14 @@ import Link from "next/link";
 import { Product, INITIAL_PRODUCTS, getCategorySlug } from "@/lib/products-store";
 import { ProductImageGallery } from "@/components/client/ProductImageGallery";
 import { ProductPurchasePanel } from "@/components/client/ProductPurchasePanel";
-import { ProductStickyTabBar } from "@/components/client/ProductStickyTabBar";
+
 import { ProductQuoteModal } from "@/components/client/ProductQuoteModal";
 import { ProductMobileStickyBar } from "@/components/client/ProductMobileStickyBar";
 import {
-  ShieldCheck,
-  FlaskConical,
-  CheckCircle2,
   ArrowRight,
   ArrowLeft,
-  AlertCircle
 } from "lucide-react";
-import { CERTIFICATIONS } from "@/lib/data";
+
 
 interface ProductDetailViewProps {
   product: Product;
@@ -115,8 +111,6 @@ export function ProductDetailView({ product }: ProductDetailViewProps) {
           </div>
         </div>
 
-        {/* Sticky Section Tab Bar */}
-        <ProductStickyTabBar />
 
         {/* ZONE 2: Deep Content Sections */}
         <div style={{ display: "flex", flexDirection: "column", gap: "56px", maxWidth: "980px" }}>
@@ -124,7 +118,7 @@ export function ProductDetailView({ product }: ProductDetailViewProps) {
           {/* 5.1 Overview Section */}
           <section id="overview" style={{ scrollMarginTop: "140px" }}>
             <h2 style={{ fontSize: "1.6rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginBottom: "14px" }}>
-              Product Overview & Botanical Profile
+              Product Overview &amp; Botanical Profile
             </h2>
             <div style={{ backgroundColor: "white", borderRadius: "24px", padding: "32px", border: "1px solid rgba(124, 58, 237, 0.18)", boxShadow: "0 8px 30px rgba(24, 13, 38, 0.04)" }}>
               <p style={{ fontSize: "1.05rem", color: "#180D26", lineHeight: 1.8, marginBottom: "20px" }}>
@@ -147,236 +141,17 @@ export function ProductDetailView({ product }: ProductDetailViewProps) {
                 </div>
 
                 <div>
-                  <div style={{ fontSize: "0.75rem", color: "#7C3AED", fontWeight: 800, textTransform: "uppercase" }}>Sourcing Origin</div>
+                  <div style={{ fontSize: "0.75rem", color: "#7C3AED", fontWeight: 800, textTransform: "uppercase" }}>Quality Profile</div>
                   <div style={{ fontSize: "0.98rem", fontWeight: 700, color: "#180D26", marginTop: "2px" }}>
-                    {product.shortSpec?.split("·")[1]?.trim() || "India"}
+                    {(() => {
+                      const parts = product.shortSpec?.split("·").map(s => s.trim()) || [];
+                      return parts.length >= 2 ? parts[parts.length - 1] : "100% Pure & Natural";
+                    })()}
                   </div>
                 </div>
               </div>
             </div>
           </section>
-
-          {/* 5.2 History & Origin Section */}
-          <section id="history" style={{ scrollMarginTop: "140px" }}>
-            <h2 style={{ fontSize: "1.6rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginBottom: "14px" }}>
-              Origin, Terroir & Cultural Heritage
-            </h2>
-            <div style={{ backgroundColor: "white", borderRadius: "24px", padding: "32px", border: "1px solid rgba(124, 58, 237, 0.18)", boxShadow: "0 8px 30px rgba(24, 13, 38, 0.04)" }}>
-              <p style={{ fontSize: "1.05rem", color: "#3E2E50", lineHeight: 1.8 }}>
-                {product.history || "Cultivated and distilled under generational agricultural traditions across India's most celebrated botanical belts. Mother Herbs Pvt. Ltd. oversees strict soil monitoring, harvest timing, and fair-trade partnerships to ensure batch-to-batch chemical continuity."}
-              </p>
-            </div>
-          </section>
-
-          {/* 5.3 Benefits & Formulator Guide */}
-          <section id="benefits" style={{ scrollMarginTop: "140px" }}>
-            <h2 style={{ fontSize: "1.6rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginBottom: "14px" }}>
-              Therapeutic Benefits & Commercial Applications
-            </h2>
-
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "20px", marginBottom: "20px" }}>
-              {(product.benefits || [
-                { title: "Cosmetic & Skincare Formulations", description: "Formulates cleanly into facial serums, moisturizers, cleansing oils, and anti-aging lotions." },
-                { title: "Aromatherapy & Olfactory Depth", description: "Natural volatile profile supports sensory calmness, cognitive focus, and balanced fragrance." },
-                { title: "Industrial & Personal Care", description: "Pure active botanical compounds enhance stability and natural plant aroma in commercial bases." },
-              ]).map((b, idx) => (
-                <div
-                  key={idx}
-                  style={{
-                    backgroundColor: "white",
-                    borderRadius: "20px",
-                    padding: "24px",
-                    border: "1px solid rgba(124, 58, 237, 0.18)",
-                    boxShadow: "0 6px 20px rgba(24, 13, 38, 0.03)",
-                  }}
-                >
-                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "8px" }}>
-                    <CheckCircle2 size={18} color="#059669" />
-                    <h3 style={{ fontSize: "1.05rem", fontWeight: 700, color: "#180D26", margin: 0 }}>
-                      {b.title}
-                    </h3>
-                  </div>
-                  <p style={{ fontSize: "0.9rem", color: "#5B486E", lineHeight: 1.6, margin: 0 }}>
-                    {b.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            {/* Disclaimer */}
-            <div style={{ display: "flex", alignItems: "flex-start", gap: "10px", backgroundColor: "rgba(124, 58, 237, 0.08)", border: "1px solid rgba(124, 58, 237, 0.18)", padding: "14px 18px", borderRadius: "14px", fontSize: "0.82rem", color: "#5B486E", lineHeight: 1.5 }}>
-              <AlertCircle size={16} color="#7C3AED" style={{ flexShrink: 0, marginTop: "2px" }} />
-              <div>
-                <strong style={{ color: "#180D26" }}>Formulator Disclaimer:</strong> Statements regarding botanical benefits are based on traditional pharmacopoeias and biochemical literature. These ingredients are supplied for cosmetic, aromatic, and industrial manufacturing and are not intended to diagnose, treat, cure, or prevent any medical condition.
-              </div>
-            </div>
-          </section>
-
-          {/* 5.4 How It's Made Section */}
-          <section id="manufacturing" style={{ scrollMarginTop: "140px" }}>
-            <h2 style={{ fontSize: "1.6rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginBottom: "14px" }}>
-              Manufacturing & Quality Control Sequence
-            </h2>
-
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(210px, 1fr))", gap: "16px" }}>
-              {(product.manufacturingSteps || [
-                { stepNumber: 1, title: "Raw Material Sourcing", description: "Harvested at peak seasonal maturity from verified contract farms." },
-                { stepNumber: 2, title: "Steam Distillation", description: "Steam extracted in 316-grade stainless steel distillation stills." },
-                { stepNumber: 3, title: "Clarification & Filtration", description: "Gravity decanted and filtered to remove condensation moisture." },
-                { stepNumber: 4, title: "GC-MS Laboratory Analysis", description: "Batch tested to verify physical constants and chemical purity." },
-              ]).map(step => (
-                <div
-                  key={step.stepNumber}
-                  style={{
-                    backgroundColor: "white",
-                    borderRadius: "20px",
-                    padding: "24px",
-                    border: "1px solid rgba(124, 58, 237, 0.18)",
-                    boxShadow: "0 6px 20px rgba(24, 13, 38, 0.03)",
-                    position: "relative",
-                  }}
-                >
-                  <div
-                    style={{
-                      width: "36px",
-                      height: "36px",
-                      borderRadius: "50%",
-                      background: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)",
-                      color: "white",
-                      fontWeight: 800,
-                      fontSize: "0.875rem",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      marginBottom: "14px",
-                      boxShadow: "0 2px 8px rgba(124, 58, 237, 0.3)",
-                    }}
-                  >
-                    {step.stepNumber}
-                  </div>
-                  <h3 style={{ fontSize: "1rem", fontWeight: 700, color: "#180D26", marginBottom: "6px" }}>
-                    {step.title}
-                  </h3>
-                  <p style={{ fontSize: "0.85rem", color: "#5B486E", lineHeight: 1.5, margin: 0 }}>
-                    {step.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          {/* 5.5 Certifications & Lab Reports */}
-          <section id="certifications" style={{ scrollMarginTop: "140px" }}>
-            <h2 style={{ fontSize: "1.6rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginBottom: "14px" }}>
-              International Certifications & Lab Verification
-            </h2>
-
-            {/* Certifications Cards Grid */}
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "18px", marginBottom: "24px" }}>
-              {CERTIFICATIONS.map((cert) => (
-                <div
-                  key={cert.id}
-                  style={{
-                    backgroundColor: "white",
-                    borderRadius: "20px",
-                    padding: "22px",
-                    border: "1px solid rgba(124, 58, 237, 0.18)",
-                    boxShadow: "0 6px 20px rgba(24, 13, 38, 0.03)",
-                  }}
-                >
-                  <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "8px" }}>
-                    <ShieldCheck size={22} color="#059669" />
-                    <div>
-                      <div style={{ fontWeight: 700, color: "#180D26", fontSize: "0.98rem" }}>{cert.name}</div>
-                      <div style={{ fontSize: "0.75rem", color: "#5B486E" }}>Registrar: {cert.issuer}</div>
-                    </div>
-                  </div>
-                  <div style={{ fontSize: "0.75rem", color: "#059669", backgroundColor: "rgba(16, 185, 129, 0.1)", border: "1px solid rgba(16, 185, 129, 0.2)", padding: "4px 10px", borderRadius: "6px", width: "fit-content", marginTop: "8px", fontWeight: 700 }}>
-                    Cert No: {cert.licenseNo}
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Subtle Link to Official Certificate Scans */}
-            <div style={{ textAlign: "right", marginTop: "-12px", marginBottom: "20px" }}>
-              <Link
-                href="/certifications"
-                style={{
-                  fontSize: "0.84rem",
-                  color: "#7C3AED",
-                  fontWeight: 600,
-                  textDecoration: "none",
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "4px",
-                }}
-              >
-                Inspect Official Accredited Document Scans <ArrowRight size={14} />
-              </Link>
-            </div>
-
-            {/* Batch Report Callout Card */}
-            <div
-              style={{
-                backgroundColor: "rgba(255, 255, 255, 0.74)",
-                backdropFilter: "blur(24px) saturate(160%)",
-                WebkitBackdropFilter: "blur(24px) saturate(160%)",
-                borderRadius: "24px",
-                padding: "28px",
-                border: "1px solid rgba(124, 58, 237, 0.25)",
-                boxShadow: "0 12px 36px rgba(24, 13, 38, 0.06)",
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-                flexWrap: "wrap",
-                gap: "18px",
-              }}
-            >
-              <div>
-                <div style={{ display: "flex", alignItems: "center", gap: "6px", fontSize: "0.8rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase" }}>
-                  <FlaskConical size={16} /> GC-MS Purity Standards
-                </div>
-                <h3 style={{ fontSize: "var(--font-size-h3)", fontWeight: 700, color: "#180D26", marginTop: "4px", marginBottom: "4px" }}>
-                  In-House Analytical Laboratory Testing
-                </h3>
-                <p style={{ fontSize: "0.9rem", color: "#5B486E", margin: 0 }}>
-                  Explore our Shimadzu GC-MS assays, optical rotation verifications, and strict purity protocols.
-                </p>
-              </div>
-
-              <Link
-                href="/quality"
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "6px",
-                  background: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)",
-                  color: "white",
-                  padding: "13px 26px",
-                  borderRadius: "9999px",
-                  textDecoration: "none",
-                  fontWeight: 700,
-                  fontSize: "0.9rem",
-                  whiteSpace: "nowrap",
-                  boxShadow: "0 4px 16px rgba(124, 58, 237, 0.4)",
-                  transition: "transform 0.2s ease, box-shadow 0.2s ease",
-                }}
-                onMouseEnter={e => {
-                  e.currentTarget.style.transform = "translateY(-1.5px)";
-                  e.currentTarget.style.boxShadow = "0 6px 22px rgba(124, 58, 237, 0.6)";
-                }}
-                onMouseLeave={e => {
-                  e.currentTarget.style.transform = "translateY(0)";
-                  e.currentTarget.style.boxShadow = "0 4px 16px rgba(124, 58, 237, 0.4)";
-                }}
-              >
-                Explore Quality Standards <ArrowRight size={15} />
-              </Link>
-            </div>
-          </section>
-
-
 
         </div>
 
@@ -388,7 +163,7 @@ export function ProductDetailView({ product }: ProductDetailViewProps) {
                 Complementary Botanical Extracts
               </span>
               <h2 style={{ fontSize: "1.6rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginTop: "2px" }}>
-                Frequently Sourced Together
+                Frequently Ordered Together
               </h2>
             </div>
             <Link

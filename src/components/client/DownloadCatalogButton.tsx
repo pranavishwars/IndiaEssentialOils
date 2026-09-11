@@ -68,7 +68,7 @@ export function DownloadCatalogButton({ variant = "primary", label }: DownloadCa
         {downloading ? (
           <Loader2 size={15} className="animate-spin" />
         ) : downloaded ? (
-          <CheckCircle2 size={15} color="#059669" />
+          <CheckCircle2 size={15} color="#7C3AED" />
         ) : (
           <Download size={15} />
         )}
@@ -112,22 +112,10 @@ export function DownloadCatalogButton({ variant = "primary", label }: DownloadCa
             <FileText size={26} />
           </div>
           <div>
-            <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "4px" }}>
+            <div style={{ marginBottom: "4px" }}>
               <h3 style={{ fontSize: "1.15rem", fontWeight: 700, color: "#180D26", margin: 0 }}>
                 Official Botanical Wholesale Catalog &amp; Technical Dossier
               </h3>
-              <span
-                style={{
-                  fontSize: "0.7rem",
-                  fontWeight: 800,
-                  padding: "3px 8px",
-                  borderRadius: "9999px",
-                  backgroundColor: "#7C3AED",
-                  color: "#FFFFFF",
-                }}
-              >
-                2026 EDITION
-              </span>
             </div>
             <p style={{ fontSize: "0.88rem", color: "#5B486E", margin: 0 }}>
               Complete index of 273+ steam-distilled oils, floral waters, supercritical CO₂ extracts, carrier oils, CAS numbers, and packaging specifications.
@@ -189,7 +177,7 @@ export function DownloadCatalogButton({ variant = "primary", label }: DownloadCa
       {downloading ? (
         <Loader2 size={18} className="animate-spin" />
       ) : downloaded ? (
-        <CheckCircle2 size={18} color={variant === "secondary" ? "#059669" : "#FFFFFF"} />
+        <CheckCircle2 size={18} color={variant === "secondary" ? "#7C3AED" : "#FFFFFF"} />
       ) : (
         <Download size={18} />
       )}

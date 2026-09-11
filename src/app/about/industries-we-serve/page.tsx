@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { Footer } from "@/components/server/Footer";
 import { 
-  Building2, 
   Sparkle, 
   Apple, 
   HeartPulse, 
@@ -26,9 +25,9 @@ export default function IndustriesWeServePage() {
       subtitle: "Clean Beauty, Skincare & Luxury Formulations",
       desc: "We supply cold-pressed virgin carrier oils, floral hydrosols, and therapeutic essential oils with low peroxide values and high fatty acid profiles. Perfect for anti-aging serums, body butters, haircare oils, and clean label beauty ranges.",
       image: "/images/industries/cosmetics_personal_care.jpg",
-      icon: <Sparkle size={24} color="#EC4899" />,
-      color: "#EC4899",
-      bg: "rgba(236, 72, 153, 0.1)",
+      icon: <Sparkle size={24} color="#7C3AED" />,
+      color: "#7C3AED",
+      bg: "rgba(124, 58, 237, 0.08)",
       examples: "Rosehip, Virgin Jojoba, Moroccan Argan, Lavender, Tea Tree, Pure Rose Water",
       cert: "COSMOS / Ecocert Compatible",
     },
@@ -37,9 +36,9 @@ export default function IndustriesWeServePage() {
       subtitle: "Standardized Spice Distillates & Oleoresins",
       desc: "Delivering concentrated, standardized aromatic flavor profiles with stable color values and volatile oil percentages. Essential for seasoning manufacturers, confectioneries, bakery, beverage blenders, and processed savory foods.",
       image: "/images/industries/food_beverage_flavor.jpg",
-      icon: <Apple size={24} color="#D97706" />,
-      color: "#D97706",
-      bg: "rgba(217, 119, 6, 0.1)",
+      icon: <Apple size={24} color="#7C3AED" />,
+      color: "#7C3AED",
+      bg: "rgba(124, 58, 237, 0.08)",
       examples: "Cardamom, Black Pepper, Ginger, Clove Bud, Ceylon Cinnamon, Nutmeg Oleoresins",
       cert: "ISO 9001:2015 & GMP Certified",
     },
@@ -48,9 +47,9 @@ export default function IndustriesWeServePage() {
       subtitle: "Therapeutic-Grade Extracts & Pharmacopoeial Botanicals",
       desc: "High-purity botanical distillates and therapeutic-grade CO₂ extracts complying with IP, BP, USP, and Ph. Eur. standards. Accompanied by full regulatory support, allergen declarations, and non-GMO statements.",
       image: "/images/industries/pharmaceutical_healthcare.jpg",
-      icon: <HeartPulse size={24} color="#DC2626" />,
-      color: "#DC2626",
-      bg: "rgba(220, 38, 38, 0.1)",
+      icon: <HeartPulse size={24} color="#7C3AED" />,
+      color: "#7C3AED",
+      bg: "rgba(124, 58, 237, 0.08)",
       examples: "Curcumin/Turmeric Extract, Eucalyptus Globulus, Mentha Arvensis, Frankincense CO2, Wintergreen",
       cert: "WHO-GMP Manufacturing Standards",
     },
@@ -59,9 +58,9 @@ export default function IndustriesWeServePage() {
       subtitle: "Solvent Floral Absolutes & Exotic Attars",
       desc: "Exquisite aromatic extracts and solvent-extracted floral absolutes crafted specifically for artisanal perfumers, luxury scent houses, and fine fragrance creators seeking depth, longevity, and authentic olfactory richness.",
       image: "/images/industries/perfumery_fine_fragrance.jpg",
-      icon: <Flower size={24} color="#8B5CF6" />,
-      color: "#8B5CF6",
-      bg: "rgba(139, 92, 246, 0.1)",
+      icon: <Flower size={24} color="#7C3AED" />,
+      color: "#7C3AED",
+      bg: "rgba(124, 58, 237, 0.08)",
       examples: "Jasmine Sambac Absolute, Rose Damascena, Lotus Absolute, White Champaca, Aged Oudh / Agarwood",
       cert: "IFRA 51st Amendment Compliant",
     },
@@ -70,9 +69,9 @@ export default function IndustriesWeServePage() {
       subtitle: "100% Pure, Unadulterated Distillates",
       desc: "Therapeutic essential oils verified by GC-MS batch analysis for certified aromatherapists, wellness spas, and diffusions. Zero synthetic fragrances, isolates, or petrochemical carriers.",
       image: "/images/industries/aromatherapy_wellness.jpg",
-      icon: <Leaf size={24} color="#059669" />,
-      color: "#059669",
-      bg: "rgba(5, 150, 105, 0.1)",
+      icon: <Leaf size={24} color="#7C3AED" />,
+      color: "#7C3AED",
+      bg: "rgba(124, 58, 237, 0.08)",
       examples: "German Chamomile, Clary Sage, Bergamot (FCF), Himalayan Cedarwood, Rosemary, Vetiver",
       cert: "Dual GC-MS Verified Batch CoA",
     },
@@ -93,26 +92,6 @@ export default function IndustriesWeServePage() {
 
         {/* Hero Header */}
         <div style={{ textAlign: "center", marginBottom: "48px" }}>
-          <div
-            className="liquid-glass-pill"
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "6px",
-              padding: "6px 18px",
-              fontSize: "0.8rem",
-              fontWeight: 800,
-              color: "#7C3AED",
-              marginBottom: "16px",
-              backgroundColor: "rgba(124, 58, 237, 0.1)",
-              border: "1px solid rgba(124, 58, 237, 0.25)",
-              textTransform: "uppercase",
-              letterSpacing: "0.08em",
-            }}
-          >
-            <Building2 size={14} color="#7C3AED" /> B2B Sector Formulations
-          </div>
-
           <h1
             style={{
               fontSize: "clamp(2.4rem, 4vw, 3.4rem)",
@@ -179,7 +158,7 @@ export default function IndustriesWeServePage() {
                       borderRadius: "9999px",
                       backgroundColor: "rgba(24, 13, 38, 0.85)",
                       backdropFilter: "blur(12px)",
-                      color: "#A7F3D0",
+                      color: "#FFFFFF",
                       fontSize: "0.72rem",
                       fontWeight: 700,
                       display: "flex",
@@ -187,7 +166,7 @@ export default function IndustriesWeServePage() {
                       gap: "4px",
                     }}
                   >
-                    <ShieldCheck size={12} color="#10B981" />
+                    <ShieldCheck size={12} color="#7C3AED" />
                     <span>{ind.cert}</span>
                   </div>
                 </div>
@@ -250,17 +229,14 @@ export default function IndustriesWeServePage() {
           }}
         >
           <div>
-            <span style={{ fontSize: "0.8rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase" }}>
-              Explore Next
-            </span>
-            <h3 style={{ fontSize: "1.3rem", fontWeight: 700, color: "#180D26", margin: "4px 0 0 0" }}>
-              The Countries We Serve &bull; Global Map
+            <h3 style={{ fontSize: "1.3rem", fontWeight: 700, color: "#180D26", margin: 0 }}>
+              Why Us &bull; Countries &amp; How to Order
             </h3>
           </div>
 
           <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
             <Link
-              href="/about/countries-we-serve"
+              href="/about/why-us"
               className="btn-vibrant-primary"
               style={{
                 padding: "12px 24px",
