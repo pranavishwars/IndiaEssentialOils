@@ -240,6 +240,7 @@ export function ProductImageGallery({ product }: ProductImageGalleryProps) {
           touchAction: isZoomed ? "none" : "pan-y",
           boxShadow: "0 10px 36px rgba(24, 13, 38, 0.06)",
           userSelect: "none",
+          containerType: "inline-size" as const,
         }}
       >
         {/* Main Image with Smooth Touch & Mouse Zoom */}
@@ -289,10 +290,13 @@ export function ProductImageGallery({ product }: ProductImageGalleryProps) {
         >
           <button
             type="button"
+            className="gallery-mode-btn"
             onClick={(e) => {
               e.stopPropagation();
               handleTabSwitch("BOTTLE");
             }}
+            title="3D Bottle View"
+            aria-label="3D Bottle View"
             style={{
               display: "inline-flex",
               alignItems: "center",
@@ -308,15 +312,19 @@ export function ProductImageGallery({ product }: ProductImageGalleryProps) {
               color: activeTab === "BOTTLE" ? "#FFFFFF" : "#5B486E",
             }}
           >
-            <Box size={14} /> 3D Bottle
+            <Box size={14} />
+            <span className="gallery-mode-text">3D Bottle</span>
           </button>
 
           <button
             type="button"
+            className="gallery-mode-btn"
             onClick={(e) => {
               e.stopPropagation();
               handleTabSwitch("LABEL");
             }}
+            title="Flat Label View"
+            aria-label="Flat Label View"
             style={{
               display: "inline-flex",
               alignItems: "center",
@@ -332,7 +340,8 @@ export function ProductImageGallery({ product }: ProductImageGalleryProps) {
               color: activeTab === "LABEL" ? "#FFFFFF" : "#5B486E",
             }}
           >
-            <Eye size={14} /> Flat Label
+            <Eye size={14} />
+            <span className="gallery-mode-text">Flat Label</span>
           </button>
         </div>
 
@@ -447,11 +456,35 @@ export function ProductImageGallery({ product }: ProductImageGalleryProps) {
               }}
             >
               <RotateCcw size={12} />
-              Reset
+              <span className="gallery-reset-text">Reset</span>
             </button>
           )}
         </div>
       </div>
+
+      <style>{`
+        @container (max-width: 520px) {
+          .gallery-mode-text {
+            display: none !important;
+          }
+          .gallery-mode-btn {
+            padding: 6px 10px !important;
+          }
+        }
+        @media (max-width: 540px) {
+          .gallery-mode-text {
+            display: none !important;
+          }
+          .gallery-mode-btn {
+            padding: 6px 10px !important;
+          }
+        }
+        @media (max-width: 380px) {
+          .gallery-reset-text {
+            display: none !important;
+          }
+        }
+      `}</style>
 
 
     </div>

@@ -5,14 +5,16 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { SearchBar } from "./SearchBar";
 import { LanguageSelector } from "./LanguageSelector";
-import { CatalogHoverDropdown } from "./CatalogHoverDropdown";
+import { CatalogHoverDropdown, CATALOG_CATEGORIES_MENU } from "./CatalogHoverDropdown";
 import { AboutHoverDropdown, ABOUT_SUBMENU } from "./AboutHoverDropdown";
 import { PackagingHoverDropdown, PACKAGING_SUBMENU } from "./PackagingHoverDropdown";
 import { COMPANY_INFO } from "@/lib/data";
+import { Layers } from "lucide-react";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [mobileCatalogOpen, setMobileCatalogOpen] = useState(false);
   const [mobileAboutOpen, setMobileAboutOpen] = useState(false);
   const [mobilePackagingOpen, setMobilePackagingOpen] = useState(false);
   const pathname = usePathname();
@@ -374,20 +376,85 @@ export function Navbar() {
             Home
           </Link>
 
-          <Link
-            href="/products"
-            onClick={() => setIsOpen(false)}
-            style={{
-              color: "#180D26",
-              textDecoration: "none",
-              fontSize: "0.95rem",
-              fontWeight: 600,
-              padding: "10px 14px",
-              borderRadius: "12px",
-            }}
-          >
-            Products
-          </Link>
+          {/* Mobile Catalog Accordion */}
+          <div>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                padding: "10px 14px",
+                borderRadius: "12px",
+                cursor: "pointer",
+                backgroundColor: mobileCatalogOpen ? "rgba(124, 58, 237, 0.08)" : "transparent",
+              }}
+              onClick={() => setMobileCatalogOpen(!mobileCatalogOpen)}
+            >
+              <span style={{ fontSize: "0.95rem", fontWeight: 600, color: "#180D26" }}>Catalog</span>
+              <span style={{ fontSize: "0.8rem", color: "#7C3AED", fontWeight: 700 }}>
+                {mobileCatalogOpen ? "▲" : "▼"}
+              </span>
+            </div>
+            {mobileCatalogOpen && (
+              <div style={{ paddingLeft: "12px", display: "flex", flexDirection: "column", gap: "4px", marginTop: "4px" }}>
+                <Link
+                  href="/products"
+                  onClick={() => setIsOpen(false)}
+                  style={{
+                    padding: "8px 12px",
+                    fontSize: "0.85rem",
+                    color: "#7C3AED",
+                    textDecoration: "none",
+                    borderRadius: "8px",
+                    fontWeight: 700,
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    backgroundColor: "rgba(124, 58, 237, 0.06)",
+                  }}
+                >
+                  <Layers size={18} color="#7C3AED" />
+                  <span>All Botanical Oils &amp; Extracts</span>
+                </Link>
+                {CATALOG_CATEGORIES_MENU.map((item) => (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    onClick={() => setIsOpen(false)}
+                    style={{
+                      padding: "8px 12px",
+                      fontSize: "0.85rem",
+                      color: "#5B486E",
+                      textDecoration: "none",
+                      borderRadius: "8px",
+                      fontWeight: 500,
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "8px",
+                    }}
+                  >
+                    {item.icon}
+                    <span>{item.name}</span>
+                    {item.badge && (
+                      <span
+                        style={{
+                          fontSize: "0.68rem",
+                          fontWeight: 700,
+                          backgroundColor: "rgba(124, 58, 237, 0.12)",
+                          color: "#7C3AED",
+                          padding: "2px 6px",
+                          borderRadius: "9999px",
+                          marginLeft: "auto",
+                        }}
+                      >
+                        {item.badge}
+                      </span>
+                    )}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
 
           {/* Mobile About Accordion */}
           <div>
