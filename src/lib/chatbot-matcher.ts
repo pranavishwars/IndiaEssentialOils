@@ -797,15 +797,16 @@ function checkShippingQuery(normalized: string): FaqEntry | null {
   return {
     id: "shipping_dispatch_expert",
     patterns: shipPatterns,
-    answer: `⚡ **Prompt 48-Hour Order Dispatch & Global Shipping:**
+    answer: `⚡ **Prompt 48-Hour Order Dispatch & Global Shipping Policy:**
 
-• **⚡ 48-Hour Order Dispatch:** Because we maintain substantial bulk inventories of standard botanical distillates across our 1,000 MT climate-controlled warehouse in New Delhi, wholesale orders are typically packed and dispatched within **48 hours** of payment confirmation.
-• **Express Air Cargo:** Rapid international delivery with full Dangerous Goods (IATA/IMDG) declarations, cold-chain monitoring, and door-to-door tracking. Exact transit timelines depend on destination and customs clearance — contact our export desk for details.
-• **Ocean Freight (FCL / LCL):** Cost-effective containerized seafreight via Mundra and Nhava Sheva (JNPT) ports with refrigerated reefer container options for heat-sensitive botanicals.
-• **Complete Customs Dossiers:** Consignments travel with complete export regulatory paperwork including commercial invoices, packing lists, Certificate of Origin (COO), and Phytosanitary certificates.`,
+• **⚡ 48-Hour Order Dispatch:** Our specialty is promptness in service. We maintain substantial bulk stocks of regular products in our climate-controlled warehouse, which enables us to dispatch standard orders within **48 hours** of payment confirmation (unless custom packaging or urgent priority schedules apply).
+• **Vital Shipping Function:** India Essential Oils considers Shipping as one of the most vital functions. Shipping accounts for **5–20% of the total cost** of any business — timely and economical shipment movement is as important as quality.
+• **Best Shipping Rates Worldwide:** We offer one of the best shipping rates for all major destinations of the world, backed by direct tie-ups with major shipping lines and reputed Clearing House agents.
+• **Comprehensive Post-Shipment Services:** We provide shipment movement tracking, timely documentation, country-specific documentation facilitation, and typical materials movement facilitation.
+• **Dedicated Customer Care Tracking:** Our Customer Care Executive keeps complete tracking of all the shipments at different points of time and keeps customers abreast of all movements.`,
     actionLink: {
-      label: "Contact Commercial Shipping Desk",
-      href: "/contact",
+      label: "View Full Shipment Policy",
+      href: "/packaging/shipment-policy",
     },
   };
 }

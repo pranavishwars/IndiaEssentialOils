@@ -79,35 +79,35 @@ export default function AboutPage() {
     {
       title: "Cosmetics & Personal Care",
       desc: "Cold-pressed virgin carrier oils, floral hydrosols, and therapeutic essential oils for clean beauty, anti-aging skincare, serums, and luxury cosmetic formulations.",
-      image: "/images/industries/cosmetics_personal_care.jpg",
+      image: "/images/industries/sector_cosmetics_skincare.jpg",
       icon: <Sparkle size={24} color="#7C3AED" />,
       examples: "Rosehip, Jojoba, Argan, Lavender, Tea Tree, Rose Water",
     },
     {
       title: "Food, Beverage & Flavoring",
       desc: "Standardized spice oils and oleoresins delivering authentic aromatic flavor profiles for food manufacturing, confectioneries, savory seasonings, and beverages.",
-      image: "/images/industries/food_beverage_flavor.jpg",
+      image: "/images/industries/sector_food_flavors.jpg",
       icon: <Apple size={24} color="#7C3AED" />,
       examples: "Cardamom, Black Pepper, Ginger, Clove, Cinnamon, Nutmeg Oleoresins",
     },
     {
       title: "Pharmaceutical & Healthcare",
       desc: "High-purity botanical extracts and therapeutic-grade distillates complying with rigorous international pharmacopoeia standards and GMP documentation.",
-      image: "/images/industries/pharmaceutical_healthcare.jpg",
+      image: "/images/industries/sector_pharma_healthcare.jpg",
       icon: <HeartPulse size={24} color="#7C3AED" />,
       examples: "Turmeric Extract, Eucalyptus, Peppermint, Frankincense CO2, Wintergreen",
     },
     {
       title: "Perfumery & Fine Fragrance",
       desc: "Solvent-extracted floral absolutes, rare attars, and exquisite aromatic compounds crafted for fine fragrance houses and luxury artisanal perfumers.",
-      image: "/images/industries/perfumery_fine_fragrance.jpg",
+      image: "/images/industries/sector_fine_fragrance.jpg",
       icon: <Flower size={24} color="#7C3AED" />,
       examples: "Jasmine Sambac, Rose Damascena, Lotus Absolute, Champaca, Oudh",
     },
     {
       title: "Aromatherapy & Holistic Wellness",
       desc: "100% natural, unadulterated essential oils and custom therapeutic blends with dual GC-MS verification for wellness practitioners and diffusions.",
-      image: "/images/industries/aromatherapy_wellness.jpg",
+      image: "/images/industries/sector_aromatherapy_wellness.jpg",
       icon: <Leaf size={24} color="#7C3AED" />,
       examples: "German Chamomile, Clary Sage, Bergamot, Rosemary, Vetiver",
     },
@@ -251,12 +251,9 @@ export default function AboutPage() {
                     </div>
                   </div>
 
-                  <h3 style={{ fontSize: "1.18rem", fontWeight: 700, color: "#180D26", marginBottom: "4px", lineHeight: 1.3 }}>
+                  <h3 style={{ fontSize: "1.18rem", fontWeight: 700, color: "#180D26", marginBottom: "12px", lineHeight: 1.3 }}>
                     {pillar.title}
                   </h3>
-                  <div style={{ fontSize: "0.82rem", fontWeight: 700, color: "#7C3AED", marginBottom: "12px" }}>
-                    {pillar.subtitle}
-                  </div>
                   <p style={{ fontSize: "0.9rem", color: "#5B486E", lineHeight: 1.65, margin: 0 }}>
                     {pillar.desc}
                   </p>
@@ -427,7 +424,7 @@ export default function AboutPage() {
                 </div>
 
                 <div style={{ borderTop: "1px solid rgba(124, 58, 237, 0.12)", paddingTop: "14px" }}>
-                  <span style={{ fontSize: "0.72rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase", letterSpacing: "0.06em", display: "block", marginBottom: "4px" }}>
+                  <span style={{ fontSize: "0.72rem", fontWeight: 800, color: "#5B486E", textTransform: "uppercase", letterSpacing: "0.06em", display: "block", marginBottom: "4px" }}>
                     Key Ingredients
                   </span>
                   <span style={{ fontSize: "0.85rem", color: "#180D26", fontWeight: 600 }}>

@@ -10,7 +10,6 @@ import {
   Leaf, 
   ArrowRight, 
   ChevronRight, 
-  ShieldCheck, 
 } from "lucide-react";
 
 export const metadata = {
@@ -24,7 +23,7 @@ export default function IndustriesWeServePage() {
       title: "Cosmetics & Personal Care",
       subtitle: "Clean Beauty, Skincare & Luxury Formulations",
       desc: "We supply cold-pressed virgin carrier oils, floral hydrosols, and therapeutic essential oils with low peroxide values and high fatty acid profiles. Perfect for anti-aging serums, body butters, haircare oils, and clean label beauty ranges.",
-      image: "/images/industries/cosmetics_personal_care.jpg",
+      image: "/images/industries/sector_cosmetics_skincare.jpg",
       icon: <Sparkle size={24} color="#7C3AED" />,
       color: "#7C3AED",
       bg: "rgba(124, 58, 237, 0.08)",
@@ -35,7 +34,7 @@ export default function IndustriesWeServePage() {
       title: "Food, Beverage & Flavoring",
       subtitle: "Standardized Spice Distillates & Oleoresins",
       desc: "Delivering concentrated, standardized aromatic flavor profiles with stable color values and volatile oil percentages. Essential for seasoning manufacturers, confectioneries, bakery, beverage blenders, and processed savory foods.",
-      image: "/images/industries/food_beverage_flavor.jpg",
+      image: "/images/industries/sector_food_flavors.jpg",
       icon: <Apple size={24} color="#7C3AED" />,
       color: "#7C3AED",
       bg: "rgba(124, 58, 237, 0.08)",
@@ -46,7 +45,7 @@ export default function IndustriesWeServePage() {
       title: "Pharmaceutical & Healthcare",
       subtitle: "Therapeutic-Grade Extracts & Pharmacopoeial Botanicals",
       desc: "High-purity botanical distillates and therapeutic-grade CO₂ extracts complying with IP, BP, USP, and Ph. Eur. standards. Accompanied by full regulatory support, allergen declarations, and non-GMO statements.",
-      image: "/images/industries/pharmaceutical_healthcare.jpg",
+      image: "/images/industries/sector_pharma_healthcare.jpg",
       icon: <HeartPulse size={24} color="#7C3AED" />,
       color: "#7C3AED",
       bg: "rgba(124, 58, 237, 0.08)",
@@ -57,7 +56,7 @@ export default function IndustriesWeServePage() {
       title: "Perfumery & Fine Fragrance",
       subtitle: "Solvent Floral Absolutes & Exotic Attars",
       desc: "Exquisite aromatic extracts and solvent-extracted floral absolutes crafted specifically for artisanal perfumers, luxury scent houses, and fine fragrance creators seeking depth, longevity, and authentic olfactory richness.",
-      image: "/images/industries/perfumery_fine_fragrance.jpg",
+      image: "/images/industries/sector_fine_fragrance.jpg",
       icon: <Flower size={24} color="#7C3AED" />,
       color: "#7C3AED",
       bg: "rgba(124, 58, 237, 0.08)",
@@ -68,7 +67,7 @@ export default function IndustriesWeServePage() {
       title: "Aromatherapy & Holistic Wellness",
       subtitle: "100% Pure, Unadulterated Distillates",
       desc: "Therapeutic essential oils verified by GC-MS batch analysis for certified aromatherapists, wellness spas, and diffusions. Zero synthetic fragrances, isolates, or petrochemical carriers.",
-      image: "/images/industries/aromatherapy_wellness.jpg",
+      image: "/images/industries/sector_aromatherapy_wellness.jpg",
       icon: <Leaf size={24} color="#7C3AED" />,
       color: "#7C3AED",
       bg: "rgba(124, 58, 237, 0.08)",
@@ -149,26 +148,6 @@ export default function IndustriesWeServePage() {
                     sizes="(max-width: 768px) 100vw, 560px"
                     style={{ objectFit: "cover" }}
                   />
-                  <div
-                    style={{
-                      position: "absolute",
-                      top: "14px",
-                      right: "14px",
-                      padding: "4px 12px",
-                      borderRadius: "9999px",
-                      backgroundColor: "rgba(24, 13, 38, 0.85)",
-                      backdropFilter: "blur(12px)",
-                      color: "#FFFFFF",
-                      fontSize: "0.72rem",
-                      fontWeight: 700,
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "4px",
-                    }}
-                  >
-                    <ShieldCheck size={12} color="#7C3AED" />
-                    <span>{ind.cert}</span>
-                  </div>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "14px", marginBottom: "14px" }}>
@@ -187,12 +166,9 @@ export default function IndustriesWeServePage() {
                     {ind.icon}
                   </div>
                   <div>
-                    <h2 style={{ fontSize: "1.25rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", margin: "0 0 4px 0" }}>
+                    <h2 style={{ fontSize: "1.25rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", margin: 0 }}>
                       {ind.title}
                     </h2>
-                    <span style={{ fontSize: "0.82rem", fontWeight: 700, color: ind.color }}>
-                      {ind.subtitle}
-                    </span>
                   </div>
                 </div>
 
@@ -202,7 +178,7 @@ export default function IndustriesWeServePage() {
               </div>
 
               <div style={{ backgroundColor: "rgba(124, 58, 237, 0.05)", borderRadius: "16px", padding: "14px 18px", border: "1px solid rgba(124, 58, 237, 0.12)" }}>
-                <span style={{ fontSize: "0.72rem", fontWeight: 800, color: "#7C3AED", textTransform: "uppercase", letterSpacing: "0.08em", display: "block", marginBottom: "4px" }}>
+                <span style={{ fontSize: "0.72rem", fontWeight: 800, color: "#5B486E", textTransform: "uppercase", letterSpacing: "0.08em", display: "block", marginBottom: "4px" }}>
                   Key Bulk Distillates &amp; Extracts
                 </span>
                 <span style={{ fontSize: "0.88rem", color: "#180D26", fontWeight: 600 }}>

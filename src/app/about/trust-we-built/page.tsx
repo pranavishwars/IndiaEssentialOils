@@ -101,12 +101,9 @@ export default function TrustWeBuiltPage() {
                   </div>
                 </div>
 
-                <h2 style={{ fontSize: "1.25rem", fontWeight: 700, color: "#180D26", marginBottom: "4px", lineHeight: 1.3 }}>
+                <h2 style={{ fontSize: "1.25rem", fontWeight: 700, color: "#180D26", marginBottom: "12px", lineHeight: 1.3 }}>
                   {pillar.title}
                 </h2>
-                <div style={{ fontSize: "0.85rem", fontWeight: 700, color: "#7C3AED", marginBottom: "12px" }}>
-                  {pillar.subtitle}
-                </div>
                 <p style={{ fontSize: "0.92rem", color: "#5B486E", lineHeight: 1.65, margin: 0 }}>
                   {pillar.desc}
                 </p>

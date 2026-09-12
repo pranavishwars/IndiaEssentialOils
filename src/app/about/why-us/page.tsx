@@ -141,9 +141,6 @@ export default function WhyUsPage() {
               </div>
 
               <div style={{ flex: 1, minWidth: "280px" }}>
-                <div style={{ fontSize: "0.82rem", fontWeight: 800, color: item.color, textTransform: "uppercase" as const, letterSpacing: "0.08em", marginBottom: "4px" }}>
-                  {item.subtitle}
-                </div>
                 <h2 style={{ fontSize: "1.6rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", margin: "0 0 12px 0" }}>
                   {item.title}
                 </h2>

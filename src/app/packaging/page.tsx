@@ -524,57 +524,75 @@ export default function PackagingPage() {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "14px" }}>
                   <Truck size={24} color="#7C3AED" />
                   <h3 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#180D26", margin: 0 }}>
-                    Global Shipping &amp; Post-Shipment Support
+                    Vital Shipping &amp; Best Global Rates
                   </h3>
                 </div>
                 <p style={{ color: "#5B486E", fontSize: "0.92rem", lineHeight: 1.7, margin: "0 0 14px 0" }}>
-                  India Essential Oils considers shipping as one of the most vital functions (accounting for 5–20% of total business cost). Timely and economical shipment movement is as important as quality.
+                  India Essential Oils considers Shipping as one of the most vital functions. Accounting for <strong>5–20% of the total cost</strong> of any business, timely and economical shipment movement is as important as quality.
                 </p>
-                <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
+                <ul style={{ listStyle: "none", padding: 0, margin: "0 0 16px 0", display: "flex", flexDirection: "column", gap: "8px" }}>
                   <li style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "0.86rem", color: "#180D26" }}>
-                    <CheckCircle2 size={16} color="#7C3AED" /> Best shipping rates for all major destinations worldwide
+                    <CheckCircle2 size={16} color="#7C3AED" /> Best shipping rates for all major destinations of the world
                   </li>
                   <li style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "0.86rem", color: "#180D26" }}>
-                    <CheckCircle2 size={16} color="#7C3AED" /> Real-time consignment movement tracking &amp; status updates
+                    <CheckCircle2 size={16} color="#7C3AED" /> Direct tie-ups with major shipping lines &amp; reputed Clearing House agents
                   </li>
                   <li style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "0.86rem", color: "#180D26" }}>
-                    <CheckCircle2 size={16} color="#7C3AED" /> Country-specific regulatory documentation &amp; phytosanitary clearance
+                    <CheckCircle2 size={16} color="#7C3AED" /> Best Post Shipment services: shipment movement tracking &amp; timely documentation
                   </li>
                   <li style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "0.86rem", color: "#180D26" }}>
-                    <CheckCircle2 size={16} color="#7C3AED" /> Direct tie-ups with major shipping lines &amp; reputed clearing agents
+                    <CheckCircle2 size={16} color="#7C3AED" /> Country-specific documentation facilitation &amp; typical materials movement facilitation
                   </li>
                 </ul>
+                <div style={{ padding: "12px 16px", borderRadius: "12px", backgroundColor: "rgba(124, 58, 237, 0.06)", border: "1px solid rgba(124, 58, 237, 0.14)" }}>
+                  <p style={{ fontSize: "0.84rem", color: "#3B284C", margin: 0, lineHeight: 1.5 }}>
+                    <strong>Customer Care Tracking:</strong> Our Customer Care Executive keeps complete tracking of all the shipments at different point of time and keeps customers abreast of all movements.
+                  </p>
+                </div>
               </div>
 
               {/* Prompt Delivery Period */}
-              <div style={{ backgroundColor: "#FCFAF6", borderRadius: "24px", padding: "32px", border: "1px solid rgba(124, 58, 237, 0.15)" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "14px" }}>
-                  <Clock size={24} color="#7C3AED" />
-                  <h3 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#180D26", margin: 0 }}>
-                    Prompt Delivery Period — Dispatch in 48 Hours
-                  </h3>
-                </div>
-                <p style={{ color: "#5B486E", fontSize: "0.92rem", lineHeight: 1.7, margin: "0 0 14px 0" }}>
-                  Our speciality is our promptness in service. We always have most botanical oils available in stock in bulk quantities.
-                </p>
-                <div style={{ padding: "16px", borderRadius: "14px", backgroundColor: "rgba(124, 58, 237, 0.08)", border: "1px solid rgba(124, 58, 237, 0.18)", marginBottom: "14px" }}>
-                  <span style={{ fontSize: "0.95rem", fontWeight: 700, color: "#7C3AED" }}>
-                    ⚡ 48-Hour Standard Order Dispatch
-                  </span>
-                  <p style={{ fontSize: "0.84rem", color: "#5B486E", margin: "4px 0 0 0", lineHeight: 1.5 }}>
-                    We usually despatch all orders within 48 hours of payment unless custom packaging or urgent rush handling is requested.
+              <div style={{ backgroundColor: "#FCFAF6", borderRadius: "24px", padding: "32px", border: "1px solid rgba(124, 58, 237, 0.15)", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+                <div>
+                  <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "14px" }}>
+                    <Clock size={24} color="#7C3AED" />
+                    <h3 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#180D26", margin: 0 }}>
+                      Prompt Delivery Period — Dispatch in 48 Hours
+                    </h3>
+                  </div>
+                  <p style={{ color: "#5B486E", fontSize: "0.92rem", lineHeight: 1.7, margin: "0 0 14px 0" }}>
+                    Our specialty is promptness in service. We maintain substantial bulk stocks of regular products in our warehouse to enable standard orders to be dispatched swiftly.
                   </p>
+                  <div style={{ padding: "16px", borderRadius: "14px", backgroundColor: "rgba(124, 58, 237, 0.08)", border: "1px solid rgba(124, 58, 237, 0.18)", marginBottom: "16px" }}>
+                    <span style={{ fontSize: "0.95rem", fontWeight: 700, color: "#7C3AED" }}>
+                      ⚡ 48-Hour Standard Order Dispatch
+                    </span>
+                    <p style={{ fontSize: "0.84rem", color: "#5B486E", margin: "4px 0 0 0", lineHeight: 1.5 }}>
+                      We usually dispatch all standard orders within 48 hours of payment confirmation, unless custom packaging or urgent priority schedules apply.
+                    </p>
+                  </div>
                 </div>
-                <p style={{ fontSize: "0.86rem", color: "#5B486E", margin: 0, lineHeight: 1.6 }}>
-                  Substantial bulk warehouse inventory guarantees ample continuous supply for contract manufacturing partners worldwide.
-                </p>
+                <Link
+                  href="/packaging/shipment-policy"
+                  className="btn-vibrant-primary"
+                  style={{
+                    padding: "12px 20px",
+                    borderRadius: "9999px",
+                    fontWeight: 700,
+                    textDecoration: "none",
+                    fontSize: "0.86rem",
+                    display: "inline-flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: "6px",
+                  }}
+                >
+                  View Full Shipment Policy <ArrowRight size={14} />
+                </Link>
               </div>
             </div>
           </div>
         </section>
-
-        {/* Download Full Catalog Banner */}
-        <DownloadCatalogButton variant="banner" label="Download Full Botanical Catalog" />
 
         {/* Commercial Packaging Quotation CTA */}
         <section
