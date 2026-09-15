@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { getCacheDiagnostics, clearEntireCache } from "@/lib/cache";
 
+
+
 export async function GET() {
   const stats = getCacheDiagnostics();
   return NextResponse.json({

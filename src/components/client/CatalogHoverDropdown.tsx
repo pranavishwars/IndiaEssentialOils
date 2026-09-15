@@ -245,7 +245,7 @@ export function CatalogHoverDropdown({ isLightNav, textColor, textShadow }: Cata
                   All Categories & Complete Catalog
                 </div>
                 <div style={{ fontSize: "0.76rem", color: itemSubColor, lineHeight: 1.4, marginTop: "2px" }}>
-                  Browse 273+ verified botanical extracts & GC-MS reports
+                  Browse 278+ verified botanical extracts & GC-MS reports
                 </div>
               </div>
             </div>

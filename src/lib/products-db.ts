@@ -2,10 +2,11 @@ import prisma from "@/lib/prisma";
 import { productStore, mapDbProduct, Product } from "@/lib/products-store";
 import { getOrSetCache, invalidateCachePrefix, invalidateCacheKey } from "@/lib/cache";
 
-// TTL for product collections (15 minutes) - drastically slashes Neon compute usage
-const PRODUCTS_COLLECTION_TTL_SEC = 15 * 60;
-// TTL for individual product pages (30 minutes)
-const PRODUCT_ITEM_TTL_SEC = 30 * 60;
+const isDev = process.env.NODE_ENV === "development";
+// TTL for product collections (1s in dev, 15m in prod)
+const PRODUCTS_COLLECTION_TTL_SEC = isDev ? 1 : 15 * 60;
+// TTL for individual product pages (1s in dev, 30m in prod)
+const PRODUCT_ITEM_TTL_SEC = isDev ? 1 : 30 * 60;
 
 /**
  * Invalidate the product cache manually (e.g. after catalog updates, imports, or cron scoring)
@@ -52,13 +53,8 @@ export async function getProductsFromDb(): Promise<Product[]> {
  * 3. Only if completely unresolved, queries Neon Postgres.
  */
 export async function getProductBySlugFromDb(slug: string): Promise<Product | undefined> {
-  // 1. Direct memoryStore fast-path check
-  const memoryMatch = productStore.getBySlug(slug);
-  if (memoryMatch) {
-    return memoryMatch;
-  }
-
-  // 2. Cache-Aside resolution
+  // Cache-Aside resolution — always go through cache/DB so that updates
+  // pushed to Neon Postgres are visible after a cache flush without a server restart.
   return getOrSetCache<Product | undefined>(
     `products:slug:${slug}`,
     PRODUCT_ITEM_TTL_SEC,

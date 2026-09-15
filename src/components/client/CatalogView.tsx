@@ -13,6 +13,13 @@ interface CategoryMeta {
   slug: string;
 }
 
+export function getCatalogShortDesc(desc?: string): string {
+  if (!desc) return "";
+  const words = desc.trim().split(/\s+/);
+  if (words.length <= 25) return desc.trim();
+  return words.slice(0, 25).join(" ").replace(/[,;:\s]+$/, "") + "...";
+}
+
 export const CATEGORY_DETAILS: Record<string, CategoryMeta> = {
   ALL: {
     title: "Botanical Catalog & Search",
@@ -381,6 +388,7 @@ export function CatalogView({ preselectedCategory }: CatalogViewProps = {}) {
                   padding: "24px",
                   display: "flex",
                   flexDirection: "column",
+                  height: "100%",
                   boxShadow: "0 6px 24px rgba(24, 13, 38, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.8)",
                   transition: "transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s",
                   cursor: "pointer",
@@ -426,21 +434,81 @@ export function CatalogView({ preselectedCategory }: CatalogViewProps = {}) {
                   />
                 </div>
 
-                <h3 style={{ fontSize: "1.18rem", fontWeight: 700, fontFamily: "var(--font-lora), Georgia, serif", color: "#180D26", marginBottom: "4px" }}>
+                <h3
+                  style={{
+                    fontSize: "1.18rem",
+                    fontWeight: 700,
+                    fontFamily: "var(--font-lora), Georgia, serif",
+                    color: "#180D26",
+                    marginBottom: "4px",
+                    height: "2.8rem",
+                    lineHeight: 1.3,
+                    display: "-webkit-box",
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: "vertical",
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                  }}
+                  title={product.name}
+                >
                   {product.name}
                 </h3>
-                {product.botanicalName && (
-                  <div style={{ fontSize: "0.8rem", fontStyle: "italic", color: "#5B486E", marginBottom: "12px" }}>
-                    {product.botanicalName}
-                  </div>
-                )}
 
-                <p style={{ fontSize: "0.85rem", color: "#5B486E", lineHeight: 1.6, marginBottom: "16px", flexGrow: 1 }}>
-                  {product.description}
+                <div
+                  style={{
+                    fontSize: "0.8rem",
+                    fontStyle: "italic",
+                    color: "#5B486E",
+                    marginBottom: "12px",
+                    height: "1.2rem",
+                    lineHeight: "1.2rem",
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                    whiteSpace: "nowrap",
+                  }}
+                >
+                  {product.botanicalName || "\u00A0"}
+                </div>
+
+                <p
+                  style={{
+                    fontSize: "0.85rem",
+                    color: "#5B486E",
+                    lineHeight: 1.55,
+                    marginBottom: "16px",
+                    height: "3.95rem",
+                    display: "-webkit-box",
+                    WebkitLineClamp: 3,
+                    WebkitBoxOrient: "vertical",
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                  }}
+                  title={product.description}
+                >
+                  {getCatalogShortDesc(product.description)}
                 </p>
 
-                <div style={{ fontSize: "0.78rem", color: "#180D26", backgroundColor: "rgba(124, 58, 237, 0.08)", border: "1px solid rgba(124, 58, 237, 0.15)", padding: "8px 12px", borderRadius: "8px", marginBottom: "16px" }}>
-                  {product.shortSpec}
+                <div
+                  style={{
+                    fontSize: "0.78rem",
+                    color: "#180D26",
+                    backgroundColor: "rgba(124, 58, 237, 0.08)",
+                    border: "1px solid rgba(124, 58, 237, 0.15)",
+                    padding: "8px 12px",
+                    borderRadius: "8px",
+                    marginBottom: "16px",
+                    height: "36px",
+                    display: "flex",
+                    alignItems: "center",
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                    whiteSpace: "nowrap",
+                  }}
+                  title={product.shortSpec}
+                >
+                  <span style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+                    {product.shortSpec}
+                  </span>
                 </div>
 
                 <div
@@ -451,6 +519,7 @@ export function CatalogView({ preselectedCategory }: CatalogViewProps = {}) {
                     paddingTop: "14px",
                     borderTop: "1px solid rgba(124, 58, 237, 0.15)",
                     gap: "8px",
+                    marginTop: "auto",
                   }}
                 >
                   <div

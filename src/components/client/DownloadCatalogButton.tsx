@@ -118,7 +118,7 @@ export function DownloadCatalogButton({ variant = "primary", label }: DownloadCa
               </h3>
             </div>
             <p style={{ fontSize: "0.88rem", color: "#5B486E", margin: 0 }}>
-              Complete index of 273+ steam-distilled oils, floral waters, supercritical CO₂ extracts, carrier oils, CAS numbers, and packaging specifications.
+              Complete index of 278+ steam-distilled oils, floral waters, supercritical CO₂ extracts, carrier oils, CAS numbers, and packaging specifications.
             </p>
           </div>
         </div>

@@ -2,18 +2,28 @@
 
 import React, { useEffect, useState } from "react";
 
-const SECTIONS = [
+export interface TabSection {
+  id: string;
+  label: string;
+}
+
+const DEFAULT_SECTIONS: TabSection[] = [
   { id: "overview", label: "Overview" },
+  { id: "description", label: "Description" },
+  { id: "specifications", label: "Constituents & Specifications" },
+  { id: "properties", label: "Properties" },
+  { id: "benefits-uses", label: "Benefits & Uses" },
 ];
 
-export function ProductStickyTabBar() {
-  const [activeSection, setActiveSection] = useState("overview");
+export function ProductStickyTabBar({ sections }: { sections?: TabSection[] }) {
+  const currentSections = sections && sections.length > 0 ? sections : DEFAULT_SECTIONS;
+  const [activeSection, setActiveSection] = useState(currentSections[0]?.id || "overview");
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY + 140;
 
-      for (const section of SECTIONS) {
+      for (const section of currentSections) {
         const el = document.getElementById(section.id);
         if (el) {
           const top = el.offsetTop;
@@ -28,7 +38,7 @@ export function ProductStickyTabBar() {
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [currentSections]);
 
   const scrollToSection = (id: string) => {
     const el = document.getElementById(id);
@@ -72,7 +82,7 @@ export function ProductStickyTabBar() {
           scrollbarWidth: "none",
         }}
       >
-        {SECTIONS.map(s => {
+        {currentSections.map(s => {
           const isActive = activeSection === s.id;
           return (
             <button

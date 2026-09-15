@@ -4,12 +4,7 @@ import { INITIAL_PRODUCTS, getCategorySlug } from "@/lib/products-store";
 import { getProductBySlugFromDb } from "@/lib/products-db";
 import { ProductDetailView } from "@/components/client/ProductDetailView";
 
-export async function generateStaticParams() {
-  return INITIAL_PRODUCTS.map(p => ({
-    category: getCategorySlug(p.category),
-    slug: p.slug,
-  }));
-}
+export const dynamic = "force-dynamic";
 
 export default async function ProductDetailPage({
   params,

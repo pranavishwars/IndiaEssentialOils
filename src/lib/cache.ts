@@ -11,7 +11,7 @@ export interface CacheStats {
 
 // 1. Process-level LRU In-Memory Cache (persists in Node.js server, warm lambdas, container runtimes)
 const memoryCache = new LRUCache<string, any>({
-  max: 1500, // Up to 1500 cached entries (covers all 273 products, categories, search queries, etc.)
+  max: 1500, // Up to 1500 cached entries (covers all 278 products, categories, search queries, etc.)
   ttl: 1000 * 60 * 15, // Default 15 minutes TTL
   allowStale: false,
   updateAgeOnGet: false,

@@ -445,7 +445,7 @@ All botanicals are batch-tested via dual GC-MS and supplied with lot Certificate
 }
 
 /**
- * Intelligent Dynamic Product Search Across all 273 Products
+ * Intelligent Dynamic Product Search Across all 278 Products
  */
 function searchProductCatalogSmart(normalized: string): FaqEntry | null {
   const allProducts = INITIAL_PRODUCTS;
@@ -1032,7 +1032,7 @@ For bulk orders, we recommend submitting your product list and required quantiti
       patterns: ["minimum order", "moq", "min order"],
       answer: `📦 **Yes — there is a Minimum Order Quantity (MOQ) of 1 kg across all products.**
 
-Our standard MOQ is **1 kg** for every product in our catalog of 273+ botanicals — whether essential oils, carrier oils, CO₂ extracts, spice oils, oleoresins, floral waters, or floral absolutes.
+Our standard MOQ is **1 kg** for every product in our catalog of 278+ botanicals — whether essential oils, carrier oils, CO₂ extracts, spice oils, oleoresins, floral waters, or floral absolutes.
 
 For higher volumes, we offer bulk packaging in UN-certified seamless aluminum canisters (5 kg, 25 kg), food-grade HDPE drums, and heavy-gauge steel export drums (200 kg) for large-scale industrial requirements.
 
@@ -1058,7 +1058,7 @@ To get pricing for your required quantity and product, please submit an enquiry 
 
 • **Certified Organic Range:** We offer **20 USDA/NPOP certified organic oils**, including Organic Lavender, Organic Peppermint, Organic Jojoba, Organic Ginger, Organic Jasmine, and others. These are cultivated without synthetic pesticides, herbicides, or GMOs and are verified by accredited international organic certification agencies with full Organic Transaction Certificates (TC).
 
-• **Conventional Pure Range:** Our broader catalog of 273+ products covers 100% pure, unadulterated steam-distilled and cold-pressed botanicals — all rigorously GC-MS tested and free of synthetic extenders or adulterants, even in the non-certified organic range.
+• **Conventional Pure Range:** Our broader catalog of 278+ products covers 100% pure, unadulterated steam-distilled and cold-pressed botanicals — all rigorously GC-MS tested and free of synthetic extenders or adulterants, even in the non-certified organic range.
 
 If you specifically require certified organic grade with transaction certificates, please mention it in your enquiry.`,
       actionLink: {
@@ -1315,7 +1315,7 @@ If your message is sent outside business hours, our team will get back to you on
 India Essential Oils is a premier manufacturing and global export division of **Mother Herbs Pvt. Ltd.**, established in **New Delhi, India in 2004**.
 
 We specialize in:
-• Manufacturing and exporting **273+ pharmacopoeial-grade botanical extracts** across 9 product divisions — Essential Oils, CO₂ Extracts, Carrier Oils, Spice Oils, Floral Absolutes, Floral Waters, Oleoresins, Ayurvedic Oils, and Organic Oils.
+• Manufacturing and exporting **278+ pharmacopoeial-grade botanical extracts** across 9 product divisions — Essential Oils, CO₂ Extracts, Carrier Oils, Spice Oils, Floral Absolutes, Floral Waters, Oleoresins, Ayurvedic Oils, and Organic Oils.
 • In-house **Shimadzu GC-MS analytical laboratory** for batch purity verification.
 • Certified under **ISO 9001:2015, GMP Compliance, and Ministry of MSME Udyam Registration** standards.
 • Exporting worldwide with 48-hour order dispatch from our 1,000 MT climate-controlled warehouse.
@@ -1347,7 +1347,7 @@ function checkDownloadCatalogQuery(normalized: string): FaqEntry | null {
     patterns: downloadPatterns,
     answer: `📑 **Official 2026 Botanical Wholesale Catalog (PDF):**
 
-You can download our official 44-page September 2026 Wholesale Catalog (PDF) containing all 273+ verified pure botanical extracts, botanical names, processing methods, specifications, MOQs, and technical dossiers.`,
+You can download our official 44-page September 2026 Wholesale Catalog (PDF) containing all 278+ verified pure botanical extracts, botanical names, processing methods, specifications, MOQs, and technical dossiers.`,
     actionLink: {
       label: "Download Official 2026 Catalog (PDF)",
       href: "/api/catalog/download",
@@ -1433,7 +1433,7 @@ export function matchFaq(userInput: string, faqData: FaqEntry[]): FaqEntry | nul
   const orderMatch = checkOrderAndSamplesQuery(normalized);
   if (orderMatch) return orderMatch;
 
-  // 12. High Priority: Direct & Intelligent Product Catalog Search across all 273 items
+  // 12. High Priority: Direct & Intelligent Product Catalog Search across all 278 items
   const productMatch = searchProductCatalogSmart(normalized);
   if (productMatch) return productMatch;
 
