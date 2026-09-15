@@ -124,7 +124,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Amyris Oil",
     "botanicalName": "Amyris balsamifera",
     "category": "ESSENTIAL_OIL",
-    "description": "Amyris Oil (Amyris balsamifera), extracted by steam distillation. CAS #: 8015-65-4,. F.E.M.A. : 2018. Specific Gravity: 0.940 - 0.980 @ 72&#176;F. Refractive Index: 1.498 - 1.526 @ 72&#176;F.",
+    "description": "Amyris oil is obtained by steam distillation of wood from this tree that belongs to the rue family. The oil has a pleasantly woody with a balsamic touch.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -178,7 +178,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Angelica Root Oil",
     "botanicalName": "Angelica Archangelica",
     "category": "ESSENTIAL_OIL",
-    "description": "Angelica Root Oil (Angelica Archangelica), extracted by steam distillation. CAS #: 8015-64-3,. F.E.M.A. : 2088. Specific Gravity: 0.85000 - 0.88000 @ 20&#176;C. Refractive Index: 1.46900 - 1.47800 @ 20.00&#176;C.",
+    "description": "Angelica Root Essential Oil is a soft oil which is distilled from the dried roots, rhizome and seeds of Angelica plant.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -232,7 +232,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Armoise Oil",
     "botanicalName": "Artemisia Vulgaris",
     "category": "ESSENTIAL_OIL",
-    "description": "Armoise Oil (Artemisia Vulgaris), extracted by steam distillation. CAS #: 8008-93-3,. Specific Gravity: 0.940 - 0.980 @ 72&#176;F. Refractive Index: 1.498 - 1.526 @ 72&#176;F.",
+    "description": "Armoise is shrub-like plant that has hairy, silvery leaves that can be flourished in parched conditions.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -286,7 +286,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Basil Oil (Ocimum Basilicum)",
     "botanicalName": "Ocimum Basilicum",
     "category": "ESSENTIAL_OIL",
-    "description": "Basil Oil (Ocimum Basilicum) (Ocimum Basilicum), extracted by steam distillation description : basil, originally from india[1], is a half-hardy annual plant, best known as a culinary herb prominently featured in italian cuisine, and also plays a major role in thenortheast asian cuisine. CAS #: 8015-73-4,. F.E.M.A. : 2119. Specific Gravity: 0.89000 - 0.93000 @ 25&#176;C. Refractive Index: 1.47950 - 1.48950 @ 20 &#176;C Eucalyptus globulus.",
+    "description": "Basil, originally from India[1], is a half-hardy annual plant, best known as a culinary herb prominently featured in Italian cuisine, and also plays a major role in theNortheast Asian cuisine",
     "shortSpec": "Steam Distillation Description : Basil, originally from India[1], is a half-hardy annual plant, best known as a culinary herb prominently featured in Italian cuisine, and also plays a major role in theNortheast Asian cuisine",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -340,7 +340,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Betel Leaf Oil",
     "botanicalName": "Piper betle",
     "category": "ESSENTIAL_OIL",
-    "description": "Betel Leaf Oil (Piper betle), extracted by steam distillation. CAS #: 84775-81-5.",
+    "description": "Betel Leaf Oil is derived from Betal Leaf plant leaves that yield this aromatic essential oil. The heart-shaped leaves have distinct pleasant aroma &amp; are commonly chewed alone or with other plant materials.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -394,7 +394,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Birch Tar Oil",
     "botanicalName": "Betula alba",
     "category": "ESSENTIAL_OIL",
-    "description": "Birch Tar Oil (Betula alba), extracted by steam distillation. CAS #: 8001-88-5,. Specific Gravity: 1.13000 - 1.35000 @ 25&#176;C. Refractive Index: 1.52200 - 1.59000 @ 20&#176;C.",
+    "description": "The birch tree is native to North America, Asia and grows up to 15-20 meters in height. It has slender branches, silver-white bark broken into scales and light green oval leaves.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -448,7 +448,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Bitter Orange Oil",
     "botanicalName": "Citrus aurantium",
     "category": "ESSENTIAL_OIL",
-    "description": "Bitter Orange Oil (Citrus aurantium), extracted by cold pressed. CAS #: 68916-04-1. Specific Gravity: 0.84500 - 0.85100 @ 25.00 &#176;C. Refractive Index: 1.46900 - 1.47800 @ 20.00 &#176;C.",
+    "description": "It is distilled from the peel of the fruit. It has a lively, fruity, sweet aroma much aromatic than sweet orange.",
     "shortSpec": "Cold Pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -502,7 +502,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Black Seed Oil",
     "botanicalName": "Nigella Sativa",
     "category": "ESSENTIAL_OIL",
-    "description": "Black Seed Oil (Nigella Sativa), extracted by cold pressed. CAS #: 8014-13-9,. F.E.M.A. : 2343. Specific Gravity: 0.90000 - 0.93500 @ 25.00 &#176;C. Refractive Index: 1.50100 - 1.50600 @ 20.00 &#176;C.",
+    "description": "Nigella sativa is an annual flowering plant, native to south and southwest Asia. The seed &amp; its oil are used as a spice &amp; also for medicinal purpose.",
     "shortSpec": "Cold Pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -611,7 +611,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Cade Oil",
     "botanicalName": "Juniperus oxycedrus",
     "category": "ESSENTIAL_OIL",
-    "description": "Cade Oil (Juniperus oxycedrus), extracted by steam distillation and expression. CAS #: 8013-10-3,. F.E.M.A. : 2108.",
+    "description": "Cade Oil gives the oil a smoky scent. Cade essential oil comes in dark red brown and dark brown colors.",
     "shortSpec": "Steam distillation and expression.",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -665,7 +665,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Cajeput Oil",
     "botanicalName": "Melaleuca Cajuputi",
     "category": "ESSENTIAL_OIL",
-    "description": "Cajeput Oil (Melaleuca Cajuputi), extracted by steam distillation. CAS #: 8008-98-8,. F.E.M.A. : 2225. Specific Gravity: 0.910 - 0.919 @ 72&#176;F. Refractive Index: 1.4670 - 1.470 @ 72&#176;F.",
+    "description": "Cajeput essential oil is produced by steam distillation of the fresh leaves and twigs from a tall evergreen tree up to 30 meters high, having thick pointed leaves and white flowers.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -719,7 +719,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Camphor Oil",
     "botanicalName": "Cinnamonum Camphora",
     "category": "ESSENTIAL_OIL",
-    "description": "Camphor Oil (Cinnamonum Camphora), extracted by steam distillation. CAS #: 92704-03-5. Specific Gravity: 0.950 - 0.958 @ 72&#176;F. Refractive Index: 1.472 - 1.479 @ 72&#176;F.",
+    "description": "Camphor essential oil offered is extracted from Cinnamomum Camphora (also known as Laurus camphora) of Lauraceae family.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -773,7 +773,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Carrot Seed Oil",
     "botanicalName": "Daucus carota",
     "category": "ESSENTIAL_OIL",
-    "description": "Carrot Seed Oil (Daucus carota), extracted by steam distillation. CAS #: 8015-88-1,. F.E.M.A. : 2244. Specific Gravity: 0.90000 - 0.93400 @ 25&#176;C. Refractive Index: 1.48900 – 1.49200 @ 20&#176;C.",
+    "description": "Carrot Seed oil comes from wild Queen Anne's Lace also known as Wild Carrot",
     "shortSpec": "Steam distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -823,7 +823,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Cedarwood Oil",
     "botanicalName": "Cedrus deodara",
     "category": "ESSENTIAL_OIL",
-    "description": "Cedarwood Oil (Cedrus deodara), extracted by steam distillation. CAS #: 8000-27-9. Specific Gravity: 0.97200 - 0.98300 @ 25&#176;C. Refractive Index: 1.51400 - 1.52900 @ 20&#176;C.",
+    "description": "The trees grows upto 30 m, single-stemmed, crown narrowly erect to conical, round or flattened. Bark is brown, exfoliating in thin strips, that of small branchlets (5-10 mm diam.)",
     "shortSpec": "Steam distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -878,7 +878,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Chamomile Oil (Blue)",
     "botanicalName": "Matricaria chamomilla",
     "category": "ESSENTIAL_OIL",
-    "description": "Chamomile Oil (Blue) (Matricaria chamomilla), extracted by cold pressed. CAS #: 8002-66-2,. F.E.M.A. : 2273. Specific Gravity: 0.91300 - 0.95300 @ 25&#176;C. Refractive Index: 1.48000 - 1.50500 @ 20&#176;C.",
+    "description": "Camomile is a small perennial herb with a hairy stem and feathery pinnate leaves, daisy like white flowers (larger than those of German camomile) and grows about 25 cm high.",
     "shortSpec": "Cold Pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -933,7 +933,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Chamomile Oil (Roman)",
     "botanicalName": "Anthemis nobilis",
     "category": "ESSENTIAL_OIL",
-    "description": "Chamomile Oil (Roman) (Anthemis nobilis), extracted by cold pressed. CAS #: 8015-88-1,. F.E.M.A. : 2272. Specific Gravity: 0.87900 - 0.90400 @ 25&#176;C. Refractive Index: 1.43450 - 1.13990 @ 20&#176;C.",
+    "description": "Camomile is a small perennial herb with a hairy stem and feathery pinnate leaves, daisy like white flowers (larger than those of German camomile) and grows about 25 cm high.",
     "shortSpec": "Cold Pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -987,7 +987,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Champaca Oil",
     "botanicalName": "Magnolia champaca",
     "category": "ESSENTIAL_OIL",
-    "description": "Champaca Oil (Magnolia champaca), extracted by steam distillation. CAS #: 8006-76-6. Specific Gravity: 0.91 - 1. 01 @ 20 &#176;C. Refractive Index: 1.44 - 1.49 @ 20 &#176;C.",
+    "description": "Champaca Oil is derived from a subtropical tree with gorgeous &amp; deeply fragrant flowers.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -1037,7 +1037,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Chulmoogra Oil",
     "botanicalName": "Hydnocarpus wightiana",
     "category": "ESSENTIAL_OIL",
-    "description": "Chulmoogra Oil (Hydnocarpus wightiana), extracted by cold pressed. CAS #: 8001-74-9,. F.E.M.A. : 2657.",
+    "description": "Chaulmoogra belongs to the Hydnocarpus family, which is a common plant family in southern Asia. This plant can grow up to 15 to 20 meters high and has drooping branches with long leaves.",
     "shortSpec": "Cold Pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -1087,7 +1087,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Citriodora Oil",
     "botanicalName": "Eucalyptus Citriodora",
     "category": "ESSENTIAL_OIL",
-    "description": "Citriodora Oil (Eucalyptus Citriodora), extracted by steam distillation. CAS #: 129828-24-6. Specific Gravity: 0.85800 - 0.87700 @ 25.00 &#176;C. Refractive Index: 1.45100 - 1.46400 @ 20.00 &#176;C.",
+    "description": "A tall, aromatic evergreen tree of the myrtaceae family. An essential oil obtained from the leaves by steam distillation.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -1137,7 +1137,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Citronella Oil",
     "botanicalName": "Cymbopogon winterianus",
     "category": "ESSENTIAL_OIL",
-    "description": "Citronella Oil (Cymbopogon winterianus), extracted by steam distillation. CAS #: 8000-29-1. Specific Gravity: 0.85000 - 0.92000 @ 25&#176;C. Refractive Index: 1.43000 - 1.52000 @ 20&#176;C.",
+    "description": "Citronella oil is extracted from a hardy grass, found in eastern parts of India and nortern Himalayan range.",
     "shortSpec": "Steam distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -1191,7 +1191,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Clary Sage Oil",
     "botanicalName": "Salvia sclarea",
     "category": "ESSENTIAL_OIL",
-    "description": "Clary Sage Oil (Salvia sclarea), extracted by steam distillation. CAS #: 8016-63-5,. F.E.M.A. : 2321. Specific Gravity: 0.88900 to 0.92300 @ 25.00 &#176;C. Refractive Index: 1.45800 to 1.47300 @ 20.00 &#176;C.",
+    "description": "Clary Sage is a stout biennial herb that grows up to 1 meter (3 feet) tall with large, hairy leaves and small blue/ white flowers growing directly off the long, thin stem.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -1242,7 +1242,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Coffee Oil",
     "botanicalName": "Coffea arabica",
     "category": "ESSENTIAL_OIL",
-    "description": "Coffee Oil (Coffea arabica), extracted by cold pressed. CAS #: 84650-00-0. Specific Gravity: 0.925 - 0.960 @ 25&#176;C. Refractive Index: 1.45 to 1.48 @ 25&#176;C.",
+    "description": "Coffea Arabica is the earliest cultivated species of the coffee tree and still the most widely grown.",
     "shortSpec": "Cold Pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -1292,7 +1292,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Costus Root Oil",
     "botanicalName": "Saussurea costus",
     "category": "ESSENTIAL_OIL",
-    "description": "Costus Root Oil (Saussurea costus), extracted by steam distillation. CAS #: 8023-88-9,. F.E.M.A. : 2336. Specific Gravity: 0.970 - 1.035 @ 25&#176;C. Refractive Index: 1.5000 – 1.5700 @ 25&#176;C.",
+    "description": "Costus Root is a large, erect, perennial plant up to 2m high with a thick tapering root and numerous black flowers.",
     "shortSpec": "Steam distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -1346,7 +1346,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Croton Oil",
     "botanicalName": "Croton Tiglium Linn",
     "category": "ESSENTIAL_OIL",
-    "description": "Croton Oil (Croton Tiglium Linn), extracted by cold pressed. CAS #: 8007-06-5.",
+    "description": "Croton essential oil, commonly known as oleum tiglii, is gelatinous and translucent liquor that is regularly yellow to light brown in color.",
     "shortSpec": "Cold Pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -1400,7 +1400,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Custard Apple Oil",
     "botanicalName": "Annona squamosa",
     "category": "ESSENTIAL_OIL",
-    "description": "Custard Apple Oil (Annona squamosa), extracted by cold pressed. CAS #: 8007-06-5.",
+    "description": "A small tropical tree, indigenous to the Amazon rainforest, growing up to 20' tall. The leaves are thin, oblong while the flowers are greenish – yellow.",
     "shortSpec": "Cold pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -1454,7 +1454,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Cypress Oil",
     "botanicalName": "Cupressus sempervirens",
     "category": "ESSENTIAL_OIL",
-    "description": "Cypress Oil (Cupressus sempervirens), extracted by steam distillation. CAS #: 8013-86-3. Specific Gravity: 0.87000 - 0.89100 @ 25.00 &#176;C. Refractive Index: 1.47100 - 1.48200 @ 20.00 &#176;C.",
+    "description": "The tree is a perennial tree, conical-shaped about 28 meters (80 feet) high, tiny dark green leaves, and having male and female cones.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -1508,7 +1508,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Cypriol Oil (Nagarmotha Oil)",
     "botanicalName": "Cyperus scariosus",
     "category": "ESSENTIAL_OIL",
-    "description": "Cypriol Oil (Nagarmotha Oil) (Cyperus scariosus), extracted by steam distillation. CAS #: 91771-62-9. Specific Gravity: 1.00520 to 1.00680 @ 25&#176;C. Refractive Index: 1.51062 to 1.51100 @ 20&#176;C.",
+    "description": "Cyperus scariosus is a smooth, erect, perennial sedge. An woody, earthy, spicy essential oil is distilled from its roots.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -1562,7 +1562,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Davana Oil",
     "botanicalName": "Artemisia Pallens",
     "category": "ESSENTIAL_OIL",
-    "description": "Davana Oil (Artemisia Pallens), extracted by steam distillation. CAS #: 8016-03-3,. F.E.M.A. : 2359. Specific Gravity: 0.94200 - 0.97030 @ 25.00 &#176;C. Refractive Index: 1.47900 - 1.49100 @ 20.00 &#176;C.",
+    "description": "A tall aromatic perenniel shrub villous throughout, often gregarious,lower leaves ovate in outline deeply pinnatisect. Oil is admired for its long-lasting, sweet, balsamic and fruity aroma.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -1612,7 +1612,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Elemi Oil",
     "botanicalName": "Canarium Luzonicum",
     "category": "ESSENTIAL_OIL",
-    "description": "Elemi Oil (Canarium Luzonicum), extracted by steam distillation. CAS #: 8023-89-0,. F.E.M.A. : 2408.",
+    "description": "Elemi resin is majorly used in Elemi essential oil has a very fresh, citrusy, peppery and spicy aroma. The oil is extracted from the plant for commercial usage in pharmaceutical industry.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -1666,7 +1666,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Eucalyptus Oil",
     "botanicalName": "Eucalyptus globulus",
     "category": "ESSENTIAL_OIL",
-    "description": "Eucalyptus Oil (Eucalyptus globulus), extracted by steam distillation. CAS #: 8000-48-4. F.E.M.A. : 2466. Specific Gravity: 0.90500 - 0.92500 @ 25&#176;C. Refractive Index: 1.45800 - 1.46500 @ 20&#176;C.",
+    "description": "Eucalyptus essential oil is obtained from the leaves and the branches of the eucalyptus tree.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -1717,7 +1717,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Frankincense Oil",
     "botanicalName": "Boswellia Serrata",
     "category": "ESSENTIAL_OIL",
-    "description": "Frankincense Oil (Boswellia Serrata), extracted by steam distillation. CAS #: 8016-36-2,. F.E.M.A. : 2816. Specific Gravity: 0.844 - 0.849 @ 72&#176;F. Refractive Index: 1.465 - 1.469 @ 72&#176;F.",
+    "description": "Olibanum is basically a gum-resin from small trees and thorny bushes of the Burseracean family.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -1772,7 +1772,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Gandhapura Oil / Gandharan Oil",
     "botanicalName": "Gaultheria Fragrantissima",
     "category": "ESSENTIAL_OIL",
-    "description": "Gandhapura Oil / Gandharan Oil (Gaultheria Fragrantissima), extracted by steam distillation.",
+    "description": "It is shrub has height about 3.2meter high. Stem is branched and bark colour mostly orange-brown, leaves are mostly 12 cm long, leathery, dotted, and with glands.",
     "shortSpec": "Steam distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -1826,7 +1826,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Geranium Oil",
     "botanicalName": "Pelargonium graveolens",
     "category": "ESSENTIAL_OIL",
-    "description": "Geranium Oil (Pelargonium graveolens), extracted by steam distillation. CAS #: 8000-46-2 ,. F.E.M.A. : 2508. Specific Gravity: 0.89000 - 0.89900 @ 25&#176;C. Refractive Index: 1.51800 - 1.52000 @ 20&#176;C.",
+    "description": "Geranium essential oils is extracted by steam distillation from the leaves, stalks and flowers.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -1877,7 +1877,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Ginger Grass Oil",
     "botanicalName": "Cymbopogon martinii (sofia)",
     "category": "ESSENTIAL_OIL",
-    "description": "Ginger Grass Oil (Cymbopogon martinii (sofia)), extracted by steam distillation method. CAS #: 8023-92-5. Specific Gravity: 0.9100 - 1. 0100 @ 20 &#176;C. Refractive Index: 1.4880 - 1.4940 @ 20 &#176;C.",
+    "description": "It is a perennial growing herbaceous plant having long slender stems with terminal flowering tops. The grass is the source of oil and is very fragrant.",
     "shortSpec": "Steam Distillation method",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -1931,7 +1931,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Grapefruit Oil",
     "botanicalName": "Citrus paradisi",
     "category": "ESSENTIAL_OIL",
-    "description": "Grapefruit Oil (Citrus paradisi), extracted by cold pressed. CAS #: 8016-20-4. F.E.M.A. : 2530. Specific Gravity: 0.84800 - 0.85600 @ 25&#176;C. Refractive Index: 1.47300 - 1.47900 @ 20&#176;C.",
+    "description": "The grapefruit tree is originated in Asia. It is a large, shiny gloss-leaved tree that can grow about 10 meters (30 feet) high, with white flowers and large leaves",
     "shortSpec": "Cold pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -2039,7 +2039,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Hedychium Oil",
     "botanicalName": "Hedychium spicatum",
     "category": "ESSENTIAL_OIL",
-    "description": "Hedychium Oil (Hedychium spicatum), extracted by steam distillation. CAS #: 93455-95-9. Specific Gravity: 1.4800 - 1.4890 @ 25&#176;C. Refractive Index: 1.4800 - 1.4890 @ 20 &#176;C.",
+    "description": "It is an annual herb with horizontal root-stock and tubesous root fibres, leaves are 30 cms or at times more than that in length",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -2093,7 +2093,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Helichrysum Oil (Immortelle)",
     "botanicalName": "Helichrysum Italicum",
     "category": "ESSENTIAL_OIL",
-    "description": "Helichrysum Oil (Immortelle) (Helichrysum Italicum), extracted by steam distillation. CAS #: 8023-95-8,. F.E.M.A. : 2592. Specific Gravity: 0.9650 - 0.9900 @ 20 &#176;C. Refractive Index: 1.4820 - 1.5500 @ 20 &#176;C.",
+    "description": "Helichrysum essential oil is extracted from Helichrysum flowers and extensively used in many healing applications. Helichrysum is known by its French synonym Immortelle that means everlasting.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -2144,7 +2144,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Henna Oil",
     "botanicalName": "Lowsonia Inermis",
     "category": "ESSENTIAL_OIL",
-    "description": "Henna Oil (Lowsonia Inermis), extracted by steam distillation. CAS #: 8007-01-0,. F.E.M.A. : 2989. Specific Gravity: 0.94340 - 0.99000 @ 25&#176;C. Refractive Index: 1.49000 - 1.49000 @ 20&#176;C.",
+    "description": "A glabrous much-branched deciduous shrub with 4-gonous lateral branches often ending in spines, leaves simple, flowers are white or rose colored.",
     "shortSpec": "Steam distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -2198,7 +2198,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Holy Basil Oil (Ocimum Sanctum Oil)",
     "botanicalName": "Ocimum Sanctum",
     "category": "ESSENTIAL_OIL",
-    "description": "Holy Basil Oil (Ocimum Sanctum Oil) (Ocimum Sanctum), extracted by steam distillation. CAS #: 91845-35-1. Specific Gravity: 0.92550 - 0.9260. Refractive Index: 1.242 - 1.249.",
+    "description": "It is derived form the plant of Ocimum sanctum belonging to family Labiatae. It has been widely grown throughout the world and commonly cultivated in gardens.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -2252,7 +2252,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Juniper Berry Oil",
     "botanicalName": "Juniperus Communis",
     "category": "ESSENTIAL_OIL",
-    "description": "Juniper Berry Oil (Juniperus Communis), extracted by steam distillation. CAS #: 8012-91-7,. F.E.M.A. : 2604. Specific Gravity: 0.86900 - 0.85900 @ 25&#176;C. Refractive Index: 1.47200 - 1.48400 @ 20 &#176;C.",
+    "description": "Juniper oil can be extracted from the berries, as well as the needles and wood. It has a fresh, clear but slightly woody aroma and is a pale oil with a watery viscosity.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -2306,7 +2306,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Kewra Oil",
     "botanicalName": "Pandanus Odoratissimus",
     "category": "ESSENTIAL_OIL",
-    "description": "Kewra Oil (Pandanus Odoratissimus), extracted by steam distillation description : kewda (pandanus odoratissimus) absolute oil is hydro-distilled from the flower part of the plant. CAS #: 91770-47-7. Specific Gravity: 0.932 - 0.934. Refractive Index: 1.483 - 1.500.",
+    "description": "Kewda (Pandanus odoratissimus) absolute oil is hydro-distilled from the flower part of the plant.",
     "shortSpec": "Steam Distillation Description : Kewda (Pandanus odoratissimus) absolute oil is hydro-distilled from the flower part of the plant.",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -2360,7 +2360,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Lavender Oil",
     "botanicalName": "Lavandula Officinalis",
     "category": "ESSENTIAL_OIL",
-    "description": "Lavender Oil (Lavandula Officinalis), extracted by steam distillation description : lavender oil is derived from lavender, which is an evergreen woody shrub that has pale green, narrow linear leaves &amp; violet blue flowers. CAS #: 8000-28-0,. F.E.M.A. : 2622. Specific Gravity: 0.87500 - 0.88800 @ 25 &#176;C. Refractive Index: 1.45900 - 1.46900 @ 20 &#176;C.",
+    "description": "Lavender Oil is derived from Lavender, which is an evergreen woody shrub that has pale green, narrow linear leaves &amp; violet blue flowers",
     "shortSpec": "Steam Distillation Description : Lavender Oil is derived from Lavender, which is an evergreen woody shrub that has pale green, narrow linear leaves &amp; violet blue flowers",
     "overview": "Lavender Oil (Lavandula Officinalis), extracted by steam distillation description : lavender oil is derived from lavender, which is an evergreen woody shrub that has pale green, narrow linear leaves &amp; violet blue flowers. CAS #: 8000-28-0,. F.E.M.A. : 2622. Specific Gravity: 0.87500 - 0.88800 @ 25 &#176;C. Refractive Index: 1.45900 - 1.46900 @ 20 &#176;C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
     "moq": "1 kg",
@@ -2411,7 +2411,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Lemon Balm Oil",
     "botanicalName": "Melissa officinalis",
     "category": "ESSENTIAL_OIL",
-    "description": "Lemon Balm Oil (Melissa officinalis), extracted by steam distillation. CAS #: 8014-71-9,. F.E.M.A. : 2113.",
+    "description": "Melissa Oil comes from plants just before first flowers appear as aroma is less interesting when plant is in full bloom. The oil is steam distilled from melissa leaves &amp; tops.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -2465,7 +2465,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Lemon Oil",
     "botanicalName": "Citrus limon",
     "category": "ESSENTIAL_OIL",
-    "description": "Lemon Oil (Citrus limon), extracted by cold pressed. CAS #: 8008-56-8,. F.E.M.A. : 2625. Specific Gravity: 0.84900 to 0.85500 @ 25&#176;C. Refractive Index: 1.47200 to 1.47400 @ 20&#176;C.",
+    "description": "This evergreen tree grows up to about 6 meters (20 feet) and has dark green serrated oval leaves with pink/white flowers that are highly perfumed.",
     "shortSpec": "Cold pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -2520,7 +2520,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Lemon Verbena Oil",
     "botanicalName": "Aloysia citrodora",
     "category": "ESSENTIAL_OIL",
-    "description": "Lemon Verbena Oil (Aloysia citrodora), extracted by steam distillation.",
+    "description": "It is a deciduous, perennial shrub that grows up to 5 meters (16 feet) in height and has a woody stem, very fragrant, delicate, pale green leaves and small purple flowers.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -2570,7 +2570,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Lemongrass Oil",
     "botanicalName": "Cymbopogon citratus",
     "category": "ESSENTIAL_OIL",
-    "description": "Lemongrass Oil (Cymbopogon citratus), extracted by steam distillation. CAS #: 8007-02-1,. F.E.M.A. : 2624. Specific Gravity: 0.88700 - 0.89900 @ 25&#176;C. Refractive Index: 1.47800 - 1.49700 @ 20&#176;C.",
+    "description": "Lemongrass Oil is derived from Lemongrass, which is a fast growing, tall, aromatic perennial grass native to Asia.",
     "shortSpec": "Steam distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -2625,7 +2625,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Lily Oil",
     "botanicalName": "Lilium auratum",
     "category": "ESSENTIAL_OIL",
-    "description": "Lily Oil (Lilium auratum), extracted by cold pressed. CAS #: 84776-67-0. Specific Gravity: 0.94300 to 0.95900 @ 15&#176;C. Refractive Index: 1.47800 to 1.48600 @ 20&#176;C.",
+    "description": "Representative of purity, Lilies have been used in ceremonies since ancient times. In Ancient Greece, the bride in wedding ceremonies would wear a crown of lilies and wheat symbolizing purity and abundance.",
     "shortSpec": "Cold Pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -2679,7 +2679,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Melissa Oil",
     "botanicalName": "Melissa Officinalis",
     "category": "ESSENTIAL_OIL",
-    "description": "Melissa Oil (Melissa Officinalis), extracted by steam distillation. CAS #: 8014-71-9,. F.E.M.A. : 2113. Specific Gravity: 0.880 - 0.920 @ 20&#176;C. Refractive Index: 1.455 - 1.485 @ 20&#176;C.",
+    "description": "Melissa oil has a sweet, fresh and citrus-like smell. The natural essential oil comes in pale yellow color and has a watery viscosity.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -2733,7 +2733,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Mentha Citrata Oil",
     "botanicalName": "Mentha Citrata",
     "category": "ESSENTIAL_OIL",
-    "description": "Mentha Citrata Oil (Mentha Citrata), extracted by steam distillation method. CAS #: 68917-15-7.",
+    "description": "These oils are originated in asia, central and southern europe and are colourless to yellowish clear liquid.",
     "shortSpec": "Steam Distillation method",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -2783,7 +2783,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Mint Oil",
     "botanicalName": "Mentha arvensis",
     "category": "ESSENTIAL_OIL",
-    "description": "Mint Oil (Mentha arvensis), extracted by steam distillation. CAS #: 8006-99-3. F.E.M.A. : 2848. Specific Gravity: 0.82000 - 0.90000 @ 25 &#176;C. Refractive Index: 0.89000 - 0.91000 @ 20 &#176;C.",
+    "description": "Mints are aromatic, almost exclusively perennial, rarely annual, herbs. The leaves are arranged in opposite pairs, from oblong tolanceolate, often downy, and with a serrate margin.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -2838,7 +2838,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Myrrh Oil",
     "botanicalName": "Commiphora myrrha",
     "category": "ESSENTIAL_OIL",
-    "description": "Myrrh Oil (Commiphora myrrha), extracted by cold pressed. CAS #: 8016-37-3,. F.E.M.A. : 2766. Specific Gravity: 0.98800 to 1.01700 @ 25&#176;C. Refractive Index: 1.51700 to 1.52800 @ 20&#176;C.",
+    "description": "This evergreen tree grows up to about 6 meters (20 feet) and has dark green serrated oval leaves with pink/white flowers that are highly perfumed.",
     "shortSpec": "Cold pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -2888,7 +2888,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Myrtle Oil",
     "botanicalName": "Myrtus communis",
     "category": "ESSENTIAL_OIL",
-    "description": "Myrtle Oil (Myrtus communis), extracted by steam distillation. CAS #: 8008-46-6. Specific Gravity: 0.950 - 0.980 @ 20&#176;C. Refractive Index: 1.5010 - 1.5160 @ 20&#176;C.",
+    "description": "Myrtle Oil is a pale yellow or yellow mobile liquid that has intensely fresh lemon-like odor with pleasant sweet-green undertone. Its odor is much cleaner &amp; fresher than lemongrass oil.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -2942,7 +2942,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Neroli Oil",
     "botanicalName": "Citrus Auratium",
     "category": "ESSENTIAL_OIL",
-    "description": "Neroli Oil (Citrus Auratium), extracted by steam distillation. CAS #: 8016-38-4 ,. F.E.M.A. : 2771. Specific Gravity: 1.00520 to 1.00680 @ 25&#176;C. Refractive Index: 1.51062 to 1.51100 @ 20&#176;C.",
+    "description": "Neroli Essential Oil is extracted from small, white, waxy flowers of Citrus aurantium var. amara (also known as Citrus vulgaris) of Rutaceae family. Extracted through steam distillation process.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -2993,7 +2993,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Niaouli Oil",
     "botanicalName": "Melaleuca Viridiflora",
     "category": "ESSENTIAL_OIL",
-    "description": "Niaouli Oil (Melaleuca Viridiflora), extracted by steam distillation. CAS #: 8014-68-4. Specific Gravity: 0.920 - 0.940 @ 72&#176;F. Refractive Index: 1.460 - 1.490 @ 72&#176;F.",
+    "description": "Niaouli essential oil is taken out from Melaleuca viridiflora of Myrtaceae family. It has slightly sweet, fresh smell with color varying from colorless to pale yellow and greenish.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -3043,7 +3043,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Nutmeg Oil",
     "botanicalName": "Myristica fragrans",
     "category": "ESSENTIAL_OIL",
-    "description": "Nutmeg Oil (Myristica fragrans), extracted by steam distillation. CAS #: 8008-45-5 ,. F.E.M.A. : 2793. Specific Gravity: 0.88000 to 0.91000 @ 25&#176;C. Refractive Index: 1.47500 to 1.48800 @ 20&#176;C.",
+    "description": "A spreading deciduous evergreen tree 15 to 20-meters (49 to 66 ft) high, with dark green leaves, yellow flowers without petals and large yellowish fruit. Nutmeg is the actual seed of the tree.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -3093,7 +3093,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Palmarosa Oil",
     "botanicalName": "Cymbopogon martinii (Motia)",
     "category": "ESSENTIAL_OIL",
-    "description": "Palmarosa Oil (Cymbopogon martinii (Motia)), extracted by steam distillation. CAS #: 8014-19-5,. F.E.M.A. : 2831. Specific Gravity: 0.88000 - 0.89400 @ 25&#176;C. Refractive Index: 1.47100 - 1.47800 @ 20 &#176;C.",
+    "description": "A perennial, sweet scented grass, 1.5-2.5 m in height. Palmarosa is a bright and cheerful oil with slightly floral and woodsy notes and just a hint of citrus undertones.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -3147,7 +3147,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Patchouli Oil",
     "botanicalName": "Polygonatum cablin",
     "category": "ESSENTIAL_OIL",
-    "description": "Patchouli Oil (Polygonatum cablin), extracted by steam distillation. CAS #: 8014-09-3. F.E.M.A. : 2838. Specific Gravity: 0.88000 - 0.89400 @ 25&#176;C. Refractive Index: 1.47100 - 1.47800 @ 20&#176;C.",
+    "description": "Patchouli is a member of the mint family. It is a large 3 feet perennial mint which grows in tropical climates. Patchouli oil has a rich musky-sweet, strong spicy and herbaceous smell.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -3202,7 +3202,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Peppermint Oil",
     "botanicalName": "Mentha piperita",
     "category": "ESSENTIAL_OIL",
-    "description": "Peppermint Oil (Mentha piperita), extracted by steam distillation. CAS #: 8006-99-3. F.E.M.A. : 2848. Specific Gravity: 0.89600 - 0.90800 @ 25 &#176;C. Refractive Index: 0.89900 - 0.91100 @ 20 &#176;C.",
+    "description": "Peppermint is a perennial herb that grows up to 1 meter (3 feet) high and has slightly hairy serrated leaves with pinkish-mauve flowers arranged in a long conical shape.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -3253,7 +3253,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Peru Balsam Oil",
     "botanicalName": "Myroxylon pereirae",
     "category": "ESSENTIAL_OIL",
-    "description": "Peru Balsam Oil (Myroxylon pereirae), extracted by steam distillation. CAS #: 8007-00-9,. F.E.M.A. : 2117. Specific Gravity: 1.100 – 1.160 @ 72&#176;F.",
+    "description": "Balsam oil is derived from Balsam Peru, which is a large tropical tree having straight smooth trunk &amp; beautiful foliage including very fragrant flowers.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -3307,7 +3307,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Petitgrain Oil",
     "botanicalName": "Citrus aurantium",
     "category": "ESSENTIAL_OIL",
-    "description": "Petitgrain Oil (Citrus aurantium), extracted by steam distillation. CAS #: 8014-17-3,. F.E.M.A. : 2855. Specific Gravity: 0.87800 to 0.88900 @ 25.00 &#176;C. Refractive Index: 1.45000 to 1.46000 @ 20.00 &#176;C.",
+    "description": "Petitgrain is an essential oil that is extracted from the green twigs of the bitter orange plant (Citrus aurantium var. amara) via steam distillation.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -3361,7 +3361,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Pimento Berry Oil",
     "botanicalName": "Pimento Officinalis Myrtaceae",
     "category": "ESSENTIAL_OIL",
-    "description": "Pimento Berry Oil (Pimento Officinalis Myrtaceae), extracted by steam distillation. CAS #: 8006-77-7,. F.E.M.A. : 2018.",
+    "description": "Pimento Berry Oil is steam purification from the fully grown, crushed, and dried fruit. Unripe fruits are from the West Indian plant is known as Pimenta Officinalis.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -3415,7 +3415,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Pine Oil",
     "botanicalName": "Pinus sylvestris",
     "category": "ESSENTIAL_OIL",
-    "description": "Pine Oil (Pinus sylvestris), extracted by steam distillation. CAS #: 8002-09-3. Specific Gravity: 0.86000 – 0.89000 @ 25 &#176;C.",
+    "description": "This evergreen tree can grow up to 40 meters (130 feet) and has a flat crown. The bark is a reddish-brown that is deeply fissured with needle-like gray-green leaves.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -3465,7 +3465,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Psoralea Corylifolia Oil",
     "botanicalName": "Psoralea corylifolia",
     "category": "ESSENTIAL_OIL",
-    "description": "Psoralea Corylifolia Oil (Psoralea corylifolia), extracted by steam distillation.",
+    "description": "An erect herbaceous annual, 60-120 cm high with grooved and gland dotted stems and branches. It is found throughout India in Himalayas.",
     "shortSpec": "Steam distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -3574,7 +3574,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Rosemary Oil",
     "botanicalName": "Rosmarinus officinalis",
     "category": "ESSENTIAL_OIL",
-    "description": "Rosemary Oil (Rosmarinus officinalis), extracted by steam distillation. CAS #: 8000-25-7,. F.E.M.A. : 2992. Specific Gravity: 0.89800 - 0.92200 @ 25&#176;C. Refractive Index: 1.46600 - 1.47000 @ 25&#176;C.",
+    "description": "This evergreen tree can grow up to 40 meters (130 feet) and has a flat crown. The bark is a reddish-brown that is deeply fissured with needle-like gray-green leaves.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -3629,7 +3629,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Rosewood Oil",
     "botanicalName": "Aniba rosaeodora",
     "category": "ESSENTIAL_OIL",
-    "description": "Rosewood Oil (Aniba rosaeodora), extracted by steam distillation. CAS #: 8015-77-8,. F.E.M.A. : 2156. Specific Gravity: 0.970 - 1.100 @ 72&#176;F. Refractive Index: 1.430 - 1.480 @ 72&#176;F.",
+    "description": "Rosewood oil offered by us retains the natural healing qualities of the original plant. Its effectiveness in curing various skin infections is a proof of its purity.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -3683,7 +3683,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Spearmint Oil",
     "botanicalName": "Mentha Spicata",
     "category": "ESSENTIAL_OIL",
-    "description": "Spearmint Oil (Mentha Spicata), extracted by steam distillation. CAS #: 8008-79-5,. F.E.M.A. : 3032. Specific Gravity: 0.91700 to 0.93400 @ 25&#176;C. Refractive Index: 1.47900 to 1.48900 @ 20&#176;C.",
+    "description": "Spearmint is a hardy perennial herb that reaches about 1 meter (3 feet) in height. It has bright green lance-shaped, sharply serrated leaves and pink or lilac-colored flowers.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -3737,7 +3737,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Spikenard Oil (Jatamansi Oil)",
     "botanicalName": "Nardostachys jatamansi",
     "category": "ESSENTIAL_OIL",
-    "description": "Spikenard Oil (Jatamansi Oil) (Nardostachys jatamansi), extracted by steam distillation. CAS #: 8022-22-8. Specific Gravity: 0.93000 - 0.95870 @ 25.00 &#176;C. Refractive Index: 1.50550 - 1.54580 @ 20.00 &#176;C.",
+    "description": "Jatamansi is a tender aromatic herb with a pungent rhizome root and native to the mountainous regions of northern India, as well as China and Japan.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -3791,7 +3791,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "St. John's Wort Oil",
     "botanicalName": "Hypericum Perforatum",
     "category": "ESSENTIAL_OIL",
-    "description": "St. John's Wort Oil (Hypericum Perforatum), extracted by steam distillation. CAS #: 68917-49-7.",
+    "description": "It is a plant that is commonly called just St. John's Wort. The herb is a European perennial herb with serrated or perforated leaves.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -3841,7 +3841,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Sugandh Mantri Oil",
     "botanicalName": "Homalomena aromatica Schott",
     "category": "ESSENTIAL_OIL",
-    "description": "Sugandh Mantri Oil (Homalomena aromatica Schott), extracted by steam distillation.",
+    "description": "Sugandh mantri essential oils are known for high purity and have a mesmerizing aroma that makes them widely used in aromatherapy applications.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -3895,7 +3895,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Sweet Orange Oil",
     "botanicalName": "Citrus Sinensis",
     "category": "ESSENTIAL_OIL",
-    "description": "Sweet Orange Oil (Citrus Sinensis), extracted by cold pressed. CAS #: 8008-57-9. Specific Gravity: 0.84200 to 0.84600 @ 25.00 &#176;C. Refractive Index: 1.47200 to 1.47400 @ 20.00 &#176;C.",
+    "description": "It is distilled from the peel of the fruit. It has a lively, fruity, sweet aroma.",
     "shortSpec": "Cold Pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -3950,7 +3950,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Tagetes Oil",
     "botanicalName": "Tagetes Minuta",
     "category": "ESSENTIAL_OIL",
-    "description": "Tagetes Oil (Tagetes Minuta), extracted by steam distillation. CAS #: 8008-79-5.",
+    "description": "Tagetes is an annual herb up to 60 cm high with soft, oval, pale leaves and bright orange daisy-like flowers. The essential oil is obtained by steam distillation from the fresh flowering herb.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -4000,7 +4000,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Tangerine (Mandarine) Oil",
     "botanicalName": "Citrus Reticulata",
     "category": "ESSENTIAL_OIL",
-    "description": "Tangerine (Mandarine) Oil (Citrus Reticulata), extracted by cold pressed. CAS #: 8008-31-9,. F.E.M.A. : 2657. Specific Gravity: 0.84700 - 0.84820 @ 72&#176;F. Refractive Index: 1.47420 – 1.47540 @ 72&#176;F.",
+    "description": "The Tangerine oil is extracted from Citrus reticulata of the Rutaceae family by cold pressed method.",
     "shortSpec": "Cold Pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -4054,7 +4054,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Tea Tree Oil",
     "botanicalName": "Melaleuca alternifolia",
     "category": "ESSENTIAL_OIL",
-    "description": "Tea Tree Oil (Melaleuca alternifolia), extracted by steam distillation. CAS #: 68647-73-4,. F.E.M.A. : 3902. Specific Gravity: 0.88800 - 0.90900 @ 25&#176;C. Refractive Index: 1.47500 - 1.48200 @ 20&#176;C.",
+    "description": "The Tea tree is a small tree or shrub with needle-like leaves. The light yellow tea tree oil is produced by steaming the pine-needle-like tea tree leaves to force out the oil.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -4109,7 +4109,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Thuja Wood Oil",
     "botanicalName": "Thuja occidentalis",
     "category": "ESSENTIAL_OIL",
-    "description": "Thuja Wood Oil (Thuja occidentalis), extracted by steam distillation. CAS #: 8007-20-3,. F.E.M.A. : NA.",
+    "description": "The shoots of trees are usually flat, with side shoots only in a single plane. The leaves have scale shape-like 1–10 mm long, except young seedlings in their first year, which have needle-like leaves.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -4163,7 +4163,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Turmeric Leaf Oil",
     "botanicalName": "Curcuma longa",
     "category": "ESSENTIAL_OIL",
-    "description": "Turmeric Leaf Oil (Curcuma longa), extracted by steam distillation.",
+    "description": "Turmeric is a perennial plant with roots or tubers about 1 metre in height. Indian turmeric is considered the best in the world.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -4217,7 +4217,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Vanilla Oil",
     "botanicalName": "Vanilla Planifolia",
     "category": "ESSENTIAL_OIL",
-    "description": "Vanilla Oil (Vanilla Planifolia), extracted by solvent extraction. CAS #: 8024-06-4,. F.E.M.A. : 3104. Specific Gravity: 0.90200 - 1.00200 @ 20 C. Refractive Index: 1.42200 – 1.42300 @ 20 C.",
+    "description": "Vanilla Oil is a solvent extracted from the beans of Vanilla plant. Vanilla is grown in India, Egypt and Bourbon. The absolute is dark brown in color and has a sweet, heavy and warm odor.",
     "shortSpec": "Solvent Extraction",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -4271,7 +4271,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Valerian Oil",
     "botanicalName": "Valeriana officinalis",
     "category": "ESSENTIAL_OIL",
-    "description": "Valerian Oil (Valeriana officinalis), extracted by steam distillation. CAS #: 8008-88-6,. F.E.M.A. : 3100. Specific Gravity: 0.94200 to 0.98400 @ 25.00 &#176;C. Refractive Index: 1.48600 to 1.50250 @ 20.00 &#176;C.",
+    "description": "Valerian has about 200 perennial herb and small shrub. The plant is found throughout Europe and Northern Asia.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -4325,7 +4325,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Vetiver Oil",
     "botanicalName": "Vetiveria zizanioides",
     "category": "ESSENTIAL_OIL",
-    "description": "Vetiver Oil (Vetiveria zizanioides), extracted by steam distillation. CAS #: 8016-96-4. Specific Gravity: 0.99200 - 1.04200 @ 25&#176;C. Refractive Index: 1.52100 - 1.53100 @ 20&#176;C.",
+    "description": "It is a tall, tufted, perennial, scented grass with long narrow leaves. The oil is obtained from the root by distillation. It has a long-lasting woody fragrance.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -4376,7 +4376,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Wintergreen Oil",
     "botanicalName": "Gaultheria procumbens",
     "category": "ESSENTIAL_OIL",
-    "description": "Wintergreen Oil (Gaultheria procumbens), extracted by steam distillation. CAS #: 68917-75-6,. F.E.M.A. : 3113. Specific Gravity: 1.1804 - 1.1814 @ 72&#176;F. Refractive Index: 1.5361 - 1.5372 @ 72&#176;F.",
+    "description": "Wintergreen is a small evergreen herb which grows up to 15cm (6 in) high, with slender stems, leathery serrated leaves and drooping white flowers, followed by fleshy scarlet berries.",
     "shortSpec": "Steam distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -4538,7 +4538,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Ylang Ylang Oil (Cananga Oil)",
     "botanicalName": "Cananga Odorata",
     "category": "ESSENTIAL_OIL",
-    "description": "Ylang Ylang Oil (Cananga Oil) (Cananga Odorata), extracted by steam distillation. CAS #: 8006-81-3,. F.E.M.A. : 3119. Specific Gravity: 0.92500 - 0.94000 @ 25&#176;C. Refractive Index: 1.40200 - 1.50550 @ 20&#176;C.",
+    "description": "It is a tall tropical tree about 20 meters (60 feet) high with large, tender, fragrant pink, mauve or yellow flowers. It is generally the yellow flower from which ylang ylang essential oil is extracted.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -4589,7 +4589,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Zanthoxylum Oil",
     "botanicalName": "Zanthoxylum armatum",
     "category": "ESSENTIAL_OIL",
-    "description": "Zanthoxylum Oil (Zanthoxylum armatum), extracted by steam distillation.",
+    "description": "It grows throughout Nepal between 1100m-2500m. Also found in the Himalayas (Kashmir to Bhutan), N. India, East to China, Taiwan, Philippines, Lesser Sunda Islands.",
     "shortSpec": "Steam distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -4643,7 +4643,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Ajowan Oil",
     "botanicalName": "Trachyspermum ammi",
     "category": "SPICE_OIL",
-    "description": "Ajowan Oil (Trachyspermum ammi), extracted by seam distillation. CAS #: 8001-99-8. Specific Gravity: 0.89000 - 0.98000. Refractive Index: 1.45000 - 1.60000.",
+    "description": "An valuable unani ingredient Ajwain or bishop's weed is cultivated in black soil particularly along the riverbank throughout India and also Iran, Egypt and Afghanistan.",
     "shortSpec": "Seam distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -4672,7 +4672,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Ajowan Oil (Trachyspermum ammi), extracted by seam distillation. CAS #: 8001-99-8. Specific Gravity: 0.89000 - 0.98000. Refractive Index: 1.45000 - 1.60000. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Wildly used in pharmaceuticals, fine fragrances, cosmetics, Food and Beverages. Ajwain also enjoys some popularity in the Arabic world and is found in berbere, a spice mixture of Ethiopia which both shows Indian and Arabic heritage. Ajwain Oil is widely used in food, flavour, cosmetic, pharmaceuticals, tocacco and Perfume industries. It is also traditionally known as a digestive aid, a relief for abdominal discomfort due to indigestion and an antiseptic. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Ajowan oil has antibacterial, anti-infectious, antiviral, anti-parasitic, anti-fungal, antiseptic Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -4680,7 +4680,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "Ajwain Oil is widely used in food, flavour, cosmetic, pharmaceuticals, tocacco and Perfume industries. It is also traditionally known as a digestive aid, a relief for abdominal discomfort due to indigestion and an antiseptic."
+        "description": "Ajwain Oil is widely used in food, flavour, cosmetic, pharmaceutica"
       }
     ],
     "signatureColor": "#6E2C1C",
@@ -4693,7 +4693,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Allspice Oil",
     "botanicalName": "Pimenta officinalis",
     "category": "SPICE_OIL",
-    "description": "Allspice Oil (Pimenta officinalis), extracted by allspice oil (from both the leaf and the fruit) is extracted by steam distillation. CAS #: 8006-77-7,. F.E.M.A. : 2018.",
+    "description": "Allspice can be a small scrubby tree, quite similar to the bay laurel in size and form. Allspice is the dried fruit of the Pimenta dioica/officinalis plant.",
     "shortSpec": "Allspice oil (from both the leaf and the fruit) is extracted by steam distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -4722,7 +4722,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Allspice Oil (Pimenta officinalis), extracted by allspice oil (from both the leaf and the fruit) is extracted by steam distillation. CAS #: 8006-77-7,. F.E.M.A. : 2018. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Allspice oil can be helpful for the digestive system, for cramp, flatulence, indigestion and nausea, especially useful in rheumatism, chest complaints and to combat stress and depression. It can help in cases of depression, nervous exhaustion, tension, neuralgia and stress. When a bout of the blues strike, a couple of drops in a burner or vaporizer can help to lift the depression and to ease stress. A very small amount of allspice oil can be used as part of a massage oil for chest infection, severe muscle spasm or extreme cold. It is also helpful for rheumatism, arthritis, stiffness, chills, congested coughs and bronchitis. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Anesthetic, analgesic, antioxidant, antiseptic, carminative, muscle relaxant, rubefacient, stimulant and tonic. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -4730,11 +4730,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "When a bout of the blues strike, a couple of drops in a burner or vaporizer can help to lift the depression and to ease stress. A very small amount of allspice oil can be used as part of a massage oil for chest infection, severe muscle spasm or extreme cold."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "It is also helpful for rheumatism, arthritis, stiffness, chills, congested coughs and bronchitis."
+        "description": "When a bout of the blues "
       }
     ],
     "signatureColor": "#6E2C1C",
@@ -4747,7 +4743,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Anise Oil",
     "botanicalName": "Pimpinella anisum",
     "category": "SPICE_OIL",
-    "description": "Anise Oil (Pimpinella anisum), extracted by steam distillation. CAS #: 8007-70-3,. F.E.M.A. : 2094. Specific Gravity: 0.97400 - 0.98800 @ 72&#176;F. Refractive Index: 1.55400 - 1.55480 @ 72&#176;F.",
+    "description": "Anise is a herbaceous annual plant growing to 3 ft (0.91 m) tall. Anise plants grow best in light, fertile, well drained soil.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -4776,18 +4772,14 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Anise Oil (Pimpinella anisum), extracted by steam distillation. CAS #: 8007-70-3,. F.E.M.A. : 2094. Specific Gravity: 0.97400 - 0.98800 @ 72&#176;F. Refractive Index: 1.55400 - 1.55480 @ 72&#176;F. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Anise oil is helpful for digestive system, it acts as a general tonic to the circulatory system and the respiratory tract. It helps to calm the nerves of tense and anxiety , also calms menstrual pains and eases nauseous migraines. It is also used to flavor pizzels, cakes, etc. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Carminative, Digestive, Promotes Harmony and Balance (Green), Expectorant Anise Oil is a wonderful perfumey addition in subtle quantities, especially in Citrus blends or as an foundation to a Vanilla blend. Anise oil has a high concentration of anethole, as much as 90%, and should be avoided if you are pregnant or have estrogen dependent cancers. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
-        "description": "Anise oil is helpful for digestive system, it acts as a general tonic to the circulatory system and the respiratory tract."
+        "description": "Anise oil is helpful for digestive system, it acts as a general tonic to the circulatory system and the respiratory tract. It helps to calm the nerves of tense and anxiety , also calms menstrual pains and eases nauseous migraines."
       },
       {
         "title": "Therapeutic Properties",
-        "description": "It helps to calm the nerves of tense and anxiety , also calms menstrual pains and eases nauseous migraines."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
         "description": "It is also used to flavor pizzels, cakes, etc."
       }
     ],
@@ -4801,7 +4793,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Asafoetida Oil",
     "botanicalName": "Ferula Asafoetida",
     "category": "SPICE_OIL",
-    "description": "Asafoetida Oil (Ferula Asafoetida), extracted by steam distillation. CAS #: 9000-04-8,. F.E.M.A. : 2108.",
+    "description": "Asafoetida is a perennial herb (1 to 1.5 m high). The species is native to the mountains of Afghanistan, and is mainly cultivated in nearby India.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -4830,7 +4822,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Asafoetida Oil (Ferula Asafoetida), extracted by steam distillation. CAS #: 9000-04-8,. F.E.M.A. : 2108. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: This spice oil is used as a digestive aid, in food as a condiment, and in pickles. It typically works as a flavor enhancer and, used along with turmeric. It is good for influenza, digestion, asthma and bronchitis. it is used to aid digestion and is smeared on the abdomen in an alcohol or water tincture. Asafoetida has also been reported to have contraceptive/abortifacient activity. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Asafoetida or Hing is known to possess anti flatulent, antiepileptic,antimicrobial, anti inflammatory, antispasmodic, anthelminthic, laxative, nervine stimulant and expectorant Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -4838,11 +4830,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "It is good for influenza, digestion, asthma and bronchitis. it is used to aid digestion and is smeared on the abdomen in an alcohol or water tincture."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "Asafoetida oil is used as a powerful digestive and culinary flavoring, and in traditional herbalism for its carminative and antispasmodic activity."
+        "description": "It is good for influenza, digestion, asthma and bronchitis. it is used to aid digestion and is smeared on the abdomen in an alcohol or water tinct"
       }
     ],
     "signatureColor": "#6E2C1C",
@@ -4855,7 +4843,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Bay Leaf Oil",
     "botanicalName": "Laurus nobilis",
     "category": "SPICE_OIL",
-    "description": "Bay Leaf Oil (Laurus nobilis), extracted by steam distillation. CAS #: 8006-78-8,. F.E.M.A. : 2122. Specific Gravity: 0.94300 - 0.98400 @ 25&#176;C. Refractive Index: 1.50500 - 1.51700 @ 20&#176;C.",
+    "description": "Fresh bay leaves are very strongly aromatic but also quite bitter. An essential oil is a concentrated, aromatic, volatile liquid composed of small oil-like molecules.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -4884,7 +4872,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Bay Leaf Oil (Laurus nobilis), extracted by steam distillation. CAS #: 8006-78-8,. F.E.M.A. : 2122. Specific Gravity: 0.94300 - 0.98400 @ 25&#176;C. Refractive Index: 1.50500 - 1.51700 @ 20&#176;C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Bay leaves are used to make perfumes to add fragrance to skin care products. Most popular use is in a liniment or massage oil to stimulant lymph and blood circulation. It improves memory and helps relieve headaches as well as sinus and lung congestion and useful for treating high blood sugar, migraine headaches, bacterial and fungal infections and gastric ulcers. It also has. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Analgesic, anticonvulsant, anti neuralgic, expectorant, anti rheumatic, antiseptic, astrigent, stimulant and tonic(for hair) that control dandruff and promote hair growt Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -4892,11 +4880,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "It improves memory and helps relieve headaches as well as sinus and lung congestion and useful for treating high blood sugar, migraine headaches, bacterial and fungal infections and gastric ulcers. It also has properties for controlling dandruff, promoting hair growth, treating muscular aches, rheumatism, neuralgia and poor circulation."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "It is also used as carrier oils for preservatives, mouth freshners, mouth wash, flavouring agents for spices and condiments."
+        "description": "It improves memory and helps relieve headaches as well as sinus and lung congestion and useful for treating high blood sugar, migrai"
       }
     ],
     "signatureColor": "#6E2C1C",
@@ -4909,7 +4893,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Black Cumin Seed Oil",
     "botanicalName": "Nigella sativa",
     "category": "SPICE_OIL",
-    "description": "Black Cumin Seed Oil (Nigella sativa), extracted by steam distillation. CAS #: 8014-13-9,. F.E.M.A. : 2343. Specific Gravity: 0.90000 - 0.93500 @ 25.00 &#176;C. Refractive Index: 1.50100 - 1.50600 @ 20.00 &#176;C.",
+    "description": "Black Cumin Seed Oil is taken from an annual herbaceous plant that is member of Ranunculaceae (buttercup) family. The fruit of plant, the black seeds is used for extracting the oil.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -4938,19 +4922,15 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Black Cumin Seed Oil (Nigella sativa), extracted by steam distillation. CAS #: 8014-13-9,. F.E.M.A. : 2343. Specific Gravity: 0.90000 - 0.93500 @ 25.00 &#176;C. Refractive Index: 1.50100 - 1.50600 @ 20.00 &#176;C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: It is used for treating respiratory &amp; digestive problems, parasites &amp; inflammation. Further, it also helps in health conditions including colds, headaches, infections and toothaches. Black cumin is used as a remedy for dry skin, skin diseases, dandruff and wounds. It is a popular medicine for vitiligo. Cumin is useful as a warming oil and helps relieve muscular pains and osteoarthritis. In the digestive system, it is a stimulant that helps with colic, dyspepsia, flatulence, bloating and indigestion. For the nervous system, it is a tonic and has a beneficial effect on headaches, migraine and nervous exhaustion. Cumin oil aids the digestive system, is helpful for the nervous system as a tonic, and relieves muscular aches and pains. In vapor therapy cumin oil can be useful for the digestive, nervous and muscular systems. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Black Cumin are vasodilating, mucous reducing and relax the airways, making it perfect for the treatment of asthma and chronic bronchitis. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
-        "description": "It is used for treating respiratory & digestive problems, parasites & inflammation. Further, it also helps in health conditions including colds, headaches, infections and toothaches. Black cumin is used as a remedy for dry skin, skin diseases, dandruff and wounds."
+        "description": "It is used for treating respiratory & digestive problems, parasites & inflammation. Further, it also helps in health conditions including colds, headaches, infections and toothaches."
       },
       {
         "title": "Therapeutic Properties",
-        "description": "It is a popular medicine for vitiligo. Cumin is useful as a warming oil and helps relieve muscular pains and osteoarthritis. In the digestive system, it is a stimulant that helps with colic, dyspepsia, flatulence, bloating and indigestion."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "Black Cumin Seed Oil is rich in thymoquinone and essential fatty acids, beneficial for the immune, digestive, nervous, and muscular systems."
+        "description": "Black cumin is used as a remedy for dry skin, skin diseases, dandruff and wounds. It is a popular medicine for vitili"
       }
     ],
     "signatureColor": "#544622",
@@ -4963,7 +4943,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Black Pepper Oil",
     "botanicalName": "Piper nigrum",
     "category": "SPICE_OIL",
-    "description": "Black Pepper Oil (Piper nigrum), extracted by steam distillation. CAS #: 8007-75-8,. F.E.M.A. : 2153. Specific Gravity: 0.87600 - 0.88400 @ 25 &#176;C. Refractive Index: 1.46400 - 1.46600 @ 20 &#176;C.",
+    "description": "Black pepper oil is a pale yellow irritating liquid with a sharp peppery odor and is obtained by steam distillation of the unripe dried fruit of the plant Piper nigrum.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -4993,7 +4973,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
     "featured": true,
     "overview": "Black Pepper Oil (Piper nigrum), extracted by steam distillation. CAS #: 8007-75-8,. F.E.M.A. : 2153. Specific Gravity: 0.87600 - 0.88400 @ 25 &#176;C. Refractive Index: 1.46400 - 1.46600 @ 20 &#176;C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: It is mainly used as gourmet in food additives. Pepper is mainly marinate with salt and vinegar and as a preservative.Ingredients. It is an wonderful addition to men fragrances. It is an excellent anti-oxidant agent. It is used as an fixative and as well as binding agent in resin industry. Black pepper is used in blending other essential oils. Used alogwith other essential oils in perfumery. Also used as an important ingredient in pharmaceutical and naturopathy products. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: A warming oil, excellent for poor circulation, anemia and after heavy bleeding, invaluable for muscular aches and pains of all descriptions, restores tone to the skeletal muscles and generally dispels toxins. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -5001,11 +4981,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "It is an excellent anti-oxidant agent. It is used as an fixative and as well as binding agent in resin industry. Black pepper is used in blending other essential oils."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "Used alogwith other essential oils in perfumery. Also used as an important ingredient in pharmaceutical and naturopathy products."
+        "description": "It is an excellent anti-oxidant agent. It is used as an fixative and as well as binding agent in resin industry. Black pep"
       }
     ],
     "signatureColor": "#3B352E",
@@ -5018,7 +4994,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Calamus Oil",
     "botanicalName": "Acorus calamus",
     "category": "SPICE_OIL",
-    "description": "Calamus Oil (Acorus calamus), extracted by steam distillation. CAS #: 84775-39-3. Specific Gravity: 0.99200 - 0.99300 @ 72&#176;F. Refractive Index: 1.54502 - 1.55500 @ 72&#176;F.",
+    "description": "Calamus oil has a warm and spicy odor that is reminiscent of a sweet forest.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -5047,19 +5023,15 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Calamus Oil (Acorus calamus), extracted by steam distillation. CAS #: 84775-39-3. Specific Gravity: 0.99200 - 0.99300 @ 72&#176;F. Refractive Index: 1.54502 - 1.55500 @ 72&#176;F. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Calamus essential oil, Acorus calamus, is highly esteemed as an aromatic stimulant and tonic, often used for nervous complaints, vertigo, headaches, and dysentery. A fluid extract is an official preparation in the United States and some other Pharmacopceias, but it is not now official in the British Pharmacopceia, though it is much used in herbal medicine as an aromatic bitter. It also acts as a carminative, removing the discomfort caused by flatulence and checking the growth of the bacteria which give rise to this problem. It has been often used to increase the appetite and benefit digestion, given as a fluid extract, infusion or tincture. The tincture is, obtained by macerating the finely-cut rhizome in alcohol for seven days and filtering, is used as a stomachic and flavouring agent. The essential is used as an addition to, and included in inhalations blends. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Aromatic stimulant & tonic, for curing nervous complaints, vertigo and headaches, antiseptic, anticonvulsant, bactericidal, diaphoretic, carminative, expectorant, insecticide, hypotensive, spasmolytic, stomachic, stimulant, tonic and vermifuge. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
-        "description": "Calamus essential oil, Acorus calamus, is highly esteemed as an aromatic stimulant and tonic, often used for nervous complaints, vertigo, headaches, and dysentery. A fluid extract is an official preparation in the United States and some other Pharmacopceias, but it is not now official in the British Pharmacopceia, though it is much used in herbal medicine as an aromatic bitter."
+        "description": "Calamus essential oil, Acorus calamus, is highly esteemed as an aromatic stimulant and tonic, often used for nervous complaints, vertigo, headaches, and dysentery."
       },
       {
         "title": "Therapeutic Properties",
-        "description": "It also acts as a carminative, removing the discomfort caused by flatulence and checking the growth of the bacteria which give rise to this problem. It has been often used to increase the appetite and benefit digestion, given as a fluid extract, infusion or tincture."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "The tincture is, obtained by macerating the finely-cut rhizome in alcohol for seven days and filtering, is used as a stomachic and flavouring agent. The essential is used as an addition to, and included in inhalations blends."
+        "description": "A fluid extract is an official preparation in the United States and some other Pharmacopceias, but it is not now official in the British"
       }
     ],
     "signatureColor": "#6E2C1C",
@@ -5072,7 +5044,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Cambodge Oil",
     "botanicalName": "Garcinia Cambogia",
     "category": "SPICE_OIL",
-    "description": "Cambodge Oil (Garcinia Cambogia), extracted by steam distillation description : cambodge (garcinia cambogia desr.) is a tropical fruit commonly known as malabar tamarind. CAS #: 90045-23-1,. F.E.M.A. : 2826.",
+    "description": "Cambodge (Garcinia cambogia Desr.) is a tropical fruit commonly known as Malabar tamarind.",
     "shortSpec": "Steam Distillation Description : Cambodge (Garcinia cambogia Desr.) is a tropical fruit commonly known as Malabar tamarind.",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -5101,7 +5073,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Cambodge Oil (Garcinia Cambogia), extracted by steam distillation description : cambodge (garcinia cambogia desr.) is a tropical fruit commonly known as malabar tamarind. CAS #: 90045-23-1,. F.E.M.A. : 2826. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Cambodge is used as condiment of flavoring curries. It is also rich in acids &amp; possess marked antiseptic. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: It has refrigerant Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -5109,7 +5081,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "Further, it is also used as a substitute for acetic & formic acids in coagulation of latex. Its other medicinal values include helping in rheumatism & bowel complaints as well as a rinse for some veterinary diseases."
+        "description": "Further, it is also used as a substitute for acetic & formic acids in coagulation of latex. Its other medicinal values include helping in rheumatism & bowel complaints as well as a ri"
       }
     ],
     "signatureColor": "#6E2C1C",
@@ -5176,7 +5148,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Caraway Oil",
     "botanicalName": "Carum carvi",
     "category": "SPICE_OIL",
-    "description": "Caraway Oil (Carum carvi), extracted by steam distillation. CAS #: 8000-42-8,. F.E.M.A. : 2238. Specific Gravity: 0.90000 - 0.91000 @ 25&#176;C. Refractive Index: 1.47900 - 1.49520 @ 20&#176;C.",
+    "description": "Caraway oil is extracted from Carum carvi that is also known as Apium carvi. The oil is extracted by steam distillation from dried ripe seeds and yields 2 - 8 %.",
     "shortSpec": "Steam distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -5205,19 +5177,15 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Caraway Oil (Carum carvi), extracted by steam distillation. CAS #: 8000-42-8,. F.E.M.A. : 2238. Specific Gravity: 0.90000 - 0.91000 @ 25&#176;C. Refractive Index: 1.47900 - 1.49520 @ 20&#176;C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Caraway oil calms the nerves and soothes mental fatigue, while settling the stomach, nervous digestion, colic, flatulence and gastric spasms. As an expectorant it helps clear bronchitis, bronchial asthma and coughs. It is also helpful in cases of sore throats and laryngitis and beneficial to the urinary system, helping to flush toxins out. Nursing mothers also use it to increase milk and swomen in general find that it helps to relieve period pains. It is an effective tissue regenerator and useful for fighting oily skin while dispersing bruises, reducing boils and cleaning infected wounds. Furthermore, it relieves itching skin and helps to clear acne as well as scalp problems. The greatest benefit of Caraway oil lie in its calming and soothing effect on the nerves and the digestive system. As an expectorant, it helps with respiratory problems and is also helpful in fighting urinary problems, while having great. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Caraway oil is anti-histaminic, antispasmodic, antiseptic, aperitif, astringent, cardiac, carminative, digestive, disinfectant, diuretic, emmenagogue, galactagogue, expectorant, parasiticide, stimulant, stomachic, tonic and vermifuge. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
-        "description": "Caraway oil calms the nerves and soothes mental fatigue, while settling the stomach, nervous digestion, colic, flatulence and gastric spasms. As an expectorant it helps clear bronchitis, bronchial asthma and coughs. It is also helpful in cases of sore throats and laryngitis and beneficial to the urinary system, helping to flush toxins out."
+        "description": "Caraway oil calms the nerves and soothes mental fatigue, while settling the stomach, nervous digestion, colic, flatulence and gastric spasms. As an expectorant it helps clear bronchitis, bronchial asthma and coughs."
       },
       {
         "title": "Therapeutic Properties",
-        "description": "Nursing mothers also use it to increase milk and swomen in general find that it helps to relieve period pains. It is an effective tissue regenerator and useful for fighting oily skin while dispersing bruises, reducing boils and cleaning infected wounds. Furthermore, it relieves itching skin and helps to clear acne as well as scalp problems."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "The greatest benefit of Caraway oil lie in its calming and soothing effect on the nerves and the digestive system. As an expectorant, it helps with respiratory problems and is also helpful in fighting urinary problems, while having great benefits for the skin."
+        "description": "It is also helpful in cases of sore throats and laryngitis and beneficial to the uri"
       }
     ],
     "signatureColor": "#6E2C1C",
@@ -5230,7 +5198,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Cardamom Oil",
     "botanicalName": "Elettaria cardamomum",
     "category": "SPICE_OIL",
-    "description": "Cardamom Oil (Elettaria cardamomum), extracted by steam distillation. CAS #: 8000-66-6,. F.E.M.A. : 2241. Specific Gravity: 0.91700 - 0.94700 @ 25&#176;C. Refractive Index: 1.46200 - 1.46600 @ 20&#176;C.",
+    "description": "Cardamom is one of the most significant, valuable spices in the world. It consists of the small, highly aromatic pods or seed capsules of a perennial plant of the ginger family (Zingiberaceae).",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -5260,7 +5228,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
     "featured": true,
     "overview": "Cardamom Oil (Elettaria cardamomum), extracted by steam distillation. CAS #: 8000-66-6,. F.E.M.A. : 2241. Specific Gravity: 0.91700 - 0.94700 @ 25&#176;C. Refractive Index: 1.46200 - 1.46600 @ 20&#176;C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Cardamom oil is used internally for indigestion, nausea, vomiting and pulmonary disease with copious phlegm. Cardamom oil is used for memory enhancement It is used to flavor coffee, baked goods, curries and pickles, milk desserts and mulled wine. It is also used for perfumery, beverages, cosmetics and a blend of potpourris. Cardamom is used in perfumery blend for manufacturing of men's perfume. It is especially used in the preparation of Curve Colognes, Eau De Toilette spray for men. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Antiseptic, aphrodisiac, carminative, digestive, diuretic, stimulant, stomachic, tonic and anti-spasmodic. It also has uplifting and invigorating Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -5268,11 +5236,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "It is also used for perfumery, beverages, cosmetics and a blend of potpourris. Cardamom is used in perfumery blend for manufacturing of men's perfume."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "It is especially used in the preparation of Curve Colognes, Eau De Toilette spray for men."
+        "description": "It is also used for perfumery, beverages, cosmetics a"
       }
     ],
     "signatureColor": "#3E5739",
@@ -5285,7 +5249,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Cassia Oil",
     "botanicalName": "Cinnamomum Cassia",
     "category": "SPICE_OIL",
-    "description": "Cassia Oil (Cinnamomum Cassia), extracted by steam distillation. CAS #: 8007-80-5,. F.E.M.A. : 2258. Specific Gravity: 1.0561 - 1.0568 @ 72&#176;F. Refractive Index: 1.6080 - 1.6090 @ 72&#176;F.",
+    "description": "Cassia essential oil is derivative from leaves all the way through vapor sanitization process. If compared to other oils and natural supplements like Ceylon variety, then it is cheaper as well as supplementary profuse.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -5314,7 +5278,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Cassia Oil (Cinnamomum Cassia), extracted by steam distillation. CAS #: 8007-80-5,. F.E.M.A. : 2258. Specific Gravity: 1.0561 - 1.0568 @ 72&#176;F. Refractive Index: 1.6080 - 1.6090 @ 72&#176;F. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Cassia essential oil can be identified after feeling its sweet, spicy-hot aroma. This essential oil is widely used for the treatment of physical and emotional refreshment. It is also known for affecting the libido as well as due to its aphrodisiac qualities. The delicate scent of Cassia essential oil plays a major role in reducing drowsiness, irritability, pain, frequency of headaches, especially when used in the room. Moreover, cassia oil also helps in relaxing tight muscles, menstrual spasms, and easiness in joint pain and augments movement. What more the essential oil can do- is used as spice and food savor over and above for handling of digestive complaints. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Cassia essential oil has the therapeutic Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -5322,11 +5286,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "It is also known for affecting the libido as well as due to its aphrodisiac qualities. The delicate scent of Cassia essential oil plays a major role in reducing drowsiness, irritability, pain, frequency of headaches, especially when used in the room."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "Moreover, cassia oil also helps in relaxing tight muscles, menstrual spasms, and easiness in joint pain and augments movement. What more the essential oil can do- is used as spice and food savor over and above for handling of digestive complaints."
+        "description": "It is also known for affecting the libido as well as due to its aphrodisiac qualities. The delicate scent of Cassia essential oi"
       }
     ],
     "signatureColor": "#74281A",
@@ -5339,7 +5299,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Celery Oil",
     "botanicalName": "Apium graveolens",
     "category": "SPICE_OIL",
-    "description": "Celery Oil (Apium graveolens), extracted by steam distillation. CAS #: 8015-90-5,. F.E.M.A. : 2271. Specific Gravity: 0.87000 - 0.91000 @ 25&#176;C. Refractive Index: 1.47700 - 1.49300 @ 20&#176;C.",
+    "description": "Celery is a biennial plant with a grooved, fleshy, erect stalk &amp; skinny pennant leaves.",
     "shortSpec": "Steam distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -5368,19 +5328,15 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Celery Oil (Apium graveolens), extracted by steam distillation. CAS #: 8015-90-5,. F.E.M.A. : 2271. Specific Gravity: 0.87000 - 0.91000 @ 25&#176;C. Refractive Index: 1.47700 - 1.49300 @ 20&#176;C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: It can be used in sedative, tonic and carminative preparations as well as fragrance component in soaps, cosmetics, detergents and perfumes. The volatile oil of celery is used in making of perfumes and in pharmaceutical industries. Also, all parts of a celery plant are edible and usable including the root. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Celeryseed Essential Oil has antioxidant, antiseptic (urinary), anti-rheumatic, antispasmodic, aperitif, digestive diuretic, depurative & stomachic Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
-        "description": "It can be used in sedative, tonic and carminative preparations as well as fragrance component in soaps, cosmetics, detergents and perfumes."
+        "description": "It can be used in sedative, tonic and carminative preparations as well as fragrance component in soaps, cosmetics, detergents and perfumes. The volatile oil of celery is used in making of perfumes and in pharmaceutical industries."
       },
       {
         "title": "Therapeutic Properties",
-        "description": "The volatile oil of celery is used in making of perfumes and in pharmaceutical industries."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "Also, all parts of a celery plant are edible and usable including the root."
+        "description": "Also, all parts of a celery plant are edible and usable including the"
       }
     ],
     "signatureColor": "#6E2C1C",
@@ -5393,7 +5349,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Cinnamon Bark Oil",
     "botanicalName": "Cinnamomum zeylanicum",
     "category": "SPICE_OIL",
-    "description": "Cinnamon Bark Oil (Cinnamomum zeylanicum), extracted by steam distillation. CAS #: 8015-91-6,. F.E.M.A. : 2291. Specific Gravity: 1.01000 - 1.03000 @ 25.00 &#176;C. Refractive Index: 1.57300 - 1.59100 @ 20.00 &#176;C.",
+    "description": "The leaves as well as bark are the plant parts from which cinnamon oil is extracted. . Cinnamon Oil is known for it's peppery, earthy oil that is bright, yet slightly woody scent.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -5423,19 +5379,15 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
     "featured": true,
     "overview": "Cinnamon Bark Oil (Cinnamomum zeylanicum), extracted by steam distillation. CAS #: 8015-91-6,. F.E.M.A. : 2291. Specific Gravity: 1.01000 - 1.03000 @ 25.00 &#176;C. Refractive Index: 1.57300 - 1.59100 @ 20.00 &#176;C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Oil is used for flavoring confectionery and liqueurs. It is also used in pharmaceutical and dental preparations. Cinnamon is used as spice flavor, can be readily oxidized. Cinnamon bark oils are used as a stimulant for the circulation, as an antiseptic, as an occasional aphrodisiac. Good for easing arthritis pain, muscle pain and adding heat to the body, but should only be used when highly diluted in a carrier oil. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Anthelmintic, antidiarrheal, antidote, antimicrobal, antiseptic, antispasmodic, antiputrescent, aphrodisiac, astingent, carminative, digestive, emmenagogue, hemostatic, orexigenic, parasticide, refrigerant, spasmolytic, stimulant, stomachic and vermifuge Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
-        "description": "Oil is used for flavoring confectionery and liqueurs. It is also used in pharmaceutical and dental preparations."
+        "description": "Oil is used for flavoring confectionery and liqueurs. It is also used in pharmaceutical and dental preparations. Cinnamon is used as spice flavor, can be readily oxidized."
       },
       {
         "title": "Therapeutic Properties",
-        "description": "Cinnamon is used as spice flavor, can be readily oxidized. Cinnamon bark oils are used as a stimulant for the circulation, as an antiseptic, as an occasional aphrodisiac."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "Good for easing arthritis pain, muscle pain and adding heat to the body, but should only be used when highly diluted in a carrier oil."
+        "description": "Cinnamon bark oils are used as a stimulant for the circulation, as an antiseptic, as an occasional aphrodisiac. Good for easing "
       }
     ],
     "signatureColor": "#74281A",
@@ -5448,7 +5400,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Cinnamon Leaf Oil",
     "botanicalName": "Cinnamomum zeylanicum",
     "category": "SPICE_OIL",
-    "description": "Cinnamon Leaf Oil (Cinnamomum zeylanicum), extracted by steam distillation. CAS #: 8015-91-6,. F.E.M.A. : 2291. Specific Gravity: 1.03000 - 1.05000 @ 25 &#176;C. Refractive Index: 1.52200 - 1.54200 @ 20 &#176;C.",
+    "description": "The leaves as well as bark are the plant parts from which cinnamon oil is extracted. . Cinnamon Oil is known for it's peppery, earthy oil that is bright, yet slightly woody scent.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -5477,19 +5429,15 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Cinnamon Leaf Oil (Cinnamomum zeylanicum), extracted by steam distillation. CAS #: 8015-91-6,. F.E.M.A. : 2291. Specific Gravity: 1.03000 - 1.05000 @ 25 &#176;C. Refractive Index: 1.52200 - 1.54200 @ 20 &#176;C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: It is used in soap making ingredients, lotions, massage oils, diffusers, potpourri, scent, air fresheners, body fragrance, perfume oils, aromatherapy products, bath oils, towel scenting, spa's, incense, light rings, laundry, facial steams and hair treatments. Used for purifying the atmosphere, dispersing negativity, protection. Smudges put out a lot of soothing smoke. Very refreshing, relaxing, clearing --- like traveling through the clouds potent and purifying. It is mostly used as condiments in candies, souffles and also in the process of food preservation. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Anthelmintic, antidiarrheal, antidote, antimicrobal, antiseptic, antispasmodic, antiputrescent, aphrodisiac, astingent, carminative, digestivec, orexigenic, parasticide, refrigerant, spasmolytic, stimulant, stomachic and vermifuge Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
-        "description": "It is used in soap making ingredients, lotions, massage oils, diffusers, potpourri, scent, air fresheners, body fragrance, perfume oils, aromatherapy products, bath oils, towel scenting, spa's, incense, light rings, laundry, facial steams and hair treatments. Used for purifying the atmosphere, dispersing negativity, protection."
+        "description": "It is used in soap making ingredients, lotions, massage oils, diffusers, potpourri, scent, air fresheners, body fragrance, perfume oils, aromatherapy products, bath oils, towel scenting, spa's, incense, light rings, laundry, facial steams and hair treatments."
       },
       {
         "title": "Therapeutic Properties",
-        "description": "Smudges put out a lot of soothing smoke. Very refreshing, relaxing, clearing --- like traveling through the clouds potent and purifying."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "It is mostly used as condiments in candies, souffles and also in the process of food preservation."
+        "description": "Used for purifying the atmosphere, dispe"
       }
     ],
     "signatureColor": "#74281A",
@@ -5502,7 +5450,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Clove Bud Oil",
     "botanicalName": "Eugenia caryophyllus",
     "category": "SPICE_OIL",
-    "description": "Clove Bud Oil (Eugenia caryophyllus), extracted by steam distillation. CAS #: 8000-34-8. F.E.M.A. : 2323. Specific Gravity: 1.03800 - 1.06000 @ 25 &#176;C. Refractive Index: 1.52700 - 1.53500 @ 20 &#176;C.",
+    "description": "A slender evergreen with a smooth gray trunk, up to 12 meters high. At the start of the rainy season long buds appear that have a rosy-pink corolla at the tip.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -5532,19 +5480,15 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
     "featured": true,
     "overview": "Clove Bud Oil (Eugenia caryophyllus), extracted by steam distillation. CAS #: 8000-34-8. F.E.M.A. : 2323. Specific Gravity: 1.03800 - 1.06000 @ 25 &#176;C. Refractive Index: 1.52700 - 1.53500 @ 20 &#176;C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Clove bud oil is useful in the treatment of arthritis, asthma, bronchitis, rheumatism, sprains, strains and toothache. It can be used for acne, bruises, burns and cuts, keeping infection at bay and as a pain reliever. It helps with toothache, mouth sores, rheumatism and arthritis. It is beneficial to the digestive system, effective against vomiting, diarrhea, flatulence, spasms and parasites, as well as bad breath. Clove bud oil is used as an ingredient in food, alcoholic beverages and soft drinks. It is also used in the production of printing ink, glue, and varnish. Clove is reported to stop nicotine addiction. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: It acts like antiseptic ,antihistamine, antioxidant, aphrodisiac, antifungal, anti-viral, powerful bactericidal-large spectrum, antiparasitic, anthelmintic, antiemetic, expectorant, cicatrizant, spasmolytic, splenetic, stimulant (general, digestive, sexual) and tonic(nervous, hypertensive). Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
-        "description": "Clove bud oil is useful in the treatment of arthritis, asthma, bronchitis, rheumatism, sprains, strains and toothache. It can be used for acne, bruises, burns and cuts, keeping infection at bay and as a pain reliever. It helps with toothache, mouth sores, rheumatism and arthritis."
+        "description": "Clove bud oil is useful in the treatment of arthritis, asthma, bronchitis, rheumatism, sprains, strains and toothache. It can be used for acne, bruises, burns and cuts, keeping infection at bay and as a pain reliever."
       },
       {
         "title": "Therapeutic Properties",
-        "description": "It is beneficial to the digestive system, effective against vomiting, diarrhea, flatulence, spasms and parasites, as well as bad breath. Clove bud oil is used as an ingredient in food, alcoholic beverages and soft drinks. It is also used in the production of printing ink, glue, and varnish."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "Clove is reported to stop nicotine addiction."
+        "description": "It helps with toothache, mouth sores, rheumatism and arthritis. It is beneficial t"
       }
     ],
     "signatureColor": "#63261C",
@@ -5557,7 +5501,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Clove Leaf Oil",
     "botanicalName": "Eugenia caryophyllata",
     "category": "SPICE_OIL",
-    "description": "Clove Leaf Oil (Eugenia caryophyllata), extracted by steam distillation. CAS #: 8000-34-8,. F.E.M.A. : 2324. Specific Gravity: 1.03600 - 1.04600 @ 25&#176;C. Refractive Index: 1.53000 - 1.53800 @ 20&#176;C.",
+    "description": "It is a slender evergreen that grows up to 12 meters in height (approximately 36 feet). It change color over time and is beaten from the trees and dried.",
     "shortSpec": "Steam distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -5586,19 +5530,15 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Clove Leaf Oil (Eugenia caryophyllata), extracted by steam distillation. CAS #: 8000-34-8,. F.E.M.A. : 2324. Specific Gravity: 1.03600 - 1.04600 @ 25&#176;C. Refractive Index: 1.53000 - 1.53800 @ 20&#176;C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Clove leaf oil is a strong germicide, a powerful antiseptic, a weak local anaesthetic applied to decayed teeth and has been used with success as a stimulating expectorant in phthisis and bronchial troubles. Clove oil is used for toothpastes, soaps, toiletries, cosmetics and perfumes. Clove oil is used in spices and condiments and also as a flavoring ingredient in major food categories, alcoholic and soft drinks. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Analgesic, antiseptic, antispasmodic, anti-neuralgic, anti-infectious, carminative, disinfectant, insecticide, stimulant, stomachic, uterine and tonic. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
-        "description": "Clove leaf oil is a strong germicide, a powerful antiseptic, a weak local anaesthetic applied to decayed teeth and has been used with success as a stimulating expectorant in phthisis and bronchial troubles."
+        "description": "Clove leaf oil is a strong germicide, a powerful antiseptic, a weak local anaesthetic applied to decayed teeth and has been used with success as a stimulating expectorant in phthisis and bronchial troubles. Clove oil is used for toothpastes, soaps, toiletries, cosmetics and perfumes."
       },
       {
         "title": "Therapeutic Properties",
-        "description": "Clove oil is used for toothpastes, soaps, toiletries, cosmetics and perfumes."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "Clove oil is used in spices and condiments and also as a flavoring ingredient in major food categories, alcoholic and soft drinks."
+        "description": "Clove oil is us"
       }
     ],
     "signatureColor": "#63261C",
@@ -5611,7 +5551,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Coriander Oil",
     "botanicalName": "Coriandrum sativum",
     "category": "SPICE_OIL",
-    "description": "Coriander Oil (Coriandrum sativum), extracted by steam distillation. CAS #: 8008-52-4. F.E.M.A. : 2334. Specific Gravity: 0.86300 - 0.87500 @ 25.00 &#176;C. Refractive Index: 0.86200 - 0.87800 @ 20.00 &#176;C.",
+    "description": "This annual or biennial plant is a native of Morocco having sparse, fine, feathery leaves and pinkish/white flowers. The oil is extracted from the seeds of the plant",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -5640,7 +5580,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Coriander Oil (Coriandrum sativum), extracted by steam distillation. CAS #: 8008-52-4. F.E.M.A. : 2334. Specific Gravity: 0.86300 - 0.87500 @ 25.00 &#176;C. Refractive Index: 0.86200 - 0.87800 @ 20.00 &#176;C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Coriander oil can be useful to refresh and to uplift the mind. It can be helpful for mental fatigue, migraine, tension and nervous weakness. It has a warming effect on the stomach and relieve wind and cramps, while revitalizing the glandular system. It is applied externally as a lotion for rheumatic pain. Coriander essential oil is used in the manufacture of perfumes, cosmetics and dentifrices. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Analgesic, aphrodisiac, anti-spasmodic, antispasmodic, carminative, depurative, deodorant, digestive, carminative, fungicidal, lipolytic, revitalizing, stimulant and stomachic. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -5648,11 +5588,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "It has a warming effect on the stomach and relieve wind and cramps, while revitalizing the glandular system. It is applied externally as a lotion for rheumatic pain."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "Coriander essential oil is used in the manufacture of perfumes, cosmetics and dentifrices."
+        "description": "It has a warming effect on the stomach and relieve wind and cramps, while revitalizing the glandular system. It is applied externally as a lotion for rheumatic"
       }
     ],
     "signatureColor": "#544622",
@@ -5665,7 +5601,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Cumin Oil",
     "botanicalName": "Cuminum cyminum",
     "category": "SPICE_OIL",
-    "description": "Cumin Oil (Cuminum cyminum), extracted by steam distillation. CAS #: 8014-13-9,. F.E.M.A. : 2343.",
+    "description": "The cumin oil has a spicy and very penetrating smell. The seeds of the plant are used to extract the oil which is mainly used in food preparations.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -5694,7 +5630,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Cumin Oil (Cuminum cyminum), extracted by steam distillation. CAS #: 8014-13-9,. F.E.M.A. : 2343. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Cumin is useful as a warming oil and helps relieve muscular pains and osteoarthritis. In the digestive system, it acts as a stimulant that helps with colic, dyspepsia, flatulence, bloating and indigestion. The Cumin seed essential oil is used in a variety of food products. It is also majorly used in the preparation of mouth washes, gargle preparations, toothpaste flavors, chewing gum and in pharmaceuticals. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Astringent, cardiac, carminative, digestive, stimulant Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -5702,7 +5638,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "The Cumin seed essential oil is used in a variety of food products. It is also majorly used in the preparation of mouth washes, gargle preparations, toothpaste flavors, chewing gum and in pharmaceuticals."
+        "description": "The Cumin seed essential oil is used in a variety of food products. It is also majorly used in"
       }
     ],
     "signatureColor": "#544622",
@@ -5715,7 +5651,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Curry Leaf Oil",
     "botanicalName": "Murraya Koenigii",
     "category": "SPICE_OIL",
-    "description": "Curry Leaf Oil (Murraya Koenigii), extracted by steam distillation. CAS #: 8008-52-4. F.E.M.A. : 2334. Specific Gravity: 0.86300 - 0.87500 @ 25&#176;C. Refractive Index: 0.86200 - 0.87800 @ 20 &#176;C.",
+    "description": "An aromatic shrub or small tree. The tree is an aromatic deciduous one, five meter in height, 15-40 cm in diameter. The leaves are distilled to extract the oil from the plant.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -5744,19 +5680,15 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Curry Leaf Oil (Murraya Koenigii), extracted by steam distillation. CAS #: 8008-52-4. F.E.M.A. : 2334. Specific Gravity: 0.86300 - 0.87500 @ 25&#176;C. Refractive Index: 0.86200 - 0.87800 @ 20 &#176;C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: It has also been found to prevent hair loss and as a means of helping the skin maintain it&#146;s natural pigmentation. Curry leaf oil is found to be used in the cure of diabetes. It is extensively used for flavoring curries, pickles, soups, chutneys.Curry It is used for the production of soap.Volatile oil is used as a fixative for soap perfume. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Analgesic, aphrodisiac, anti-spasmodic, antispasmodic, carminative, depurative, deodorant, digestive, carminative, fungicidal, lipolytic, revitalizing, stimulant and stomachic. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
-        "description": "It has also been found to prevent hair loss and as a means of helping the skin maintain it's natural pigmentation."
+        "description": "It has also been found to prevent hair loss and as a means of helping the skin maintain it&#146;s natural pigmentation. Curry leaf oil is found to be used in the cure of diabetes."
       },
       {
         "title": "Therapeutic Properties",
-        "description": "Curry leaf oil is found to be used in the cure of diabetes."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "It is extensively used for flavoring curries, pickles, soups, chutneys.Curry It is used for the production of soap.Volatile oil is used as a fixative for soap perfume."
+        "description": "It is extensively used for flavoring curries, pickles, soups, chutneys.Curry It is used for the production of soap.Volat"
       }
     ],
     "signatureColor": "#6E2C1C",
@@ -5769,7 +5701,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Dill Seed Oil",
     "botanicalName": "Anethum Sowa",
     "category": "SPICE_OIL",
-    "description": "Dill Seed Oil (Anethum Sowa), extracted by steam distillation. CAS #: 8006-75-5,. F.E.M.A. : 2383. Specific Gravity: 0.88400 - 0.90000 @ 25&#176;C. Refractive Index: 1.47900 - 1.49700 @ 20&#176;C.",
+    "description": "It ts an annual aromatic herb. The oil has a powerful and fresh, sweet spicy, peppery and aromatic odor.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -5798,7 +5730,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Dill Seed Oil (Anethum Sowa), extracted by steam distillation. CAS #: 8006-75-5,. F.E.M.A. : 2383. Specific Gravity: 0.88400 - 0.90000 @ 25&#176;C. Refractive Index: 1.47900 - 1.49700 @ 20&#176;C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: The oil is used extensively in beverage and foodstuffs. Dill oil is almost exclusively used for flavouring purposes in pickle industry due to high concentration of a chemical called carvone, Dill oil is used in cosmetics and perfumes. Myristicin, apiol, and dillapiol present in dill oil are effective naturally occurring insecticides. It is also an important fragrance component in detergents, soaps and shaving lotions. Dill is also used in making diffusers, candles and vaporisers. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: It is stimulating, revitalizing, restoring, purifying, balancing, antispasmodic, carminative, diuretic, stimulant, stomachic and cleansing agent.t has also been used as a remedy for colic and insomnia and as a stimulant for lactation. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -5806,11 +5738,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "Myristicin, apiol, and dillapiol present in dill oil are effective naturally occurring insecticides. It is also an important fragrance component in detergents, soaps and shaving lotions."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "Dill is also used in making diffusers, candles and vaporisers."
+        "description": "Myristicin, apiol, and dillapiol present in dill oil are effectiv"
       }
     ],
     "signatureColor": "#544622",
@@ -5823,7 +5751,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Fennel Oil",
     "botanicalName": "Foeniculum vulgare",
     "category": "SPICE_OIL",
-    "description": "Fennel Oil (Foeniculum vulgare), extracted by steam distillation. CAS #: 8006-84-6 ,. F.E.M.A. : 2482. Specific Gravity: 0.95300 - 0.97300 @ 25&#176;C. Refractive Index: 1.51000 - 1.56200 @ 20&#176;C.",
+    "description": "Fennel grows up to 2 meters (6 feet) in height, the ultimate leaves very numerous, filiform, the superior leaves with sheaths longer than the blade. Fennel essential oil extracted from the seed.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -5852,7 +5780,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Fennel Oil (Foeniculum vulgare), extracted by steam distillation. CAS #: 8006-84-6 ,. F.E.M.A. : 2482. Specific Gravity: 0.95300 - 0.97300 @ 25&#176;C. Refractive Index: 1.51000 - 1.56200 @ 20&#176;C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Fennel oil is a remedy for digestive complaints such as flatulence, constipation, colic, nausea, vomiting, anorexia, dyspepsia and hiccups. It is also used in cases of obesity Used in a base cream or lotion, fennel oil can be helpful for general skin care and especially for dispersing bruises, livening a dull complexion, clearing an oily skin and fighting wrinkles in mature skins It has a toning effect on the spleen and liver, that helps with the results of excess drink and food. It is also used for increasing insufficient milk in nursing mothers - but for boosting breast milk, rather use the fresh herb, since the oil contains very high concentrations of trans-anethole. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Aperitif, antiseptic, antispasmodic, carminative, depurative, diuretic, emmenagogue, expectorant, galactagogue, laxative, stimulant, stomachic, splenic, tonic and vermifuge. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -5860,11 +5788,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "It is also used in cases of obesity Used in a base cream or lotion, fennel oil can be helpful for general skin care and especially for dispersing bruises, livening a dull complexion, clearing an oily skin and fighting wrinkles in mature skins It has a toning effect on the spleen and liver, that helps with the results of excess drink and food."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "It is also used for increasing insufficient milk in nursing mothers - but for boosting breast milk, rather use the fresh herb, since the oil contains very high concentrations of trans-anethole."
+        "description": "It is also used in cases of obesity Used in a base cream or lotion, fennel oil can be helpful for general skin care and especially for dispersing bruises, liven"
       }
     ],
     "signatureColor": "#544622",
@@ -5877,7 +5801,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Fenugreek Oil",
     "botanicalName": "Trigonella foenum",
     "category": "SPICE_OIL",
-    "description": "Fenugreek Oil (Trigonella foenum), extracted by steam distillation. CAS #: 84625-40-1. Specific Gravity: 0.97900 - 0.98400 @ 25&#176;C. Refractive Index: 1.48900 - 1.49300 @ 20&#176;C.",
+    "description": "Fenugreek is an ancient spice, although currently not influenced much in the West. It has been grown as a medicinal plant in India and Europe during the Middle Ages.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -5906,7 +5830,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Fenugreek Oil (Trigonella foenum), extracted by steam distillation. CAS #: 84625-40-1. Specific Gravity: 0.97900 - 0.98400 @ 25&#176;C. Refractive Index: 1.48900 - 1.49300 @ 20&#176;C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Fenugreek is used to treat diabetes in adults (late-onset diabetes), poor digestion, gastric inflammation, digestive disorders and tuberculosis It is used to promote lactation and as an aphrodisiac. It is also an excellent source of selenium, an anti-radiant which helps the body utilize oxygen and is also a natural source of iron, silicon, sodium and thiamine. The maple aroma and flavor of fenugreek has led to its use in many baked goods, chutneys, confections and imitation maple syrup. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: It is aphrodisiac , carminative, demulcent, expectorant, laxative, dibetic and stomachic Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -5914,11 +5838,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "It is also an excellent source of selenium, an anti-radiant which helps the body utilize oxygen and is also a natural source of iron, silicon, sodium and thiamine."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "The maple aroma and flavor of fenugreek has led to its use in many baked goods, chutneys, confections and imitation maple syrup."
+        "description": "It is also an excellent source of selenium, an anti-radiant which helps the body utilize oxygen and i"
       }
     ],
     "signatureColor": "#6E2C1C",
@@ -5931,7 +5851,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Galangal Oil",
     "botanicalName": "Alpina Officinalis",
     "category": "SPICE_OIL",
-    "description": "Galangal Oil (Alpina Officinalis), extracted by steam distillation. CAS #: 8024-40-6,. F.E.M.A. : 2500. Specific Gravity: 0.955 - 0.975 @ 72&#176;F. Refractive Index: 1.4940 - 1.4952 @ 72&#176;F.",
+    "description": "Galangal is the dried root of the plant which found mainly in eastern Himalayas and south west India. It is used as a spice and has wide usage in various medicinal preparations.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -5960,7 +5880,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Galangal Oil (Alpina Officinalis), extracted by steam distillation. CAS #: 8024-40-6,. F.E.M.A. : 2500. Specific Gravity: 0.955 - 0.975 @ 72&#176;F. Refractive Index: 1.4940 - 1.4952 @ 72&#176;F. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Used as spice, this oil also finds wide application in various medicinal preparations. It is useful in respiratory troubles and in rheumatism &amp; catarrhal affections, especially in bronchial catarrh. Very useful for upsets digestive system, indicated for dyspepsia, flatulence, colic, nausea, and vomiting. It is the folk cure to cold and sore throat Galangal oil is commonly used in Thai &amp; Indian soups and curries. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Antiseptic, bactericidal, carminative, diaphoretic, stimulant, and stomachic. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -5968,7 +5888,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "Very useful for upsets digestive system, indicated for dyspepsia, flatulence, colic, nausea, and vomiting. It is the folk cure to cold and sore throat Galangal oil is commonly used in Thai & Indian soups and curries."
+        "description": "Very useful for upsets digestive system, indicated for dyspepsia, flatulence, colic, nausea, and vomi"
       }
     ],
     "signatureColor": "#6E2C1C",
@@ -5981,7 +5901,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Garlic Oil",
     "botanicalName": "Allium sativum",
     "category": "SPICE_OIL",
-    "description": "Garlic Oil (Allium sativum), extracted by steam distillation. CAS #: 8000-78-0,. F.E.M.A. : 2503. Specific Gravity: 1.04000 - 1.09000 @ 25&#176;C. Refractive Index: 1.55900 - 1.57900 @ 20&#176;C.",
+    "description": "Garlic is an important condiment crop. It is an erect biennial herb normally grown as an annual&#151;i.e. a plant that only lasts for an year",
     "shortSpec": "Steam distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -6010,19 +5930,15 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Garlic Oil (Allium sativum), extracted by steam distillation. CAS #: 8000-78-0,. F.E.M.A. : 2503. Specific Gravity: 1.04000 - 1.09000 @ 25&#176;C. Refractive Index: 1.55900 - 1.57900 @ 20&#176;C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: In herbal medicine, garlic has been traditionally used for such ailments as asthma, deafness, leprosy, bronchial, congestion, arteriosclerosis, fevers, worms and liver and gall bladder troubles. It is a very good immune enhancer and cell protector. It is used as spice oil worldwide for flavorings the dishes, beverages, etc. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Analgesic, antiseptic, anti-microbial,, antidibetic, anti-catarrhal, nutritive, antispasmodic, anti-neuralgic, anti-infectious, carminative, disinfectant, insecticide, stimulant, stomachic, uterine and cardiovascular tonic. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
-        "description": "In herbal medicine, garlic has been traditionally used for such ailments as asthma, deafness, leprosy, bronchial, congestion, arteriosclerosis, fevers, worms and liver and gall bladder troubles."
+        "description": "In herbal medicine, garlic has been traditionally used for such ailments as asthma, deafness, leprosy, bronchial, congestion, arteriosclerosis, fevers, worms and liver and gall bladder troubles. It is a very good immune enhancer and cell protector."
       },
       {
         "title": "Therapeutic Properties",
-        "description": "It is a very good immune enhancer and cell protector."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "It is used as spice oil worldwide for flavorings the dishes, beverages, etc."
+        "description": "It is used as spice oil worldwide for flavorings th"
       }
     ],
     "signatureColor": "#6E2C1C",
@@ -6035,7 +5951,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Ginger Oil",
     "botanicalName": "Zingiber Officinalis",
     "category": "SPICE_OIL",
-    "description": "Ginger Oil (Zingiber Officinalis), extracted by steam distillation. CAS #: 8007-08-7,. F.E.M.A. : 2522. Specific Gravity: 0.8900 - 0.8990 @ 72&#176;F. Refractive Index: 1.4950 - 1.5600 @ 72&#176;F.",
+    "description": "Ginger is a perennial herb that can stand up to about 3 - 4 feet high and has a thick spreading tuberous rhizome. The root of ginger is macerated and distilled over high heat, for extracting the oil.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -6065,7 +5981,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
     "featured": true,
     "overview": "Ginger Oil (Zingiber Officinalis), extracted by steam distillation. CAS #: 8007-08-7,. F.E.M.A. : 2522. Specific Gravity: 0.8900 - 0.8990 @ 72&#176;F. Refractive Index: 1.4950 - 1.5600 @ 72&#176;F. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Ginger oil is used in the treatment of fractures, rheumatism, arthritis, bruising, carbuncles, diarrhea, colic, cramps, nausea, hangovers, travel and sea sickness, colds and flu, sores on the skin, sore throat,catarrh, congestion, coughs, sinusitis, chills and fever. Ginger oil is a seasoning and flavors sweets, including cakes, cookies, breads, and beverages. Also used in lot of perfumery creation and blending with other essential oils. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Ginger oil is analgesic, anti-emetic, antiseptic, antispasmodic, bactericidal, carminative, cephalic, expectorant, febrifuge, laxative, rubefacient, stimulant, stomachic, sudorific and tonic. Ginger is warming, stimulating and grounding. It aids memory and is an aphrodisiac and also helps with pain relief and detoxification. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -6073,11 +5989,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "Ginger oil is a seasoning and flavors sweets, including cakes, cookies, breads, and beverages."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "Also used in lot of perfumery creation and blending with other essential oils."
+        "description": "Ginger oil is a seasoning and fl"
       }
     ],
     "signatureColor": "#7E4314",
@@ -6090,7 +6002,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Hyssop Oil",
     "botanicalName": "Hyssopus Officinalis",
     "category": "SPICE_OIL",
-    "description": "Hyssop Oil (Hyssopus Officinalis), extracted by steam distillation. CAS #: 8006-83-5,. F.E.M.A. : 2591. Specific Gravity: 0.93300 - 0.94500 @ 72&#176;F. Refractive Index: 1.48100 - 1.48900 @ 72&#176;F.",
+    "description": "Found in Mediterranean area, Hyssop plant from which Hyssop oil is extracted has a woody, hairy stem, small lance-shaped green leaves &amp; purple-blue flowers.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -6119,18 +6031,14 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Hyssop Oil (Hyssopus Officinalis), extracted by steam distillation. CAS #: 8006-83-5,. F.E.M.A. : 2591. Specific Gravity: 0.93300 - 0.94500 @ 72&#176;F. Refractive Index: 1.48100 - 1.48900 @ 72&#176;F. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Used in aromatherapy for various purpose. Provides relief against bronchial spasms &amp; thus helpful for asthma attacks. It is easing sore throats caused by sinus issues. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Anti-rheumatic, antispasmodic, antiseptic, carminative, digestive, cicatrizant, diuretic, expectorant, emmenagogue, nervine, sedative, tonic, stimulant and as a vulnerary agent. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
-        "description": "Used in aromatherapy for various purpose."
+        "description": "Used in aromatherapy for various purpose. Provides relief against bronchial spasms & thus helpful for asthma attacks."
       },
       {
         "title": "Therapeutic Properties",
-        "description": "Provides relief against bronchial spasms & thus helpful for asthma attacks."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
         "description": "It is easing sore throats caused by sinus issues."
       }
     ],
@@ -6144,7 +6052,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Laurel Berry Oil",
     "botanicalName": "Laurus nobilis",
     "category": "SPICE_OIL",
-    "description": "Laurel Berry Oil (Laurus nobilis), extracted by steam distillation. CAS #: 8007-48-5.",
+    "description": "Laurel Berry oil is pale yellow, greenish yellow, or olive green, with a fresh medicinal, but pleasantly spicy and warm aroma, reminiscent of myrtle, juniperberry, hyssop, and similar oils.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -6173,7 +6081,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Laurel Berry Oil (Laurus nobilis), extracted by steam distillation. CAS #: 8007-48-5. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: It is useful in dyspepsia, flatulence, loss of appetite, scanty periods, colds, flu, tonsillitis, viral infections etc. Laurel Berry oil has been used as an insect repellant, a spice oil, and a culinary herb oil. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: It is anti-rheumatic, antiseptic, bactericidal, diaphoretic, digestive, diuretic, emmenagogue, fungicidal, hypotensive, stomachic, sedative Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -6194,7 +6102,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Mace Oil",
     "botanicalName": "Myristica Fragrans",
     "category": "SPICE_OIL",
-    "description": "Mace Oil (Myristica Fragrans), extracted by steam distillation. CAS #: 8007-12-3,. F.E.M.A. : 2653. Specific Gravity: 0.86000 - 0.89200 @ 20 C. Refractive Index: 1.47200 - 1.47900 @ 20 C.",
+    "description": "The nutmeg fruit is pendulous and similar in presentation to a peach. When fully mature, it splits in two, exposing a crimson-colored aril. This is the mace which surrounds the nutmeg pit.",
     "shortSpec": "Steam distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -6223,19 +6131,15 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Mace Oil (Myristica Fragrans), extracted by steam distillation. CAS #: 8007-12-3,. F.E.M.A. : 2653. Specific Gravity: 0.86000 - 0.89200 @ 20 C. Refractive Index: 1.47200 - 1.47900 @ 20 C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Mace oil is used in the curing of cardiac disorders, pre-menstrual pain, digestive troubles like colic and flatulence. It is highly effective stimulant for the brain and the cardiac system. widely used in electuaries and tonics. It is also recommended for treating various inflammations found in the bladder and urinary tract. Furthermore, the range is also applied externally and is very beneficial in arthritis and chronic rheumatism. The range is also used in the preparations of savory dishes. Known by the Indian name Jawitri, the range is utilized for adding flavour and as a medicine. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Mace oil is Non-toxic, non-irritant and non-sensitizing. The oils has analgesic, anti-oxidant, anti-septic and digestive Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
-        "description": "Mace oil is used in the curing of cardiac disorders, pre-menstrual pain, digestive troubles like colic and flatulence. It is highly effective stimulant for the brain and the cardiac system. widely used in electuaries and tonics."
+        "description": "Mace oil is used in the curing of cardiac disorders, pre-menstrual pain, digestive troubles like colic and flatulence. It is highly effective stimulant for the brain and the cardiac system."
       },
       {
         "title": "Therapeutic Properties",
-        "description": "It is also recommended for treating various inflammations found in the bladder and urinary tract. Furthermore, the range is also applied externally and is very beneficial in arthritis and chronic rheumatism. The range is also used in the preparations of savory dishes."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "Known by the Indian name Jawitri, the range is utilized for adding flavour and as a medicine."
+        "description": "widely used in electuaries and tonics. It is also recommended for treating various inflammations found in the "
       }
     ],
     "signatureColor": "#63261C",
@@ -6248,7 +6152,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Marjoram Oil",
     "botanicalName": "Origanum majorana",
     "category": "SPICE_OIL",
-    "description": "Marjoram Oil (Origanum majorana), extracted by stem distillation. CAS #: 8015-01-8,. F.E.M.A. : 2663. Specific Gravity: 0.86000 - 0.89200 @ 20 C. Refractive Index: 1.47200 - 1.47900 @ 20 C.",
+    "description": "Marjoram oil has a warm, slightly spicy smell and is colorless to pale yellow/amber in color. This tender bushy perennial herb, dark green oval leaves and small white or pink flowers.",
     "shortSpec": "Stem Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -6277,7 +6181,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Marjoram Oil (Origanum majorana), extracted by stem distillation. CAS #: 8015-01-8,. F.E.M.A. : 2663. Specific Gravity: 0.86000 - 0.89200 @ 20 C. Refractive Index: 1.47200 - 1.47900 @ 20 C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Marjoram has been used as a folk remedy, culinary herb, fragrance and medicine. It is also used as an analgesic and anti-spasmodic and also been used traditionally treat depression. The oil is used as an external application for sprains, bruises, stiff and paralytic limb. The oil finds application in all aspects of our lives such as pain-relief, beauty care, and cooking. It soothes the digestive system and helps with cramps, indigestion, constipation and flatulence and has a beneficial action on colds, sinusitis, bronchitis and asthma. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Marjoram oil is non-toxic, non-irritant and non-sensitizing but should not be used during pregnancy. It was a very popular herb amongst the Greeks and widely used in medicine and perfumes. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -6285,11 +6189,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "The oil is used as an external application for sprains, bruises, stiff and paralytic limb. The oil finds application in all aspects of our lives such as pain-relief, beauty care, and cooking."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "It soothes the digestive system and helps with cramps, indigestion, constipation and flatulence and has a beneficial action on colds, sinusitis, bronchitis and asthma."
+        "description": "The oil is used as an external application for sprains, bruises, stiff and paralytic limb. The oil finds application i"
       }
     ],
     "signatureColor": "#2A4E2B",
@@ -6302,7 +6202,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Onion Oil",
     "botanicalName": "Allium cepa",
     "category": "SPICE_OIL",
-    "description": "Onion Oil (Allium cepa), extracted by steam distillation. CAS #: 8002-72-0,. F.E.M.A. : 2817. Specific Gravity: 1.04020 - 1.142045 @ 72&#176;F. Refractive Index: 1.53000 - 1.57 000 @ 72&#176;F.",
+    "description": "Onion Oil is 100% natural and features clear amber yellow to amber orange color .It is a volatile Oil obtained by steam distillation process.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -6331,19 +6231,15 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Onion Oil (Allium cepa), extracted by steam distillation. CAS #: 8002-72-0,. F.E.M.A. : 2817. Specific Gravity: 1.04020 - 1.142045 @ 72&#176;F. Refractive Index: 1.53000 - 1.57 000 @ 72&#176;F. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Onions have been useful for treating various human diseases such as tumors, persistent coughs and cold. Medicine practitioners consider this plant form as a perfect home remedy for relieving disease syndromes. Onion consumption can help in prevention of stomach and breast cancer. Onions are often used to prevent tooth decay and oral infections. Onion Oil aids in thinning of the blood, which in turn prevents the red blood cells from forming clumps. These blocks could lead to heart disorders or cardiovascular diseases. Onions are said to increase the urge for healthy sexual life. One table spoon of onion Oil or juice along with spoonful of ginger juice, taken trice a day can boost the libido and sex drive. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Anthelmintic, antimicrobial, anti-rheumatic, antiseptic, anti-sclerotic, antispasmodic, antiviral, bactericidal, carminative, depurative, digestive, diuretic, expectorant, fungicidal, hypoglycemic, hypotensive, stomachic, tonic and vermifuge. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
-        "description": "Onions have been useful for treating various human diseases such as tumors, persistent coughs and cold. Medicine practitioners consider this plant form as a perfect home remedy for relieving disease syndromes. Onion consumption can help in prevention of stomach and breast cancer."
+        "description": "Onions have been useful for treating various human diseases such as tumors, persistent coughs and cold. Medicine practitioners consider this plant form as a perfect home remedy for relieving disease syndromes."
       },
       {
         "title": "Therapeutic Properties",
-        "description": "Onions are often used to prevent tooth decay and oral infections. Onion Oil aids in thinning of the blood, which in turn prevents the red blood cells from forming clumps. These blocks could lead to heart disorders or cardiovascular diseases."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "Onions are said to increase the urge for healthy sexual life. One table spoon of onion Oil or juice along with spoonful of ginger juice, taken trice a day can boost the libido and sex drive."
+        "description": "Onion consumption can help in prevention of stomach and breast cancer. Onions are often us"
       }
     ],
     "signatureColor": "#6E2C1C",
@@ -6356,7 +6252,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Oregano Oil",
     "botanicalName": "Origanum vulgare",
     "category": "SPICE_OIL",
-    "description": "Oregano Oil (Origanum vulgare), extracted by steam distillation. CAS #: 8007-11-2,. F.E.M.A. : 2827. Specific Gravity: 0.93800 - 0.93880 @ 20C. Refractive Index: 1.50900 - 1.51600 @ 20C.",
+    "description": "Oregano is a member of the the mint family. Oregano essential oil is produced from the oregano plant through the process of steam distillation.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -6385,7 +6281,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Oregano Oil (Origanum vulgare), extracted by steam distillation. CAS #: 8007-11-2,. F.E.M.A. : 2827. Specific Gravity: 0.93800 - 0.93880 @ 20C. Refractive Index: 1.50900 - 1.51600 @ 20C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Used commonly in medicines for wounds, headaches, and venomous bites and even hemlock poisoning. Oregano oil has powerful anti-microbial. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: It is analgesic, anthelmintic, antirheumatic, antiseptic, antispasmodic, antitoxic, antiviral, bactericidal, carminative, choleretic, cytophylactic, diaphoretic, diuretic, emmenagogue, expectorant, febrifuge, fungicidal, parasiticide, rubefacient, stimulant, tonic. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -6393,11 +6289,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "It has also been used to eliminate lice infestations and intestinal worms. It is also used to treat fever, vomiting, diarrhoea, jaundice and itchy skin conditions Used as a fragrance component in soaps, colognes and perfumes, especially men's fragrances."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "Employed to some extent as a flavouring agent, mainly in meat products and pizzas."
+        "description": "It has also been used to eliminate lice infesta"
       }
     ],
     "signatureColor": "#2A4E2B",
@@ -6410,7 +6302,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Parsley Seed Oil",
     "botanicalName": "Petroselinum crispum",
     "category": "SPICE_OIL",
-    "description": "Parsley Seed Oil (Petroselinum crispum), extracted by steam distillation. CAS #: 8000-68-8,. F.E.M.A. : 2836. Specific Gravity: 0.9062 - 0.9068 @ 72&#176;F. Refractive Index: 1.4842 - 1.4849 @ 72&#176;F.",
+    "description": "Parsley Seed Oil is steam extracted from a short-lived perennial herb that has bright green foliage and small greenish-yellow flowers that produce small brown seeds.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -6439,11 +6331,11 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Parsley Seed Oil (Petroselinum crispum), extracted by steam distillation. CAS #: 8000-68-8,. F.E.M.A. : 2836. Specific Gravity: 0.9062 - 0.9068 @ 72&#176;F. Refractive Index: 1.4842 - 1.4849 @ 72&#176;F. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: It is used cosmetics and body care products, it is used in soaps, detergents, colognes, cosmetics and perfumes, especially men&#146;s fragrances. Further, it is also extensively used in varied types of food flavorings, especially meats, pickles &amp; sauces as well as alcoholic &amp; soft drinks. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Antimicrobal, antirheumatic, antiseptic, astringent, carminative, diuretic, depurative, emmenagogue, febrifuge, hypotensive, laxative, stimulant (mild), stomachic, tonic (uterine). Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
-        "description": "It is used cosmetics and body care products, it is used in soaps, detergents, colognes, cosmetics and perfumes, especially men's fragrances."
+        "description": "It is used cosmetics and body care products, it is used in soaps, detergents, colognes, cosmetics and perfumes, especially men&#146;s fragrances."
       },
       {
         "title": "Therapeutic Properties",
@@ -6460,7 +6352,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Saffron Oil",
     "botanicalName": "Crocus sativus",
     "category": "SPICE_OIL",
-    "description": "Saffron Oil (Crocus sativus), extracted by steam distillation. CAS #: 8022-19-3. Specific Gravity: 0.91000 - 0.91500 @ 25 &#176;C. Refractive Index: 1.47600 - 1.48000 @ 20 &#176;C.",
+    "description": "Saffron is one of the most expensive spices. The oil has a woody, spicy and hay like odour.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -6489,7 +6381,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Saffron Oil (Crocus sativus), extracted by steam distillation. CAS #: 8022-19-3. Specific Gravity: 0.91000 - 0.91500 @ 25 &#176;C. Refractive Index: 1.47600 - 1.48000 @ 20 &#176;C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Saffron is a great medicine for the heart, and its fragrance in incense has been used traditionally for its heart-opening and compassion-enhancing powers. It fragrance is clean and purifying, and its. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Strong antipoisonous, aphrodisiac, cardiotonic, carminative, diaphoretic, diuretic, emmenagogue, febrifuge, stimulant, lactogogue, livotonic, nervine tonic, sedative and styptic Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -6497,11 +6389,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "It is used in acne, apoplexy, arthritis, asthma, colic, cough dyspepsia, hemierania, insect bites and stings, liver disorders, mental disorders, neurasthenia, oedema, painful menstruation, phthisis, prolapse of anus, sore throat and splenetic disorders. It is attributed with extraordinary properties for improving weak eyesight and highly valued as a complexion builder."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "It is useful in sexual disorders."
+        "description": "It is used in acne, apoplexy, arthritis, asthma, colic, cou"
       }
     ],
     "signatureColor": "#8C3C10",
@@ -6514,7 +6402,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Sage Oil",
     "botanicalName": "Salvia officinalis",
     "category": "SPICE_OIL",
-    "description": "Sage Oil (Salvia officinalis), extracted by steam distillation. CAS #: 8022-56-8,. F.E.M.A. : 3001. Specific Gravity: 0.9110 - 0.9120 @ 72&#176;F. Refractive Index: 1.4666 - 1.4678 @ 72&#176;F.",
+    "description": "Sage Essential Oil, extracted from herbs that are considered sacred by the ancient Egyptians. The oil has a distinct spicy fragrance and is distilled from dried leaves of the herbs.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -6543,7 +6431,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Sage Oil (Salvia officinalis), extracted by steam distillation. CAS #: 8022-56-8,. F.E.M.A. : 3001. Specific Gravity: 0.9110 - 0.9120 @ 72&#176;F. Refractive Index: 1.4666 - 1.4678 @ 72&#176;F. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: The Sage Essential Oil is widely used in the pharmaceutical industry because of its diverse medicinal. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: It is anti microbial, anti fungal, anti oxidant, antiseptic, anti inflammatory, anti spasmodic and anti bacterial. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -6564,7 +6452,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Tarragon Oil",
     "botanicalName": "Artemisia dracunculus",
     "category": "SPICE_OIL",
-    "description": "Tarragon Oil (Artemisia dracunculus), extracted by steam distillation method. CAS #: 8016-88-4,. F.E.M.A. : 2412. Specific Gravity: 0.860 - 0.950 @ 25.00 &#176;C. Refractive Index: 1.50400 - 1.52000 @ 20.00 &#176;C.",
+    "description": "These are perennial herbs that have smooth narrow leaves; an erect stem up to 1,2 metres tall. Native to Europe, southern Russia and western Asia, these are available all over the world.",
     "shortSpec": "Steam Distillation method",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -6593,7 +6481,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Tarragon Oil (Artemisia dracunculus), extracted by steam distillation method. CAS #: 8016-88-4,. F.E.M.A. : 2412. Specific Gravity: 0.860 - 0.950 @ 25.00 &#176;C. Refractive Index: 1.50400 - 1.52000 @ 20.00 &#176;C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Tarragon oil stimulates the appetite and has a pronounced effect on the sluggish digestive system. It can be helpful for anorexia, dyspepsia, flatulence, hiccups, internal spasm and nervous indigestion, as well as helpful for menstrual pains and to regulate periods. In vapor therapy and diluted in the bath, tarragon oil can help with the digestive system and for menstrual pains. As a blended massage oil, tarragon oil can assist with the digestive and genito-urinary systems. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Anti-rheumatic, aperitif, digestive, deodorant, emmenagogue, stimulant and vermifuge. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -6601,7 +6489,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "In vapor therapy and diluted in the bath, tarragon oil can help with the digestive system and for menstrual pains. As a blended massage oil, tarragon oil can assist with the digestive and genito-urinary systems."
+        "description": "In vapor therapy and diluted in t"
       }
     ],
     "signatureColor": "#6E2C1C",
@@ -6614,7 +6502,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Thyme Oil",
     "botanicalName": "Thymus vulgaris",
     "category": "SPICE_OIL",
-    "description": "Thyme Oil (Thymus vulgaris), extracted by steam distillation. CAS #: 8007-46-3,. F.E.M.A. : 3064. Specific Gravity: 0.91100 - 0.91800 @ 25&#176;C. Refractive Index: 1.48900 - 1.51000 @ 20&#176;C.",
+    "description": "Thyme oil has a fresh, herbaceous, medicinal scent. It has often been described as sharp and warming.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -6643,7 +6531,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Thyme Oil (Thymus vulgaris), extracted by steam distillation. CAS #: 8007-46-3,. F.E.M.A. : 3064. Specific Gravity: 0.91100 - 0.91800 @ 25&#176;C. Refractive Index: 1.48900 - 1.51000 @ 20&#176;C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Thyme oil used to treat colds, coughs and sore throats, nose and chest infections when used as an inhalation or as a mouthwash or gargle. It helps in soothing and relaxation of skin and act as a compress. This oils extensively used by manufacturing perfumers for scenting soaps. It is used in flavouring stuffings, sauces, pickles, stews, soups, jugged hare, etc. It is widely used perfume materials. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: It has antirheumatic, antiseptic, antispasmodic, bactericidal, bechic, cardiac, carminative, cicatrisant, diuretic, emmenagogue, expectorant, hypertensive, insecticide, stimulant, tonic and vermifuge Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -6651,11 +6539,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "This oils extensively used by manufacturing perfumers for scenting soaps. It is used in flavouring stuffings, sauces, pickles, stews, soups, jugged hare, etc."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "It is widely used perfume materials."
+        "description": "This oils extensively used by manufacturing perfumers for scenting soaps. It is used in flavour"
       }
     ],
     "signatureColor": "#2A4E2B",
@@ -6668,7 +6552,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Turmeric Oil",
     "botanicalName": "Curcuma longa",
     "category": "SPICE_OIL",
-    "description": "Turmeric Oil (Curcuma longa), extracted by steam distillation. CAS #: 8024-37-1. Specific Gravity: 0.9160 - 0.9366 @ 25&#176;C. Refractive Index: 1.5023 - 1.5138 @ 20&#176;C.",
+    "description": "Turmeric is a perennial plant with roots or tubers about 1 metre in height. Indian turmeric is considered the best in the world.",
     "shortSpec": "Steam Distillation",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -6697,7 +6581,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Turmeric Oil (Curcuma longa), extracted by steam distillation. CAS #: 8024-37-1. Specific Gravity: 0.9160 - 0.9366 @ 25&#176;C. Refractive Index: 1.5023 - 1.5138 @ 20&#176;C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Turmeric oil assist digestion and prevent the formation of gas. It promotes proper metabolism in the body, correcting both excesses and deficiencies. A good blood purifier, and works as a tonic to aid digestion and relieve congestion. It is used to give golden. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: It is natural antiseptic. aphrodisiac, analgesic, anti-arthritic, anti-inflammatory, anti-oxidant, anti-tumoral, bactericidal, diuretic, hypotensive, insecticidal, laxative, rubefacient and digestive stimulant Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -6705,11 +6589,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "A good blood purifier, and works as a tonic to aid digestion and relieve congestion. It is used to give golden color to foods such as curries, mustards, mayonnaise, pickles and sauces."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "Turmeric improves skin complexion and also reduces hair growth on body."
+        "description": "A good blood purifier, and works as a tonic to aid digestion and relieve congestion. It is used to give golden color to foods such as curries, mustard"
       }
     ],
     "signatureColor": "#7E4314",
@@ -6722,7 +6602,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Almond Oil Bitter",
     "botanicalName": "Prunus Amygdalus var amara",
     "category": "CARRIER_OIL",
-    "description": "Almond Oil Bitter (Prunus Amygdalus var amara), extracted by cold pressed. CAS #: 8013-76-1,. F.E.M.A. : 2046. Specific Gravity: 1.04200 - 1.05400 @ 25&#176;C. Refractive Index: 1.54100 - 1.55400 @ 20&#176;C.",
+    "description": "A middle sized tree upto 8 metre in height, leaves simple, flowers white tinged with red, fruits velvety drupes about 3-6 cm long, separating into two valves.",
     "shortSpec": "Cold pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -6751,7 +6631,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Almond Oil Bitter (Prunus Amygdalus var amara), extracted by cold pressed. CAS #: 8013-76-1,. F.E.M.A. : 2046. Specific Gravity: 1.04200 - 1.05400 @ 25&#176;C. Refractive Index: 1.54100 - 1.55400 @ 20&#176;C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Almonds are a rich source of vitamin E oil. It is. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Aphrodisiac, febrifuge, vermifuge, bactericidal, germicidal, fungicidal and anti viral, sedative & anesthetic,anti spasmodic & anti hydrophobic, aperient, diuretic, anti intoxicating:, anti carcinogenic, nervine, regulator, sedative, stimulant and tonic. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -6759,7 +6639,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "It is used to remove black spots and black marks on the skin Almond oil has been used worldwide as an alternative cancer treatment. It is widely used in flavorings & fragrances industries as well."
+        "description": "It is used to remove black spots and black marks on the skin Almond oil has been used worldwide as an alternative cancer treatment. It is widely used in flavorings & fra"
       }
     ],
     "signatureColor": "#8E5F12",
@@ -6772,7 +6652,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Almond Oil Sweet",
     "botanicalName": "Prunus Amygdalus",
     "category": "CARRIER_OIL",
-    "description": "Almond Oil Sweet (Prunus Amygdalus), extracted by cold pressed. CAS #: 9032-37-9. Specific Gravity: 0.92500 - 0.94000 @ 25&#176;C. Refractive Index: 1.40200 - 1.50550 @ 20&#176;C.",
+    "description": "A middle sized tree upto 8 metre in height, leaves simple, flowers white tinged with red, fruits velvety drupes about 3-6 cm long, separating into two valves.",
     "shortSpec": "Cold pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -6802,19 +6682,15 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
     "featured": true,
     "overview": "Almond Oil Sweet (Prunus Amygdalus), extracted by cold pressed. CAS #: 9032-37-9. Specific Gravity: 0.92500 - 0.94000 @ 25&#176;C. Refractive Index: 1.40200 - 1.50550 @ 20&#176;C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Sweet almond oil is used as a moisturizer and as a carrier oil in aromatherapy, It provides minerals, vitamins and proteins that are essential for beautiful skin. Commonly used to relieve itching, dryness or inflammation, this oil is excellent for all skin types. Almond oil is used extensively in making candles, freshen potpourri, in soap making, massage oils, bath oil and also as a perfume body oil. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Laxative, diuretic, aphrodisiac, demulcent, nutritious, aphrodisiac, lithontripic, emollient , nervine, regulator, sedative, stimulant and tonic. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
-        "description": "Sweet almond oil is used as a moisturizer and as a carrier oil in aromatherapy, It provides minerals, vitamins and proteins that are essential for beautiful skin."
+        "description": "Sweet almond oil is used as a moisturizer and as a carrier oil in aromatherapy, It provides minerals, vitamins and proteins that are essential for beautiful skin. Commonly used to relieve itching, dryness or inflammation, this oil is excellent for all skin types."
       },
       {
         "title": "Therapeutic Properties",
-        "description": "Commonly used to relieve itching, dryness or inflammation, this oil is excellent for all skin types."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "Almond oil is used extensively in making candles, freshen potpourri, in soap making, massage oils, bath oil and also as a perfume body oil."
+        "description": "Almond oil is used extensively in ma"
       }
     ],
     "signatureColor": "#8E5F12",
@@ -6827,7 +6703,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Amla Oil",
     "botanicalName": "Emblica officinalis",
     "category": "CARRIER_OIL",
-    "description": "Amla Oil (Emblica officinalis), extracted by cold pressed.",
+    "description": "Amla Oil is one of the world's oldest natural hair care product.. As an Indian herb, amla oil has been used in India since a very long time.",
     "shortSpec": "Cold pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -6856,7 +6732,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Amla Oil (Emblica officinalis), extracted by cold pressed. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Amla Oil enriches hair growth and pigmentation by stimulating the hair roots and scalp . It prevents premature graying of hair, dandruff, increases the strength of hair follicles (and thus preventing hair-fall). Application of Amla oil over the scalp has a cooling effect and therefore , keeps the mind cool and promotes sound sleep. Amla oil is also useful for increasing memory. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Amla oil is aperient, carminative, diuretic, aphrodasiac . It has astringent and antibacterial Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -6864,7 +6740,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "Application of Amla oil over the scalp has a cooling effect and therefore , keeps the mind cool and promotes sound sleep. Amla oil is also useful for increasing memory."
+        "description": "Application of Amla oil over the scalp has a cooling effect and therefore , keeps the mi"
       }
     ],
     "signatureColor": "#264832",
@@ -6877,7 +6753,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Apricot Oil",
     "botanicalName": "Prunus Armeniaca",
     "category": "CARRIER_OIL",
-    "description": "Apricot Oil (Prunus Armeniaca), extracted by cold pressed. CAS #: 72869-69-3,. F.E.M.A. : 2105. Specific Gravity: 0.95000 to 0.98000 @ 25&#176;C.",
+    "description": "A medium sized deciduous tree. The leaves are broad and roundish with pointed apex, smooth, margin, finely serrated, petiole &#189; inch to an inch long, generally tinged with red.",
     "shortSpec": "Cold Pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -6906,19 +6782,15 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Apricot Oil (Prunus Armeniaca), extracted by cold pressed. CAS #: 72869-69-3,. F.E.M.A. : 2105. Specific Gravity: 0.95000 to 0.98000 @ 25&#176;C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Apricot carrier oil is ideal for incorporation into skin care products, it is particularly rich in both linoleic acid and oleic acid. Apricot flavour. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Antitussive, anti-asthmatic , anti-inflammatory, anti-pyretic, calmative, sedative, laxative and tonic diuretic, carminative, stomachic. It has moisturizing, nourishing and revitalizing Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
-        "description": "Apricot carrier oil is ideal for incorporation into skin care products, it is particularly rich in both linoleic acid and oleic acid."
+        "description": "Apricot carrier oil is ideal for incorporation into skin care products, it is particularly rich in both linoleic acid and oleic acid. Apricot flavour uses for natural taste and flavour in food, sauce, bakery and confectionery applications and also as flavour ingredient in tobacco industry."
       },
       {
         "title": "Therapeutic Properties",
-        "description": "Apricot flavour uses for natural taste and flavour in food, sauce, bakery and confectionery applications and also as flavour ingredient in tobacco industry."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "Apricot kernel oil is deeply nourishing for the skin, and historically apricot kernel derivatives found specialized industrial uses in lubricants, varnishes, and cosmetics."
+        "description": "Apricot o"
       }
     ],
     "signatureColor": "#8E5F12",
@@ -7040,7 +6912,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Avocado Oil",
     "botanicalName": "Persea Americana",
     "category": "CARRIER_OIL",
-    "description": "Avocado Oil (Persea Americana), extracted by cold pressed. CAS #: 8024-32-6. Specific Gravity: 0.90900 - 0.91900 @ 25&#176;C. Refractive Index: 1.45700 - 1.47200 @ 20&#176;C.",
+    "description": "The tree grows to 20 m (65 ft), with alternately arranged, evergreen leaves, 12-25 cm long. The pear-shaped fruit is botanically a berry. It is a rich heavy oil, that is deeply penetrating.",
     "shortSpec": "Cold Pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -7069,7 +6941,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Avocado Oil (Persea Americana), extracted by cold pressed. CAS #: 8024-32-6. Specific Gravity: 0.90900 - 0.91900 @ 25&#176;C. Refractive Index: 1.45700 - 1.47200 @ 20&#176;C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Avocado oil is a penetrating oil that is easily absorbed and suitable for all skin types. It is an effective skin moisturizer due to its regenerating and structuring abilities. It is also believed to be an effective sexual stimulant and is used to make ointments aimed at delaying old age. The oil is used as hair-dressing and is employed in making facial creams, hand lotions and fine soap. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: It's Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -7077,7 +6949,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "It is also believed to be an effective sexual stimulant and is used to make ointments aimed at delaying old age. The oil is used as hair-dressing and is employed in making facial creams, hand lotions and fine soap."
+        "description": "It is also believed to be an effective sexual stimulant and is used to make ointments aimed at delaying old age. The oil is"
       }
     ],
     "signatureColor": "#5C5624",
@@ -7090,7 +6962,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Brahmi Oil",
     "botanicalName": "Bacopa Monnieri",
     "category": "CARRIER_OIL",
-    "description": "Brahmi Oil (Bacopa Monnieri), extracted by cold pressed. CAS #: 8016-24-8.",
+    "description": "Bacopa monnieri is a perennial, creeping herb whose habitat includes wetlands and muddy shores. Brahmi oil is the infusion of brahmi with the other carrier oils.",
     "shortSpec": "Cold Pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -7119,19 +6991,15 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Brahmi Oil (Bacopa Monnieri), extracted by cold pressed. CAS #: 8016-24-8. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Brahmi oil is a world renowned oil that is said to boost your memory, promote intelligence and improve your brain functioning. Massaging your scalp with brahmi oil promotes alertness, improves your concentration level and helps your brain to stay active and alert all the time. Effective hair tonic and support in cases of hair falling and dry scalp. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Tensions, anxiety, restlessness, joint pains, hair fall, insomnia and many more small and big health issues can all be taken care of by one stimulant: &#145;Brahmi Oil&#146;. Brahmi oil is a renowned oil used worldwide and is popular mainly because of its memory boosting Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
-        "description": "Brahmi oil is a world renowned oil that is said to boost your memory, promote intelligence and improve your brain functioning."
+        "description": "Brahmi oil is a world renowned oil that is said to boost your memory, promote intelligence and improve your brain functioning. Massaging your scalp with brahmi oil promotes alertness, improves your concentration level and helps your brain to stay active and alert all the time."
       },
       {
         "title": "Therapeutic Properties",
-        "description": "Massaging your scalp with brahmi oil promotes alertness, improves your concentration level and helps your brain to stay active and alert all the time."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "Effective hair tonic and support in cases of hair falling and dry scalp."
+        "description": "Effective hair tonic a"
       }
     ],
     "signatureColor": "#264832",
@@ -7144,7 +7012,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Borage Seed Oil",
     "botanicalName": "Borago officinalis L",
     "category": "CARRIER_OIL",
-    "description": "Borage Seed Oil (Borago officinalis L), extracted by cold pressed. CAS #: 840112-16-8,. F.E.M.A. : NA.",
+    "description": "Borage Oil is derived from the seeds of the Borago Officinalis (Borage) plant, also know as a starflower. It is an annual herb native to the Mediterranean that has been naturalized in many regions.",
     "shortSpec": "Cold Pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -7173,7 +7041,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Borage Seed Oil (Borago officinalis L), extracted by cold pressed. CAS #: 840112-16-8,. F.E.M.A. : NA. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: It is used for premenstrual syndrome (PMS) and menopausal symptoms. Known for anti-inflammatory. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: It contains high amount of gamma-linolenic acid (GLA) of various seed oils. The GLA has the quality of converting into the precursors of a variety of prostaglandins and leukotrienes Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -7194,7 +7062,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Castor Oil",
     "botanicalName": "Ricinus Communis",
     "category": "CARRIER_OIL",
-    "description": "Castor Oil (Ricinus Communis), extracted by cold pressed. CAS #: 8001 – 79 – 4,. F.E.M.A. : 2263. Specific Gravity: 0.95500 - 0.96100 @ 25 &#176;C. Refractive Index: 1.46200 - 1.47200 @ 20 &#176;C.",
+    "description": "Castor oil is a vegetable oil obtained from the castor bean. Castor oil is a colorless to very pale yellow liquid with mild or no odor or taste.",
     "shortSpec": "Cold pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -7224,19 +7092,15 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
     "featured": true,
     "overview": "Castor Oil (Ricinus Communis), extracted by cold pressed. CAS #: 8001 – 79 – 4,. F.E.M.A. : 2263. Specific Gravity: 0.95500 - 0.96100 @ 25 &#176;C. Refractive Index: 1.46200 - 1.47200 @ 20 &#176;C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: It is widely used as carrier oil and best for hairs, massage scalp, also use on skin disorders or skin problems. Castor oil penetrates deep into the skin due to its molecular mass. It can be use in shampoo, lipstick and lip balm. In the food industry, castor oil (food grade) is used in food additives, flavorings, candy as a mold inhibitor, and in packaging. Polyoxyethylated castor oil is also used in the food industries. In India, Pakistan, Nepal and Bangladesh, food grains are preserved by applying castor oil. It stops rice, wheat, and pulses from rotting. It may be used for constipation, as a laxative. It is believed that the antibacterial. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: It is antifungal, anti-inflammatory, Immune enhancer, laxative, stometic, tonic, skin tonic as well. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
-        "description": "It is widely used as carrier oil and best for hairs, massage scalp, also use on skin disorders or skin problems. Castor oil penetrates deep into the skin due to its molecular mass. It can be use in shampoo, lipstick and lip balm."
+        "description": "It is widely used as carrier oil and best for hairs, massage scalp, also use on skin disorders or skin problems. Castor oil penetrates deep into the skin due to its molecular mass."
       },
       {
         "title": "Therapeutic Properties",
-        "description": "In the food industry, castor oil (food grade) is used in food additives, flavorings, candy as a mold inhibitor, and in packaging. Polyoxyethylated castor oil is also used in the food industries. In India, Pakistan, Nepal and Bangladesh, food grains are preserved by applying castor oil."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "It stops rice, wheat, and pulses from rotting. It may be used for constipation, as a laxative. It is believed that the antibacterial properties of the castor oil are mainly due to its high ricinoleic acid content."
+        "description": "It can be use in shampoo, lipstick and lip balm. In the food industry, castor oil (food grade) is used in food additive"
       }
     ],
     "signatureColor": "#5C5624",
@@ -7249,7 +7113,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Cucumber Seed Oil",
     "botanicalName": "Cucumis Sativus",
     "category": "CARRIER_OIL",
-    "description": "Cucumber Seed Oil (Cucumis Sativus), extracted by cold pressed. CAS #: 557-48-2,. F.E.M.A. : 3377.",
+    "description": "Cucumber oil is extracted by cold press method to obtain high mineral content.",
     "shortSpec": "Cold pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -7278,7 +7142,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Cucumber Seed Oil (Cucumis Sativus), extracted by cold pressed. CAS #: 557-48-2,. F.E.M.A. : 3377. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Cucumber oil is used in various cosmetic applications for its cooling, nutritive, and soothing. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: It is known for its cooling , calming effects, skin tonic and moisturizer Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -7286,11 +7150,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "The combination of aloe Vera, cucumber essential oil and olive oil makes a great soap moisturizing soap for skin cleansing. Blend few drops of cucumber essential oil and lavender oil to sandal wood paste and apply it on your face for twenty minutes, you will beat the heat with double effects."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "Pour in cucumber essential oil with few drops of olive oil and gently massage your body with it, gradually your stressed body would initiate breathing through cool perspiration."
+        "description": "The combin"
       }
     ],
     "signatureColor": "#895E1B",
@@ -7303,7 +7163,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Evening Primrose Oil",
     "botanicalName": "Oenothera biennis",
     "category": "CARRIER_OIL",
-    "description": "Evening Primrose Oil (Oenothera biennis), extracted by cold pressed. CAS #: 65546-85-2.",
+    "description": "Evening Primrose is a common wildflower found in North America, Europe and parts of Asia.",
     "shortSpec": "Cold pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -7333,19 +7193,11 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
     "featured": true,
     "overview": "Evening Primrose Oil (Oenothera biennis), extracted by cold pressed. CAS #: 65546-85-2. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: It cure, treat or prevent practically everything-from rheumatoid arthritis, breast pain, hot flushes, premenstrual syndrome, eczema, psoriasis, dermatitis and dry skin, relief of allergies, reducing joint inflammation and swelling asociated with arthritis, promoting healthy heart function, blood pressure and cholesterol levels. It is edible and a very good source of gamma-linolenic acid, an essential fatty acid that is not found in many plant sources and has numerous vital functions in the body. It also increases skin hydration and moisturizes dry, aging and chapped skin. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: It provides nutritional support and to treat against conditions such as sore throats, stomachaches, hemorrhoids, and bruises. It's antioxidant and other Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
-        "description": "It cure, treat or prevent practically everything-from rheumatoid arthritis, breast pain, hot flushes, premenstrual syndrome, eczema, psoriasis, dermatitis and dry skin, relief of allergies, reducing joint inflammation and swelling asociated with arthritis, promoting healthy heart function, blood pressure and cholesterol levels."
-      },
-      {
-        "title": "Therapeutic Properties",
-        "description": "It is edible and a very good source of gamma-linolenic acid, an essential fatty acid that is not found in many plant sources and has numerous vital functions in the body."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "It also increases skin hydration and moisturizes dry, aging and chapped skin."
+        "description": "It cure, treat or prevent practically everything-from rheumatoid arthritis, breast pain, hot flushes, premenstrual syndrome, eczema, psoriasis, dermatitis and dry skin, relief of allergies, reducing joint inflammation and swelling asociated with arthritis, promoting healthy heart function, blood pre"
       }
     ],
     "signatureColor": "#7E2D48",
@@ -7412,7 +7264,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Grapeseed Oil",
     "botanicalName": "Vitis Vinifera",
     "category": "CARRIER_OIL",
-    "description": "Grapeseed Oil (Vitis Vinifera), extracted by cold pressed. CAS #: 8024-22-4.",
+    "description": "Grapeseed oil is obtained by cold pressing the Grape seeds.",
     "shortSpec": "Cold pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -7441,7 +7293,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Grapeseed Oil (Vitis Vinifera), extracted by cold pressed. CAS #: 8024-22-4. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: It is used as cooking oil. It is cholesterol free and helps lower the bad cholesterol and raise the good one. It can be used for treating acne and dermatitis, sun burns, age spots, diabetes, high-blood pressure, rheumatoid arthritis, cataracts and macular degenerations, wrinkles and stretch marks. The. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: It has an strong anti-oxidants, anti-inflammatory, anti-allergic, anti-cancerous, anti-microbial activity. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -7449,7 +7301,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "It can be used for treating acne and dermatitis, sun burns, age spots, diabetes, high-blood pressure, rheumatoid arthritis, cataracts and macular degenerations, wrinkles and stretch marks. The benefits of grapeseed oil for your skin include anti-aging benefits, supple skin, and an even skin tone."
+        "description": "It can be used for treating acne and dermatitis, sun burns, age spots, diabetes, high-blood pressure, rheumatoid arthritis, cataracts and macular degenerations, wrinkles and stretch marks. T"
       }
     ],
     "signatureColor": "#895E1B",
@@ -7462,7 +7314,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Hazelnut Oil",
     "botanicalName": "Corylus avellana",
     "category": "CARRIER_OIL",
-    "description": "Hazelnut Oil (Corylus avellana), extracted by cold pressed. CAS #: 185630-72-2.",
+    "description": "Hazelnut oil, pressed from hazelnuts, is strongly flavoured. The nut falls out of the husk when ripe, about seven to eight months after pollination.",
     "shortSpec": "Cold Pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -7491,19 +7343,15 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Hazelnut Oil (Corylus avellana), extracted by cold pressed. CAS #: 185630-72-2. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Hazelnut oil acts as an excellent emollient and moisturizer because it has a number of essential fatty acids such as linoleic acid, which can rehydrate the skin. So, this oil is extensively used in treating dry skin. Moreover, this oil is very light and easily gets absorbed into the skin. The healthy and rejuvenating. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: This oil is deeply penetrating and stimulating to the circulatory system. It helps to tighten and tone the skin, and is applicable for all skin types. Hazel nuts oils contain Vitamins A, B, D, E and various other minerals. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
-        "description": "Hazelnut oil acts as an excellent emollient and moisturizer because it has a number of essential fatty acids such as linoleic acid, which can rehydrate the skin. So, this oil is extensively used in treating dry skin. Moreover, this oil is very light and easily gets absorbed into the skin."
+        "description": "Hazelnut oil acts as an excellent emollient and moisturizer because it has a number of essential fatty acids such as linoleic acid, which can rehydrate the skin. So, this oil is extensively used in treating dry skin."
       },
       {
         "title": "Therapeutic Properties",
-        "description": "The healthy and rejuvenating properties of hazelnut oil make it perfect for body massage. Used as carrier oil in aromatherapy. Hazelnut oil is also a rich source of vitamin E."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "The anti-oxidant properties of this vitamin helps in solving many of the problems associated with ageing."
+        "description": "Moreover, this oil is very light and easily gets absorbed into the skin. The health"
       }
     ],
     "signatureColor": "#895E1B",
@@ -7516,7 +7364,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Jojoba Oil",
     "botanicalName": "Simmondsia chinensis",
     "category": "CARRIER_OIL",
-    "description": "Jojoba Oil (Simmondsia chinensis), extracted by cold pressed. CAS #: 90045-98-0. Specific Gravity: 0.90500 - 0.92500 @ 25&#176;C. Refractive Index: 1.46000 - 1.46800 @ 25&#176;C.",
+    "description": "The jojoba oil is extracted from the seed of the plant. Female jojoba plants produce a seed that contains 40-60% liquid wax.",
     "shortSpec": "Cold pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -7546,19 +7394,15 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
     "featured": true,
     "overview": "Jojoba Oil (Simmondsia chinensis), extracted by cold pressed. CAS #: 90045-98-0. Specific Gravity: 0.90500 - 0.92500 @ 25&#176;C. Refractive Index: 1.46000 - 1.46800 @ 25&#176;C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Jojoba Oil is a most popular addition for skin care products, and is often used alone as a facial oil as it contains natural collagen. Jojoba Oil can help heal acne, athlete&#146;s foot, cuts, mouth sores, pimples and warts. It is very good moisturinser and used as make up remover. It is used for fragrance because of its advanced molecular stability. Jojoba Oil is superb in Massage Oils, Hair Oils, Soaps, and Skin &amp; Hair Preparations. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: It has antioxidant, anti-inflammatory, mosturinzing, soothing, lubricat, non irritant, anti-bacterial Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
-        "description": "Jojoba Oil is a most popular addition for skin care products, and is often used alone as a facial oil as it contains natural collagen. Jojoba Oil can help heal acne, athlete's foot, cuts, mouth sores, pimples and warts."
+        "description": "Jojoba Oil is a most popular addition for skin care products, and is often used alone as a facial oil as it contains natural collagen. Jojoba Oil can help heal acne, athlete&#146;s foot, cuts, mouth sores, pimples and warts."
       },
       {
         "title": "Therapeutic Properties",
-        "description": "It is very good moisturinser and used as make up remover. It is used for fragrance because of its advanced molecular stability."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "Jojoba Oil is superb in Massage Oils, Hair Oils, Soaps, and Skin & Hair Preparations."
+        "description": "It is very good moisturinser and used as make up remover. It is used for fr"
       }
     ],
     "signatureColor": "#8E5F12",
@@ -7571,7 +7415,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Macadamia Oil",
     "botanicalName": "Macadamia ternifolia",
     "category": "CARRIER_OIL",
-    "description": "Macadamia Oil (Macadamia ternifolia), extracted by cold pressed. CAS #: 128497-20-1. Specific Gravity: 0.9100 - 0.92000. Refractive Index: 1.46300 - 1.46500.",
+    "description": "Macadamia oil is the non-volatile oil expressed from the nut meat of the macadamia (Macadamia integrifolia) tree.",
     "shortSpec": "Cold Pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -7600,7 +7444,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Macadamia Oil (Macadamia ternifolia), extracted by cold pressed. CAS #: 128497-20-1. Specific Gravity: 0.9100 - 0.92000. Refractive Index: 1.46300 - 1.46500. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Macadamia Carrier Oil is popular in cosmetic manufacturing and in combination with other carrier oils, can be used in both massage and aromatherapy. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: It is calming and revitalizing Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -7617,7 +7461,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Moringa Oil",
     "botanicalName": "Moringa Oliefera",
     "category": "CARRIER_OIL",
-    "description": "Moringa Oil (Moringa Oliefera), extracted by cold pressed. CAS #: 93165-54-9,. F.E.M.A. : 2406. Specific Gravity: 0.95 - 0.96 @ 72&#176;F.",
+    "description": "It is a very stable oil which is highly nutritious for the skin. This oil is much similar olive oil in composition but still it's very light.",
     "shortSpec": "Cold Pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -7646,19 +7490,15 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Moringa Oil (Moringa Oliefera), extracted by cold pressed. CAS #: 93165-54-9,. F.E.M.A. : 2406. Specific Gravity: 0.95 - 0.96 @ 72&#176;F. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Moringa carrier oil is highly valued in cosmetic industries. It is considered to best for massage and aromatherapy applications. The oil finds application in a range of products including anti-aging cream, hair care products, soap and body wash, face cream, perfume and deodrant. Moringa oil is a popular natural supplement to increase the health and strength of the hair and scalp. Moringa oil can be massaged into the hair and scalp and allowed to remain there for several minutes, delivering rejuvenating vitamins and minerals to the follicles of the hair and tissue of the scalp. Regular massage with this oil can help reduce split ends and dandruff. Moringa oil can also be found in hand lotions, lip balm, and other products that target dry and flaking skin, and is a popular ingredient in blended massage oils. It is pleasant to the touch, warms well, is not sticky, and combines well with other oils and fragrances. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: It has numerous antioxidants in it, the oil does not become rancid for several years after it is produced. This makes Moringa oil sought after for a number of health and beauty applications. Moringa oil is viable for use as a cooking oil, it is occasionally used as a dressing for vegetables, salads, and other green dishes. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
-        "description": "Moringa carrier oil is highly valued in cosmetic industries. It is considered to best for massage and aromatherapy applications. The oil finds application in a range of products including anti-aging cream, hair care products, soap and body wash, face cream, perfume and deodrant."
+        "description": "Moringa carrier oil is highly valued in cosmetic industries. It is considered to best for massage and aromatherapy applications."
       },
       {
         "title": "Therapeutic Properties",
-        "description": "Moringa oil is a popular natural supplement to increase the health and strength of the hair and scalp. Moringa oil can be massaged into the hair and scalp and allowed to remain there for several minutes, delivering rejuvenating vitamins and minerals to the follicles of the hair and tissue of the scalp. Regular massage with this oil can help reduce split ends and dandruff."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "Moringa oil can also be found in hand lotions, lip balm, and other products that target dry and flaking skin, and is a popular ingredient in blended massage oils. It is pleasant to the touch, warms well, is not sticky, and combines well with other oils and fragrances."
+        "description": "The oil finds application in a range of products including anti-aging cream, hair care products, soap and body wash, face cream, perfume and deodrant. Moringa oil is a pop"
       }
     ],
     "signatureColor": "#5C5624",
@@ -7671,7 +7511,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Muskmelon Oil",
     "botanicalName": "Cucumis melo",
     "category": "CARRIER_OIL",
-    "description": "Muskmelon Oil (Cucumis melo), extracted by cold pressed.",
+    "description": "Musk melons are majorly cultivated in India, it is cultivated in the summer season from April to July. Musk melon being an annual plant is cultivated from the seeds by Cold Pressed mathod.",
     "shortSpec": "Cold Pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -7700,7 +7540,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Muskmelon Oil (Cucumis melo), extracted by cold pressed. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Muskmelon Seed Oil contains a high levels of Linoleic, Fatty Acid or Omega 6, The oil also contains notable amounts of Oleic and Palmitic Fatty Acids. Cold Pressed Muskmelon Seed Oil is used in Skincare Products to enhance the products with surprising. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Musk Melons are rich in potassium, a nutrient that may help control blood pressure, regulate heart beat, and possibly prevent strokes. It is a good source of Vitamins A, B, and C. It has moisturizing Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -7708,11 +7548,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "Muskmelon oil has light texture, yet it is highly moisturizing oil. It is easily absorbed in skin & can be invariably used in Facial & Body massage oils, Skincare & Hair care Products, such as Creams, Lotions, Serums, Facial masks or even Soap making."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "It is very much effective in conditions like Lack of appetite, Weight loss, Urinary tract infections, Constipation, Acidity, and Ulcer. Musk melon reduces heat in the body to a great extent, relieves tiredness, enhances appetite and is an effective laxative."
+        "description": "Muskmelon oil h"
       }
     ],
     "signatureColor": "#895E1B",
@@ -7725,7 +7561,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Neem Oil",
     "botanicalName": "Azadirachta Indica",
     "category": "CARRIER_OIL",
-    "description": "Neem Oil (Azadirachta Indica), extracted by cold pressed. CAS #: 8002-65-1. Specific Gravity: 0.89000 to 0.89900 @ 25&#176;C. Refractive Index: 1.47600 to 1.49000 @ 20&#176;C.",
+    "description": "Neem is a medium sized to large tree characterized by its short straight trunk, furrowed dark brown to gray bark and dense rounded crowns of pinnate leaves.",
     "shortSpec": "Cold Pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -7755,7 +7591,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
     "featured": true,
     "overview": "Neem Oil (Azadirachta Indica), extracted by cold pressed. CAS #: 8002-65-1. Specific Gravity: 0.89000 to 0.89900 @ 25&#176;C. Refractive Index: 1.47600 to 1.49000 @ 20&#176;C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Neem is a herbal remedy for the medication of fever, gastrointestinal disease, skin disorders, respiratory disease, intestinal parasites, immune system disorder and yeast infections in pets and many. It may inhibit the development of vir. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: It has antibacterial, antiviral, antifungal, antiseptic, and antiparasitic, astrigent, purgative, emollien, anti inflammatory, digestive, diuretic, laxative, expectorant, blood purifire, anti diabetic and tonic Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -7763,11 +7599,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "Neem oil is an appropriate herbal remedy for numerous skin disorders like acne, eczema, psoriasis, scabies etc. It is widely used for production of cosmetics like medicated sops, facial creams, nail polishes, nail oils, shampoos, conditioners etc."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "Neem oil helps to control common pests like white flies, aphids, scales, mealy bugs, spider mites, locusts, thrips, and Japanese beetles, etc Neem oil contains several compounds which have proven medicinal and agricultural uses of high value."
+        "description": "Neem o"
       }
     ],
     "signatureColor": "#324A2A",
@@ -7780,7 +7612,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Olive Oil",
     "botanicalName": "Olea Europaea",
     "category": "CARRIER_OIL",
-    "description": "Olive Oil (Olea Europaea), extracted by cold pressed. CAS #: 8001-25-0. Specific Gravity: 0.91500 - 0.92500. Refractive Index: 1.46520 - 1.47540.",
+    "description": "This golden brown oil has a rich, full bodied aroma. It is highly stable in nature.",
     "shortSpec": "Cold Pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -7809,19 +7641,15 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Olive Oil (Olea Europaea), extracted by cold pressed. CAS #: 8001-25-0. Specific Gravity: 0.91500 - 0.92500. Refractive Index: 1.46520 - 1.47540. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Olive oil has an effect in preventing the formation of blood clots and platelet aggregation. It helps in avoiding excessive blood coagulation. It can attenuate the effect of fatty foods in encouraging blood clot formation. Regular consumption of olive oil decreases both systolic (maximum) and diastolic (minimum) blood pressure. An olive-oil-rich diet is not only a good alternative in the treatment of diabetes, but also helps in preventing or delaying the onset of the disease. Olive oil plays an important role in the prevention of continuous oxidation, one of the processes that influences the development of certain types of skin cancer. Olive oil also acts like a natural anti-oxidant, that slows down the natural aging process. It also slows down acid overproduction in the digestive system thereby diminishing the potential for ulcers and other gastrointestinal problems. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: It has repellent anti-oxidizing Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
-        "description": "Olive oil has an effect in preventing the formation of blood clots and platelet aggregation. It helps in avoiding excessive blood coagulation. It can attenuate the effect of fatty foods in encouraging blood clot formation."
+        "description": "Olive oil has an effect in preventing the formation of blood clots and platelet aggregation. It helps in avoiding excessive blood coagulation."
       },
       {
         "title": "Therapeutic Properties",
-        "description": "Extra virgin olive oil is rich in monounsaturated oleic acid and polyphenols that protect against oxidative stress and support cardiovascular health."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "Olive oil also acts like a natural anti-oxidant, that slows down the natural aging process. It also slows down acid overproduction in the digestive system thereby diminishing the potential for ulcers and other gastrointestinal problems."
+        "description": "It can attenuate the effect of fatty foods in encouraging blood clot formation. Regular consumption of olive oil decreases both systolic (maximum) and diasto"
       }
     ],
     "signatureColor": "#895E1B",
@@ -7834,7 +7662,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Peach Oil",
     "botanicalName": "Prunus Persica",
     "category": "CARRIER_OIL",
-    "description": "Peach Oil (Prunus Persica), extracted by cold pressed. CAS #: 8002-78-6. Specific Gravity: 1.469 – 1.473 @ 20&#176;C.",
+    "description": "Peach kernel oil is obtained from the kernel, or the nut of the ripe fruit. The fine textured golden oil has a delicate, sweet aroma. It contains minerals and vitamins, especially Vitamin E. Peach kernel oil has a very similar consistency to Almond Oil and they are often stated as substitutes for each other.",
     "shortSpec": "Cold Pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -7863,7 +7691,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Peach Oil (Prunus Persica), extracted by cold pressed. CAS #: 8002-78-6. Specific Gravity: 1.469 – 1.473 @ 20&#176;C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Peach Kernel oil is used in massage, cosmetics and soap manufacturing especially favored for facial massages as it encourages suppleness and elasticity. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: This oil contains vitamin E which has therapeutic, antioxidant and preservative Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -7880,7 +7708,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Pomegranate Seed Oil",
     "botanicalName": "Punica granatum",
     "category": "CARRIER_OIL",
-    "description": "Pomegranate Seed Oil (Punica granatum), extracted by cold pressed. CAS #: 8007-01-0,. F.E.M.A. : 2989. Specific Gravity: 0.94340 - 0.99000 @ 25&#176;C. Refractive Index: 1.49000 - 1.49000 @ 20&#176;C.",
+    "description": "An attractive shrub or small tree, to 20 or 30 ft (6 or 10 m) high, the pomegranate is much-branched, more or less spiny and extremely long-lived.",
     "shortSpec": "Cold pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -7909,7 +7737,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Pomegranate Seed Oil (Punica granatum), extracted by cold pressed. CAS #: 8007-01-0,. F.E.M.A. : 2989. Specific Gravity: 0.94340 - 0.99000 @ 25&#176;C. Refractive Index: 1.49000 - 1.49000 @ 20&#176;C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Pomegranate seed oil has been found to be of help prevent the formation of skin cancer by reducing the frequency of lesions and limit the occurrence of tumors. A moisturising and nourishing oil containing over 60% punicic acid which gives the oil anti-inflammatory and anti-ageing. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Pomegranate seed oil adds moisture, has natural estrogenic Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -7917,7 +7745,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "It is used in making a very relishing syrups and sauces which are savoured in most European and Asian countries. Pomegranate seeds add flavor and color to any fruit salad."
+        "description": "It is u"
       }
     ],
     "signatureColor": "#7A2E3E",
@@ -7930,7 +7758,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Pumpkin Oil",
     "botanicalName": "Cucurbita pepo",
     "category": "CARRIER_OIL",
-    "description": "Pumpkin Oil (Cucurbita pepo), extracted by cold pressed. CAS #: 871582-63-7.",
+    "description": "Pumpkin oil is viscous and its color ranges from very faint red to bright red.",
     "shortSpec": "Cold Pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -7959,19 +7787,15 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Pumpkin Oil (Cucurbita pepo), extracted by cold pressed. CAS #: 871582-63-7. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: It is used as a cooking oil , it can be serves as a salad dressing when combined with honey or olive oil. Drizzle the oil on pasta, rissotto, soups, stews, steamed vegetables, cooked meats, cold meats and vanilla ice cream. The oil is rich in fatty acids, which are good for the joints. The oil is rich in vitamins A, B1, B2, B6, C, D, E and K. The oil is rich in minerals, including Magnesium and Calcium. The use of pumpkin oil prevents the occurrence of benign prostatic hyperplasia. It also aids in the treatment of the same. It has been scientifically proven that pumpkin seed oil regulates blood cholesterol, thereby reducing the risk of heart ailments. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: A lot of antioxidant against the free radicals in the blood helps to keep young and healthy. It has Omega 3 and Omega 6: also known as essential fatty acids(EFAs). Also a lot of phytosterole which is well known for a positive effect against high cholesterol. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
-        "description": "It is used as a cooking oil , it can be serves as a salad dressing when combined with honey or olive oil. Drizzle the oil on pasta, rissotto, soups, stews, steamed vegetables, cooked meats, cold meats and vanilla ice cream. The oil is rich in fatty acids, which are good for the joints."
+        "description": "It is used as a cooking oil , it can be serves as a salad dressing when combined with honey or olive oil. Drizzle the oil on pasta, rissotto, soups, stews, steamed vegetables, cooked meats, cold meats and vanilla ice cream."
       },
       {
         "title": "Therapeutic Properties",
-        "description": "The oil is rich in vitamins A, B1, B2, B6, C, D, E and K. The oil is rich in minerals, including Magnesium and Calcium. The use of pumpkin oil prevents the occurrence of benign prostatic hyperplasia."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "It also aids in the treatment of the same. It has been scientifically proven that pumpkin seed oil regulates blood cholesterol, thereby reducing the risk of heart ailments."
+        "description": "The oil is rich in fatty acids, which are good for the joints. The oil is ri"
       }
     ],
     "signatureColor": "#895E1B",
@@ -7984,7 +7808,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Rice Bran Oil",
     "botanicalName": "Oryza Sativa",
     "category": "CARRIER_OIL",
-    "description": "Rice Bran Oil (Oryza Sativa), extracted by cold pressed. CAS #: 68553-81-1.",
+    "description": "Rice is normally grown as an annual plant, the rice plant can grow to 1–1.8 m (3.3–5.9 ft) tall, the edible seed is a grain (caryopsis) 5–12 mm (0.20–0.47 in) long and 2–3 mm (0.079–0.12 in) thick.",
     "shortSpec": "Cold Pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -8013,19 +7837,15 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Rice Bran Oil (Oryza Sativa), extracted by cold pressed. CAS #: 68553-81-1. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Rice bran oil can help lower cholesterol, fight diseases, enhance the immune system, fight free radicals and more. Use it to fry, saute, in salad dressings, baking, dipping oils and where ever you use cooking oil. Once you use it you will be amazed cooking light and healthy is also the best tasting. Rice bran oil is vastly superior to traditional cooking oils and can be considered a nutraceutical (food as medicine) oil that is perfect for all your healthy cooking needs. Rice Bran Oil is quickly becoming a favorite in commercial frying to replace hydrogenated oils that contain trans fat. This is due to rice bran oils health, flavor and performance. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Rice Bran Oil is truly The World's Healthiest edible oil, containing vitamins, antioxidants, nutrients and trans fat free. It is extremely light, versatile and delicious. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
-        "description": "Rice bran oil can help lower cholesterol, fight diseases, enhance the immune system, fight free radicals and more. Use it to fry, saute, in salad dressings, baking, dipping oils and where ever you use cooking oil."
+        "description": "Rice bran oil can help lower cholesterol, fight diseases, enhance the immune system, fight free radicals and more.. Use it to fry, saute, in salad dressings, baking, dipping oils and where ever you use cooking oil."
       },
       {
         "title": "Therapeutic Properties",
-        "description": "Once you use it you will be amazed cooking light and healthy is also the best tasting. Rice bran oil is vastly superior to traditional cooking oils and can be considered a nutraceutical (food as medicine) oil that is perfect for all your healthy cooking needs."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "Rice Bran Oil is quickly becoming a favorite in commercial frying to replace hydrogenated oils that contain trans fat. This is due to rice bran oils health, flavor and performance benefits."
+        "description": "Once you use it you will be amazed cooking light and healthy is also the best tasting"
       }
     ],
     "signatureColor": "#895E1B",
@@ -8038,7 +7858,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Rosehip Seed Oil",
     "botanicalName": "Rosa canina",
     "category": "CARRIER_OIL",
-    "description": "Rosehip Seed Oil (Rosa canina), extracted by cold pressed. CAS #: 92347-25-6,. F.E.M.A. : NA.",
+    "description": "Rosehip seed oil can also be extracted from Rosa canina, which grows in many regions of the world including South Africa and Europe. Borage oil contains provitamin A (mostly beta-Carotene)",
     "shortSpec": "Cold Pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -8068,7 +7888,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
     "featured": true,
     "overview": "Rosehip Seed Oil (Rosa canina), extracted by cold pressed. CAS #: 92347-25-6,. F.E.M.A. : NA. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Rosehip oil fights against dry, weathered, and dehydrated skin. It works wonders on scars and is the predominant oil used for treating wrinkles and premature aging. It is used for the treatment of skin conditions, including dermatitis, acne and eczema, for mature and sun burnt skin as well as brittle nails and wrinkles. Rose hip oil is also frequently used to heal scarring and diminish photo-aging. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: It is considered a &#147;dry&#148; oil, meaning that it soaks into the skin easily, and does not leave a greasy residue. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -8076,7 +7896,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "It is used for the treatment of skin conditions, including dermatitis, acne and eczema, for mature and sun burnt skin as well as brittle nails and wrinkles. Rose hip oil is also frequently used to heal scarring and diminish photo-aging."
+        "description": "It is used for the treatment of skin conditions, including dermatitis, acne and eczema, for mature and sun burnt skin as well as brittl"
       }
     ],
     "signatureColor": "#7E2D48",
@@ -8089,7 +7909,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Safflower Oil",
     "botanicalName": "Carthamus tinctorius",
     "category": "CARRIER_OIL",
-    "description": "Safflower Oil (Carthamus tinctorius), extracted by cold pressed. CAS #: 8001-23-8.",
+    "description": "Safflower is a highly branched, herbaceous, thistle-like annual plant. It is commercially cultivated for vegetable oil extracted from the seeds.",
     "shortSpec": "Cold Pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -8118,7 +7938,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Safflower Oil (Carthamus tinctorius), extracted by cold pressed. CAS #: 8001-23-8. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Safflower Carrier Oil is heavily used in manufacturing, massage therapy, and to a lesser degree, as a carrier oil in aromatherapy. Safflower Carrier Oil is easily absorbed. Safflower oils use as a supplement, it is also used in cooking, salad dressings and other culinary applications. Safflower oil is used in skin care formulations that treat dry and damaged skin. Safflower oil is moisturized and soothing to skin. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -8126,11 +7946,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "Safflower oils use as a supplement, it is also used in cooking, salad dressings and other culinary applications. Safflower oil is used in skin care formulations that treat dry and damaged skin."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "Safflower oil is moisturized and soothing to skin."
+        "description": "Safflower oils use as a supplement, it is also used in cooking, salad dressings and other culinary applications. Safflower oil "
       }
     ],
     "signatureColor": "#895E1B",
@@ -8143,7 +7959,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Sesame Seed Oil",
     "botanicalName": "Sesamum Indicum",
     "category": "CARRIER_OIL",
-    "description": "Sesame Seed Oil (Sesamum Indicum), extracted by cold pressed. CAS #: 8008-74-0.",
+    "description": "This oil has a rich golden color, with a bold, nutty flavor. It is an edible vegetable oil derived from sesame seeds.",
     "shortSpec": "Cold Pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -8172,7 +7988,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Sesame Seed Oil (Sesamum Indicum), extracted by cold pressed. CAS #: 8008-74-0. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Sesame oil is widely used as a natural moisturizer and added to moisturizing skin care products. This oil also makes a good choice for those who like body oils. Add a few drops of your favorite essential oil to a tablespoon of sesame oil and you have a light, pure body perfume. Sesame oil is used in Ayurveda for food preparation, massage, oil pulling. Sesame oil is used as a base to prepare many medicated oils Sesame seeds oil are used in various food recipes and act as excellent laxative. It is a good choice for massage therapists. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: It is excellent laxative. moisturizer, Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -8180,11 +7996,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "Add a few drops of your favorite essential oil to a tablespoon of sesame oil and you have a light, pure body perfume. Sesame oil is used in Ayurveda for food preparation, massage, oil pulling."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "Sesame oil is used as a base to prepare many medicated oils Sesame seeds oil are used in various food recipes and act as excellent laxative. It is a good choice for massage therapists."
+        "description": "Add a few drops of your favorite essential oil to a tablespoon of sesame oil and you have a light, pure body perfume. Sesame oil is used in"
       }
     ],
     "signatureColor": "#5C5624",
@@ -8197,7 +8009,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Sunflower Oil",
     "botanicalName": "Helianthus Annuus",
     "category": "CARRIER_OIL",
-    "description": "Sunflower Oil (Helianthus Annuus), extracted by cold pressed. CAS #: 8001-21-6. Specific Gravity: 0.92200 - 0.99600 @ 25.00 &#176;C. Refractive Index: 1.46630 - 1.68400 @ 40.00 &#176;C.",
+    "description": "Sunflower oil is cold expressed from the seeds of the plant.",
     "shortSpec": "Cold Pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -8226,7 +8038,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Sunflower Oil (Helianthus Annuus), extracted by cold pressed. CAS #: 8001-21-6. Specific Gravity: 0.92200 - 0.99600 @ 25.00 &#176;C. Refractive Index: 1.46630 - 1.68400 @ 40.00 &#176;C. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Sunflower oil is a versatile oil that can be used for aromatherapy oil, massage blends and manufacturing cosmetics. Sunflower Oil useful to improve heart health, provide natural energy, lower risk of infant infection, stops free radicals, natural antioxidants, natural moisturizer, prevents arthritis, prevents asthma and colon cancer, promotes a healthy nervous system, lowers cholesterol , prevents other cancers , reduces cardiac, problems , repairs the body, maintains healthy immune system , helps create new cells. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: It has smoothing Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -8234,7 +8046,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "Maintains a healthy immune system and helps create new cells and tissues."
+        "description": "Sunflower Oil useful to improve heart health, provide natural energy, lower risk of infant infection, stops free radicals, natural antioxidants, natural moisturizer, prevents arthritis"
       }
     ],
     "signatureColor": "#895E1B",
@@ -8247,7 +8059,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Walnut Oil",
     "botanicalName": "Juglans Regia",
     "category": "CARRIER_OIL",
-    "description": "Walnut Oil (Juglans Regia), extracted by cold pressed. CAS #: 8024-09-7.",
+    "description": "Walnut oil is better known for culinary use, where chefs prefer to use it cold as heating may destroy its nutty quality.",
     "shortSpec": "Cold Pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -8276,19 +8088,15 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Walnut Oil (Juglans Regia), extracted by cold pressed. CAS #: 8024-09-7. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Walnuts are rich in phytonutrients and are an excellent source of selenium, phosphorous, magnesium, zinc, iron, and calcium and hefty levels of Vitamins B-1, B-2, and B-3, coupled with Vitamin-E and niacin. Walnut Oil makes a perfect choice for aromatherapy and massage. In both, the walnut oil is diluted in another carrier oil. It is also used in cosmetic manufacturing and frequently used for hair care products. It has a rich, nutty flavor that is perfect for salad dressings, to flavor fish and steaks, to toss with pasta, and to jazz up desserts. Walnut oil is best used uncooked or in cold sauces because when it is heated, it can become slightly bitter. Walnut oil is one of the most important oils used by painters. Its short drying time and lack of yellow tint make it a good oil paint base thinner and brush cleaner. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: It is an excellent emollient with moisturizing Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
-        "description": "Walnuts are rich in phytonutrients and are an excellent source of selenium, phosphorous, magnesium, zinc, iron, and calcium and hefty levels of Vitamins B-1, B-2, and B-3, coupled with Vitamin-E and niacin. Walnut Oil makes a perfect choice for aromatherapy and massage. In both, the walnut oil is diluted in another carrier oil."
+        "description": "Walnuts are rich in phytonutrients and are an excellent source of selenium, phosphorous, magnesium, zinc, iron, and calcium and hefty levels of Vitamins B-1, B-2, and B-3, coupled with Vitamin-E and niacin. Walnut Oil makes a perfect choice for aromatherapy and massage."
       },
       {
         "title": "Therapeutic Properties",
-        "description": "It is also used in cosmetic manufacturing and frequently used for hair care products. It has a rich, nutty flavor that is perfect for salad dressings, to flavor fish and steaks, to toss with pasta, and to jazz up desserts. Walnut oil is best used uncooked or in cold sauces because when it is heated, it can become slightly bitter."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "Walnut oil is rich in omega-3 fatty acids for culinary and cosmetic nutrition, and its quick-drying properties make it a traditional fine oil paint medium."
+        "description": "In both, the walnut oil is di"
       }
     ],
     "signatureColor": "#895E1B",
@@ -8301,7 +8109,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Watermelon Oil",
     "botanicalName": "Citrullus Vulgaris",
     "category": "CARRIER_OIL",
-    "description": "Watermelon Oil (Citrullus Vulgaris), extracted by cold pressed. CAS #: 871582-63-7.",
+    "description": "Watermelon Oil is in Yellow in color with faint, slightly nutty odor. Watermelon Carrier Oil is light, penetrating and emollient oil.",
     "shortSpec": "Cold Pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -8330,7 +8138,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Watermelon Oil (Citrullus Vulgaris), extracted by cold pressed. CAS #: 871582-63-7. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Water melon oil is a preferred base for various cosmetics and hair care products for its non-greasy feel and moisturizing. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: Watermelon oil is light in texture, non-greasy, penetrating, absorbs quickly, highly moisturizing, emollient, rich in Omega 6 and 9 EFAs, dissolves Sebum buildup, stable shelf-life and excellent substitute for mineral oil Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -8338,11 +8146,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "Watermelon seed oil is also a perfect choice for inclusion in hair care formulations as it is non-greasy yet highly moisturizing. The seeds of Watermelon are very useful and are used in curing disease like strangury, urinary problems and diuretic problems and so on."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "One of the most famous uses of Watermelon is carried by Russian farmers who use it against dropsy, intestinal catarrh and hepatic congestion."
+        "description": "Watermelon seed oil is also a perfect choice for inclusion in hair "
       }
     ],
     "signatureColor": "#895E1B",
@@ -8355,7 +8159,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     "name": "Wheat Germ Oil",
     "botanicalName": "Triticum vulgare",
     "category": "CARRIER_OIL",
-    "description": "Wheat Germ Oil (Triticum vulgare), extracted by cold pressed. CAS #: 68917-73-7.",
+    "description": "A tufted annual grass of 60-150 cm height, stems hollow, tufted and erect. Leaves are very long and narrow with lingule and auricles.",
     "shortSpec": "Cold Pressed",
     "moq": "1 kg",
     "priceDisplay": "Request Quote",
@@ -8384,7 +8188,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "overview": "Wheat Germ Oil (Triticum vulgare), extracted by cold pressed. CAS #: 68917-73-7. Supplied as 100% pure botanical extract, batch-verified by dual GC-MS chromatography and conforming to ISO 9001:2015 and GMP manufacturing standards.",
-    "history": "Known properties: Wheatgerm oil is a perfect addition for massage oil or for preparing carrier blends. In beauty, skincare, and aromatherapy, wheatgerm massage blends assist in promoting circulation and formation of new cells. It will help in revitalizing skin and repairing damaged tissues Wheat germ oil consists of the gluten which is used in the preparations of number of products including baked goods, breakfast cereals, meat, fish and poultry products, pasta, pizza, snack foods, tortillas, batter mixes and coatings. Wheat germ protein is used in shampoos and emollients. It has been shown to be effective for the conditions like dry and cracked skin, eczema, psoriasis, prematurely aged skin, stretch marks, dull complexion, tired and overexerted muscles, sunburn and scars. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
+    "history": "Known properties: It is Anti-oxidant, nervine, purgative, relaxing, rejuvenating , tonic (skin, liver). It is excellent moisturizer , anti-oxidant and very nutritious. It regulate cardiovascular, immune, nervous, reproductive systems and to maintain healthy cells and body functions. Packaged in UN-certified export drums under inert nitrogen capping. Accompanied by lot-specific Certificate of Analysis (CoA), Safety Data Sheet (SDS/MSDS), and IFRA compliance documentation for international shipment.",
     "benefits": [
       {
         "title": "Primary Applications",
@@ -8392,11 +8196,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         "title": "Therapeutic Properties",
-        "description": "It will help in revitalizing skin and repairing damaged tissues Wheat germ oil consists of the gluten which is used in the preparations of number of products including baked goods, breakfast cereals, meat, fish and poultry products, pasta, pizza, snack foods, tortillas, batter mixes and coatings. Wheat germ protein is used in shampoos and emollients."
-      },
-      {
-        "title": "Industrial & Commercial Uses",
-        "description": "It has been shown to be effective for the conditions like dry and cracked skin, eczema, psoriasis, prematurely aged skin, stretch marks, dull complexion, tired and overexerted muscles, sunburn and scars."
+        "description": "It will help in revitalizing skin and repairing damaged tissues Wheat germ oil consists of "
       }
     ],
     "signatureColor": "#895E1B",
@@ -14742,7 +14542,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "shortSpec": "Solvent Extraction",
-    "description": "Benzoin Absolute Oil (Styrax benzoin), extracted by solvent extraction. CAS #: 91845-21-5. Specific Gravity: 0.990 - 0.980 @ 72&#176;F. Refractive Index: 1.4021 - 1.4022 @ 72&#176;F."
+    "description": "Benzoin Absolute Oil is an essential oil extracted from the fine resin of the Styrax benzoin tree. It is generally described as a thick, resinous liquid and is typically brown or pale yellow in color. It is well-regarded for its sweet, warm, and vanilla-like aroma, which often serves as a base note in perfumery. The oil is often noted for its soothing, stimulating, warming, and comforting properties."
   },
   {
     "id": "fa-honeysuckle-absolute-oil",
@@ -14789,7 +14589,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "shortSpec": "Solvent Extraction",
-    "description": "Honeysuckle Absolute Oil (Lonicera caprifolium), extracted by solvent extraction. CAS #: 8023-93-6. Specific Gravity: 0.922 - 0.965 @ 20&#176;C. Refractive Index: 1.470 - 1.490 @ 20&#176;C."
+    "description": "Honeysuckle absolute is generally obtained through solvent extraction from the fresh or dried flowers of the Lonicera caprifolium. It is a highly valued ingredient in the fragrance industry, prized for its captivating scent, and is also used in cosmetics and aromatherapy for its calming and skin-soothing properties. It possesses an intensely sweet, fatty-floral, exotic, and long-lasting aroma."
   },
   {
     "id": "fa-linden-blossom-absolute-oil",
@@ -14836,7 +14636,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "shortSpec": "Solvent Extraction",
-    "description": "Linden Blossom Absolute Oil (Tilia vulgaris), extracted by solvent extraction. CAS #: 132539-00-5. Specific Gravity: 0.96550 - 0.97240 @ 25.00 &#176;C. Refractive Index: 1.48730 - 1.49390 @ 20.00 &#176;C."
+    "description": "Linden Blossom Absolute Oil is a highly valued aromatic material characterized by its warm, honey-like, and floral scent with subtle citrus or herbal tea nuances. Derived from the flowers of the Tilia species, most commonly Tilia cordata (also known as the lime or linden tree), it is usually obtained through solvent extraction to capture the delicate volatile compounds of the flowers."
   },
   {
     "id": "fa-narcissus-absolute-oil",
@@ -14883,7 +14683,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "shortSpec": "Solvent Extraction",
-    "description": "Narcissus Absolute Oil (Narcissus poeticus), extracted by solvent extraction. CAS #: 68917-12-4. Specific Gravity: 0.9400 - 0.9650 @ 20&#176;C. Refractive Index: 1.4800 - 1.5100 @ 20&#176;C."
+    "description": "Narcissus Absolute Oil (botanical name: Narcissus poeticus) is a rare and highly prized floral extract, often referred to by common names such as Poet’s Daffodil, Nargis, and Pinkster Lily. It is renowned for its complex, luxurious, and intoxicating fragrance. It is a highly concentrated material, typically appearing as a dark green-brown to golden-amber viscous liquid."
   },
   {
     "id": "fa-tuberose-oil",
@@ -14930,7 +14730,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       }
     ],
     "shortSpec": "Solvent Extraction",
-    "description": "Tuberose Absolute Oil (Polianthes tuberosa), extracted by solvent extraction. CAS #: 8024-05-3,. F.E.M.A. : 3084. Specific Gravity: 0.9200 - 0.9800 @ 25 &#176;C. Refractive Index: 1.4800 - 1.5200 @ 20 &#176;C."
+    "description": "Tuberose oil is typically extracted from the fresh flowers of the perennial Polianthes tuberosa plant, which is known for its long stems and highly fragrant white blossoms. Due to the delicate nature of the flowers, the oil is most commonly obtained through solvent extraction. It possesses a very strong, intense, and intoxicating floral fragrance described as heavy, sweet, and honey-like."
   }
 ];
 
