@@ -22,8 +22,6 @@ export async function GET(request: NextRequest) {
     const sorted = [...products];
     if (sort === "name") {
       sorted.sort((a, b) => a.name.localeCompare(b.name));
-    } else if (sort === "name_desc") {
-      sorted.sort((a, b) => b.name.localeCompare(a.name));
     } else {
       // Default relevance
       sorted.sort((a, b) => b.popularityScore - a.popularityScore);
@@ -123,8 +121,6 @@ export async function GET(request: NextRequest) {
   // Sort results based on selected sort option
   if (sort === "name") {
     scoredList.sort((a, b) => a.product.name.localeCompare(b.product.name));
-  } else if (sort === "name_desc") {
-    scoredList.sort((a, b) => b.product.name.localeCompare(a.product.name));
   } else {
     // Relevance (default)
     scoredList.sort((a, b) => b.totalScore - a.totalScore);

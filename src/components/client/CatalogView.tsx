@@ -351,7 +351,6 @@ export function CatalogView({ preselectedCategory }: CatalogViewProps = {}) {
               >
                 <option value="relevance">Relevance</option>
                 <option value="name">Alphabetical (A - Z)</option>
-                <option value="name_desc">Alphabetical (Z - A)</option>
               </select>
             </div>
 
