@@ -86,11 +86,74 @@ const CATEGORIES = [
   { id: "AYURVEDIC", label: "Ayurvedic Oils" },
 ];
 
-interface CatalogViewProps {
-  preselectedCategory?: string; // Enum key like "ESSENTIAL_OIL", or slug like "essential-oils"
+function ProductCardSkeleton() {
+  return (
+    <div
+      style={{
+        backgroundColor: "rgba(255, 255, 255, 0.74)",
+        backdropFilter: "blur(24px) saturate(160%)",
+        WebkitBackdropFilter: "blur(24px) saturate(160%)",
+        border: "1px solid rgba(124, 58, 237, 0.1)",
+        borderRadius: "24px",
+        padding: "24px",
+        display: "flex",
+        flexDirection: "column",
+        boxShadow: "0 6px 24px rgba(24, 13, 38, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.8)",
+      }}
+    >
+      {/* Category badge */}
+      <div style={{ marginBottom: "12px" }}>
+        <div className="skel" style={{ height: "22px", width: "88px", borderRadius: "6px" }} />
+      </div>
+
+      {/* Image */}
+      <div className="skel" style={{ width: "100%", height: "230px", borderRadius: "16px", marginBottom: "16px" }} />
+
+      {/* Title — two lines */}
+      <div className="skel" style={{ height: "1.15rem", width: "88%", borderRadius: "5px", marginBottom: "7px" }} />
+      <div className="skel" style={{ height: "1.15rem", width: "55%", borderRadius: "5px", marginBottom: "10px" }} />
+
+      {/* Botanical name */}
+      <div className="skel" style={{ height: "0.85rem", width: "52%", borderRadius: "4px", marginBottom: "14px" }} />
+
+      {/* Description — 3 lines */}
+      <div style={{ display: "flex", flexDirection: "column", gap: "6px", marginBottom: "16px" }}>
+        <div className="skel" style={{ height: "0.78rem", width: "100%", borderRadius: "4px" }} />
+        <div className="skel" style={{ height: "0.78rem", width: "93%", borderRadius: "4px" }} />
+        <div className="skel" style={{ height: "0.78rem", width: "68%", borderRadius: "4px" }} />
+      </div>
+
+      {/* Spec strip */}
+      <div className="skel" style={{ height: "36px", width: "100%", borderRadius: "8px", marginBottom: "16px" }} />
+
+      {/* Footer row */}
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          paddingTop: "14px",
+          borderTop: "1px solid rgba(124, 58, 237, 0.08)",
+          marginTop: "auto",
+        }}
+      >
+        <div className="skel" style={{ height: "0.85rem", width: "58px", borderRadius: "4px" }} />
+        <div className="skel" style={{ height: "0.85rem", width: "92px", borderRadius: "4px" }} />
+      </div>
+    </div>
+  );
 }
 
-export function CatalogView({ preselectedCategory }: CatalogViewProps = {}) {
+// Module-scope cache — persists across category switches, Back/Forward navigation,
+// and component remounts (key={category}). Lives for the entire browser session.
+const clientProductCache = new Map<string, Product[]>();
+
+interface CatalogViewProps {
+  preselectedCategory?: string; // Enum key like "ESSENTIAL_OIL", or slug like "essential-oils"
+  initialProducts?: Product[];  // SSR-prefetched products — skips the first client fetch
+}
+
+export function CatalogView({ preselectedCategory, initialProducts }: CatalogViewProps = {}) {
   const router = useRouter();
   const searchParams = useSearchParams();
   const initialQuery = searchParams.get("q") || "";
@@ -104,11 +167,15 @@ export function CatalogView({ preselectedCategory }: CatalogViewProps = {}) {
 
   const initialSort = searchParams.get("sort") || "relevance";
 
+  // Pre-compute the cache key for SSR data so we can seed the client cache
+  const initialCacheKey = `${initialQuery.trim()}|${resolvedInitial}|${initialSort}`;
+
   const [query, setQuery] = useState(initialQuery);
   const [activeCategory, setActiveCategory] = useState(resolvedInitial);
   const [sortOption, setSortOption] = useState(initialSort);
-  const [products, setProducts] = useState<Product[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
+  // If SSR data is provided, start with it immediately — no skeleton, no fetch
+  const [products, setProducts] = useState<Product[]>(initialProducts ?? []);
+  const [isLoading, setIsLoading] = useState(initialProducts === undefined);
 
   // Sync with searchParams or preselectedCategory on change
   useEffect(() => {
@@ -129,15 +196,19 @@ export function CatalogView({ preselectedCategory }: CatalogViewProps = {}) {
     }
   }, [searchParams, preselectedCategory]);
 
-  // Client-side cache for instant 0ms category switching
-  const cacheRef = React.useRef<Map<string, Product[]>>(new Map());
+  // Uses module-scope cache — survives remounts and client-side navigations
   const prevQueryRef = React.useRef(query);
 
   // Fetch search / filtered results with instant caching & smart debouncing
   useEffect(() => {
+    // Pre-seed the module cache with SSR data on first mount
+    if (initialProducts && !clientProductCache.has(initialCacheKey)) {
+      clientProductCache.set(initialCacheKey, initialProducts);
+    }
+
     const cacheKey = `${query.trim()}|${activeCategory}|${sortOption}`;
-    if (cacheRef.current.has(cacheKey)) {
-      setProducts(cacheRef.current.get(cacheKey)!);
+    if (clientProductCache.has(cacheKey)) {
+      setProducts(clientProductCache.get(cacheKey)!);
       setIsLoading(false);
       return;
     }
@@ -163,14 +234,20 @@ export function CatalogView({ preselectedCategory }: CatalogViewProps = {}) {
 
         if (res.ok) {
           const data = await res.json();
-          cacheRef.current.set(cacheKey, data.results);
+          clientProductCache.set(cacheKey, data.results);
           setProducts(data.results);
         }
       } catch (err: unknown) {
+        // AbortError is expected when cleanup cancels the request — don't touch state
         if (err instanceof Error && err.name !== "AbortError") {
           console.error("Failed to fetch products:", err);
+          // Genuine network error: clear loading so the empty state is shown
+          if (!controller.signal.aborted) setIsLoading(false);
         }
-      } finally {
+        return; // don't run finally state updates on abort
+      }
+      // Only clear loading when the fetch actually completed (not aborted)
+      if (!controller.signal.aborted) {
         setIsLoading(false);
       }
     }
@@ -209,6 +286,24 @@ export function CatalogView({ preselectedCategory }: CatalogViewProps = {}) {
   const currentMeta = CATEGORY_DETAILS[activeCategory] || CATEGORY_DETAILS.ALL;
 
   return (
+    <>
+    <style>{`
+      @keyframes skel-sweep {
+        0%   { background-position: -700px 0; }
+        100% { background-position: 700px 0; }
+      }
+      .skel {
+        background: linear-gradient(
+          90deg,
+          rgba(240, 230, 255, 0.75) 25%,
+          rgba(220, 200, 255, 0.90) 50%,
+          rgba(240, 230, 255, 0.75) 75%
+        );
+        background-size: 1400px 100%;
+        animation: skel-sweep 1.7s ease-in-out infinite;
+        border-radius: 4px;
+      }
+    `}</style>
     <div>
       {/* Dynamic Category Header */}
       <div style={{ marginBottom: "40px" }}>
@@ -360,11 +455,17 @@ export function CatalogView({ preselectedCategory }: CatalogViewProps = {}) {
 
         {/* Results Info */}
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "20px", padding: "0 4px" }}>
-          <div style={{ fontSize: "0.875rem", color: "#5B486E" }}>
-            Showing <strong style={{ color: "#180D26" }}>{products.length}</strong> botanical products
-            {query ? ` for "${query}"` : ""}
+          <div style={{ fontSize: "0.875rem", color: "#5B486E", display: "flex", alignItems: "center" }}>
+            {isLoading && products.length === 0 ? (
+              <div className="skel" style={{ height: "1rem", width: "170px", borderRadius: "5px" }} />
+            ) : (
+              <>
+                Showing <strong style={{ color: "#180D26", margin: "0 3px" }}>{products.length}</strong> botanical products
+                {query ? ` for "${query}"` : ""}
+              </>
+            )}
           </div>
-          {isLoading && (
+          {isLoading && products.length > 0 && (
             <div style={{ display: "flex", alignItems: "center", gap: "6px", fontSize: "0.8rem", color: "#7C3AED", fontWeight: 600 }}>
               <Loader2 size={14} className="animate-spin" /> Updating results...
             </div>
@@ -372,7 +473,15 @@ export function CatalogView({ preselectedCategory }: CatalogViewProps = {}) {
         </div>
 
         {/* Product Grid */}
-        {products.length > 0 ? (
+        {isLoading && products.length === 0 ? (
+          /* ── Skeleton loading grid ── */
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", containerType: "inline-size" } as React.CSSProperties}>
+            {Array.from({ length: 12 }).map((_, i) => (
+              <ProductCardSkeleton key={i} />
+            ))}
+          </div>
+        ) : products.length > 0 ? (
+          /* ── Real product grid ── */
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", containerType: "inline-size" } as React.CSSProperties}>
             {products.map(product => (
               <div
@@ -610,5 +719,6 @@ export function CatalogView({ preselectedCategory }: CatalogViewProps = {}) {
       </section>
       </div>
     </div>
+  </>
   );
 }

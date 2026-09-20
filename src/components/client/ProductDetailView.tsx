@@ -363,70 +363,70 @@ export function ProductDetailView({ product }: ProductDetailViewProps) {
             <div style={{ backgroundColor: "white", borderRadius: "24px", padding: "28px 32px", border: "1px solid rgba(124, 58, 237, 0.18)", boxShadow: "0 8px 30px rgba(24, 13, 38, 0.04)" }}>
               <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
                 {data.keyPoints.botanicalName && (
-                  <div className="flex flex-col md:grid md:grid-cols-[minmax(160px,220px)_1fr] md:items-baseline gap-1 md:gap-8">
+                  <div className="product-spec-row" style={{ display: "grid", gridTemplateColumns: "minmax(160px, 280px) 1fr", columnGap: "32px", alignItems: "baseline" }}>
                     <span style={{ fontSize: "1.02rem", fontWeight: 700, color: "#180D26" }}>Botanical Name:</span>
                     <span style={{ fontSize: "1.02rem", color: "#180D26", lineHeight: 1.8, fontStyle: "italic" }}>{data.keyPoints.botanicalName}</span>
                   </div>
                 )}
 
                 {data.keyPoints.commonName && (
-                  <div className="flex flex-col md:grid md:grid-cols-[minmax(160px,220px)_1fr] md:items-baseline gap-1 md:gap-8">
+                  <div className="product-spec-row" style={{ display: "grid", gridTemplateColumns: "minmax(160px, 280px) 1fr", columnGap: "32px", alignItems: "baseline" }}>
                     <span style={{ fontSize: "1.02rem", fontWeight: 700, color: "#180D26" }}>Common Name:</span>
                     <span style={{ fontSize: "1.02rem", color: "#180D26", lineHeight: 1.8 }}>{data.keyPoints.commonName}</span>
                   </div>
                 )}
 
                 {data.keyPoints.plantPart && (
-                  <div className="flex flex-col md:grid md:grid-cols-[minmax(160px,220px)_1fr] md:items-baseline gap-1 md:gap-8">
+                  <div className="product-spec-row" style={{ display: "grid", gridTemplateColumns: "minmax(160px, 280px) 1fr", columnGap: "32px", alignItems: "baseline" }}>
                     <span style={{ fontSize: "1.02rem", fontWeight: 700, color: "#180D26" }}>Plant Parts Used:</span>
                     <span style={{ fontSize: "1.02rem", color: "#180D26", lineHeight: 1.8 }}>{data.keyPoints.plantPart}</span>
                   </div>
                 )}
 
                 {data.keyPoints.extractionMethod && (
-                  <div className="flex flex-col md:grid md:grid-cols-[minmax(160px,220px)_1fr] md:items-baseline gap-1 md:gap-8">
+                  <div className="product-spec-row" style={{ display: "grid", gridTemplateColumns: "minmax(160px, 280px) 1fr", columnGap: "32px", alignItems: "baseline" }}>
                     <span style={{ fontSize: "1.02rem", fontWeight: 700, color: "#180D26" }}>Extraction Method:</span>
                     <span style={{ fontSize: "1.02rem", color: "#180D26", lineHeight: 1.8 }}>{data.keyPoints.extractionMethod}</span>
                   </div>
                 )}
 
                 {data.keyPoints.colorOdor && (
-                  <div className="flex flex-col md:grid md:grid-cols-[minmax(160px,220px)_1fr] md:items-baseline gap-1 md:gap-8">
+                  <div className="product-spec-row" style={{ display: "grid", gridTemplateColumns: "minmax(160px, 280px) 1fr", columnGap: "32px", alignItems: "baseline" }}>
                     <span style={{ fontSize: "1.02rem", fontWeight: 700, color: "#180D26" }}>Color &amp; Odor:</span>
                     <span style={{ fontSize: "1.02rem", color: "#180D26", lineHeight: 1.8 }}>{data.keyPoints.colorOdor}</span>
                   </div>
                 )}
 
                 {data.keyPoints.solubility && (
-                  <div className="flex flex-col md:grid md:grid-cols-[minmax(160px,220px)_1fr] md:items-baseline gap-1 md:gap-8">
+                  <div className="product-spec-row" style={{ display: "grid", gridTemplateColumns: "minmax(160px, 280px) 1fr", columnGap: "32px", alignItems: "baseline" }}>
                     <span style={{ fontSize: "1.02rem", fontWeight: 700, color: "#180D26" }}>Solubility:</span>
                     <span style={{ fontSize: "1.02rem", color: "#180D26", lineHeight: 1.8 }}>{data.keyPoints.solubility}</span>
                   </div>
                 )}
 
                 {data.keyPoints.flavor && (
-                  <div className="flex flex-col md:grid md:grid-cols-[minmax(160px,220px)_1fr] md:items-baseline gap-1 md:gap-8">
+                  <div className="product-spec-row" style={{ display: "grid", gridTemplateColumns: "minmax(160px, 280px) 1fr", columnGap: "32px", alignItems: "baseline" }}>
                     <span style={{ fontSize: "1.02rem", fontWeight: 700, color: "#180D26" }}>Flavor &amp; Taste:</span>
                     <span style={{ fontSize: "1.02rem", color: "#180D26", lineHeight: 1.8 }}>{data.keyPoints.flavor}</span>
                   </div>
                 )}
 
                 {data.keyPoints.casNo && (
-                  <div className="flex flex-col md:grid md:grid-cols-[minmax(160px,220px)_1fr] md:items-baseline gap-1 md:gap-8">
+                  <div className="product-spec-row" style={{ display: "grid", gridTemplateColumns: "minmax(160px, 280px) 1fr", columnGap: "32px", alignItems: "baseline" }}>
                     <span style={{ fontSize: "1.02rem", fontWeight: 700, color: "#180D26" }}>CAS #:</span>
                     <span style={{ fontSize: "1.02rem", color: "#180D26", lineHeight: 1.8 }}>{data.keyPoints.casNo}</span>
                   </div>
                 )}
 
                 {data.keyPoints.einecsNo && (
-                  <div className="flex flex-col md:grid md:grid-cols-[minmax(160px,220px)_1fr] md:items-baseline gap-1 md:gap-8">
+                  <div className="product-spec-row" style={{ display: "grid", gridTemplateColumns: "minmax(160px, 280px) 1fr", columnGap: "32px", alignItems: "baseline" }}>
                     <span style={{ fontSize: "1.02rem", fontWeight: 700, color: "#180D26" }}>EINECS #:</span>
                     <span style={{ fontSize: "1.02rem", color: "#180D26", lineHeight: 1.8 }}>{data.keyPoints.einecsNo}</span>
                   </div>
                 )}
 
                 {data.keyPoints.femaNo && (
-                  <div className="flex flex-col md:grid md:grid-cols-[minmax(160px,220px)_1fr] md:items-baseline gap-1 md:gap-8">
+                  <div className="product-spec-row" style={{ display: "grid", gridTemplateColumns: "minmax(160px, 280px) 1fr", columnGap: "32px", alignItems: "baseline" }}>
                     <span style={{ fontSize: "1.02rem", fontWeight: 700, color: "#180D26" }}>FEMA #:</span>
                     <span style={{ fontSize: "1.02rem", color: "#180D26", lineHeight: 1.8 }}>{data.keyPoints.femaNo}</span>
                   </div>
@@ -465,28 +465,28 @@ export function ProductDetailView({ product }: ProductDetailViewProps) {
                 <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
                   
                   {data.constituentsAndSpecs.constituents && (
-                    <div className="flex flex-col md:grid md:grid-cols-[minmax(160px,220px)_1fr] md:items-baseline gap-1 md:gap-8">
+                    <div className="product-spec-row" style={{ display: "grid", gridTemplateColumns: "minmax(160px, 280px) 1fr", columnGap: "32px", alignItems: "baseline" }}>
                       <span style={{ fontSize: "1.02rem", fontWeight: 700, color: "#180D26" }}>Major Constituents:</span>
                       <span style={{ fontSize: "1.02rem", color: "#180D26", lineHeight: 1.8 }}>{data.constituentsAndSpecs.constituents}</span>
                     </div>
                   )}
 
                   {data.constituentsAndSpecs.specification && (
-                    <div className="flex flex-col md:grid md:grid-cols-[minmax(160px,220px)_1fr] md:items-baseline gap-1 md:gap-8">
+                    <div className="product-spec-row" style={{ display: "grid", gridTemplateColumns: "minmax(160px, 280px) 1fr", columnGap: "32px", alignItems: "baseline" }}>
                       <span style={{ fontSize: "1.02rem", fontWeight: 700, color: "#180D26" }}>Standard Specification &amp; Assay:</span>
                       <span style={{ fontSize: "1.02rem", color: "#180D26", lineHeight: 1.8 }}>{data.constituentsAndSpecs.specification}</span>
                     </div>
                   )}
 
                   {data.constituentsAndSpecs.specificGravity && (
-                    <div className="flex flex-col md:grid md:grid-cols-[minmax(160px,220px)_1fr] md:items-baseline gap-1 md:gap-8">
+                    <div className="product-spec-row" style={{ display: "grid", gridTemplateColumns: "minmax(160px, 280px) 1fr", columnGap: "32px", alignItems: "baseline" }}>
                       <span style={{ fontSize: "1.02rem", fontWeight: 700, color: "#180D26" }}>Specific Gravity:</span>
                       <span style={{ fontSize: "1.02rem", color: "#180D26", lineHeight: 1.8 }}>{data.constituentsAndSpecs.specificGravity}</span>
                     </div>
                   )}
 
                   {data.constituentsAndSpecs.refractiveIndex && (
-                    <div className="flex flex-col md:grid md:grid-cols-[minmax(160px,220px)_1fr] md:items-baseline gap-1 md:gap-8">
+                    <div className="product-spec-row" style={{ display: "grid", gridTemplateColumns: "minmax(160px, 280px) 1fr", columnGap: "32px", alignItems: "baseline" }}>
                       <span style={{ fontSize: "1.02rem", fontWeight: 700, color: "#180D26" }}>Refractive Index:</span>
                       <span style={{ fontSize: "1.02rem", color: "#180D26", lineHeight: 1.8 }}>{data.constituentsAndSpecs.refractiveIndex}</span>
                     </div>

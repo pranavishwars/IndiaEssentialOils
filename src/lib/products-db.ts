@@ -3,10 +3,10 @@ import { productStore, mapDbProduct, Product } from "@/lib/products-store";
 import { getOrSetCache, invalidateCachePrefix, invalidateCacheKey } from "@/lib/cache";
 
 const isDev = process.env.NODE_ENV === "development";
-// TTL for product collections (1s in dev, 15m in prod)
-const PRODUCTS_COLLECTION_TTL_SEC = isDev ? 1 : 15 * 60;
-// TTL for individual product pages (1s in dev, 30m in prod)
-const PRODUCT_ITEM_TTL_SEC = isDev ? 1 : 30 * 60;
+// TTL for product collections (60s in dev, 15m in prod)
+const PRODUCTS_COLLECTION_TTL_SEC = isDev ? 60 : 15 * 60;
+// TTL for individual product pages (60s in dev, 30m in prod)
+const PRODUCT_ITEM_TTL_SEC = isDev ? 60 : 30 * 60;
 
 /**
  * Invalidate the product cache manually (e.g. after catalog updates, imports, or cron scoring)

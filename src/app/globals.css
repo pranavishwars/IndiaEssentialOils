@@ -51,6 +51,21 @@
   min-width: 0;
 }
 
+/* Product detail key-value row: ensures query and answer stay on the same line */
+.product-spec-row {
+  display: grid;
+  grid-template-columns: minmax(160px, 280px) 1fr;
+  column-gap: 32px;
+  align-items: baseline;
+}
+
+@media (max-width: 640px) {
+  .product-spec-row {
+    grid-template-columns: auto 1fr !important;
+    column-gap: 12px !important;
+  }
+}
+
 /* Navbar responsive visibility — desktop nav hidden below 768px, mobile toggle hidden above */
 @media (max-width: 767px) {
   .desktop-nav {
